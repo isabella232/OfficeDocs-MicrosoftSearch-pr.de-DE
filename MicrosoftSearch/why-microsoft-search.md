@@ -14,18 +14,20 @@ search.appverid:
 - MOE150
 ms.assetid: 38569f03-db18-49ab-96ef-213a1f410935
 description: Hier erfahren Sie, warum Microsoft Search intelligent Unternehmenssuche für moderne Arbeitsplatz ist.
-ms.openlocfilehash: 79a2974d036ea71b7b2d17bc8598f6070209c8b5
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.openlocfilehash: c75670a14f2d5382aa7dccbf38d65584a291d93f
+ms.sourcegitcommit: 4e04137c6ca05b64157561bd14ead89485bafe1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378795"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29442296"
 ---
 # <a name="why-microsoft-search"></a>Warum Microsoft suchen
 
 Transformieren Sie Weise Personen in Ihrer Organisation suchen nach Informationen mit Microsoft Search. 
   
 Diese Suche in Unternehmen bemerken erhöht Produktivität und spart Zeit durch die Bereitstellung von Relevantere Suchergebnisse für den Arbeitsbereich. Microsoft Search ruft sichere Informationen aus Ihrem Unternehmen, Schule oder Organisation – wie Dateien, Unternehmensdaten, Websites und Personen Info – sowie die Ergebnisse der öffentlichen Website, und zeigt diese in einer einzelnen wünschen.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2EWQN?autoplay=false]
   
 ## <a name="save-time-with-intelligent-search"></a>Sparen Sie Zeit mit intelligente Suche
 

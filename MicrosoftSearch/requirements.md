@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 41b9b33d-fcc4-470c-90ec-068211fbbb16
 description: Die Office 365-Anforderungen und Abonnements, die benötigt werden, aktivieren Microsoft Search
-ms.openlocfilehash: 1e1ebd167ed91767d849187979cfe673273d9715
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.openlocfilehash: 1cab7b7617eb965e1130f6b56c3a0169259f5b8e
+ms.sourcegitcommit: 4e04137c6ca05b64157561bd14ead89485bafe1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378758"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29442280"
 ---
 # <a name="requirements-for-microsoft-search"></a>Anforderungen für die Microsoft-Suche
 
@@ -68,7 +68,25 @@ Um Microsoft Search für Ihre Organisation zu aktivieren, sollte der Office 365-
 - Frankreich
     
 - Deutschland
+  
+- Spanien
     
+- Mexiko
+    
+- Italien
+    
+- Brasilien
+    
+- Niederlande
+    
+- Russische Föderation
+    
+- Japan
+
+- China
+ 
+Microsoft Search ist derzeit für Englisch optimiert. Vollständige Unterstützung für andere Sprachen wird in Kürze bereitgestellt.
+
 Sobald das Produkt aktiviert ist, ist kein Speicherort erforderlich für Microsoft Search-Admins oder Benutzer. Finden Sie [schnell einrichten für Microsoft Search](quick-set-up.md) ausführliche Informationen zu aktivieren. 
 
   

@@ -1,5 +1,5 @@
 ---
-title: Portal-Verwaltungstools
+title: Tool des Verwaltungsportals
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -7,21 +7,21 @@ ms.date: 12/18/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: 4a824483-2407-4bbd-8f7f-5ebb47817c7e
 description: Übersicht über Microsoft Search-Tools zum Erstellen und Importieren von Ergebnissen, automatisch anmelden, und suchen unabhängig vom Standort
-ms.openlocfilehash: e885760a85ebacecb2987fc1ec4e125115f00f5d
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.openlocfilehash: 3b7064fbd0d8f66149a91057be00611e23928ccc
+ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378788"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29612376"
 ---
-# <a name="admin-portal-tools"></a>Portal-Verwaltungstools
+# <a name="admin-portal-tools"></a>Tool des Verwaltungsportals
 
 Verwaltungsportal von Microsoft Search enthält Tools und Ressourcen für Administratoren, Editoren und Benutzer, einschließlich:
   

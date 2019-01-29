@@ -1,5 +1,5 @@
 ---
-title: Verbundenen Dienste
+title: Verbundene Dienste
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -7,21 +7,21 @@ ms.date: 9/12/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: 161ea667-9b27-4695-b7a8-e8e063141795
 description: Erfahren Sie, wie die Arbeit Ergebnisse anpassen, die bei Verwendung von Microsoft Search angezeigt werden.
-ms.openlocfilehash: dda6f52931a0d3b3e76f038a91bfaf1d09264849
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.openlocfilehash: 0990b8362b01a2173f87e541bc1ea86aadcbb506
+ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378747"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29612431"
 ---
-# <a name="connected-services"></a>Verbundenen Dienste
+# <a name="connected-services"></a>Verbundene Dienste
 
 Microsoft Search können Sie leistungsfähige Bing Search Engine verwenden, um Ihre Office 365-Organisation SharePoint-Dateien, mit einer Textmarke versehenen interne Websites, Personen in der globalen Adressliste und Office 365-Gruppen zu suchen.
   

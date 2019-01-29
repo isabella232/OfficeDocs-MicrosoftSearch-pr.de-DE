@@ -1,5 +1,5 @@
 ---
-title: Standardbrowser festlegen
+title: Festlegen des Standardbrowsers
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -7,21 +7,21 @@ ms.date: 12/20/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: 53e2b71a-348b-4dfe-a504-6e97d573effe
 description: Erfahren Sie, wie einen Standardbrowser für Ihr Unternehmen mit Microsoft Search konfigurieren.
-ms.openlocfilehash: 13a0a878b3288abeb7b07defdab839a158adc2ac
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.openlocfilehash: 160dbbef9981127b74c51f54f86428667ecd4471
+ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378792"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29612473"
 ---
-# <a name="set-default-browser"></a>Standardbrowser festlegen
+# <a name="set-default-browser"></a>Festlegen des Standardbrowsers
 
 Konfigurieren der Standard-Browser, Standard-Suchmaschine und Standard-Homepage helfen Ihre Benutzer entdecken Sie Microsoft Search-Funktionen, weitere Verwendung fördern und bieten einen reibungsloseren.
   

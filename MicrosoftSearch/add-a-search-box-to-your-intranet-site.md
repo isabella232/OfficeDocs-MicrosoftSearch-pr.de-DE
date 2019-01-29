@@ -1,5 +1,5 @@
 ---
-title: Fügen Sie ein Suchfeld auf der Intranetwebsite
+title: Hinzufügen eines Suchfelds zu Ihrer Intranetwebsite
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -7,21 +7,21 @@ ms.date: 10/31/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
 description: Möchten Sie relevante Suchvorschläge erhalten, und suchen Sie Arbeit Ergebnisse schneller, indem Sie ein Suchfeld Microsoft Search zu einer Intranet-Website oder Seite hinzufügen.
-ms.openlocfilehash: a27b4d79e8795cdd2749c12119709f97710061e7
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.openlocfilehash: 699cfd9c411c9b86f3a2f8742c425aaedef1ebc5
+ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378852"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29612417"
 ---
-# <a name="add-a-search-box-to-your-intranet-site"></a>Fügen Sie ein Suchfeld auf der Intranetwebsite
+# <a name="add-a-search-box-to-your-intranet-site"></a>Hinzufügen eines Suchfelds zu Ihrer Intranetwebsite
 
 Fügen Sie ein Suchfeld Microsoft Search für schnellen Zugriff auf relevante Suchvorschläge und Arbeit Ergebnisse an einem beliebigen Intranet-Website oder Seite.
   

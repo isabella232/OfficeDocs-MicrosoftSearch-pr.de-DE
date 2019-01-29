@@ -1,5 +1,5 @@
 ---
-title: Einstellungen für Inhalte
+title: Inhaltseinstellungen
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -7,21 +7,21 @@ ms.date: 12/18/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: d1432d64-7a97-4b1b-a99f-11291814d361
 description: Hinzufügen einer Logo, Firmenname und mehr auf Ihre Microsoft Search Results arbeiten
-ms.openlocfilehash: 64b01d9d4d3a20d7ec2280b85a73a6ea8c5041b8
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.openlocfilehash: 1ec90c5ad10fb1c3b494ccbe3ad1cd1c6497e0fb
+ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378765"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29612458"
 ---
-# <a name="content-settings"></a>Einstellungen für Inhalte
+# <a name="content-settings"></a>Inhaltseinstellungen
 
 Mit Microsoft Search können Sie eine vertraute Aussehen und Verhalten für Ergebnisse sicherstellen, die von Inhaltsquellen innerhalb Ihrer Organisation, wie SharePoint, OneDrive für Unternehmen oder dem Intranet Ihres Unternehmens stammen. 
   

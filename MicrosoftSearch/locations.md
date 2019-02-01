@@ -13,13 +13,13 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: 2379e72c-a7da-4e3f-932a-12d431a0a284
-description: Übersicht über die Möglichkeiten, die Sie Ihrer Organisation Speicherorte Microsoft Searc Arbeit Ergebnisse enthalten sind, können alle
-ms.openlocfilehash: 6b96fd405fc78d77f9b61408909b380cc45ec95e
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+description: Übersicht über alle fest, wie Sie Ihrer Organisation Speicherorte in Microsoft Search Arbeit Ergebnisse hinzufügen können
+ms.openlocfilehash: 4ff30d7e346d609e9fddaca70caa1a85652fad3c
+ms.sourcegitcommit: 98fd5dd37a5b753cfa2fb81fc4bd6497ecc8ed30
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378745"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29690658"
 ---
 # <a name="locations"></a>Speicherorte
 
@@ -31,7 +31,7 @@ Speicherorte unterstützen die Benutzer beim Adressen suchen, und suchen Sie Ihr
     
     Fügen Sie einem Gebäude, Office, Campus oder anderen workspace
     
-- [Massen Speicherorte erstellen](bulk-create-locations.md)
+- [Massenerstellen von Speicherorten](bulk-create-locations.md)
     
     Hinzufügen von Speicherorten zur einer CSV-Datei und Massen importieren
     

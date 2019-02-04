@@ -14,10 +14,10 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 90d3190d-1add-490f-bef2-10b528252a2e
-description: Microsoft Search ist eine Enterprise Search wünschen, die Produktivität und Zeitersparnis durch die Bereitstellung von Relevantere Suchergebnisse für Ihre Organisation
+description: Microsoft Search ist eine Oberfläche für Unternehmenssuche, durch die die Produktivität gesteigert und Zeit gespart wird, indem relevantere Suchergebnisse für Ihre Organisation bereitgestellt werden.
 ms.openlocfilehash: 1a50ff7a0ae3c2b86f3051ad4eeecb38a8a602a9
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612351"
@@ -45,9 +45,9 @@ ms.locfileid: "29612351"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h2>Warum Microsoft suchen</h2>
-                        <p>Abrufen eines Enterprise-Suchfunktion, die Produktivität und Zeitersparnis durch die Bereitstellung von Relevantere Suchergebnisse für Ihre Organisation</p>
-                        <p><a href="why-microsoft-search.md">Hier erfahren Sie, wie es geht</a></p>
+                        <h2>Vorteile von Microsoft Search</h2>
+                        <p>Holen Sie sich eine Oberfläche für Unternehmenssuche, durch die die Produktivität gesteigert und Zeit gespart wird, indem relevantere Suchergebnisse für Ihre Organisation bereitgestellt werden.</p>
+                        <p><a href="why-microsoft-search.md">Erfahren Sie, wie</a></p>
                     </div>
                 </div>
             </div>
@@ -55,7 +55,7 @@ ms.locfileid: "29612351"
     </li>
 </ul>
 
-<h2>Vorgestellte Themen</h2>
+<h2>Empfohlene Themen</h2>
 
 <ul class="panelContent cardsW">
     <li>
@@ -68,8 +68,8 @@ ms.locfileid: "29612351"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Hauptmerkmale</h3>
-                        <p>Sehen Sie, welche Features sind verfügbar für Administratoren und Benutzern, einschließlich was finden Sie bei der Suche</p>
+                        <h3>Wichtige Leistungsmerkmale</h3>
+                        <p>Erfahren Sie, welche Features für Administratoren und Benutzer verfügbar sind und welche Ergebnisse bei der Suche angezeigt werden.</p>
                         <p><a href="features.md">Weitere Informationen</a></p>
                     </div>
                 </div>
@@ -86,8 +86,8 @@ ms.locfileid: "29612351"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Admin quick einrichten</h3>
-                        <p>Erfahren Sie, wie Sie Microsoft Search aktivieren und konfigurieren sie für Ihre Organisation in vier Schritten</p>
+                        <h3>Schnelles Einrichten für Administratoren</h3>
+                        <p>Erfahren Sie, wie Microsoft Search aktiviert wird und wie Sie es in vier einfachen Schritten für Ihre Organisation konfigurieren.</p>
                         <p><a href="quick-set-up.md">Jetzt starten</a></p>
                     </div>
                 </div>
@@ -104,9 +104,9 @@ ms.locfileid: "29612351"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>FAQ</h3>
-                        <p>Finden Sie Antworten auf einige häufig gestellte Fragen zum Microsoft Search</p>
-                        <p><a href="faqs.md">Durchsuchen Sie die häufig gestellten Fragen</a></p>
+                        <h3>FAQs</h3>
+                        <p>Erhalten Sie Antworten auf einige häufig gestellte Fragen zu Microsoft Search</p>
+                        <p><a href="faqs.md">Häufig gestellte Fragen durchsuchen</a></p>
                     </div>
                 </div>
             </div>
@@ -120,9 +120,9 @@ ms.locfileid: "29612351"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h2>Verwenden Sie Microsoft Search</h2>
-                        <p>Microsoft Search ist eine einfache, schnelle und sicherer Möglichkeit, Informationen zu finden, produktiver und Intelligenter arbeiten</p>
-                        <p><a href="use/about-microsoft-search.md">Hier erfahren Sie, wie es geht</a></p>
+                        <h2>Verwendung von Microsoft Search</h2>
+                        <p>Microsoft Search ist eine einfache, schnelle und sichere Möglichkeit, um Informationen zu suchen und produktiver und schlauer zu arbeiten.</p>
+                        <p><a href="use/about-microsoft-search.md">Erfahren Sie, wie</a></p>
                     </div>
                 </div>
             </div>

@@ -13,19 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8ad58820-69e0-4ee0-88a7-d207ffa790b7
-description: Hinzufügen von diesen URLs und Domänen der Firewall Liste zugelassener, damit die Benutzer auf einfache Weise Microsoft Search zugreifen
+description: Fügen Sie diese URLs und Domänen zu Ihrer Firewall-Zulassungsliste hinzu, damit Ihre Benutzer ganz einfach auf Microsoft Search zugreifen können.
 ms.openlocfilehash: 87a650bd0db17fbede2483c5e117cb03841f6378
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612545"
 ---
 # <a name="manage-network-connections"></a>Verwalten der Netzwerkverbindungen
 
-Um sicherzustellen, dass Sie und Ihre Benutzer mit Microsoft Search Endpunkte verbinden können, fügen Sie hinzu, dass diese URLs der Firewall Listen ermöglichen.
+Um sicherzustellen, dass Sie und Ihre Benutzer eine Verbindung zu Microsoft Search-Endpunkten herstellen können, fügen Sie diese URLs zu Ihren Firewall-Zulassungslisten hinzu.
   
-## <a name="for-the-microsoft-search-admin-portal"></a>Für das Microsoft Search Admin-Portal:
+## <a name="for-the-microsoft-search-admin-portal"></a>Für das Microsoft Search-Verwaltungsportal:
 
 - `www.bingatwork.com`
     
@@ -39,7 +39,7 @@ Um sicherzustellen, dass Sie und Ihre Benutzer mit Microsoft Search Endpunkte ve
     
 - `\*.bingforbusiness.com`
     
-## <a name="for-microsoft-search-in-bing"></a>Für die Microsoft-Suche in Bing:
+## <a name="for-microsoft-search-in-bing"></a>Für Microsoft Search in Bing:
 
 - `business.bing.com`
     

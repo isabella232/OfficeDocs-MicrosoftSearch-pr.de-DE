@@ -1,5 +1,5 @@
 ---
-title: Tool des Verwaltungsportals
+title: Tools des Verwaltungsportals
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,37 +13,37 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4a824483-2407-4bbd-8f7f-5ebb47817c7e
-description: Übersicht über Microsoft Search-Tools zum Erstellen und Importieren von Ergebnissen, automatisch anmelden, und suchen unabhängig vom Standort
+description: Übersicht über Microsoft Search-Tools zum Erstellen und Importieren von Ergebnissen, zum automatischen Anmelden und zum Suchen von einer beliebigen Stelle aus.
 ms.openlocfilehash: 3b7064fbd0d8f66149a91057be00611e23928ccc
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612376"
 ---
-# <a name="admin-portal-tools"></a>Tool des Verwaltungsportals
+# <a name="admin-portal-tools"></a>Tools des Verwaltungsportals
 
-Verwaltungsportal von Microsoft Search enthält Tools und Ressourcen für Administratoren, Editoren und Benutzer, einschließlich:
+Das Microsoft Search-Verwaltungsportal umfasst Tools und Ressourcen, die für Administratoren, Editoren und Benutzer entwickelt wurden, darunter:
   
-- Browsererweiterung Ersteller des Inhalts
+- Browsererweiterung zum Erstellen von Inhalten
     
-    Verfügbar für Administratoren und Editoren, verwenden Sie die Erweiterung Chrome oder Kante auf einfache Weise [Lesezeichen zu erstellen](create-bookmarks.md) und [Q&As](create-qas.md) einfach durch das Aufrufen einer Website oder Seite. 
+    Verwenden Sie die Chrome- oder Edge-Erweiterung, die für Administratoren und Editoren verfügbar ist, um ganz einfach [Lesezeichen](create-bookmarks.md) und [Fragen und Antworten](create-qas.md) zu erstellen, indem Sie einfach zu einer Website oder Seite wechseln. 
     
-- Microsoft Search in Bing Search-Erweiterung
+- Microsoft Search in der Bing-Sucherweiterung
     
-    Verfügbar für autorisierte Benutzer verwenden die Erweiterung Chrome oder Edge für den Schnellzugriff auf Microsoft Search Enterprise suchen ohne die Seite oder Website, die Sie auf.
+    Verwenden Sie die Chrome- oder Edge-Erweiterung, die für autorisierte Benutzer verfügbar ist, um schnell auf die Microsoft Search-Unternehmenssuche zuzugreifen, ohne die Seite oder die Website zu verlassen, auf der Sie sich gerade befinden.
     
-- Windows-10 und AAD-in-Erweiterung für Chrome
+- Windows 10- und AAD-Anmeldeerweiterung für Chrome
     
-    Verfügbar für autorisierte Benutzer verwenden die Erweiterung für Google Chrome auf einfache Weise mit Azure Active Directory authentifiziert, bei der Anmeldung die Websites, einschließlich Office 365 und Bing unterstützt. Wir empfehlen die Bereitstellung dieser Erweiterung Wenn Sie [einmaliges Anmelden zu testen](test-single-sign-on.md).
+    Verwenden Sie die Chrome-Erweiterung, die für autorisierte Benutzer verfügbar ist, um sich ganz einfach bei Azure Active Directory zu authentifizieren, wenn Sie sich bei unterstützten Websites anmelden, z. B. Office 365 und Bing. Es wird empfohlen, dass Sie diese Erweiterung bereitstellen, wenn Sie [das einmalige Anmelden testen](test-single-sign-on.md).
     
-- Häufigste Suchvorgänge für SharePoint als Lesezeichen importieren
+- Importieren der wichtigsten SharePoint-Abfragen als Lesezeichen
     
-    Verfügbar für Administratoren, verwenden Sie diese PowerShell-Skript zum [Importieren von SharePoint Häufigste Suchvorgänge](import-sharepoint-promoted-results-and-top-queries.md) als Entwurf Lesezeichen. Herunterladen Sie des Skripts, und öffnen Sie die Infodatei für Informationen zu Anforderungen, Beispiele und die verfügbaren Parameter. 
+    Verwenden Sie dieses PowerShell-Skript, das für Administratoren verfügbar ist, um [die wichtigsten SharePoint-Abfragen](import-sharepoint-promoted-results-and-top-queries.md) als Entwurfslesezeichen zu importieren. Laden Sie das Skript herunter, und öffnen Sie die README-Datei, um Informationen zu Anforderungen, Beispielen und verfügbaren Parametern zu erhalten. 
     
-- Importieren von SharePoint heraufgestuft Ergebnis von Abfrageregeln als Lesezeichen
+- Importieren von SharePoint-Abfrageregeln für höhergestufte Ergebnisse
     
-    Verfügbar für Administratoren, [SharePoint Höhergestufte Ergebnisse importieren](import-sharepoint-promoted-results-and-top-queries.md) "und" Top Abfragen oder beste Suchergebnisse, als vorgeschlagenen Lesezeichen. 
+    Das [Importieren von höhergestuften SharePoint-Ergebnissen](import-sharepoint-promoted-results-and-top-queries.md) und wichtigen Abfragen oder besten Suchergebnissen als vorgeschlagene Lesezeichen ist für Administratoren verfügbar. 
 
   
 

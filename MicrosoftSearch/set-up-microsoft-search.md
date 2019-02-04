@@ -13,53 +13,53 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c989562e-525f-4922-b436-a885e7bf36ee
-description: Alle benötigten Informationen bereitstellen von Microsoft Search in Ihrer Organisation
+description: Alle Informationen, die Sie benötigen, um Microsoft Search für Ihre Organisation bereitzustellen.
 ms.openlocfilehash: 7e58d6df8d2ae35aab7d24c05b487f626b5f5c1c
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612401"
 ---
 # <a name="set-up-microsoft-search"></a>Einrichten von Microsoft Search
 
-Microsoft Search wird als Teil von Office 365 auf einfache Weise bereitgestellt werden, da es in der Microsoft-365-Verwaltungskonsole. Nach der Aktivierung ist eine schnelle Konfiguration zum Festlegen einer Logo, Name und Farbe und Benutzern Zugriff alle, die zum Einrichten erforderlich ist. Dort können autorisierte Benutzer bei Bing mit einem Konto arbeiten oder Schule anmelden und Arbeit Ergebnisse erhalten, bei der Suche.
+Microsoft Search kann als Teil von Office 365 ganz einfach bereitgestellt werden, indem es im Microsoft 365 Admin Center aktiviert wird. Nach der Aktivierung müssen Sie zur Einrichtung lediglich ein Logo, einen Namen und eine Farbe über eine Schnellkonfiguration festlegen und Benutzern Zugriff erteilen. Danach können sich autorisierte Benutzer mit einem Geschäfts- oder Schulkonto bei Bing anmelden und Arbeitsergebnisse bei der Suche abrufen.
 
 - [Schnelles Einrichten](quick-set-up.md)
     
-    Vier Schritte für Microsoft Search auf einfache Weise aktivieren
+    Führen Sie vier einfache Schritte aus, um Microsoft Search zu aktivieren.
 
 - [Inhaltseinstellungen](content-settings.md)
     
-    Steuern Sie das Aussehen und Verhalten von Microsoft Search results
+    Steuern Sie das Aussehen und Verhalten von Microsoft Search-Ergebnissen.
     
 - [Hinzufügen von Benutzern](add-users.md)
     
-    Verwalten Sie Zugriff auf das Portal für Administratoren und Editoren, und Bereitstellen Sie oder einschränken Sie des Zugriffs auf Microsoft Search innerhalb Ihrer Organisation
+    Verwalten Sie den Portalzugriff für Administratoren und Editoren, und gewähren oder beschränken Sie den Zugriff auf Microsoft Search in Ihrer Organisation.
     
 - [Tool des Verwaltungsportals](admin-portal-tools.md)
     
-    Verwenden Sie Browser Extensions und andere Tools zum Erstellen und Importieren von Inhalten, wie oft, Benutzer aufgefordert werden, an-und Arbeit Suchergebnisse auf Bing, zu minimieren
+    Verwenden Sie Browsererweiterungen und andere Tools, um Inhalte zu erstellen und zu importieren, die Anzahl von Anmeldeaufforderungen für Benutzer zu minimieren und Arbeitsergebnisse in Bing zu suchen.
     
-- [Testen einmaliges Anmelden](test-single-sign-on.md)
+- [Testen des einmaliges Anmeldens](test-single-sign-on.md)
     
-    Reduzierung der Anzahl der Benutzer aufgefordert werden, melden Sie sich oft
+    Reduzieren der Anmeldeaufforderungen für Benutzer
     
-- [Einstellung Bing als Standard-Suchmaschine](set-default-search-engine.md) und [Startseite](set-default-homepage.md)sowie [einen Standardbrowser konfigurieren](set-default-browser.md)
+- [Festlegen von Bing als Standardsuchmaschine](set-default-search-engine.md) und [-startseite](set-default-homepage.md) und [Konfigurieren eines Standardbrowsers](set-default-browser.md)
     
-    Unterstützen Sie die weitere Benutzer problemlos entdecken Sie Microsoft Search-Funktionen, weitere Verwendung fördern und bieten einen reibungsloseren
+    Helfen Sie Ihren Benutzern, ganz einfach Microsoft Search-Funktionen zu erkunden und dessen Verwendung zu fördern, und stellen Sie eine nahtlosere Oberfläche bereit.
     
 - [Konfigurieren des DNS-Servers](advanced-dns-configuration.md) und [Verwalten von Netzwerkverbindungen](manage-network-connections.md)
     
-    Vergewissern Sie sich Ihre Benutzer können eine Verbindung herstellen, auf Microsoft Search und Bing identifizieren und deren anmelden können
+    Stellen Sie sicher, dass Ihre Benutzer eine Verbindung zu Microsoft Search herstellen können, und dass sie von Bing identifiziert und angemeldet werden können.
 
-- [Ein Suchfeld hinzufügen, mit dem intranet](add-a-search-box-to-your-intranet-site.md)
+- [Hinzufügen eines Suchfelds zu Ihrer Intranetwebsite](add-a-search-box-to-your-intranet-site.md)
 
-    Benutzern Sie das schnellen Zugriff auf relevante Suchvorschläge und Ergebnisse
+    Gewähren von schnellem Zugriff auf relevante Suchvorschläge und -ergebnisse für Ihre Benutzer
 
-- [Planen von Inhalten](plan-your-content.md)
+- [Planen Ihrer Inhalte](plan-your-content.md)
     
-    Ermitteln Sie, welche Websites, Tools und Ressourcen werden am häufigsten für durchsucht, und ermitteln Sie die besten Ergebnistypen für diese
+    Ermitteln Sie, welche Websites, Tools und Ressourcen am häufigsten gesucht werden, und legen Sie die besten Ergebnistypen dafür fest.
 
   
 

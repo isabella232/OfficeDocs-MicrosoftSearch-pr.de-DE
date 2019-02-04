@@ -13,31 +13,31 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a220c1bf-7cee-448a-90a3-310284d03e81
-description: Reduzierung der Anzahl der Häufigkeit, mit die Ihrer Windows 10 Benutzer aufgefordert werden, sich bei Microsoft Search und Office 365 anmelden
+description: Reduzieren Sie die Anzahl, die Windows 10-Benutzer zur Anmeldung bei Microsoft Search und Office 365 aufgefordert werden.
 ms.openlocfilehash: 55d359edac36020ec8cf2aad6b64ca9737ee1066
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612353"
 ---
 # <a name="test-single-sign-on"></a>Testen des einmaliges Anmeldens
 
-Einmaliges Anmelden verringert die Anzahl der Benutzer aufgefordert werden, melden Sie sich oft. Testen einmaliges Anmelden mit eine kleine Gruppe von Benutzern können blockierenden Konfigurationsprobleme identifiziert werden. 
+Reduzieren Sie die Anzahl, die Benutzer zur Anmeldung aufgefordert werden. Wenn Sie das einmalige Anmelden an einer kleinen Gruppe von Benutzern testen, können Sie Konfigurationsprobleme identifizieren, die zu Sperrungen führen. 
   
-Für Benutzer von Chrome auf Windows 10 funktioniert einmaliges Anmelden nur, wenn die Windows-10 und AAD-in-Erweiterung für Chrome installiert ist. 
+Für Benutzer von Chrome unter Windows 10 funktioniert das einmalige Anmelden nur, wenn die Windows 10- und die AAD-Anmeldeerweiterung für Chrome installiert ist. 
   
-## <a name="download-the-windows-10-and-aad-sign-in-extension-for-chrome"></a>Laden Sie die Windows-10 und AAD-in-Erweiterung für Chrome
+## <a name="download-the-windows-10-and-aad-sign-in-extension-for-chrome"></a>Herunterladen der Windows 10- und AAD-Anmeldeerweiterung für Chrome
 
-Es wird empfohlen, Sie eine Gruppenrichtlinie erstellen, um diese Erweiterung automatisch zu installieren.
+Es wird empfohlen, dass Sie eine Gruppenrichtlinie erstelle, um diese Erweiterung automatisch zu installieren.
   
-1. Wechseln Sie zum Microsoft Search Admin-portal
+1. Wechseln zum Microsoft Search-Verwaltungsportal
     
-2. Klicken Sie auf **Extras** , klicken Sie im Navigationsbereich
+2. Klicken Sie im Navigationsbereich auf **Tools**.
     
-3. Laden Sie in der Liste Tools **Windows 10 und AAD - in-Erweiterung für Chrome**
+3. Laden Sie in der Toolsliste die **Windows 10- und AAD-Anmeldeerweiterung für Chrome herunter**.
     
-4. Freigeben Sie die Erweiterung mit Benutzern auf Windows 10 Chrome
+4. Freigeben der Erweiterung für Chrome Benutzer unter Windows 10
 
   
 

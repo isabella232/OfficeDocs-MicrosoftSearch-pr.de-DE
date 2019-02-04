@@ -1,5 +1,5 @@
 ---
-title: FAQ
+title: FAQs
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,51 +13,51 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: cd3ee09d-58ab-4b8a-8822-fa11a1399672
-description: Hier erhalten Sie Antworten auf häufig gestellte Fragen zur Suche in Unternehmen und Microsoft Search
+description: Erhalten Sie Antworten auf häufig gestellte Fragen zur Unternehmenssuche und zu Microsoft Search
 ms.openlocfilehash: ed4179262dc20a441ce5e3acadc895bacb271fa9
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612507"
 ---
-# <a name="faqs"></a>FAQ
+# <a name="faqs"></a>FAQs
 
-Dies sind die häufig gestellten Fragen, die Organisationen und Benutzer verfügen über das Verwalten und Verwenden von Microsoft Search.
+Dies sind die häufig gestellten Fragen von Organisationen und Benutzern zur Verwaltung und Nutzung von Microsoft Search.
   
-## <a name="whats-the-value-proposition-for-microsoft-search"></a>Was ist der Wertbeitrag für Microsoft Search?
+## <a name="whats-the-value-proposition-for-microsoft-search"></a>Was sind die Verkaufsargumente für Microsoft Search?
 
-Microsoft Search ist auf sichere Weise zu sowohl die geschäftliche Rufnummer und Webinhalte zu suchen. Dieser Art von Integration über Web- und Enterprise ist nur bei Microsoft verfügbar. Compliance-bezogene Informationen finden Sie unter [Security for Microsoft Search](security.md).
+Microsoft Search ist eine sichere Methode, um geschäftliche und Webinhalte zu durchsuchen. Diese Art der Integration zwischen Web und Unternehmen bietet nur Microsoft. Compliance-bezogene Informationen finden Sie unter [Sicherheit für Microsoft Search](security.md).
   
-## <a name="what-microsoft-search-features-are-available-now"></a>Welche Microsoft Search-Features sind verfügbar?
+## <a name="what-microsoft-search-features-are-available-now"></a>Welche Microsoft Search-Features sind momentan verfügbar?
 
 Eine vollständige Liste finden Sie unter [Features von Microsoft Search](features.md).
   
-## <a name="does-microsoft-search-support-advanced-query-understanding"></a>Wird Grundlegendes zu Microsoft Search Unterstützung der erweiterten-Abfrage?
+## <a name="does-microsoft-search-support-advanced-query-understanding"></a>Unterstützt Microsoft Search die erweiterte Abfrageanalyse?
 
-Ja, analysiert Microsoft Search Query beabsichtigt aus größeren Ausdrücke. Hier erfahren, dass ihre Abfragen allgemeine überflüssig Ausdrücke Benutzer hinzuzufügen, die ihre Suche beabsichtigt keine Auswirkung auf die mithilfe dieses Features AI. Beispielsweise wenn ein Benutzer für 'Weitere Infos dazu, wie Sie Mein Kennwort ändern' sucht extrahieren wir die weniger wichtig Wörter aus der Abfrage- und Trigger basierend auf den entsprechenden Flussdiagrammen wie "Kennwort ändern".
+Ja, bei umfangreicheren Ausdrücken analysiert Microsoft Search die Abfrageabsicht. Dieses Feature verwendet KI, um häufig von Benutzern hinzugefügte, überflüssige Ausdrücke zu lernen, die für die Absicht der Suche nicht relevant sind. Wenn ein Benutzer z. B. die Suche "Gib mir bitte Informationen dazu, wie ich mein Kennwort ändern kann" eingibt, werden die weniger wichtigen Wörter aus der Abfrage entfernt. Die Abfrage wird dann basierend auf den relevanten Wörtern, wie z. B. "Kennwort ändern", durchgeführt.
   
-Dieses Feature wird nicht Schlüsselwörter im Admin-Portal haben Vorrang vor.
+Dieses Feature setzt im Verwaltungsportal festgelegte Schlüsselwörter nicht außer Kraft.
   
-## <a name="does-microsoft-search-search-for-files-on-premises-as-well-as-the-cloud"></a>Führt Microsoft Search Dateien lokale als auch in der Cloud Suche?
+## <a name="does-microsoft-search-search-for-files-on-premises-as-well-as-the-cloud"></a>Sucht Microsoft Search sowohl lokal als auch in der Cloud nach Dateien?
 
-Microsoft Search unterstützt die Suche nach Dokumenten, die auf SharePoint Online live, lokale OneDrive für Unternehmen sowie über Hybrid SharePoint und SharePoint Online für die am häufigsten verwendeten Office-Dateitypen. Wenn Sie lokale Inhalte in SharePoint Online suchen können, sollten Sie lokale Inhalte mithilfe von Microsoft Search finden sein. 
+Microsoft Search unterstützt die Suche nach Dokumenten in den geläufigsten Office-Dateitypen, die live auf SharePoint Online, OneDrive for Business sowie über hybrides lokales SharePoint und SharePoint Online bereitgestellt werden. Wenn Sie lokale Inhalte in SharePoint Online suchen können, sollten Sie auch mit Microsoft Search lokale Inhalte finden können. 
   
-## <a name="does-microsoft-search-replace-other-enterprise-search-experiences"></a>Ersetzt Microsoft Search anderen Enterprise Search Erfahrungen?
+## <a name="does-microsoft-search-replace-other-enterprise-search-experiences"></a>Ersetzt Microsoft Search andere Oberflächen für die Unternehmenssuche?
 
-Microsoft Search ist ein komplementäre Angebot, die Ergebnisse aus mehreren Quellen zusammenführt. Weitere Informationen zu unterstützten Dateitypen und Quellen finden Sie unter den nächsten häufig gestellten Fragen.
+Microsoft Search ist ein ergänzendes Angebot, das Ergebnisse aus mehreren Quellen zusammenführt. Weitere Informationen zu unterstützten Dateitypen und Quellen finden Sie in den nächsten häufig gestellten Fragen.
   
-## <a name="what-file-types-and-sources-does-microsoft-search-support"></a>Welche Dateitypen und Quellen unterstützt Microsoft Search?
+## <a name="what-file-types-and-sources-does-microsoft-search-support"></a>Welche Dateitypen und Quellen werden von Microsoft Search unterstützt?
 
 Wir unterstützen die folgenden Inhaltsquellen:
   
 - SharePoint Online
     
-- Hybride SharePoint (lokal + SPO)
+- SharePoint-Hybridlösung (lokal + SPO)
     
 - OneDrive for Business
     
-Die folgenden Dateitypen sind in Dateisuche angezeigt und für Benutzer und Gruppen auf der Registerkarte Dateien angezeigt:
+Die folgenden Dateitypen werden in der Dateisuche verfügbar gemacht und auf der Registerkarte "Dateien" für Personen und Gruppen angezeigt:
   
 - Word
     
@@ -69,77 +69,77 @@ Die folgenden Dateitypen sind in Dateisuche angezeigt und für Benutzer und Grup
     
 - PDF
     
-## <a name="what-compliance-and-trust-measures-are-in-place-for-microsoft-search"></a>Welche Maßnahmen Einhaltung von Vorschriften und Vertrauensstellung gibt für Microsoft Search?
+## <a name="what-compliance-and-trust-measures-are-in-place-for-microsoft-search"></a>Welche Compliance- und Vertrauensmaßnahmen wurden für Microsoft Search ergriffen?
 
-Informationen zur Einhaltung von Vorschriften und Vertrauenswürdigkeit Measures finden Sie unter [Security for Microsoft Search](security.md).
+Informationen zu Compliance- und Vertrauensmaßnahmen finden Sie unter [Sicherheit für Microsoft Search](security.md).
   
-## <a name="where-can-i-get-info-about-office-365-compliance-tierscategories"></a>Wo finde ich Info zu Office 365 Compliance Ebenen/Kategorien?
+## <a name="where-can-i-get-info-about-office-365-compliance-tierscategories"></a>Wo erhalte ich Informationen zu Office 365-Compliance-Ebenen/Kategorien?
 
-Details finden Sie in der [Compliance-Framework für Branchenstandards und Vorschriften](https://download.microsoft.com/download/B/2/7/B27B3EF3-8849-4C18-8BA4-5AD755728620/Compliance%20Framework_customer%20guidance.pdf) (PDF-Datei zum Herunterladen). 
+Details finden Sie in der [Compliance-Framework für Branchenstandards und gesetzliche Vorschriften](https://download.microsoft.com/download/B/2/7/B27B3EF3-8849-4C18-8BA4-5AD755728620/Compliance%20Framework_customer%20guidance.pdf) (PDF-Download). 
   
-## <a name="how-does-microsoft-search-keep-results-secure"></a>Wie schützen Microsoft Search Results?
+## <a name="how-does-microsoft-search-keep-results-secure"></a>Wie gewährleistet Microsoft Search die Sicherheit von Ergebnissen?
 
-Informationen wie Microsoft Search verfolgt Ihre Ergebnisse secure, finden Sie unter [Security for Microsoft Search](security.md).
+Informationen dazu, wie Microsoft Search die Sicherheit von Ergebnissen gewährleistet, finden Sie unter [Sicherheit für Microsoft Search](security.md).
   
-## <a name="what-are-the-content-sources-for-the-people-card"></a>Was sind die Inhaltsquellen für die Karte "Personen"?
+## <a name="what-are-the-content-sources-for-the-people-card"></a>Was sind die Inhaltsquellen für die Personenkarte?
 
-Die personenkarte wird Informationen von Azure Active Directory, Exchange Online und SharePoint Online.
+Die Personenkarte leitet Informationen von Azure Active Directory, Exchange Online und SharePoint Online ab.
   
-## <a name="do-microsoft-search-users-earn-microsoft-rewards"></a>Führen Sie Microsoft Search Benutzer Microsoft Rewards verdienen?
+## <a name="do-microsoft-search-users-earn-microsoft-rewards"></a>Erhalten Microsoft Search-Benutzer Microsoft Rewards?
 
-Microsoft Search sucht führen Sie keine Punkte für Champions und noch nie ein Benutzer Microsoft-Konto zugeordnet sind.
+Microsoft Search-Benutzer erhalten keine Rewards-Punkte und werden keinem Microsoft-Benutzerkonto zugeordnet.
   
-## <a name="does-microsoft-search-respect-existing-file-permissions"></a>Berücksichtigen Microsoft Search vorhandene Dateiberechtigungen?
+## <a name="does-microsoft-search-respect-existing-file-permissions"></a>Berücksichtigt Microsoft Search vorhandene Dateiberechtigungen?
 
-Microsoft Search berücksichtigt die Einschränkung aus Sicherheitsgründen aus der Quelle. Benutzer können nur die Informationen anzeigen, die sie Zugriff haben.
+Microsoft Search respektiert Sicherheitskürzungen der Quelle. Benutzer können nur die Informationen anzeigen, auf die sie Zugriff haben.
   
-## <a name="how-are-user-queries-protected-from-sharing-on-the-web"></a>Wie werden Benutzerabfragen Freigabe im Web geschützt?
+## <a name="how-are-user-queries-protected-from-sharing-on-the-web"></a>Wie werden Ihre Benutzerabfragen vor der Freigabe im Web geschützt?
 
-Informationen dazu, wie Benutzerabfragen geschützt werden finden Sie unter [Security for Microsoft Search](security.md).
+Informationen dazu, wie Benutzerabfragen geschützt werden, finden Sie unter [Sicherheit für Microsoft Search](security.md).
   
-## <a name="what-types-of-advertising-do-microsoft-search-users-see"></a>Welche Arten von Werbung werden Benutzer von Microsoft Search angezeigt?
+## <a name="what-types-of-advertising-do-microsoft-search-users-see"></a>Welche Arten von Werbung wird Benutzern von Microsoft Search angezeigt?
 
-Informationen zur Werbung finden Sie unter [Security for Microsoft Search](security.md).
+Informationen zur Werbung finden Sie unter [Sicherheit für Microsoft Search](security.md).
   
-## <a name="what-are-the-minimum-requirements-to-enable-microsoft-search"></a>Was sind die Mindestanforderungen an Microsoft Search aktivieren?
+## <a name="what-are-the-minimum-requirements-to-enable-microsoft-search"></a>Was sind die Mindestanforderungen für die Aktivierung von Microsoft Search?
 
-Informationen zu den Anforderungen finden Sie unter [Requirements for Microsoft Search](requirements.md).
+Informationen zu den Voraussetzungen finden Sie unter [Anforderungen für Microsoft Search](requirements.md).
   
-## <a name="how-does-microsoft-search-use-azure-active-directory"></a>Wie werden Microsoft Search Azure Active Directory verwendet?
+## <a name="how-does-microsoft-search-use-azure-active-directory"></a>Wie verwendet Microsoft Search Azure Active Directory?
 
-Microsoft Search verwendet Azure Active Directory zur Authentifizierung und Autorisierung des Zugriffs auf die Daten Ihres Unternehmens. Microsoft Search entspricht die Identität Methoden Standard in allen Microsoft-Produkten behandeln. Dies bedeutet, dass Ihre Benutzer über einmaliges Anmelden in automatisch angemeldet werden können. 
+Microsoft Search verwendet Azure Active Directory zur Authentifizierung und Autorisierung des Zugriffs auf die Daten Ihres Unternehmens. Microsoft Search befolgt die für alle Microsoft-Produkte geltenden Standards für den Umgang mit Identitäten. Dies bedeutet, dass Ihre Benutzer möglicherweise automatisch durch einmaliges Anmelden angemeldet werden. 
   
-## <a name="how-do-i-set-bing-as-the-default-search-provider-for-my-users"></a>Wie richte ich Bing als Standardsuchanbieter für meine Benutzer?
+## <a name="how-do-i-set-bing-as-the-default-search-provider-for-my-users"></a>Wie richte ich Bing als standardmäßigen Suchanbieter für meine Benutzer ein?
 
-Informationen hierzu finden Sie unter [Standard-Suchmaschine festlegen](set-default-search-engine.md), [Legen Sie die Standard-Homepage](set-default-homepage.md)und [als Standardbrowser festgelegt](set-default-browser.md).
+Weitere Informationen hierzu finden Sie unter [Festlegen der Standardsuchmaschine](set-default-search-engine.md), [Festlegen der standardmäßigen Startseite](set-default-homepage.md) und [Festlegen des Standardbrowsers](set-default-browser.md).
   
-## <a name="does-microsoft-search-provide-search-results-across-tenants"></a>Bietet Microsoft Search Suchergebnisse konstant?
+## <a name="does-microsoft-search-provide-search-results-across-tenants"></a>Stellt Microsoft Search Suchergebnisse auf mehreren Mandaten bereit?
 
-Nein, wird cross-Mandanten oder freigegebenen Mandanten Access nicht unterstützt. 
+Nein, mandantenübergreifender oder freigegebener Mandantenzugriff wird nicht unterstützt. 
   
-## <a name="where-can-i-get-help-with-keywords-and-reserved-keywords"></a>Wo finde ich Hilfe zu Stichwörtern und reservierte Schlüsselwörter?
+## <a name="where-can-i-get-help-with-keywords-and-reserved-keywords"></a>Wo erhalte ich Hilfe zu Schlüsselwörtern und reservierten Schlüsselwörtern?
 
-Informationen zur Verwendung von Schlüsselwörtern und reservierten Schlüsselwörtern finden Sie unter [Planen von Inhalten](plan-your-content.md).
+Informationen zur Verwendung von Schlüsselwörtern und reservierten Schlüsselwörtern finden Sie unter [Planen der Inhalte](plan-your-content.md).
   
 ## <a name="which-office-365-skus-are-supported"></a>Welche Office 365-SKUs werden unterstützt?
 
-Informationen zu unterstützten SKUs finden Sie unter [Requirements for Microsoft Search](requirements.md).
+Informationen zu SKUs finden Sie unter [Anforderungen für Microsoft Search](requirements.md).
   
-## <a name="is-microsoft-search-gdpr-compliant"></a>Ist Microsoft Search GDPR kompatibel?
+## <a name="is-microsoft-search-gdpr-compliant"></a>Ist Microsoft Search kompatibel zur DSGVO?
 
-Informationen zur Kompatibilität mit GDPR finden Sie unter [Security for Microsoft Search](security.md).
+Informationen zur DSGVO-Kompatibilität finden Sie unter [Sicherheit für Microsoft Search](security.md).
   
-## <a name="why-am-i-signed-into-bing-automatically"></a>Warum erhalte ich in Bing automatisch angemeldet?
+## <a name="why-am-i-signed-into-bing-automatically"></a>Warum werde ich automatisch bei Bing angemeldet?
 
-Microsoft Search verwendet AAD einmaliges Anmelden, um automatisch melden Sie sich mit Ihrer Arbeit oder Schule Konto aus, wenn Sie ein Office 365-app oder Windows 10 angemeldet haben. Sie können jederzeit abmelden.
+Microsoft Search verwendet die einmalige AAD-Anmeldung für das automatische Anmelden bei Ihrem Geschäfts- oder Schulkonto, wenn Sie sich bei einer Office 365-App oder Windows 10 angemeldet haben. Sie können sich jederzeit abmelden.
   
-## <a name="what-is-bing-for-business"></a>Was ist Bing für Unternehmen?
+## <a name="what-is-bing-for-business"></a>Was ist Bing for Business?
 
-Microsoft Search wurde bereits Bing für Business aufgerufen.
+Microsoft Search hieß zuvor Bing for Business.
   
-## <a name="how-does-microsoft-search-order-result-cards-in-the-all-results-carousel"></a>Wie bestellen Microsoft Search Result Karten in der alle Ergebnisse Karussell?
+## <a name="how-does-microsoft-search-order-result-cards-in-the-all-results-carousel"></a>Wie fordert Microsoft Search Ergebniskarten im Alle Ergebnisse-Karussell an?
 
-Microsoft Search verwendet intelligente Rangfolge Algorithmen für Ergebnis Karten basierend auf Relevanz sortieren.
+Microsoft Search verwendet intelligente Rangfolgealgorithmen, um Ergebniskarten basierend auf Relevanz anzufordern.
 
   
 

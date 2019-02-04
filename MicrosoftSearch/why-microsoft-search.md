@@ -1,5 +1,5 @@
 ---
-title: Warum Microsoft suchen
+title: Vorteile von Microsoft Search
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,52 +13,52 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 38569f03-db18-49ab-96ef-213a1f410935
-description: Hier erfahren Sie, warum Microsoft Search intelligent Unternehmenssuche für moderne Arbeitsplatz ist.
+description: Erfahren Sie, warum es sich bei Microsoft Search um eine intelligente Unternehmenssuche für den modernen Arbeitsplatz handelt.
 ms.openlocfilehash: f00622643aac867a83614fe613f8c8ef4bdb116b
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612382"
 ---
-# <a name="why-microsoft-search"></a>Warum Microsoft suchen
+# <a name="why-microsoft-search"></a>Vorteile von Microsoft Search
 
-Transformieren Sie Weise Personen in Ihrer Organisation suchen nach Informationen mit Microsoft Search. 
+Mit Microsoft Search können Sie die Art und Weise verändern, wie Personen in Ihrer Organisation nach Informationen suchen. 
   
-Diese Suche in Unternehmen bemerken erhöht Produktivität und spart Zeit durch die Bereitstellung von Relevantere Suchergebnisse für den Arbeitsbereich. Microsoft Search ruft sichere Informationen aus Ihrem Unternehmen, Schule oder Organisation – wie Dateien, Unternehmensdaten, Websites und Personen Info – sowie die Ergebnisse der öffentlichen Website, und zeigt diese in einer einzelnen wünschen.
+Diese Oberfläche für Unternehmenssuche steigert die Produktivität und spart Zeit, indem relevantere Suchergebnisse für den Arbeitsplatz bereitgestellt werden. Microsoft Search ruft Informationen von Ihrem Unternehmen, Ihrer Schule oder Ihrer Organisation sicher ab, z. B. Dateien, Unternehmensdaten, Personeninformationen und Websites. Außerdem werden Webergebnisse abgerufen und in einer einzigen Oberfläche angezeigt.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2EWQN?autoplay=false]
   
-## <a name="save-time-with-intelligent-search"></a>Sparen Sie Zeit mit intelligente Suche
+## <a name="save-time-with-intelligent-search"></a>Zeit sparen mit der intelligenten Suche
 
-Microsoft Search nutzt AI kontextbezogene, ohne Grenzen angeben und relevante Ergebnisse, um die beste Suchergebnisse aus Ihrer Organisation und das Web in einer einzelnen Erfahrung zu bringen.
+Microsoft Search nutzt künstliche Intelligenz, um kontextbezogene, unbegrenzte und relevante Suchergebnisse bereitzustellen, sodass Sie die besten Suchergebnisse von Ihrer Organisation und aus dem Web in einer einzigen Oberfläche erhalten.
   
-## <a name="get-enterprise-grade-protection"></a>Holen Sie sich Unternehmensklasse Schutz
+## <a name="get-enterprise-grade-protection"></a>Schutz auf Unternehmensniveau
 
-Microsoft Search erfordert Azure Active Directory-Authentifizierung in der Cloud vertrauenswürdige Ergebnisse den Zugriff auf. Authentifizierte Benutzer finden Sie nur auf Inhalte zugreifen kann. Suchabfragen sind Aufhebung der identifizierten und Protokolle werden getrennt von öffentlichen Bing Search-Datenverkehr. Diese Schutzebene ist nicht verfügbar an einer beliebigen Stelle else in der Branche.
+Microsoft Search erfordert die Azure Active Directory-Authentifizierung, um auf Ergebnisse aus der vertrauenswürdigen Cloud zuzugreifen. Authentifizierte Benutzer können nur Inhalte anzeigen, auf die sie zugreifen können. Aus Suchabfragen wird die persönliche Identifikation der Daten entfernt, und Protokolle werden vom öffentlichen Bing-Suchdatenverkehr getrennt. Diese Schutzstufe ist nirgendwo sonst in der Branche verfügbar.
   
-## <a name="easy-to-administer-and-available-everywhere"></a>Einfach zu verwaltende und verfügbaren überall
+## <a name="easy-to-administer-and-available-everywhere"></a>Einfaches Verwalten, überall verfügbar
 
-Bereitstellen von Microsoft Search ist einfach – gerade aus dem Microsoft 365 Administrationscenter zu aktivieren und Anpassen der Einstellungen, einschließlich Ihr Logo, Name, Farbe und vieles mehr. Autorisierte Benutzer können ihn auf jedem Gerät aufrufen, unmittelbar nach der Anmeldung an Bing.
+Die Bereitstellung von Microsoft Search ist einfach: Aktivieren Sie es einfach im Microsoft 365 Admin Center, und passen Sie Einstellungen wie Logo, Name, Farbe usw. an. Autorisierte Benutzer können auf jedem Gerät darauf zugreifen, indem sie sich einfach bei Bing anmelden.
   
-## <a name="one-place-to-search-across-office-365-apps"></a>Ein Standort für apps für Office 365 zu durchsuchen
+## <a name="one-place-to-search-across-office-365-apps"></a>Durchsuchen von Office 365-Apps von einem zentralen Ort aus
 
-Microsoft Search vereint Ergebnisse aus verschiedenen Datenquellen in Office 365, SharePoint, einschließlich OneDrive für Unternehmen, Teams, Yammer, Gruppen und vieles mehr. Suchen von Arbeit relevante Ergebnisse ist so einfach wie eine Suche.
+Microsoft Search vereint Ergebnisse aus verschiedenen Datenquellen in Office 365, einschließlich SharePoint, OneDrive for Business, Teams, Yammer, Groups und mehr. Das Auffinden relevanter Arbeitsergebnisse ist ein simpler Suchvorgang.
   
-## <a name="share-authoritative-information-and-answer-questions"></a>Freigeben von autorisierenden Informationen und Antwort Fragen
+## <a name="share-authoritative-information-and-answer-questions"></a>Freigeben von autorisierenden Informationen und Beantworten von Fragen
 
-Geben Sie die Informationen und die Benutzer zum Ausführen von Aufgaben, wie Richtlinien, Vorteile, Ressourcen, Tools und mehr in Arbeit Ergebnisse müssen Antworten. Sie können auch bestimmte Gruppen, wie neue Mitarbeiter oder Remotemitarbeiter Ziel.
+Geben Sie Ihren Benutzern in Arbeitsergebnissen die Informationen und Antworten, die sie benötigen um Aufgaben abzuschließen, z. B. Richtlinien, Vorteile, Ressourcen, Tools usw. Sie können auch auf bestimmte Gruppen abzielen, z. B. neu eingestellte Mitarbeiter oder Remote-Mitarbeiter.
   
-## <a name="find-shared-files"></a>Hier finden Sie gemeinsam genutzte Dateien
+## <a name="find-shared-files"></a>Suchen von freigegebenen Dateien
 
-Microsoft Search verwendet erweiterte Abfrage an, die Suche nach freigegebenen Dokumenten und Dateien einfache verstehen. Hier finden Sie Dokumente, denen Sie zusammenarbeiten auf und haben Sie Zugriff auf Dateien. 
+Für Microsoft Search sind fortgeschrittene Kenntnisse von Abfragen erforderlich, damit das Suchen von freigegebenen Dokumenten und Dateien einfach ist. Suchen Sie Dokumente, an denen Sie mit Kollegen zusammenarbeiten, und Dateien, auf die Sie Zugriff haben. 
   
-## <a name="complete-tasks-faster"></a>Ausführen von Aufgaben schneller
+## <a name="complete-tasks-faster"></a>Schnelleres Erledigen von Aufgaben
 
-Integrieren von PowerApps in Ihre Inhalte nach Beendigung der Aufgabe in Arbeit Ergebnisse zu aktivieren.
+Integrieren Sie PowerApps in Ihre Inhalte, um das Abschließen von Aufgaben innerhalb von Arbeitsergebnissen zu ermöglichen.
   
-## <a name="reduce-support-costs"></a>Supportkosten senken
+## <a name="reduce-support-costs"></a>Niedrigere Supportkosten
 
-Kosten zu senken und Benutzer eigenständiger machen, indem Sie Einbetten von benutzerdefinierten Antworten auf häufig gestellte Fragen und die Notwendigkeit, wenden Sie sich an das Helpdesk, IT-Abteilung oder Supportteam minimiert.
+Reduzieren Sie Kosten, und sorgen Sie dafür, dass Benutzer sich selbst helfen können, indem Sie benutzerdefinierte Antworten auf häufige Fragen einbetten, sodass keine Notwendigkeit für die Benutzer besteht, sich an das Helpdesk, die IT-Abteilung oder an das Supportteam zu wenden.
   
 

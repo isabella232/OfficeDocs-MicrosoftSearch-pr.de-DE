@@ -1,5 +1,5 @@
 ---
-title: Kurzübersicht für Microsoft Search einrichten
+title: Schnelleinrichtung für Microsoft Search
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,75 +13,75 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: bc3d1d2a-a4d9-4a02-9d7d-deb492e79cd0
-description: Informationen Sie zu vier leicht erforderlichen Schritte zum Aktivieren und Verwenden von Microsoft Search.
+description: Erfahren Sie mehr über die vier einfachen Schritte zum Aktivieren und Verwenden von Microsoft Search.
 ms.openlocfilehash: fb5677a0acc896e593eae42c35111e0f744ef45d
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612352"
 ---
-# <a name="quick-set-up-for-microsoft-search"></a>Kurzübersicht für Microsoft Search einrichten
+# <a name="quick-set-up-for-microsoft-search"></a>Schnelleinrichtung für Microsoft Search
 
-Sparen Sie Zeit wider, da es die beste aus dem Web und arbeiten Sie, um Ihre Organisation.
+Sparen Sie Zeit, indem Sie die Vorteile des Webs und der Arbeiten in Ihrer Organisation kombinieren.
   
-## <a name="step-1-turn-on-microsoft-search"></a>Schritt 1: Aktivieren Sie Microsoft Search
+## <a name="step-1-turn-on-microsoft-search"></a>Schritt 1: Aktivieren von Microsoft Search
 
-1. Wechseln Sie im Navigationsmenü im Microsoft 365 Administrationscenter auf **Einstellungen** \> **Services &amp; -add-ins**
+1. Wechseln Sie im Navigationsmenü im Microsoft 365 Admin Center zu **Einstellungen** \> **Dienste &amp;Add-Ins**.
     
-2. Klicken Sie auf **Microsoft Search** -Dienst 
+2. Klicken Sie auf den Dienst **Microsoft Search**. 
     
-3. Aktivieren Sie im rechten Bereich auf **Microsoft Search aktivieren**
+3. Aktivieren Sie im rechten Bereich **Microsoft Search aktivieren**.
     
 4. Klicken Sie auf **Speichern**.
     
-5. Klicken Sie auf **Erste Schritte**
+5. Klicken Sie auf **Erste Schritte**.
   
-Dadurch gelangen Sie zur Suche Verwaltungsportal von Microsoft für die Durchführung der verbleibenden Installationsschritte.
+Dadurch gelangen Sie zum Microsoft Search-Verwaltungsportal, wo Sie die verbleibenden Schritte der Einrichtung abschließen können.
     
-## <a name="step-2-enable-connected-services"></a>Schritt 2: Aktivieren von verbundenen Dienste
+## <a name="step-2-enable-connected-services"></a>Schritt 2: Aktivieren der verbundenen Dienste
 
-Rufen Sie eine vollständige Enterprise-Suchfunktion, die Informationen über verschiedene Microsoft-Dienste curates.
+Erhalten Sie eine vollständige Oberfläche für Unternehmenssuche, die Informationen über unterschiedliche Microsoft-Dienste hinweg kombiniert.
   
-1. Wechseln Sie zu dem [Verwaltungsportal von Microsoft Search](https://www.bingforbusiness.com/admin)
+1. Wechseln zum [Microsoft Search-Verwaltungsportal](https://www.bingforbusiness.com/admin).
     
-2. Klicken Sie im Navigationsbereich auf **verbundenen Dienste**
+2. Klicken Sie im Navigationsbereich auf **Verbundene Dienste**.
     
-    Informationen über die Inhalte jeder verbundenen Dienst zugeordnet ist finden Sie unter [verbundenen Dienste](connected-services.md).
+    Informationen zu den mit den einzelnen verbundenen Diensten verknüpften Inhalten finden Sie unter [Verbundene Dienste](connected-services.md).
     
-3. Klicken Sie für jeden Dienst, den Sie eine Verbindung herstellen möchten **auf**
+3. Für jeden Dienst, den Sie verbinden möchten, klicken Sie auf **Ein**.
     
-    Personensuche kann so aktivieren Sie bis zu 48 Stunden dauern.
+    Die Aktivierung der Personensuche kann bis zu 48 Stunden dauern.
     
-## <a name="step-3-customize-content-settings"></a>Schritt 3: Anpassen von Einstellungen für Inhalte
+## <a name="step-3-customize-content-settings"></a>Schritt 3: Anpassen von Inhaltseinstellungen
 
-Einstellungen für Inhalte sicherzustellen eine vertraute Aussehen und Verhalten für Ihre Arbeit Ergebnisse. 
+Durch Inhaltseinstellungen wird ein vertrautes Aussehen und Verhalten für Ihre Arbeitsergebnisse sichergestellt. 
   
-1. Klicken Sie im Navigationsbereich auf **Einstellungen für Inhalte**
+1. Klicken Sie im Navigationsbereich auf **Inhaltseinstellungen**.
     
-2. Ausführliche Informationen zu jeder Einstellung finden Sie unter [Einstellungen für Inhalte](content-settings.md)
+2. Weitere Informationen zu jeder Einstellung finden Sie unter [Inhaltseinstellungen](content-settings.md).
     
-## <a name="step-4-import-best-bets-as-suggested-bookmarks"></a>Schritt 4: Import besten Suchergebnissen als vorgeschlagenen Lesezeichen
+## <a name="step-4-import-best-bets-as-suggested-bookmarks"></a>Schritt 4: Importieren der besten Suchergebnisse als vorgeschlagene Lesezeichen
 
-Wenn Ihre Organisation beste Suchergebnisse in SharePoint eingerichtet hat, können Sie problemlos in Microsoft Search importieren. Das Importtool unterstützt derzeit sharepoint.com und sharepoint.com/search Websitesammlungen. 
+Wenn Ihre Organisation die besten Suchergebnisse in SharePoint eingerichtet hat, können Sie diese ganz einfach in Microsoft Search importieren. Das Importtool unterstützt derzeit sharepoint.com- und sharepoint.com/search-Websitesammlungen. 
   
-1. Klicken Sie auf **Extras** , klicken Sie im Navigationsbereich
+1. Klicken Sie im Navigationsbereich auf **Tools**.
     
-2. Der Import SharePoint heraufgestuft Ergebnis Abfrageregeln als Lesezeichen Tool klicken Sie auf **Importieren**
+2. Klicken Sie für das Tool zum Importieren der SharePoint-Abfrageregeln für höhergestufte Ergebnisse als Lesezeichen auf **Importieren**.
     
-    Beim Importieren erscheint Status geplant. Die erforderliche Zeit variiert basierend auf der Anzahl von besten Suchergebnissen, die Sie importieren.
+    Während des Importierens wird der Status „Geplant“ angezeigt. Die erforderliche Zeit basiert auf der Anzahl von besten Suchergebnissen, die Sie importieren.
     
-3. Genaue Informationen hierzu finden Sie unter [Portal-Verwaltungstools](admin-portal-tools.md)
+3. Ausführliche Informationen hierzu finden Sie unter [Tools des Verwaltungsportals](admin-portal-tools.md).
     
-Nachdem Sie diese schnelles Setup und [Hinzufügen von Benutzern](add-users.md)abgeschlossen haben, können sie zu Bing.com und suchen Sie nach Arbeit Ergebnisse geleitet. 
+Nachdem Sie diese Schnelleinrichtung abgeschlossen und [Benutzer hinzugefügt](add-users.md) haben, können diese zu Bing.com wechseln und nach Arbeitsergebnissen suchen. 
   
-## <a name="how-do-i-get-to-the-microsoft-search-admin-portal"></a>Wie erhalte ich Microsoft Search Admin-Portal?
+## <a name="how-do-i-get-to-the-microsoft-search-admin-portal"></a>Wie kann ich zum Microsoft Search-Verwaltungsportal wechseln?
 
-So können Sie jederzeit die Admin-Portal zu erhalten:
+So können Sie jederzeit das Verwaltungsportal aufrufen:
   
-- Wechseln Sie zur Seite [Erkunden Sie Microsoft Search](https://www.bing.com/business/explore) , und klicken Sie auf **Admin anmelden**
+- Gehen Sie zur Seite [Erkunden von Microsoft Search](https://www.bing.com/business/explore), und klicken Sie auf **Administratoranmeldung**.
     
-- Wechseln Sie in der Microsoft-365-Verwaltungskonsole im linken Bereich zu **Admin zentriert** \> **Microsoft Search**
+- Wechseln Sie im Microsoft 365 Admin Center im linken Bereich zu **Admin Center** \> **Microsoft Search**.
 
   
 

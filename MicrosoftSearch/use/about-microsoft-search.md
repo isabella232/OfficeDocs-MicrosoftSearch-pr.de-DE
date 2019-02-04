@@ -1,5 +1,5 @@
 ---
-title: Informationen zum Microsoft-Suche
+title: Informationen zu Microsoft Search
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -12,57 +12,57 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: b453e6f0-10cf-4384-9914-241f425cd5f9
-description: Übersicht über alle Informationen, die Sie feststellen können, wenn Sie Microsoft Search verwenden
+description: Bietet eine Übersicht über alle Informationen, die Sie bei Verwendung von Microsoft Search finden können.
 ms.openlocfilehash: f5a9656144efad8c6e146f6654ebc9f69f1b1843
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612372"
 ---
-# <a name="about-microsoft-search"></a>Informationen zum Microsoft-Suche
+# <a name="about-microsoft-search"></a>Informationen zu Microsoft Search
 
-Microsoft Search mühelos bringt Suche Arbeit und das Web eine Oberfläche zusammen. Verwenden Sie Microsoft Search für eine einfache, schnelle, leistungsstarke und sicherer Möglichkeit zum Abrufen von Informationen zur richtigen Zeit in einem beliebigen Browser und auf jedem Gerät.
+Microsoft Search vereint mühelos Suchvorgänge im Web und bei der Arbeit in einer Oberfläche. Verwenden Sie Microsoft Search für eine einfache, schnelle, leistungsstarke und sichere Möglichkeit, um die richtigen Informationen zum richtigen Zeitpunkt in einem beliebigen Browser und auf einem beliebigen Gerät zu erhalten.
   
-Gibt an, ob Sie suchen für Personen, Dateien, Diagramme, interne Websites und Ressourcen oder Antworten auf häufig gestellte Fragen, können Sie Microsoft Search in der gesamten Ihres Arbeitstages Antworten schneller, produktiver verwenden und Intelligenter arbeiten. Um Arbeit Ergebnisse zu erhalten, wechseln Sie zur [bing.com/business](https://www.bing.com/business), melden Sie sich mit Ihrer Arbeit oder Schule Konto und Suche. 
+Unabhängig davon, ob Sie nach Personen, Dateien, Organigrammen, internen Websites und Ressourcen oder Antworten auf allgemeine Fragen suchen, können Sie Microsoft Search über Ihren gesamten Arbeitstag verwenden, um schneller Antworten zu erhalten, produktiver zu arbeiten und sich die Arbeit besser einzuteilen. Um Arbeitsergebnisse zu erhalten, gehen Sie einfach zu [bing.com/business](https://www.bing.com/business), melden Sie sich mit Ihrem Geschäfts- oder Schulkonto an, und suchen Sie. 
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2AA2W?autoplay=false]
 
-## <a name="what-you-can-find"></a>Sie suchen können
+## <a name="what-you-can-find"></a>Was Sie suchen können
   
-Verwenden Sie Microsoft Search suchen:
+Verwenden Sie Microsoft Search, um Folgendes zu suchen:
   
-- [People](find-people-and-groups.md)
+- [Personen](find-people-and-groups.md)
     
-    Hier finden Sie auf einfache Weise Kontaktinformationen, anstehende Besprechungen gemeinsam haben, Org Chart Details, Gruppenmitgliedschaften und andere Dateien
+    Suchen Sie Kontaktinformationen, bevorstehende Besprechungen, die Sie zusammen haben, Details zu Organigrammen, Gruppenmitgliedschaften und andere Dateien.
     
 - [Gruppen](find-people-and-groups.md)
     
-    Suchen Sie nach dessen Name oder die Mitglieder eine Gruppe, Gruppen, die eine Person gehört, untersuchen und ihre freigegebenen Inhalt durchsuchen
+    Suchen Sie eine Gruppe anhand ihres Namens oder ihrer Mitglieder, erkunden Sie Gruppen, denen eine Person angehört, und durchsuchen Sie deren freigegebene Inhalte.
     
-- [Ressourcen und tools](find-resources-tools-and-more.md)
+- [Ressourcen und Tools](find-resources-tools-and-more.md)
     
-    Suchen Sie auf einfache Weise internen Ressourcen und tools
+    Suchen Sie ganz einfach interne Ressourcen, Tools und vieles mehr.
     
 - [SharePoint-Websites](find-sharepoint-sites.md)
     
-    Hier finden Sie Ihre SharePoint-Websites oder Gruppen oder Mitarbeiter, die Ihnen die Berechtigung zum Anzeigen erstellten SharePoint-Websites
+    Suchen Sie nach Ihren SharePoint-Websites oder SharePoint-Websites, die von Gruppen oder Mitarbeitern erstellt wurden und für die Sie die Berechtigung zum Anzeigen haben.
     
 - [Dateien](find-files.md)
     
-    Ihre eigenen Dateien schnell zu finden, oder Inhalte erstellt von Mitarbeitern, die Ihnen die Berechtigung zum Anzeigen oder bearbeiten
+    Suchen Sie schnell nach eigenen Dateien oder nach Inhalten, die von Mitarbeitern erstellt wurden und für die Sie die Berechtigung zum Anzeigen oder Bearbeiten haben.
     
 - [Unterhaltungen](find-conversations.md)
     
-    Hier finden Sie Ihre private Microsoft-Teams oder Microsoft Yammer Unterhaltungen oder Unterhaltungen zwischen Mitarbeitern, die Berechtigung zum Anzeigen
+    Suchen Sie Ihre privaten Microsoft Teams- oder Microsoft Yammer-Unterhaltungen oder Unterhaltungen zwischen Mitarbeitern, für die Sie die Berechtigung zum Anzeigen haben.
     
-- [Speicherorte](find-locations.md)
+- [Standorte](find-locations.md)
     
-    Wegweiser für Suchergebnisse und Adressen für Gebäude, Büros, Hochschulen und mehr, einfach abrufen erfahren Sie, wie und finden Sie unter Neuigkeiten in der Nähe    
+    Suchen Sie Kartenergebnisse und Adressen für Gebäude, Büros, Campus usw., erhalten Sie Wegbeschreibungen, und sehen Sie sich an, was sich in der Nähe befindet.    
     
-Sie können nur sehen, arbeiten Sie Ergebnisse, wenn Sie mit Ihrem Konto arbeiten oder Schule Bing angemeldet sind. Dies ist dasselbe Konto, mit denen Sie sich bei Outlook auf dem Web, SharePoint und anderen apps für Office 365 anmelden. 
+Sie können nur Arbeitsergebnisse anzeigen, wenn Sie mit Ihrem Geschäfts- oder Schulkonto bei Bing angemeldet sind. Dies ist dasselbe Konto, mit dem Sie sich bei Outlook im Web, SharePoint und anderen Office 365-Apps anmelden. 
   
-Informationen und Dateien, die Ihnen über die Berechtigung zum finden Sie unter zurück Microsoft Search nur. Sie sind möglicherweise berechtigt, da Sie die Dateien oder Informationen erstellt, sie mit Ihnen freigegeben wurde oder mit einer größeren Gruppe, die Sie enthält, oder bei Ordner oder Speicherorte, die Ihnen die Berechtigung für den Zugriff auf gespeichert sind.
+Microsoft Search gibt nur Informationen und Dateien zurück, für die Sie die Berechtigung zum Anzeigen besitzen. Diese Berechtigung können Sie haben, weil Sie die Dateien oder Informationen erstellt haben, weil diese für Sie oder für eine größere Gruppe freigegeben wurden, der Sie angehören, oder weil diese in Ordnern oder an Speicherorten gespeichert sind, auf die Sie Zugriff haben.
 
   
 

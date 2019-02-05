@@ -13,131 +13,131 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: bb9d90b6-6c86-4b19-9235-3bd9b19826ab
-description: Bereitstellen Sie Qualität Inhalt, ohne zusätzliche Ressourcen bei der Verwendung von Microsoft Search
+description: Bereitstellen hochwertige Inhalte ohne zusätzliche Ressourcen bei Verwendung von Microsoft Search
 ms.openlocfilehash: 898ba99ebf4751c47da96b23d6cb9bac058f6ffd
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612481"
 ---
 # <a name="plan-your-content"></a>Planen der Inhalte
 
-Vor der Planung Ihrer Inhalte, wird die verstehen, was Sie Microsoft Search hinzufügen können hilfreich sein:
+Bevor Sie Ihre Inhalte planen, ist es hilfreich zu verstehen, was Sie Microsoft Search hinzufügen können:
   
 - Lesezeichen
     
-    Erteilen Sie schnell den Benutzern einen Link zu einer internen Website, eine Seite oder ein Tool, in dem sie weitere Informationen erhalten.
+    Bieten Sie Benutzern schnell einen Link zu einer internen Website, einer Seite oder einem Tool, wo sie weitere Informationen erhalten können.
     
-- Q&As
+- Fragen und Antworten (F&As)
     
-    Bereitstellen einer Antwort oder Info Benutzern auch einen optionalen Link. Im Idealfall umfasst eine Q&A alle Details, die Ihre Benutzer suchen, sodass sie nicht auf die Quelle wechseln müssen. Sie können Ihrer Inhalte Q&A formatieren und Bilder, Listen und Tabellen enthalten.
+    Stellen Sie eine Antwort oder Informationen für Benutzer bereit, einschließlich eines optionalen Links. Im Idealfall umfasst ein F&A alle Details, die Ihre Benutzer suchen, sodass sie nicht zur Quelle wechseln müssen. Sie können Ihre F&A-Inhalte formatieren und Bilder, Listen und Tabellen einschließen.
     
-## <a name="identify-information-your-users-need"></a>Identifizieren von Informationen, die Ihre Benutzer benötigen
+## <a name="identify-information-your-users-need"></a>Identifizieren der Informationen, die Ihre Benutzer benötigen
 
-Berücksichtigen Sie diese Ideen:
+Ziehen Sie Folgendes in Erwägung:
   
-- Als Lesezeichen [Import SharePoint Höhergestufte Ergebnisse und Häufigste Suchvorgänge](import-sharepoint-promoted-results-and-top-queries.md) 
+- [Importieren von in SharePoint höhergestuften Ergebnissen und wichtigsten Abfragen](import-sharepoint-promoted-results-and-top-queries.md) als Lesezeichen 
     
-- Bestimmen von Websites und Seiten, die die meiste Datenverkehr abrufen meldet sich mithilfe einer Intranet-Suche
+- Bestimmen der Websites und Seiten mit dem meisten Datenverkehr anhand von Intranetsuchprotokollen
     
-- Bestimmen von apps, Websites und Tools, mit die auf täglich oder wöchentlich verwendet werden
+- Ermitteln von Apps, Websites und Tools, die täglich oder wöchentlich verwendet werden
     
-- Sammeln von Informationen über wichtige mitarbeitervergütungen und direkte Verknüpfung zu diesen
+- Sammeln von Informationen über wichtige Mitarbeitervorteile und direkter Link zu diesen
     
-- Hier finden Sie Richtlinien und Prozessen Benutzer berücksichtigen müssen
+- Suchen nach Richtlinien und Prozessen, die Benutzer kennen müssen
     
-- Entscheiden Sie, wer und wie Benutzer kontaktieren des Supports sollten
+- Entscheiden, mit wem und wie Benutzer den Support kontaktieren sollten
     
-- Abrufen von Informationen, die entweder saisonbedingt regelmäßig, erforderlich ist oder basierend auf Business Zyklen
+- Abrufen von Informationen, die entweder saisonbedingt oder basierend auf Geschäftszyklen regelmäßig benötigt werden
   
-Beispielsweise Personen Nachrichtensymbol Tools zum Adressbuch Zeit deaktiviert oder vierteljährlich finanzielle updates
+Beispiel: Personen suchen nach Tools, um Abwesenheitszeiten einzutragen, oder vierteljährliche finanzielle Updates
     
-- Sammeln von Richtlinien für regionale oder mobilen Benutzern wie Vorteile, die variieren nach Standort je
+- Sammeln von Richtlinien für regionale oder mobile Benutzer, wie z. B. Vorteile, die je nach Standort varrieren
     
-- Bestimmen der interne Websites und Informationen für häufig verwendete Web suchen
+- Bestimmen interner Websites und Informationen zu allgemeinen Suchvorgängen im Web
   
-Beispielsweise Datenverkehr discounts Wetter, öffentliche während der Übertragung Informationen von corporate Partnern und Integrität und Eignung Programme verfügbar
+Beispiel: Verkehr, Informationen zu öffentlichen Verkehrsmitteln, lokale Wettervorhersagen, Rabatte von Firmenpartnern sowie Gesundheits- und Fitnessprogramme
     
-- Suchen nach Informationen über das Unternehmen gesponserte Ereignisse, Konferenzen oder eine Rücknahme vornimmt
+- Suchen nach Informationen zu vom Unternehmen geförderten Veranstaltungen, Konferenzen oder Erholungsangeboten
     
-- Gemeinsame Forschung IT-, Personal- und Probleme und häufig gestellte Fragen und Antworten zu unterstützen
+- Erforschen allgemeiner Probleme bei IT, Personalwesen und Support sowie häufig gestellter Fragen und der Antworten darauf
     
-## <a name="build-a-support-team"></a>Erstellen Sie ein Supportteam
+## <a name="build-a-support-team"></a>Aufbau eines Supportteams
 
- **Nutzen von Fachleuten**
+ **Nutzen von Experten für bestimmte Themen**
   
-Erstellen Sie ein Supportteam, die Experten HR, Support, Sales und andere wichtige Bereiche enthält. Damit Ihre KMU direkt Inhalte beitragen können, als Editoren dem Verwaltungsportal hinzufügen. Dadurch können Sie die Menge der verfügbaren Inhalte ohne zusätzliche Personalressourcen skalieren.
+Stellen Sie ein Supportteam zusammen, das Experten aus Personalwesen, Support, Vertrieb und anderen wichtigen Bereichen enthält. Damit Ihre Experten Inhalte direkt beitragen können, fügen Sie sie als Bearbeiter im Verwaltungsportal hinzu. Dadurch können Sie die Menge der verfügbaren Inhalte skalieren, ohne dass zusätzliche Personalressourcen benötigt werden.
   
- **Ihre Benutzer umfassen**
+ **Einbeziehen Ihrer Benutzer**
   
-Im Zusammenhang mit Benutzern in die Erstellung von Inhalten zu empfiehlt Microsoft Search verwenden. Bitten Sie ihn, verwenden Sie den Feedbacklink in Arbeit Ergebnisse oder die Suche Erweiterung der Rand oder Chrome Lesezeichen und Q&As vorgeschlagen werden sollten. Zusätzlich zum Vorschlagen von Inhalten, können Fehler wie fehlerhaft oder ungültig Links und andere Feedback senden.
+Wenn Benutzer in den Prozess der Inhaltserstellung einbezogen werden, ermutigt sie dies, Microsoft Search zu nutzen. Bitten Sie sie, über den Feedbacklink in Arbeitsergebnissen oder der Edge- oder Chrome-Sucherweiterung Lesezeichen und Fragen und Antworten vorzuschlagen. Zusätzlich zum Vorschlagen von Inhalten können sie Fehler wie fehlerhafte oder ungültige Links melden und sonstiges Feedback liefern.
   
-## <a name="create-high-quality-content"></a>Erstellen Sie Inhalte mit hoher Qualität
+## <a name="create-high-quality-content"></a>Erstellen von Inhalten hoher Qualität
 
  **Titel und Beschreibungen**
   
-Personen verwenden Lesezeichen oder Q&A Titel und Beschreibungen um zu bestimmen, ob sie ihre Suche beabsichtigt beheben, oder wenn sie benötigen, um eine andere Suche testen. Titel und Beschreibungen sollte den Core Zweck des Ergebnisses widerspiegeln.
+Benutzer verwenden Lesezeichen oder Titel und Beschreibungen von Fragen und Antworten, um zu ermitteln, ob sie für ihre Suchabsicht geeignet sind oder ob sie eine andere Suche ausprobieren müssen. Titel und Beschreibungen sollten den grundlegenden Zweck des Ergebnisses widerspiegeln.
   
-Ein gutes Beispiel eines Titels möglicherweise 'Sozialpädagogischer Vorteile' mit einer Beschreibung des "Informationen zu Vorteile zu untergeordneten Vorsicht Kosten bezahlen." So weiß Benutzer nach 'Childcare suchen' monetäre Supportvorteile verfügbar sind und bietet ihnen einen Link, um mehr zu erfahren.
+Ein gutes Beispiel für einen Titel könnte „Vorteile der Kinderbetreuung“ mit der Beschreibung „Informationen zu Vergütungen als Hilfe bei der Bezahlung von Kinderbetreuungskosten“ sein. So werden Benutzer, die nach „Kinderbetreuung“ suchen, informiert, dass finanzielle Unterstützungsleistungen verfügbar sind. Außerdem wird ein Link zu weiteren Informationen bereitgestellt.
   
-Q&A Titel sollte eine Frage stellen, und die Beschreibung eine kurze, aber nützliche Antwort bereitstellen sollten. Wenn Sie zusätzliche Informationen, die wären hilfreich, verknüpfen Sie diese vorhanden ist.
+In F&A-Titeln sollte eine Frage gestellt werden, und die Beschreibung sollte eine kurze, aber nützliche Antwort liefern. Wenn es zusätzliche hilfreiche Informationen gibt, verlinken Sie dorthin.
   
  **Schlüsselwörter**
   
-Schlüsselwörter werden die Begriffe Personen in Ihrer Organisation suchen nach auf Bing Arbeit Ergebnisse zu erkennen. Stellen Sie Ihre Textmarken und Q&As einfacher zu finden, indem Sie den richtigen Schlüsselwörtern. Um diese Schlüsselwörter zu identifizieren, starten Sie, indem diese Fragen beantworten:
+Schlüsselwörter sind die Begriffe, nach denen Personen in Ihrer Organisation in Bing suchen, um Arbeitsergebnisse zu ermitteln. Sorgen Sie dafür, dass Ihre Lesezeichen und Fragen und Antworten leichter gefunden werden, indem Sie die richtigen Schlüsselwörter einbeziehen. Beantworten Sie zur Identifizierung dieser Schlüsselwörter zunächst die folgenden Fragen:
   
-- Welche Suchbegriffe werden verwendet, um die Informationen zu suchen, die Sie angegeben haben?
+- Mit welchen Suchbegriffen wird nach den Informationen gesucht, die Sie identifiziert haben?
     
-    Nutzen Sie alle vorhandenen Taxonomie Ihrer Organisation verwendet, sowie verwandte Variationen, Akronyme, Themen und Themen wird.
+    Nutzen Sie ggf. die vorhandene Taxonomie in Ihrer Organisation sowie zugehörige Varianten, Akronyme und Themen.
     
-- Welche anderen Variationen oder Wörter können Personen zum sprechen diese Informationen verwenden?
+- Welche anderen Varianten oder Wörter verwenden Personen, um über diese Informationen zu sprechen?
     
-    Nutzen Sie das Supportteam, um diese Schlüsselwörter zu bestimmen.
+    Wenden Sie sich an Ihr Supportteam, um diese Schlüsselwörter zu ermitteln.
     
-Wenn Sie ein Ergebnis enthält, die mit ein Tool zum Senden von Urlaub Anforderungen erstellen, sind Schlüsselwörter wie 'Urlaub' und 'Urlaub anfordern' beispielsweise eine gute Optionen zum einschließen. Sie können auch feststellen, dass Personen in Ihrer Organisation beschreiben, oder suchen Sie nach Urlaub-bezogene Informationen "Feiertag" oder "deaktiviert" time"verwenden. Hinzufügen von Stichwörtern wie 'Feiertag' ',' 'Feiertag anfordern' und 'Anforderungszeit deaktiviert' wie Schlüsselwörter vereinfacht das Ergebnis nach weiteren Ihrer Benutzer zu erkennen.
+Wenn Sie beispielsweise ein Ergebnis erstellen, das zu einem Tool zum Einreichen von Urlaubsanträgen verlinkt, sind Schlüsselwörter wie „Urlaub“ und „Urlaubsantrag einreichen“ gute Optionen, die Sie aufnehmen sollten. Möglicherweise stellen Sie fest, dass Personen in Ihrer Organisation „Ferien“ oder „arbeitsfreie Zeit“ verwenden, um urlaubsbezogene Informationen zu beschreiben oder danach zu suchen. Wenn Schlüsselwörter wie „Ferien“, „arbeitsfreie Zeit“, „Antrag für Ferien einreichen“ oder „Urlaubsplanung“ hinzugefügt werden, können mehr Benutzer das Ergebnis einfacher finden.
   
  **Reservierte Schlüsselwörter**
   
-Microsoft Search bestimmt, welche Textmarken als oberste Arbeit Ergebnisse basierend auf der Verwendung angezeigt werden. Wenn Sie ein bestimmtes Ergebnis als erstes Ergebnis angezeigt werden sollen, verwenden Sie reservierte Schlüsselwörter. Ein reserviertes Schlüsselwort ist ein eindeutiger Wort oder Ausdruck, der ein Lesezeichen oder Q&A Ergebnis identifiziert. Wenn ein Benutzer ein reserviertes Schlüsselwort in das Suchfeld eingibt, wird dieser Textmarke oder Q&A des ersten Ergebnisses sein, die angezeigt wird. Reserviert Schlüsselwörter sparsame zum Zulassen von Microsoft Search, erfahren, basierend auf Verwendung.
+Microsoft Search bestimmt auf der Grundlage ihrer Nutzung, welche Lesezeichen als die wichtigsten Arbeitsergebnisse angezeigt werden sollen. Wenn ein bestimmtes Ergebnis als Topergebnis angezeigt werden soll, verwenden Sie reservierte Schlüsselwörter. Ein reserviertes Schlüsselwort ist ein eindeutiges Wort oder ein eindeutiger Ausdruck, das bzw. der ein Lesezeichen oder F&A-Ergebnis identifiziert. Wenn ein Benutzer im Suchfeld ein reserviertes Schlüsselwort eingibt, wird dieses Lesezeichen oder diese Frage und Antwort als erstes Ergebnis angezeigt. Verwenden Sie reservierte Schlüsselwörter nur sparsam, damit Microsoft Search auf der Grundlage ihrer Nutzung lernen kann.
   
  **Vorgeschlagene Schlüsselwörter**
   
-Erstellen einer Reihe von Schlüsselwörtern für ein Ergebnis mithilfe der automatischen Schlüsselwort Vorschläge. Diese Vorschläge basieren auf den Titel und die URL für Ihren Lesezeichen oder Q&A.
+Erstellen Sie einen anfänglichen Satz von Schlüsselwörtern für ein Ergebnis, indem Sie automatische Schlüsselwortvorschläge verwenden. Diese Vorschläge basieren auf dem Titel und der URL für Ihr Lesezeichen oder Ihre Frage und Antwort.
   
- **Gruppe Themen**
+ **Themengruppen**
   
-Wenn Sie möchten Benutzer Gruppen von verwandten Inhalten suchen, bei der Suche, versuchen Sie es mit dem gleichen Schlüsselwort für alle Textmarken und Q&As zu diesem Thema. Wenn Sie über die Prozesse und Tools, um die Änderungen des Lebenszyklus Ergebnisse hinzufügen, könnte beispielsweise ein Schlüsselwort wie 'ehe' für diese Gruppe zusammen Ergebnissen Informationen zum Aktualisieren der Vorteile, Steuerinformationen und Name und Alias Änderungen enthalten.
+Wenn Benutzer bei ihrer Suche Gruppen von verwandten Inhalten finden sollen, versuchen Sie, dasselbe Schlüsselwort für alle Lesezeichen sowie Fragen und Antworten zu diesem Thema zu verwenden. Beispiel: Wenn Sie Ergebnisse über Prozesse und Tools im Zusammenhang mit Änderungen des Familienstands hinzufügen, könnten Sie ein Schlüsselwort wie „Heirat“ einbeziehen, um Ergebnisse im Hinblick auf das Aktualisieren von Vergütungen, Steuerinformationen sowie Namens- und Aliasänderungen zu gruppieren.
   
-## <a name="test-your-content-and-search-experience"></a>Testen Sie Ihre Erfahrung Inhalte und Suche
+## <a name="test-your-content-and-search-experience"></a>Testen Ihrer Inhalts- und Sucherfahrung
 
-Nachdem Sie die Ergebnisse veröffentlicht haben, ist es wichtig, um zu überprüfen:
+Nachdem Sie Ergebnisse veröffentlicht haben, ist es wichtig, Folgendes zu überprüfen:
   
-- Die richtigen Textmarke oder Q&A wird als erstes Ergebnis
+- Das richtige Lesezeichen oder die richtige Frage und Antwort werden als Topergebnis angezeigt.
     
-- Alle zugehörigen Lesezeichen oder Q&As sind relevant.
+- Alle zugehörigen Lesezeichen oder Fragen und Antworten sind relevant.
     
-- Es sind keine unerwartete Ergebnisse enthalten
+- Es sind keine unerwarteten Ergebnisse enthalten.
     
-- Ergebnis Titel und Beschreibungen, geben Sie die Informationen und Details, die Ihre Benutzer suchen
+- Die Titel und Beschreibungen von Ergebnissen liefern die Informationen und Details, nach denen Ihre Benutzer suchen.
     
-Supportteam ist eine hervorragende Ressource zu testen und überprüfen den Inhalt, und suchen Sie wünschen.
+Ihr Supportteam ist eine wertvolle Ressource beim Testen und Überprüfen der Inhalts- und Sucherfahrung.
   
-## <a name="review-and-update-periodically"></a>Überprüfen und aktualisieren Sie in regelmäßigen Abständen
+## <a name="review-and-update-periodically"></a>Überprüfen und Aktualisieren in regelmäßigen Abständen
 
-Verwalten der Genauigkeit und Aktualität von Abfrageergebnissen ist wichtig, wenn autorisierende Informationen zu Ihrer Organisation zur Verfügung stellen. Regelmäßig, durchführen:
+Die Erhaltung der Genauigkeit und Aktualität der Ergebnisse ist wichtig, wenn Sie autorisierende Informationen für Ihre Organisation bereitstellen. Führen Sie regelmäßige Überprüfungen zu folgenden Zwecken durch:
   
-- Korrigieren oder Entfernen von URLs fehlerhaft oder ungültig
+- Beheben oder Entfernen fehlerhafter oder ungültiger URLs
     
-- Entfernen von Inhalt, die nicht mehr relevant ist
+- Entfernen von Inhalten, die nicht mehr relevant sind
     
-- Aktualisieren Sie unrichtige oder veraltet Titel und Beschreibungen, einschließlich der Tool, Site oder Team Namensänderungen
+- Aktualisieren falscher oder veralteter Titel und Beschreibungen, einschließlich Änderungen von Tool-, Website- oder Teamnamen
     
-- Überprüfen von Abfragen mit geringer Click-through-Raten und bestimmen, ob die Textmarke oder Q&A Inhalten aktualisiert werden muss
+- Überprüfen von Abfragen mit niedrigen Klickraten und Bestimmen, ob das Lesezeichen oder der F&A-Inhalt aktualisiert werden muss
     
-- Überprüfung SharePoint Online und lokalen Suchabfragen, einschließlich beliebte oder obere Abfragen aufgegeben Abfragen und keine Abfragen zu verstehen, welche Benutzer suchen und für Lücken vorhanden sind
+- Überprüfen von SharePoint Online- und lokalen Suchabfragen, einschließlich beliebter oder erster Abfragen, abgebrochener Abfragen und keiner Abfragen, um zu verstehen, wonach die Benutzer suchen und wo es Lücken gibt
     
-Um schnell Massen bearbeiten die Ergebnisse, exportieren verwenden, und importieren Features im Admin-Portal.
+Verwenden Sie zur schnellen Massenbearbeitung Ihrer Ergebnisse die Export- und Importfeatures im Verwaltungsportal.
 
   
 

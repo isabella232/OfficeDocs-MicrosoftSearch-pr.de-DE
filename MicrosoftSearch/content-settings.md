@@ -13,48 +13,48 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d1432d64-7a97-4b1b-a99f-11291814d361
-description: Hinzufügen einer Logo, Firmenname und mehr auf Ihre Microsoft Search Results arbeiten
+description: Hinzufügen eines Logos, Firmennamens und weiterer Angaben zu Ihren Microsoft Search-Arbeitsergebnissen
 ms.openlocfilehash: 1ec90c5ad10fb1c3b494ccbe3ad1cd1c6497e0fb
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612458"
 ---
 # <a name="content-settings"></a>Inhaltseinstellungen
 
-Mit Microsoft Search können Sie eine vertraute Aussehen und Verhalten für Ergebnisse sicherstellen, die von Inhaltsquellen innerhalb Ihrer Organisation, wie SharePoint, OneDrive für Unternehmen oder dem Intranet Ihres Unternehmens stammen. 
+Mit Microsoft Search können Sie ein vertrautes Aussehen und Verhalten für Ergebnisse sicherstellen, die aus Inhaltsquellen innerhalb Ihrer Organisation, wie SharePoint, OneDrive for Business oder dem Intranet Ihres Unternehmens, stammen. 
   
 - Name der Organisation
     
-    In den meisten Fällen verwendet Microsoft Search den Namen der Organisation im Microsoft 365 Administrationscenter definiert. Zum Ändern des Namens, der mit der Arbeit Suchergebnissen angezeigt wird, geben Sie einen neuen Anwendungspool. Es kann bis zu 50 Zeichen sein.
+    In den meisten Fällen verwendet Microsoft Search den Organisationsnamen, der im Microsoft 365 Admin Center definiert ist. Um den Namen zu ändern, der mit Ihren Arbeitsergebnissen angezeigt wird, geben Sie einen neuen Namen ein. Er kann bis zu 50 Zeichen lang sein.
     
 - Logo
     
-    Ihr Logo wird auf alle Microsoft Search-Ergebnisse für Ihre Organisation angezeigt. Logos muss PNG oder GIF-Dateien. Dateien sollten nicht mehr als 1 MB groß oder größer sein als 48px in Höhe. Bilder werden auf 48px, um das Seitenverhältnis beizubehalten skaliert werden. Bild vergrößert möglicherweise nicht ordnungsgemäß angezeigt.
+    Ihr Logo wird auf allen Microsoft Search-Ergebnissen für Ihre Organisation angezeigt. Logos müssen PNG- oder GIF-Dateien sein. Dateien sollten nicht mehr als 1 MB groß und nicht mehr als 48 px hoch sein. Bilder werden unter Beibehaltung des Seitenverhältnisses auf 48 px skaliert. Größere Bilder werden möglicherweise nicht korrekt angezeigt.
     
 - Farbe
     
-    Verwenden Sie die Farbpalette, um die Akzentfarbe für Ihre Organisation Arbeit Ergebnisse auszuwählen.
+    Verwenden Sie die Farbpalette, um die Akzentfarbe für die Arbeitsergebnisse Ihrer Organisation auszuwählen.
     
-- Feedback-e-Mail-Adresse
+- Feedback-E-Mail-Adresse
     
-    Microsoft Search Ergebnisse enthalten einen Feedbacklink für Vorschläge und Kommentare von Benutzern. Geben Sie im Feld Feedback e-Mail-Adresse die Adresse Feedback zu gesendet werden soll.
+    Microsoft Search-Ergebnisse enthalten einen Feedbacklink für Vorschläge und Kommentare von Benutzern. Geben Sie im Feld „Feedback-E-Mail-Adresse“ die Adresse ein, an die Feedback gesendet werden soll.
     
-- Vorschläge für Abfragen
+- Abfragevorschläge
     
-    Vorschlagen Sie sucht nach neuen Microsoft Search-Benutzern und Testen Sie. Geben Sie bis zu fünf Beispiel sucht, die Rückgabe der Ergebnisse für alle Benutzer wahrscheinlich eine Rolle spielen.
+    Schlagen Sie Suchen vor, die neue Microsoft Search-Benutzer versuchen sollten. Geben Sie bis zu fünf Beispielsuchen ein, die wahrscheinlich Ergebnisse für alle Benutzer zurückgeben.
     
 - Geschäftsergebnisse
     
-    Entscheiden Sie, ob Sie Arbeit Ergebnisse anzeigen jedes Mal, wenn Ihre Benutzer suchen möchten.
+    Entscheiden Sie, ob jedes Mal, wenn Benutzer suchen, Arbeitsergebnisse angezeigt werden sollen.
     
-- Ergebnisse der Unterhaltung
+- Unterhaltungsergebnisse
     
-    Enthalten Sie relevante öffentlichen oder Gruppe Unterhaltung Ergebnisse aus Microsoft-Teams oder Microsoft Yammer, wenn Ihre Benutzer suchen.
+    Schließen Sie beim Suchen der Benutzer relevante Ergebnisse von öffentlichen oder Gruppenunterhaltungen in Microsoft Teams oder Microsoft Yammer ein.
     
-Konfigurieren Sie diese Einstellungen im Microsoft Search Admin-Portal, klicken Sie einfach auf Einstellungen für Inhalte, die im Navigationsbereich.
+Konfigurieren Sie diese Einstellungen im Microsoft Search-Verwaltungsportal. Klicken Sie einfach im Navigationsbereich auf „Inhaltseinstellungen“.
   
-Nur globale Microsoft 365-Administratoren oder Microsoft Search-Admins können Content Einstellungen ändern. Microsoft Search-Editoren können sie anzeigen, aber diese nicht ändern können.
+Nur globale Administratoren von Microsoft 365 oder Microsoft Search-Administratoren können Inhaltseinstellungen ändern. Microsoft Search-Editoren können sie anzeigen, aber nicht ändern.
 
 

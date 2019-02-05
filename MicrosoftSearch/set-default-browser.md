@@ -16,24 +16,24 @@ ms.assetid: 53e2b71a-348b-4dfe-a504-6e97d573effe
 description: Erfahren Sie, wie einen Standardbrowser für Ihr Unternehmen mit Microsoft Search konfigurieren.
 ms.openlocfilehash: 160dbbef9981127b74c51f54f86428667ecd4471
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612473"
 ---
 # <a name="set-default-browser"></a>Festlegen des Standardbrowsers
 
-Konfigurieren der Standard-Browser, Standard-Suchmaschine und Standard-Homepage helfen Ihre Benutzer entdecken Sie Microsoft Search-Funktionen, weitere Verwendung fördern und bieten einen reibungsloseren.
+Das Konfigurieren des Standardbrowsers, der Standardsuchmaschine und der standardmäßigen Startseite hilft Ihren Benutzern, die Microsoft Search-Funktionen zu entdecken, fördert deren Verwendung und ermöglicht eine gleichmäßigere Erfahrung.
   
-Wenn als Standardbrowser für Ihre Organisation festlegen möchten, führen Sie die folgenden Schritte aus.
+Führen Sie zum Festlegen des Standardbrowsers für Ihre Organisation die folgenden Schritte aus.
   
 ## <a name="windows-8-and-above"></a>Windows 8 und höher
 
-Wenn Internet Explorer oder Microsoft Edge als Standardbrowser festlegen möchten, gehen Sie folgendermaßen vor:
+Wenn Sie Internet Explorer oder Microsoft Edge als Standardbrowser festlegen möchten, gehen Sie wie folgt vor:
   
-### <a name="create-default-associations-file"></a>Erstellen von Zuordnungen-Standarddatei
+### <a name="create-default-associations-file"></a>Erstellen der Standardzuordnungsdatei
 
-1. Öffnen Sie eine PowerShell-Verwaltungskonsole.
+1. Öffnen Sie eine PowerShell-Konsole.
     
 2.  `New-Item -Path "\\$env:USERDOMAIN\SYSVOL\$env:USERDNSDOMAIN" -Type Directory -Name "Settings"`
     
@@ -41,13 +41,13 @@ Wenn Internet Explorer oder Microsoft Edge als Standardbrowser festlegen möchte
     
 4.  `Start-Process Dism.exe -PassThru "/Online /Export-DefaultAppAssociations:$SettingsPath\AppAssoc.xml"`
     
-Diese Schritte testen und erstellen Sie die Standarddatei Zuordnungen im Ordner SYSVOL des Domänencontrollers.
+Diese Schritte testen und erstellen die Standardzuordnungsdatei im Ordner „SYSVOL“ des Domänencontrollers.
   
-### <a name="add-or-edit-the-default-associations-file"></a>Fügen Sie hinzu oder bearbeiten Sie die Zuordnungen-Standarddatei
+### <a name="add-or-edit-the-default-associations-file"></a>Hinzufügen oder Bearbeiten der Standardzuordnungsdatei
 
 1. `Notepad "$SettingsPath\AppAssoc.xml"`
     
-2. Bearbeiten Sie die folgenden Einträge (.htm, .html, http, Https), und entfernen Sie andere Einträge zu, wenn sie nicht benötigt werden.
+2. Bearbeiten Sie die folgenden Einträge (.htm, .html, http, https), und entfernen Sie die anderen Einträge, wenn sie nicht benötigt werden.
     
   - **Microsoft Edge**
     
@@ -57,7 +57,7 @@ Diese Schritte testen und erstellen Sie die Standarddatei Zuordnungen im Ordner 
   
      `<Association Identifier="http" ProgId="AppXq0fevzme2pys62n3e0fbqa7peapykr8v" ApplicationName="Microsoft Edge" />`
     
-  - **Internet Explorer**
+  - **Internet Explorer**
     
      `<Association Identifier=".htm" ProgId="htmlfile" ApplicationName="Internet Explorer" />`
   
@@ -67,38 +67,38 @@ Diese Schritte testen und erstellen Sie die Standarddatei Zuordnungen im Ordner 
   
      `<Association Identifier="https" ProgId="IE.HTTPS" ApplicationName="Internet Explorer" />`
     
-3. Öffnen Sie die Gruppenrichtlinien-Verwaltungskonsole (gpmc.msc), und wechseln Sie zum Erstellen einer neuen oder bearbeiten die vorhandene Richtlinie.
+3. Öffnen Sie die Gruppenrichtlinien-Verwaltungskonsole (gpmc.msc), und wechseln Sie zum Bearbeiten einer vorhandenen Richtlinie oder zum Erstellen einer neuen.
     
-1. Navigieren Sie zu **Computer Vorlagen\Windows-Components\File Explorer**
+1. Navigieren Sie zu **Computerkonfiguration\Administrative Vorlagen\Windows-Komponenten\Datei-Explorer**
     
-2. Doppelklicken Sie auf **eine Standardkonfigurationsdatei Zuordnungen festlegen**, legen Sie es auf **aktiviert**und geben Sie den Pfad zum AppAssoc.xml (zum Beispiel %USERDOMAIN%\SYSVOL\%USERDNSDOMAIN%\Settings\AppAssoc.xml)
+2. Doppelklicken Sie auf **Konfigurationsdatei für Standardzuordnungen festlegen**, legen Sie es auf **Aktiviert** fest, und geben Sie den Pfad zu AppAssoc.xml (z. B. %USERDOMAIN%\SYSVOL\%USERDNSDOMAIN%\Settings\AppAssoc.xml) ein.
     
-4. Erzwingen Sie das resultierende GPO durch Verknüpfung mit der entsprechenden Domäne.
+4. Erzwingen das resultierende GPO, indem Sie es mit der entsprechenden Domäne verknüpfen.
     
 Benutzer können den Browser ändern, nachdem diese Richtlinie festgelegt ist.
   
 ## <a name="windows-7"></a>Windows 7
 
-1. Konfigurieren Sie den lokalen Computer, der zum Festlegen des Gruppenrichtlinienobjekts verwendet werden.
+1. Konfigurieren Sie den lokalen Computer, der verwendet wird, um das Gruppenrichtlinienobjekt festlegen.
     
-1. **Steuerelement Panel\Programs\Default Programs\Set Programme** öffnen und Internet Explorer als Standard festgelegt. 
+1. Öffnen Sie **Systemsteuerung\Programme\Standardprogramme\Standardprogramme festlegen**, und legen Sie Internet Explorer als Standard fest. 
     
-2. Öffnen Sie die Gruppenrichtlinien-Verwaltungskonsole (gpmc.msc), und wechseln Sie zum Erstellen einer neuen oder bearbeiten die vorhandene Richtlinie.
+2. Öffnen Sie die Gruppenrichtlinien-Verwaltungskonsole (gpmc.msc), und wechseln Sie zum Bearbeiten einer vorhandenen Richtlinie oder zum Erstellen einer neuen.
     
-1. Navigieren Sie zu ** \<Computerbenutzers/\> Configuration\Policies\Preferences\Windows Einstellungen**.
+1. Navigieren Sie zu ** \<Computer/Benutzer\> Konfiguration\Richtlinien\Einstellungen\Windows-Einstellungen**.
     
-2. Mit der rechten Maustaste auf **Registry\New** , und wählen Sie **Registry Wizard**.
+2. Klicken Sie mit der rechten Maustaste auf **Registrierung\Neu**, und wählen Sie **Registrierungs-Assistent** aus.
     
-3. Wählen Sie aus der Registrierung Browserfenster **Lokaler Computer** , und klicken Sie auf **Weiter**.
+3. Wählen Sie im Fenster „Registrierungsbrowser“ die Option **Lokaler Computer** aus, und klicken Sie auf **Weiter**.
     
-4. Navigieren Sie zu **HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\https** , und wählen Sie die ProgId Wert aus. Stellen Sie sicher, dass der Wert das unten abgebildete aussieht: 
+4. Navigieren Sie zu **HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\https**, und wählen Sie den Wert „ProgId“ aus. Stellen Sie sicher, dass der Wert wie folgt aussieht: 
     
-    ![ProgID Select-Wert in Zeichenfolge bearbeiten](media/f6173dcc-b898-4967-8c40-4b0fe411a92b.png)
+    ![Auswählen des ProgId-Werts in „Zeichenfolge bearbeiten“](media/f6173dcc-b898-4967-8c40-4b0fe411a92b.png)
   
-5. Navigieren Sie zu **HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\https** , und wählen Sie die ProgId Wert aus. Stellen Sie sicher, dass der Wert der aussieht unten: 
+5. Navigieren Sie zu **HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\https**, und wählen Sie den Wert „ProgId“ aus. Stellen Sie sicher, dass der Wert wie folgt aussieht: 
     
-    ![Wählen Sie ProgId für HTTPS in Zeichenfolge bearbeiten](media/3519e13b-4fe7-4d15-946c-82fd50fc49bb.png)
+    ![Auswählen des ProgId-Werts für HTTPS in „Zeichenfolge bearbeiten“](media/3519e13b-4fe7-4d15-946c-82fd50fc49bb.png)
   
-3. Erzwingen Sie das resultierende GPO durch Verknüpfung mit der entsprechenden Domäne.
+3. Erzwingen das resultierende GPO, indem Sie es mit der entsprechenden Domäne verknüpfen.
     
 Benutzer können den Browser ändern, nachdem diese Richtlinie festgelegt ist.

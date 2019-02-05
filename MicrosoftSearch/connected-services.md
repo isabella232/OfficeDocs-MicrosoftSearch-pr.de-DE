@@ -13,41 +13,41 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 161ea667-9b27-4695-b7a8-e8e063141795
-description: Erfahren Sie, wie die Arbeit Ergebnisse anpassen, die bei Verwendung von Microsoft Search angezeigt werden.
+description: Erfahren Sie, wie die Arbeitsergebnisse angepasst werden, die bei Verwendung von Microsoft Search angezeigt werden.
 ms.openlocfilehash: 0990b8362b01a2173f87e541bc1ea86aadcbb506
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612431"
 ---
 # <a name="connected-services"></a>Verbundene Dienste
 
-Microsoft Search können Sie leistungsfähige Bing Search Engine verwenden, um Ihre Office 365-Organisation SharePoint-Dateien, mit einer Textmarke versehenen interne Websites, Personen in der globalen Adressliste und Office 365-Gruppen zu suchen.
+Mit Microsoft Search können Sie die leistungsfähige Bing-Suchmaschine verwenden, um die SharePoint-Dateien Ihrer Office 365-Organisation, mit Lesezeichen versehene interne Websites, Personen in der globalen Adressliste und Office 365-Gruppen zu durchsuchen.
   
 ## <a name="search-for-sites-and-documents"></a>Suchen nach Websites und Dokumenten
 
-Suchen Sie nach Websites, Seiten, Dateien und Dokumente aus SharePoint und OneDrive für Unternehmen. Durchsuchen Sie Dateien, die Personen in Ihrer Organisation und in Office 365 Gruppen freigegeben haben. Beispielsweise für Dateien wie 'neue Mitarbeiter Schulung Deck' oder für einen Benutzer zu suchen Sie, und klicken Sie auf das Ergebnis Personen nur auf auf der Registerkarte Dateien Dateien angezeigt, die sie gemeinsam haben. Sie können auch für SharePoint-Websites über Teams und Ihrer Organisation suchen.
+Suchen Sie nach Websites, Seiten, Dateien und Dokumenten aus SharePoint und OneDrive for Business. Durchsuchen Sie Dateien, die innerhalb Ihrer Organisation und innerhalb von Office 365-Gruppen freigegeben wurden. Suchen Sie beispielsweise nach Dateien wie „Schulung für neue Mitarbeiter“ oder nach einem Benutzer, und klicken Sie dann in den Personenergebnissen einfach auf die Registerkarte „Dateien“, um die Dateien anzuzeigen, die diese Personen freigegeben haben. Sie können über Teams und über die Organisation hinweg nach SharePoint-Websites suchen.
   
-Zulassen des Benutzerzugriffs auf Dokument- und Website SharePoint-Suche durch das Verwaltungsportal von Microsoft Search **Zulassen Dokument- und Website suchen nach Bing.com** einschalten. 
+Lassen Sie den Zugriff von Benutzern auf die SharePoint-Dokument- und -Websitesuche zu, indem Sie die Option zum **Zulassen der Dokument- und Websitesuche auf Bing.com** im Verwaltungsportal von Microsoft Search aktivieren. 
   
-## <a name="search-for-people"></a>Suche nach Personen
+## <a name="search-for-people"></a>Suchen nach Personen
 
-Personensuche zieht alle Informationen über eine Person in Ihrer Organisation, sodass Sie nicht auf verschiedene Weise zum Abrufen der vollständigen Story suchen. Angenommen, wenn Sie beispielsweise "Megan Fry" suchen, sehen Sie, die sie Berichte an, die sie mit arbeitet, dessen öffentlich gemeinsam genutzte Dateien, -Struktur ihrer Organisation und die Gruppen, zu denen sie gehört.
+Bei der Personensuche werden alle Informationen zu einer Person in Ihrer Organisation abgerufen, damit Sie nicht an mehreren Orten suchen müssen, um die vollständigen Informationen zu erhalten. Wenn Sie beispielsweise nach „Megan Fry“ suchen, können Sie ihren Vorgesetzten sehen, mit wem sie arbeitet, welche Dateien öffentlich freigegeben wurden, welchen Gruppen sie angehört und wie die Organisationsstruktur aussieht.
   
-Ermöglichen des Benutzerzugriffs auf die Suche nach Personen durch das Aktivieren **der Personensuche zulassen auf Bing.com** im Verwaltungsportal von Microsoft Search. 
+Lassen Sie den Zugriff von Benutzern auf die Personensuche zu, indem Sie die Option zum **Zulassen der Personensuche auf Bing.com** im Verwaltungsportal von Microsoft Search aktivieren. 
   
 ## <a name="search-for-groups"></a>Suchen nach Gruppen
 
-Suchen Sie nach Office 365-Gruppen zum Abrufen von Informationen über die Gruppe, dessen Besitzer, Mitglieder, Dateien und Unterhaltungen. Wenn Sie einen Unterhaltungstitel klicken, öffnen sie in Outlook im Web, und Sie können auf Antworten oder überprüfen.
+Suchen Sie nach Office 365-Gruppen, um Informationen zu der Gruppe, deren Besitzern, Mitgliedern, Dateien und Unterhaltungen zu erhalten. Wenn Sie auf einen Unterhaltungstitel klicken, wird diese in Outlook im Web geöffnet, und Sie können darauf antworten oder sie überprüfen.
   
-Ermöglichen des Benutzerzugriffs auf Gruppe suchen nach Einschalten **Zulassen Gruppe suchen auf Bing.com** im Verwaltungsportal von Microsoft Search. 
+Lassen Sie den Zugriff von Benutzern auf die Gruppensuche zu, indem Sie die Option zum **Zulassen der Gruppensuche auf Bing.com** im Verwaltungsportal von Microsoft Search aktivieren. 
   
 ## <a name="search-for-conversations"></a>Suchen nach Unterhaltungen
 
-Suchen Sie nach Ihrer privaten Microsoft-Teams oder Microsoft Yammer Unterhaltungen oder Unterhaltungen zwischen Mitarbeitern, die Ihnen die Berechtigung zum Anzeigen. Sie können beispielsweise "Roadmap" Suchen und finden Sie unter die 30 relevanten Gespräche genauer darüber.
+Suchen Sie nach Ihren privaten Microsoft Teams- oder Microsoft Yammer-Unterhaltungen oder nach Unterhaltungen zwischen Kollegen, für die Sie über die Berechtigung zum Anzeigen verfügen. Sie können zum Beispiel nach „Roadmap“ suchen; es werden die 30 relevantesten Unterhaltungen zu diesem Thema angezeigt.
   
-Microsoft-Teams, Yammer oder beides im Verwaltungsportal von Microsoft Search ermöglichen des Benutzerzugriffs auf Unterhaltung Suche durch das **Unterhaltung Suche auf Bing.com zulassen** aktivieren. 
+Lassen Sie den Zugriff auf die Unterhaltungssuche zu, indem Sie die Option zum **Zulassen der Unterhaltungssuche auf Bing.com** für Microsoft Teams, Yammer oder beides im Verwaltungsportal von Microsoft Search aktivieren. 
 
   
 

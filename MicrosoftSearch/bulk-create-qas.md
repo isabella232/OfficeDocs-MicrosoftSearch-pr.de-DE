@@ -1,5 +1,5 @@
 ---
-title: Massen erstellen Q&As
+title: Massenerstellung von Q&As
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,40 +13,51 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7bada218-8908-4956-aae3-6ffaeef384ca
-description: Fügen Sie schnell Antworten auf häufig gestellte Fragen mit Importtools in Verwaltungsportal von Microsoft Search
-ms.openlocfilehash: 84cca87eada0c31f9c39a16b364fb399014a6a5b
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+description: Schnelles Hinzufügen von Antworten auf häufig gestellte Fragen mit Importtools im Microsoft Search Admin Portal
+ms.openlocfilehash: 53f1d167948f6b621ad139620553df51b0cb91c2
+ms.sourcegitcommit: 61b4b84e581d3df6045851fe6c9c1291853dea06
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378748"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "30068394"
 ---
-# <a name="bulk-create-qas"></a>Massen erstellen Q&As
+# <a name="bulk-create-qas"></a>Massenerstellung von Q&As
 
-Bearbeiten herunter, und verwenden Sie die Vorlage CSV Massen erstellen oder Massen-Q&As. Es ist außerdem eine einfache Möglichkeit zum Speichern der Entwurf Q&As Massen, die zusätzliche Bearbeitungsvorgänge oder Updates erforderlich sind. Wenn Sie zum Bearbeiten einer vorhandenen Q&As Massen müssen, sie aus dem Verwaltungsportal exportieren, erforderlichen Bearbeitungen und dann zu importieren.
+Laden Sie die CSV-Vorlage herunter, und verwenden Sie Sie, um Q&As massenweise zu erstellen oder zu bearbeiten. Es ist auch eine einfache Möglichkeit zum Massenspeichern von Entwurfs-Q&As, die zusätzliche Änderungen oder Aktualisierungen erfordern. Wenn Sie vorhandene Q&As massenweise bearbeiten müssen, exportieren Sie Sie aus dem Verwaltungsportal, nehmen Sie die erforderlichen Änderungen vor, und importieren Sie Sie.
   
-1. Klicken Sie in der oberen rechten Ecke des Abschnitts Q&As auf **Importieren**
+1. Klicken Sie in der oberen rechten Ecke des Abschnitts Q&As auf **importieren**
     
-2. Klicken Sie auf **herunterladen Q&A-Vorlage (CSV)**
+2. Klicken Sie auf **Q&A-Vorlage herunterladen (. CSV)**
     
-3. Speichern Sie und öffnen Sie die CSV-Datei
+3. Speichern und Öffnen der CSV-Datei
     
-4. Fügen Sie der Q&A Inhalte und Einstellungen hinzu, und speichern Sie die Datei
+4. Hinzufügen des Q&A-Inhalts und der Einstellungen und Speichern der Datei
     
-5. Klicken Sie in der oberen rechten Ecke des Abschnitts Q&As auf **Importieren**
+5. Klicken Sie in der oberen rechten Ecke des Abschnitts Q&As auf **importieren**
     
-6. Klicken Sie im Bereich Q&As importieren klicken Sie auf **Durchsuchen** , und navigieren Sie zu der CSV-Datei, den, die Sie importieren möchten. 
+6. Klicken Sie im Bereich Q&As importieren auf **Durchsuchen** , und navigieren Sie zu der CSV-Datei, die Sie importieren möchten. 
     
-7. Klicken Sie auf **Importieren**
-    
-Sie erhalten einen Fehler, wenn alle erforderlichen Daten fehlt oder ist ungültig ist. Je nach dem Fehler kann eine Protokolldatei mit weiteren Informationen zu den Zeilen und Spalten, die zu korrigierende generiert werden. Bearbeitungen Sie alle erforderlichen, und versuchen Sie erneut, die Datei zu importieren.
-  
+7. Klicken Sie auf **importieren**
+
+# <a name="prevent-import-errors"></a>Verhindern von Importfehlern      
+Sie erhalten eine Fehlermeldung, wenn erforderliche Daten fehlen oder ungültig sind. Je nach Fehler wird möglicherweise eine Protokolldatei mit weiteren Informationen zu den Zeilen und Spalten generiert, die korrigiert werden müssen. Nehmen Sie die erforderlichen Änderungen vor, und versuchen Sie, die Datei erneut zu importieren.
+
 > [!NOTE]
-> Bis alle Fehler behoben wurden, können nicht erstellen oder bearbeiten eine beliebige Q&As. 
-  
-Die Felder in den Import und Export Q&A Vorlagen sind identisch. Exportieren, gebündelt bearbeiten und Importieren der Bearbeitung oder startet eine leere Vorlage Massenvorgang erstellt neue Q&As.
-  
-Nicht alle Felder sind erforderlich, und Pflichtfelder variieren je nach Status Q&A. Basierend auf dem Feld State, werden Q&As gespeichert wie Entwurf vorgeschlagen wird geplant, oder sie automatisch veröffentlicht. Hier erfahren Sie mehr über die erforderlichen und empfohlenen Felder in [Q&As erstellen](create-qas.md).
+> Sie können keine Q&As erstellen oder bearbeiten, bis alle Fehler aufgelöst wurden. 
+
+Um Fehler zu vermeiden, stellen Sie sicher, dass die Importdatei ordnungsgemäß formatiert ist:
+- Enthält die Überschriftenzeile, die sich in der Importvorlage befand
+- Enthält alle Spalten, die in der Importvorlage enthalten waren.
+- Die Reihenfolge der Spalten ist identisch mit der Importvorlage.
+- Diese Spalten können leer sein: ID, zuletzt geändert und zuletzt geändert von
+- Die Spalte Status kann nicht leer sein, diese Informationen sind erforderlich.  
+Basierend auf dem Feld Status wird Q&As als Entwurf, vorgeschlagen, geplant gespeichert oder automatisch veröffentlicht.
+
+Wenn Sie auch die ID eines vorhandenen Q&A-Objekt hinzufügen, wird es durch die Informationen in der Importdatei ersetzt.
+
+Für Organisationen mit mehreren Stand-Mandanten können Sie Ihre Q&As aus einem Mandanten exportieren und in einen anderen importieren. Sie müssen jedoch vor dem Importieren alle Daten in der Spalte "ID" entfernen.
+
+Weitere Informationen zu den erforderlichen und empfohlenen Feldern finden Sie unter [Create Q&As](create-qas.md).
 
   
 

@@ -1,5 +1,5 @@
 ---
-title: Massen Erstellen von Textmarken
+title: Massenerstellen von Lesezeichen
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,39 +13,48 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: def300e7-103c-4e92-a062-28ffa27561d7
-description: Erstellen Sie vieler Lesezeichen gleichzeitig mit Importtools für das Microsoft Search Admin-portal
-ms.openlocfilehash: e5af84daf2619e58e2cb3299de1b9d9df9966673
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+description: Erstellen Sie viele Lesezeichen gleichzeitig mit Importtools für das Microsoft Search-Verwaltungsportal.
+ms.openlocfilehash: 07694de1f546a1431f371fa24ffc5721ea66337c
+ms.sourcegitcommit: 61b4b84e581d3df6045851fe6c9c1291853dea06
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378744"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "30068402"
 ---
-# <a name="bulk-create-bookmarks"></a>Massen Erstellen von Textmarken
+# <a name="bulk-create-bookmarks"></a>Massenerstellen von Lesezeichen
 
-Herunterladen und verwenden Sie die Vorlage CSV Massen erstellen, bearbeiten, und Lesezeichen zu speichern. Um zu vorhandenen Lesezeichen bearbeiten, sie aus dem Verwaltungsportal exportieren, erforderlichen Bearbeitungen und dann zu importieren.
+Laden Sie die CSV-Vorlage herunter, und verwenden Sie Sie zum Massen erstellen, bearbeiten und Speichern von Lesezeichen. Zum Massen Bearbeiten vorhandener Lesezeichen, exportieren Sie diese aus dem Verwaltungsportal, nehmen Sie die erforderlichen Änderungen vor, und importieren Sie Sie.
   
-1. Klicken Sie in der oberen rechten Ecke des Abschnitts Lesezeichen auf **Importieren**
+1. Klicken Sie in der oberen rechten Ecke des Abschnitts Lesezeichen auf **importieren**
     
-2. Klicken Sie auf **Download Bookmarks-Vorlage (CSV)**
+2. Klicken Sie auf **Lesezeichen Vorlage herunterladen (. CSV)**
     
-3. Speichern Sie und öffnen Sie die CSV-Datei
+3. Speichern und Öffnen der CSV-Datei
     
-4. Hinzufügen von Lesezeichen-Inhalte und Einstellungen, und speichern Sie die Datei
+4. Hinzufügen des Inhalts und der Einstellungen für die Textmarke und Speichern der Datei
     
-5. Klicken Sie in der oberen rechten Ecke des Abschnitts Lesezeichen auf **Importieren**
+5. Klicken Sie in der oberen rechten Ecke des Abschnitts Lesezeichen auf **importieren**
     
-6. Klicken Sie im Bereich Lesezeichen importieren klicken Sie auf **Durchsuchen** , und navigieren Sie zu der CSV-Datei, den, die Sie importieren möchten. 
+6. Klicken Sie im Bereich Lesezeichen importieren auf **Durchsuchen** , und navigieren Sie zu der CSV-Datei, die Sie importieren möchten. 
     
-7. Klicken Sie auf **Importieren**
-    
-Sie erhalten einen Fehler, wenn alle erforderlichen Daten fehlt oder ist ungültig ist. Je nach dem Fehler kann eine Protokolldatei mit weiteren Informationen zu den Zeilen und Spalten, die zu korrigierende generiert werden. Bearbeitungen Sie alle erforderlichen, und versuchen Sie erneut, die Datei zu importieren.
-  
-Hinweis:, Bis alle Fehler behoben wurden, können nicht Sie erstellen oder Bearbeiten von Textmarken.
-  
-Die Felder in den Import und Export Textmarke Vorlagen sind identisch. Exportieren, gebündelt bearbeiten und Importieren der Bearbeitung oder startet eine leere Vorlage Massenvorgang erstellt neue Lesezeichen.
-  
-Nicht alle Felder sind erforderlich, und Pflichtfelder variieren je nach Status Textmarke. Basierend auf dem Feld State, werden Lesezeichen gespeichert wie Entwurf vorgeschlagen wird geplant, oder sie automatisch veröffentlicht. Erfahren Sie mehr zu den erforderlichen und empfohlenen Feldern [Lesezeichen zu erstellen](create-bookmarks.md).
+7. Klicken Sie auf **importieren**
 
-  
+# <a name="prevent-import-errors"></a>Verhindern von Importfehlern      
+Sie erhalten eine Fehlermeldung, wenn erforderliche Daten fehlen oder ungültig sind. Je nach Fehler wird möglicherweise eine Protokolldatei mit weiteren Informationen zu den Zeilen und Spalten generiert, die korrigiert werden müssen. Nehmen Sie die erforderlichen Änderungen vor, und versuchen Sie, die Datei erneut zu importieren.
 
+> [!NOTE]
+> Sie können keine Lesezeichen erstellen oder bearbeiten, bis alle Fehler aufgelöst wurden. 
+
+Um Fehler zu vermeiden, stellen Sie sicher, dass die Importdatei ordnungsgemäß formatiert ist:
+- Enthält die Überschriftenzeile, die sich in der Importvorlage befand
+- Enthält alle Spalten, die in der Importvorlage enthalten waren.
+- Die Reihenfolge der Spalten ist identisch mit der Importvorlage.
+- Diese Spalten können leer sein: ID, zuletzt geändert und zuletzt geändert von
+- Die Spalte Status kann nicht leer sein, diese Informationen sind erforderlich.  
+Basierend auf dem Feld Status werden Lesezeichen als Entwurf, vorgeschlagen oder geplant gespeichert, oder Sie werden automatisch veröffentlicht.
+
+Wenn Sie die ID einer vorhandenen Textmarke hinzufügen, wird Sie auch durch die Informationen in der Importdatei ersetzt.
+
+Für Organisationen mit mehreren Stand-Mandanten können Sie Ihre Lesezeichen aus einem Mandanten exportieren und in einen anderen importieren. Sie müssen jedoch vor dem Importieren alle Daten in der Spalte "ID" entfernen.
+
+Weitere Informationen zu den erforderlichen und empfohlenen Feldern finden Sie unter [Create Bookmarks](create-bookmarks.md).

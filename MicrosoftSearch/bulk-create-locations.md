@@ -1,5 +1,5 @@
 ---
-title: Massen Speicherorte erstellen
+title: Massenerstellen von Speicherorten
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,40 +13,54 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 15c9fada-f7a6-4210-aa6b-028b32217830
-description: Hinzufügen von vielen Standorten gleichzeitig mit Tools für die Microsoft Search-Verwaltungsportal importieren
-ms.openlocfilehash: af91dbc4a0efdaabb2bf91672c0e665683d2a6ab
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+description: Hinzufügen von vielen Standorten gleichzeitig mit Importtools für das Microsoft Search-Verwaltungsportal
+ms.openlocfilehash: eb51b93ceaa560e5142ac46d316ba745c614fe34
+ms.sourcegitcommit: 61b4b84e581d3df6045851fe6c9c1291853dea06
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378784"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "30068410"
 ---
-# <a name="bulk-create-locations"></a>Massen Speicherorte erstellen
+# <a name="bulk-create-locations"></a>Massenerstellen von Speicherorten
 
-Herunterladen und verwenden Sie die Vorlage CSV Massen erstellen, bearbeiten und speichern die Speicherorte. Um zu bearbeiten vorhandenen Speicherorte, aus dem Verwaltungsportal zu exportieren, erforderlichen Bearbeitungen und dann zu importieren.
+Laden Sie die CSV-Vorlage herunter, und verwenden Sie Sie zum Massen erstellen, bearbeiten und Speichern von Speicherorten. 
   
-1. Klicken Sie in der oberen rechten Ecke des Abschnitts Speicherorte auf **Importieren**
+1. Klicken Sie in der oberen rechten Ecke des Abschnitts Standorte auf **importieren** .
     
-2. Klicken Sie auf **Download Speicherorte-Vorlage (CSV)**
+2. Klicken Sie auf **Download Speicherorte Vorlage (. CSV)**
     
-3. Speichern Sie und öffnen Sie die CSV-Datei
+3. Speichern und Öffnen der CSV-Datei
     
-4. Fügen Sie den Inhalt der Speicherort, und speichern Sie die Datei
+4. Hinzufügen des Standort Inhalts und Speichern der Datei
     
-5. Klicken Sie in der oberen rechten Ecke des Abschnitts Speicherorte auf **Importieren**
+5. Klicken Sie in der oberen rechten Ecke des Abschnitts Standorte auf **importieren** .
     
-6. Klicken Sie im Bereich Speicherorte importieren klicken Sie auf **Durchsuchen** , und navigieren Sie zu der CSV-Datei, den, die Sie importieren möchten. 
+6. Klicken Sie im Bereich Speicherorte importieren auf **Durchsuchen** , und navigieren Sie zu der CSV-Datei, die Sie importieren möchten. 
     
-7. Klicken Sie auf **Importieren**
-    
-Sie erhalten einen Fehler, wenn alle erforderlichen Daten fehlt oder ist ungültig ist. Je nach dem Fehler kann eine Protokolldatei mit weiteren Informationen zu den Zeilen und Spalten, die zu korrigierende generiert werden. Bearbeitungen Sie alle erforderlichen, und versuchen Sie erneut, die Datei zu importieren.
+7. Klicken Sie auf **importieren**
+
+Die Felder in den Import-und Exportspeicherort Vorlagen sind identisch. Sie können die Bearbeitungen exportieren, Massen bearbeiten und importieren oder mit einer leeren Vorlage beginnen, um massenweise neue Speicherorte zu erstellen. Zum Massen Bearbeiten vorhandener Speicherorte, exportieren Sie diese aus dem Verwaltungsportal, nehmen Sie die erforderlichen Änderungen vor, und importieren Sie Sie.
+
+# <a name="prevent-import-errors"></a>Verhindern von Importfehlern  
+Sie erhalten eine Fehlermeldung, wenn erforderliche Daten fehlen oder ungültig sind. Je nach Fehler wird möglicherweise eine Protokolldatei mit weiteren Informationen zu den Zeilen und Spalten generiert, die korrigiert werden müssen. Nehmen Sie die erforderlichen Änderungen vor, und versuchen Sie, die Datei erneut zu importieren.
   
 > [!NOTE]
-> Bis alle Fehler behoben wurden, können nicht erstellen oder bearbeiten alle Speicherorte. 
+> Sie können keine Speicherorte erstellen oder bearbeiten, bis alle Fehler aufgelöst wurden. 
+
+Um Fehler zu vermeiden, stellen Sie sicher, dass die Importdatei ordnungsgemäß formatiert ist:
+- Enthält die Überschriftenzeile, die sich in der Importvorlage befand
+- Enthält alle Spalten, die in der Importvorlage enthalten waren.
+- Die Reihenfolge der Spalten ist identisch mit der Importvorlage.
+- Diese Spalten können leer sein: ID, zuletzt geändert, zuletzt geändert von und lat/long  
+Wir versuchen, lat/long basierend auf der Adresse zu ermitteln, wenn das Feld leer ist.
+- Die Spalte Status kann nicht leer sein, diese Informationen sind erforderlich.  
+Basierend auf dem Feld Status werden Speicherorte als Entwurf, vorgeschlagen oder geplant gespeichert, oder Sie werden automatisch veröffentlicht.
+
+Wenn Sie die ID eines vorhandenen Speicherorts angeben, wird Sie auch durch die Informationen in der Importdatei ersetzt.
+
+Für Organisationen mit mehreren Stand-Mandanten können Sie Ihre Standorte aus einem Mandanten exportieren und in einen anderen importieren. Sie müssen jedoch vor dem Importieren alle Daten in der Spalte "ID" entfernen.
   
-Die Felder in den Import und Export Speicherorte Vorlagen sind identisch. Exportieren, gebündelt bearbeiten und Importieren der Bearbeitung oder startet eine leere Vorlage Massenvorgang erstellt neue Standorte.
-  
-Nicht alle Felder sind erforderlich, und Pflichtfelder variieren je nach Status Speicherort. Basierend auf dem Feld State, werden Speicherorten gespeichert wie Entwurf vorgeschlagen wird geplant, oder sie automatisch veröffentlicht. Finden Sie weitere Informationen zu erforderlichen und empfohlenen Feldern finden Sie unter [Speicherorte verwalten](manage-locations.md).
+Weitere Informationen zu den erforderlichen und empfohlenen Feldern finden Sie unter [Hinzufügen eines Standorts](add-a-location.md).
 
   
 

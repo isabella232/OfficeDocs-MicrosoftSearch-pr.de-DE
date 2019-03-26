@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: fee131cf-c82f-4f4b-b288-6fa98a99b793
 description: Bietet eine Übersicht über Features des Verwaltungsportals sowie Zugriffsberechtigungen, die für Microsoft Search verfügbar sind.
-ms.openlocfilehash: 3b1a0173a12d921a789ccf1c01e788f9abae2916
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.openlocfilehash: 28706ada22b1523c8a89101d673fdbea8f752cb2
+ms.sourcegitcommit: e88ba533b4d6c623bda5953c49f7082b13b4d114
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612449"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30800214"
 ---
 # <a name="about-the-admin-portal"></a>Informationen zum Verwaltungsportal
 
@@ -45,7 +45,7 @@ Das Microsoft Search-Verwaltungsportal ist in die folgenden Bereiche unterteilt:
     
 - [Benutzer und Berechtigungen](add-users.md)
     
-    Verwalten Sie den Portalzugriff für Administratoren und Editoren, und gewähren oder beschränken Sie den Zugriff auf Microsoft Search in Ihrer Organisation.
+    Portalzugriff für Administratoren und Editoren verwalten
     
 - [Inhaltseinstellungen](content-settings.md)
     

@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 90d3190d-1add-490f-bef2-10b528252a2e
-description: Microsoft Search ist eine Enterprise Search wünschen, die Produktivität und Zeitersparnis durch die Bereitstellung von Relevantere Suchergebnisse für Ihre Organisation
-ms.openlocfilehash: 9ef8153979a31bbcb2ed6014055e99dc8dbc793a
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+description: Microsoft Search ist eine Unternehmens Sucherfahrung, die die Produktivität erhöht und Zeit spart, indem Sie relevantere Suchergebnisse für Ihre Organisation bereitstellt.
+ms.openlocfilehash: 4d3e3edd64d527121c1e4aee30376b15ca0c2e60
+ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378760"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31746398"
 ---
 # <a name="microsoft-search"></a>Microsoft Search
 
@@ -45,8 +45,8 @@ ms.locfileid: "29378760"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h2>Warum Microsoft suchen</h2>
-                        <p>Abrufen eines Enterprise-Suchfunktion, die Produktivität und Zeitersparnis durch die Bereitstellung von Relevantere Suchergebnisse für Ihre Organisation</p>
+                        <h2>Vorteile von Microsoft Search</h2>
+                        <p>Holen Sie sich eine Unternehmenssuche, die die Produktivität erhöht und Zeit spart, indem Sie relevantere Suchergebnisse für Ihre Organisation bereitstellt.</p>
                         <p><a href="why-microsoft-search.md">Hier erfahren Sie, wie es geht</a></p>
                     </div>
                 </div>
@@ -55,7 +55,7 @@ ms.locfileid: "29378760"
     </li>
 </ul>
 
-<h2>Vorgestellte Themen</h2>
+<h2>Empfohlene Themen</h2>
 
 <ul class="panelContent cardsW">
     <li>
@@ -68,8 +68,8 @@ ms.locfileid: "29378760"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Hauptmerkmale</h3>
-                        <p>Sehen Sie, welche Features sind verfügbar für Administratoren und Benutzern, einschließlich was finden Sie bei der Suche</p>
+                        <h3>Hauptfeatures</h3>
+                        <p>Informationen dazu, welche Features für Administratoren und Benutzer verfügbar sind, einschließlich der Suchvorgänge</p>
                         <p><a href="features.md">Weitere Informationen</a></p>
                     </div>
                 </div>
@@ -86,8 +86,8 @@ ms.locfileid: "29378760"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Admin quick einrichten</h3>
-                        <p>Erfahren Sie, wie Sie Microsoft Search aktivieren und konfigurieren sie für Ihre Organisation in vier Schritten</p>
+                        <h3>Administrator-schnell einrichten</h3>
+                        <p>Erfahren Sie, wie Sie die Microsoft-Suche aktivieren und in vier einfachen Schritten für Ihre Organisation konfigurieren können.</p>
                         <p><a href="quick-set-up.md">Jetzt starten</a></p>
                     </div>
                 </div>
@@ -104,9 +104,9 @@ ms.locfileid: "29378760"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>FAQ</h3>
-                        <p>Finden Sie Antworten auf einige häufig gestellte Fragen zum Microsoft Search</p>
-                        <p><a href="faqs.md">Durchsuchen Sie die häufig gestellten Fragen</a></p>
+                        <h3>FAQs</h3>
+                        <p>Antworten auf einige häufig gestellte Fragen zur Microsoft-Suche</p>
+                        <p><a href="faqs.md">Durchsuchen der häufig gestellten Fragen</a></p>
                     </div>
                 </div>
             </div>
@@ -120,8 +120,8 @@ ms.locfileid: "29378760"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h2>Verwenden Sie Microsoft Search</h2>
-                        <p>Microsoft Search ist eine einfache, schnelle und sicherer Möglichkeit, Informationen zu finden, produktiver und Intelligenter arbeiten</p>
+                        <h2>Verwenden der Microsoft-Suche</h2>
+                        <p>Die Microsoft-Suche ist eine einfache, schnelle und sichere Möglichkeit, Informationen zu finden, produktiver zu arbeiten und intelligenter zu funktionieren.</p>
                         <p><a href="use/about-microsoft-search.md">Hier erfahren Sie, wie es geht</a></p>
                     </div>
                 </div>
@@ -153,8 +153,8 @@ ms.locfileid: "29378760"
                 <div class="card">
                     <div class="cardText">
                         <p><a href="security.md">Sicherheit</a></p>
-                        <p><a href="requirements.md">Anforderungen</a></p>  
-                        <p><a href="about-the-admin-portal.md">Informationen zu der Admin-portal</a></p>
+                        <p><a href="requirements.md">Voraussetzungen</a></p>  
+                        <p><a href="about-the-admin-portal.md">Informationen zum Verwaltungsportal</a></p>
                     </div>
                 </div>
             </div>
@@ -165,8 +165,8 @@ ms.locfileid: "29378760"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <p><a href="quick-set-up.md">Einrichten von Quick</a></p>
-                        <p><a href="connected-services.md">Verbundenen Dienste</a></p>
+                        <p><a href="quick-set-up.md">Schnelles Einrichten</a></p>
+                        <p><a href="connected-services.md">Verbundene Dienste</a></p>
                         <p><a href="set-up-microsoft-search.md">Einrichten von Microsoft Search</a></p>
                     </div>
                 </div>
@@ -178,9 +178,9 @@ ms.locfileid: "29378760"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <p><a href="create-bookmarks.md">Erstellen von Textmarken</a></p>
-                        <p><a href="create-qas.md">Erstellen von Q&As</a></p>
-                        <p><a href="add-users.md">Hinzufügen von Benutzern</a></p>
+                        <p><a href="create-bookmarks.md">Erstellen von Lesezeichen</a></p>
+                        <p><a href="create-qas.md">Erstellen von Fragen und Antworten (F&As)</a></p>
+                        <p><a href="add-users.md">Verwalten von Benutzern</a></p>
                     </div>
                 </div>
             </div>

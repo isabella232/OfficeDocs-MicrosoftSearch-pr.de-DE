@@ -3,9 +3,17 @@
 
 
 
-## <a name="week-of-march-18-2019"></a>Woche vom 2019
+## <a name="week-of-march-18-2019"></a>Woche vom 18. März 2019
 
 
 | Zeitpunkt der Veröffentlichung |Titel des Themas | Änderung |
 |------|------------|--------|
 | 3/22/2019 | [Hinzufügen eines Suchfelds zu Ihrer Intranetwebsite](/MicrosoftSearch/add-a-search-box-to-your-intranet-site) | Geändert |
+
+
+## <a name="week-of-march-25-2019"></a>Woche vom 2019
+
+
+| Zeitpunkt der Veröffentlichung |Titel des Themas | Änderung |
+|------|------------|--------|
+| 3/25/2019 | [Informationen zum Verwaltungsportal](/MicrosoftSearch/about-the-admin-portal) | Geändert |

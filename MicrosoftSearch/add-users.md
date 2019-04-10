@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen von Benutzern
+title: Verwalten von Benutzern
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,17 +13,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 41723aec-435c-400e-a818-6b1e8a1324c0
-description: Zuweisen von Berechtigungen und Rollen für Administratoren, Editoren und Benutzer im Microsoft Search-Verwaltungsportal.
-ms.openlocfilehash: c6c842a4337d218764c1969939e77e4abe91915c
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+description: Zuweisen von Berechtigungen und Rollen zu Microsoft Search-Administratoren und -Editoren
+ms.openlocfilehash: 7fa32c008fcbc1bb436f4e90ff0621ed87df8fc6
+ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612393"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31746406"
 ---
-# <a name="add-users"></a>Hinzufügen von Benutzern
+# <a name="manage-users"></a>Verwalten von Benutzern
 
-Das Aktivieren von Microsoft Search für Ihre gesamte Organisation oder das Hinzufügen von Sicherheitsgruppen zusätzlich zu Ihrer IT-Abteilung sind die schnellsten Methoden zum Hinzufügen von Microsoft Search-Benutzern.
+Bearbeiter können Inhalte hinzufügen, aber keine Einstellungen ändern
   
 ## <a name="add-admins-and-editors"></a>Hinzufügen von Administratoren und Editoren
 
@@ -41,28 +41,4 @@ Das Aktivieren von Microsoft Search für Ihre gesamte Organisation oder das Hinz
     
 ## <a name="add-users"></a>Hinzufügen von Benutzern
 
-Standardmäßig besitzt jeder in Ihrer Organisation Zugriff auf Microsoft Search-Arbeitsergebnisse. Wenn Sie den Zugriff auf eine kleinere Gruppe beschränken möchten, sollten Sie die folgenden Optionen zum Identifizieren von Benutzern in Betracht ziehen:
-  
-- Arbeiten Sie mit einem Unternehmenssponsor in Ihrer Organisation zusammen.
-    
-- Identifizieren Sie eine Gruppe von Early Adoptern.
-    
-- Identifizieren Sie Gruppen, die ein hohes Volumen an Unternehmenssuchvorgängen ausführen.
-    
-- Identifizieren Sie Benutzer an anderen geografischen Standorten (auch international).
-    
-So aktivieren Sie Microsoft Search für einen oder mehrere Benutzer:
-  
-1. Wechseln zum Microsoft Search-Verwaltungsportal
-    
-2. Klicken Sie im Navigationsbereich auf **Benutzerberechtigungen&amp;**.
-    
-3. Klicken Sie am oberen Rand der Seite auf **Vorschauzugriff verwalten**.
-    
-4. Deaktivieren Sie die Option, dass **jeder in Ihrer Organisation hinzugefügt wird**. 
-    
-5. Suchen Sie im Feld **Nur die folgenden Benutzer zulassen** nach den Benutzern oder Gruppen, die Sie hinzufügen möchten. 
-    
-6. Klicken Sie auf **Speichern**.
-    
-Zwei Stunden, nachdem sie Vorschauzugriff erhalten haben, können Benutzer, die sich mit ihrem Geschäftskonto bei Bing anmelden, relevante Arbeitsergebnisse bei der Suche anzeigen. Weitere Informationen zum Anmelden bei Bing finden Sie unter [Anmelden bei Microsoft Search](use/sign-in.md).
+Standardmäßig steht Microsoft Search allen Mitgliedern Ihrer Organisation zur Verfügung. Wenn Sie den Zugriff ändern möchten, verwenden Sie [Bedingter Zugriff in Azure Active Directory](https://docs.microsoft.com/de-DE/azure/active-directory/conditional-access/overview).

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38569f03-db18-49ab-96ef-213a1f410935
 description: Erfahren Sie, warum es sich bei Microsoft Search um eine intelligente Unternehmenssuche für den modernen Arbeitsplatz handelt.
-ms.openlocfilehash: f00622643aac867a83614fe613f8c8ef4bdb116b
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.openlocfilehash: f7c65e13f18f6ea4fd38bc406653a37f85659d3e
+ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612382"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31746414"
 ---
 # <a name="why-microsoft-search"></a>Vorteile von Microsoft Search
 
@@ -39,7 +39,7 @@ Microsoft Search erfordert die Azure Active Directory-Authentifizierung, um auf 
   
 ## <a name="easy-to-administer-and-available-everywhere"></a>Einfaches Verwalten, überall verfügbar
 
-Die Bereitstellung von Microsoft Search ist einfach: Aktivieren Sie es einfach im Microsoft 365 Admin Center, und passen Sie Einstellungen wie Logo, Name, Farbe usw. an. Autorisierte Benutzer können auf jedem Gerät darauf zugreifen, indem sie sich einfach bei Bing anmelden.
+Das Bereitstellen von Microsoft Search ist ganz leicht – aktivieren Sie einfach die Funktion über das Microsoft 365 Admin Center, und passen Sie Einstellungen an, zu denen Ihr Logo, der Name, die Farbe und vieles mehr gehören. Benutzer können auf jedem Gerät durch Anmeldung bei Bing darauf zugreifen.
   
 ## <a name="one-place-to-search-across-office-365-apps"></a>Durchsuchen von Office 365-Apps von einem zentralen Ort aus
 

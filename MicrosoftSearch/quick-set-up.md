@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: bc3d1d2a-a4d9-4a02-9d7d-deb492e79cd0
 description: Erfahren Sie mehr über die vier einfachen Schritte zum Aktivieren und Verwenden von Microsoft Search.
-ms.openlocfilehash: fb5677a0acc896e593eae42c35111e0f744ef45d
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.openlocfilehash: 2a113cf10d944aea54d3fe6342599934e4b5ac45
+ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612352"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31746366"
 ---
 # <a name="quick-set-up-for-microsoft-search"></a>Schnelleinrichtung für Microsoft Search
 
@@ -73,7 +73,7 @@ Wenn Ihre Organisation die besten Suchergebnisse in SharePoint eingerichtet hat,
     
 3. Ausführliche Informationen hierzu finden Sie unter [Tools des Verwaltungsportals](admin-portal-tools.md).
     
-Nachdem Sie diese Schnelleinrichtung abgeschlossen und [Benutzer hinzugefügt](add-users.md) haben, können diese zu Bing.com wechseln und nach Arbeitsergebnissen suchen. 
+Nachdem Sie dieses Express-Setup abgeschlossen haben, können Benutzer zu Bing.com wechseln und nach Arbeitsergebnissen suchen. 
   
 ## <a name="how-do-i-get-to-the-microsoft-search-admin-portal"></a>Wie kann ich zum Microsoft Search-Verwaltungsportal wechseln?
 

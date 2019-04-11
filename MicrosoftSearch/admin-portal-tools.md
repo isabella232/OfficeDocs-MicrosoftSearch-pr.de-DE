@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4a824483-2407-4bbd-8f7f-5ebb47817c7e
 description: Übersicht über Microsoft Search-Tools zum Erstellen und Importieren von Ergebnissen, zum automatischen Anmelden und zum Suchen von einer beliebigen Stelle aus.
-ms.openlocfilehash: 3b7064fbd0d8f66149a91057be00611e23928ccc
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.openlocfilehash: cae2612979673e086820fec78e4c1e085e38a749
+ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612376"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31746390"
 ---
 # <a name="admin-portal-tools"></a>Tools des Verwaltungsportals
 
@@ -31,11 +31,11 @@ Das Microsoft Search-Verwaltungsportal umfasst Tools und Ressourcen, die für Ad
     
 - Microsoft Search in der Bing-Sucherweiterung
     
-    Verwenden Sie die Chrome- oder Edge-Erweiterung, die für autorisierte Benutzer verfügbar ist, um schnell auf die Microsoft Search-Unternehmenssuche zuzugreifen, ohne die Seite oder die Website zu verlassen, auf der Sie sich gerade befinden.
+    Verwenden Sie die Chrome- oder Edge-Erweiterung, um schnell auf die Microsoft Search-Unternehmenssuche zuzugreifen, ohne die Seite oder die Website zu verlassen, auf der Sie sich gerade befinden.
     
 - Windows 10- und AAD-Anmeldeerweiterung für Chrome
     
-    Verwenden Sie die Chrome-Erweiterung, die für autorisierte Benutzer verfügbar ist, um sich ganz einfach bei Azure Active Directory zu authentifizieren, wenn Sie sich bei unterstützten Websites anmelden, z. B. Office 365 und Bing. Es wird empfohlen, dass Sie diese Erweiterung bereitstellen, wenn Sie [das einmalige Anmelden testen](test-single-sign-on.md).
+    Verwenden Sie die Chrome-Erweiterung zum einfachen Authentifizieren bei Azure Active Directory im Rahmen der Anmeldung bei unterstützten Websites, darunter Office 365 und Bing. Wir empfehlen die Bereitstellung dieser Erweiterung, wenn Sie das [einmalige Anmelden testen](test-single-sign-on.md).
     
 - Importieren der wichtigsten SharePoint-Abfragen als Lesezeichen
     

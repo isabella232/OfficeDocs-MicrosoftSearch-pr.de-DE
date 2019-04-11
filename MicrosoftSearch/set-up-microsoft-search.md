@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 ms.assetid: c989562e-525f-4922-b436-a885e7bf36ee
 description: Alle Informationen, die Sie benötigen, um Microsoft Search für Ihre Organisation bereitzustellen.
-ms.openlocfilehash: 7e58d6df8d2ae35aab7d24c05b487f626b5f5c1c
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.openlocfilehash: f4a6a5c6fa3765cd08935970178af8ac0d46421c
+ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612401"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31746350"
 ---
 # <a name="set-up-microsoft-search"></a>Einrichten von Microsoft Search
 
-Microsoft Search kann als Teil von Office 365 ganz einfach bereitgestellt werden, indem es im Microsoft 365 Admin Center aktiviert wird. Nach der Aktivierung müssen Sie zur Einrichtung lediglich ein Logo, einen Namen und eine Farbe über eine Schnellkonfiguration festlegen und Benutzern Zugriff erteilen. Danach können sich autorisierte Benutzer mit einem Geschäfts- oder Schulkonto bei Bing anmelden und Arbeitsergebnisse bei der Suche abrufen.
+Als Bestandteil von Office 365 kann Microsoft Search ganz einfach durch Aktivierung im Microsoft 365 Admin Center bereitgestellt werden. Nach der Aktivierung ist eine schnelle Konfiguration, bei der ein Logo, ein Name und eine Farbe festgelegt werden und die Administratoren und Editoren Zugriff erhalten, alles, was Sie zur Einrichtung benötigen. Ab jetzt können sich Benutzer mit einem Geschäfts-, Schul- oder Unikonto bei Bing anmelden und bei ihren Suchen Arbeitsergebnisse erhalten.
 
-- [Schnelles Einrichten](quick-set-up.md)
+- [Schnelle Einrichtung](quick-set-up.md)
     
     Führen Sie vier einfache Schritte aus, um Microsoft Search zu aktivieren.
 
@@ -33,15 +33,15 @@ Microsoft Search kann als Teil von Office 365 ganz einfach bereitgestellt werden
     
     Steuern Sie das Aussehen und Verhalten von Microsoft Search-Ergebnissen.
     
-- [Hinzufügen von Benutzern](add-users.md)
+- [Verwalten von Benutzern](add-users.md)
     
-    Verwalten Sie den Portalzugriff für Administratoren und Editoren, und gewähren oder beschränken Sie den Zugriff auf Microsoft Search in Ihrer Organisation.
+    Portalzugriff für Administratoren und Editoren verwalten
     
-- [Tool des Verwaltungsportals](admin-portal-tools.md)
+- [Tools des Verwaltungsportals](admin-portal-tools.md)
     
     Verwenden Sie Browsererweiterungen und andere Tools, um Inhalte zu erstellen und zu importieren, die Anzahl von Anmeldeaufforderungen für Benutzer zu minimieren und Arbeitsergebnisse in Bing zu suchen.
     
-- [Testen des einmaliges Anmeldens](test-single-sign-on.md)
+- [Testen von einmaligem Anmelden (Single Sign-on, SSO)](test-single-sign-on.md)
     
     Reduzieren der Anmeldeaufforderungen für Benutzer
     

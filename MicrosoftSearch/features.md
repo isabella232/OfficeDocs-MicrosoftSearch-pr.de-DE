@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 ms.assetid: 5861e462-faed-4c3d-824d-ed3aafd80714
 description: Zu den wichtigsten Features von Microsoft Search für Administratoren und Endbenutzer gehören Lesezeichen, Fragen und Antworten, Verwaltung und Dateneinblicke
-ms.openlocfilehash: ca2c0de9fbed075a822989ab8b3bf881d5626cee
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.openlocfilehash: 983a882fd42ae6f76a4b3db4f0f87dd8fbe7974d
+ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612428"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31746374"
 ---
 # <a name="features-of-microsoft-search"></a>Features von Microsoft Search
 
 ## <a name="key-admin-features-include"></a>Zu den folgenden wichtigsten Features für Administratoren gehören:
 
-- [Unternehmenslesezeichen](create-and-manage-bookmarks.md)
+- [Lesezeichen für Unternehmen](create-and-manage-bookmarks.md)
     
     Suchen von Websites, Tools und anderen Informationen innerhalb des Unternehmens
     
@@ -47,15 +47,15 @@ ms.locfileid: "29612428"
     
 - [Benutzer und Berechtigungen](add-users.md)
     
-    Ihr globaler Administrator oder Ihr Microsoft Search-Administrator autorisiert weitere Administratoren, die die Microsoft Search-Konfiguration verwalten, Editoren, die Inhalte erstellen, und Endbenutzer, die Zugriff auf Microsoft Search haben.
+    Ihr globaler Administrator oder Ihr Microsoft Search-Administrator autorisiert weitere Administratoren, die die Microsoft Search-Konfiguration verwalten und Editoren, die Inhalte erstellen.
     
-- [Analyse](get-insights.md) 
+- [Analyse ](get-insights.md) 
     
     Verstehen Sie, wie Ihre Organisation Microsoft Search verwendet 
     
 ## <a name="key-end-user-features-include"></a>Zu den wichtigsten Features für Endbenutzer gehören:
 
-- [Personen](use/find-people-and-groups.md)
+- [Kontakte](use/find-people-and-groups.md)
     
     Suchen Sie nach Personen, und verstehen Sie deren Rolle im Unternehmen, woran sie arbeiten und welche Kontaktoptionen es gibt.
     

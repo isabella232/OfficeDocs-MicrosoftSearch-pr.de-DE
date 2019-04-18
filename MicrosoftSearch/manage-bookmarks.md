@@ -13,39 +13,39 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
-description: Suchen Sie nach Textmarken, die aktualisiert werden müssen und Methoden zum Bearbeiten Textmarke Ergebnisse für Microsoft Search Massen
-ms.openlocfilehash: c0688373a22005d4919614c1ffc2958c9b8b2e3f
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+description: Suchen nach Lesezeichen, die aktualisiert werden müssen und Möglichkeiten zum Massen bearbeiten von Lesezeichen Ergebnissen für Microsoft Search
+ms.openlocfilehash: f87176c645e127e20edd9e70a74efe05dd381236
+ms.sourcegitcommit: c70dd5eae43abb775acc6fc4522c2e6be4f0bb67
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378776"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31901800"
 ---
 # <a name="manage-bookmarks"></a>Verwalten von Lesezeichen
 
-Im Laufe der Zeit müssen Sie möglicherweise einer Textmarke Status und Inhalte relevant aufrechtzuerhalten aktualisieren. 
+Im Lauf der Zeit müssen Sie möglicherweise den Status und den Inhalt einer Textmarke aktualisieren, um Sie relevant zu halten. 
   
-## <a name="filter-bookmarks"></a>Filtern von Lesezeichen
+## <a name="filter-bookmarks"></a>Lesezeichen Filtern
 
-Verwenden Sie die Filteroption in der oberen rechten Ecke der Seite Lesezeichen Lesezeichen Datum gefunden und von wem geändert werden. Beispielsweise legen Sie den Schieberegler Datum auf 30 Tage und wählen Sie eine Admin oder -Editor, um die Liste der Textmarken finden Sie unter diese erstellt oder in dieser Zeit geändert haben.
+Verwenden Sie die Filter-Option in der oberen rechten Ecke der Seite Lesezeichen, um Lesezeichen nach Datum zu suchen und die Benutzer zu ändern. Legen Sie beispielsweise den Schieberegler Datum auf 30 Tage fest, und wählen Sie einen Administrator oder Editor aus, um die Liste der Textmarken anzuzeigen, die Sie in dieser Zeit erstellt oder geändert haben.
   
-## <a name="change-bookmark-content-or-settings"></a>Die Textmarke Inhalt ändern oder Einstellungen
+## <a name="change-bookmark-content-or-settings"></a>Ändern von Textmarken Inhalten oder-Einstellungen
 
-1. Wechseln Sie zum Microsoft Search Admin-portal
+1. Wechseln zum Microsoft Search-Verwaltungsportal
     
-2. Klicken Sie im Navigationsbereich auf **Lesezeichen**
+2. Klicken Sie im Navigationsbereich auf **Lesezeichen**.
     
-3. Hier finden eine Textmarke, Suche, Filter, oder klicken Sie auf eine Textmarke Status, um die Suchergebnisse einzuschränken
+3. So suchen Sie nach einer Textmarke, suchen, Filtern oder klicken auf einen Lesezeichen Status, um Ihre Ergebnisse einzuschränken
     
-4. Ändern oder aktualisieren eine Textmarke, klicken Sie auf den Titel
+4. Um eine Textmarke zu ändern oder zu aktualisieren, klicken Sie auf den Titel
     
-5. Nehmen Sie eine beliebige geändert oder aktualisiert die Inhalte oder Einstellungen und wie diese angezeigt werden, werden 
+5. Nehmen Sie alle Änderungen oder Aktualisierungen an den Inhalten oder Einstellungen vor, und zeigen Sie eine Vorschau der Anzeige an. 
     
 6. Klicken Sie auf **Speichern**.
     
-## <a name="bulk-export-and-edit-bookmarks"></a>Massen-Export und Bearbeiten von Lesezeichen
+## <a name="bulk-export-and-edit-bookmarks"></a>Massenexportieren und Bearbeiten von Lesezeichen
 
-Bearbeiten von Daten in diese Felder nie:
+Bearbeiten Sie nie Daten in diesen Feldern:
   
 - Id
     
@@ -53,26 +53,26 @@ Bearbeiten von Daten in diese Felder nie:
     
 - Zuletzt geändert von
     
-ID ist eine eindeutige ID für jede Textmarke und sollte niemals bearbeitet werden. Die Felder zuletzt geändert und zuletzt geändert von sollte nur verwendet werden, Sortieren und Lesezeichen zu suchen.
+ID ist ein eindeutiger Bezeichner für jedes Lesezeichen und sollte nie bearbeitet werden. Die Felder zuletzt geändert und zuletzt geändert von sollten nur zum Sortieren und suchen von Lesezeichen verwendet werden.
   
-1. Wenn Sie eine Teilmenge der Ihre Lesezeichen exportieren möchten, Filtern
+1. Wenn Sie eine Teilmenge ihrer Lesezeichen exportieren möchten, Filtern Sie Sie.
     
-2. Klicken Sie in der oberen rechten Ecke der Seite Lesezeichen **Exportieren**
+2. Klicken Sie in der oberen rechten Ecke der Seite Lesezeichen auf **exportieren**
     
-3. Speichern Sie oder öffnen Sie die CSV-Datei
+3. Speichern oder Öffnen der CSV-Datei
     
-4. Bearbeiten von Daten in einem der folgenden Felder:
+4. Bearbeiten von Daten in einem dieser Felder:
    - Position
     
    - URL
     
-   - Schlüsselwörter
+   - Schlüsselwörter
     
-   - State
+   - Bundesland/Kanton
     
    - Beschreibung
     
-   - Reservierte Schlüsselwörter
+   - ReServierte Schlüsselwörter
     
    - Anfangstermin
     
@@ -82,14 +82,16 @@ ID ist eine eindeutige ID für jede Textmarke und sollte niemals bearbeitet werd
     
    - Gruppen
     
-   - Gerät&amp;OS
+   - Geräte&amp;Betriebssystem
     
    - Gezielte Variationen
     
 5. Speichern Sie die CSV-Datei
+
+    Die CSV-Datei sollte als CSV-UTF-8-Datei gespeichert werden, andere Dateitypen und Codierungen können zu Importfehlern führen.
     
-6. Klicken Sie in der oberen rechten Ecke der Seite Lesezeichen auf **Importieren**
+6. Klicken Sie in der oberen rechten Ecke der Seite Lesezeichen auf **importieren**
     
-7. Klicken Sie im Bereich Lesezeichen importieren klicken Sie auf **Durchsuchen** , und wählen Sie die bearbeiteten CSV-Datei 
+7. Klicken Sie im Bereich Lesezeichen importieren auf **Durchsuchen** , und wählen Sie die Datei edited. CSV aus. 
     
-8. Klicken Sie auf **Importieren**
+8. Klicken Sie auf **importieren**

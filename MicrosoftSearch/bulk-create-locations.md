@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 15c9fada-f7a6-4210-aa6b-028b32217830
 description: Hinzufügen von vielen Standorten gleichzeitig mit Importtools für das Microsoft Search-Verwaltungsportal
-ms.openlocfilehash: eb51b93ceaa560e5142ac46d316ba745c614fe34
-ms.sourcegitcommit: 61b4b84e581d3df6045851fe6c9c1291853dea06
+ms.openlocfilehash: 3c7e43b03b97b46769d5e73f20ddae47b3459b59
+ms.sourcegitcommit: c70dd5eae43abb775acc6fc4522c2e6be4f0bb67
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "30068410"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31901808"
 ---
 # <a name="bulk-create-locations"></a>Massenerstellen von Speicherorten
 
@@ -32,6 +32,8 @@ Laden Sie die CSV-Vorlage herunter, und verwenden Sie Sie zum Massen erstellen, 
 3. Speichern und Öffnen der CSV-Datei
     
 4. Hinzufügen des Standort Inhalts und Speichern der Datei
+
+    Die CSV-Datei sollte als CSV-UTF-8-Datei gespeichert werden, andere Dateitypen und Codierungen können zu Importfehlern führen.
     
 5. Klicken Sie in der oberen rechten Ecke des Abschnitts Standorte auf **importieren** .
     

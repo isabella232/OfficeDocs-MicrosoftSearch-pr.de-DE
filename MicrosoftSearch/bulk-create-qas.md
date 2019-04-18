@@ -1,5 +1,5 @@
 ---
-title: Massenerstellung von Q&As
+title: Massenerstellung von Fragen und Antworten
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 ms.assetid: 7bada218-8908-4956-aae3-6ffaeef384ca
 description: Schnelles Hinzufügen von Antworten auf häufig gestellte Fragen mit Importtools im Microsoft Search Admin Portal
-ms.openlocfilehash: 53f1d167948f6b621ad139620553df51b0cb91c2
-ms.sourcegitcommit: 61b4b84e581d3df6045851fe6c9c1291853dea06
+ms.openlocfilehash: 28fcf57c44f809e7f9b0c1b27042f4549067a0f8
+ms.sourcegitcommit: c70dd5eae43abb775acc6fc4522c2e6be4f0bb67
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "30068394"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31901816"
 ---
-# <a name="bulk-create-qas"></a>Massenerstellung von Q&As
+# <a name="bulk-create-qas"></a>Massenerstellung von Fragen und Antworten
 
 Laden Sie die CSV-Vorlage herunter, und verwenden Sie Sie, um Q&As massenweise zu erstellen oder zu bearbeiten. Es ist auch eine einfache Möglichkeit zum Massenspeichern von Entwurfs-Q&As, die zusätzliche Änderungen oder Aktualisierungen erfordern. Wenn Sie vorhandene Q&As massenweise bearbeiten müssen, exportieren Sie Sie aus dem Verwaltungsportal, nehmen Sie die erforderlichen Änderungen vor, und importieren Sie Sie.
   
@@ -32,6 +32,8 @@ Laden Sie die CSV-Vorlage herunter, und verwenden Sie Sie, um Q&As massenweise z
 3. Speichern und Öffnen der CSV-Datei
     
 4. Hinzufügen des Q&A-Inhalts und der Einstellungen und Speichern der Datei
+
+    Die CSV-Datei sollte als CSV-UTF-8-Datei gespeichert werden, andere Dateitypen und Codierungen können zu Importfehlern führen.
     
 5. Klicken Sie in der oberen rechten Ecke des Abschnitts Q&As auf **importieren**
     

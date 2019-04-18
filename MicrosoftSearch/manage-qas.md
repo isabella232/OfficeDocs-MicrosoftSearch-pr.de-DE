@@ -1,5 +1,5 @@
 ---
-title: Verwalten von Q&As
+title: Verwalten von Fragen und Antworten
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,39 +13,39 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
-description: Suchen und aktualisieren Sie Antworten einzeln oder unter Verwendung verfügbaren Tools auf Microsoft Search alle gleichzeitig bearbeitet
-ms.openlocfilehash: c0f6b42aa1e0ad8c4736d37ec4dcc8cff6025dbc
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+description: Suchen und Aktualisieren von Antworten einzeln oder verwenden der verfügbaren Microsoft-Such Tools, um Sie alle gleichzeitig zu bearbeiten
+ms.openlocfilehash: 47882deeb95133cfc19f4eec6417fc20fb7203de
+ms.sourcegitcommit: c70dd5eae43abb775acc6fc4522c2e6be4f0bb67
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378782"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31901832"
 ---
-# <a name="manage-qas"></a>Verwalten von Q&As
+# <a name="manage-qas"></a>Verwalten von Fragen und Antworten
 
-Im Laufe der Zeit müssen Sie zum Aktualisieren einer Q&A Status und Inhalt, um relevante zu halten.
+Im Lauf der Zeit müssen Sie möglicherweise einen Q&A's-Status und-Inhalt aktualisieren, um ihn relevant zu halten.
   
 ## <a name="filter-qas"></a>Filter Q&As
 
-Verwenden Sie die Filteroption in der rechten oberen Ecke der Seite Q&As Q&As Datum gefunden und von wem geändert werden. Beispielsweise legen Sie den Schieberegler Datum auf 30 Tage und wählen Sie eine Admin oder -Editor, um die Liste der Q&As finden Sie unter diese erstellt oder in dieser Zeit geändert haben.
+Verwenden Sie die Filter-Option in der oberen rechten Ecke der Q&As-Seite, um nach Q&As nach Datum zu suchen und diese zu ändern. Legen Sie beispielsweise den Schieberegler Datum auf 30 Tage fest, und wählen Sie einen Administrator oder Editor aus, um die Liste der Q&As anzuzeigen, die Sie in dieser Zeit erstellt oder geändert haben.
   
-## <a name="change-qa-content-or-settings"></a>Ändern von Q&A oder Einstellungen
+## <a name="change-qa-content-or-settings"></a>Ändern von Q&A-Inhalten oder-Einstellungen
 
-1. Wechseln Sie zum Microsoft Search Admin-portal
+1. Wechseln Sie zum Microsoft Search-Verwaltungsportal.
     
-2. Klicken Sie im Navigationsbereich auf **Q&As**
+2. Klicken Sie im Navigationsbereich auf **Fragen und Antworten**.
     
-3. Hier finden eine Q&A, Suche, Filter, oder klicken Sie auf einen Status Q&A, um Ihre Ergebnisse zu beschränken
+3. So finden Sie ein Q&A, suchen, Filtern oder klicken auf einen Q&A-Status, um die Ergebnisse einzuschränken
     
-4. Ändern oder Aktualisieren einer Q&A, klicken Sie auf den Titel
+4. Um eine Q&A zu ändern oder zu aktualisieren, klicken Sie auf den Titel
     
-5. Nehmen Sie eine beliebige geändert oder aktualisiert die Inhalte oder Einstellungen und wie diese angezeigt werden, werden
+5. Nehmen Sie alle Änderungen oder Aktualisierungen an den Inhalten oder Einstellungen vor, und zeigen Sie eine Vorschau der Anzeige an.
     
 6. Klicken Sie auf **Speichern**.
     
-## <a name="bulk-export-and-edit-qas"></a>Massen Sie-Export und bearbeiten Q&As
+## <a name="bulk-export-and-edit-qas"></a>Massenexport und-Bearbeitung Q&As
 
-Bearbeiten von Daten in diese Felder nie:
+Bearbeiten Sie nie Daten in diesen Feldern:
   
 - Id
     
@@ -53,27 +53,27 @@ Bearbeiten von Daten in diese Felder nie:
     
 - Zuletzt geändert von
     
-ID ist eine eindeutige ID für jede Q&A und sollte niemals bearbeitet werden. Die Felder zuletzt geändert und zuletzt geändert von sollte nur verwendet werden, Sortieren und Q&As suchen.
+ID ist ein eindeutiger Bezeichner für jede Q&A und sollte nie bearbeitet werden. Die Felder zuletzt geändert und zuletzt geändert von werden nur zum Sortieren und suchen von Q&As verwendet.
   
-1. Wenn Sie einen Teil Ihrer Q&As exportieren möchten, Filtern
+1. Wenn Sie eine Teilmenge ihrer Q&As exportieren möchten, Filtern Sie Sie.
     
-2. Klicken Sie in der oberen rechten Ecke der Seite Q&As **Exportieren**
+2. Klicken Sie in der oberen rechten Ecke der Seite Q&As auf **exportieren** .
     
-3. Speichern Sie oder öffnen Sie die CSV-Datei
+3. Speichern oder Öffnen der CSV-Datei
     
-4. Bearbeiten von Daten in einem der folgenden Felder:
+4. Bearbeiten von Daten in einem dieser Felder:
     
    - Frage
     
    - URL
       
-   - Schlüsselwörter
+   - Schlüsselwörter
     
-   - State
+   - Bundesland/Kanton
     
-   - Beschreibung der Antwort
+   - Antwort Beschreibung
     
-   - Reservierte Schlüsselwörter
+   - ReServierte Schlüsselwörter
     
    - Anfangstermin
     
@@ -83,24 +83,26 @@ ID ist eine eindeutige ID für jede Q&A und sollte niemals bearbeitet werden. Di
     
    - Gruppen
     
-   - Gerät&amp;OS
+   - Geräte&amp;Betriebssystem
     
    - Gezielte Variationen
     
 5. Speichern Sie die CSV-Datei
+
+    Die CSV-Datei sollte als CSV-UTF-8-Datei gespeichert werden, andere Dateitypen und Codierungen können zu Importfehlern führen.
     
-6. Klicken Sie in der oberen rechten Ecke der Seite Q&As auf **Importieren**
+6. Klicken Sie in der oberen rechten Ecke der Seite Q&As auf **importieren**
     
-7. Klicken Sie im Bereich Import Q&As klicken Sie auf **Durchsuchen** , und wählen Sie die bearbeiteten CSV-Datei 
+7. Klicken Sie im Bereich Q&As importieren auf **Durchsuchen** , und wählen Sie die Datei edited. CSV aus. 
     
-8. Klicken Sie auf **Importieren**
+8. Klicken Sie auf **importieren**
     
-Sie erhalten einen Fehler, wenn alle erforderlichen Daten fehlt oder ist ungültig ist. Je nach dem Fehler kann eine Protokolldatei mit weiteren Informationen zu den Zeilen und Spalten, die zu korrigierende generiert werden. Bearbeitungen Sie alle erforderlichen, und versuchen Sie erneut, die Datei zu importieren.
+Sie erhalten eine Fehlermeldung, wenn erforderliche Daten fehlen oder ungültig sind. Je nach Fehler wird möglicherweise eine Protokolldatei mit weiteren Informationen zu den Zeilen und Spalten generiert, die korrigiert werden müssen. Nehmen Sie die erforderlichen Änderungen vor, und versuchen Sie, die Datei erneut zu importieren.
   
 > [!NOTE]
-> Bis alle Fehler behoben wurden, können nicht erstellen oder bearbeiten eine beliebige Q&As. 
+> Sie können keine Q&As erstellen oder bearbeiten, bis alle Fehler aufgelöst wurden. 
   
-Nicht alle Felder sind erforderlich, und Pflichtfelder variieren je nach Status Q&A. Basierend auf dem Feld State, werden Q&As gespeichert wie Entwurf vorgeschlagen wird geplant, oder sie automatisch veröffentlicht. Hier erfahren Sie mehr über die erforderlichen und empfohlenen Felder in [Q&As erstellen](create-qas.md).
+Nicht alle Felder sind erforderlich, und die erforderlichen Felder hängen vom Q&A-Status ab. Basierend auf dem Feld Status wird Q&As als Entwurf, vorgeschlagen, geplant gespeichert oder automatisch veröffentlicht. Weitere Informationen zu den erforderlichen und empfohlenen Feldern finden Sie unter [Create Q&As](create-qas.md).
 
   
 

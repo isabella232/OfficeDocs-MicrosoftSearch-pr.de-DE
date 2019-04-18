@@ -13,39 +13,39 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
-description: Im Laufe der Zeit müssen Sie eines Speicherorts Status und relevante Schützen von Inhalten zu aktualisieren.
-ms.openlocfilehash: 614d265ff6cd68b767041d12c3261b7b76effd47
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+description: Im Lauf der Zeit müssen Sie möglicherweise den Status und den Inhalt eines Standorts aktualisieren, um ihn relevant zu halten.
+ms.openlocfilehash: 69fa4fc86d80adf76aa2a5788bdde433dd827a4d
+ms.sourcegitcommit: c70dd5eae43abb775acc6fc4522c2e6be4f0bb67
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378778"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31901824"
 ---
 # <a name="manage-locations"></a>Verwalten von Speicherorten
 
-Im Laufe der Zeit müssen Sie eines Speicherorts Status und relevante Schützen von Inhalten zu aktualisieren. 
+Im Lauf der Zeit müssen Sie möglicherweise den Status und den Inhalt eines Standorts aktualisieren, um ihn relevant zu halten. 
   
-## <a name="filter-locations"></a>Filtern von Standorten
+## <a name="filter-locations"></a>Filter Speicherorte
 
-Verwenden Sie die Filteroption in der oberen rechten Ecke der Seite Speicherorte Speicherorte nach Datum suchen und finden Sie unter, die sie geändert. Beispielsweise legen Sie den Schieberegler Datum auf 30 Tage und wählen Sie eine Admin oder -Editor, um die Liste der Speicherorte der finden Sie unter diese erstellt oder geändert werden, während dieser Zeiten haben.
+Verwenden Sie die Filter-Option in der oberen rechten Ecke der Seite Speicherorte, um nach Datum zu suchen und zu sehen, wer Sie geändert hat. Legen Sie beispielsweise den Schieberegler Datum auf 30 Tage fest, und wählen Sie einen Administrator oder Editor aus, um die Liste der Speicherorte anzuzeigen, die Sie während dieser Zeit erstellt oder geändert haben.
   
-## <a name="change-location-content"></a>Speicherort Inhalt ändern
+## <a name="change-location-content"></a>Ändern des Standort Inhalts
 
-1. Wechseln Sie zum Microsoft Search Admin-portal
+1. Wechseln zum Microsoft Search-Verwaltungsportal
     
-2. Klicken Sie im Navigationsbereich auf **Speicherorte**
+2. Klicken Sie im Navigationsbereich auf **Speicherorte** .
     
-3. Suchen Sie nach einem Speicherort, Suche, Filter, oder klicken Sie auf einen Speicherort Status, um die Suchergebnisse einzuschränken
+3. So finden Sie einen Speicherort, suchen, Filtern oder klicken auf einen Standortstatus, um die Ergebnisse einzuschränken
     
-4. Ändern oder aktualisieren einen Speicherort, klicken Sie auf den Standortnamen
+4. Um einen Speicherort zu ändern oder zu aktualisieren, klicken Sie auf den Speicherort Namen
     
-5. Nehmen Sie eine beliebige geändert oder aktualisiert die Inhalte und wie diese angezeigt werden können 
+5. Nehmen Sie alle Änderungen oder Aktualisierungen am Inhalt vor, und zeigen Sie an, wie diese angezeigt werden. 
     
 6. Klicken Sie auf **Speichern**.
     
-## <a name="bulk-export-and-edit-locations"></a>Massen Sie-Export und "Bearbeiten"
+## <a name="bulk-export-and-edit-locations"></a>Massenexport und Bearbeiten von Speicherorten
 
-Bearbeiten von Daten in diese Felder nie:
+Bearbeiten Sie nie Daten in diesen Feldern:
   
 - Id
     
@@ -53,25 +53,25 @@ Bearbeiten von Daten in diese Felder nie:
     
 - Zuletzt geändert von
     
-ID ist eine eindeutige ID für jeden Standort und sollte niemals bearbeitet werden. Die Felder zuletzt geändert und zuletzt geändert von sollte nur verwendet werden, Sortieren und Speicherorte suchen.
+ID ist ein eindeutiger Bezeichner für jede Position und sollte nie bearbeitet werden. Die Felder zuletzt geändert und zuletzt geändert von werden nur zum Sortieren und suchen von Speicherorten verwendet.
   
-1. Wenn Sie eine Teilmenge von Ihrem Speicherorte exportieren möchten, Filtern
+1. Wenn Sie eine Teilmenge ihrer Speicherorte exportieren möchten, Filtern Sie Sie.
     
-2. Klicken Sie in der oberen rechten Ecke der Seite Speicherorte **Exportieren**
+2. Klicken Sie in der oberen rechten Ecke der Seite Speicherorte auf **exportieren** .
     
-3. Speichern Sie oder öffnen Sie die CSV-Datei
+3. Speichern oder Öffnen der CSV-Datei
     
-4. Bearbeiten von Daten in einem der folgenden Felder:
+4. Bearbeiten von Daten in einem dieser Felder:
     
    - Name
     
-   - Adresszeile 1
+   - Adressleiste 1
     
-   - Adresse, Zeile 2
+   - Adress Reihe 2
     
    - Stadt
     
-   - Adresse: Region
+   - Adressstatus
     
    - PLZ
     
@@ -79,23 +79,25 @@ ID ist eine eindeutige ID für jeden Standort und sollte niemals bearbeitet werd
     
    - Vollständige Adresse
     
-   - Breitengrad
+   - Latitude
     
    - Längengrad
     
-   - Schlüsselwörter
+   - Schlüsselwörter
     
-   - Reservierte Schlüsselwörter
+   - ReServierte Schlüsselwörter
     
-   - State
+   - Bundesland/Kanton
     
 5. Speichern Sie die CSV-Datei
+
+    Die CSV-Datei sollte als CSV-UTF-8-Datei gespeichert werden, andere Dateitypen und Codierungen können zu Importfehlern führen.
     
-6. Klicken Sie in der oberen rechten Ecke der Seite Speicherorte auf **Importieren**
+6. Klicken Sie in der oberen rechten Ecke der Seite Speicherorte auf **importieren**
     
-7. Klicken Sie im Bereich Speicherorte importieren klicken Sie auf **Durchsuchen** , und wählen Sie die bearbeiteten CSV-Datei 
+7. Klicken Sie im Bereich Speicherorte importieren auf **Durchsuchen** , und wählen Sie die Datei edited. CSV aus. 
     
-8. Klicken Sie auf **Importieren**
+8. Klicken Sie auf **importieren**
 
   
 

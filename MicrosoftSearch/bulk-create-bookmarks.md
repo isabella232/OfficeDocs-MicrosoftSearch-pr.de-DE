@@ -1,5 +1,5 @@
 ---
-title: Massenerstellen von Lesezeichen
+title: Massenerstellung von Lesezeichen
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 ms.assetid: def300e7-103c-4e92-a062-28ffa27561d7
 description: Erstellen Sie viele Lesezeichen gleichzeitig mit Importtools für das Microsoft Search-Verwaltungsportal.
-ms.openlocfilehash: 07694de1f546a1431f371fa24ffc5721ea66337c
-ms.sourcegitcommit: 61b4b84e581d3df6045851fe6c9c1291853dea06
+ms.openlocfilehash: 7c134784f0ca0d4cc84d5bce3a98f7e75aa6f441
+ms.sourcegitcommit: c70dd5eae43abb775acc6fc4522c2e6be4f0bb67
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "30068402"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31901792"
 ---
-# <a name="bulk-create-bookmarks"></a>Massenerstellen von Lesezeichen
+# <a name="bulk-create-bookmarks"></a>Massenerstellung von Lesezeichen
 
 Laden Sie die CSV-Vorlage herunter, und verwenden Sie Sie zum Massen erstellen, bearbeiten und Speichern von Lesezeichen. Zum Massen Bearbeiten vorhandener Lesezeichen, exportieren Sie diese aus dem Verwaltungsportal, nehmen Sie die erforderlichen Änderungen vor, und importieren Sie Sie.
   
@@ -32,6 +32,8 @@ Laden Sie die CSV-Vorlage herunter, und verwenden Sie Sie zum Massen erstellen, 
 3. Speichern und Öffnen der CSV-Datei
     
 4. Hinzufügen des Inhalts und der Einstellungen für die Textmarke und Speichern der Datei
+
+    Die CSV-Datei sollte als CSV-UTF-8-Datei gespeichert werden, andere Dateitypen und Codierungen können zu Importfehlern führen.
     
 5. Klicken Sie in der oberen rechten Ecke des Abschnitts Lesezeichen auf **importieren**
     

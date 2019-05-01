@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
 description: Suchen und Aktualisieren von Antworten einzeln oder verwenden der verfügbaren Microsoft-Such Tools, um Sie alle gleichzeitig zu bearbeiten
 ms.openlocfilehash: 47882deeb95133cfc19f4eec6417fc20fb7203de
-ms.sourcegitcommit: c70dd5eae43abb775acc6fc4522c2e6be4f0bb67
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31901832"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508817"
 ---
 # <a name="manage-qas"></a>Verwalten von Fragen und Antworten
 
@@ -69,7 +69,7 @@ ID ist ein eindeutiger Bezeichner für jede Q&A und sollte nie bearbeitet werden
       
    - Schlüsselwörter
     
-   - Bundesland/Kanton
+   - Status
     
    - Antwort Beschreibung
     

@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
 description: Im Lauf der Zeit müssen Sie möglicherweise den Status und den Inhalt eines Standorts aktualisieren, um ihn relevant zu halten.
 ms.openlocfilehash: 69fa4fc86d80adf76aa2a5788bdde433dd827a4d
-ms.sourcegitcommit: c70dd5eae43abb775acc6fc4522c2e6be4f0bb67
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31901824"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508665"
 ---
 # <a name="manage-locations"></a>Verwalten von Speicherorten
 
@@ -87,7 +87,7 @@ ID ist ein eindeutiger Bezeichner für jede Position und sollte nie bearbeitet w
     
    - ReServierte Schlüsselwörter
     
-   - Bundesland/Kanton
+   - Status
     
 5. Speichern Sie die CSV-Datei
 

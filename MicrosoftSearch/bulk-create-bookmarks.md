@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: def300e7-103c-4e92-a062-28ffa27561d7
 description: Erstellen Sie viele Lesezeichen gleichzeitig mit Importtools für das Microsoft Search-Verwaltungsportal.
 ms.openlocfilehash: 7c134784f0ca0d4cc84d5bce3a98f7e75aa6f441
-ms.sourcegitcommit: c70dd5eae43abb775acc6fc4522c2e6be4f0bb67
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31901792"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508618"
 ---
 # <a name="bulk-create-bookmarks"></a>Massenerstellung von Lesezeichen
 

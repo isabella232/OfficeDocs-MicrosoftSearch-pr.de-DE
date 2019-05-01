@@ -1,5 +1,5 @@
 ---
-title: Suchen von Unterhaltungen
+title: Unterhaltungen suchen
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -12,43 +12,43 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: ecd31803-0b32-4ba3-8bb8-a0d1dfb8b856
-description: Verwenden Sie Microsoft Search, um Teams zu erhalten und Yammer-Unterhaltungen und die Details, die angezeigt werden,
+description: Verwenden Sie die Microsoft-Suche, um Teams und Jammer Unterhaltungen und die Details zu finden, die Sie sehen werden.
 ms.openlocfilehash: b339242fbafc4cff0f6fe5960cb90b0d05493105
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378772"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508857"
 ---
-# <a name="find-conversations"></a>Suchen von Unterhaltungen
+# <a name="find-conversations"></a>Unterhaltungen suchen
 
-Suchen Sie nach eigene private Microsoft-Teams oder Microsoft Yammer Unterhaltungen oder Unterhaltungen zwischen Mitarbeitern, denen Sie können zugreifen.
+Suchen Sie nach Ihrem eigenen privaten Microsoft Teams oder Microsoft jammern Unterhaltungen oder Gespräche zwischen Kollegen, auf die Sie Zugriff haben.
   
-Ergebnisse der Unterhaltung gehören:
+Unterhaltungs Ergebnisse:
   
-- Der Name der Person, die sie gesendet
+- Der Name der Person, die die Nachricht gesendet hat.
     
-- Wenn es sich um eine Teams ist oder Yammer-Unterhaltung
+- Wenn es sich um eine Teams-oder Jammer-Unterhaltung handelt
     
 - Ein Ausschnitt der Nachricht
     
-- Das Datum der Unterhaltung
+- Das Unterhaltungs Datum
     
-- Anlagen, die Ihnen den Zugriff auf
+- Anlagen, auf die Sie Zugriff haben
     
-Die wichtigsten 30 Unterhaltung Suchergebnisse werden in Arbeit Ergebnisse angezeigt. Weitere Informationen oder Ergebnisse klicken Sie auf die Nachricht. In Arbeit Ergebnissen Yammer Unterhaltungen werden nach Datum sortiert, im Yammer-Client sind aber nach Relevanz sortieren.
+Die Top 30 Unterhaltungs Ergebnisse werden in Arbeitsergebnissen angezeigt. Klicken Sie auf die Nachricht, um weitere Informationen oder Ergebnisse zu erhalten. Unter Arbeitsergebnisse werden Jammer-Unterhaltungen nach Datum sortiert, aber im jammern-Client sind Sie nach Relevanz sortiert.
   
-Ergebnisse der Unterhaltung wird nicht angezeigt, wenn Ihre Organisation nicht mit Teams oder Yammer oder Ihre IT-Abteilung nicht diese Ergebnisse aktivieren.
+Es werden keine Unterhaltungs Ergebnisse angezeigt, wenn in Ihrer Organisation Teams oder jammern nicht verwendet wird oder Ihre IT-Abteilung diese Ergebnisse nicht einschaltet.
   
-1. Melden Sie sich bei Ihrem Konto arbeiten oder Schule Bing
+1. Melden Sie sich bei Ihrem Arbeits-oder Schulkonto bei Bing an.
     
-2. Suchen Sie nach einem Thema oder den Namen einer Person, und klicken Sie auf der Registerkarte **Unterhaltungen** 
+2. Suchen nach einem Thema oder Namen einer Person und klicken auf die **** Registerkarte "Unterhaltungen" 
     
-    Beispielsweise "Senden Sie mir Deck' oder"Amy Turner."
+    Beispiel: "Senden Sie mir das Deck" oder "Amy Turner".
     
-3. Unterhaltungen werden am oberen Rand der Ergebnisseite angezeigt.
+3. Unterhaltungen werden oben auf der Ergebnisseite angezeigt.
     
-    Andere Webergebnisse angezeigt wird. Sie nicht für die Organisation spezifisch sind.
+    Weitere Webergebnisse werden darunter angezeigt. Sie sind nicht spezifisch für Ihre Organisation.
     
 
 

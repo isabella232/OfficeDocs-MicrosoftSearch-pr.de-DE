@@ -1,5 +1,5 @@
 ---
-title: Suchen nach Personen und Gruppen
+title: Suchen von Personen und Gruppen
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -12,39 +12,39 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: 17c9982a-0fd9-4cf1-b010-69ae3440b41f
-description: Verwenden Sie Microsoft Search, erhalten alle Benutzer in Ihrem Unternehmen und die Informationen, die angezeigt werden
+description: Verwenden Sie die Microsoft-Suche, um alle Personen in Ihrem Unternehmen und die Informationen zu finden, die Sie sehen werden.
 ms.openlocfilehash: c9b71b8353e5ebc6e876a837424de8b74a7c20d5
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378764"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508921"
 ---
-# <a name="find-people-and-groups"></a>Suchen nach Personen und Gruppen
+# <a name="find-people-and-groups"></a>Suchen von Personen und Gruppen
 
-Es ist einfach, finden Informationen über Ihre Mitarbeiter mit Microsoft Search. Suchen Sie einfach auf Bing für den Namen oder Alias, Kontaktinformationen, anstehende Besprechungen gemeinsam haben, Org Chart Details, Gruppenmitgliedschaften und Dateien, die sie mit Ihnen gemeinsam haben zu erhalten.
+Es ist einfach, Informationen zu Ihren Mitarbeitern mithilfe der Microsoft-Suche zu finden. Suchen Sie einfach auf Bing nach dem Namen oder Alias, um Kontaktinformationen, bevorstehende Besprechungen, die Sie zusammen haben, Organigramm-Details, Gruppenmitgliedschaften und Dateien zu finden, die Sie für Sie freigegeben haben.
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2AuTv?autoplay=false]
   
-## <a name="find-people"></a>„Personen suchen“.
+## <a name="find-people"></a>Personen suchen
 
-Ihre IT-Abteilung bestimmt den Inhalt, der in Microsoft Search Results angezeigt wird.
+Ihre IT-Abteilung bestimmt die Inhalte, die in den Microsoft-Suchergebnissen angezeigt werden.
   
-1. Melden Sie sich bei Ihrem Konto arbeiten oder Schule Bing
+1. Melden Sie sich bei Ihrem Arbeits-oder Schulkonto bei Bing an.
     
-2. Suchen Sie nach "me," Ihren Namen oder arbeiten Alias, oder ein Kollege Name oder alias
+2. Suchen nach "Me", Ihrem Namen oder Arbeits Alias oder dem Namen oder Alias eines Kollegen
     
-    Einschließlich sowohl einen ersten und letzten Namen gibt das beste Ergebnis zurück, doch wenn Sie nur einen Teil des Namens kennen, Microsoft Search wird zeigen Sie die Ergebnisse, die am besten Suchergebnisse und, falls möglich, bieten weitere Ergebnisse angezeigt werden.
+    Wenn Sie sowohl einen vor-als auch einen Nachnamen angeben, wird das beste Ergebnis zurückgegeben, aber wenn Sie nur einen Teil des Namens kennen, zeigt Microsoft Search das Ergebnis an, das Ihrer Suche am besten entspricht, und, falls möglich, weitere Ergebnisse anzuzeigen.
     
-3. Eine Karte "Personen" wird am oberen Rand der Ergebnisseite oder am oberen Rand der Spalte rechts angezeigt.
+3. Eine Personen Karte wird oben auf der Ergebnisseite oder oben in der rechten Spalte angezeigt.
     
-    Checken Sie die Details und Aktionen auf der Karte, und klicken Sie auf noch mehr Informationen über.
+    Sehen Sie sich die Details und Aktionen auf der Karte an, und klicken Sie dann auf Weitere Informationen.
     
-Webergebnisse werden unter Ihrer Arbeit Ergebnisse angezeigt. Diese Ergebnisse nicht für die Organisation spezifisch sind. In einigen Fällen beispielsweise wenn ein Name einer sehr häufiges Websuche, ist die Karte "Personen" möglicherweise nicht automatisch angezeigt. Um Ihre Arbeit Ergebnisse finden Sie unter müssen Sie möglicherweise auf den Link **Ergebnisse anzeigen aus** , neben Ihrer Organisation Logo klicken. 
+Webergebnisse werden unter ihren Arbeitsergebnissen angezeigt. Diese Ergebnisse sind nicht spezifisch für Ihre Organisation. In einigen Fällen wird die Personen Karte möglicherweise nicht automatisch angezeigt, wenn ein Name eine sehr häufige Websuche ist. Um ihre Arbeitsergebnisse anzuzeigen, müssen Sie möglicherweise neben dem Logo Ihrer Organisation auf den Link **Ergebnisse anzeigen** klicken. 
   
-## <a name="find-groups"></a>Suchen Sie nach Gruppen
+## <a name="find-groups"></a>Gruppen suchen
 
-So, wie Sie für sich selbst oder ein Kollege suchen, geben Sie den Namen einer Gruppe oder Gruppe alias, der ein finden Sie unter Kontaktdetails, Gruppenbesitzer, Mitglieder, haben sie Dateien mit Ihnen und Unterhaltungen freigegeben.
+Geben Sie den Namen eines Gruppen-oder Gruppen Alias ein, um die Kontaktdetails, die Gruppenbesitzer, die Mitglieder, die Dateien, die Sie für Sie freigegeben haben, und die Unterhaltungen anzuzeigen.
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2AA2V?autoplay=false]
   

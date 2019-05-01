@@ -13,67 +13,67 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5479dc34-3de0-41c5-94a7-ba87069e6b43
-description: Übersicht über die Verfahren zum Hinzufügen und Erstellen von Textmarken für Microsoft Search Arbeit Ergebnisse aller
+description: Übersicht über alle Möglichkeiten zum Hinzufügen und Erstellen von Lesezeichen für Microsoft Search-Arbeitsergebnisse
 ms.openlocfilehash: 306a7cb3b278556454c3050926fed93f2a6929ad
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378785"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508657"
 ---
 # <a name="create-and-manage-bookmarks"></a>Erstellen und Verwalten von Lesezeichen
 
-## <a name="create-bookmarks"></a>Erstellen von Textmarken
+## <a name="create-bookmarks"></a>Erstellen von Lesezeichen
 
-Lesezeichen helfen Ihnen die bestmögliche Ergebnisse für Ihre Benutzer arbeitsbezogene Abfragen zu fördern. Die weitere Lesezeichen zu veröffentlichen, die mehr nutzen und nutzen Sie für Benutzer hinzufügen.
+Lesezeichen helfen Ihnen, die bestmöglichen Ergebnisse für die arbeitsbezogenen Abfragen Ihres Benutzers zu fördern. Je mehr Textmarken Sie veröffentlichen, desto mehr Wert und nutzen fügen Sie Benutzern hinzu.
   
-- [Erstellen von Textmarken](create-bookmarks.md)
+- [Erstellen von Lesezeichen](create-bookmarks.md)
     
-    Fügen Sie die einzelne Lesezeichen.
+    Einzelne Lesezeichen hinzufügen.
     
-- [Veröffentlichen von standardmäßigen Lesezeichen](publish-default-bookmarks.md)
+- [Veröffentlichen von Standardlesezeichen](publish-default-bookmarks.md)
     
-    Überprüfen Sie, und fügen Sie vorgeschlagene Lesezeichen das allgemeine Suchvorgänge aufgelistet.
+    Überarbeiten und Hinzufügen von vorgeschlagenen Lesezeichen, die häufige Suchvorgänge behandeln.
     
-- [Import SharePoint Höhergestufte Ergebnisse und Häufigste Suchvorgänge](import-sharepoint-promoted-results-and-top-queries.md)
+- [Importieren von höhergestuften SharePoint-Ergebnissen und den wichtigsten Abfragen](import-sharepoint-promoted-results-and-top-queries.md)
     
-    Nutzen der Benutzer Abfragen und vorhandenes bestes Suchergebnis Ergebnisse vorgeschlagene Lesezeichen erstellen.
+    Nutzen von Benutzer Abfragen und vorhandenen Ergebnissen für beste Suchergebnisse zum Erstellen vorgeschlagener Lesezeichen.
     
-- [Massen Erstellen von Textmarken](bulk-create-bookmarks.md)
+- [Massenerstellung von Lesezeichen](bulk-create-bookmarks.md)
     
-    Erstellen von Textmarken in eine CSV-Datei und Massen importieren.
+    Erstellen Sie Lesezeichen in einer CSV-Datei, und Massenimport.
     
-- [Integrieren von PowerApps](integrate-powerapps.md)
+- [Integration von PowerApps](integrate-powerapps.md)
     
-    Business-apps zu Ihrer Lesezeichen hinzufügen.
+    Hinzufügen von Geschäfts-apps zu Ihren Lesezeichen.
     
 ## <a name="manage-bookmarks"></a>Verwalten von Lesezeichen
 
-Verwenden Sie den Status des Textmarke, Tools, Filtern und Massen Sie-Export/Import-Tools zum [Suchen und Aktualisieren von Lesezeichen für Inhalte](manage-bookmarks.md), einschließlich Titel, Schlüsselwörter und URLs.
+Verwenden Sie den Lesezeichen Status, Filtertools und Massenexport/-Importtools, um [Lesezeichen Inhalte](manage-bookmarks.md), einschließlich Titel, Schlüsselwörter und URLs, zu suchen und zu aktualisieren.
   
-## <a name="bookmark-status"></a>Bookmark-status
+## <a name="bookmark-status"></a>Lesezeichen Status
 
-In der Admin-Portal können Sie Lesezeichen nach ihrem aktuellen Status anzeigen:
+Im Admin-Portal können Sie Lesezeichen nach Ihrem aktuellen Status anzeigen:
   
 - Veröffentlicht
     
-    Veröffentlichte Textmarken in Bing-Suchergebnissen angezeigt werden, wenn ein autorisierter Benutzer nach einem Stichwort gesucht.
+    Veröffentlichte Lesezeichen werden in Bing-Suchergebnissen angezeigt, wenn ein autorisierter Benutzer nach einem Schlüsselwort sucht.
     
-- Entwurf 
+- Entwurf
     
-    Wenn eine Textmarke nicht für die Veröffentlichung bereit ist, als Entwurf speichern. Entwurf Textmarken werden nicht auf Bing angezeigt.
+    Wenn eine Textmarke nicht bereit ist, zu veröffentlichen, speichern Sie Sie als Entwurf. Entwurfs-Lesezeichen werden nicht auf Bing angezeigt.
     
 - Geplant
     
-    Geplante Textmarken werden automatisch an einem zukünftigen Datum veröffentlicht.
+    Geplante Lesezeichen werden automatisch zu einem späteren Zeitpunkt veröffentlicht.
     
 - Abgelaufen
     
-    Abgelaufene Lesezeichen wurden von veröffentlichten Inhalten basierend auf deren Ablaufdatum automatisch entfernt.
+    Abgelaufene Lesezeichen wurden basierend auf ihrem Ablaufdatum automatisch aus veröffentlichten Inhalten entfernt.
     
 - Vorgeschlagene
     
-    Vorgeschlagene Lesezeichen basieren auf dem Feedback von Benutzern. Standard-Vorschläge von Microsoft kann auch angezeigt werden.
+    Vorgeschlagene Lesezeichen basieren auf Feedback von Benutzern. Möglicherweise werden auch Standardvorschläge von Microsoft angezeigt.
 
   
 

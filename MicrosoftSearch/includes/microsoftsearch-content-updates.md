@@ -32,3 +32,16 @@
 | 4/9/2019 | [Schnelleinrichtung für Microsoft Search](/MicrosoftSearch/quick-set-up) | Geändert |
 | 4/9/2019 | [Einrichten von Microsoft Search](/MicrosoftSearch/set-up-microsoft-search) | Geändert |
 | 4/9/2019 | [Vorteile von Microsoft Search](/MicrosoftSearch/why-microsoft-search) | Geändert |
+
+
+## <a name="week-of-april-15-2019"></a>Woche vom 15. April 2019
+
+
+| Zeitpunkt der Veröffentlichung |Titel des Themas | Änderung |
+|------|------------|--------|
+| 4/16/2019 | [Massenerstellung von Lesezeichen](/MicrosoftSearch/bulk-create-bookmarks) | Geändert |
+| 4/16/2019 | [Massenerstellen von Speicherorten](/MicrosoftSearch/bulk-create-locations) | Geändert |
+| 4/16/2019 | [Massenerstellung von Q&As](/MicrosoftSearch/bulk-create-qas) | Geändert |
+| 4/16/2019 | [Verwalten von Lesezeichen](/MicrosoftSearch/manage-bookmarks) | Geändert |
+| 4/16/2019 | [Verwalten von Speicherorten](/MicrosoftSearch/manage-locations) | Geändert |
+| 4/16/2019 | [Verwalten von Q&As](/MicrosoftSearch/manage-qas) | Geändert |

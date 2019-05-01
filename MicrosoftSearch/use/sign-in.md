@@ -1,5 +1,5 @@
 ---
-title: Melden Sie sich bei Microsoft Search
+title: Anmelden bei Microsoft Search
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -12,43 +12,43 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: 429fb92c-e968-4d61-be15-6ecebfdbd157
-description: Microsoft Search oder einer beliebigen Office 365-app mit einem Konto arbeiten oder Schule anmelden
+description: Melden Sie sich schnell bei Microsoft Search oder einer beliebigen Office 365-App mit einem Geschäfts-oder Schulkonto an.
 ms.openlocfilehash: 0edfd7d244e953beb8153f494e83a3e59c74c007
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378763"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508865"
 ---
-# <a name="sign-in-to-microsoft-search"></a>Melden Sie sich bei Microsoft Search
+# <a name="sign-in-to-microsoft-search"></a>Anmelden bei Microsoft Search
 
-Nachdem Ihre IT-Abteilung Sie als Microsoft Search Benutzer hinzugefügt wurde, melden Sie sich mit Ihrer Arbeit oder Schule Konto.
+Nachdem Sie Ihre IT-Abteilung als Microsoft Search-Benutzer hinzugefügt haben, melden Sie sich mit Ihrem Geschäfts-oder Schulkonto an.
   
-## <a name="sign-in-to-microsoft-search"></a>Melden Sie sich bei Microsoft Search
+## <a name="sign-in-to-microsoft-search"></a>Anmelden bei Microsoft Search
 
-Wenn Sie bereits an eine Anwendung Office 365 angemeldet sind, werden Sie automatisch auf Microsoft Search angemeldet sein navigieren Sie zu Bing. Wenn Sie nicht angemeldet sind:
+Wenn Sie bereits bei einer Office 365-Anwendung angemeldet sind, werden Sie bei Bing automatisch bei Microsoft Search angemeldet. Wenn Sie nicht angemeldet sind:
   
-1. Klicken Sie in der oberen rechten Ecke einer beliebigen Seite Bing auf **Anmelden** , oder **Melden Sie sich bei Geschäftsergebnisse finden Sie unter**
+1. Klicken Sie in der oberen rechten Ecke einer Bing-Seite auf **Anmelden** oder **anmelden, um Geschäftsergebnisse anzuzeigen** .
     
-2. Wenn diese Optionen nicht angezeigt wird, fahren Sie mit [Microsoft Search erkunden](https://www.bing.com/business/explore)
+2. Wenn diese Anmeldeoptionen nicht angezeigt werden, gehen Sie zu [Explore Microsoft Search](https://www.bing.com/business/explore)
     
-    Sie werden automatisch zu Ihrer Organisation-Anmeldeseite umgeleitet.
+    Sie werden automatisch zur Anmeldeseite Ihrer Organisation umgeleitet.
     
-3. Klicken Sie im Menü Konto neben **Arbeit oder Schule Konto**, klicken Sie auf **Verbinden**
+3. Klicken Sie im Menü Konto neben **Arbeits-oder Schulkonto**auf **verbinden** .
     
-4. Wenn Sie aufgefordert werden, wählen Sie das Konto, den, das Sie verwenden möchten, melden Sie sich mit, oder geben Ihre e-Mail-Adresse und das Kennwort
+4. Wenn Sie dazu aufgefordert werden, wählen Sie das Konto, mit dem Sie sich anmelden möchten, oder geben Sie Ihre e-Mail-Adresse und das Kennwort
     
-## <a name="use-a-browser-extension-to-sign-in-automatically"></a>Verwenden Sie eine Browsererweiterung automatisch anmelden
+## <a name="use-a-browser-extension-to-sign-in-automatically"></a>Automatisches Anmelden für eine Browser Erweiterung
 
-Wenn Sie auf Windows 10 Chrome verwenden, installieren Sie Windows 10 und AAD-Erweiterung. Mit diesem können Sie auf unterstützten Websites wie Microsoft Search und Office 365 anmelden ohne Ihre e-Mail-Adresse und ein Kennwort eingeben.
+Wenn Sie Chrome unter Windows 10 verwenden, installieren Sie die Windows 10-und die AAD-Anmeldungs Erweiterung. Damit können Sie sich bei unterstützten Websites wie Microsoft Search und Office 365 anmelden, ohne Ihre e-Mail-Adresse und Ihr Kennwort eingeben zu müssen.
   
-## <a name="sign-out-of-microsoft-search"></a>Melden Sie bei Microsoft Search ab
+## <a name="sign-out-of-microsoft-search"></a>AbMelden bei der Microsoft-Suche
 
-- In der oberen rechten Ecke einer beliebigen Seite Bing, klicken Sie auf Ihren Namen, klicken Sie dann im Menü Konto neben **Arbeit oder Schule Konto**, klicken Sie auf **Abmelden**.
+- Klicken Sie in der oberen rechten Ecke einer Bing-Seite auf Ihren Namen, und klicken Sie dann im Menü Konto neben **Arbeits-oder Schulkonto**auf Abmelden. ****
     
-Bing speichert Ihre Arbeit oder Schule Kontostatus, angemeldet hat, oder abgemeldet, in einem Browsercookie. Wenn Sie sich abmelden und Cookies, deaktivieren Sie das nächste Mal gelangen Sie zur Bing Sie möglicherweise automatisch angemeldet sein, oder Sie möglicherweise eine erneute Anmeldung aufgefordert werden. Ihre IT-Abteilung wird hierdurch für Ihre Organisation konfiguriert.
+Bing speichert Ihren Arbeits-oder Schulkonto Status (angemeldet oder abgemeldet) in einem Browser Cookie. Wenn Sie sich abmelden und Ihre Cookies löschen, wird das nächste Mal, wenn Sie zu Bing wechseln, automatisch angemeldet, oder Sie werden aufgefordert, sich erneut anzumelden. Ihre IT-Abteilung konfiguriert dies für Ihre Organisation.
   
-Wenn Sie Microsoft Search Features wie die personalisierte Ergebnisse und Microsoft-Rewards angemeldet sind möglicherweise Verhalten sich anders oder nicht verfügbar.
+Wenn Sie bei Microsoft Search angemeldet sind, Verhalten sich einige Features wie personalisierte Ergebnisse und Microsoft reWards möglicherweise anders oder nicht verfügbar.
 
   
 

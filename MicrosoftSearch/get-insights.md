@@ -1,5 +1,5 @@
 ---
-title: Verwenden Sie das Dashboard Insights
+title: Verwenden des einBlicke-Dashboards
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,61 +13,61 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ebce7fdc-e89b-473c-8131-67e659bb3f73
-description: Analysieren von Metriken und Verwalten von Inhalten aus dem Dashboard leicht zu bedienende im Microsoft Search Admin-portal
+description: Analysieren von Metriken und Verwalten von Inhalten über das benutzerfreundliche Dashboard im Microsoft Search-Verwaltungsportal
 ms.openlocfilehash: 3bbdfade7d28d3dddafb651371f462bb37e53a1d
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378787"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508569"
 ---
-# <a name="use-the-insights-dashboard"></a>Verwenden Sie das Dashboard Insights
+# <a name="use-the-insights-dashboard"></a>Verwenden des einBlicke-Dashboards
 
-Rufen Sie Einblicke in die Daten, und sehen Sie, wie Benutzer mit den Ergebnissen ansprechenden sind. Benutzer der Dashboard-Admin-Portal an:
+Hier erhalten Sie Daten Einblicke und erfahren, wie Benutzer ihre Ergebnisse eingehen. Benutzer das Admin-Portal-Dashboard:
   
-- Finden Sie unter wie viele Lesezeichen und Q&As veröffentlicht, geplant, vorgeschlagene oder wurden
+- Anzeigen, wie viele Lese-und Q&As veröffentlicht, geplant oder vorgeschlagen wurden
     
-- Finden Sie unter Seitenaufrufe für Häufigste Suchvorgänge, die Arbeit Ergebnisse anzeigen
+- Siehe Impressions for Top search queries, die Arbeitsergebnisse zeigen
     
-- Analysieren der Eindruck Verteilung nach Textmarken und Q&As
+- Analysieren von Impression-Distributionen für Lesezeichen und Q&As
     
-## <a name="get-details-about-bookmarks-and-qas"></a>Anzeigen von Details zu Lesezeichen und Q&As
+## <a name="get-details-about-bookmarks-and-qas"></a>Abrufen von Details zu Lesezeichen und Q&As
 
-Verwenden Sie das Dashboard, um nach Status Textmarke oder Q&A Summen finden Sie unter:
+Verwenden des Dashboards zum Anzeigen von Lesezeichen-oder Q&A-Gesamtsummen nach Status:
   
-- Veröffentlicht: Die Anzahl der veröffentlichten Ergebnisse, die für Benutzer verfügbar sind
+- Veröffentlicht: die Anzahl der veröffentlichten Ergebnisse, die Benutzern zur Verfügung stehen
     
-- Geplante: Die Anzahl der geplanten Ergebnisse in der Pipeline veröffentlichen
+- Geplant: die Anzahl der geplanten Ergebnisse in der Veröffentlichungs Pipeline
     
-- Vorgeschlagene: Die Anzahl der angezeigten Vorschläge von Benutzern
+- Empfohlen: die Anzahl der Vorschläge von Benutzern
     
-Lesezeichen und Q&A Erkenntnisse Karten im Dashboard bieten auch einfachen Zugriff auf allgemeine Aufgaben:
+Lesezeichen und Q&A Insight-Karten im Dashboard bieten auch einfachen Zugriff auf häufige Aufgaben:
   
-- Um Lesezeichen oder Q&A Ergebnisse anzuzeigen, klicken Sie auf Lesezeichen oder Q&As auf den Titel der Karte
+- Zum Anzeigen von Lesezeichen-oder Q&A-Ergebnissen klicken Sie auf Lesezeichen oder Q&As auf dem Kartentitel.
     
-- Um ein Lesezeichen oder Q&A hinzuzufügen, klicken Sie auf die Option erstellen aus
+- Klicken Sie zum Hinzufügen einer Textmarke oder eines Q&A auf die Option erstellen.
     
-- Um Bulk Hinzufügen von Lesezeichen oder Q&As, klicken Sie auf die Option für den Import
+- Zum Massen Hinzufügen von Lesezeichen oder Q&As klicken Sie auf die Option Importieren.
     
-## <a name="review-top-search-queries"></a>Häufigste Suchvorgänge überprüfen
+## <a name="review-top-search-queries"></a>Überarbeiten der häufigsten Suchabfragen
 
-Erfahren Sie, welche Suchvorgänge die meisten Seitenaufrufe der letzten 90 Tage generiert haben. Die obersten 25 Benutzer sucht nach jeder Ergebnistyp werden auch die Gesamtzahl der Seitenaufrufe und deren Click-through-Rate (STRG) angezeigt. Klicken Sie auf die am häufigsten verwendeten Abfragen Karte können Sie folgende Aktionen ausführen:
+Erfahren Sie, welche Suchvorgänge die meisten Impressionen in den letzten 90 Tagen generiert haben. Die Top 25 Benutzer suchen für jeden Ergebnistyp werden zusammen mit der Gesamtanzahl der Impressionen und ihrer Klick-through-Rate (CTR) angezeigt. Auf der oberen Suchanfragen Karte können Sie Folgendes tun:
   
-- Zum Filtern nach Ergebnistyp, klicken Sie auf alle Ergebnisse im Menü, und wählen Sie einen anderen Ergebnistyp
+- Zum Filtern nach Ergebnistyp klicken Sie im Menü auf alle Ergebnisse, und wählen Sie einen anderen Ergebnistyp aus.
     
-- Um herauszufinden, wie Bing ein Ergebnis angezeigt wird, klicken Sie auf eine Abfrage und die Suchergebnisse, die die Seite in einer neuen Registerkarte wird geöffnet.
+- Wenn Sie sehen möchten, wie ein Ergebnis auf Bing angezeigt wird, klicken Sie auf eine Abfrage, und die Suchergebnisseite wird in einer neuen Registerkarte geöffnet.
     
-- Um weitere Suchabfragen angezeigt wird, klicken Sie auf die Pfeile nach links oder rechts am unteren Rand der Karte
+- Um weitere Suchabfragen anzuzeigen, klicken Sie auf den Pfeil nach links oder rechts unten auf der Karte.
     
-## <a name="analyze-impressions-by-result-type"></a>Analysieren der Seitenaufrufe durch Ergebnistyp
+## <a name="analyze-impressions-by-result-type"></a>Analysieren von Impressionen nach Ergebnistyp
 
-Leicht lesbaren Diagramme in der Eindruck Verteilung von Ergebnis Typ Karte anzeigen Daten über verschiedene Zeiträume. Die Zusammenfassung zeigt die Anzahl der Seitenaufrufe mit einer Berechnung Prozentsatz für die Verteilung (Anzahl der Ergebnis Typ Seitenaufrufe x 100 Gesamtanzahl aller Seitenaufrufe). Die Zeitachse zeigt die tägliche Anzahl der Seitenaufrufe für einen Ergebnistyp. Sie können auch ändern den Zeitraum für beide Ansichten und weitere Details anfordern:
+Einfache Diagramme in der Form der Impression-Verteilung nach Ergebnistypen zeigen Daten über verschiedene Zeiträume an. Die Zusammenfassung zeigt die Anzahl der Impressionen mit einer prozentualen Berechnung für die Verteilung (Anzahl der Ergebnistypen Impressionen x 100/Gesamtanzahl Impressionen). Die Zeitachse zeigt die tägliche Anzahl der Impressionen für einen Ergebnistyp. Sie können auch den Zeitintervall für beide Ansichten ändern und weitere Details abrufen:
   
-- Klicken Sie am oberen Rand der Karte auf 7 Tage, 30 Tage oder 90 Tage
+- Klicken Sie oben auf der Karte auf 7 Tage, 30 Tage oder 90 Tage.
     
-- Um einen benutzerdefinierten Bereich zwischen 0 und 90 Tage angezeigt wird, klicken Sie auf benutzerdefinierte Bereich, und geben Sie die Start- und Enddaten
+- Um einen benutzerdefinierten Bereich zwischen 0 und 90 Tagen anzuzeigen, klicken Sie auf benutzerdefinierter Bereich, und geben Sie das Start-und Enddatum ein.
     
-- In die Zeitachse bewegen Sie den Mauszeiger auf einen Datenpunkt für Seitenaufrufe durch Ergebnistyp für einen einzelnen Tag
+- Bewegen Sie den Mauszeiger auf einem Datenpunkt für Impressionen nach Ergebnistyp für einen einzelnen Tag.
 
   
 

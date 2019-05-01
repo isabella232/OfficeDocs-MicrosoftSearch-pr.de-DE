@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen eines Speicherorts
+title: Speicherort hinzufügen
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,45 +13,45 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c37cf1b1-5915-4eb1-9f78-72c48cad3b4b
-description: Hinzufügen von Speicherorten, damit Ihre Organisation Büros, Gebäude und anderen Arbeitsbereichen in Ihrer Microsoft Search angezeigt werden Ergebnisse arbeiten
+description: Hinzufügen von Speicherorten, damit die Büros, Gebäude und anderen Arbeitsbereiche Ihrer Organisation in Ihren Microsoft Search-Arbeitsergebnissen angezeigt werden
 ms.openlocfilehash: ad9aa274e7934917a2c4fee05ad2c24af3d117f4
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378766"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508545"
 ---
-# <a name="add-a-location"></a>Hinzufügen eines Speicherorts
+# <a name="add-a-location"></a>Speicherort hinzufügen
 
-Fügen Sie einen Speicherort aus, und suchen Sie die Benutzer, dass sie die Adresse der Gebäude, Office, oder Ort und seine Position auf einer Karte sehen. Sie können auch Bing Maps erfahren Sie, wie erhalten möchten, finden Sie unter Neuigkeiten in der Nähe, und vieles mehr.
+Hinzufügen eines Speicherorts und bei der Suche der Benutzer die Adresse des Gebäudes, des Büros oder des Ortes und des Standorts auf einer Karte. Sie können auch Bing Maps verwenden, um Wegbeschreibungen zu erhalten, zu sehen, was in der Nähe ist, und vieles mehr.
   
-1. Wechseln Sie zum Microsoft Search Admin-portal
+1. Wechseln zum Microsoft Search-Verwaltungsportal
     
-2. Klicken Sie im Navigationsbereich auf **Speicherorte**
+2. Klicken Sie im Navigationsbereich auf **Speicherorte** .
     
-3. Klicken Sie am oberen Rand der Seite auf **Speicherort hinzufügen**
+3. Klicken Sie oben auf der Seite auf **Speicherort hinzufügen**
     
-    Speicherort der Seite bearbeiten wird angezeigt, mit einer interaktiven Karte.
+    Die Seite Speicherort bearbeiten wird mit einer interaktiven Karte angezeigt.
     
-4. Wählen Sie eine **Land/Region**
+4. Auswählen eines **Landes/einer Region**
     
-5. Geben Sie die **Adresse**
+5. Geben Sie die **Adresse** ein
     
-    Sie sehen einen Indikator Position auf der Karte für die Adresse. Dies ist die Zuordnung, die Benutzern angezeigt wird, wenn sie für diesen Speicherort suchen.
+    Auf der Karte wird ein Ortungs Symbol für die Adresse angezeigt. Dies ist die Zuordnung, die Benutzer sehen, wenn Sie nach diesem Speicherort suchen.
     
-6. Geben Sie bei Bedarf alle **Suite/Unit/Floor** -Informationen 
+6. Geben Sie gegebenenfalls eine beliebige **Suite/Unit/Floor-** Information ein. 
     
-7. Geben Sie einen **Standortnamen**
+7. Geben Sie einen **Standortnamen** ein.
     
-    Beschreiben Sie diesen Speicherort die Möglichkeit, die Ihre Benutzer in der Regel darauf zu verweisen. Beispielsweise Erstellen von Name oder Zahl. Nicht wiederholen Sie die Adresse.
+    Beschreiben Sie diesen Speicherort so, wie sich die Benutzer in der Regel darauf beziehen. Beispiel: ein Gebäudename oder eine Nummer. Wiederholen Sie die Adresse nicht.
     
-8. Geben Sie **Schlüsselwörter** , die diesen Speicherort auslösen sollen 
+8. Geben Sie **Stichwörter** ein, die diesen Speicherort auslösen sollen. 
     
-    Wörter oder Ausdrücke Personen werden verwenden, um diesen Speicherort oder Bereiche darin enthaltenen, beispielsweise zu finden: zentrale, Erstellen von 9 oder West Café.
+    Schließen Sie Wörter oder Ausdrücke ein, die von Personen verwendet werden, um diesen Standort oder ihre Bereiche zu finden, beispielsweise: Hauptsitz, Building 9 oder West Cafe.
     
-9. Geben Sie **Schlüsselwörter**
+9. Geben Sie **Reservierte Schlüsselwörter** ein.
     
-    Verwenden Sie eine oder mehrere reservierte Schlüsselwörter um sicherzustellen, dass immer ein Speicherort als relevantesten Ergebnis angezeigt wird. Reservierte Schlüsselwörter können nicht über Standorte hinweg gemeinsam verwendet werden.
+    Verwenden Sie ein oder mehrere reservierte Schlüsselwörter, um sicherzustellen, dass ein Speicherort immer als das relevantste Ergebnis angezeigt wird. ReServierte Schlüsselwörter können nicht über Speicherorte hinweg freigegeben werden.
 
   
 

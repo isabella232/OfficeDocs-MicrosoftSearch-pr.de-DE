@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 90d3190d-1add-490f-bef2-10b528252a2e
-description: Microsoft Search ist eine Unternehmens Sucherfahrung, die die Produktivität erhöht und Zeit spart, indem Sie relevantere Suchergebnisse für Ihre Organisation bereitstellt.
-ms.openlocfilehash: 4d3e3edd64d527121c1e4aee30376b15ca0c2e60
-ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
+description: Microsoft Search ist eine Oberfläche für Unternehmenssuche, durch die die Produktivität gesteigert und Zeit gespart wird, indem relevantere Suchergebnisse für Ihre Organisation bereitgestellt werden.
+ms.openlocfilehash: b9937dd91d6101386a781884917dab131ddc85e9
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31746398"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33509029"
 ---
 # <a name="microsoft-search"></a>Microsoft Search
 
@@ -45,9 +45,9 @@ ms.locfileid: "31746398"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h2>Vorteile von Microsoft Search</h2>
-                        <p>Holen Sie sich eine Unternehmenssuche, die die Produktivität erhöht und Zeit spart, indem Sie relevantere Suchergebnisse für Ihre Organisation bereitstellt.</p>
-                        <p><a href="why-microsoft-search.md">Hier erfahren Sie, wie es geht</a></p>
+                        <h2>Warum Microsoft Search?</h2>
+                        <p>Holen Sie sich eine Oberfläche für Unternehmenssuche, durch die die Produktivität gesteigert und Zeit gespart wird, indem relevantere Suchergebnisse für Ihre Organisation bereitgestellt werden.</p>
+                        <p><a href="overview-microsoft-search.md">Hier erfahren Sie, wie es geht</a></p>
                     </div>
                 </div>
             </div>
@@ -68,9 +68,9 @@ ms.locfileid: "31746398"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Hauptfeatures</h3>
-                        <p>Informationen dazu, welche Features für Administratoren und Benutzer verfügbar sind, einschließlich der Suchvorgänge</p>
-                        <p><a href="features.md">Weitere Informationen</a></p>
+                        <h3>Durchsuchbare Inhalte</h3>
+                        <p>Erfahren Sie, welche Features für Administratoren und Benutzer verfügbar sind und welche Ergebnisse bei der Suche angezeigt werden.</p>
+                        <p><a href="make-content-easy-to-find.md">Weitere Informationen</a></p>
                     </div>
                 </div>
             </div>
@@ -86,9 +86,9 @@ ms.locfileid: "31746398"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Administrator-schnell einrichten</h3>
-                        <p>Erfahren Sie, wie Sie die Microsoft-Suche aktivieren und in vier einfachen Schritten für Ihre Organisation konfigurieren können.</p>
-                        <p><a href="quick-set-up.md">Jetzt starten</a></p>
+                        <h3>Erste Schritte</h3>
+                        <p>Erfahren Sie, wie Sie mit der Microsoft-Suche beginnen und Sie für Ihre Organisation konfigurieren können.</p>
+                        <p><a href="setup-microsoft-search.md">Jetzt starten</a></p>
                     </div>
                 </div>
             </div>
@@ -104,9 +104,9 @@ ms.locfileid: "31746398"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>FAQs</h3>
-                        <p>Antworten auf einige häufig gestellte Fragen zur Microsoft-Suche</p>
-                        <p><a href="faqs.md">Durchsuchen der häufig gestellten Fragen</a></p>
+                        <h3>Suche in SharePoint</h3>
+                        <p>Sie Fragen sich, wie SharePoint und Microsoft Search zusammenarbeiten?</p>
+                        <p><a href="get-started-search-in-sharepoint-online.md">Fakten abrufen</a></p>
                     </div>
                 </div>
             </div>
@@ -120,9 +120,9 @@ ms.locfileid: "31746398"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h2>Verwenden der Microsoft-Suche</h2>
-                        <p>Die Microsoft-Suche ist eine einfache, schnelle und sichere Möglichkeit, Informationen zu finden, produktiver zu arbeiten und intelligenter zu funktionieren.</p>
-                        <p><a href="use/about-microsoft-search.md">Hier erfahren Sie, wie es geht</a></p>
+                        <h2>Verwendung von Microsoft Search</h2>
+                        <p>Artikel und Videos anzeigen, um Ihre Benutzer bei der Microsoft-Suche besser zu unterstützen </p>
+                        <p><a href="https://go.microsoft.com/fwlink/?linkid=2090946">AusChecken</a></p>
                     </div>
                 </div>
             </div>
@@ -134,7 +134,7 @@ ms.locfileid: "31746398"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="media/c8456838-c6db-41f7-9e84-eebfd9c5b0b8.png" alt="How work results appear on Bing" />
+                            <img src="media/c8456838-c6db-41f7-9e84-eebfd9c5b0b8.png" alt="How work results appear in Bing" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -144,46 +144,3 @@ ms.locfileid: "31746398"
         </div>
     </li>
 </ul>
-
-<h2>Weitere Informationen</h2>
-<ul class="panelContent cardsW">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <p><a href="security.md">Sicherheit</a></p>
-                        <p><a href="requirements.md">Voraussetzungen</a></p>  
-                        <p><a href="about-the-admin-portal.md">Informationen zum Verwaltungsportal</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <p><a href="quick-set-up.md">Schnelles Einrichten</a></p>
-                        <p><a href="connected-services.md">Verbundene Dienste</a></p>
-                        <p><a href="set-up-microsoft-search.md">Einrichten von Microsoft Search</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <p><a href="create-bookmarks.md">Erstellen von Lesezeichen</a></p>
-                        <p><a href="create-qas.md">Erstellen von Fragen und Antworten (F&As)</a></p>
-                        <p><a href="add-users.md">Verwalten von Benutzern</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-</ul>  

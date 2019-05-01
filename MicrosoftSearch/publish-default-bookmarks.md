@@ -1,5 +1,5 @@
 ---
-title: Veröffentlichen von standardmäßigen Lesezeichen
+title: Veröffentlichen von Standardlesezeichen
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,47 +13,47 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d49a0b97-e4ca-47cf-ad52-6113787b8402
-description: Standard-Textmarken, die im Microsoft Search Admin-Portal zur Verfügung stehen
+description: Standard-Lesezeichen, die im Microsoft Search-Verwaltungsportal zur Verfügung stehen
 ms.openlocfilehash: 0105cf33fdf274a6a856615b992e5bc0e0cc02e8
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378769"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508682"
 ---
-# <a name="publish-default-bookmarks"></a>Veröffentlichen von standardmäßigen Lesezeichen
+# <a name="publish-default-bookmarks"></a>Veröffentlichen von Standardlesezeichen
 
-Um schnell herauszufinden, wie Lesezeichen auf Bing angezeigt, veröffentlichen Sie die Standardeinstellungen. Verwenden Sie diese als Referenz um zu verstehen, wie Lesezeichen benennen und erstellen eine gute Schlüsselwörter.
+Wenn Sie schnell sehen möchten, wie Lesezeichen auf Bing angezeigt werden, veröffentlichen Sie die bereitgestellten Standardwerte. Verwenden Sie diese als Referenz, um zu verstehen, wie Lesezeichen benannt und gute Schlüsselwörter erstellt werden.
   
-Es wird empfohlen, dass Sie die zwei Sätze von standardmäßigen Lesezeichen überprüfen:
+Wir schlagen vor, dass Sie die beiden Sätze der standardmäßigen Lesezeichen lesen:
   
-- Veröffentlichte Lesezeichen Standard
+- Standardmäßig veröffentlichte Lesezeichen
     
-    Dazu gehören die Ergebnisse zu Microsoft Search und Hilfen für Windows und Office-apps. Nachdem Microsoft Search in der Microsoft-365-Verwaltungskonsole aktiviert ist, wird diese werden automatisch veröffentlicht und Bing angezeigt werden. Sie können bearbeiten oder zu einem beliebigen Zeitpunkt zu löschen.
+    Dies umfasst Ergebnisse zur Microsoft-Suche und-Hilfe für Windows-und Office-Apps. Nachdem Microsoft Search im Microsoft 365 Admin Center aktiviert wurde, werden diese automatisch veröffentlicht und werden auf Bing angezeigt. Sie können Sie jederzeit bearbeiten oder löschen.
     
-- Default vorgeschlagene Lesezeichen
+- Standardmäßig vorgeschlagene Lesezeichen
     
-    Dazu gehören die Ergebnisse für häufig verwendete arbeitsbezogene suchen, einschließlich mitarbeitervergütungen, Zeit und Kosten, reporting, Senden von Bestellungen und erhalten von Hilfe von IT-Dienste.
+    Hierzu gehören Ergebnisse für häufige Suchvorgänge im Zusammenhang mit der Arbeit, einschließlich Mitarbeiterleistungen, Zeit-und Spesenabrechnungen, Übermitteln von Bestellungen und erhalten von Hilfe von IT-Diensten.
     
-Wenn ein vorhandenes Lesezeichen mit demselben Titel oder URL als Standard Lesezeichen ermittelt wird, wird der Standardwert verworfen. Wir werden nicht ändern die vorhandene Textmarke keinerlei, veröffentlichen die Standard-Textmarke oder enthalten die Standard-Textmarke in der Liste vorgeschlagene.
+Wenn eine vorhandene Textmarke mit demselben Titel oder derselben URL wie eine Standard Textmarke gefunden wird, wird die Standardeinstellung verworfen. Wir werden die vorhandene Textmarke in keiner Weise ändern, das Standard-Lesezeichen veröffentlichen oder das Standard-Lesezeichen in die vorgeschlagene Liste aufnehmen.
   
-## <a name="update-and-publish-a-default-suggested-bookmark"></a>Aktualisieren und Veröffentlichen einer vorgeschlagenen Standard-Textmarke
+## <a name="update-and-publish-a-default-suggested-bookmark"></a>Aktualisieren und Veröffentlichen eines standardmäßigen vorgeschlagenen Lesezeichens
 
-1. Wechseln Sie zum Microsoft Search Admin-portal
+1. Wechseln zum Microsoft Search-Verwaltungsportal
     
-2. Klicken Sie im Navigationsbereich auf **Lesezeichen**
+2. Klicken Sie im Navigationsbereich auf **Lesezeichen**.
     
-3. Klicken Sie auf die Bookmarkspage auf **vorgeschlagene**
+3. Klicken Sie im Bookmarkspage auf **vorgeschlagen** .
     
-4. Aktiviert eine vorgeschlagene Textmarke, und klicken Sie auf **Bearbeiten**
+4. Wählen Sie eine vorgeschlagene Textmarke aus, und klicken Sie auf **Bearbeiten**
     
-5. Überprüfen Sie den Inhalt der Textmarke, und stellen Sie alle erforderlichen Bearbeitungsvorgänge
+5. Überprüfen des Lesezeichen Inhalts und vornehmen der erforderlichen Änderungen
     
-6. Fehlende Informationen, wie eine URL oder die Beschreibung hinzufügen
+6. Hinzufügen fehlender Informationen wie einer URL oder Beschreibung
     
-7. Klicken Sie auf **Veröffentlichen**
+7. Klicken Sie auf **veröffentlichen**
     
-Standard-Lesezeichen stehen derzeit nur in Englisch verfügbar. 
+Derzeit sind Standard Lesezeichen nur in englischer Sprache verfügbar. 
 
   
 

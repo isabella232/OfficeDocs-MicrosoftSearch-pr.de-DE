@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: bc3d1d2a-a4d9-4a02-9d7d-deb492e79cd0
 description: Erfahren Sie mehr über die vier einfachen Schritte zum Aktivieren und Verwenden von Microsoft Search.
 ms.openlocfilehash: 2a113cf10d944aea54d3fe6342599934e4b5ac45
-ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31746366"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508585"
 ---
 # <a name="quick-set-up-for-microsoft-search"></a>Schnelleinrichtung für Microsoft Search
 

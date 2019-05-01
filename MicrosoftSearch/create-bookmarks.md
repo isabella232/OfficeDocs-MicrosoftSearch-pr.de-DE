@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 40a556e1-61c2-4bd3-b80e-5ad62af77454
 description: Erstellen Sie Lesezeichen, oder verwenden Sie eine Browsererweiterung, um diese zu Ihren Microsoft Search-Arbeitsergebnissen hinzuzufügen.
 ms.openlocfilehash: 71e5ae48bb8812e5222a4d6075292f3b85bed441
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612409"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508730"
 ---
 # <a name="create-bookmarks"></a>Erstellen von Lesezeichen
 

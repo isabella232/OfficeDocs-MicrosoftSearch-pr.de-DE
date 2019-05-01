@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: a220c1bf-7cee-448a-90a3-310284d03e81
 description: Reduzieren Sie die Anzahl, die Windows 10-Benutzer zur Anmeldung bei Microsoft Search und Office 365 aufgefordert werden.
 ms.openlocfilehash: 55d359edac36020ec8cf2aad6b64ca9737ee1066
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612353"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508929"
 ---
 # <a name="test-single-sign-on"></a>Testen des einmaliges Anmeldens
 

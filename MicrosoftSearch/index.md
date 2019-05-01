@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 90d3190d-1add-490f-bef2-10b528252a2e
 description: Microsoft Search ist eine Oberfläche für Unternehmenssuche, durch die die Produktivität gesteigert und Zeit gespart wird, indem relevantere Suchergebnisse für Ihre Organisation bereitgestellt werden.
 ms.openlocfilehash: 904a54998900e1c702d273dc71ceb605929269ed
-ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31746382"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33509100"
 ---
 # <a name="microsoft-search"></a>Microsoft Search
 
@@ -153,7 +153,7 @@ ms.locfileid: "31746382"
                 <div class="card">
                     <div class="cardText">
                         <p><a href="security.md">Sicherheit</a></p>
-                        <p><a href="requirements.md">Voraussetzungen</a></p>  
+                        <p><a href="requirements.md">Anforderungen</a></p>  
                         <p><a href="about-the-admin-portal.md">Informationen zum Verwaltungsportal</a></p>
                     </div>
                 </div>
@@ -165,7 +165,7 @@ ms.locfileid: "31746382"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <p><a href="quick-set-up.md">Schnelle Einrichtung</a></p>
+                        <p><a href="quick-set-up.md">Schnelles Einrichten</a></p>
                         <p><a href="connected-services.md">Verbundene Dienste</a></p>
                         <p><a href="set-up-microsoft-search.md">Einrichten von Microsoft Search</a></p>
                     </div>
@@ -179,7 +179,7 @@ ms.locfileid: "31746382"
                 <div class="card">
                     <div class="cardText">
                         <p><a href="create-bookmarks.md">Erstellen von Lesezeichen</a></p>
-                        <p><a href="create-qas.md">Erstellen von Fragen und Antworten (F&As)</a></p>
+                        <p><a href="create-qas.md">Erstellen von F&A</a></p>
                         <p><a href="add-users.md">Verwalten von Benutzern</a></p>
                     </div>
                 </div>

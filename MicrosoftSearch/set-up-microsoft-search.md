@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: c989562e-525f-4922-b436-a885e7bf36ee
 description: Alle Informationen, die Sie benötigen, um Microsoft Search für Ihre Organisation bereitzustellen.
 ms.openlocfilehash: f4a6a5c6fa3765cd08935970178af8ac0d46421c
-ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31746350"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508953"
 ---
 # <a name="set-up-microsoft-search"></a>Einrichten von Microsoft Search
 
 Als Bestandteil von Office 365 kann Microsoft Search ganz einfach durch Aktivierung im Microsoft 365 Admin Center bereitgestellt werden. Nach der Aktivierung ist eine schnelle Konfiguration, bei der ein Logo, ein Name und eine Farbe festgelegt werden und die Administratoren und Editoren Zugriff erhalten, alles, was Sie zur Einrichtung benötigen. Ab jetzt können sich Benutzer mit einem Geschäfts-, Schul- oder Unikonto bei Bing anmelden und bei ihren Suchen Arbeitsergebnisse erhalten.
 
-- [Schnelle Einrichtung](quick-set-up.md)
+- [Schnelles Einrichten](quick-set-up.md)
     
     Führen Sie vier einfache Schritte aus, um Microsoft Search zu aktivieren.
 
@@ -37,11 +37,11 @@ Als Bestandteil von Office 365 kann Microsoft Search ganz einfach durch Aktivier
     
     Portalzugriff für Administratoren und Editoren verwalten
     
-- [Tools des Verwaltungsportals](admin-portal-tools.md)
+- [Tool des Verwaltungsportals](admin-portal-tools.md)
     
     Verwenden Sie Browsererweiterungen und andere Tools, um Inhalte zu erstellen und zu importieren, die Anzahl von Anmeldeaufforderungen für Benutzer zu minimieren und Arbeitsergebnisse in Bing zu suchen.
     
-- [Testen von einmaligem Anmelden (Single Sign-on, SSO)](test-single-sign-on.md)
+- [Testen des einmaliges Anmeldens](test-single-sign-on.md)
     
     Reduzieren der Anmeldeaufforderungen für Benutzer
     

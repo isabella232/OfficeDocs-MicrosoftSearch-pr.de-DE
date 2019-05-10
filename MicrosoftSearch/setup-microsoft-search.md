@@ -3,7 +3,7 @@ title: Einrichten von **Microsoft Search**
 ms.author: anfowler
 author: adefowler
 manager: mnirkhe
-ms.date: 12/11/2018
+ms.date: 04/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erstmaliges Einrichten von Microsoft Search.
-ms.openlocfilehash: a83950f89258a0b3b376dac075684338552253b2
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: f4648988563245f6a61169d7e62b48c456dfa8fa
+ms.sourcegitcommit: 06f995ae7696a8cafcd12d19ed16a35d059b6abb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33511044"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "33858272"
 ---
 # <a name="set-up-microsoft-search"></a>Einrichten von Microsoft Search
 
@@ -38,13 +38,17 @@ Als Administrator sollten Sie jedoch einige Dinge berücksichtigen, durch die Si
 
 Erfahren Sie mehr über das [Planen von Berechtigungen](https://docs.microsoft.com/de-DE/sharepoint/plan-your-permissions-strategy) und das [Erstellen von Berechtigungsstufen](https://docs.microsoft.com/de-DE/sharepoint/how-to-create-and-edit-permission-levels).
 
-### <a name="step-2-assign-search-administrator-and-search-editor"></a>Schritt 2: Administratoren und Editoren für Microsoft Search ernennen
+### <a name="step-2-assign-search-admin-and-search-editor"></a>Schritt 2: Administratoren und Editoren für Microsoft Search ernennen
 
-Microsoft Search-Administratoren können die Suchoberfläche für Endbenutzer direkt beeinflussen. Dazu gehört die Auswahl der Ergebnistypen, die Sie Ihren Benutzern zur Verfügung stellen möchten. Es kann für eine Person schwierig sein, maßgebliche Inhalte zu vielen verschiedenen Themen, nach denen Benutzer in einer Organisation suchen, auszuwählen und zu erstellen. Es wird empfohlen, dass Sie die Expertise und das Wissen von SMEs und anderen Benutzern nutzen, indem Sie sie als Editoren hinzufügen. 
+Es gibt zwei neue Rollen im **Microsoft Admin Center** – Suchadministrator und Such-Editor.  Der globale Administrator, der über vollständige Berechtigungen verfügt, weist Benutzern Administratorrollen zu, wie z. B. die Rolle des Suchadministrators. Suchadministratoren können die Rollen Suchadministrator oder Such-Editor an andere Benutzer delegieren. Weitere Informationen zu anderen Administratorrollen finden Sie unter [Informationen zu Office 365-Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide).
+
+Suchadministratoren können die Suchoberfläche für Endbenutzer direkt beeinflussen. Dazu gehört die Auswahl der Ergebnistypen, die Sie Ihren Benutzern zur Verfügung stellen möchten. Es kann für eine Person schwierig sein, maßgebliche Inhalte zu vielen verschiedenen Themen, nach denen Benutzer in einer Organisation suchen, auszuwählen und zu erstellen. Es wird empfohlen, dass Sie die Expertise und das Wissen von SMEs und anderen Benutzern nutzen, indem Sie sie als Editoren hinzufügen. 
 
 In **Microsoft Search** können Sie die Sucheinstellungen und Inhalte Ihrer Organisation mit zwei neuen Rollen verwalten:
-1. **Microsoft Search-Administrator**: Diese Rolle kann Suchergebnisinhalte erstellen und verwalten sowie Abfrageeinstellungen für verbesserte Suchergebnisse innerhalb der Organisation definieren. Ein Microsoft Search-Administrator verwaltet die Konfiguration von **Microsoft Search** und benennt Microsoft Search-Editoren, die Inhalte erstellen.
-2. **Microsoft Search-Editor**: Erstellt, verwaltet und löscht Inhalte für **Microsoft Search** im Microsoft 365 Admin Center. Diese Rolle kann redaktionelle Inhalte wie häufig gestellte Fragen und Antworten, wichtige Orte, häufig gesuchte und genutzte Websites und Apps usw. erstellen und verwalten. Die Editoren haben jedoch keinen Zugriff auf die Verwaltung der Sucheinstellungen.
+1. **Suchadministrator**: Diese Rolle kann Suchergebnisinhalte erstellen und verwalten sowie Abfrageeinstellungen für verbesserte Suchergebnisse innerhalb der Organisation definieren. Ein Suchadministrator verwaltet die Konfiguration von **Microsoft Search** und benennt Such-Editoren, die Inhalte erstellen.
+2. **Such-Editor**: Erstellt, verwaltet und löscht Inhalte für **Microsoft Search** im Microsoft 365 Admin Center. Diese Rolle kann redaktionelle Inhalte wie häufig gestellte Fragen und Antworten, wichtige Orte, häufig gesuchte und genutzte Websites und Apps usw. erstellen und verwalten. Die Editoren haben jedoch keinen Zugriff auf die Verwaltung der Sucheinstellungen.
+
+**Hinweis:** Die beiden neuen Rollen – Suchadministrator und Such-Editor – sind nur im **Microsoft 365 Admin Center**, nicht im alten Verwaltungsportal verfügbar.
 
 Informationen zum Zuweisen von Administratorrollen finden Sie unter [Zuweisen von Administratorrechten in Office 365 Business](https://docs.microsoft.com/en-us/office365/admin/add-users/assign-admin-roles?view=o365-worldwide).
 

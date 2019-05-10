@@ -3,22 +3,6 @@
 
 
 
-## <a name="week-of-march-18-2019"></a>Woche vom 18. März 2019
-
-
-| Zeitpunkt der Veröffentlichung |Titel des Themas | Änderung |
-|------|------------|--------|
-| 3/22/2019 | [Hinzufügen eines Suchfelds zu Ihrer Intranetwebsite](/MicrosoftSearch/add-a-search-box-to-your-intranet-site) | Geändert |
-
-
-## <a name="week-of-march-25-2019"></a>Woche vom 25. März 2019
-
-
-| Zeitpunkt der Veröffentlichung |Titel des Themas | Änderung |
-|------|------------|--------|
-| 3/25/2019 | [Informationen zum Verwaltungsportal](/MicrosoftSearch/about-the-admin-portal) | Geändert |
-
-
 ## <a name="week-of-april-08-2019"></a>Woche vom 08. April 2019
 
 
@@ -39,9 +23,20 @@
 
 | Zeitpunkt der Veröffentlichung |Titel des Themas | Änderung |
 |------|------------|--------|
-| 4/16/2019 | [Massenerstellung von Lesezeichen](/MicrosoftSearch/bulk-create-bookmarks) | Geändert |
+| 4/16/2019 | [Massenerstellen von Lesezeichen](/MicrosoftSearch/bulk-create-bookmarks) | Geändert |
 | 4/16/2019 | [Massenerstellen von Speicherorten](/MicrosoftSearch/bulk-create-locations) | Geändert |
-| 4/16/2019 | [Massenerstellung von Q&As](/MicrosoftSearch/bulk-create-qas) | Geändert |
+| 4/16/2019 | [Massenerstellen von Fragen und Antworten](/MicrosoftSearch/bulk-create-qas) | Geändert |
 | 4/16/2019 | [Verwalten von Lesezeichen](/MicrosoftSearch/manage-bookmarks) | Geändert |
 | 4/16/2019 | [Verwalten von Speicherorten](/MicrosoftSearch/manage-locations) | Geändert |
-| 4/16/2019 | [Verwalten von Q&As](/MicrosoftSearch/manage-qas) | Geändert |
+| 4/16/2019 | [Verwalten von Fragen und Antworten](/MicrosoftSearch/manage-qas) | Geändert |
+
+
+## <a name="week-of-april-29-2019"></a>Woche vom 2019
+
+
+| Zeitpunkt der Veröffentlichung |Titel des Themas | Änderung |
+|------|------------|--------|
+| 30.04.2019 | [Microsoft Search](/MicrosoftSearch/microsoft-search) | Geändert |
+| 30.04.2019 | [Handbuch zur Benutzerakzeptanz](/MicrosoftSearch/user-adoption-guide) | Geändert |
+| 5/1/2019 | [Microsoft Search](/MicrosoftSearch/microsoft-search) | Geändert |
+| 5/1/2019 | [Übersicht über Microsoft Search](/MicrosoftSearch/overview-microsoft-search) | Geändert |

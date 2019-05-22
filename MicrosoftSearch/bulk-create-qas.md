@@ -13,53 +13,56 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7bada218-8908-4956-aae3-6ffaeef384ca
-description: Schnelles Hinzufügen von Antworten auf häufig gestellte Fragen mit Importtools im Microsoft Search Admin Portal
-ms.openlocfilehash: 28fcf57c44f809e7f9b0c1b27042f4549067a0f8
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+description: Fügen Sie Antworten auf häufig gestellte Fragen mit den Importtools im Microsoft Search-Verwaltungsportal schnell hinzu.
+ms.openlocfilehash: f535cb7ae843def536976cb1f05c8601de592cbb
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508673"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968302"
 ---
 # <a name="bulk-create-qas"></a>Massenerstellung von Fragen und Antworten
 
-Laden Sie die CSV-Vorlage herunter, und verwenden Sie Sie, um Q&As massenweise zu erstellen oder zu bearbeiten. Es ist auch eine einfache Möglichkeit zum Massenspeichern von Entwurfs-Q&As, die zusätzliche Änderungen oder Aktualisierungen erfordern. Wenn Sie vorhandene Q&As massenweise bearbeiten müssen, exportieren Sie Sie aus dem Verwaltungsportal, nehmen Sie die erforderlichen Änderungen vor, und importieren Sie Sie.
+> [!IMPORTANT]
+> Die Einstellungen für Microsoft Search in Bing sind nun im Microsoft 365 Admin Center verfügbar. Beginnen Sie, indem Sie [Suchadministratoren](https://docs.microsoft.com/de-DE/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in Ihrem Admin Center zuweisen.
+    
+Laden Sie die CSV-Vorlage herunter, und verwenden Sie sie zur Massenerstellung oder -bearbeitung von Fragen und Antworten. Dies ist auch eine einfache Möglichkeit zum Speichern von Fragen und Antworten des Typs "Entwurf", bei denen zusätzliche Bearbeitungen oder Aktualisierungen erforderlich sind. Wenn Sie eine Massenbearbeitung von vorhandenen Fragen und Antworten ausführen müssen, exportieren Sie sie aus dem Verwaltungsportal, nehmen Sie die erforderlichen Änderungen vor, und importieren Sie sie.
   
-1. Klicken Sie in der oberen rechten Ecke des Abschnitts Q&As auf **importieren**
+1. Klicken Sie in der oberen rechten Ecke des Abschnitts "Fragen und Antworten" auf **Importieren**.
     
-2. Klicken Sie auf **Q&A-Vorlage herunterladen (. CSV)**
+2. Klicken Sie auf **F & A-Vorlage (CSV) herunterladen**.
     
-3. Speichern und Öffnen der CSV-Datei
+3. Speichern und öffnen Sie die CSV-Datei.
     
-4. Hinzufügen des Q&A-Inhalts und der Einstellungen und Speichern der Datei
+4. Fügen Sie den F & A-Inhalt und die Einstellungen hinzu, und speichern Sie die Datei.
 
-    Die CSV-Datei sollte als CSV-UTF-8-Datei gespeichert werden, andere Dateitypen und Codierungen können zu Importfehlern führen.
+    Die CSV-Datei sollte als CSV UTF-8-Datei gespeichert werden, andere Dateitypen und/oder Codierungen können zu Importfehlern führen.
     
-5. Klicken Sie in der oberen rechten Ecke des Abschnitts Q&As auf **importieren**
+5. Klicken Sie in der oberen rechten Ecke des Abschnitts "Fragen und Antworten" auf **Importieren**.
     
-6. Klicken Sie im Bereich Q&As importieren auf **Durchsuchen** , und navigieren Sie zu der CSV-Datei, die Sie importieren möchten. 
+6. Klicken Sie im Bereich "Fragen und Antworten importieren" auf **Durchsuchen**, und navigieren Sie zu der CSV-Datei, die Sie importieren möchten. 
     
-7. Klicken Sie auf **importieren**
+7. Klicken Sie auf **Importieren**.
 
-# <a name="prevent-import-errors"></a>Verhindern von Importfehlern      
-Sie erhalten eine Fehlermeldung, wenn erforderliche Daten fehlen oder ungültig sind. Je nach Fehler wird möglicherweise eine Protokolldatei mit weiteren Informationen zu den Zeilen und Spalten generiert, die korrigiert werden müssen. Nehmen Sie die erforderlichen Änderungen vor, und versuchen Sie, die Datei erneut zu importieren.
+# <a name="prevent-import-errors"></a>Vermeiden von Importfehlern      
+Wenn erforderliche Daten fehlen oder ungültig sind, wird eine Fehlermeldung angezeigt. Je nach Fehler wird möglicherweise eine Protokolldatei mit weiteren Informationen zu den Zeilen und Spalten generiert, die korrigiert werden müssen. Nehmen Sie alle erforderlichen Änderungen vor, und versuchen Sie, die Datei erneut importieren.
 
 > [!NOTE]
-> Sie können keine Q&As erstellen oder bearbeiten, bis alle Fehler aufgelöst wurden. 
+> Bis alle Fehler behoben wurden, können Sie keine Fragen und Antworten erstellen oder bearbeiten. 
 
-Um Fehler zu vermeiden, stellen Sie sicher, dass die Importdatei ordnungsgemäß formatiert ist:
-- Enthält die Überschriftenzeile, die sich in der Importvorlage befand
-- Enthält alle Spalten, die in der Importvorlage enthalten waren.
-- Die Reihenfolge der Spalten ist identisch mit der Importvorlage.
-- Diese Spalten können leer sein: ID, zuletzt geändert und zuletzt geändert von
-- Die Spalte Status kann nicht leer sein, diese Informationen sind erforderlich.  
-Basierend auf dem Feld Status wird Q&As als Entwurf, vorgeschlagen, geplant gespeichert oder automatisch veröffentlicht.
+Um Fehler zu verhindern, stellen Sie sicher, dass die Importdatei ordnungsgemäß formatiert ist:
+- Enthält die Überschriftenzeile aus der Importvorlage.
+- Enthält alle Spalten aus der Importvorlage.
+- Die Spaltenreihenfolge ist die gleiche wie in der Importvorlage.
+- Diese Spalten können leer sein: "ID", "Zuletzt geändert" und "Zuletzt geändert von".
+- Die Spalte "Status" darf nicht leer sein, da diese Informationen erforderlich sind.  
+Auf der Grundlage des Statusfelds werden Fragen und Antworten als "Entwurf", "vorgeschlagen" oder "geplant" gespeichert, oder sie werden automatisch veröffentlicht.
 
-Wenn Sie auch die ID eines vorhandenen Q&A-Objekt hinzufügen, wird es durch die Informationen in der Importdatei ersetzt.
+Und wenn Sie die ID eines vorhandenen Frage&Antwort-Eintrags angeben, wird dieser durch die Informationen in der Importdatei ersetzt.
 
-Für Organisationen mit mehreren Stand-Mandanten können Sie Ihre Q&As aus einem Mandanten exportieren und in einen anderen importieren. Sie müssen jedoch vor dem Importieren alle Daten in der Spalte "ID" entfernen.
+Bei Organisationen mit mehreren Mandanten können Sie Ihre Frage&Antwort-Einträge von einem Mandanten exportieren und zu einem anderen importieren. Sie müssen jedoch alle Daten in der Spalte "ID" vor dem Import entfernen.
 
-Weitere Informationen zu den erforderlichen und empfohlenen Feldern finden Sie unter [Create Q&As](create-qas.md).
+Unter [Erstellen von Fragen und Antworten](create-qas.md) erfahren Sie mehr zu erforderlichen und empfohlenen Feldern.
 
   
 

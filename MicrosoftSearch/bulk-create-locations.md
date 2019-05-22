@@ -1,5 +1,5 @@
 ---
-title: Massenerstellen von Speicherorten
+title: Massenerstellen von Standorten
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,56 +13,59 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 15c9fada-f7a6-4210-aa6b-028b32217830
-description: Hinzufügen von vielen Standorten gleichzeitig mit Importtools für das Microsoft Search-Verwaltungsportal
-ms.openlocfilehash: 3c7e43b03b97b46769d5e73f20ddae47b3459b59
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+description: Fügen Sie mit den Importtools für das Microsoft Search-Verwaltungsportal sehr viele Standorte gleichzeitig hinzu.
+ms.openlocfilehash: 1d360fda2851083def0bcbd8fcffd77cfa15240e
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508561"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968291"
 ---
-# <a name="bulk-create-locations"></a>Massenerstellen von Speicherorten
+# <a name="bulk-create-locations"></a>Massenerstellen von Standorten
 
-Laden Sie die CSV-Vorlage herunter, und verwenden Sie Sie zum Massen erstellen, bearbeiten und Speichern von Speicherorten. 
+> [!IMPORTANT]
+> Die Einstellungen für Microsoft Search in Bing sind nun im Microsoft 365 Admin Center verfügbar. Beginnen Sie, indem Sie [Suchadministratoren](https://docs.microsoft.com/de-DE/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in Ihrem Admin Center zuweisen.
+    
+Laden Sie die CSV-Vorlage herunter, und verwenden Sie sie zur Massenerstellung, -bearbeitung und -speicherung von Standorten. 
   
-1. Klicken Sie in der oberen rechten Ecke des Abschnitts Standorte auf **importieren** .
+1. Klicken Sie in der oberen rechten Ecke des Abschnitts "Standorte" auf **Importieren**.
     
-2. Klicken Sie auf **Download Speicherorte Vorlage (. CSV)**
+2. Klicken Sie auf **Standortvorlage (CSV) herunterladen**.
     
-3. Speichern und Öffnen der CSV-Datei
+3. Speichern und öffnen Sie die CSV-Datei.
     
-4. Hinzufügen des Standort Inhalts und Speichern der Datei
+4. Hinzufügen des Standortinhalts und Speichern der Datei
 
-    Die CSV-Datei sollte als CSV-UTF-8-Datei gespeichert werden, andere Dateitypen und Codierungen können zu Importfehlern führen.
+    Die CSV-Datei sollte als CSV UTF-8-Datei gespeichert werden, andere Dateitypen und/oder Codierungen können zu Importfehlern führen.
     
-5. Klicken Sie in der oberen rechten Ecke des Abschnitts Standorte auf **importieren** .
+5. Klicken Sie in der oberen rechten Ecke des Abschnitts "Standorte" auf **Importieren**.
     
-6. Klicken Sie im Bereich Speicherorte importieren auf **Durchsuchen** , und navigieren Sie zu der CSV-Datei, die Sie importieren möchten. 
+6. Klicken Sie im Bereich "Standorte importieren" auf **Durchsuchen**, und navigieren Sie zu der CSV-Datei, die Sie importieren möchten. 
     
-7. Klicken Sie auf **importieren**
+7. Klicken Sie auf **Importieren**.
 
-Die Felder in den Import-und Exportspeicherort Vorlagen sind identisch. Sie können die Bearbeitungen exportieren, Massen bearbeiten und importieren oder mit einer leeren Vorlage beginnen, um massenweise neue Speicherorte zu erstellen. Zum Massen Bearbeiten vorhandener Speicherorte, exportieren Sie diese aus dem Verwaltungsportal, nehmen Sie die erforderlichen Änderungen vor, und importieren Sie Sie.
+Die Felder in den Vorlagen zum Importieren und Exportieren von Standortvorlagen sind identisch. Sie können die Änderungen exportieren, in einem Massenvorgang bearbeiten und importieren, oder Sie können mit einer leeren Vorlage beginnen, um neue Standorte in einem Massenvorgang zu erstellen. Wenn Sie eine Massenbearbeitung von vorhandenen Standorten ausführen möchten, exportieren Sie sie aus dem Verwaltungsportal, nehmen Sie die erforderlichen Änderungen vor, und importieren Sie sie.
 
-# <a name="prevent-import-errors"></a>Verhindern von Importfehlern  
-Sie erhalten eine Fehlermeldung, wenn erforderliche Daten fehlen oder ungültig sind. Je nach Fehler wird möglicherweise eine Protokolldatei mit weiteren Informationen zu den Zeilen und Spalten generiert, die korrigiert werden müssen. Nehmen Sie die erforderlichen Änderungen vor, und versuchen Sie, die Datei erneut zu importieren.
+# <a name="prevent-import-errors"></a>Vermeiden von Importfehlern  
+Wenn erforderliche Daten fehlen oder ungültig sind, wird eine Fehlermeldung angezeigt. Je nach Fehler wird möglicherweise eine Protokolldatei mit weiteren Informationen zu den Zeilen und Spalten generiert, die korrigiert werden müssen. Nehmen Sie alle erforderlichen Änderungen vor, und versuchen Sie, die Datei erneut importieren.
   
 > [!NOTE]
-> Sie können keine Speicherorte erstellen oder bearbeiten, bis alle Fehler aufgelöst wurden. 
+> Bis alle Fehler behoben wurden, können Sie keine Standorte erstellen oder bearbeiten. 
 
-Um Fehler zu vermeiden, stellen Sie sicher, dass die Importdatei ordnungsgemäß formatiert ist:
-- Enthält die Überschriftenzeile, die sich in der Importvorlage befand
-- Enthält alle Spalten, die in der Importvorlage enthalten waren.
-- Die Reihenfolge der Spalten ist identisch mit der Importvorlage.
-- Diese Spalten können leer sein: ID, zuletzt geändert, zuletzt geändert von und lat/long  
-Wir versuchen, lat/long basierend auf der Adresse zu ermitteln, wenn das Feld leer ist.
-- Die Spalte Status kann nicht leer sein, diese Informationen sind erforderlich.  
-Basierend auf dem Feld Status werden Speicherorte als Entwurf, vorgeschlagen oder geplant gespeichert, oder Sie werden automatisch veröffentlicht.
+Um Fehler zu verhindern, stellen Sie sicher, dass die Importdatei ordnungsgemäß formatiert ist:
+- Enthält die Überschriftenzeile aus der Importvorlage.
+- Enthält alle Spalten aus der Importvorlage.
+- Die Spaltenreihenfolge die gleiche ist wie in der Importvorlage.
+- Diese Spalten können leer sein: "ID", "Zuletzt geändert", "Zuletzt geändert von" und "Längen-/Breitengrad".  
+Wir werden versuchen, den Längen- und Breitengrad anhand der Adresse zu ermitteln, wenn dieses Feld leer ist.
+- Die Spalte "Status" darf nicht leer sein, da diese Informationen erforderlich sind.  
+Auf der Grundlage des Felds „Status“ werden Standorte als „Entwurf“, „vorgeschlagen“ oder „geplant“ gespeichert, oder sie werden automatisch veröffentlicht.
 
-Wenn Sie die ID eines vorhandenen Speicherorts angeben, wird Sie auch durch die Informationen in der Importdatei ersetzt.
+Und wenn Sie die ID eines vorhandenen Standorts angeben, wird sie durch die Informationen in der Importdatei ersetzt.
 
-Für Organisationen mit mehreren Stand-Mandanten können Sie Ihre Standorte aus einem Mandanten exportieren und in einen anderen importieren. Sie müssen jedoch vor dem Importieren alle Daten in der Spalte "ID" entfernen.
+Bei Organisationen mit mehreren Mandanten können Sie Ihre Standorte von einem Mandanten exportieren und zu einem anderen importieren. Sie müssen jedoch alle Daten in der Spalte "ID" vor dem Import entfernen.
   
-Weitere Informationen zu den erforderlichen und empfohlenen Feldern finden Sie unter [Hinzufügen eines Standorts](add-a-location.md).
+Unter [Hinzufügen eines Standorts](add-a-location.md) erfahren Sie mehr zu erforderlichen und empfohlenen Feldern.
 
   
 

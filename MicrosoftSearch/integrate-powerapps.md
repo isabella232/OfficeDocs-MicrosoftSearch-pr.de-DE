@@ -13,49 +13,55 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1fadcba3-4a7f-4a55-8476-d4e64d49a15f
-description: Einbeziehen von browserbasierten apps in Lesezeichen Ergebnisse für Microsoft Search
-ms.openlocfilehash: d8d9d099848e719c86e0f3cadee330263566d243
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+description: Beziehen Sie browserbasierte Apps in Lesezeichenergebnisse für Microsoft Search ein.
+ms.openlocfilehash: 96b409274e3fa06cef7dcc6f1c43360a3e6b9d34
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508825"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968378"
 ---
 # <a name="integrate-powerapps"></a>Integration von PowerApps
 
-Unterstützen Sie Ihre Benutzer bei der Ausführung von Aufgaben wie der Eingabe von Urlaubszeiten oder Bericht Erstellungskosten, indem Sie vorhandene PowerApps in Ihre Lesezeichen integrieren. Integrierte PowerApps werden innerhalb eines Bookmark-Ergebnisses angezeigt, sodass nicht mehr zu einer anderen Website gewechselt werden muss, oder Sie können ein separates Tool öffnen.
+> [!IMPORTANT]
+> Die Einstellungen für Microsoft Search in Bing sind nun im Microsoft 365 Admin Center verfügbar. Beginnen Sie, indem Sie [Suchadministratoren](https://docs.microsoft.com/de-DE/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in Ihrem Admin Center zuweisen.
+    
+Helfen Sie Ihren Benutzern beim Ausführen von Aufgaben, z. B. der Eingabe von Urlaubszeiten oder dem Erstellen von Spesenabrechnungen, indem Sie in Ihre Lesezeichen PowerApps integrieren. Integrierte PowerApps werden in einem Lesezeichenergebnis angezeigt, sodass es nicht mehr erforderlich ist, zu einer anderen Website zu wechseln oder ein separates Tool zu öffnen. Das spart Zeit und Aufwand.
   
 ## <a name="what-are-powerapps"></a>Was sind PowerApps?
 
-PowerApps ist ein Dienst, mit dem Sie Geschäfts-Apps erstellen können, die in einem Browser oder auf einem Telefon oder Tablet ausgeführt werden, ohne dass eine Codierung erforderlich ist. Weitere Informationen:
+PowerApps ist ein Dienst, mit dem Sie Geschäfts-Apps erstellen können, die in einem Browser oder auf einem Smartphone oder Tablet ausgeführt werden, ohne dass eine Codierung erforderlich ist. Weitere Informationen:
   
-- [Guided Learning](https://docs.microsoft.com/en-us/learn/browse/?products=powerapps)
+- 
+  [Interaktives Lernen](https://docs.microsoft.com/de-DE/learn/browse/?products=powerapps)
     
-- [Dokumentation](https://docs.microsoft.com/en-us/powerapps/)
+- 
+  [Dokumentation](https://docs.microsoft.com/de-DE/powerapps/)
     
-## <a name="add-a-powerapp-to-a-bookmark"></a>Hinzufügen eines PowerApp zu einer Textmarke
+## <a name="add-a-powerapp-to-a-bookmark"></a>Hinzufügen einer PowerApp zu einem Lesezeichen
 
-PowerApps arbeiten in einem beliebigen Browser und auf jedem Gerät und benötigen weniger als eine Minute.
+PowerApps funktionieren in jedem beliebigen Browser und auf jedem beliebigen Gerät und können in weniger als einer Minute hinzugefügt werden.
   
-1. [Suchen der APP-ID für die PowerApp](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) , die Sie integrieren möchten 
+1. 
+  [Suchen der App-ID für die PowerApp](https://docs.microsoft.com/de-DE/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id), die Sie integrieren möchten 
     
-2. Wechseln Sie im Microsoft SearchAdmin-Portal zu **Lesezeichen** .
+2. Navigieren Sie im Microsoft Search Verwaltungsportal zu **Lesezeichen**.
     
-3. Hinzufügen einer Textmarke oder Suchen einer vorhandenen Textmarke, der Sie eine PowerApp hinzufügen möchten
+3. Hinzufügen eines Lesezeichens oder Suchen eines vorhandenen Lesezeichens, dem Sie eine PowerApp hinzufügen möchten
     
-4. Klicken Sie in den Lesezeichen Einstellungen auf **Power App**, und klicken Sie dann auf **Power app hinzufügen** .
+4. Klicken Sie in den Einstellungen des Lesezeichens auf **PowerApp** und dann auf **PowerApp hinzufügen**.
     
-5. Eingeben oder Einfügen der APP-ID
+5. Geben oder fügen Sie die App-ID ein.
     
-    Die Höhe und Breite werden automatisch hinzugefügt. Textmarken können sowohl hoch-als auch Querformat-Orientierungen unterstützen, aber derzeit kann die Größe nicht geändert werden.
+    Die Höhe und Breite werden automatisch hinzugefügt. Lesezeichen können Hoch- und Querformat unterstützen, die Größe kann derzeit aber nicht geändert werden.
     
-6. Die Lesezeichen Vorschau zeigt, wie die PowerApp im Lesezeichen Ergebnis angezeigt wird.
+6. Die Vorschau des Lesezeichens zeigt, wie die PowerApp im Lesezeichenergebnis aussehen wird.
     
-    Die PowerApp in der Vorschau ist voll funktionsfähig, damit Sie einfach getestet und verwendet werden kann.
+    Die PowerApp ist in der Vorschau voll funktionsfähig, damit sie einfach zu testen und zu verwenden ist.
     
-7. Klicken Sie auf **veröffentlichen**
+7. Klicken Sie auf **Veröffentlichen**.
     
-Wenn ein autorisierter Microsoft Search-Benutzer auf Bing nach einem der Schlüsselwörter oder reservierten Schlüsselwörter der Textmarke sucht, wird die PowerApp im Lesezeichen Ergebnis angezeigt.
+Wenn ein autorisierter Microsoft Search-Benutzer in Bing nach einem der Schlüsselwörter des Lesezeichens oder nach reservierten Schlüsselwörtern sucht, wird die PowerApp im Lesezeichenergebnis angezeigt.
 
   
 

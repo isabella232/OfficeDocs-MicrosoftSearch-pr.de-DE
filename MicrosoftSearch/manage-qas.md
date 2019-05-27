@@ -1,5 +1,5 @@
 ---
-title: Verwalten von Fragen und Antworten
+title: F & As verwalten
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,96 +13,99 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
-description: Suchen und Aktualisieren von Antworten einzeln oder verwenden der verfügbaren Microsoft-Such Tools, um Sie alle gleichzeitig zu bearbeiten
-ms.openlocfilehash: 47882deeb95133cfc19f4eec6417fc20fb7203de
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+description: Suchen und aktualisieren Sie Antworten einzeln oder verwenden Sie die verfügbaren Microsoft Search-Tools, um alle gleichzeitig zu bearbeiten
+ms.openlocfilehash: ee239aa73d4e650289f39d33c63c3e2df4f100cc
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508817"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968467"
 ---
-# <a name="manage-qas"></a><span data-ttu-id="f6951-103">Verwalten von Fragen und Antworten</span><span class="sxs-lookup"><span data-stu-id="f6951-103">Manage Q&As</span></span>
+# <a name="manage-qas"></a><span data-ttu-id="072b4-103">F & As verwalten</span><span class="sxs-lookup"><span data-stu-id="072b4-103">Manage Q&As</span></span>
 
-<span data-ttu-id="f6951-104">Im Lauf der Zeit müssen Sie möglicherweise einen Q&A's-Status und-Inhalt aktualisieren, um ihn relevant zu halten.</span><span class="sxs-lookup"><span data-stu-id="f6951-104">Over time, you may need to update a Q&A's status and content to keep it relevant.</span></span>
+> [!IMPORTANT]
+> <span data-ttu-id="072b4-104">Die Einstellungen für Microsoft Search in Bing sind jetzt im Microsoft 365 Admin Center verfügbar.</span><span class="sxs-lookup"><span data-stu-id="072b4-104">Microsoft Search in Bing settings are now available in the Microsoft 365 admin center.</span></span> <span data-ttu-id="072b4-105">Beginnen Sie, indem Sie in Ihrem Admin Center[Suchadministratoren zuweisen](https://docs.microsoft.com/de-DE/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor).</span><span class="sxs-lookup"><span data-stu-id="072b4-105">Get started by [assigning search admins](https://docs.microsoft.com/en-us/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in your admin center.</span></span>
+    
+<span data-ttu-id="072b4-106">Im Laufe der Zeit müssen Sie den Status und Inhalt einer F & A möglicherweise aktualisieren, damit sie relevant bleibt.</span><span class="sxs-lookup"><span data-stu-id="072b4-106">Over time, you may need to update a Q&A's status and content to keep it relevant.</span></span>
   
-## <a name="filter-qas"></a><span data-ttu-id="f6951-105">Filter Q&As</span><span class="sxs-lookup"><span data-stu-id="f6951-105">Filter Q&As</span></span>
+## <a name="filter-qas"></a><span data-ttu-id="072b4-107">Filtern von Fragen und Antworten</span><span class="sxs-lookup"><span data-stu-id="072b4-107">Filter Q&As</span></span>
 
-<span data-ttu-id="f6951-106">Verwenden Sie die Filter-Option in der oberen rechten Ecke der Q&As-Seite, um nach Q&As nach Datum zu suchen und diese zu ändern.</span><span class="sxs-lookup"><span data-stu-id="f6951-106">Use the filter option in the upper-right corner of the Q&As page to find Q&As by date and who modified them.</span></span> <span data-ttu-id="f6951-107">Legen Sie beispielsweise den Schieberegler Datum auf 30 Tage fest, und wählen Sie einen Administrator oder Editor aus, um die Liste der Q&As anzuzeigen, die Sie in dieser Zeit erstellt oder geändert haben.</span><span class="sxs-lookup"><span data-stu-id="f6951-107">For example, set the date slider to 30 days and select an admin or editor to see the list of Q&As they've created or changed in that time.</span></span>
+<span data-ttu-id="072b4-108">Verwenden Sie die Filteroption in der oberen rechten Ecke der Seite "Fragen und Antworten", um Fragen und Antworten nach Datum und der Person, die sie geändert hat, zu suchen.</span><span class="sxs-lookup"><span data-stu-id="072b4-108">Use the filter option in the upper-right corner of the Q&As page to find Q&As by date and who modified them.</span></span> <span data-ttu-id="072b4-109">Setzen Sie beispielsweise den Schieberegler für das Datum auf „30 Tage“ und wählen Sie einen Administrator oder Editor aus, um die Liste der Fragen und Antworten anzuzeigen, die diese während dieser Zeitspanne erstellt oder geändert hat.</span><span class="sxs-lookup"><span data-stu-id="072b4-109">For example, set the date slider to 30 days and select an admin or editor to see the list of Q&As they've created or changed in that time.</span></span>
   
-## <a name="change-qa-content-or-settings"></a><span data-ttu-id="f6951-108">Ändern von Q&A-Inhalten oder-Einstellungen</span><span class="sxs-lookup"><span data-stu-id="f6951-108">Change Q&A content or settings</span></span>
+## <a name="change-qa-content-or-settings"></a><span data-ttu-id="072b4-110">F & A- Inhalte oder -Einstellungen ändern</span><span class="sxs-lookup"><span data-stu-id="072b4-110">Change Q&A content or settings</span></span>
 
-1. <span data-ttu-id="f6951-109">Wechseln Sie zum Microsoft Search-Verwaltungsportal.</span><span class="sxs-lookup"><span data-stu-id="f6951-109">Go to the Microsoft Search Admin portal</span></span>
+1. <span data-ttu-id="072b4-111">Wechseln zum Microsoft Search-Verwaltungsportal</span><span class="sxs-lookup"><span data-stu-id="072b4-111">Go to the Microsoft Search Admin portal</span></span>
     
-2. <span data-ttu-id="f6951-110">Klicken Sie im Navigationsbereich auf **Fragen und Antworten**.</span><span class="sxs-lookup"><span data-stu-id="f6951-110">In the navigation pane, click **Q&As**</span></span>
+2. <span data-ttu-id="072b4-112">Klicken Sie im Navigationsbereich auf **Fragen und Antworten**.</span><span class="sxs-lookup"><span data-stu-id="072b4-112">In the navigation pane, click **Q&As**</span></span>
     
-3. <span data-ttu-id="f6951-111">So finden Sie ein Q&A, suchen, Filtern oder klicken auf einen Q&A-Status, um die Ergebnisse einzuschränken</span><span class="sxs-lookup"><span data-stu-id="f6951-111">To find a Q&A, search, filter, or click a Q&A status to narrow your results</span></span>
+3. <span data-ttu-id="072b4-113">Um eine Frage und Antwort zu finden, suchen oder filtern Sie einen F & A-Status, oder klicken Sie darauf, um Ihre Ergebnisse einzuschränken.</span><span class="sxs-lookup"><span data-stu-id="072b4-113">To find a Q&A, search, filter, or click a Q&A status to narrow your results</span></span>
     
-4. <span data-ttu-id="f6951-112">Um eine Q&A zu ändern oder zu aktualisieren, klicken Sie auf den Titel</span><span class="sxs-lookup"><span data-stu-id="f6951-112">To change or update a Q&A, click the title</span></span>
+4. <span data-ttu-id="072b4-114">Zum Ändern oder Aktualisieren einer Frage und Antwort klicken Sie auf den Titel.</span><span class="sxs-lookup"><span data-stu-id="072b4-114">To change or update a Q&A, click the title</span></span>
     
-5. <span data-ttu-id="f6951-113">Nehmen Sie alle Änderungen oder Aktualisierungen an den Inhalten oder Einstellungen vor, und zeigen Sie eine Vorschau der Anzeige an.</span><span class="sxs-lookup"><span data-stu-id="f6951-113">Make any changes or updates to the content or settings and preview how they'll appear</span></span>
+5. <span data-ttu-id="072b4-115">Nehmen Sie alle Änderungen oder Aktualisierungen an Inhalt oder Einstellungen vor, und zeigen Sie eine Vorschau davon an.</span><span class="sxs-lookup"><span data-stu-id="072b4-115">Make any changes or updates to the content or settings and preview how they'll appear</span></span>
     
-6. <span data-ttu-id="f6951-114">Klicken Sie auf **Speichern**.</span><span class="sxs-lookup"><span data-stu-id="f6951-114">Click **Save**</span></span>
+6. <span data-ttu-id="072b4-116">Klicken Sie auf **Speichern**.</span><span class="sxs-lookup"><span data-stu-id="072b4-116">Click **Save**</span></span>
     
-## <a name="bulk-export-and-edit-qas"></a><span data-ttu-id="f6951-115">Massenexport und-Bearbeitung Q&As</span><span class="sxs-lookup"><span data-stu-id="f6951-115">Bulk export and edit Q&As</span></span>
+## <a name="bulk-export-and-edit-qas"></a><span data-ttu-id="072b4-117">Massenexport und -bearbeitung von Fragen und Antworten</span><span class="sxs-lookup"><span data-stu-id="072b4-117">Bulk export and edit Q&As</span></span>
 
-<span data-ttu-id="f6951-116">Bearbeiten Sie nie Daten in diesen Feldern:</span><span class="sxs-lookup"><span data-stu-id="f6951-116">Never edit data in these fields:</span></span>
+<span data-ttu-id="072b4-118">Bearbeiten Sie nie Daten in folgenden Feldern:</span><span class="sxs-lookup"><span data-stu-id="072b4-118">Never edit data in these fields: Id, Last Modified, and Last Modified By</span></span>
   
-- <span data-ttu-id="f6951-117">Id</span><span class="sxs-lookup"><span data-stu-id="f6951-117">Id</span></span>
+- <span data-ttu-id="072b4-119">ID</span><span class="sxs-lookup"><span data-stu-id="072b4-119">Id</span></span>
     
-- <span data-ttu-id="f6951-118">Zuletzt geändert</span><span class="sxs-lookup"><span data-stu-id="f6951-118">Last Modified</span></span>
+- <span data-ttu-id="072b4-120">Zuletzt geändert</span><span class="sxs-lookup"><span data-stu-id="072b4-120">Last modified</span></span>
     
-- <span data-ttu-id="f6951-119">Zuletzt geändert von</span><span class="sxs-lookup"><span data-stu-id="f6951-119">Last Modified By</span></span>
+- <span data-ttu-id="072b4-121">Zuletzt geändert von</span><span class="sxs-lookup"><span data-stu-id="072b4-121">Last modified by</span></span>
     
-<span data-ttu-id="f6951-120">ID ist ein eindeutiger Bezeichner für jede Q&A und sollte nie bearbeitet werden.</span><span class="sxs-lookup"><span data-stu-id="f6951-120">Id is a unique identifier for each Q&A and should never be edited.</span></span> <span data-ttu-id="f6951-121">Die Felder zuletzt geändert und zuletzt geändert von werden nur zum Sortieren und suchen von Q&As verwendet.</span><span class="sxs-lookup"><span data-stu-id="f6951-121">The Last Modified and Last Modified By fields should only be used to sort and find Q&As.</span></span>
+<span data-ttu-id="072b4-122">„ID“ ist ein eindeutiger Bezeichner für jede Frage und Antwort und sollte nie bearbeitet werden.</span><span class="sxs-lookup"><span data-stu-id="072b4-122">Id is a unique identifier for each Q&A and should never be edited.</span></span> <span data-ttu-id="072b4-123">Die Felder „Zuletzt geändert“ und „Zuletzt geändert von“ sollten nur zum Sortieren und Suchen von Fragen und Antworten verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="072b4-123">The Last Modified and Last Modified By fields should only be used to sort and find Q&As.</span></span>
   
-1. <span data-ttu-id="f6951-122">Wenn Sie eine Teilmenge ihrer Q&As exportieren möchten, Filtern Sie Sie.</span><span class="sxs-lookup"><span data-stu-id="f6951-122">If you want to export a subset of your Q&As, filter them</span></span>
+1. <span data-ttu-id="072b4-124">Wenn Sie eine Teilmenge Ihrer Fragen und Antworten exportieren möchten, filtern Sie sie.</span><span class="sxs-lookup"><span data-stu-id="072b4-124">If you want to export a subset of your Q&As, filter them</span></span>
     
-2. <span data-ttu-id="f6951-123">Klicken Sie in der oberen rechten Ecke der Seite Q&As auf **exportieren** .</span><span class="sxs-lookup"><span data-stu-id="f6951-123">In the upper-right corner of the Q&As page, click **Export**</span></span>
+2. <span data-ttu-id="072b4-125">Klicken Sie in der oberen rechten Ecke der Seite "Fragen und Antworten" auf **Exportieren**.</span><span class="sxs-lookup"><span data-stu-id="072b4-125">In the upper-right corner of the Q&As page, click **Export**</span></span>
     
-3. <span data-ttu-id="f6951-124">Speichern oder Öffnen der CSV-Datei</span><span class="sxs-lookup"><span data-stu-id="f6951-124">Save or open the .csv file</span></span>
+3. <span data-ttu-id="072b4-126">Speichern oder öffnen Sie die CSV-Datei.</span><span class="sxs-lookup"><span data-stu-id="072b4-126">Save or open the .csv file</span></span>
     
-4. <span data-ttu-id="f6951-125">Bearbeiten von Daten in einem dieser Felder:</span><span class="sxs-lookup"><span data-stu-id="f6951-125">Edit data in any of these fields:</span></span>
+4. <span data-ttu-id="072b4-127">Bearbeiten Sie Daten in jedem beliebigen der folgenden Felder:</span><span class="sxs-lookup"><span data-stu-id="072b4-127">Edit data in any of these fields:</span></span>
     
-   - <span data-ttu-id="f6951-126">Frage</span><span class="sxs-lookup"><span data-stu-id="f6951-126">Question</span></span>
+   - <span data-ttu-id="072b4-128">Frage</span><span class="sxs-lookup"><span data-stu-id="072b4-128">Question</span></span>
     
-   - <span data-ttu-id="f6951-127">URL</span><span class="sxs-lookup"><span data-stu-id="f6951-127">URL</span></span>
+   - <span data-ttu-id="072b4-129">URL</span><span class="sxs-lookup"><span data-stu-id="072b4-129">URL</span></span>
       
-   - <span data-ttu-id="f6951-128">Schlüsselwörter</span><span class="sxs-lookup"><span data-stu-id="f6951-128">Keywords</span></span>
+   - <span data-ttu-id="072b4-130">Schlüsselwörter</span><span class="sxs-lookup"><span data-stu-id="072b4-130">Keywords</span></span>
     
-   - <span data-ttu-id="f6951-129">Status</span><span class="sxs-lookup"><span data-stu-id="f6951-129">State</span></span>
+   - <span data-ttu-id="072b4-131">Zustand</span><span class="sxs-lookup"><span data-stu-id="072b4-131">State</span></span>
     
-   - <span data-ttu-id="f6951-130">Antwort Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f6951-130">Answer Description</span></span>
+   - <span data-ttu-id="072b4-132">Antwortbeschreibung</span><span class="sxs-lookup"><span data-stu-id="072b4-132">Answer Description</span></span>
     
-   - <span data-ttu-id="f6951-131">ReServierte Schlüsselwörter</span><span class="sxs-lookup"><span data-stu-id="f6951-131">Reserved Keywords</span></span>
+   - <span data-ttu-id="072b4-133">Reservierte Schlüsselwörter</span><span class="sxs-lookup"><span data-stu-id="072b4-133">Reserved keywords</span></span>
     
-   - <span data-ttu-id="f6951-132">Anfangstermin</span><span class="sxs-lookup"><span data-stu-id="f6951-132">Start Date</span></span>
+   - <span data-ttu-id="072b4-134">Anfangstermin</span><span class="sxs-lookup"><span data-stu-id="072b4-134">Start Date</span></span>
     
-   - <span data-ttu-id="f6951-133">Enddatum</span><span class="sxs-lookup"><span data-stu-id="f6951-133">End Date</span></span>
+   - <span data-ttu-id="072b4-135">Endtermin</span><span class="sxs-lookup"><span data-stu-id="072b4-135">End Date</span></span>
     
-   - <span data-ttu-id="f6951-134">Land/Region</span><span class="sxs-lookup"><span data-stu-id="f6951-134">Country/Region</span></span>
+   - <span data-ttu-id="072b4-136">Land/Region</span><span class="sxs-lookup"><span data-stu-id="072b4-136">Country/Region</span></span>
     
-   - <span data-ttu-id="f6951-135">Gruppen</span><span class="sxs-lookup"><span data-stu-id="f6951-135">Groups</span></span>
+   - <span data-ttu-id="072b4-137">Gruppen</span><span class="sxs-lookup"><span data-stu-id="072b4-137">Groups</span></span>
     
-   - <span data-ttu-id="f6951-136">Geräte&amp;Betriebssystem</span><span class="sxs-lookup"><span data-stu-id="f6951-136">Device&amp;OS</span></span>
+   - <span data-ttu-id="072b4-138">Geräte und Betriebssystem</span><span class="sxs-lookup"><span data-stu-id="072b4-138">Device&amp;OS</span></span>
     
-   - <span data-ttu-id="f6951-137">Gezielte Variationen</span><span class="sxs-lookup"><span data-stu-id="f6951-137">Targeted Variations</span></span>
+   - <span data-ttu-id="072b4-139">Gezielte Variationen</span><span class="sxs-lookup"><span data-stu-id="072b4-139">Targeted variations</span></span>
     
-5. <span data-ttu-id="f6951-138">Speichern Sie die CSV-Datei</span><span class="sxs-lookup"><span data-stu-id="f6951-138">Save the .csv file</span></span>
+5. <span data-ttu-id="072b4-140">Die CSV-Datei speichern</span><span class="sxs-lookup"><span data-stu-id="072b4-140">Save the file as a .csv file.</span></span>
 
-    <span data-ttu-id="f6951-139">Die CSV-Datei sollte als CSV-UTF-8-Datei gespeichert werden, andere Dateitypen und Codierungen können zu Importfehlern führen.</span><span class="sxs-lookup"><span data-stu-id="f6951-139">The .csv file should be saved as a CSV UTF-8 file, other file types and or encodings may cause import errors</span></span>
+    <span data-ttu-id="072b4-141">Die CSV-Datei sollte als CSV UTF-8-Datei gespeichert werden, andere Dateitypen und/oder Codierungen können zu Importfehlern führen</span><span class="sxs-lookup"><span data-stu-id="072b4-141">The .csv file should be saved as a CSV UTF-8 file, other file types and or encodings may cause import errors</span></span>
     
-6. <span data-ttu-id="f6951-140">Klicken Sie in der oberen rechten Ecke der Seite Q&As auf **importieren**</span><span class="sxs-lookup"><span data-stu-id="f6951-140">In the upper-right corner of the Q&As page, click **Import**</span></span>
+6. <span data-ttu-id="072b4-142">Klicken Sie in der oberen rechten Ecke der Seite „F & A“ auf **Importieren**</span><span class="sxs-lookup"><span data-stu-id="072b4-142">In the upper-right corner of the Q&As page, click **Import**</span></span>
     
-7. <span data-ttu-id="f6951-141">Klicken Sie im Bereich Q&As importieren auf **Durchsuchen** , und wählen Sie die Datei edited. CSV aus.</span><span class="sxs-lookup"><span data-stu-id="f6951-141">In the Import Q&As pane, click **Browse** and select the edited .csv file</span></span> 
+7. <span data-ttu-id="072b4-143">Klicken Sie im Bereich „F & As importieren" auf**Durchsuchen**und wählen Sie die bearbeitete CSV-Datei aus</span><span class="sxs-lookup"><span data-stu-id="072b4-143">In the Import Q&As pane, click **Browse** and select the edited .csv file</span></span> 
     
-8. <span data-ttu-id="f6951-142">Klicken Sie auf **importieren**</span><span class="sxs-lookup"><span data-stu-id="f6951-142">Click **Import**</span></span>
+8. <span data-ttu-id="072b4-144">Klicken Sie auf **Importieren**.</span><span class="sxs-lookup"><span data-stu-id="072b4-144">Click **Import**.</span></span>
     
-<span data-ttu-id="f6951-143">Sie erhalten eine Fehlermeldung, wenn erforderliche Daten fehlen oder ungültig sind.</span><span class="sxs-lookup"><span data-stu-id="f6951-143">You'll get an error if any required data is missing or invalid.</span></span> <span data-ttu-id="f6951-144">Je nach Fehler wird möglicherweise eine Protokolldatei mit weiteren Informationen zu den Zeilen und Spalten generiert, die korrigiert werden müssen.</span><span class="sxs-lookup"><span data-stu-id="f6951-144">Depending on the error, a log file may be generated with more information about the rows and columns that need to be corrected.</span></span> <span data-ttu-id="f6951-145">Nehmen Sie die erforderlichen Änderungen vor, und versuchen Sie, die Datei erneut zu importieren.</span><span class="sxs-lookup"><span data-stu-id="f6951-145">Make any necessary edits, and try importing the file again.</span></span>
+<span data-ttu-id="072b4-145">Wenn erforderliche Daten fehlen oder ungültig sind, wird eine Fehlermeldung angezeigt.</span><span class="sxs-lookup"><span data-stu-id="072b4-145">You'll get an error if any required data is missing or invalid.</span></span> <span data-ttu-id="072b4-146">Je nach Fehler wird möglicherweise eine Protokolldatei mit weiteren Informationen zu den Zeilen und Spalten generiert, die korrigiert werden müssen.</span><span class="sxs-lookup"><span data-stu-id="072b4-146">Depending on the error, a log file may be generated with more information about the rows and columns that need to be corrected.</span></span> <span data-ttu-id="072b4-147">Nehmen Sie alle erforderlichen Änderungen vor und versuchen Sie erneut, die Datei zu importieren.</span><span class="sxs-lookup"><span data-stu-id="072b4-147">Make necessary edits and try importing the file again.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="f6951-146">Sie können keine Q&As erstellen oder bearbeiten, bis alle Fehler aufgelöst wurden.</span><span class="sxs-lookup"><span data-stu-id="f6951-146">Until all errors are resolved, you can't create or edit any Q&As.</span></span> 
+> <span data-ttu-id="072b4-148">Sie können keine Fragen und Antworten erstellen oder bearbeiten, solange nicht alle Fehler behoben sind. </span><span class="sxs-lookup"><span data-stu-id="072b4-148">Until all errors are resolved, you can't create or edit any Q&As.</span></span> 
   
-<span data-ttu-id="f6951-147">Nicht alle Felder sind erforderlich, und die erforderlichen Felder hängen vom Q&A-Status ab.</span><span class="sxs-lookup"><span data-stu-id="f6951-147">Not all fields are required and required fields vary depending on the Q&A state.</span></span> <span data-ttu-id="f6951-148">Basierend auf dem Feld Status wird Q&As als Entwurf, vorgeschlagen, geplant gespeichert oder automatisch veröffentlicht.</span><span class="sxs-lookup"><span data-stu-id="f6951-148">Based on the state field, Q&As will be saved as draft, suggested, scheduled, or they will be published automatically.</span></span> <span data-ttu-id="f6951-149">Weitere Informationen zu den erforderlichen und empfohlenen Feldern finden Sie unter [Create Q&As](create-qas.md).</span><span class="sxs-lookup"><span data-stu-id="f6951-149">Find out more about required and recommended fields in [create Q&As](create-qas.md).</span></span>
+<span data-ttu-id="072b4-149">Nicht alle Felder sind erforderlich und die erforderlichen Felder variieren je nach F & A-Status.</span><span class="sxs-lookup"><span data-stu-id="072b4-149">Not all fields in the template file are required and required fields vary depending on the bookmark state.</span></span> <span data-ttu-id="072b4-150">Auf der Grundlage des Statusfelds werden Fragen und Antworten als „Entwurf“, „vorgeschlagen“ oder „geplant“ gespeichert oder werden automatisch veröffentlicht.</span><span class="sxs-lookup"><span data-stu-id="072b4-150">Based on the State field, bookmarks will be saved as draft, suggested, scheduled, or they will be published automatically.</span></span> <span data-ttu-id="072b4-151">Erfahren Sie mehr zu erforderlichen und empfohlenen Feldern in [F & As erstellen](create-qas.md).</span><span class="sxs-lookup"><span data-stu-id="072b4-151">Find out more about required and recommended fields in [create Q&As](create-qas.md).</span></span>
 
   
 

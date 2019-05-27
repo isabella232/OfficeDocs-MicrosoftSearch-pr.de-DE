@@ -1,5 +1,5 @@
 ---
-title: Erstellen und Verwalten von Q&As
+title: F & As erstellen und verwalten
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,55 +13,58 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b40a575d-7727-4bb0-80da-e25131315790
-description: Übersicht über alle Möglichkeiten zum Erstellen von Antworten auf häufig gestellte Fragen im Microsoft Search-Verwaltungsportal
-ms.openlocfilehash: f30693b0943a34786c9e52859c8c5c680dc6e141
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+description: Übersicht über alle Methoden zum Erstellen von Antworten auf häufig gestellte Fragen im Verwaltungsportal von Microsoft Search
+ms.openlocfilehash: 09c6747dafd5d2cf029f75fec210d308356c54fe
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508745"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968433"
 ---
-# <a name="create-and-manage-qas"></a>Erstellen und Verwalten von Q&As
+# <a name="create-and-manage-qas"></a>F & As erstellen und verwalten
 
-## <a name="create-qas"></a>Erstellen von Fragen und Antworten (F&As)
+> [!IMPORTANT]
+> Die Einstellungen für Microsoft Search in Bing sind jetzt im Microsoft 365 Admin Center verfügbar. Beginnen Sie, indem Sie in Ihrem Admin Center[Suchadministratoren zuweisen](https://docs.microsoft.com/de-DE/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor).
+    
+## <a name="create-qas"></a>F & As erstellen
 
-Q&As bieten die bestmögliche Lösung für die arbeitsbezogenen Fragen Ihres Benutzers. Benutzer können diese leicht erkennen, wenn Sie Schlüsselwörter eingeben, die Sie auf Bing zugeordnet haben.
+F & As bieten die bestmögliche Antwort auf die arbeitsbezogenen Fragen Ihrer Benutzer. Benutzer können sie auf einfache Weise entdecken, wenn sie Schlüsselwörter eingeben, die Sie ihnen in Bing zugeordnet haben.
   
-- [Q&As erstellen](create-qas.md)
+- [F & As erstellen](create-qas.md)
     
-    Hinzufügen einzelner Q&As.
+    Einzelne Fragen und Antworten hinzufügen.
     
-- [Massen erstellen und Importieren von Q&As](bulk-create-qas.md)
+- [Massenerstellung und -import von F & As](bulk-create-qas.md)
     
-    Erstellen Sie Q&As in einer CSV-Datei, und Massenimport.
+    Erstellen Sie Fragen und Antworten in einer CSV-Datei und führen Sie einen Massenimport davon aus.
     
 ## <a name="manage-qas"></a>Verwalten von Fragen und Antworten
 
-Verwenden Sie den Q&A-Status, Filtertools und Massenexport/-Importtools zum [Suchen und Aktualisieren von Q&A-Inhalten](manage-qas.md), einschließlich Titel, Antwort, Schlüsselwörter und URLs.
+Verwenden Sie den F & A-Status, Filtertools und Tools für Massenexport/-import zum [Suchen und Aktualisieren der Inhalte von Fragen und Antworten](manage-qas.md), darunter Titel, Antwort, Schlüsselwörter und URLs.
   
-## <a name="qa-status"></a>Q&A-Status
+## <a name="qa-status"></a>F & A-Status
 
-Im Admin-Portal können Sie Q&As nach Ihrem aktuellen Status anzeigen:
+Im Verwaltungsportal können Sie Fragen und Antworten nach ihrem aktuellen Status anzeigen:
   
 - Veröffentlicht
     
-    Veröffentlichte Q&As werden in Bing-Suchergebnissen angezeigt, wenn ein autorisierter Benutzer nach einem Schlüsselwort sucht.
+    Veröffentlichte Fragen und Antworten werden in Bing-Suchergebnissen angezeigt, wenn ein autorisierter Benutzer nach einem Schlüsselbegriff sucht.
     
 - Entwurf
     
-    Wenn ein Q&A nicht bereit ist, zu veröffentlichen, speichern Sie es als Entwurf. Entwurfs Q&As wird nicht auf Bing angezeigt.
+    Wenn eine F & A nicht bereit zum Veröffentlichen ist, speichern Sie diese als Entwurf. Entwürfe von F & As werden auf Bing nicht angezeigt.
     
 - Geplant
     
-    Geplante Q&As werden automatisch zu einem späteren Zeitpunkt veröffentlicht.
+    Geplante F & As werden an einem zukünftigen Datum automatisch veröffentlicht.
     
 - Abgelaufen
     
-    Abgelaufene Q&As wurden automatisch basierend auf dem Ablaufdatum aus veröffentlichten Inhalten entfernt.
+    Abgelaufene F & As wurden auf der Grundlage ihres Ablaufdatums aus veröffentlichtem Inhalt automatisch entfernt.
     
-- Vorgeschlagene
+- Vorgeschlagen
     
-    Vorgeschlagene Q&As basieren auf dem Feedback von Benutzern.
+    Vorgeschlagene F & As basieren auf dem Feedback von Benutzern.
 
   
 

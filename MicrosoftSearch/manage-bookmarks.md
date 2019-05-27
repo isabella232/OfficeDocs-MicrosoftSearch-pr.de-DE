@@ -1,5 +1,5 @@
 ---
-title: Verwalten von Lesezeichen
+title: Lesezeichen verwalten
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,85 +13,88 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
-description: Suchen nach Lesezeichen, die aktualisiert werden müssen und Möglichkeiten zum Massen bearbeiten von Lesezeichen Ergebnissen für Microsoft Search
-ms.openlocfilehash: f87176c645e127e20edd9e70a74efe05dd381236
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+description: Suchen von Lesezeichen, die aktualisiert werden müssen, und von Methoden zur Massenbearbeitung von Lesezeichenergebnissen für Microsoft Search.
+ms.openlocfilehash: d5cebbfd5779bc8a6aa25cdbcdedb6e9b18f242e
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508609"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968483"
 ---
-# <a name="manage-bookmarks"></a>Verwalten von Lesezeichen
+# <a name="manage-bookmarks"></a>Lesezeichen verwalten
 
-Im Lauf der Zeit müssen Sie möglicherweise den Status und den Inhalt einer Textmarke aktualisieren, um Sie relevant zu halten. 
+> [!IMPORTANT]
+> Die Einstellungen für Microsoft Search in Bing sind jetzt im Microsoft 365 Admin Center verfügbar. Beginnen Sie, indem Sie in Ihrem Admin Center[Suchadministratoren zuweisen](https://docs.microsoft.com/de-DE/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor).
+    
+Im Laufe der Zeit müssen Sie den Status und Inhalt eines Lesezeichens möglicherweise aktualisieren, damit es relevant bleibt. 
   
-## <a name="filter-bookmarks"></a>Lesezeichen Filtern
+## <a name="filter-bookmarks"></a>Filtern von Lesezeichen
 
-Verwenden Sie die Filter-Option in der oberen rechten Ecke der Seite Lesezeichen, um Lesezeichen nach Datum zu suchen und die Benutzer zu ändern. Legen Sie beispielsweise den Schieberegler Datum auf 30 Tage fest, und wählen Sie einen Administrator oder Editor aus, um die Liste der Textmarken anzuzeigen, die Sie in dieser Zeit erstellt oder geändert haben.
+Verwenden Sie die Filteroption in der oberen rechten Ecke der Seite "Lesezeichen", um Lesezeichen nach Datum und der Person, die sie geändert hat, zu suchen. Setzen Sie beispielsweise den Schieberegler für das Datum auf „30 Tage“ und wählen Sie einen Administrator oder Editor aus, um die Liste der Lesezeichen anzuzeigen, die diese während dieser Zeitspanne erstellt oder geändert haben.
   
-## <a name="change-bookmark-content-or-settings"></a>Ändern von Textmarken Inhalten oder-Einstellungen
+## <a name="change-bookmark-content-or-settings"></a>Lesezeicheninhalte oder -einstellungen ändern
 
 1. Wechseln zum Microsoft Search-Verwaltungsportal
     
 2. Klicken Sie im Navigationsbereich auf **Lesezeichen**.
     
-3. So suchen Sie nach einer Textmarke, suchen, Filtern oder klicken auf einen Lesezeichen Status, um Ihre Ergebnisse einzuschränken
+3. Um ein Lesezeichen zu finden, suchen, filtern oder klicken Sie auf einen Lesezeichenstatus, um Ihre Ergebnisse einzuschränken
     
-4. Um eine Textmarke zu ändern oder zu aktualisieren, klicken Sie auf den Titel
+4. Klicken Sie zum Ändern oder Aktualisieren eines Lesezeichens auf den Titel.
     
-5. Nehmen Sie alle Änderungen oder Aktualisierungen an den Inhalten oder Einstellungen vor, und zeigen Sie eine Vorschau der Anzeige an. 
+5. Nehmen Sie alle Änderungen oder Aktualisierungen an Inhalt oder Einstellungen vor, und zeigen Sie eine Vorschau davon an. 
     
 6. Klicken Sie auf **Speichern**.
     
-## <a name="bulk-export-and-edit-bookmarks"></a>Massenexportieren und Bearbeiten von Lesezeichen
+## <a name="bulk-export-and-edit-bookmarks"></a>Massenexport und -bearbeitung von Lesezeichen
 
-Bearbeiten Sie nie Daten in diesen Feldern:
+Bearbeiten Sie nie Daten in folgenden Feldern:
   
-- Id
+- ID
     
 - Zuletzt geändert
     
 - Zuletzt geändert von
     
-ID ist ein eindeutiger Bezeichner für jedes Lesezeichen und sollte nie bearbeitet werden. Die Felder zuletzt geändert und zuletzt geändert von sollten nur zum Sortieren und suchen von Lesezeichen verwendet werden.
+"ID" ist ein eindeutiger Bezeichner für jedes Lesezeichen und sollte nie bearbeitet werden. Die Felder "Zuletzt geändert" und "Zuletzt geändert von" sollten nur zum Sortieren und Suchen von Lesezeichen verwendet werden.
   
-1. Wenn Sie eine Teilmenge ihrer Lesezeichen exportieren möchten, Filtern Sie Sie.
+1. Wenn Sie eine Teilmenge Ihrer Lesezeichen exportieren möchten, filtern Sie sie.
     
-2. Klicken Sie in der oberen rechten Ecke der Seite Lesezeichen auf **exportieren**
+2. Klicken Sie in der oberen rechten Ecke der Seite "Lesezeichen" auf **Exportieren**.
     
-3. Speichern oder Öffnen der CSV-Datei
+3. Speichern oder öffnen Sie die CSV-Datei.
     
-4. Bearbeiten von Daten in einem dieser Felder:
-   - Position
+4. Bearbeiten Sie Daten in jedem beliebigen der folgenden Felder:
+   - Titel
     
    - URL
     
    - Schlüsselwörter
     
-   - Status
+   - Zustand
     
    - Beschreibung
     
-   - ReServierte Schlüsselwörter
+   - Reservierte Schlüsselwörter
     
    - Anfangstermin
     
-   - Enddatum
+   - Endtermin
     
    - Land/Region
     
    - Gruppen
     
-   - Geräte&amp;Betriebssystem
+   - Gerät und Betriebssystem
     
    - Gezielte Variationen
     
-5. Speichern Sie die CSV-Datei
+5. Die CSV-Datei speichern
 
-    Die CSV-Datei sollte als CSV-UTF-8-Datei gespeichert werden, andere Dateitypen und Codierungen können zu Importfehlern führen.
+    Die CSV-Datei sollte als CSV UTF-8-Datei gespeichert werden, andere Dateitypen und/oder Codierungen können zu Importfehlern führen
     
-6. Klicken Sie in der oberen rechten Ecke der Seite Lesezeichen auf **importieren**
+6. Klicken Sie in der oberen rechten Ecke der Seite „Lesezeichen“ auf **Importieren**
     
-7. Klicken Sie im Bereich Lesezeichen importieren auf **Durchsuchen** , und wählen Sie die Datei edited. CSV aus. 
+7. Klicken Sie im Bereich „Lesezeichen importieren“ auf **Durchsuchen** und wählen Sie die bearbeitete CSV-Datei aus 
     
-8. Klicken Sie auf **importieren**
+8. Klicken Sie auf **Importieren**

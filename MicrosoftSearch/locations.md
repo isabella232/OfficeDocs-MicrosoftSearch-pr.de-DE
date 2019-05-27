@@ -1,5 +1,5 @@
 ---
-title: Standorte
+title: Orte
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,55 +13,58 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: 2379e72c-a7da-4e3f-932a-12d431a0a284
-description: Übersicht über alle Möglichkeiten, wie Sie die Standorte Ihrer Organisation in Microsoft Search-Arbeitsergebnisse einbeziehen können
-ms.openlocfilehash: 4ff30d7e346d609e9fddaca70caa1a85652fad3c
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+description: Übersicht über alle Möglichkeiten, wie Sie die Orte Ihrer Organisation in Microsoft Search-Arbeitsergebnisse einfügen können
+ms.openlocfilehash: bcda64315f85b9770f47d1b6c08fd90296063487
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508809"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968459"
 ---
-# <a name="locations"></a>Standorte
+# <a name="locations"></a>Orte
 
-## <a name="add-locations"></a>Hinzufügen von Speicherorten
+> [!IMPORTANT]
+> Die Einstellungen für Microsoft Search in Bing sind jetzt im Microsoft 365 Admin Center verfügbar. Beginnen Sie, indem Sie in Ihrem Admin Center[Suchadministratoren zuweisen](https://docs.microsoft.com/de-DE/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor).
+    
+## <a name="add-locations"></a>Orte hinzufügen
 
-Standorte helfen Ihren Benutzern, Adressen zu finden und die Gebäude, Büros und anderen Arbeitsbereiche Ihrer Organisation auf einer Karte zu suchen. Sie können auch Bing Maps verwenden, um Wegbeschreibungen zu erhalten, zu sehen, was in der Nähe ist, und vieles mehr.
+Orte helfen Ihren Benutzern, Adressen zu finden und Gebäude, Büros und andere Arbeitsbereiche Ihrer Organisation auf einer Karte zu lokalisieren. Sie können darüber hinaus Bing Maps verwenden, um Wegbeschreibungen abzurufen und zu sehen, was in der Nähe liegt und mehr.
   
-- [Speicherort hinzufügen](add-a-location.md)
+- [Einen Ort hinzufügen](add-a-location.md)
     
-    Hinzufügen eines Gebäudes, einer Office-, Campus-oder eines anderen Arbeitsbereichs
+    Ein Gebäude, Büro oder anderen Arbeitsbereich hinzufügen
     
-- [Massenerstellen von Speicherorten](bulk-create-locations.md)
+- [Massenerstellen von Orten](bulk-create-locations.md)
     
-    Hinzufügen von Speicherorten zu einer CSV-Datei und Massenimport
+    Fügen Sie einer CSV-Datei Orte hinzu und führen Sie einen Massenimport davon aus
     
-## <a name="manage-locations"></a>Verwalten von Speicherorten
+## <a name="manage-locations"></a>Orte verwalten
 
-Verwenden des Standortstatus, der Filtertools und des Massen Exports/der Importtools zum [Suchen und Aktualisieren von Speicherorten](manage-locations.md), einschließlich Adresse und Speicherort Name
+Verwenden Sie den Ortsstatus, Filtertools und Tools für Massenexport/-import zum [Suchen und Aktualisieren von Orten](manage-locations.md), einschließlich Adresse und Ortsname
   
-## <a name="location-status"></a>Standortstatus
+## <a name="location-status"></a>Ortsstatus
 
-Im Admin-Portal können Sie Standorte nach Ihrem aktuellen Status anzeigen:
+Im Verwaltungsportal können Sie Orte nach ihrem aktuellen Status anzeigen:
   
 - Veröffentlicht
     
-    Veröffentlichte Speicherorte werden in Bing-Suchergebnissen angezeigt, wenn ein autorisierter Benutzer nach einem Schlüsselwort sucht.
+    Veröffentlichte Orte werden in Bing-Suchergebnissen angezeigt, wenn ein autorisierter Benutzer nach einem Schlüsselbegriff sucht.
     
 - Entwurf
     
-    Wenn ein Speicherort nicht bereit ist, zu veröffentlichen, speichern Sie ihn als Entwurf. Entwurfs Standorte werden nicht auf Bing angezeigt.
+    Wenn ein Ort nicht bereit ist zum Veröffentlichen, speichern Sie ihn als Entwurf. Entwürfe von Orten werden in Bing nicht angezeigt.
     
 - Geplant
     
-    Geplante Standorte werden automatisch zu einem späteren Zeitpunkt veröffentlicht.
+    Geplante Orte werden an einem zukünftigen Datum automatisch veröffentlicht.
     
 - Abgelaufen
     
-    Abgelaufene Speicherorte wurden basierend auf ihrem Ablaufdatum automatisch aus veröffentlichten Inhalten entfernt.
+    Abgelaufene Orte wurden auf der Grundlage ihrer Ablaufdaten aus veröffentlichtem Inhalt automatisch entfernt.
     
-- Vorgeschlagene
+- Vorgeschlagen
     
-    Vorgeschlagene Speicherorte basieren auf Feedback von Benutzern. Möglicherweise werden auch Standardvorschläge von Microsoft angezeigt.
+    Vorgeschlagene Orte basieren auf dem Feedback von Benutzern. Möglicherweise werden auch Standardvorschläge von Microsoft angezeigt.
 
   
 

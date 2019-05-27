@@ -1,5 +1,5 @@
 ---
-title: Verwalten von Speicherorten
+title: Orte verwalten
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,65 +13,68 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
-description: Im Lauf der Zeit müssen Sie möglicherweise den Status und den Inhalt eines Standorts aktualisieren, um ihn relevant zu halten.
-ms.openlocfilehash: 69fa4fc86d80adf76aa2a5788bdde433dd827a4d
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+description: Im Laufe der Zeit müssen Sie Status und Inhalt eines Ortes möglicherweise aktualisieren, damit er relevant bleibt. 
+ms.openlocfilehash: 0e23cf3d3d3d05fe86cdc3e09ce808e54242d670
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508665"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968428"
 ---
-# <a name="manage-locations"></a>Verwalten von Speicherorten
+# <a name="manage-locations"></a>Orte verwalten
 
-Im Lauf der Zeit müssen Sie möglicherweise den Status und den Inhalt eines Standorts aktualisieren, um ihn relevant zu halten. 
+> [!IMPORTANT]
+> Die Einstellungen für Microsoft Search in Bing sind jetzt im Microsoft 365 Admin Center verfügbar. Beginnen Sie, indem Sie in Ihrem Admin Center[Suchadministratoren zuweisen](https://docs.microsoft.com/de-DE/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor).
+    
+Im Laufe der Zeit müssen Sie Status und Inhalt eines Ortes möglicherweise aktualisieren, damit er relevant bleibt.  
   
-## <a name="filter-locations"></a>Filter Speicherorte
+## <a name="filter-locations"></a>Orte filtern
 
-Verwenden Sie die Filter-Option in der oberen rechten Ecke der Seite Speicherorte, um nach Datum zu suchen und zu sehen, wer Sie geändert hat. Legen Sie beispielsweise den Schieberegler Datum auf 30 Tage fest, und wählen Sie einen Administrator oder Editor aus, um die Liste der Speicherorte anzuzeigen, die Sie während dieser Zeit erstellt oder geändert haben.
+Verwenden Sie die Filteroption in der oberen rechten Ecke der Seite „Orte“, um Lesezeichen nach Datum zu suchen und anzuzeigen, wer sie geändert hat. Setzen Sie beispielsweise den Schieberegler für das Datum auf „30 Tage“ und wählen Sie einen Administrator oder Editor aus, um die Liste der Lesezeichen anzuzeigen, die diese während dieser Zeitspanne erstellt oder geändert haben.
   
-## <a name="change-location-content"></a>Ändern des Standort Inhalts
+## <a name="change-location-content"></a>Ortsinhalte ändern
 
-1. Wechseln zum Microsoft Search-Verwaltungsportal
+1. Gehen Sie zum Verwaltungsportal von Microsoft Search
     
-2. Klicken Sie im Navigationsbereich auf **Speicherorte** .
+2. Klicken Sie im Navigationsbereich auf **Orte**
     
-3. So finden Sie einen Speicherort, suchen, Filtern oder klicken auf einen Standortstatus, um die Ergebnisse einzuschränken
+3. Um einen Ort zu finden, suchen, filtern oder klicken Sie auf einen Ortsstatus, um Ihre Ergebnisse einzuschränken.
     
-4. Um einen Speicherort zu ändern oder zu aktualisieren, klicken Sie auf den Speicherort Namen
+4. Wenn Sie einen Ort ändern oder aktualisieren möchten, klicken Sie auf den Ortsnamen
     
-5. Nehmen Sie alle Änderungen oder Aktualisierungen am Inhalt vor, und zeigen Sie an, wie diese angezeigt werden. 
+5. Nehmen Sie alle Änderungen oder Aktualisierungen am Inhalt vor und zeigen Sie eine Vorschau davon an 
     
-6. Klicken Sie auf **Speichern**.
+6. Klicken Sie auf **Speichern**
     
-## <a name="bulk-export-and-edit-locations"></a>Massenexport und Bearbeiten von Speicherorten
+## <a name="bulk-export-and-edit-locations"></a>Massenexport und -bearbeitung von Orten
 
-Bearbeiten Sie nie Daten in diesen Feldern:
+Bearbeiten Sie nie Daten in folgenden Feldern:
   
-- Id
+- ID
     
 - Zuletzt geändert
     
 - Zuletzt geändert von
     
-ID ist ein eindeutiger Bezeichner für jede Position und sollte nie bearbeitet werden. Die Felder zuletzt geändert und zuletzt geändert von werden nur zum Sortieren und suchen von Speicherorten verwendet.
+„ID“ ist ein eindeutiger Bezeichner für jeden Ort und sollte nie bearbeitet werden. Die Felder „Zuletzt geändert“ und „Zuletzt geändert von“ sollten nur zum Sortieren und Suchen von Orten verwendet werden.
   
-1. Wenn Sie eine Teilmenge ihrer Speicherorte exportieren möchten, Filtern Sie Sie.
+1. Wenn Sie eine Teilmenge Ihrer Orte exportieren möchten, filtern Sie sie.
     
-2. Klicken Sie in der oberen rechten Ecke der Seite Speicherorte auf **exportieren** .
+2. Klicken Sie in der oberen rechten Ecke der Seite „Orte“ auf **Exportieren**
     
-3. Speichern oder Öffnen der CSV-Datei
+3. Die CSV-Datei speichern oder öffnen
     
-4. Bearbeiten von Daten in einem dieser Felder:
+4. Bearbeiten Sie Daten in jedem beliebigen der folgenden Felder:
     
    - Name
     
-   - Adressleiste 1
+   - Adresszeile 1
     
-   - Adress Reihe 2
+   - Adresszeile 2
     
    - Stadt
     
-   - Adressstatus
+   - Bundesland
     
    - PLZ
     
@@ -79,25 +82,25 @@ ID ist ein eindeutiger Bezeichner für jede Position und sollte nie bearbeitet w
     
    - Vollständige Adresse
     
-   - Latitude
+   - Breitengrad
     
    - Längengrad
     
    - Schlüsselwörter
     
-   - ReServierte Schlüsselwörter
+   - Reservierte Schlüsselwörter
     
    - Status
     
-5. Speichern Sie die CSV-Datei
+5. CSV-Datei speichern
 
-    Die CSV-Datei sollte als CSV-UTF-8-Datei gespeichert werden, andere Dateitypen und Codierungen können zu Importfehlern führen.
+    Die CSV-Datei sollte als CSV UTF-8-Datei gespeichert werden, andere Dateitypen und/oder Codierungen können zu Importfehlern führen.
     
-6. Klicken Sie in der oberen rechten Ecke der Seite Speicherorte auf **importieren**
+6. Klicken Sie in der oberen rechten Ecke der Seite „Orte“ auf **Importieren**
     
-7. Klicken Sie im Bereich Speicherorte importieren auf **Durchsuchen** , und wählen Sie die Datei edited. CSV aus. 
+7. Klicken Sie im Bereich „Orte importieren“ auf **Durchsuchen** und wählen Sie die bearbeitete CSV-Datei aus. 
     
-8. Klicken Sie auf **importieren**
+8. Klicken Sie auf **Importieren**
 
   
 

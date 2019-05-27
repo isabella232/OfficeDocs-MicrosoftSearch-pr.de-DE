@@ -1,5 +1,5 @@
 ---
-title: Empfohlene Suchbegriffe
+title: Vorgeschlagene Suchbegriffe
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -12,21 +12,21 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: c7f3aa2c-f3f5-4d1b-91cd-4fd4ed3775d3
-description: Informationen zu den Beispiel suchen, die bei Verwendung der Microsoft-Suche angezeigt werden
+description: Informationen zu den Beispielsuchbegriffen, die angezeigt werden, wenn Sie Microsoft Search verwenden
 ms.openlocfilehash: 38afbdf233feba1772b9b72291d1571e2cf7ab97
 ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/01/2019
 ms.locfileid: "33508505"
 ---
-# <a name="suggested-searches"></a>Empfohlene Suchbegriffe
+# <a name="suggested-searches"></a>Vorgeschlagene Suchbegriffe
 
-Wenn Sie sich das erste Mal bei Bing mit Ihrem Geschäfts-oder Schulkonto anmelden, wird oben auf der Seite eine Willkommensnachricht mit vorgeschlagenen Suchvorgängen angezeigt. Diese Suchen dienen dazu, Sie mit der Microsoft-Suche vertraut zu machen und die Art der Arbeitsergebnisse, die Sie bei der Suche finden.
+Wenn Sie sich zum ersten Mal mit Ihrem Geschäfts-, Schul- oder Unikonto bei Bing anmelden, wird oben auf der Seite eine Willkommensnachricht mit vorgeschlagenen Suchbegriffen angezeigt. Diese Suchbegriffe sollen Sie mit Microsoft Search sowie den Arbeitsergebnistypen vertraut machen, die Sie bei einer Suche erhalten. 
   
-Damit Sie für Sie und andere Personen in Ihrer Organisation relevanter sind, hat ihre IT-Abteilung diese überprüft oder Ihre eigenen erstellt.
+Damit diese Ergebnisse für Sie und andere Personen in Ihrer Organisation relevanter werden, hat Ihre IT-Abteilung sie überprüft oder eigene erstellt.
   
-Gelegentlich werden Nachrichten angezeigt, in denen neue Features angekündigt werden, oder Sie erhalten weitere Informationen zur Microsoft-Suche. Wir geben Ihnen immer einen Link, um weitere Informationen zu erhalten, oder Sie können die [Microsoft-Suche](https://www.bing.com/business/explore) untersuchen. 
+Gelegentlich werden Meldungen angezeigt, die neue Funktionen ankündigen oder Ihnen weiterführende Informationen zu Microsoft Search zur Verfügung stellen. Wir stellen Ihnen immer einen Link bereit, unter dem Sie mehr erfahren können oder Sie wechseln zu [Microsoft Search erkunden](https://www.bing.com/business/explore) für weiterführende Informationen. 
 
   
 

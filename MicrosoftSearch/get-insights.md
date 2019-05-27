@@ -1,5 +1,5 @@
 ---
-title: Verwenden des einBlicke-Dashboards
+title: Das Insights-Dashboard verwenden
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,61 +13,64 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ebce7fdc-e89b-473c-8131-67e659bb3f73
-description: Analysieren von Metriken und Verwalten von Inhalten über das benutzerfreundliche Dashboard im Microsoft Search-Verwaltungsportal
-ms.openlocfilehash: 3bbdfade7d28d3dddafb651371f462bb37e53a1d
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+description: Analysieren Sie Metriken und verwalten Sie Inhalte mit dem benutzerfreundlichen Dashboard im Verwaltungsportal von Microsoft Search.
+ms.openlocfilehash: a5fbbcde8d500adc0f4e9bc8f3e3e10846f34136
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508569"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968499"
 ---
-# <a name="use-the-insights-dashboard"></a>Verwenden des einBlicke-Dashboards
+# <a name="use-the-insights-dashboard"></a>Das Insights-Dashboard verwenden
 
-Hier erhalten Sie Daten Einblicke und erfahren, wie Benutzer ihre Ergebnisse eingehen. Benutzer das Admin-Portal-Dashboard:
+> [!IMPORTANT]
+> Die Einstellungen für Microsoft Search in Bing sind jetzt im Microsoft 365 Admin Center verfügbar. Beginnen Sie, indem Sie in Ihrem Admin Center[Suchadministratoren zuweisen](https://docs.microsoft.com/de-DE/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor).
+    
+Rufen Sie Datenerkenntnisse ab und lassen Sie sich anzeigen, wie sich Benutzer mit Ihren Ergebnissen beschäftigen. Verwenden Sie das Dashboard des Verwaltungsportals für Folgendes:
   
-- Anzeigen, wie viele Lese-und Q&As veröffentlicht, geplant oder vorgeschlagen wurden
+- Anzeigen, wie viele Lesezeichen und Fragen und Antworten veröffentlicht, geplant oder vorgeschlagen wurden
     
-- Siehe Impressions for Top search queries, die Arbeitsergebnisse zeigen
+- Anzeigen der Aufrufe für die wichtigsten Suchabfragen, die Arbeitsergebnisse aufzeigen
     
-- Analysieren von Impression-Distributionen für Lesezeichen und Q&As
+- Analysieren der Aufrufverteilungen für Lesezeichen und Fragen und Antworten
     
-## <a name="get-details-about-bookmarks-and-qas"></a>Abrufen von Details zu Lesezeichen und Q&As
+## <a name="get-details-about-bookmarks-and-qas"></a>Abrufen von Details zu Lesezeichen und Fragen und Antworten
 
-Verwenden des Dashboards zum Anzeigen von Lesezeichen-oder Q&A-Gesamtsummen nach Status:
+Verwenden Sie das Dashboard, um die Gesamtanzahl von Lesezeichen oder F & As nach Status anzuzeigen:
   
-- Veröffentlicht: die Anzahl der veröffentlichten Ergebnisse, die Benutzern zur Verfügung stehen
+- Veröffentlicht: Anzahl der veröffentlichten Ergebnisse, die Benutzern zur Verfügung stehen
     
-- Geplant: die Anzahl der geplanten Ergebnisse in der Veröffentlichungs Pipeline
+- Geplant: Anzahl der geplanten Ergebnisse in der Veröffentlichungspipeline
     
-- Empfohlen: die Anzahl der Vorschläge von Benutzern
+- Vorgeschlagen: Anzahl der Benutzervorschläge
     
-Lesezeichen und Q&A Insight-Karten im Dashboard bieten auch einfachen Zugriff auf häufige Aufgaben:
+Lesezeichen und F & A-Erkenntniskarten im Dashboard bieten außerdem einfachen Zugriff auf häufige Aufgaben:
   
-- Zum Anzeigen von Lesezeichen-oder Q&A-Ergebnissen klicken Sie auf Lesezeichen oder Q&As auf dem Kartentitel.
+- Zum Anzeigen von Lesezeichen oder F & A-Ergebnissen klicken Sie im Kartentitel auf "Lesezeichen" oder "Fragen und Antworten".
     
-- Klicken Sie zum Hinzufügen einer Textmarke oder eines Q&A auf die Option erstellen.
+- Zum Hinzufügen eines Lesezeichens oder einer Frage und Antwort klicken Sie auf die Option "Erstellen".
     
-- Zum Massen Hinzufügen von Lesezeichen oder Q&As klicken Sie auf die Option Importieren.
+- Zum Massenhinzufügen von Lesezeichen oder Fragen und Antworten klicken Sie auf die Option "Importieren".
     
-## <a name="review-top-search-queries"></a>Überarbeiten der häufigsten Suchabfragen
+## <a name="review-top-search-queries"></a>Überprüfen der wichtigsten Suchabfragen
 
-Erfahren Sie, welche Suchvorgänge die meisten Impressionen in den letzten 90 Tagen generiert haben. Die Top 25 Benutzer suchen für jeden Ergebnistyp werden zusammen mit der Gesamtanzahl der Impressionen und ihrer Klick-through-Rate (CTR) angezeigt. Auf der oberen Suchanfragen Karte können Sie Folgendes tun:
+Ermitteln Sie, welche Suchen die meisten Aufrufe während der letzten 90 Tage generiert haben. Die 25 wichtigsten Benutzersuchen für jeden Ergebnistyp werden zusammen mit der Gesamtanzahl von Aufrufen und deren Klickrate (Click-Through Rate, CTR) angezeigt. Auf der Karte „Wichtigste Suchabfragen“ können Sie folgende Aktionen ausführen:
   
-- Zum Filtern nach Ergebnistyp klicken Sie im Menü auf alle Ergebnisse, und wählen Sie einen anderen Ergebnistyp aus.
+- Wenn Sie nach Ergebnistyp filtern möchten, klicken Sie im Menü auf „Alle Ergebnisse“ und wählen Sie einen anderen Ergebnistyp aus
     
-- Wenn Sie sehen möchten, wie ein Ergebnis auf Bing angezeigt wird, klicken Sie auf eine Abfrage, und die Suchergebnisseite wird in einer neuen Registerkarte geöffnet.
+- Um anzuzeigen, wie ein Ergebnis in Bing angezeigt wird, klicken Sie auf eine Abfrage. Dann wird die Seite mit den Suchergebnissen in einer neuen Registerkarte geöffnet.
     
-- Um weitere Suchabfragen anzuzeigen, klicken Sie auf den Pfeil nach links oder rechts unten auf der Karte.
+- Wenn Sie weitere Suchabfragen anzeigen möchten, klicken Sie unten auf der Karte auf den nach links oder nach rechts weisenden Pfeil
     
-## <a name="analyze-impressions-by-result-type"></a>Analysieren von Impressionen nach Ergebnistyp
+## <a name="analyze-impressions-by-result-type"></a>Analysieren von Aufrufen nach Ergebnistyp
 
-Einfache Diagramme in der Form der Impression-Verteilung nach Ergebnistypen zeigen Daten über verschiedene Zeiträume an. Die Zusammenfassung zeigt die Anzahl der Impressionen mit einer prozentualen Berechnung für die Verteilung (Anzahl der Ergebnistypen Impressionen x 100/Gesamtanzahl Impressionen). Die Zeitachse zeigt die tägliche Anzahl der Impressionen für einen Ergebnistyp. Sie können auch den Zeitintervall für beide Ansichten ändern und weitere Details abrufen:
+Einfach zu lesende Diagramme in der Karte „Aufrufverteilung nach Ergebnistyp“ zeigen Daten über verschiedene Zeitrahmen. Die Zusammenfassung zeigt die Anzahl von Aufrufen mit einer Prozentsatzberechnung für die Verteilung (Anzahl der Ergebnistypaufrufe x 100 / Gesamtanzahl von Aufrufen). Die Zeitachse zeigt die tägliche Anzahl von Aufrufen für einen Ergebnistyp. Sie können auch den Zeitbereich für beide Ansichten ändern und weitere Informationen erhalten:
   
-- Klicken Sie oben auf der Karte auf 7 Tage, 30 Tage oder 90 Tage.
+- Klicken Sie oben auf der Karte auf „7 Tage“, „30 Tage“ oder „90 Tage“
     
-- Um einen benutzerdefinierten Bereich zwischen 0 und 90 Tagen anzuzeigen, klicken Sie auf benutzerdefinierter Bereich, und geben Sie das Start-und Enddatum ein.
+- Wenn Sie einen benutzerdefinierten Bereich zwischen 0 und 90 Tagen anzeigen möchten, klicken Sie auf „Benutzerdefinierter Bereich“ und geben Sie das Anfangs- und Enddatum ein.
     
-- Bewegen Sie den Mauszeiger auf einem Datenpunkt für Impressionen nach Ergebnistyp für einen einzelnen Tag.
+- Zeigen Sie in der Zeitachse auf einen Datenpunkt für Aufrufe nach Ergebnistyp für einen einzelnen Tag
 
   
 

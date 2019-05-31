@@ -13,16 +13,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ee40010e-5d7f-4ba8-a3f8-d240dab3af6d
+ROBOTS: NOINDEX
 description: Erfahren Sie, wie Sie Bing als Standardsuchmaschine Ihres Unternehmens für Microsoft Search festlegen.
-ms.openlocfilehash: a0798da94f4433bb754c71b9e0d00e09ba5a543b
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 77a8ea884f4df26fc8f7661fb9a9b8791b2f0f18
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508773"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591116"
 ---
 # <a name="set-default-search-engine"></a>Festlegen der Standardsuchmaschine
 
+> [!IMPORTANT]
+> Dieser Artikel bezieht sich auf Microsoft Search im Bing-Verwaltungsportal. Wir verschieben das Portal zum Microsoft 365 Admin Center, und dann wird es entfernt. Es wird empfohlen, dass Sie zu Beginn das Microsoft 365 Admin Center verwenden. [Übersicht über Microsoft Search](overview-microsoft-search.md).
+    
 Das Konfigurieren des Standardbrowsers, der Standardsuchmaschine und der standardmäßigen Startseite hilft Ihren Benutzern, die Microsoft Search-Funktionen zu entdecken, fördert deren Verwendung und ermöglicht eine gleichmäßigere Erfahrung.
   
 Führen Sie zum Festlegen der Standardsuchmaschine für Ihre Organisation die folgenden Schritte aus.

@@ -13,18 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ebce7fdc-e89b-473c-8131-67e659bb3f73
+ROBOTS: NOINDEX
 description: Analysieren Sie Metriken und verwalten Sie Inhalte mit dem benutzerfreundlichen Dashboard im Verwaltungsportal von Microsoft Search.
-ms.openlocfilehash: a5fbbcde8d500adc0f4e9bc8f3e3e10846f34136
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: a01b79dfc71218862da07270171da95e699ed7f2
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968499"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591512"
 ---
-# <a name="use-the-insights-dashboard"></a>Das Insights-Dashboard verwenden
+# <a name="use-the-insights-dashboard"></a>Verwenden des Insights-Dashboards
 
 > [!IMPORTANT]
-> Die Einstellungen für Microsoft Search in Bing sind jetzt im Microsoft 365 Admin Center verfügbar. Beginnen Sie, indem Sie in Ihrem Admin Center[Suchadministratoren zuweisen](https://docs.microsoft.com/de-DE/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor).
+> Dieser Artikel bezieht sich auf Microsoft Search im Bing-Verwaltungsportal. Wir verschieben das Portal zum Microsoft 365 Admin Center, und dann wird es entfernt. Es wird empfohlen, dass Sie zu Beginn das Microsoft 365 Admin Center verwenden. [Übersicht über Microsoft Search](overview-microsoft-search.md).
     
 Rufen Sie Datenerkenntnisse ab und lassen Sie sich anzeigen, wie sich Benutzer mit Ihren Ergebnissen beschäftigen. Verwenden Sie das Dashboard des Verwaltungsportals für Folgendes:
   

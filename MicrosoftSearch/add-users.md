@@ -13,16 +13,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 41723aec-435c-400e-a818-6b1e8a1324c0
+ROBOTS: NoIndex
 description: Zuweisen von Berechtigungen und Rollen zu Microsoft Search-Administratoren und -Editoren
-ms.openlocfilehash: 7fa32c008fcbc1bb436f4e90ff0621ed87df8fc6
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: e29de1b38c0014d282168b4771f8400b2deb6ee3
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508481"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591377"
 ---
 # <a name="manage-users"></a>Verwalten von Benutzern
 
+> [!IMPORTANT]
+> Dieser Artikel bezieht sich auf Microsoft Search im Bing-Verwaltungsportal. Wir verschieben das Portal zum Microsoft 365 Admin Center, und dann wird es entfernt. Es wird empfohlen, dass Sie zu Beginn das Microsoft 365 Admin Center verwenden. [Übersicht über Microsoft Search](overview-microsoft-search.md).
+    
 Bearbeiter können Inhalte hinzufügen, aber keine Einstellungen ändern
   
 ## <a name="add-admins-and-editors"></a>Hinzufügen von Administratoren und Editoren

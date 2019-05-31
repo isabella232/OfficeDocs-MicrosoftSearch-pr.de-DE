@@ -13,18 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: def300e7-103c-4e92-a062-28ffa27561d7
+ROBOTS: NoIndex
 description: Erstellen Sie mit den Importtools für das Microsoft Search-Verwaltungsportal sehr viele Lesezeichen gleichzeitig.
-ms.openlocfilehash: 560cda6f94060d428f2d18cc61bd2430cb31b474
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: 1b3922215534391c65547a4ece22310261626036
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968348"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591422"
 ---
 # <a name="bulk-create-bookmarks"></a>Massenerstellung von Lesezeichen
 
 > [!IMPORTANT]
-> Die Einstellungen für Microsoft Search in Bing sind nun im Microsoft 365 Admin Center verfügbar. Beginnen Sie, indem Sie [Suchadministratoren](https://docs.microsoft.com/de-DE/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in Ihrem Admin Center zuweisen.
+> Dieser Artikel bezieht sich auf Microsoft Search im Bing-Verwaltungsportal. Wir verschieben das Portal zum Microsoft 365 Admin Center, und dann wird es entfernt. Es wird empfohlen, dass Sie zu Beginn das Microsoft 365 Admin Center verwenden. [Übersicht über Microsoft Search](overview-microsoft-search.md).
     
 Laden Sie die CSV-Vorlage herunter, und verwenden Sie sie zur Massenerstellung-, -bearbeitung und -speicherung von Lesezeichen. Wenn Sie eine Massenbearbeitung von vorhandenen Lesezeichen ausführen möchten, exportieren Sie sie aus dem Verwaltungsportal, nehmen Sie die erforderlichen Änderungen vor, und importieren Sie sie.
   

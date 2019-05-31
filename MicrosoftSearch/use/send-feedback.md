@@ -12,29 +12,30 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: a51d395b-c281-433b-bb8e-fefac5252110
-description: Übermitteln Sie Feedback und Kommentare zu Microsoft Search an Ihre IT-Abteilung oder Microsoft.
-ms.openlocfilehash: cbf4aab91116e2f34d54aa39d5cba9f5d505fc11
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: HT
+ROBOTS: NOINDEX
+description: Feedback und Kommentare zur Microsoft-Suche an Ihre IT-Abteilung oder Microsoft senden
+ms.openlocfilehash: c0bb1357d7fe2b500fd12045647debe68fe15644
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508889"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34590891"
 ---
 # <a name="send-feedback"></a>Feedback senden
 
-Ihr Feedback trägt dazu bei, Microsoft Search zu verbessern. Verwenden Sie in einem Arbeitsergebnis den Link "Feedback" zum Kommentieren von dem, was Ihnen gefällt, nicht gefällt oder aber zum Vorschlagen von neuen Features oder Ergebnissen, die hinzugefügt werden sollten. Sie können auch den Link zum Melden von aufgetretenen Problemen verwenden.
+Ihr Feedback hilft, die Microsoft-Suche zu verbessern. Verwenden Sie in einem Arbeitsergebnis den Feedback Link, um zu kommentieren, was Ihnen gefällt, nicht gefällt, oder um neue Features oder Ergebnisse vorzuschlagen, die Sie hinzufügen möchten. Sie können auch den Link verwenden, um eventuell auftretende Probleme oder Probleme zu melden.
   
-## <a name="send-feedback-about-work-results"></a>Senden von Feedback zu Arbeitsergebnissen
+## <a name="send-feedback-about-work-results"></a>Feedback zu Arbeitsergebnissen senden
 
-Wenn Sie Feedback senden möchten, klicken Sie am Ende eines Arbeitsergebnisses auf **Feedback**. Je nach Ergebnistyp werden möglicherweise Optionen zum Senden von Feedback an Ihre IT-Abteilung oder an Microsoft angezeigt.
+Klicken Sie zum Senden von Feedback unten in einem Arbeitsergebnis auf **Feedback**. Je nach Art des Ergebnisses können Sie Optionen zum Senden von Feedback an Ihre IT-Abteilung oder an Microsoft anzeigen.
   
-Feedback, das Sie an Microsoft senden, wird auf unserem UserVoice-Widget gepostet. Jede Person, die Feedback sendet, kann Ihre Kommentare lesen und abonnieren.
+Das Feedback, das Sie an Microsoft senden, wird in unserem UserVoice-Widget gepostet. Jeder, der Feedback sendet, kann Ihre Kommentare möglicherweise lesen und abonnieren.
   
-Feedback, das Sie an Ihre IT-Abteilung senden, wird für Microsoft nicht direkt freigegeben.
+Das Feedback, das Sie an Ihre IT-Abteilung senden, wird nicht direkt an Microsoft weitergegeben.
   
-## <a name="send-feedback-about-web-results"></a>Senden von Feedback zu Webergebnissen
+## <a name="send-feedback-about-web-results"></a>Feedback zu webergebnissen senden
 
-Während Sie Microsoft Search verwenden, gibt es vielleicht Feedback zu den angezeigten Webergebnissen. Wenn Sie Feedback dazu senden möchten, klicken Sie am Ende einer beliebigen Bing-Seite auf **Feedback**. Dieses Feedback wird nicht für Ihre Organisation freigegeben. Bing überprüft jedes Feedback, aber Sie erhalten keine persönliche Antwort. 
+Bei der Verwendung der Microsoft-Suche haben Sie möglicherweise Feedback zu den webergebnissen, die angezeigt werden. Um Feedback zu diesen zu senden, klicken Sie unten auf jeder Bing-Seite auf **Feedback** . Dieses Feedback wird nicht für Ihre Organisation freigegeben. Bing überprüft alle Rückmeldungen, aber Sie erhalten keine persönliche Antwort. 
 
   
 

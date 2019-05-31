@@ -1,5 +1,5 @@
 ---
-title: Wie Microsoft Search Ihre Informationen sichert
+title: Wie Microsoft Search Ihre Infos sicher aufbewahrt
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -12,27 +12,28 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: 5ab1234e-fbb2-4bf9-a907-fa83389a7dee
-description: Wie Ihre Informationen und Dateien bei der Verwendung von Microsoft Search geschützt werden
-ms.openlocfilehash: 52dbf65d3c7414eaa2c4a3770def3f4f00edc40c
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: HT
+ROBOTS: NOINDEX
+description: Wie Ihre Informationen und Dateien geschützt werden, wenn Sie Microsoft Search verwenden
+ms.openlocfilehash: ba1cb7c106f5944b634e4995648975ff9c6113d8
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508849"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34590909"
 ---
-# <a name="how-microsoft-search-keeps-your-info-secure"></a>Wie Microsoft Search Ihre Informationen sichert
+# <a name="how-microsoft-search-keeps-your-info-secure"></a>Wie Microsoft Search Ihre Infos sicher aufbewahrt
 
-Microsoft Search verwendet mehrere Methoden, um Ihren Inhalt und Ihre Informationen zu sichern:
+Microsoft Search verwendet verschiedene Methoden, um Ihre Inhalte und Informationen zu sichern:
   
-- Microsoft Search-Ergebnisse stammen direkt aus derselben vertrauenswürdigen Cloud, die auch Office 365 nutzt. Bing speichert keine Arbeitsinhalte oder -informationen im öffentlichen Webindex.
+- Microsoft-Suchergebnisse stammen direkt aus der gleichen vertrauenswürdigen Cloud, die von Office 365 verwendet wird. In Bing werden keine Arbeitsinhalte oder-Informationen im öffentlichen Webindex gespeichert.
     
-- Sie können Arbeitsergebnisse nur sehen, wenn Sie mit Ihrem Geschäfts-, Schul- oder Unikonto angemeldet sind.
+- Sie können Arbeitsergebnisse nur anzeigen, wenn Sie mit Ihrem Arbeits-oder Schulkonto angemeldet sind.
     
-- Microsoft Search gibt nur Informationen zurück, für die Sie über die Berechtigung zum Anzeigen verfügen. Möglicherweise verfügen Sie über diese Berechtigung, weil Sie selbst die Dateien oder Informationen erstellt haben, die Informationen für Sie oder eine größere Gruppe, deren Mitglied Sie sind, freigegeben wurden oder aber in Dateien oder an Orten gespeichert sind, auf die Sie zugreifen dürfen.
+- Microsoft Search gibt nur Informationen zurück, für die Sie über die Berechtigung zum Anzeigen verfügen. Sie haben möglicherweise die Berechtigung, weil Sie die Dateien oder Informationen erstellt haben, Sie wurden für Sie freigegeben oder mit einer größeren Gruppe, die Sie enthält, oder Sie werden in Ordnern oder Speicherorten gespeichert, für die Sie über Zugriffsberechtigungen verfügen.
     
-- Microsoft Search verwendet Ihre Arbeitssuchvorgänge weder zum Verbessern von öffentlichen Webergebnissen noch zum Verbessern von Bing.
+- Die Microsoft-Suche verwendet Ihre Arbeitssuche nicht zum Verbessern der öffentlichen Webergebnisse oder zum Verbessern von Bing.
     
-- Microsoft Search lässt es nicht zu, dass Inserenten Sie oder eine andere Person in Ihrer Organisation anschreiben.
+- Mit der Microsoft-Suche können Inserenten Sie oder andere Personen in Ihrer Organisation nicht gezielt erreichen.
 
   
 

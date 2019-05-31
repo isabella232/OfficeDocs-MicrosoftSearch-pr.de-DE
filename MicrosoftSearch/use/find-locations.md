@@ -12,29 +12,30 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: 3d34bfbc-d4a3-4ef2-85d3-cf92835382ac
-description: Verwenden Sie Microsoft Search, um nach Büros, Gebäuden und anderen Arbeitsorten zu suchen oder Wegbeschreibungen und weitere Informationen zu erhalten.
-ms.openlocfilehash: 8264f223808750cab6c5117b3b3fa1adbee5a40a
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: HT
+ROBOTS: NOINDEX
+description: Verwenden der Microsoft-Suche zum Auffinden von Büro-, Gebäude-und anderen Arbeitsbereichs Standorten, Abrufen von Wegbeschreibungen und mehr
+ms.openlocfilehash: 7b01cf5bd385cecfe3b46e762b3be39cd9301f8d
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508961"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591026"
 ---
 # <a name="find-locations"></a>Suchen von Orten
 
-Suchen Sie nach Gebäuden, Büros, Hochschulen und vielem mehr, um ein Kartenergebnis und die jeweilige Adresse anzuzeigen. Über Bing Maps können Sie im Handumdrehen Wegbeschreibungen erhalten und sehen, was in Ihrer Nähe ist.
+Suchen Sie nach Gebäuden, Büros, Campus und mehr, um ein Karten Ergebnis und eine Adresse anzuzeigen. Sie können ganz einfach Wegbeschreibungen abrufen und sehen, was sich in Bing Maps befindet.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2ACDW?autoplay=false]
   
-1. Melden Sie sich bei Bing mit Ihrem Geschäfts-, Schul- oder Unikonto an.
+1. Melden Sie sich bei Ihrem Arbeits-oder Schulkonto bei Bing an.
     
-2. Suchen nach dem Namen des Orts
+2. Suchen nach dem Standortnamen
     
-    Beispiel: "Gebäude 9" oder "Waldcafé".
+    Beispiel: "Building 9" oder "West Cafe".
     
-3. Oben auf der Ergebnisseite wird eine Karte mit dem gesuchten Ort und der Straße angezeigt.
+3. Oben auf der Ergebnisseite wird eine Karte angezeigt, die den Ort und die Straße angibt.
     
-    Darunter werden weitere Webergebnisse angezeigt. Sie sind für Ihre Organisation nicht spezifisch.
+    Weitere Webergebnisse werden darunter angezeigt. Sie sind nicht spezifisch für Ihre Organisation.
 
   
 

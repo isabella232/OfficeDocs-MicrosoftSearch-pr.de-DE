@@ -1,5 +1,5 @@
 ---
-title: Ressourcen, Tools und mehr finden
+title: Suchen von Ressourcen, Tools und mehr
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -12,31 +12,32 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: a67e015a-e10a-442a-b1c9-511136d54d1f
-description: Microsoft Search zum Suchen von Intranetsites, Ressourcen, Tools und Links zu internen Informationen verwenden.
-ms.openlocfilehash: 4d484b832db07532d678af1f1c0f9f3348166e79
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: HT
+ROBOTS: NOINDEX
+description: Verwenden der Microsoft-Suche zum Auffinden von Intranet-Websites, Ressourcen, Tools und Links zu internen Informationen
+ms.openlocfilehash: 986da96bd0d3964bd0ceff839d015e83df927fd2
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508841"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34590864"
 ---
-# <a name="find-resources-tools-and-more"></a>Ressourcen, Tools und mehr finden
+# <a name="find-resources-tools-and-more"></a>Suchen von Ressourcen, Tools und mehr
 
-Ihre IT-Abteilung erstellt und veröffentlicht Lesezeichen zu internen und externen Ressourcen, Tools, Seiten und mehr, damit Sie die von Ihnen benötigten Informationen finden.
+Ihre IT-Abteilung erstellt und veröffentlicht Lesezeichen in internen und externen Ressourcen, Tools, Seiten und mehr, damit Sie die benötigten Informationen finden können.
   
-Lesezeichenergebnisse umfassen eine kurze Beschreibung der Website oder Ressource und einen dazugehörigen Link. So erstellen beispielsweise die meisten Organisationen Lesezeichen für Vergütungen, Personalwesen, Karriere-Infos, IT-Support und Berichte über arbeitsfreie Zeiten.
+Lesezeichen Ergebnisse enthalten eine kurze Beschreibung der Website oder Ressource sowie einen Link dazu. In den meisten Organisationen werden beispielsweise Lesezeichen für Vorteile, HR, Karriereinformationen, IT-Support und Zeitaufwand für die Berichterstellung erstellt.
   
-F & A-Ergebnisse umfassen im Allgemeinen dieselben Informationen sowie eine kurze Antwort, die möglicherweise die benötigte Information enthält und, wenn Sie mehr erfahren möchten, einen Link.
+Q&A-Ergebnisse enthalten im Allgemeinen dieselben Informationen sowie eine kurze Antwort, die die benötigten Informationen enthält, und einen Link, wenn Sie mehr erfahren möchten.
   
-1. Bei Bing mit Ihrem Geschäfts-, Schul- oder Unikonto anmelden. 
+1. Melden Sie sich bei Ihrem Arbeits-oder Schulkonto bei Bing an. 
     
-2. Nach etwas suchen
+2. Suchen nach etwas
     
-    Probieren Sie beispielsweise nach „Vergütungen“, „Personalwesen“, „Karriere-Infos“, „IT-Support“ oder „Bericht über arbeitsfreie Zeiten“ zu suchen.
+    Versuchen Sie beispielsweise, nach "Vorteilen", "HR", "Berufsinformationen", "IT-Support" oder "Zeitspanne melden" zu suchen.
     
-3. Ein Lesezeichen oder F & A-Ergebnis wird oben auf der Seite oder in der rechten Spalte angezeigt.
+3. Eine Textmarke oder ein Q&A-Ergebnis wird oben auf der Seite oder rechten Spalte angezeigt.
     
-    Darunter werden weitere Webergebnisse angezeigt. Sie sind nicht spezifisch für Ihre Organisation.
+    Weitere Webergebnisse werden darunter angezeigt. Sie sind nicht spezifisch für Ihre Organisation.
 
   
 

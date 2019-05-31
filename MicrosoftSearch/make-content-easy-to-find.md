@@ -3,22 +3,23 @@ title: Inhalte mit Microsoft Search leicht auffindbar machen
 ms.author: anfowler
 author: adefowler
 manager: mnirkhe
-ms.date: 12/11/2018
+ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 localization_priority: Priority
+ROBOTS: NOINDEX
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Erstellen Sie Lesezeichen, Standorte und F&A-Artikel, um die Inhalte Ihrer Organisation leicht auffindbar zu machen.
-ms.openlocfilehash: e7f65715faf71165549cb1af7f15a4d3ac918f19
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 851f88206d7f8e0330497c9706b02ad98e0f8e6c
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33511048"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591566"
 ---
 # <a name="make-content-easy-to-find"></a>Inhalte leicht auffindbar machen
 ****Microsoft Search**** hilft Benutzern, relevante Inhalte zu finden. **Microsoft Search** ist eine sichere Möglichkeit, sowohl Ihre Intranet- als auch Ihre Webinhalte zu durchsuchen. Diese web- und organisationsübergreifende Art der Integration steht nur bei Microsoft zur Verfügung. 
@@ -156,8 +157,9 @@ Helfen Sie Ihren Benutzern beim Ausführen von Aufgaben, z. B. der Eingabe von U
 #### <a name="what-are-powerapps"></a>Was sind PowerApps?
 PowerApps ist ein Dienst, mit dem Sie Geschäfts-Apps erstellen können, die in einem Browser oder auf einem Smartphone oder Tablet ausgeführt werden, ohne dass eine Codierung erforderlich ist. PowerApps funktionieren in jedem beliebigen Browser und auf jedem beliebigen Gerät und können in weniger als einer Minute hinzugefügt werden. Weitere Informationen zu PowerApps finden Sie unter:
 - 
-  [Interaktives Lernen](https://docs.microsoft.com/en-us/learn/browse/?products=powerapps)
-- [Dokumentation](https://docs.microsoft.com/de-DE/powerapps/maker/canvas-apps/get-sessionid)
+  [Interaktives Lernen](https://docs.microsoft.com/de-DE/learn/browse/?products=powerapps)
+- 
+  [Dokumentation](https://docs.microsoft.com/de-DE/powerapps/maker/canvas-apps/get-sessionid)
 - [PowerApps Home](https://make.preview.powerapps.com/environments/839eace6-59ab-4243-97ec-a5b8fcc104e4/home)
 
 #### <a name="add-a-powerapp-to-a-bookmark"></a>Hinzufügen einer PowerApp zu einem Lesezeichen

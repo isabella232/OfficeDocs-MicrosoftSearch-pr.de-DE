@@ -13,18 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 15c9fada-f7a6-4210-aa6b-028b32217830
+ROBOTS: NoIndex
 description: Fügen Sie mit den Importtools für das Microsoft Search-Verwaltungsportal sehr viele Standorte gleichzeitig hinzu.
-ms.openlocfilehash: 1d360fda2851083def0bcbd8fcffd77cfa15240e
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: 186f6973de1ff87b62b5f07a47eb41acdd842010
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968291"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591395"
 ---
 # <a name="bulk-create-locations"></a>Massenerstellen von Standorten
 
 > [!IMPORTANT]
-> Die Einstellungen für Microsoft Search in Bing sind nun im Microsoft 365 Admin Center verfügbar. Beginnen Sie, indem Sie [Suchadministratoren](https://docs.microsoft.com/de-DE/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in Ihrem Admin Center zuweisen.
+> Dieser Artikel bezieht sich auf Microsoft Search im Bing-Verwaltungsportal. Wir verschieben das Portal zum Microsoft 365 Admin Center, und dann wird es entfernt. Es wird empfohlen, dass Sie zu Beginn das Microsoft 365 Admin Center verwenden. [Übersicht über Microsoft Search](overview-microsoft-search.md).
     
 Laden Sie die CSV-Vorlage herunter, und verwenden Sie sie zur Massenerstellung, -bearbeitung und -speicherung von Standorten. 
   

@@ -1,9 +1,9 @@
 ---
 title: Lesezeichen verwalten
-ms.author: dawholl
-author: dawholl
-manager: kellis
-ms.date: 09/08/2018
+ms.author: anfowler
+author: adefowler
+manager: mnirkhe
+ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,88 +13,86 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
-description: Suchen von Lesezeichen, die aktualisiert werden müssen, und von Methoden zur Massenbearbeitung von Lesezeichenergebnissen für Microsoft Search.
-ms.openlocfilehash: d5cebbfd5779bc8a6aa25cdbcdedb6e9b18f242e
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+description: Erstellen und aktualisieren Sie Lesezeichen und Methoden zur Massenbearbeitung von Lesezeichenergebnissen für Microsoft Search.
+ms.openlocfilehash: fb1be0bc137891a54e370fef1e4b5628963c5ad9
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968483"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591620"
 ---
-# <a name="manage-bookmarks"></a><span data-ttu-id="7e750-103">Lesezeichen verwalten</span><span class="sxs-lookup"><span data-stu-id="7e750-103">Manage bookmarks</span></span>
+# <a name="manage-bookmarks"></a><span data-ttu-id="b9e74-103">Lesezeichen verwalten</span><span class="sxs-lookup"><span data-stu-id="b9e74-103">Manage bookmarks</span></span>
 
-> [!IMPORTANT]
-> <span data-ttu-id="7e750-104">Die Einstellungen für Microsoft Search in Bing sind jetzt im Microsoft 365 Admin Center verfügbar.</span><span class="sxs-lookup"><span data-stu-id="7e750-104">Microsoft Search in Bing settings are now available in the Microsoft 365 admin center.</span></span> <span data-ttu-id="7e750-105">Beginnen Sie, indem Sie in Ihrem Admin Center[Suchadministratoren zuweisen](https://docs.microsoft.com/de-DE/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor).</span><span class="sxs-lookup"><span data-stu-id="7e750-105">Get started by [assigning search admins](https://docs.microsoft.com/en-us/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in your admin center.</span></span>
-    
-<span data-ttu-id="7e750-106">Im Laufe der Zeit müssen Sie den Status und Inhalt eines Lesezeichens möglicherweise aktualisieren, damit es relevant bleibt.</span><span class="sxs-lookup"><span data-stu-id="7e750-106">Over time, you may need to update a bookmark's status and content to keep it relevant.</span></span> 
-  
-## <a name="filter-bookmarks"></a><span data-ttu-id="7e750-107">Filtern von Lesezeichen</span><span class="sxs-lookup"><span data-stu-id="7e750-107">Filter bookmarks</span></span>
+<span data-ttu-id="b9e74-104">Sie können ein Lesezeichen in wenigen Schritten erstellen.</span><span class="sxs-lookup"><span data-stu-id="b9e74-104">You can create a bookmark in just a few steps.</span></span> <span data-ttu-id="b9e74-105">Jedes Lesezeichen enthält einen Titel, eine URL und eine Gruppe von Schlüsselwörtern, die es auslösen.</span><span class="sxs-lookup"><span data-stu-id="b9e74-105">Each bookmark includes a title, a URL, and a set of keywords that trigger it.</span></span> <span data-ttu-id="b9e74-106">Ein Lesezeichen kann mehrere Schlüsselwörter haben, und mehrere Lesezeichen können ein gemeinsames Schlüsselwort nutzen, aber ein reserviertes Schlüsselwort kann nicht gemeinsam genutzt werden.</span><span class="sxs-lookup"><span data-stu-id="b9e74-106">A bookmark can have several keywords and several bookmarks can share the same keyword, but reserved keyword can't be shared.</span></span> <span data-ttu-id="b9e74-107">Wenn ein Lesezeichen erstellt oder geändert wird, wird der Suchindex sofort aktualisiert, und das Lesezeichen steht Benutzern sofort zur Verfügung.</span><span class="sxs-lookup"><span data-stu-id="b9e74-107">When a Bookmark is created or modified, the search index is refreshed immediately, and the bookmark is available to users immediately.</span></span>
 
-<span data-ttu-id="7e750-108">Verwenden Sie die Filteroption in der oberen rechten Ecke der Seite "Lesezeichen", um Lesezeichen nach Datum und der Person, die sie geändert hat, zu suchen.</span><span class="sxs-lookup"><span data-stu-id="7e750-108">Use the filter option in the upper-right corner of the Bookmarks page to find bookmarks by date and who modified them.</span></span> <span data-ttu-id="7e750-109">Setzen Sie beispielsweise den Schieberegler für das Datum auf „30 Tage“ und wählen Sie einen Administrator oder Editor aus, um die Liste der Lesezeichen anzuzeigen, die diese während dieser Zeitspanne erstellt oder geändert haben.</span><span class="sxs-lookup"><span data-stu-id="7e750-109">For example, set the date slider to 30 days and select an admin or editor to see the list of bookmarks they've created or changed in that time.</span></span>
-  
-## <a name="change-bookmark-content-or-settings"></a><span data-ttu-id="7e750-110">Lesezeicheninhalte oder -einstellungen ändern</span><span class="sxs-lookup"><span data-stu-id="7e750-110">Change bookmark content or settings</span></span>
+<span data-ttu-id="b9e74-108">Wenn Ihre Organisation höhergestufte Ergebnisse in SharePoint eingerichtet hat, können Sie die höhergestuften Ergebnisse in **Microsoft Search** importieren und den importierten Inhalt für Ihre Benutzer verfügbar machen.</span><span class="sxs-lookup"><span data-stu-id="b9e74-108">If your organization has Promoted Results set up in SharePoint, you can import the Promoted Results into**Microsoft Search** and make the imported content available to your users.</span></span> <span data-ttu-id="b9e74-109">Dies ist eine einfache Möglichkeit, Suchergebnisse schnell aufzufüllen, sobald Sie **Microsoft Search** einrichten, und es für Ihre Benutzer effektiver zu gestalten.</span><span class="sxs-lookup"><span data-stu-id="b9e74-109">This is an easy way to quickly populate search results as soon as you set up **Microsoft Search** and make it more effective for your users.</span></span> <span data-ttu-id="b9e74-110">Wir empfehlen Ihnen, höhergestufte Ergebnisse aus SharePoint als Referenz zu verwenden, um zu verstehen, wie man relevante Suchergebnisse benennt und erstellt.</span><span class="sxs-lookup"><span data-stu-id="b9e74-110">We recommend that you use promoted results from SharePoint as a reference to understand how to name and create relevant search results.</span></span> 
 
-1. <span data-ttu-id="7e750-111">Wechseln zum Microsoft Search-Verwaltungsportal</span><span class="sxs-lookup"><span data-stu-id="7e750-111">Go to the Microsoft Search Admin portal</span></span>
-    
-2. <span data-ttu-id="7e750-112">Klicken Sie im Navigationsbereich auf **Lesezeichen**.</span><span class="sxs-lookup"><span data-stu-id="7e750-112">In the navigation pane, click **Bookmarks**</span></span>
-    
-3. <span data-ttu-id="7e750-113">Um ein Lesezeichen zu finden, suchen, filtern oder klicken Sie auf einen Lesezeichenstatus, um Ihre Ergebnisse einzuschränken</span><span class="sxs-lookup"><span data-stu-id="7e750-113">To find a bookmark, search, filter, or click a bookmark status to narrow your results</span></span>
-    
-4. <span data-ttu-id="7e750-114">Klicken Sie zum Ändern oder Aktualisieren eines Lesezeichens auf den Titel.</span><span class="sxs-lookup"><span data-stu-id="7e750-114">To change or update a bookmark, click the title</span></span>
-    
-5. <span data-ttu-id="7e750-115">Nehmen Sie alle Änderungen oder Aktualisierungen an Inhalt oder Einstellungen vor, und zeigen Sie eine Vorschau davon an.</span><span class="sxs-lookup"><span data-stu-id="7e750-115">Make any changes or updates to the content or settings and preview how they'll appear</span></span> 
-    
-6. <span data-ttu-id="7e750-116">Klicken Sie auf **Speichern**.</span><span class="sxs-lookup"><span data-stu-id="7e750-116">Click **Save**</span></span>
-    
-## <a name="bulk-export-and-edit-bookmarks"></a><span data-ttu-id="7e750-117">Massenexport und -bearbeitung von Lesezeichen</span><span class="sxs-lookup"><span data-stu-id="7e750-117">Bulk export and edit bookmarks</span></span>
+## <a name="add-or-edit-a-single-bookmark"></a><span data-ttu-id="b9e74-111">Hinzufügen oder Bearbeiten eines einzelnen Lesezeichens</span><span class="sxs-lookup"><span data-stu-id="b9e74-111">Add or edit a single bookmark</span></span>
+1. <span data-ttu-id="b9e74-112">Gehen Sie zum **Microsoft 365 Admin Center**.</span><span class="sxs-lookup"><span data-stu-id="b9e74-112">Go to **Microsoft 365 admin center**.</span></span>
+1. <span data-ttu-id="b9e74-113">Wechseln Sie im Navigationsbereich zu **Einstellungen**, und wählen Sie dann \*\*\*\*Microsoft Search\*\*\*\* aus.</span><span class="sxs-lookup"><span data-stu-id="b9e74-113">In the navigation pane, go to **Settings**, and then select \*\*\*\*Microsoft Search\*\*\*\*.</span></span>
+<span data-ttu-id="b9e74-114">Standardmäßig ist die Registerkarte **Lesezeichen** ausgewählt.</span><span class="sxs-lookup"><span data-stu-id="b9e74-114">By default, the **Bookmarks** tab is selected.</span></span>
+1. <span data-ttu-id="b9e74-115">Wählen Sie zum Hinzufügen eines Lesezeichens **Neu hinzufügen** aus.</span><span class="sxs-lookup"><span data-stu-id="b9e74-115">To add a bookmark, select **Add new**.</span></span> <span data-ttu-id="b9e74-116">Wählen Sie zum Bearbeiten eines Lesezeichens das Lesezeichen in der entsprechenden Lesezeichenliste aus.</span><span class="sxs-lookup"><span data-stu-id="b9e74-116">To edit a bookmark, select the bookmark in the relevant bookmark list.</span></span> 
+1. <span data-ttu-id="b9e74-117">Während Sie die Informationen hinzufügen oder bearbeiten, wird die Vorschau automatisch aktualisiert.</span><span class="sxs-lookup"><span data-stu-id="b9e74-117">As you add or edit the information, the preview automatically updates.</span></span>
+1. <span data-ttu-id="b9e74-118">Speichern Sie Ihre Änderungen.</span><span class="sxs-lookup"><span data-stu-id="b9e74-118">Save your changes.</span></span>
 
-<span data-ttu-id="7e750-118">Bearbeiten Sie nie Daten in folgenden Feldern:</span><span class="sxs-lookup"><span data-stu-id="7e750-118">Never edit data in these fields: Id, Last Modified, and Last Modified By</span></span>
-  
-- <span data-ttu-id="7e750-119">ID</span><span class="sxs-lookup"><span data-stu-id="7e750-119">Id</span></span>
-    
-- <span data-ttu-id="7e750-120">Zuletzt geändert</span><span class="sxs-lookup"><span data-stu-id="7e750-120">Last modified</span></span>
-    
-- <span data-ttu-id="7e750-121">Zuletzt geändert von</span><span class="sxs-lookup"><span data-stu-id="7e750-121">Last modified by</span></span>
-    
-<span data-ttu-id="7e750-122">"ID" ist ein eindeutiger Bezeichner für jedes Lesezeichen und sollte nie bearbeitet werden.</span><span class="sxs-lookup"><span data-stu-id="7e750-122">Id is a unique identifier for each bookmark and should never be edited.</span></span> <span data-ttu-id="7e750-123">Die Felder "Zuletzt geändert" und "Zuletzt geändert von" sollten nur zum Sortieren und Suchen von Lesezeichen verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="7e750-123">The Last Modified and Last Modified By fields should only be used to sort and find bookmarks.</span></span>
-  
-1. <span data-ttu-id="7e750-124">Wenn Sie eine Teilmenge Ihrer Lesezeichen exportieren möchten, filtern Sie sie.</span><span class="sxs-lookup"><span data-stu-id="7e750-124">If you want to export a subset of your bookmarks, filter them</span></span>
-    
-2. <span data-ttu-id="7e750-125">Klicken Sie in der oberen rechten Ecke der Seite "Lesezeichen" auf **Exportieren**.</span><span class="sxs-lookup"><span data-stu-id="7e750-125">In the upper-right corner of the Bookmarks page, click **Export**</span></span>
-    
-3. <span data-ttu-id="7e750-126">Speichern oder öffnen Sie die CSV-Datei.</span><span class="sxs-lookup"><span data-stu-id="7e750-126">Save or open the .csv file</span></span>
-    
-4. <span data-ttu-id="7e750-127">Bearbeiten Sie Daten in jedem beliebigen der folgenden Felder:</span><span class="sxs-lookup"><span data-stu-id="7e750-127">Edit data in any of these fields:</span></span>
-   - <span data-ttu-id="7e750-128">Titel</span><span class="sxs-lookup"><span data-stu-id="7e750-128">Title</span></span>
-    
-   - <span data-ttu-id="7e750-129">URL</span><span class="sxs-lookup"><span data-stu-id="7e750-129">URL</span></span>
-    
-   - <span data-ttu-id="7e750-130">Schlüsselwörter</span><span class="sxs-lookup"><span data-stu-id="7e750-130">Keywords</span></span>
-    
-   - <span data-ttu-id="7e750-131">Zustand</span><span class="sxs-lookup"><span data-stu-id="7e750-131">State</span></span>
-    
-   - <span data-ttu-id="7e750-132">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="7e750-132">Description</span></span>
-    
-   - <span data-ttu-id="7e750-133">Reservierte Schlüsselwörter</span><span class="sxs-lookup"><span data-stu-id="7e750-133">Reserved keywords</span></span>
-    
-   - <span data-ttu-id="7e750-134">Anfangstermin</span><span class="sxs-lookup"><span data-stu-id="7e750-134">Start Date</span></span>
-    
-   - <span data-ttu-id="7e750-135">Endtermin</span><span class="sxs-lookup"><span data-stu-id="7e750-135">End Date</span></span>
-    
-   - <span data-ttu-id="7e750-136">Land/Region</span><span class="sxs-lookup"><span data-stu-id="7e750-136">Country/Region</span></span>
-    
-   - <span data-ttu-id="7e750-137">Gruppen</span><span class="sxs-lookup"><span data-stu-id="7e750-137">Groups</span></span>
-    
-   - <span data-ttu-id="7e750-138">Gerät und Betriebssystem</span><span class="sxs-lookup"><span data-stu-id="7e750-138">Device&amp;OS</span></span>
-    
-   - <span data-ttu-id="7e750-139">Gezielte Variationen</span><span class="sxs-lookup"><span data-stu-id="7e750-139">Targeted variations</span></span>
-    
-5. <span data-ttu-id="7e750-140">Die CSV-Datei speichern</span><span class="sxs-lookup"><span data-stu-id="7e750-140">Save the file as a .csv file.</span></span>
+## <a name="add-or-edit-bookmark-using-browser-extensions"></a><span data-ttu-id="b9e74-119">Hinzufügen oder Bearbeiten von Lesezeichen mithilfe von Browsererweiterungen</span><span class="sxs-lookup"><span data-stu-id="b9e74-119">Add or edit bookmark using browser extensions</span></span>
+<span data-ttu-id="b9e74-120">Suchadministratoren können Suchinhalte mühelos mithilfe von Browsererweiterungen erstellen.</span><span class="sxs-lookup"><span data-stu-id="b9e74-120">Search administrators can create search content easily by using browser extensions.</span></span> <span data-ttu-id="b9e74-121">Installieren Sie die Browsererweiterung, und gehen Sie dann zu der Website, die Sie als Lesezeichen hinzufügen möchten, und fügen die Website als Lesezeichen hinzu.</span><span class="sxs-lookup"><span data-stu-id="b9e74-121">Install the browser extension and then go to the site you want to add as bookmark and add the site as bookmark.</span></span>
 
-    <span data-ttu-id="7e750-141">Die CSV-Datei sollte als CSV UTF-8-Datei gespeichert werden, andere Dateitypen und/oder Codierungen können zu Importfehlern führen</span><span class="sxs-lookup"><span data-stu-id="7e750-141">The .csv file should be saved as a CSV UTF-8 file, other file types and or encodings may cause import errors</span></span>
-    
-6. <span data-ttu-id="7e750-142">Klicken Sie in der oberen rechten Ecke der Seite „Lesezeichen“ auf **Importieren**</span><span class="sxs-lookup"><span data-stu-id="7e750-142">In the upper-right corner of the Bookmarks page, click **Import**</span></span>
-    
-7. <span data-ttu-id="7e750-143">Klicken Sie im Bereich „Lesezeichen importieren“ auf **Durchsuchen** und wählen Sie die bearbeitete CSV-Datei aus</span><span class="sxs-lookup"><span data-stu-id="7e750-143">In the Import bookmarks pane, click **Browse** and select the edited .csv file</span></span> 
-    
-8. <span data-ttu-id="7e750-144">Klicken Sie auf **Importieren**</span><span class="sxs-lookup"><span data-stu-id="7e750-144">Click **Import**.</span></span>
+<span data-ttu-id="b9e74-122">Derzeit sind Browsererweiterungen für Microsoft Edge und Chrome verfügbar.</span><span class="sxs-lookup"><span data-stu-id="b9e74-122">Currently, browser extensions are available for Edge and Chrome.</span></span> 
+- <span data-ttu-id="b9e74-123">Gehen Sie zum Herunterladen der Microsoft Edge-Erweiterung zum [Microsoft Store](https://www.microsoft.com/en-us/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab), und laden Sie die App herunter.</span><span class="sxs-lookup"><span data-stu-id="b9e74-123">To download Edge extension, go to [Microsoft Store](https://www.microsoft.com/en-us/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) and download the app.</span></span>
+- <span data-ttu-id="b9e74-124">Gehen Sie zum Herunterladen der Chrome-Erweiterung zum [Chrome Web Store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm), und laden Sie die App herunter.</span><span class="sxs-lookup"><span data-stu-id="b9e74-124">To download Chrome extension, go to [Chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) and download the app.</span></span>
+
+## <a name="bulk-add-or-edit-bookmarks"></a><span data-ttu-id="b9e74-125">Massenhinzufügen oder -bearbeiten von Lesezeichen</span><span class="sxs-lookup"><span data-stu-id="b9e74-125">Bulk add or edit bookmarks</span></span>
+<span data-ttu-id="b9e74-126">Der Suchadministrator kann die Import- oder Exportfunktion verwenden, um Lesezeichen per Massenvorgang zu erstellen oder zu bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="b9e74-126">Search administrator can use the Import or Export features to bulk create or edit bookmarks.</span></span> <span data-ttu-id="b9e74-127">Dies ist eine sehr nützliche Funktion, wenn ein Administrator eine große Anzahl von Lesezeichen hinzufügen oder bearbeiten möchte.</span><span class="sxs-lookup"><span data-stu-id="b9e74-127">This is a very useful feature when an administrator wants to add or edit a large number of bookmarks.</span></span> 
+
+<span data-ttu-id="b9e74-128">Verwenden Sie die Import-/Exportfunktion zum:</span><span class="sxs-lookup"><span data-stu-id="b9e74-128">Use the import/export feature to:</span></span>
+- <span data-ttu-id="b9e74-129">Massenhinzufügen von Lesezeichen – Fügen Sie Details in der Vorlagendatei für Lesezeichen hinzu, und importieren Sie sie dann.</span><span class="sxs-lookup"><span data-stu-id="b9e74-129">Bulk add bookmarks - Add details in the bookmark template file, and then import it.</span></span>
+- <span data-ttu-id="b9e74-130">Massenbearbeiten von Lesezeichen – Exportieren Sie Lesezeichen in eine CSV-Datei, bearbeiten Sie dann die Lesezeichendetails in der exportierten CSV-Datei, und importieren Sie die aktualisierte CSV-Datei.</span><span class="sxs-lookup"><span data-stu-id="b9e74-130">Bulk edit bookmarks - Export bookmarks to a .csv file, then edit the bookmark details in the exported .csv file, and then import the updated .csv file.</span></span>
+- <span data-ttu-id="b9e74-131">Importieren höhergestufter Websites aus SharePoint</span><span class="sxs-lookup"><span data-stu-id="b9e74-131">Import promoted sites from SharePoint.</span></span>
+- <span data-ttu-id="b9e74-132">Sichern von Lesezeichen – Exportieren Sie Lesezeichen in eine CSV-Datei.</span><span class="sxs-lookup"><span data-stu-id="b9e74-132">Backup bookmarks - Export bookmarks to a .csv file.</span></span>
+
+<span data-ttu-id="b9e74-133">So importieren oder exportieren Sie Lesezeichen:</span><span class="sxs-lookup"><span data-stu-id="b9e74-133">To import or export bookmarks:</span></span>
+1. <span data-ttu-id="b9e74-134">Wählen Sie in der oberen rechten Ecke der Registerkarte **Lesezeichen** **Importieren** aus.</span><span class="sxs-lookup"><span data-stu-id="b9e74-134">In the upper-right corner of **Bookmarks** tab, select **Import**.</span></span> <span data-ttu-id="b9e74-135">Wählen Sie **Exportieren** aus, um alle vorhandenen Lesezeichen in eine CSV-Datei herunterzuladen.</span><span class="sxs-lookup"><span data-stu-id="b9e74-135">Select **Export** to download all the existing bookmarks in a .csv file.</span></span>
+1. <span data-ttu-id="b9e74-136">Wählen Sie im rechten Bereich die Option zum Importieren mithilfe einer CSV-Datei oder aus SharePoint.</span><span class="sxs-lookup"><span data-stu-id="b9e74-136">In the right pane, choose the option to import using a .csv file or from SharePoint.</span></span>
+<span data-ttu-id="b9e74-137">Laden Sie die Vorlagendatei herunter, um eine Liste der erforderlichen Felder und Details zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="b9e74-137">Download the template file for a list of the required fields and details.</span></span> 
+1. <span data-ttu-id="b9e74-138">Fügen Sie Lesezeichendetails in der Vorlagendatei hinzu oder bearbeiten Sie sie, und speichern Sie sie dann auf Ihrem Computer.</span><span class="sxs-lookup"><span data-stu-id="b9e74-138">Add or edit bookmark details in the template file, and then save it on your computer.</span></span> 
+1. <span data-ttu-id="b9e74-139">Klicken Sie im Bereich **Lesezeichen importieren** auf **Durchsuchen**, und wählen Sie dann die CSV-Datei aus, die Sie importieren möchten.</span><span class="sxs-lookup"><span data-stu-id="b9e74-139">In the **Import bookmarks** pane, select **Browse** and then the .csv file that you want to import.</span></span>
+1. <span data-ttu-id="b9e74-140">Wählen Sie **Importieren** aus.</span><span class="sxs-lookup"><span data-stu-id="b9e74-140">Select **Import**.</span></span>
+
+<span data-ttu-id="b9e74-141">Hier sind einige wichtige Punkte, die in Bezug auf die Vorlagendatei zu beachten sind:</span><span class="sxs-lookup"><span data-stu-id="b9e74-141">Here are some important points to be noted regarding the template file:</span></span>
+- <span data-ttu-id="b9e74-142">Bearbeiten Sie niemals Daten in diesen Feldern: *ID*, *Zuletzt geändert* und *Zuletzt geändert von*.</span><span class="sxs-lookup"><span data-stu-id="b9e74-142">Never edit data in these fields: *Id*, *Last Modified*, and *Last Modified By*</span></span>
+- <span data-ttu-id="b9e74-143">Wenn Sie die *ID* eines vorhandenen Lesezeichens angeben, wird sie durch die Informationen in der Importdatei ersetzt.</span><span class="sxs-lookup"><span data-stu-id="b9e74-143">If you include the *Id* of an existing bookmark, it will be replaced with the information in the import file.</span></span>
+- <span data-ttu-id="b9e74-144">Wenn ein Lesezeichen mit dem gleichen Titel oder der gleichen URL vorhanden ist, wird das Lesezeichen mit Informationen in der Importdatei aktualisiert.</span><span class="sxs-lookup"><span data-stu-id="b9e74-144">If there is an existing bookmark with the same title or URL, the bookmark will be updated with information in the import file.</span></span>
+- <span data-ttu-id="b9e74-145">Nicht alle Felder in der Vorlagendatei sind erforderlich, und die erforderlichen Felder variieren je nach dem Lesezeichenstatus.</span><span class="sxs-lookup"><span data-stu-id="b9e74-145">Not all fields in the template file are required and required fields vary depending on the bookmark state.</span></span>
+- <span data-ttu-id="b9e74-146">Auf der Grundlage des Felds *Status* werden Lesezeichen als „Entwurf“, „vorgeschlagen“ oder „geplant“ gespeichert, oder sie werden automatisch veröffentlicht.</span><span class="sxs-lookup"><span data-stu-id="b9e74-146">Based on the *State* field, bookmarks will be saved as draft, suggested, scheduled, or they will be published automatically.</span></span>
+- <span data-ttu-id="b9e74-147">Bei Organisationen mit mehreren Mandanten können Sie Ihre Lesezeichen von einem Mandanten exportieren und zu einem anderen importieren.</span><span class="sxs-lookup"><span data-stu-id="b9e74-147">For organizations with multiple tenants, you can export your bookmarks from one tenant and import it into another.</span></span> <span data-ttu-id="b9e74-148">Sie müssen jedoch die Daten in der Spalte *ID* vor dem Import entfernen.</span><span class="sxs-lookup"><span data-stu-id="b9e74-148">But you must remove the data in the *Id* column before you import.</span></span>
+
+### <a name="prevent-import-errors"></a><span data-ttu-id="b9e74-149">Vermeiden von Importfehlern</span><span class="sxs-lookup"><span data-stu-id="b9e74-149">Prevent import errors</span></span>
+<span data-ttu-id="b9e74-150">Sie erhalten eine Fehlermeldung, wenn erforderliche Daten fehlen oder ungültig sind, und eine Protokolldatei mit weiteren Informationen über die zu korrigierenden Zeilen und Spalten wird erstellt.</span><span class="sxs-lookup"><span data-stu-id="b9e74-150">You'll get an error if any required data is missing or invalid, and a log file is generated with more information about the rows and columns to be corrected.</span></span> <span data-ttu-id="b9e74-151">Nehmen Sie die notwendigen Änderungen vor, und versuchen Sie, die Datei erneut zu importieren.</span><span class="sxs-lookup"><span data-stu-id="b9e74-151">Make necessary edits and try importing the file again.</span></span> <span data-ttu-id="b9e74-152">Sie können keine Lesezeichen importieren oder speichern, bis alle Fehler behoben sind.</span><span class="sxs-lookup"><span data-stu-id="b9e74-152">You cannot import or save any bookmarks until all errors are resolved.</span></span>
+
+<span data-ttu-id="b9e74-153">Um Fehler zu verhindern, stellen Sie sicher, dass die Importdatei ordnungsgemäß formatiert ist und:</span><span class="sxs-lookup"><span data-stu-id="b9e74-153">To prevent errors, make sure your import file is properly formatted and:</span></span>
+- <span data-ttu-id="b9e74-154">die Kopfzeile und alle Spalten enthält, die in der Importvorlage vorhanden waren</span><span class="sxs-lookup"><span data-stu-id="b9e74-154">Includes the header row and all the columns that were in the import template</span></span>
+- <span data-ttu-id="b9e74-155">die Spaltenreihenfolge die gleiche ist wie in der Importvorlage</span><span class="sxs-lookup"><span data-stu-id="b9e74-155">The column order is the same as the import template</span></span>
+- <span data-ttu-id="b9e74-156">alle Spalten Werte haben, mit Ausnahme der drei, die leer sein dürfen: *ID*, *Zuletzt geändert* und *Zuletzt geändert von*</span><span class="sxs-lookup"><span data-stu-id="b9e74-156">All columns have values, except the three that can be empty: *Id*, *Last Modified*, and *Last Modified By*</span></span> 
+- <span data-ttu-id="b9e74-157">die Spalte *Status* nicht leer ist, da diese Information erforderlich ist</span><span class="sxs-lookup"><span data-stu-id="b9e74-157">The *State* column is not empty, as this information is required</span></span>
+
+## <a name="powerapps"></a><span data-ttu-id="b9e74-158">PowerApps</span><span class="sxs-lookup"><span data-stu-id="b9e74-158">PowerApps</span></span>
+<span data-ttu-id="b9e74-159">Helfen Sie Ihren Benutzern beim Ausführen von Aufgaben, z. B. der Eingabe von Urlaubszeiten oder dem Erstellen von Spesenabrechnungen, indem Sie bestehende PowerApps zu Ihren Lesezeichen hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="b9e74-159">Help your users complete tasks, such as entering vacation time or reporting expenses, by adding existing PowerApps to your bookmarks.</span></span> 
+
+### <a name="what-are-powerapps"></a><span data-ttu-id="b9e74-160">Was sind PowerApps?</span><span class="sxs-lookup"><span data-stu-id="b9e74-160">What are PowerApps?</span></span>
+<span data-ttu-id="b9e74-161">PowerApps ist ein Dienst, mit dem Sie Geschäfts-Apps erstellen können, die in einem Browser oder auf einem Smartphone oder Tablet ausgeführt werden, ohne dass eine Codierung erforderlich ist.</span><span class="sxs-lookup"><span data-stu-id="b9e74-161">PowerApps is a service that lets you build business apps that run in a browser or on a phone or tablet with no coding experience required.</span></span> <span data-ttu-id="b9e74-162">PowerApps funktionieren in jedem beliebigen Browser und auf jedem beliebigen Gerät und können in weniger als einer Minute hinzugefügt werden.</span><span class="sxs-lookup"><span data-stu-id="b9e74-162">PowerApps work in any browser and on any device and take less than a minute to add.</span></span> <span data-ttu-id="b9e74-163">Weitere Informationen zu PowerApps finden Sie unter:</span><span class="sxs-lookup"><span data-stu-id="b9e74-163">For more on PowerApps, see:</span></span>
+- <span data-ttu-id="b9e74-164">
+  [Interaktives Lernen](https://docs.microsoft.com/de-DE/learn/browse/?products=powerapps)</span><span class="sxs-lookup"><span data-stu-id="b9e74-164">[Guided Learning](https://docs.microsoft.com/en-us/learn/browse/?products=powerapps)</span></span>
+- <span data-ttu-id="b9e74-165">
+  [Dokumentation](https://docs.microsoft.com/de-DE/powerapps/maker/canvas-apps/get-sessionid)</span><span class="sxs-lookup"><span data-stu-id="b9e74-165">[Documentation](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/get-sessionid)</span></span>
+- [<span data-ttu-id="b9e74-166">PowerApps Home</span><span class="sxs-lookup"><span data-stu-id="b9e74-166">PowerApps Home</span></span>](https://make.preview.powerapps.com/environments/839eace6-59ab-4243-97ec-a5b8fcc104e4/home)
+
+### <a name="add-a-powerapp-to-a-bookmark"></a><span data-ttu-id="b9e74-167">Hinzufügen einer PowerApp zu einem Lesezeichen</span><span class="sxs-lookup"><span data-stu-id="b9e74-167">Add a PowerApp to a bookmark</span></span>
+1. <span data-ttu-id="b9e74-168">Suchen Sie die [App-ID für die PowerApp](https://docs.microsoft.com/de-DE/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id), die Sie hinzufügen möchten.</span><span class="sxs-lookup"><span data-stu-id="b9e74-168">Find the [App ID for the PowerApp](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) that you want to add.</span></span>
+1. <span data-ttu-id="b9e74-169">Melden Sie sich an und gehen Sie zum **Microsoft 365 Admin Center**.</span><span class="sxs-lookup"><span data-stu-id="b9e74-169">Sign in and go to **Microsoft 365 admin center**.</span></span>
+1. <span data-ttu-id="b9e74-170">Wechseln Sie im Navigationsbereich zu **Einstellungen**, und wählen Sie dann **Microsoft Search** aus.</span><span class="sxs-lookup"><span data-stu-id="b9e74-170">In the navigation pane, go to **Settings**, and then select **Microsoft Search**.</span></span>
+1. <span data-ttu-id="b9e74-171">Fügen Sie ein Lesezeichen hinzu oder suchen Sie ein vorhandenes Lesezeichen, dem Sie eine **PowerApp** hinzufügen möchten.</span><span class="sxs-lookup"><span data-stu-id="b9e74-171">Add a bookmark or find an existing bookmark that you want to add a **PowerApp** to.</span></span>
+1. <span data-ttu-id="b9e74-172">Wählen Sie in den **Lesezeicheneinstellungen** **PowerApp** und dann **PowerApp hinzufügen** aus.</span><span class="sxs-lookup"><span data-stu-id="b9e74-172">In **Bookmark settings**, select **Power App**, and then **Add a Power App**.</span></span>
+1. <span data-ttu-id="b9e74-173">Geben oder fügen Sie die **App-ID** ein.</span><span class="sxs-lookup"><span data-stu-id="b9e74-173">Enter or paste the **App ID**.</span></span>
+    <span data-ttu-id="b9e74-174">Die Höhe und Breite werden automatisch angepasst.</span><span class="sxs-lookup"><span data-stu-id="b9e74-174">The height and width are automatically adjusted.</span></span> <span data-ttu-id="b9e74-175">Lesezeichen können Hoch- und Querformat unterstützen, die Größe kann derzeit aber nicht geändert werden.</span><span class="sxs-lookup"><span data-stu-id="b9e74-175">Bookmarks can support both portrait and landscape orientations, but currently the size can't be changed.</span></span> <span data-ttu-id="b9e74-176">Die Lesezeichenvorschau zeigt eine voll funktionsfähige PowerApp, um das Testen einfach zu machen.</span><span class="sxs-lookup"><span data-stu-id="b9e74-176">The bookmark preview shows a fully functional PowerApp to make it easy to test.</span></span>
+1. <span data-ttu-id="b9e74-177">Wählen Sie **Veröffentlichen** oder **Als Entwurf speichern** aus.</span><span class="sxs-lookup"><span data-stu-id="b9e74-177">Select **Publish** or **Save to Draft**.</span></span>

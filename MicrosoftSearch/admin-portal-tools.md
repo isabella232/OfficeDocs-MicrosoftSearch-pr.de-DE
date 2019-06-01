@@ -13,16 +13,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4a824483-2407-4bbd-8f7f-5ebb47817c7e
+ROBOTS: NoIndex
 description: Übersicht über Microsoft Search-Tools zum Erstellen und Importieren von Ergebnissen, zum automatischen Anmelden und zum Suchen von einer beliebigen Stelle aus.
-ms.openlocfilehash: cae2612979673e086820fec78e4c1e085e38a749
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 16beaf5ae2945df19b32b65ae4e65b4989217f9f
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508721"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591350"
 ---
 # <a name="admin-portal-tools"></a>Tools des Verwaltungsportals
 
+> [!IMPORTANT]
+> Dieser Artikel bezieht sich auf Microsoft Search im Bing-Verwaltungsportal. Wir verschieben das Portal zum Microsoft 365 Admin Center, und dann wird es entfernt. Es wird empfohlen, dass Sie zu Beginn das Microsoft 365 Admin Center verwenden. [Übersicht über Microsoft Search](overview-microsoft-search.md).
+    
 Das Microsoft Search-Verwaltungsportal umfasst Tools und Ressourcen, die für Administratoren, Editoren und Benutzer entwickelt wurden, darunter:
   
 - Browsererweiterung zum Erstellen von Inhalten

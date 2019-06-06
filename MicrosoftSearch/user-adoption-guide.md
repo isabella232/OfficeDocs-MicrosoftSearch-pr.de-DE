@@ -15,17 +15,14 @@ search.appverid:
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 ROBOTS: NOINDEX
 description: Erfahren Sie mehr über Methoden und Prozesse, die Sie bei der erfolgreichen Einführung der Microsoft-Suche in Ihrer Organisation unterstützen.
-ms.openlocfilehash: 967c5876fe1a559041ec88d5d038d5739fd77280
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 8fd7003426ad10e105ef427db5688b2a459d4f01
+ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34590837"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34727906"
 ---
 # <a name="user-adoption-guide"></a>Einführungsleitfaden für Benutzer
-
-> [!IMPORTANT]
-> Dieser Artikel bezieht sich auf das Microsoft Search in Bing Admin Portal. Wir verschieben das Portal in das Microsoft 365 Admin Center, und es wird dann entfernt. Es wird empfohlen, dass Sie das Microsoft 365 Admin Center verwenden, um mit den ersten Schritten zu beginnen. [Übersicht über die Microsoft-Suche](overview-microsoft-search.md).
 
 Diese Informationen sind für Microsoft Search-Administratoren, Change Management-Führungskräfte und Geschäftsbesitzer gedacht.
   
@@ -88,9 +85,9 @@ Das investieren von Zeit in die Vorbereitung auf Ihr Microsoft Search-Rollout f�
   
 Administratoren beeinflussen direkt die Suchumgebung für Endbenutzer und bestimmen, wie die Microsoft-Suche für die Organisation aussieht. Dazu gehört die Auswahl der Ergebnistypen, die Sie Ihren Benutzern zur Verfügung stellen möchten. Steuern Sie dies, indem Sie Ergebnisse für Dokumente, Websites, Personen, Gruppen oder Unterhaltungen aktivieren oder deaktivieren.
   
-Weitere Informationen finden Sie unter [Einrichten der Microsoft-Suche](set-up-microsoft-search.md).
+Weitere Informationen finden Sie unter [Einrichten der Microsoft-Suche](setup-microsoft-search.md).
   
-Redakteure sind Fachexperten, die die Verwaltung von Lesezeichen und Q&As in ihren Fachbereichen unterstützen. Editoren sollten Inhalte erstellen, die die zuvor identifizierten Benutzerszenarien behebt.
+Redakteure sind Fachexperten, die die Verwaltung von Lesezeichen und Q&im Rahmen ihrer Fachbereiche unterstützen. Editoren sollten Inhalte erstellen, die die zuvor identifizierten Benutzerszenarien behebt.
   
 Weitere Informationen finden Sie unter [Planen von Inhalten](plan-your-content.md).
   
@@ -188,7 +185,7 @@ Senden Sie laufende Kommunikationen, die Features und Suchvorgänge hervorheben,
   
 Unterstützen Sie Benutzer und informieren Sie Sie, indem Sie Ihnen zuhören und auf Ihr Feedback reagieren.
   
-Verwenden Sie das Einblicke-Dashboard, um zu sehen, wie das Produkt und der Inhalt ausgeführt werden. Nutzen Sie diese Informationen, um Lesezeichen, Q&As und andere Kommunikationen zu aktualisieren. Dies hilft Ihnen auch:
+Verwenden Sie das Einblicke-Dashboard, um zu sehen, wie das Produkt und der Inhalt ausgeführt werden. Nutzen Sie diese Informationen, um Bookmarks, Q&as und andere Kommunikationen zu aktualisieren. Dies hilft Ihnen auch:
   
 1. Verbessern der Inhaltsqualität: Überprüfen von Titeln, Beschreibungen und URLs, Optimieren von Schlüsselwörtern, Entfernen veralteter Informationen und Hinzufügen neuer Informationen
     
@@ -196,7 +193,4 @@ Verwenden Sie das Einblicke-Dashboard, um zu sehen, wie das Produkt und der Inha
     
 3. Durchführen von Umfragen, Fokusgruppen und Feedback Sitzungen, um zu verstehen, was Benutzer von der Microsoft-Suche halten, die Akzeptanz verbessern und Verbesserungsbereiche identifizieren
     
-Bildung und Feedback sind ein iterativer Prozess. Es kann erforderlich sein, Änderungen an Inhalten und Kommunikation vorzunehmen, wenn Ihre Benutzer die Microsoft-Suche annehmen. 
-
-  
-
+Bildung und Feedback sind ein iterativer Prozess. Es kann erforderlich sein, Änderungen an Inhalten und Kommunikation vorzunehmen, wenn Ihre Benutzer die Microsoft-Suche annehmen.

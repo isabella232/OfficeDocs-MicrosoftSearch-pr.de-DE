@@ -15,18 +15,16 @@ search.appverid:
 ms.assetid: 53e2b71a-348b-4dfe-a504-6e97d573effe
 ROBOTS: NOINDEX
 description: Erfahren Sie, wie einen Standardbrowser für Ihr Unternehmen mit Microsoft Search konfigurieren.
-ms.openlocfilehash: daff7f66bd38bdd56179e44c36092a2c4fd42b42
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 08c61bf6dd68f8044f3f79a0b22829a8f7f6b8ef
+ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591161"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34727843"
 ---
 # <a name="set-default-browser"></a>Festlegen des Standardbrowsers
 
-> [!IMPORTANT]
-> Dieser Artikel bezieht sich auf Microsoft Search im Bing-Verwaltungsportal. Wir verschieben das Portal zum Microsoft 365 Admin Center, und dann wird es entfernt. Es wird empfohlen, dass Sie zu Beginn das Microsoft 365 Admin Center verwenden. [Übersicht über Microsoft Search](overview-microsoft-search.md).
-    
+  
 Das Konfigurieren des Standardbrowsers, der Standardsuchmaschine und der standardmäßigen Startseite hilft Ihren Benutzern, die Microsoft Search-Funktionen zu entdecken, fördert deren Verwendung und ermöglicht eine gleichmäßigere Erfahrung.
   
 Führen Sie zum Festlegen des Standardbrowsers für Ihre Organisation die folgenden Schritte aus.

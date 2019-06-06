@@ -15,18 +15,16 @@ search.appverid:
 ms.assetid: d1432d64-7a97-4b1b-a99f-11291814d361
 ROBOTS: NoIndex
 description: Hinzufügen eines Logos, Firmennamens und weiterer Angaben zu Ihren Microsoft Search-Arbeitsergebnissen
-ms.openlocfilehash: d3989422c4bd38236241984c1f9beb67d12a0847
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 0ae26acd0e0114b83c022e0a0b4ad082d495cd1c
+ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591242"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34727978"
 ---
 # <a name="content-settings"></a>Inhaltseinstellungen
 
-> [!IMPORTANT]
-> Dieser Artikel bezieht sich auf Microsoft Search im Bing-Verwaltungsportal. Wir verschieben das Portal zum Microsoft 365 Admin Center, und dann wird es entfernt. Es wird empfohlen, dass Sie zu Beginn das Microsoft 365 Admin Center verwenden. [Übersicht über Microsoft Search](overview-microsoft-search.md).
-    
+ 
 Mit Microsoft Search können Sie ein vertrautes Aussehen und Verhalten für Ergebnisse sicherstellen, die aus Inhaltsquellen innerhalb Ihrer Organisation, wie SharePoint, OneDrive for Business oder dem Intranet Ihres Unternehmens, stammen. 
   
 - Name der Organisation

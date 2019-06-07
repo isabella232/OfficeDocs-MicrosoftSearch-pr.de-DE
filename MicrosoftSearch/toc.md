@@ -1,7 +1,10 @@
 #[Übersicht über Microsoft Search ](overview-microsoft-search.md)
 #[Einrichten von Microsoft Search](setup-microsoft-search.md)
-#[Planen der Inhalte](plan-your-content.md)
+#Inhalte leicht auffindbar machen
+##[Planen der Inhalte](plan-your-content.md)
 ##[Verwalten von Lesezeichen](manage-bookmarks.md)
 ##[F & As verwalten](manage-qas.md)
 ##[Verwalten von Speicherorten](manage-locations.md)
 #[Microsoft Search in SharePoint Online](get-started-search-in-sharepoint-online.md)
+#[Handbuch zur Benutzerakzeptanz](user-adoption-guide.md)
+#[Verwendung von Microsoft Search](use/about-microsoft-search.md)

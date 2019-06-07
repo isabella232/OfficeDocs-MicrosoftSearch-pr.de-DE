@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erstmaliges Einrichten von Microsoft Search.
-ms.openlocfilehash: 3b872370dc2058c56637b836f8f78b7ed8e6680e
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 5b686d34375453fd98bdb0915ee49016e71da20d
+ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591053"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34728005"
 ---
 # <a name="set-up-microsoft-search"></a>Einrichten von Microsoft Search
 
@@ -36,13 +36,13 @@ Sie können **Microsoft Search** vom **Microsoft 365 Admin Center** aus verwalte
 
 Als Administrator sollten Sie einige Dinge berücksichtigen, durch die Sie die **Microsoft Search**-Benutzeroberfläche in Ihrer Organisation effizient und benutzerfreundlich gestalten können.
 
-### <a name="step-1-check-access-level-of-your-users"></a>Schritt 1: Zugriffsebene der Benutzer überprüfen
+## <a name="step-1-check-access-level-of-your-users"></a>Schritt 1: Zugriffsebene der Benutzer überprüfen
 
 **Microsoft Search** respektiert die Sicherheitseinstellungen der Inhaltsquelle. Welche Suchergebnisse Benutzern angezeigt werden, hängt von ihren Berechtigungen und Zugriffsebenen ab. Überprüfen Sie die Zugriffsebenen der Benutzer in Ihrer Organisation, um sicherzustellen, dass Benutzer nur Inhalte finden, auf die sie zugreifen dürfen.
 
 Erfahren Sie mehr über das [Planen von Berechtigungen](https://docs.microsoft.com/de-DE/sharepoint/plan-your-permissions-strategy) und das [Erstellen von Berechtigungsstufen](https://docs.microsoft.com/de-DE/sharepoint/how-to-create-and-edit-permission-levels).
 
-### <a name="step-2-assign-search-admin-and-search-editor"></a>Schritt 2: Administratoren und Editoren für Microsoft Search ernennen
+## <a name="step-2-assign-search-admin-and-search-editor"></a>Schritt 2: Administratoren und Editoren für Microsoft Search ernennen
 
 Es gibt zwei neue Rollen im **Microsoft Admin Center** – Suchadministrator und Such-Editor.  Der globale Administrator, der über vollständige Berechtigungen verfügt, weist Benutzern Administratorrollen zu, wie z. B. die Rolle des Suchadministrators. Suchadministratoren können die Rollen Suchadministrator oder Such-Editor an andere Benutzer delegieren. Weitere Informationen zu anderen Administratorrollen finden Sie unter [Informationen zu Office 365-Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide).
 
@@ -56,7 +56,7 @@ In **Microsoft Search** können Sie die Sucheinstellungen und Inhalte Ihrer Orga
 
 Informationen zum Zuweisen von Administratorrollen finden Sie unter [Zuweisen von Administratorrechten in Office 365 Business](https://docs.microsoft.com/de-DE/office365/admin/add-users/assign-admin-roles?view=o365-worldwide).
 
-### <a name="step-3-make-content-easy-to-find"></a>Schritt 3: Inhalte leicht auffindbar machen 
+## <a name="step-3-make-content-easy-to-find"></a>Schritt 3: Inhalte leicht auffindbar machen 
 
 **Microsoft Search** stellt Administratoren Tools zur Verfügung, mit denen sie eine robuste Suchoberfläche für ihre Benutzer erstellen können. In **Microsoft Search** können Administratoren drei verschiedene Suchinhalte erstellen, um die Sucherfahrung und Auffindbarkeit von Inhalten zu verbessern:
 - **Lesezeichen:** Lesezeichen ähneln den höhergestuften Ergebnis in SharePoint und tragen dazu bei, die bestmöglichen Ergebnisse für die Anfragen Ihrer Benutzer an die Spitze der Suchergebnisse zu setzen und es Ihren Benutzern so leicht zu machen, wichtige interne Websites zu finden. 
@@ -72,7 +72,7 @@ Hier sind einige Beispiele für Inhalte, für die Sie die Verwendung von Lesezei
 
 Informationen zum Erstellen und Verwalten von Suchinhalten finden Sie unter [Inhalte leicht auffindbar machen](make-content-easy-to-find.md).
 
-### <a name="step-4-test-single-sign-on"></a>Schritt 4: Einmaliges Anmelden testen
+## <a name="step-4-test-single-sign-on"></a>Schritt 4: Einmaliges Anmelden testen
 **Microsoft Search** verwendet Azure Active Directory (AAD) zur Authentifizierung und Autorisierung des Zugriffs auf die Daten Ihrer Organisation.  Das bedeutet, dass Benutzer, die bereits bei einer Office 365-App oder Windows 10 angemeldet sind, automatisch mit ihrem Geschäfts-, Schul- oder Unikonto angemeldet werden.
 
 Es wird empfohlen, dass **Microsoft Search**-Benutzer das einmalige Anmelden verwenden, um nicht so häufig zum Anmelden aufgefordert zu werden. Administratoren sollten das einmalige Anmelden mit einer kleinen Gruppe von Benutzern testen, um blockierende Konfigurationsprobleme zu identifizieren. 
@@ -81,14 +81,14 @@ Für Benutzer von Chrome unter Windows 10 funktioniert das einmalige Anmelden nu
 
 Um Windows 10 und die AAD-Anmeldeerweiterung für Chrome herunterzuladen und zu installieren, navigieren Sie zum [Chrome Web Store](https://go.microsoft.com/fwlink/?linkid=2090961).
 
-### <a name="step-5-training-and-communication"></a>Schritt 5: Schulung und Kommunikation
+## <a name="step-5-training-and-communication"></a>Schritt 5: Schulung und Kommunikation
 Erstellen Sie Self-Service-Ressourcen, auf die Mitarbeiter selbst leicht zugreifen können. Dies hilft, die Gesamtbelastung für Sie und Ihr Team zu reduzieren, die Kommunikation ständig voranzutreiben und Mitarbeiter bei Selbststudium und -weiterbildung zu unterstützen. Bieten Sie Ihren Benutzern Kommunikation, FAQs, Videos und aufgezeichnete Schulungen oder Webinare an. Hier finden Sie einige hilfreiche Links für den Einstieg:
 - [Finden erforderlicher Informationen in Office mit Microsoft Search](https://support.office.com/article/find-what-you-need-with-microsoft-search-in-office-2457d4d8-48a8-4ad4-ab89-5a0657aa8446?ui=en-US&rs=en-US&ad=US)
 - [Office 365-Schulungscenter](https://support.office.com/office-training-center)
 - 
   [Microsoft Search Center](https://support.office.com/de-DE/article/-working-title-microsoft-search-center-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc?ui=en-US&rs=en-US&ad=US)
 
-### <a name="trying-out-microsoft-search-in-bing"></a>Testen von **Microsoft Search** in Bing 
+## <a name="trying-out-microsoft-search-in-bing"></a>Testen von **Microsoft Search** in Bing 
 Der **Microsoft Search**-Administrator kann **Microsoft Search** in Bing deaktivieren. Wenn Microsoft Search deaktiviert ist, werden Benutzern in der Bing-Suche keine Inhalte der Organisation angezeigt. Standardmäßig ist **Microsoft Search** in Bing aktiviert. Wir empfehlen, **Microsoft Search** in Bing aktiviert zu lassen, damit Benutzer bessere Ergebnisse erzielen. 
 
 Wenn Sie **Microsoft Search** auf einem Testmandanten ausprobieren oder die Suchumgebung testen möchten, bevor Sie sie allen Benutzern zur Verfügung stellen, können Sie **Microsoft Search** deaktivieren.

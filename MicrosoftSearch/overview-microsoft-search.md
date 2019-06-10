@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Sie erhalten eine Übersicht über Microsoft Search, seine Vorteile und welche Apps gegenwärtig Microsoft Search umfassen.
-ms.openlocfilehash: 7fc58204b17fbe8274655756bd8e041c921a063e
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: c60ece3778db4696437d8ed0c5cefd0bfaa39142
+ms.sourcegitcommit: 9345523f0143f613c702cd3dcc084b5f7bd6a0b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591309"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34767190"
 ---
 # <a name="overview-of-microsoft-search"></a>Übersicht über Microsoft Search 
 
@@ -26,7 +26,7 @@ Microsoft Search ist die einheitliche Suchfunktion in den Microsoft 365-Produkti
 
 Microsoft Search unterstützt Benutzer beim Finden der richtigen Antworten, Personen und Inhalte, um ihre Aufgaben in der App zu erledigen, in der sie bereits arbeiten.
 
-- Benutzer erhalten Ergebnisse, die im **Kontext** der App relevant sind, aus der heraus sie suchen. Wenn sie z. B. in Outlook suchen, erhalten sie E-Mails, keine Websites wie in SharePoint. Bei der Suche in SharePoint erhalten sie Websites, Seiten und Dateien, aber keine E-Mails.
+- Benutzer erhalten Ergebnisse, die im **Kontext** der App relevant sind, aus der heraus sie suchen. Wenn sie z. B. in Outlook suchen, erhalten sie E-Mails, keine Websites wie in SharePoint. Bei der Suche in SharePoint erhalten sie Websites, Seiten und Dateien.
 - Ungeachtet der App, in der Benutzer arbeiten, ist Microsoft Search **privat**.  Microsoft Search verwendet Informationen aus Microsoft Graph, um Ergebnisse anzuzeigen, die für die einzelnen Benutzer relevant sind. Benutzer sehen möglicherweise andere Ergebnisse, auch wenn sie nach denselben Wörtern suchen. Sie sehen nur Ergebnisse, auf die sie bereits Zugriff haben. Microsoft Search ändert keine Berechtigungen.
 - Benutzer müssen sich nicht merken, wo die Informationen gespeichert sind. Beispiel: Ein Benutzer arbeitet in Word und möchte Informationen aus einer Präsentation wiederverwenden, die ein Kollege über OneDrive geteilt hat. Es ist nicht erforderlich, zu OneDrive zu wechseln und nach dieser Präsentation zu suchen. Er kann einfach aus Word suchen.  
 - In Bing erhalten Benutzer sowohl aus dem Internet als auch aus ihrer Organisation Ergebnisse.
@@ -58,12 +58,11 @@ Wenn die Vorschläge im Suchfeld nicht dem entsprechen, wonach sie suchen, wird 
 
 **Microsoft Search-Weiterentwicklung** – Der Satz an Inhaltstypen, nach denen Benutzer suchen können, und die Funktionalität des Suchfelds werden immer weiter verbessert.
 
-**Verwaltung in allen Apps** – Microsoft Search ist standardmäßig aktiviert und Administrationsvorgänge werden in allen Apps auf Microsoft Search angewendet.
+**Verwaltung in allen Apps** – Microsoft Search ist standardmäßig **aktiviert** und Administrationsvorgänge werden in allen Apps auf Microsoft Search angewendet.
 
 ## <a name="apps-that-currently-have-microsoft-search"></a>Diese Apps verfügen derzeit über Microsoft Search.
 
-
-Mit der Zeit wird Microsoft Search in mehr und mehr Microsoft 365-Apps verfügbar sein. Die folgenden Office 365-Apps bieten derzeit Microsoft Search:
+ Die folgenden Office 365-Apps bieten derzeit Microsoft Search:
 
 - SharePoint Online
 - OneDrive for Business
@@ -105,7 +104,7 @@ Als Administrator können Sie Ihren Benutzern das Abrufen nützlicher organisati
 
 ## <a name="what-content-is-searched"></a>Wir werden Inhalte durchsucht?
 
-Microsoft Search kann Inhalte durchsuchen, die in SharePoint Online, OneDrive for Business und Exchange gespeichert sind, einschließlich Personen aus der globalen Adressliste und Office 365-Gruppen. Wenn Ihre Organisation eine hybride SharePoint-Umgebung eingerichtet hat und die Cloud-Hybridsuche verwendet, können Benutzer von Microsoft Search auch Ergebnisse aus lokalen SharePoint-Inhalten erhalten, einschließlich aller externen Inhalte, die Sie mit Ihrer SharePoint Server-Umgebung verbunden haben. [Weitere Informationen zu hybriden Suchumgebungen](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint).
+Microsoft Search durchsucht Inhalte, die in SharePoint Online, OneDrive for Business und Exchange gespeichert sind, einschließlich Personen aus der globalen Adressliste und Office 365-Gruppen. Wenn Ihre Organisation eine hybride SharePoint-Umgebung eingerichtet hat und die Cloud-Hybridsuche verwendet, liefert Microsoft Search sowohl Suchergebnisse aus Onlineinhalten als auch aus lokalen SharePoint-Inhalten, einschließlich aller externen Inhalte, die Sie mit Ihrer SharePoint Server-Umgebung verbunden haben. [Weitere Informationen zu hybriden Suchumgebungen](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint).
 
 Wenn Benutzer über die SharePoint-Startseite oder office.com suchen, durchsucht Microsoft Search die gesamten Inhalte Ihrer Organisation, und präsentiert alle gefundenen Ergebnisse. Dies wird als **globaler Suchbereich** bezeichnet.
 

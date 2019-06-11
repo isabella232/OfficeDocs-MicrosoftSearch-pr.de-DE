@@ -3,17 +3,6 @@
 
 
 
-## <a name="week-of-april-29-2019"></a>Woche vom 29. April 2019
-
-
-| Zeitpunkt der Veröffentlichung |Titel des Themas | Änderung |
-|------|------------|--------|
-| 30.04.2019 | [Microsoft Search](/MicrosoftSearch/microsoft-search) | Geändert |
-| 30.04.2019 | [Handbuch zur Benutzerakzeptanz](/MicrosoftSearch/user-adoption-guide) | Geändert |
-| 5/1/2019 | [Microsoft Search](/MicrosoftSearch/microsoft-search) | Geändert |
-| 5/1/2019 | [Übersicht über Microsoft Search](/MicrosoftSearch/overview-microsoft-search) | Geändert |
-
-
 ## <a name="week-of-may-06-2019"></a>Woche vom 06. Mai 2019
 
 
@@ -123,3 +112,23 @@
 | 5/30/2019 | [Warum wurde ich automatisch angemeldet?](/MicrosoftSearch/use/why-am-i-automatically-signed-in) | Geändert |
 | 5/30/2019 | [Handbuch zur Benutzerakzeptanz](/MicrosoftSearch/user-adoption-guide) | Geändert |
 | 5/30/2019 | [Gründe für die Microsoft-Suche](/MicrosoftSearch/why-microsoft-search) | Geändert |
+
+
+## <a name="week-of-june-03-2019"></a>Week of June 03, 2019
+
+
+| Zeitpunkt der Veröffentlichung |Titel des Themas | Änderung |
+|------|------------|--------|
+| 6/5/2019 | [Hinzufügen eines Suchfelds zu Ihrer Intranetwebsite](/MicrosoftSearch/add-a-search-box-to-your-intranet-site) | Geändert |
+| 6/5/2019 | [Erweiterte DNS-Konfiguration](/MicrosoftSearch/advanced-dns-configuration) | Geändert |
+| 6/5/2019 | [Inhaltseinstellungen](/MicrosoftSearch/content-settings) | Geändert |
+| 6/5/2019 | [Integration von PowerApps](/MicrosoftSearch/integrate-powerapps) | Geändert |
+| 6/5/2019 | [Sicherheit für Microsoft Search](/MicrosoftSearch/security) | Geändert |
+| 6/5/2019 | [Festlegen des Standardbrowsers](/MicrosoftSearch/set-default-browser) | Geändert |
+| 6/5/2019 | [Festlegen der standardmäßigen Startseite](/MicrosoftSearch/set-default-homepage) | Geändert |
+| 6/5/2019 | [Festlegen der Standardsuchmaschine](/MicrosoftSearch/set-default-search-engine) | Geändert |
+| 6/5/2019 | [Einrichten der **Microsoft-Suche**](/MicrosoftSearch/setup-microsoft-search) | Geändert |
+| 6/5/2019 | [Informationen zu Microsoft Search](/MicrosoftSearch/use/about-microsoft-search) | Geändert |
+| 6/5/2019 | [Handbuch zur Benutzerakzeptanz](/MicrosoftSearch/user-adoption-guide) | Geändert |
+| 6/7/2019 | [Erste Schritte mit Microsoft Search in SharePoint Online](/MicrosoftSearch/get-started-search-in-sharepoint-online) | Geändert |
+| 6/7/2019 | [Übersicht über Microsoft Search](/MicrosoftSearch/overview-microsoft-search) | Geändert |

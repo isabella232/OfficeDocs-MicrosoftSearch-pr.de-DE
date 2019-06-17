@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: 3388bdc7-1ee0-497e-b110-fba4a082eb08
 ROBOTS: NOINDEX
 description: Verwenden der Microsoft-Suche zum Auffinden von SharePoint-Websites und der Details, die angezeigt werden
-ms.openlocfilehash: 821391635b9cb304f46fde8cabadfa29510631bb
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: f88422d1df54b9750d91b584c026c35ff0e67736
+ms.sourcegitcommit: a7ca4c38d37fbdec58e002e42d865188939d0483
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34590918"
+ms.lasthandoff: 06/15/2019
+ms.locfileid: "35003128"
 ---
 # <a name="find-sharepoint-sites"></a>Suchen von SharePoint-Websites
 
@@ -34,6 +34,3 @@ Suchen Sie nach SharePoint-Websites, die Sie besitzen, oder suchen Sie nach dene
     Wenn Sie nur Website Ergebnisse sehen möchten, klicken Sie auf die Registerkarte **Websites** . 
     
 Webergebnisse werden unter Ihrem Arbeitsergebnis angezeigt. Sie sind nicht spezifisch für Ihre Organisation.
-
-  
-

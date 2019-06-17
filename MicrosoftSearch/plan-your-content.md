@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: bb9d90b6-6c86-4b19-9235-3bd9b19826ab
 description: Bereitstellen hochwertige Inhalte ohne zusätzliche Ressourcen bei Verwendung von Microsoft Search
-ms.openlocfilehash: 88c2af543be02f8e17937e36a81fd28d862e8fb0
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 90774f8606f5582338c12b4f123153b6f3f4de74
+ms.sourcegitcommit: 9df9b1a5f83c9fbe62900df183bee239a8ea6d91
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591206"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34947752"
 ---
 # <a name="plan-your-content"></a>Planen der Inhalte
 
@@ -91,7 +91,7 @@ Nachdem Sie Lesezeichen sowie Fragen und Antworten erstellt haben, ist es wichti
 
 Benutzer und SMEs, die zur Inhaltserstellung beigetragen haben, können dabei helfen, das Suchergebnis zu testen und zu validieren.
 
-## <a name="step-5-review-and-update-periodically"></a>Schritt 5: Überprüfen und Aktualisieren in regelmäßigen Abständen
+## <a name="step-5-use-insights-to-review-and-update-periodically"></a>Schritt 5: Verwenden von Einblicken zur periodischen Überprüfung und Aktualisierung
 Es ist wichtig, dass autoritative Informationen wie Lesezeichen sowie Fragen und Antworten auf dem neuesten Stand sind. Regelmäßig:
 - Beheben oder entfernen Sie fehlerhafte oder ungültige URLs.
 - Entfernen Sie Lesezeichen oder Fragen und Antworten, die nicht mehr relevant sind.

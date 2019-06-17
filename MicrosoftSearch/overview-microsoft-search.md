@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Sie erhalten eine Übersicht über Microsoft Search, seine Vorteile und welche Apps gegenwärtig Microsoft Search umfassen.
-ms.openlocfilehash: c60ece3778db4696437d8ed0c5cefd0bfaa39142
-ms.sourcegitcommit: 9345523f0143f613c702cd3dcc084b5f7bd6a0b5
+ms.openlocfilehash: d16066c941bb5c3619d7fd50e9cf33952216fb87
+ms.sourcegitcommit: a7ca4c38d37fbdec58e002e42d865188939d0483
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34767190"
+ms.lasthandoff: 06/15/2019
+ms.locfileid: "35003137"
 ---
 # <a name="overview-of-microsoft-search"></a>Übersicht über Microsoft Search 
 
@@ -147,12 +147,11 @@ Da arbeitsbezogene Suchvorgänge vertraulich sein können, besitzt Microsoft Sea
 
 Unabhängig davon, ob eine Benutzerabfrage ein oder mehrere arbeitsbezogene Ergebnisse in der zurückgegebenen Antwort enthält, werden folgende Maßnahmen getroffen:
 
-**Protokollierung** – Bei allen Suchprotokollen im Zusammenhang mit Microsoft Search-Datenverkehr wird die Identifizierung rückgängig gemacht. Sie werden separat vom öffentlichen Nicht-Microsoft Search-Datenverkehr gespeichert. Die Protokolle werden 18 Monate lang aufbewahrt, und der Zugriff darauf ist nur für Debugzwecke eingeschränkt. Die Abfragen in diesen Protokollen werden nicht zur Entwicklung oder Schulung öffentlicher Funktionen verwendet, wie z. B. die Vorschlagssuche oder verwandte Suchen im öffentlichen Web. Der eingeschränkte Zugriff wird über verschiedene Sicherheitsmechanismen verwaltet, einschließlich Sicherheitsgruppen und anderen Ebenen innerhalb des Engineering-Systems.
+**Protokollierung** – alle Suchprotokolle, die sich auf den Microsoft-Such-Datenverkehr beziehen, werden für 18 Monate in nicht identifizierbarem Zustand aufbewahrt. Abfragen, die in diesen Systemprotokollen gespeichert werden, werden lediglich zum Modellieren und Trainieren von öffentlichen Features wie der Vorschlagssuche oder bei verwandten Suchvorgängen für öffentliche Webergebnisse verwendet, wenn eine Reihe von Einschränkungen und Frequenz-Schwellenwerten erfüllt sind, was uns das Vertrauen gibt, dass diese Abfragen allgemein und nicht für eine bestimmte Organisation spezifisch sind. Die Abfrage muss in einer bedeutenden Anzahl von Fällen in Verbindung mit Daten von Benutzern vorkommen, welche die Microsoft Suchfunktion nicht verwenden und die Abfrage darf nicht ausschließlich Enterprise-Suchergebnisse auslösen. Abfragen, die diese Anforderungen nicht erfüllen, werden getrennt vom öffentlichen, nicht von Microsoft durchgeführten Such Datenverkehr gespeichert. Der eingeschränkte Zugriff wird über verschiedene Sicherheitsmechanismen verwaltet, einschließlich Sicherheitsgruppen und anderen Ebenen innerhalb des Engineering-Systems.
 
 **Suchverlauf** – Wenn Sie mit einem Geschäfts- oder Schulkonto angemeldet sind, steht der Suchverlauf eines Benutzers nicht auf anderen Computern oder Geräten zur Verfügung.
 
 **Werbung** – Suchabfragen von Unternehmen werden nie für Werbetreibende freigegeben und diesen auch nicht vorgeschlagen.
-Protokolle von Suchmaschinenwerbung im Zusammenhang mit Microsoft Search werden separat vom öffentlichen Datenverkehr gespeichert.
 Werbung wird nie basierend auf der Arbeitsidentität oder Organisation eines Benutzers ausgerichtet.
 
 ## <a name="see-also"></a>Siehe auch

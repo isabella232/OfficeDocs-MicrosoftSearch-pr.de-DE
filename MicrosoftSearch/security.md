@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 50461cb9-8707-46c1-935a-1b9608a98800
 ROBOTS: NOINDEX
 description: Schützen Sie Ihre Unternehmensdaten und Benutzer, während Sie mit Microsoft Search Informationen für autorisierte Benutzer bereitstellen
-ms.openlocfilehash: 4e5e23e5e1389c95d28ede66e06707f9856a3770
-ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
+ms.openlocfilehash: 72f45097ebdc97a03d6016d4cac9a19327c68f30
+ms.sourcegitcommit: a7ca4c38d37fbdec58e002e42d865188939d0483
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34727941"
+ms.lasthandoff: 06/15/2019
+ms.locfileid: "35003110"
 ---
 # <a name="security-for-microsoft-search"></a>Sicherheit für Microsoft Search
 
@@ -59,26 +59,15 @@ Unabhängig davon, ob eine Benutzerabfrage ein Arbeitsergebnis oder mehrere in d
   
 - Protokollierung
     
-  - Alle Suchprotokolle im Zusammenhang mit Microsoft Search-Datenverkehr werden unkenntlich gemacht und separat vom öffentlichen Nicht-Microsoft Search-Datenverkehr gespeichert. Sie werden 18 Monate lang aufbewahrt, und der Zugriff ist nur für Debugging-Zwecke erlaubt.
-    
-  - Die Abfragen in diesen Protokollen werden nicht zur Entwicklung oder Schulung öffentlicher Funktionen verwendet, wie z. B. die Vorschlagssuche oder verwandte Suchen im öffentlichen Web.
-    
+  - Alle Suchprotokolle, die sich auf den Microsoft-Such-Datenverkehr beziehen, werden in einen nicht-identifizierbaren Zustand versetzt. Sie werden für 18 Monate aufbewahrt.
+  - Abfragen, die in diesen Systemprotokollen gespeichert werden, werden lediglich zum Modellieren und Trainieren von öffentlichen Features wie der Vorschlagssuche oder bei verwandten Suchvorgängen für öffentliche Webergebnisse verwendet, wenn eine Reihe von Einschränkungen und Frequenz-Schwellenwerten erfüllt sind, was uns das Vertrauen gibt, dass diese Abfragen allgemein und nicht für eine bestimmte Organisation spezifisch sind. Die Abfrage muss in einer bedeutenden Anzahl von Fällen in Verbindung mit Daten von Benutzern vorkommen, welche die Microsoft Suchfunktion nicht verwenden und die Abfrage darf nicht ausschließlich Enterprise-Suchergebnisse auslösen. Abfragen, die diese Anforderungen nicht erfüllen, werden getrennt vom öffentlichen, nicht von Microsoft durchgeführten Such Datenverkehr gespeichert.
   - Der eingeschränkte Zugriff wird über verschiedene Sicherheitsmechanismen verwaltet, einschließlich Sicherheitsgruppen und anderen Ebenen innerhalb des Engineering-Systems.
-    
-- Suchverlauf
-    
-  - Wenn Sie mit einem Geschäfts- oder Schulkonto angemeldet sind, steht der Suchverlauf eines Benutzers nicht auf anderen Computern oder Geräten zur Verfügung.
     
 - Werbung
     
   - Suchabfragen von Unternehmen werden nie für Werbetreibende freigegeben und diesen auch nicht vorgeschlagen.
-    
-  - Protokolle von Suchmaschinenwerbung im Zusammenhang mit Microsoft Search werden separat vom öffentlichen Datenverkehr gespeichert.
-    
   - Werbung wird nie basierend auf der Arbeitsidentität oder Organisation eines Benutzers ausgerichtet.
     
 ## <a name="gdpr"></a>DSGVO
 
 Der [Blogbeitrag vom 21. Mai 2018](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/) von Microsoft bekräftigt unsere Verpflichtung zur Einhaltung der DSGVO und zeigt, wie Microsoft Unternehmen und Organisationen hilft, die eigenen DSGVO-Auflagen einzuhalten. Weitere Details finden Sie im Microsoft [Trust Center-FAQ](https://www.microsoft.com/en-us/trustcenter/privacy/gdpr/gdpr-faqs). Microsoft Search-Abfragen, die sich auf Kundendaten von Unternehmenskunden in Onlinediensten ungünstig auswirken, erfüllen ebenfalls die Verarbeitungspflichten aus Artikel 28, wie im [Trust Center-FAQ](https://www.microsoft.com/en-us/trustcenter/privacy/gdpr/gdpr-faqs) beschrieben. Im Hinblick auf Abfragen von Microsoft Search, die im öffentlichen Bing verwendet werden, gilt Microsoft als Datenverantwortlicher und hat Maßnahmen implementiert, um die Abfragen wie in der DSGVO beschrieben, unkenntlich zu machen.
-
-

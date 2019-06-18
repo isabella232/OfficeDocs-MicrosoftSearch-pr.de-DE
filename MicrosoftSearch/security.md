@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 50461cb9-8707-46c1-935a-1b9608a98800
 ROBOTS: NOINDEX
 description: Schützen Sie Ihre Unternehmensdaten und Benutzer, während Sie mit Microsoft Search Informationen für autorisierte Benutzer bereitstellen
-ms.openlocfilehash: 72f45097ebdc97a03d6016d4cac9a19327c68f30
-ms.sourcegitcommit: a7ca4c38d37fbdec58e002e42d865188939d0483
+ms.openlocfilehash: b079a693f7289977c9f7545ec049828f76939ee0
+ms.sourcegitcommit: 6f4756d2887c66030c5e7b81fb936d673bb594a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2019
-ms.locfileid: "35003110"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35009095"
 ---
 # <a name="security-for-microsoft-search"></a>Sicherheit für Microsoft Search
 
@@ -33,7 +33,7 @@ Microsoft Search stellt immer sicher, dass Anfragen über HTTPS vorgenommen werd
   
 ## <a name="authentication-and-authorization-with-azure-active-directory"></a>Authentifizierung und Autorisierung mit Azure Active Directory
 
-Die Authentifizierung für Microsoft Search ist mit Azure Active Directory verbunden. Wenn Microsoft Search-Benutzer zu Bing wechseln, werden in der Bing-Kopfzeile Anmeldeoptionen für ein Microsoft- und ein Geschäfts- oder Schulkonto angezeigt. Wenn Bing nicht ermitteln kann, ob ein Benutzer ein berechtigter Teilnehmer ist, können Benutzer die Seite [Microsoft Search erkunden](https://www.bing.com/business/explore) aufrufen, auf der sie automatisch auf die Anmeldeseite Ihrer Organisation umgeleitet werden. 
+Die Authentifizierung für Microsoft Search ist mit Azure Active Directory verbunden. Wenn Microsoft Search-Benutzer zu Bing wechseln, werden in der Bing-Kopfzeile Anmeldeoptionen für ein Microsoft- und ein Geschäfts- oder Schulkonto angezeigt. Wenn Bing nicht ermitteln kann, ob ein Benutzer ein berechtigter Teilnehmer ist, können Benutzer die Seite [Microsoft Search erkunden](https://www.bing.com/business/explore) aufrufen, auf der sie automatisch auf die Anmeldeseite Ihrer Organisation umgeleitet werden.
   
 Benutzer können nur über ein Geschäfts- oder Schulkonto auf Microsoft Search zugreifen. Sie müssen sich mit denselben Anmeldeinformationen anmelden, mit denen sie auch Zugriff auf Office 365-Dienste wie SharePoint oder Outlook erhalten. Ein persönliches Microsoft-Konto kann nicht zum Anmelden bei Microsoft Search verwendet werden.
   
@@ -57,14 +57,14 @@ Da arbeitsbezogene Suchvorgänge vertraulich sein können, hat Microsoft Search 
   
 Unabhängig davon, ob eine Benutzerabfrage ein Arbeitsergebnis oder mehrere in der zurückgegebenen Antwort enthält, werden folgende Maßnahmen getroffen:
   
-- Protokollierung
-    
+- Protokollierung 
   - Alle Suchprotokolle, die sich auf den Microsoft-Such-Datenverkehr beziehen, werden in einen nicht-identifizierbaren Zustand versetzt. Sie werden für 18 Monate aufbewahrt.
   - Abfragen, die in diesen Systemprotokollen gespeichert werden, werden lediglich zum Modellieren und Trainieren von öffentlichen Features wie der Vorschlagssuche oder bei verwandten Suchvorgängen für öffentliche Webergebnisse verwendet, wenn eine Reihe von Einschränkungen und Frequenz-Schwellenwerten erfüllt sind, was uns das Vertrauen gibt, dass diese Abfragen allgemein und nicht für eine bestimmte Organisation spezifisch sind. Die Abfrage muss in einer bedeutenden Anzahl von Fällen in Verbindung mit Daten von Benutzern vorkommen, welche die Microsoft Suchfunktion nicht verwenden und die Abfrage darf nicht ausschließlich Enterprise-Suchergebnisse auslösen. Abfragen, die diese Anforderungen nicht erfüllen, werden getrennt vom öffentlichen, nicht von Microsoft durchgeführten Such Datenverkehr gespeichert.
   - Der eingeschränkte Zugriff wird über verschiedene Sicherheitsmechanismen verwaltet, einschließlich Sicherheitsgruppen und anderen Ebenen innerhalb des Engineering-Systems.
-    
-- Werbung
-    
+- Suchverlauf    
+  - Wenn Sie mit einem Geschäfts- oder Schulkonto angemeldet sind, steht der Suchverlauf eines Benutzers nicht auf anderen Computern oder Geräten zur Verfügung.
+ 
+- Werbung   
   - Suchabfragen von Unternehmen werden nie für Werbetreibende freigegeben und diesen auch nicht vorgeschlagen.
   - Werbung wird nie basierend auf der Arbeitsidentität oder Organisation eines Benutzers ausgerichtet.
     

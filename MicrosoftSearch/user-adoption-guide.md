@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 ROBOTS: NOINDEX
 description: Erfahren Sie mehr über Methoden und Prozesse, die Sie bei der erfolgreichen Einführung der Microsoft-Suche in Ihrer Organisation unterstützen.
-ms.openlocfilehash: 8fd7003426ad10e105ef427db5688b2a459d4f01
-ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
+ms.openlocfilehash: 2b4dafa4168dfd4c3bbb78ba40e860186ff3d9e3
+ms.sourcegitcommit: f9760d027637cc0d2e5c3a9e47928422cb6e452a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34727906"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36170311"
 ---
 # <a name="user-adoption-guide"></a>Einführungsleitfaden für Benutzer
 
@@ -79,11 +79,11 @@ Um Ihnen dabei zu helfen, ihre Ziele für das Rollout zu erreichen und positive 
     
 ## <a name="stage-3-readiness"></a>Phase 3: Bereitschaft
 
-Das investieren von Zeit in die Vorbereitung auf Ihr Microsoft Search-Rollout führt zu positiven Auswirkungen für Ihre Organisation. 
+Das investieren von Zeit in die Vorbereitung auf Ihr Microsoft Search-Rollout führt zu positiven Auswirkungen für Ihre Organisation. Microsoft stellt ein <a href="https://aka.ms/MicrosoftSearch/Adoption">Einführungs Kit</a> bereit, das Planungsanleitungen, anpassbare e-Mail-Ankündigungen, Umfrage Vorlagen, Präsentationen von Führungskräften und vieles mehr enthält. Es gibt auch ein <a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">Microsoft Search-Ressourcen Center</a> , in dem IT-Implementierer andere Schulungs-und Adoptions Ressourcen finden können, die dazu beitragen, dass Ihr Microsoft Search-Rollout erfolgreich verläuft.
   
  **Produkt-und Inhalts Bereitschaft**
   
-Administratoren beeinflussen direkt die Suchumgebung für Endbenutzer und bestimmen, wie die Microsoft-Suche für die Organisation aussieht. Dazu gehört die Auswahl der Ergebnistypen, die Sie Ihren Benutzern zur Verfügung stellen möchten. Steuern Sie dies, indem Sie Ergebnisse für Dokumente, Websites, Personen, Gruppen oder Unterhaltungen aktivieren oder deaktivieren.
+Administratoren beeinflussen direkt die Suchumgebung für Endbenutzer und bestimmen, wie die Microsoft-Suche für die Organisation aussieht. Dazu gehört die Auswahl der Ergebnistypen, die Sie Ihren Benutzern zur Verfügung stellen möchten. Diese Ergebnisse können Links, die auch als Lesezeichen bezeichnet werden, zu Dokumenten, Websites, Personen, Gruppen, Speicherorten, Unterhaltungen und anderen Arbeitsplatzressourcen einschließen.
   
 Weitere Informationen finden Sie unter [Einrichten der Microsoft-Suche](setup-microsoft-search.md).
   

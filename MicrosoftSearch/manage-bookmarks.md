@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Erstellen und aktualisieren Sie Lesezeichen und Methoden zur Massenbearbeitung von Lesezeichenergebnissen für Microsoft Search.
-ms.openlocfilehash: fb1be0bc137891a54e370fef1e4b5628963c5ad9
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 0cd37ebcd7cd3ea7bbe55064fd41a3c42b2e4725
+ms.sourcegitcommit: f9760d027637cc0d2e5c3a9e47928422cb6e452a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591620"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36170320"
 ---
 # <a name="manage-bookmarks"></a>Lesezeichen verwalten
 
@@ -29,7 +29,7 @@ Wenn Ihre Organisation höhergestufte Ergebnisse in SharePoint eingerichtet hat,
 
 ## <a name="add-or-edit-a-single-bookmark"></a>Hinzufügen oder Bearbeiten eines einzelnen Lesezeichens
 1. Gehen Sie zum **Microsoft 365 Admin Center**.
-1. Wechseln Sie im Navigationsbereich zu **Einstellungen**, und wählen Sie dann ****Microsoft Search**** aus.
+1. Wechseln Sie im Navigationsbereich zu **Einstellungen**, und wählen Sie dann **Microsoft Search** aus.
 Standardmäßig ist die Registerkarte **Lesezeichen** ausgewählt.
 1. Wählen Sie zum Hinzufügen eines Lesezeichens **Neu hinzufügen** aus. Wählen Sie zum Bearbeiten eines Lesezeichens das Lesezeichen in der entsprechenden Lesezeichenliste aus. 
 1. Während Sie die Informationen hinzufügen oder bearbeiten, wird die Vorschau automatisch aktualisiert.

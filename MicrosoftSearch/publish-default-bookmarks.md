@@ -13,19 +13,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d49a0b97-e4ca-47cf-ad52-6113787b8402
+ROBOTS: NOINDEX
 description: Standardlesezeichen, die im Microsoft Search-Verwaltungsportal verfügbar sind
-ms.openlocfilehash: 03cc7030498558fd23375297504b0a33012e9b7d
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: 06d4ee1eccacc288982d3824c5c0aab7bcfdbe55
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968354"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591188"
 ---
 # <a name="publish-default-bookmarks"></a>Veröffentlichen von Standardlesezeichen
 
 > [!IMPORTANT]
-> Die Einstellungen für Microsoft Search in Bing sind nun im Microsoft 365 Admin Center verfügbar. Beginnen Sie, indem Sie [Suchadministratoren](https://docs.microsoft.com/de-DE/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in Ihrem Admin Center zuweisen.
-    
+> Dieser Artikel bezieht sich auf Microsoft Search im Bing-Verwaltungsportal. Wir verschieben das Portal zum Microsoft 365 Admin Center, und dann wird es entfernt. Es wird empfohlen, dass Sie zu Beginn das Microsoft 365 Admin Center verwenden. [Übersicht über Microsoft Search](overview-microsoft-search.md).
+
 Wenn Sie schnell sehen möchten, wie Lesezeichen auf Bing angezeigt werden, veröffentlichen Sie die bereitgestellten Standardlesezeichen. Verwenden Sie sie als Referenz, um zu verstehen, wie Lesezeichen benannt und gute Schlüsselwörter erstellt werden.
   
 Wir schlagen vor, dass Sie die beiden Gruppen von Standardlesezeichen überprüfen:

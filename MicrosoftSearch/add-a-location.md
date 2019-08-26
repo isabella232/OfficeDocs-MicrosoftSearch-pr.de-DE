@@ -13,18 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c37cf1b1-5915-4eb1-9f78-72c48cad3b4b
+ROBOTS: NoIndex
 description: Hinzufügen von Standorten, damit Büros, Gebäude und andere Arbeitsbereiche Ihrer Organisation in Ihren Microsoft Search-Arbeitsergebnissen angezeigt werden
-ms.openlocfilehash: 37cc56a733bb6395325ab4baf7885084d956938b
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: be55112453289a3cb10736750ecdf1c706fe5458
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968179"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591341"
 ---
 # <a name="add-a-location"></a>Hinzufügen eines Standorts
 
 > [!IMPORTANT]
-> Die Einstellungen für Microsoft Search in Bing sind nun im Microsoft 365 Admin Center verfügbar. Beginnen Sie, indem Sie [Suchadministratoren](https://docs.microsoft.com/de-DE/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in Ihrem Admin Center zuweisen.
+> Dieser Artikel bezieht sich auf Microsoft Search im Bing-Verwaltungsportal. Wir verschieben das Portal zum Microsoft 365 Admin Center, und dann wird es entfernt. Es wird empfohlen, dass Sie zu Beginn das Microsoft 365 Admin Center verwenden. [Übersicht über Microsoft Search](overview-microsoft-search.md).
     
 Fügen Sie einen Standort hinzu – bei einer Suche sehen Ihre Benutzer dann die Adresse des Gebäudes, Büros oder Orts und seinen Standort auf einer Karte. Sie können darüber hinaus Bing Maps verwenden, um Wegbeschreibungen abzurufen, zu sehen, was in der Nähe liegt und mehr.
   

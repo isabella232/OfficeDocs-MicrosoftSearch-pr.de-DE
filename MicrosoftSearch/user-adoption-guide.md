@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 ROBOTS: NOINDEX
 description: Erfahren Sie mehr über Methoden und Prozesse, die Sie bei der erfolgreichen Einführung der Microsoft-Suche in Ihrer Organisation unterstützen.
-ms.openlocfilehash: 2b4dafa4168dfd4c3bbb78ba40e860186ff3d9e3
-ms.sourcegitcommit: f9760d027637cc0d2e5c3a9e47928422cb6e452a
+ms.openlocfilehash: 3bca460fe4d764fd1fee1eac16faa467c66cd4b9
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36170311"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639883"
 ---
 # <a name="user-adoption-guide"></a>Einführungsleitfaden für Benutzer
 
@@ -79,7 +79,7 @@ Um Ihnen dabei zu helfen, ihre Ziele für das Rollout zu erreichen und positive 
     
 ## <a name="stage-3-readiness"></a>Phase 3: Bereitschaft
 
-Das investieren von Zeit in die Vorbereitung auf Ihr Microsoft Search-Rollout führt zu positiven Auswirkungen für Ihre Organisation. Microsoft stellt ein <a href="https://aka.ms/MicrosoftSearch/Adoption">Einführungs Kit</a> bereit, das Planungsanleitungen, anpassbare e-Mail-Ankündigungen, Umfrage Vorlagen, Präsentationen von Führungskräften und vieles mehr enthält. Es gibt auch ein <a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">Microsoft Search-Ressourcen Center</a> , in dem IT-Implementierer andere Schulungs-und Adoptions Ressourcen finden können, die dazu beitragen, dass Ihr Microsoft Search-Rollout erfolgreich verläuft.
+Das investieren von Zeit in die Vorbereitung auf Ihr Microsoft Search-Rollout führt zu positiven Auswirkungen für Ihre Organisation. Microsoft stellt ein <a href="https://resources.techcommunity.microsoft.com/microsoft-search-in-bing-adoption-kit/">Einführungs Kit</a> bereit, das Planungsanleitungen, anpassbare e-Mail-Ankündigungen, Umfrage Vorlagen, Präsentationen von Führungskräften und vieles mehr enthält. Es gibt auch ein <a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">Microsoft Search-Ressourcen Center</a> , in dem IT-Implementierer andere Schulungs-und Adoptions Ressourcen finden können, die dazu beitragen, dass Ihr Microsoft Search-Rollout erfolgreich verläuft.
   
  **Produkt-und Inhalts Bereitschaft**
   

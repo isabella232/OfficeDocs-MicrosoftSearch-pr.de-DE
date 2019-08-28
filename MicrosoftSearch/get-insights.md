@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: ebce7fdc-e89b-473c-8131-67e659bb3f73
 ROBOTS: NOINDEX
 description: Analysieren Sie Metriken und verwalten Sie Inhalte mit dem benutzerfreundlichen Dashboard im Verwaltungsportal von Microsoft Search.
-ms.openlocfilehash: a01b79dfc71218862da07270171da95e699ed7f2
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 9323ad97a2baffc3bdc1794049f6933335b298b2
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591512"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639820"
 ---
 # <a name="use-the-insights-dashboard"></a>Verwenden des Insights-Dashboards
 
 > [!IMPORTANT]
-> Dieser Artikel bezieht sich auf Microsoft Search im Bing-Verwaltungsportal. Wir verschieben das Portal zum Microsoft 365 Admin Center, und dann wird es entfernt. Es wird empfohlen, dass Sie zu Beginn das Microsoft 365 Admin Center verwenden. [Übersicht über Microsoft Search](overview-microsoft-search.md).
+> Dieser Artikel bezieht sich auf Microsoft Search im Bing-Verwaltungsportal. Wir verschieben das Portal zum Microsoft 365 Admin Center, und dann wird das Microsoft Search im Bing-Portal entfernt. Es wird empfohlen, dass Sie zu Beginn das Microsoft 365 Admin Center verwenden. [Übersicht über Microsoft Search](overview-microsoft-search.md).
     
 Rufen Sie Datenerkenntnisse ab und lassen Sie sich anzeigen, wie sich Benutzer mit Ihren Ergebnissen beschäftigen. Verwenden Sie das Dashboard des Verwaltungsportals für Folgendes:
   

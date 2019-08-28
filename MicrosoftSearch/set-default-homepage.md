@@ -1,8 +1,8 @@
 ---
 title: Festlegen der standardmäßigen Startseite
-ms.author: dawholl
-author: dawholl
-manager: kellis
+ms.author: anfowler
+author: adefowler
+manager: shohara
 ms.date: 12/20/2018
 ms.audience: Admin
 ms.topic: article
@@ -15,22 +15,56 @@ search.appverid:
 ms.assetid: c020bd72-9906-4dfd-bc77-57287f5927ce
 ROBOTS: NOINDEX
 description: Erfahren Sie, wie Bing als standardmäßige Startseite für Ihr Unternehmen mit Microsoft Search festlegen.
-ms.openlocfilehash: 457202ba8dbebf59c5ef6a4630aea98304b9acdb
-ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
+ms.openlocfilehash: 707b6fefe1bd3e096f758df92fedca28f3f1530a
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34727996"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639829"
 ---
-# <a name="set-default-homepage"></a>Festlegen der standardmäßigen Startseite
+# <a name="make-bingcom-the-default-home-page"></a>Festlegen von Bing.com als Standardstartseite
 
-Das Konfigurieren des Standardbrowsers, der Standardsuchmaschine und der standardmäßigen Startseite hilft Ihren Benutzern, die Microsoft Search-Funktionen zu entdecken, fördert deren Verwendung und ermöglicht eine gleichmäßigere Erfahrung.
+In diesem Artikel wird erläutert, wie Sie Bing.com als Standardstartseite für die Browser Microsoft Edge, Google Chrome und Internet Explorer festlegen. 
   
-Führen Sie zum Festlegen der standardmäßigen Startseite für Ihre Organisation die folgenden Schritte aus.
-  
-## <a name="internet-explorer"></a>Internet Explorer
+ 
+## <a name="microsoft-edge-on-windows-10-version-1511-or-later"></a>Microsoft Edge unter Windows 10, Version 1511 oder höher
 
-### <a name="internet-explorer-50-or-later"></a>Internet Explorer 5.0 oder höher
+Benutzer können dies nicht mehr ändern, sobald diese Richtlinie festgelegt wurde. 
+
+1. Öffnen Sie die Gruppenrichtlinien-Verwaltungskonsole (gpmc.msc), und wechseln Sie zum Bearbeiten einer vorhandenen Richtlinie oder zum Erstellen einer neuen. 
+1. Navigieren Sie zu **Administrative Vorlagen\Windows-Komponenten\Microsoft Edge**.    
+1. Doppelklicken Sie auf **Startseiten konfigurieren**, legen Sie es auf **Aktiviert** fest, und geben Sie `https://www.bing.com/business` ein.
+1.  Erzwingen das resultierende GPO, indem Sie es mit der entsprechenden Domäne verknüpfen.
+
+  
+## <a name="google-chrome-on-windows-xp-sp2-or-later"></a>Google Chrome unter Windows XP SP2 oder höher
+
+
+Den Windows Support-Artikel zum Verwalten von ADMX-Dateien und die neuesten ADMX-Dateien für verschiedene Windows-Versionen finden Sie [auf der Microsoft-Supportwebsite](https://support.microsoft.com/de-DE/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra).
+
+Sie benötigen auch die neueste Google-Richtliniendatei. Sie finden sie unter [Hilfe zu Google Chrome Enterprise](https://support.google.com/chrome/a/answer/187202).
+  
+Wenn Sie die in diesem Abschnitt beschriebenen Einstellungen in der Gruppenrichtlinien-Verwaltungskonsole nicht finden, laden Sie die entsprechenden ADMX herunter, und kopieren Sie sie in den [zentralen Speicher](https://docs.microsoft.com/de-DE/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29). Der zentrale Speicher auf dem Controller ist ein Ordner mit der folgenden Benennungskonvention:
+  
+ **%systemroot%\sysvol\\<domain\>\policies\PolicyDefinitions**
+  
+Jede Domäne, die Ihr Controller verarbeitet, sollte einen separaten Ordner erhalten. Mit dem folgenden Befehl kann die ADMX-Datei aus der Befehlszeile kopiert werden:
+  
+ `Copy <path_to_ADMX.ADMX> %systemroot%\sysvol\<domain>\policies\PolicyDefinitions`
+  
+1. Öffnen Sie die Gruppenrichtlinien-Verwaltungskonsole (gpmc.msc), und wechseln Sie zum Bearbeiten einer vorhandenen Richtlinie oder zum Erstellen einer neuen.
+1. Stellen Sie sicher, dass die folgenden Ordner im Abschnitt **Administrative Vorlagen** der *Benutzer- und der Computerkonfiguration* angezeigt werden: Google Chrome und Google Chrome – Standardeinstellungen (Benutzer können diese überschreiben).
+   - Die Einstellungen des ersten Abschnitts sind festgelegt, und der lokale Administrator kann sie nicht ändern.
+   - Die Einstellungen im nachfolgenden Richtlinienabschnitt können von Benutzern in ihren Browsereinstellungen geändert werden. Entscheiden Sie, ob Benutzer Ihre Standardeinstellung außer Kraft setzen können. Ändern Sie in den folgenden Schritten die Einstellung in den Ordner, welcher der Richtlinie und den Anforderungen in Ihrer Organisation entspricht. Die folgenden Schritte verwenden „Google Chrome – Standardeinstellungen“ als Standard.
+
+1. Navigieren Sie zu **&lt;Computer/Benutzerkonfiguration&gt;\Administrative Vorlagen\Google Chrome – Standardeinstellungen\Startseite**. 
+1. Doppelklicken Sie auf **Neue Registerkartenseite als Startseite verwenden**, und legen Sie es auf **Aktiviert** fest. 
+1. Navigieren Sie zu **&lt;Computer/Benutzerkonfiguration&gt;\Administrative Vorlagen\Google Chrome – Standardeinstellungen\Neue Registerkartenseite**. 
+1. Doppelklicken Sie auf **URL der neuen Registerkartenseite konfigurieren**, legen Sie es auf **Aktiviert** fest, und geben Sie `https://www.bing.com/business?form=BFBSPR` ein. 
+1. Erzwingen das resultierende GPO, indem Sie es mit der entsprechenden Domäne verknüpfen.
+
+## <a name="internet-explorer-50-or-later"></a>Internet Explorer 5.0 oder höher
+Benutzer können die Startseite weiterhin ändern, nachdem diese Richtlinie festgelegt ist. 
 
 1. Öffnen Sie die Gruppenrichtlinien-Verwaltungskonsole (gpmc.msc), und wechseln Sie zum Bearbeiten einer vorhandenen Richtlinie oder zum Erstellen einer neuen.
     
@@ -58,57 +92,3 @@ Führen Sie zum Festlegen der standardmäßigen Startseite für Ihre Organisatio
 6. Drücken Sie für die Einstellung der Startseite **F6**, und geben Sie `https://www.bing.com/business?form=BFBSPR` ein.
     
 7. Erzwingen das resultierende GPO, indem Sie es mit der entsprechenden Domäne verknüpfen.
-    
-> [!NOTE]
-> Benutzer können die Startseite weiterhin ändern, nachdem diese Richtlinie festgelegt ist. 
-  
-## <a name="microsoft-edge"></a>Microsoft Edge
-
-### <a name="windows-10-version-1511-or-later"></a>Windows 10, Version 1511 oder höher
-
-1. Öffnen Sie die Gruppenrichtlinien-Verwaltungskonsole (gpmc.msc), und wechseln Sie zum Bearbeiten einer vorhandenen Richtlinie oder zum Erstellen einer neuen.
-    
-2. Navigieren Sie zu **Administrative Vorlagen\Windows-Komponenten\Microsoft Edge**.
-    
-1. Doppelklicken Sie auf **Startseiten konfigurieren**, legen Sie es auf **Aktiviert** fest, und geben Sie `https://www.bing.com/business` ein.
-    
-3. Erzwingen das resultierende GPO, indem Sie es mit der entsprechenden Domäne verknüpfen.
-    
-> [!CAUTION]
-> Benutzer können den Suchanbieter nicht mehr ändern, nachdem diese Richtlinie festgelegt wurde. 
-  
-## <a name="google-chrome"></a>Google Chrome
-
-### <a name="windows-xp-sp2-or-later"></a>Windows XP SP2 oder höher
-
-Den Windows Support-Artikel zum Verwalten von ADMX-Dateien und die neuesten ADMX-Dateien für verschiedene Windows-Versionen finden Sie [auf der Microsoft-Supportwebsite](https://support.microsoft.com/de-DE/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra).
-
-Sie benötigen auch die neueste Google-Richtliniendatei. Sie finden sie unter [Hilfe zu Google Chrome Enterprise](https://support.google.com/chrome/a/answer/187202).
-  
-Wenn Sie die in diesem Abschnitt beschriebenen Einstellungen in der Gruppenrichtlinien-Verwaltungskonsole nicht finden, laden Sie die entsprechenden ADMX herunter, und kopieren Sie sie in den [zentralen Speicher](https://docs.microsoft.com/de-DE/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29). Der zentrale Speicher auf dem Controller ist ein Ordner mit der folgenden Benennungskonvention:
-  
- **%systemroot%\sysvol\\<domain\>\policies\PolicyDefinitions**
-  
-Jede Domäne, die Ihr Controller verarbeitet, sollte einen separaten Ordner erhalten. Mit dem folgenden Befehl kann die ADMX-Datei aus der Befehlszeile kopiert werden:
-  
- `Copy <path_to_ADMX.ADMX> %systemroot%\sysvol\<domain>\policies\PolicyDefinitions`
-  
-1. Öffnen Sie die Gruppenrichtlinien-Verwaltungskonsole (gpmc.msc), und wechseln Sie zum Bearbeiten einer vorhandenen Richtlinie oder zum Erstellen einer neuen.
-    
-2. Stellen Sie sicher, dass die folgenden Ordner im Abschnitt **Administrative Vorlagen** der *Benutzer- und der Computerkonfiguration* angezeigt werden: Google Chrome und Google Chrome – Standardeinstellungen (Benutzer können diese überschreiben).
-    
-   - Die Einstellungen des ersten Abschnitts sind festgelegt, und der lokale Administrator kann sie nicht ändern.
-    
-   - Die Einstellungen im nachfolgenden Richtlinienabschnitt können von Benutzern in ihren Browsereinstellungen geändert werden. Entscheiden Sie, ob Benutzer Ihre Standardeinstellung außer Kraft setzen können. Ändern Sie in den folgenden Schritten die Einstellung in den Ordner, welcher der Richtlinie und den Anforderungen in Ihrer Organisation entspricht. Die folgenden Schritte verwenden „Google Chrome – Standardeinstellungen“ als Standard.
-    
-3. Navigieren Sie zu **&lt;Computer/Benutzerkonfiguration&gt;\Administrative Vorlagen\Google Chrome – Standardeinstellungen\Startseite**.
-    
-4. Doppelklicken Sie auf **Neue Registerkartenseite als Startseite verwenden**, und legen Sie es auf **Aktiviert** fest.
-    
-5. Navigieren Sie zu **&lt;Computer/Benutzerkonfiguration&gt;\Administrative Vorlagen\Google Chrome – Standardeinstellungen\Neue Registerkartenseite**.
-    
-6. Doppelklicken Sie auf **URL der neuen Registerkartenseite konfigurieren**, legen Sie es auf **Aktiviert** fest, und geben Sie `https://www.bing.com/business?form=BFBSPR` ein.
-    
-7. Erzwingen das resultierende GPO, indem Sie es mit der entsprechenden Domäne verknüpfen.
-    
-Benutzer können die Startseite ändern, nachdem diese Richtlinie festgelegt ist.

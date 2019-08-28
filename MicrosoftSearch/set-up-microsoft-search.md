@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: c989562e-525f-4922-b436-a885e7bf36ee
 ROBOTS: NOINDEX
 description: Alle Informationen, die Sie benötigen, um Microsoft Search für Ihre Organisation bereitzustellen.
-ms.openlocfilehash: d375f67045a04341dedc699856f631c5c41e5896
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: e5d67700e5f7f145634d61fd336c959114819b35
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591089"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639397"
 ---
 # <a name="set-up-microsoft-search"></a>Einrichten von Microsoft Search
 
 > [!IMPORTANT]
-> Dieser Artikel bezieht sich auf Microsoft Search im Bing-Verwaltungsportal. Wir verschieben das Portal zum Microsoft 365 Admin Center, und dann wird es entfernt. Es wird empfohlen, dass Sie zu Beginn das Microsoft 365 Admin Center verwenden. [Übersicht über Microsoft Search](overview-microsoft-search.md).
+> Dieser Artikel bezieht sich auf Microsoft Search im Bing-Verwaltungsportal. Wir verschieben das Portal zum Microsoft 365 Admin Center, und dann wird das Microsoft Search im Bing-Portal entfernt. Es wird empfohlen, dass Sie zu Beginn das Microsoft 365 Admin Center verwenden. [Übersicht über Microsoft Search](overview-microsoft-search.md).
     
 Als Bestandteil von Office 365 kann Microsoft Search ganz einfach durch Aktivierung im Microsoft 365 Admin Center bereitgestellt werden. Nach der Aktivierung ist eine schnelle Konfiguration, bei der ein Logo, ein Name und eine Farbe festgelegt werden und die Administratoren und Editoren Zugriff erhalten, alles, was Sie zur Einrichtung benötigen. Ab jetzt können sich Benutzer mit einem Geschäfts-, Schul- oder Unikonto bei Bing anmelden und bei ihren Suchen Arbeitsergebnisse erhalten.
 

@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: 40a556e1-61c2-4bd3-b80e-5ad62af77454
 ROBOTS: NoIndex
 description: Erstellen Sie Lesezeichen, oder verwenden Sie eine Browsererweiterung, um diese zu Ihren Microsoft Search-Arbeitsergebnissen hinzuzufügen.
-ms.openlocfilehash: 6f6efd10b360547bb0cde47f35510433bf6f90cc
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: f86d7df44b59e5dddcc92b50cea5ca6517bd8de1
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34590711"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639811"
 ---
 # <a name="create-bookmarks"></a>Erstellen von Lesezeichen
 
 > [!IMPORTANT]
-> Dieser Artikel bezieht sich auf Microsoft Search im Bing-Verwaltungsportal. Wir verschieben das Portal zum Microsoft 365 Admin Center, und dann wird es entfernt. Es wird empfohlen, dass Sie zu Beginn das Microsoft 365 Admin Center verwenden. [Übersicht über Microsoft Search](overview-microsoft-search.md).
+> Dieser Artikel bezieht sich auf Microsoft Search im Bing-Verwaltungsportal. Wir verschieben das Portal zum Microsoft 365 Admin Center, und dann wird das Microsoft Search im Bing-Portal entfernt. Es wird empfohlen, dass Sie zu Beginn das Microsoft 365 Admin Center verwenden. [Übersicht über Microsoft Search](overview-microsoft-search.md).
     
 Anhand von Lesezeichen können Personen wichtige Ressourcen, Websites und Tools schnell auffinden. Jedes Lesezeichen umfasst einen Titel, eine URL sowie einen Satz von Schlüsselwörtern, durch die es ausgelöst wird.
   

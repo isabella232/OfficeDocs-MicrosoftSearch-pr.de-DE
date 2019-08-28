@@ -15,19 +15,19 @@ search.appverid:
 ms.assetid: 38569f03-db18-49ab-96ef-213a1f410935
 ROBOTS: NOINDEX
 description: Erfahren Sie, warum es sich bei Microsoft Search um eine intelligente Unternehmenssuche für den modernen Arbeitsplatz handelt.
-ms.openlocfilehash: f2cf9c3e4d80bc17fd74bf0ae34b7886b4b69d33
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 392e004fef54d1bdbec302b780dd79ecc4668cb9
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34590747"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639388"
 ---
 # <a name="why-microsoft-search"></a>Vorteile von Microsoft Search
 
 Mit Microsoft Search können Sie die Art und Weise verändern, wie Personen in Ihrer Organisation nach Informationen suchen. 
 
 > [!IMPORTANT]
-> Dieser Artikel bezieht sich auf Microsoft Search im Bing-Verwaltungsportal. Wir verschieben das Portal zum Microsoft 365 Admin Center, und dann wird es entfernt. Es wird empfohlen, dass Sie zu Beginn das Microsoft 365 Admin Center verwenden. [Übersicht über Microsoft Search](overview-microsoft-search.md).
+> Dieser Artikel bezieht sich auf Microsoft Search im Bing-Verwaltungsportal. Wir verschieben das Portal zum Microsoft 365 Admin Center, und dann wird das Microsoft Search im Bing-Portal entfernt. Es wird empfohlen, dass Sie zu Beginn das Microsoft 365 Admin Center verwenden. [Übersicht über Microsoft Search](overview-microsoft-search.md).
   
 Diese Oberfläche für Unternehmenssuche steigert die Produktivität und spart Zeit, indem relevantere Suchergebnisse für den Arbeitsplatz bereitgestellt werden. Microsoft Search ruft Informationen von Ihrem Unternehmen, Ihrer Schule oder Ihrer Organisation sicher ab, z. B. Dateien, Unternehmensdaten, Personeninformationen und Websites. Außerdem werden Webergebnisse abgerufen und in einer einzigen Oberfläche angezeigt.
 

@@ -14,14 +14,17 @@ search.appverid:
 - MOE150
 ms.assetid: 50461cb9-8707-46c1-935a-1b9608a98800
 description: Schützen Sie Ihre Unternehmensdaten und Benutzer, während Sie mit Microsoft Search Informationen für autorisierte Benutzer bereitstellen
-ms.openlocfilehash: b7b62173dc61d271a4953adbf20a6cf48b122694
-ms.sourcegitcommit: 4eeb78066fd13e906daed3add003398bd9d0f6ca
+ms.openlocfilehash: 7aef4acad9f387e50fb03478a7c00d57fa451c00
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "35917569"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639614"
 ---
 # <a name="security-for-microsoft-search"></a>Sicherheit für Microsoft Search
+
+> [!IMPORTANT]
+> Dieser Artikel bezieht sich auf Microsoft Search im Bing-Verwaltungsportal. Wir verschieben das Portal zum Microsoft 365 Admin Center, und dann wird das Microsoft Search im Bing-Portal entfernt. Es wird empfohlen, dass Sie zu Beginn das Microsoft 365 Admin Center verwenden. [Übersicht über Microsoft Search](overview-microsoft-search.md).
 
 Mit Sicherheit auf Unternehmensniveau sorgt Microsoft Search immer dafür, dass Ihre Benutzer und Daten geschützt sind.
 
@@ -57,7 +60,7 @@ Da arbeitsbezogene Suchvorgänge vertraulich sein können, hat Microsoft Search 
 Unabhängig davon, ob eine Benutzerabfrage ein Arbeitsergebnis oder mehrere in der zurückgegebenen Antwort enthält, werden folgende Maßnahmen getroffen:
   
 - Protokollierung 
-  - Alle Suchprotokolle, die sich auf den Microsoft-Such-Datenverkehr beziehen, werden in einen nicht-identifizierbaren Zustand versetzt. Sie werden für 18 Monate aufbewahrt.
+  - Alle Suchprotokolle, die sich auf den Microsoft Search-Datenverkehr beziehen, werden in einen nicht-identifizierbaren Zustand versetzt. Sie werden für 18 Monate aufbewahrt.
   - Abfragen, die in diesen Systemprotokollen gespeichert werden, werden lediglich zum Modellieren und Trainieren von öffentlichen Features wie der Vorschlagssuche oder bei verwandten Suchvorgängen für öffentliche Webergebnisse verwendet, wenn eine Reihe von Einschränkungen und Frequenz-Schwellenwerten erfüllt sind, was uns das Vertrauen gibt, dass diese Abfragen allgemein und nicht für eine bestimmte Organisation spezifisch sind. Die Abfrage muss in einer bedeutenden Anzahl von Fällen in Verbindung mit Daten von Benutzern vorkommen, welche die Microsoft Suchfunktion nicht verwenden und die Abfrage darf nicht ausschließlich Enterprise-Suchergebnisse auslösen. Abfragen, die diese Anforderungen nicht erfüllen, werden getrennt vom öffentlichen, nicht von Microsoft durchgeführten Such Datenverkehr gespeichert.
   - Der eingeschränkte Zugriff wird über verschiedene Sicherheitsmechanismen verwaltet, einschließlich Sicherheitsgruppen und anderen Ebenen innerhalb des Engineering-Systems.
 - Suchverlauf    

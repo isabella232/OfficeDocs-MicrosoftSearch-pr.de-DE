@@ -14,20 +14,22 @@ search.appverid:
 - MET150
 - MOE150
 description: Erstellen Sie Lesezeichen, Standorte und F&A-Artikel, um die Inhalte Ihrer Organisation leicht auffindbar zu machen.
-ms.openlocfilehash: 851f88206d7f8e0330497c9706b02ad98e0f8e6c
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: a2f8018a85d792473f268a735abb368babfc582c
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591566"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639856"
 ---
 # <a name="make-content-easy-to-find"></a>Inhalte leicht auffindbar machen
-****Microsoft Search**** hilft Benutzern, relevante Inhalte zu finden. **Microsoft Search** ist eine sichere Möglichkeit, sowohl Ihre Intranet- als auch Ihre Webinhalte zu durchsuchen. Diese web- und organisationsübergreifende Art der Integration steht nur bei Microsoft zur Verfügung. 
+
+Microsoft Search hilft Benutzern, relevante Inhalte zu finden. Microsoft Search ist eine sichere Möglichkeit, sowohl Ihre Intranet- als auch Ihre Webinhalte zu durchsuchen. Diese web- und organisationsübergreifende Art der Integration steht nur bei Microsoft zur Verfügung. 
 
 Suchadministratoren nutzen ihr Wissen über die Organisation und ihre Benutzer, um die relevanten Inhalte für Benutzer leicht auffindbar zu machen. 
 
 ## <a name="step-1-identify-information-your-users-need"></a>Schritt 1: Identifizieren der Informationen, die Ihre Benutzer benötigen
 Finden Sie heraus, wonach Ihre Benutzer suchen, und machen Sie das leicht auffindbar. Hier sind einige Ideen, wie Sie herausfinden können, welche Informationen Benutzer benötigen: 
+
 - Ermitteln Sie die Websites und Seiten mit dem meisten Datenverkehr anhand von Intranetsuchprotokollen.
 - Ermitteln Sie Apps, Websites und Tools, die täglich oder wöchentlich verwendet werden.
 - Suchen Sie direkte Links für Mitarbeitervergütungen.
@@ -49,13 +51,13 @@ Nutzen Sie SMEs in der Organisation, einschließlich Experten von der Personalab
 Bitten Sie Benutzer, Ressourcen als Lesezeichen vorzuschlagen. Bitte Sie Benutzer, zusätzlich zum Vorschlagen von Inhalten Fehler wie fehlerhafte oder ungültige Links zu melden.
 
 ## <a name="step-3-improve-findability-of-content"></a>Schritt 3: Verbessern der Auffindbarkeit von Inhalten 
-In **Microsoft Search** erstellt der Suchadministrator Lesezeichen, Fragen und Antworten, Standorte und PowerApps, um die Auffindbarkeit von Inhalten zu verbessern. Jede dieser Suchkomponenten enthält einen Titel, eine URL und eine Gruppe von Schlüsselwörtern, die sie auslösen.
+In Microsoft Search erstellt der Suchadministrator Lesezeichen, Fragen und Antworten, Standorte und PowerApps, um die Auffindbarkeit von Inhalten zu verbessern. Jede dieser Suchkomponenten enthält einen Titel, eine URL und eine Gruppe von Schlüsselwörtern, die sie auslösen.
 
 ### <a name="titles-and-descriptions"></a>Titel und Beschreibungen
 Benutzer verwenden Titel und Beschreibungen, um zu ermitteln, ob das Ergebnis ihre Suchabfrage beantwortet oder ob sie eine andere Suche ausprobieren müssen. Titel und Beschreibungen sollten den grundlegenden Zweck des Ergebnisses widerspiegeln. Ein gutes Beispiel für einen Titel könnte „Vergütungen für Kinderbetreuung“ mit der Beschreibung „Informationen zu Vergütungen als Hilfe bei der Bezahlung von Kinderbetreuungskosten“ sein. So werden die Benutzer, die nach „Kinderbetreuung“ suchen, informiert, dass finanzielle Unterstützungsleistungen verfügbar sind. Außerdem wird ein Link zu weiteren Informationen bereitgestellt. 
 
 ### <a name="keywords"></a>Schlüsselwörter
-Schlüsselwörter sind die Begriffe, die Personen in Ihrer Organisation verwenden, um relevante Inhalte zu finden. Die Zuordnung der entsprechenden Schlüsselwörter zu den Suchergebnissen erleichtert das Auffinden der relevanten Inhalte. **Microsoft Search** schlägt ein Schlüsselwort basierend auf dem Titel und der URL für Ihren Inhalt vor. Beantworten Sie zur Identifizierung zusätzlicher Schlüsselwörter zunächst die folgenden Fragen:
+Schlüsselwörter sind die Begriffe, die Personen in Ihrer Organisation verwenden, um relevante Inhalte zu finden. Die Zuordnung der entsprechenden Schlüsselwörter zu den Suchergebnissen erleichtert das Auffinden der relevanten Inhalte. Microsoft Search schlägt ein Schlüsselwort basierend auf dem Titel und der URL für Ihren Inhalt vor. Beantworten Sie zur Identifizierung zusätzlicher Schlüsselwörter zunächst die folgenden Fragen:
 
 1. Mit welchen Suchbegriffen wird nach den Informationen gesucht, die Sie identifiziert haben?
 1. Nutzen Sie ggf. die vorhandene Taxonomie in Ihrer Organisation sowie zugehörige Varianten, Akronyme und Themen.
@@ -65,15 +67,15 @@ Schlüsselwörter sind die Begriffe, die Personen in Ihrer Organisation verwende
 Wenn Sie beispielsweise ein Ergebnis erstellen, das zu einem Tool zum Einreichen von Urlaubsanträgen verlinkt, sind Schlüsselwörter wie „Urlaub“ und „Urlaubsantrag einreichen“ gute Optionen zur Einbeziehung. Möglicherweise stellen Sie fest, dass Personen in Ihrer Organisation „Ferien“ oder „arbeitsfreie Zeit“ verwenden, um urlaubsbezogene Informationen zu beschreiben oder zu suchen. Wenn Schlüsselwörter wie „Ferien“, „arbeitsfreie Zeit“, „Antrag für Ferien einreichen“ oder „Urlaubsplanung“ hinzugefügt werden, können mehr Benutzer die relevanten Inhalte einfacher finden.
 
 ### <a name="reserved-keywords"></a>Reservierte Schlüsselwörter
- Ein reserviertes Schlüsselwort ist ein eindeutiger Begriff oder Ausdruck, der ein Ergebnis auslöst. Im Gegensatz zu anderen Schlüsselwörtern kann ein reserviertes Schlüsselwort nur einem Ergebnis zugeordnet werden. Verwenden Sie reservierte Schlüsselwörter nur sparsam, damit **Microsoft Search** auf der Grundlage ihrer Nutzung lernen kann.
+ Ein reserviertes Schlüsselwort ist ein eindeutiger Begriff oder Ausdruck, der ein Ergebnis auslöst. Im Gegensatz zu anderen Schlüsselwörtern kann ein reserviertes Schlüsselwort nur einem Ergebnis zugeordnet werden. Verwenden Sie reservierte Schlüsselwörter nur sparsam, damit Microsoft Search auf der Grundlage ihrer Nutzung lernen kann.
 
-Wenn Sie beispielsweise ein Lesezeichen für eine Website zum Einreichen Ihrer Stunden erstellen und „Protokollzeit“ als reserviertes Schlüsselwort hinzufügen, sehen Benutzer in Ihrer Organisation, die nach „Protokollzeit“ suchen, die Website zum Einreichen Ihrer Stunden als einziges Lesezeichen im Feld **Microsoft Search**. 
+Wenn Sie beispielsweise ein Lesezeichen für eine Website zum Einreichen Ihrer Stunden erstellen und „Protokollzeit“ als reserviertes Schlüsselwort hinzufügen, sehen Benutzer in Ihrer Organisation, die nach „Protokollzeit“ suchen, die Website zum Einreichen Ihrer Stunden als einziges Lesezeichen im Feld Microsoft Search. 
 
 ### <a name="using-keyword-to-group-related-content"></a>Verwenden von Schlüsselwörtern zum Gruppieren verwandter Inhalte
 Wenn Benutzer bei ihrer Suche Gruppen von verwandten Inhalten finden sollen, suchen sie nach einem Begriff, versuchen dann, das gleiche Schlüsselwort für alle verwandten Inhalte zu verwenden. Beispiel: Wenn Sie Ergebnisse über Prozesse und Tools im Zusammenhang mit Änderungen des Familienstands hinzufügen, könnten Sie ein Schlüsselwort wie „Ehe“ einbeziehen, um Ergebnisse im Hinblick auf das Aktualisieren von Vergütungen, Steuerinformationen sowie Namens- und Aliasänderungen zusammen zu gruppieren.
 
 ### <a name="search-settings"></a>Sucheinstellungen
-Verwenden Sie die Sucheinstellungen, um Ihre Inhalte anzupassen und bestimmte Gruppen von Benutzern anzusprechen. **Microsoft Search** hat die folgenden Einstellungen, die Ihnen zusätzliche Kontrolle darüber geben, wann ein Suchergebnis angezeigt wird und wer es sieht.
+Verwenden Sie die Sucheinstellungen, um Ihre Inhalte anzupassen und bestimmte Gruppen von Benutzern anzusprechen. Microsoft Search hat die folgenden Einstellungen, die Ihnen zusätzliche Kontrolle darüber geben, wann ein Suchergebnis angezeigt wird und wer es sieht.
 
 - **Datumsangaben:** Legen Sie ein Start- und ein Enddatum fest, um zu steuern, wann Inhalte verfügbar oder nicht verfügbar sind. Beispielsweise wird zeitkritisches Material im Suchergebnis angezeigt, wenn es relevant ist.
 - **Land/Region:** Wählen Sie Länder oder Regionen aus, sodass nur Benutzer an diesen Standorten den Inhalt sehen. Beispielsweise werden länderspezifische Informationen nur in diesen Ländern in den Suchergebnissen angezeigt.
@@ -100,11 +102,11 @@ Es ist wichtig, dass autoritative Informationen wie Lesezeichen sowie Fragen und
 ## <a name="bookmarks"></a>Lesezeichen
 Sie können ein Lesezeichen in wenigen Schritten erstellen. Jedes Lesezeichen enthält einen Titel, eine URL und eine Gruppe von Schlüsselwörtern, die es auslösen. Ein Lesezeichen kann mehrere Schlüsselwörter haben, und mehrere Lesezeichen können ein gemeinsames Schlüsselwort nutzen, aber ein reserviertes Schlüsselwort kann nicht gemeinsam genutzt werden. Wenn ein Lesezeichen erstellt oder geändert wird, wird der Suchindex sofort aktualisiert, und das Lesezeichen steht Benutzern sofort zur Verfügung.
 
-Wenn Ihre Organisation höhergestufte Ergebnisse in SharePoint eingerichtet hat, können Sie die höhergestuften Ergebnisse in **Microsoft Search** importieren und den importierten Inhalt für Ihre Benutzer verfügbar machen. Dies ist eine einfache Möglichkeit, Suchergebnisse schnell aufzufüllen, sobald Sie **Microsoft Search** einrichten, und es für Ihre Benutzer effektiver zu gestalten. Wir empfehlen Ihnen, höhergestufte Ergebnisse aus SharePoint als Referenz zu verwenden, um zu verstehen, wie man relevante Suchergebnisse benennt und erstellt. 
+Wenn Ihre Organisation höhergestufte Ergebnisse in SharePoint eingerichtet hat, können Sie die höhergestuften Ergebnisse in Microsoft Search importieren und den importierten Inhalt für Ihre Benutzer verfügbar machen. Dies ist eine einfache Möglichkeit, Suchergebnisse schnell aufzufüllen, sobald Sie Microsoft Search einrichten, und es für Ihre Benutzer effektiver zu gestalten. Wir empfehlen Ihnen, höhergestufte Ergebnisse aus SharePoint als Referenz zu verwenden, um zu verstehen, wie man relevante Suchergebnisse benennt und erstellt. 
 
 ### <a name="add-or-edit-a-single-bookmark"></a>Hinzufügen oder Bearbeiten eines einzelnen Lesezeichens
 1. Gehen Sie zum **Microsoft 365 Admin Center**.
-1. Wechseln Sie im Navigationsbereich zu **Einstellungen**, und wählen Sie dann ****Microsoft Search**** aus.
+1. Wechseln Sie im Navigationsbereich zu **Einstellungen**, und wählen Sie dann **Microsoft Search** aus.
 Standardmäßig ist die Registerkarte **Lesezeichen** ausgewählt.
 1. Wählen Sie zum Hinzufügen eines Lesezeichens **Neu hinzufügen** aus. Wählen Sie zum Bearbeiten eines Lesezeichens das Lesezeichen in der entsprechenden Lesezeichenliste aus. 
 1. Während Sie die Informationen hinzufügen oder bearbeiten, wird die Vorschau automatisch aktualisiert.
@@ -143,6 +145,7 @@ Hier sind einige wichtige Punkte, die in Bezug auf die Vorlagendatei zu beachten
 - Bei Organisationen mit mehreren Mandanten können Sie Ihre Lesezeichen von einem Mandanten exportieren und zu einem anderen importieren. Sie müssen jedoch die Daten in der Spalte *ID* vor dem Import entfernen.
 
 #### <a name="prevent-import-errors"></a>Vermeiden von Importfehlern
+
 Sie erhalten eine Fehlermeldung, wenn erforderliche Daten fehlen oder ungültig sind, und eine Protokolldatei mit weiteren Informationen über die zu korrigierenden Zeilen und Spalten wird erstellt. Nehmen Sie die notwendigen Änderungen vor, und versuchen Sie, die Datei erneut zu importieren. Sie können keine Lesezeichen importieren oder speichern, bis alle Fehler behoben sind.
 
 Um Fehler zu verhindern, stellen Sie sicher, dass die Importdatei ordnungsgemäß formatiert ist und:
@@ -152,9 +155,11 @@ Um Fehler zu verhindern, stellen Sie sicher, dass die Importdatei ordnungsgemä�
 - die Spalte *Status* nicht leer ist, da diese Information erforderlich ist
 
 ### <a name="powerapps"></a>PowerApps
+
 Helfen Sie Ihren Benutzern beim Ausführen von Aufgaben, z. B. der Eingabe von Urlaubszeiten oder dem Erstellen von Spesenabrechnungen, indem Sie bestehende PowerApps zu Ihren Lesezeichen hinzufügen. 
 
 #### <a name="what-are-powerapps"></a>Was sind PowerApps?
+
 PowerApps ist ein Dienst, mit dem Sie Geschäfts-Apps erstellen können, die in einem Browser oder auf einem Smartphone oder Tablet ausgeführt werden, ohne dass eine Codierung erforderlich ist. PowerApps funktionieren in jedem beliebigen Browser und auf jedem beliebigen Gerät und können in weniger als einer Minute hinzugefügt werden. Weitere Informationen zu PowerApps finden Sie unter:
 - 
   [Interaktives Lernen](https://docs.microsoft.com/de-DE/learn/browse/?products=powerapps)
@@ -163,6 +168,7 @@ PowerApps ist ein Dienst, mit dem Sie Geschäfts-Apps erstellen können, die in 
 - [PowerApps Home](https://make.preview.powerapps.com/environments/839eace6-59ab-4243-97ec-a5b8fcc104e4/home)
 
 #### <a name="add-a-powerapp-to-a-bookmark"></a>Hinzufügen einer PowerApp zu einem Lesezeichen
+
 1. Suchen Sie die [App-ID für die PowerApp](https://docs.microsoft.com/de-DE/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id), die Sie hinzufügen möchten.
 1. Melden Sie sich an und gehen Sie zum **Microsoft 365 Admin Center**.
 1. Wechseln Sie im Navigationsbereich zu **Einstellungen**, und wählen Sie dann **Microsoft Search** aus.
@@ -173,9 +179,11 @@ PowerApps ist ein Dienst, mit dem Sie Geschäfts-Apps erstellen können, die in 
 1. Wählen Sie **Veröffentlichen** oder **Als Entwurf speichern** aus.
 
 ## <a name="qa"></a>F&A
+
 Die Erstellung von Fragen und Antworten ist vergleichbar mit der Erstellung von Lesezeichen. Fragen und Antworten ermöglichen es Ihnen, die Frage des Benutzers zu beantworten, statt nur einen Link zur Webseite bereitzustellen. Sie können die Antwort mit den verfügbaren Tools als Rich-Text formatieren. Wenn ein Lesezeichen sowie Fragen und Antworten ein gemeinsames Schlüsselwort nutzen, wird zuerst das Lesezeichenergebnis angezeigt. Wie Lesezeichen wird der F&A-Index sofort nach dem Hinzufügen oder Ändern einer Frage und Antwort aktualisiert. 
 
 ### <a name="add-or-edit-a-single-qa"></a>Hinzufügen oder Bearbeiten einer einzelnen Frage und Antwort
+
 1. Gehen Sie zum **Microsoft 365 Admin Center**.
 1. Wechseln Sie im Navigationsbereich zu **Einstellungen**, und wählen Sie **Microsoft Search** aus.
 1. Wählen Sie die Registerkarte **F&A** aus. Standardmäßig ist die erste Registerkarte (**Lesezeichen**) ausgewählt.
@@ -185,8 +193,9 @@ Wählen Sie zum Bearbeiten einer Frage und Antwort die Frage und Antwort in der 
 1. Speichern Sie Ihre Änderungen.
 
 #### <a name="supported-html-tags"></a>Unterstützte HTML-Tags
-Sie können vorhandene HTML-Inhalte verwenden oder ihrer Antwort (Beschreibung) HTML-Tags hinzufügen. Nicht unterstützte Tags werden ignoriert.  
-Die folgenden HTML-Tags werden unterstützt:
+
+Sie können HTML-Inhalte verwenden oder ihrer Antwort (Beschreibung) HTML-Tags hinzufügen. Wir unterstützen diese HTML-Tags:
+ 
 - blockquote
 - div
 - em
@@ -204,15 +213,20 @@ Die folgenden HTML-Tags werden unterstützt:
 - hr
 - img
 
+Nicht unterstützte Tags werden entweder ignoriert oder als Text angezeigt. Sie sollten vorab eine Vorschau Ihrer Karten anzeigen.
+
 ### <a name="bulk-add-or-edit-qa"></a>Massenhinzufügen oder -bearbeiten von Fragen und Antworten
+
 Administratoren können die Import- und Exportfunktion verwenden, um Fragen und Antworten per Massenvorgang zu erstellen oder zu bearbeiten. Dies ist eine nützliche Funktion, wenn Administratoren eine große Anzahl von Fragen und Antworten hinzufügen oder bearbeiten müssen. 
 
-Verwenden Sie die Import-/Exportfunktion zum:
-1. Massenhinzufügen von Fragen und Antworten – Fügen Sie Details in der Vorlagendatei für Fragen und Antworten hinzu, und importieren Sie sie dann.
-1. Massenbearbeiten von Fragen und Antworten – Exportieren Sie Fragen und Antworten in eine CSV-Datei, bearbeiten Sie dann die F&A-Details in der exportierten CSV-Datei, und importieren Sie die aktualisierte CSV-Datei.
-1. Sichern von Fragen und Antworten – Exportieren Sie Fragen und Antworten in eine CSV-Datei.
+Verwenden Sie die Import- und Exportfeatures zum:
+
+- Massenhinzufügen von Frage-und-Antwort-Elementen – Fügen Sie Details in der Vorlagendatei für Fragen und Antworten hinzu, und importieren Sie sie dann.
+- Massenhinzufügen von Frage-und-Antwort-Elementen – Exportieren Sie Fragen und Antworten in eine CSV-Datei, bearbeiten Sie dann die F&A-Details in der exportierten CSV-Datei, und importieren Sie die aktualisierte CSV-Datei.
+- Sichern von Frage-und-Antwort-Elementen – Exportieren Sie Fragen und Antworten in eine CSV-Datei.
 
 So importieren oder exportieren Sie Fragen und Antworten:
+
 1. Wählen Sie in der oberen rechten Ecke der Registerkarte „F&A“ **Importieren** aus. Wählen Sie **Exportieren** aus, um alle vorhandenen Fragen und Antworten in eine CSV-Datei herunterzuladen.
 1. Wählen Sie im rechten Bereich die Option zum Importieren mithilfe einer CSV-Datei.
 Laden Sie die Vorlagendatei herunter, um eine Liste der erforderlichen Felder und Details zu erhalten. 
@@ -221,6 +235,7 @@ Laden Sie die Vorlagendatei herunter, um eine Liste der erforderlichen Felder un
 1. Wählen Sie **Importieren** aus.
 
 Hier sind einige wichtige Punkte in Bezug auf die Vorlagendatei:
+
 - Bearbeiten Sie niemals Daten in diesen Feldern: *ID*, *Zuletzt geändert* und *Zuletzt geändert von*.
 - Wenn Sie die *ID* eines vorhandenen Lesezeichens angeben, wird sie durch die Informationen in der Importdatei ersetzt.
 - Wenn ein Lesezeichen mit dem gleichen Titel oder der gleichen URL vorhanden ist, wird das Lesezeichen mit Informationen in der Importdatei aktualisiert.
@@ -228,14 +243,16 @@ Hier sind einige wichtige Punkte in Bezug auf die Vorlagendatei:
 - Auf der Grundlage des Felds „Status“ werden Lesezeichen als „Entwurf“, „vorgeschlagen“ oder „geplant“ gespeichert, oder sie werden automatisch veröffentlicht.
 - Bei Organisationen mit mehreren Mandanten können Sie Ihre Lesezeichen von einem Mandanten exportieren und zu einem anderen importieren. Sie müssen jedoch die Daten in der Spalte *ID* vor dem Import entfernen.
 
-**Hinweis:** Sie können Fragen und Antworten nicht importieren, wenn Fehler in der Vorlagendatei vorhanden sind. Um Fehler zu verhindern, stellen Sie sicher, dass die Importdatei ordnungsgemäß formatiert ist, und geben Sie alle erforderlichen Informationen an. 
+**Hinweis:** Sie können Frage-und-Antwort-Elemente nicht importieren, wenn Fehler in der Vorlagendatei vorhanden sind. Um Fehler zu verhindern, stellen Sie sicher, dass die Importdatei ordnungsgemäß formatiert ist, und geben Sie alle erforderlichen Informationen an. 
 
 Weitere Informationen zum Vermeiden von Fehlern finden Sie unter [Vermeiden von Importfehlern](#prevent-import-errors).
 
-## <a name="location"></a>Standort
-Der Standort hilft Ihren Benutzern, Adressen zu finden und die Gebäude Ihrer Organisation zu lokalisieren, indem ein genauer Standort für Büros, Campus und Gebäude sowie eine Wegbeschreibung und Navigation bereitgestellt werden. Administratoren sollten alle wichtigen Standorte Ihrer Organisation hinzufügen. Im Gegensatz zu Lesezeichen und Fragen und Antworten wird der Index nicht sofort aktualisiert, und es kann mehrere Stunden dauern, bis neue oder geänderte Standorte in den Suchergebnissen angezeigt werden.
+## <a name="locations"></a>Standorte
+
+Standorte helfen Ihren Benutzern, Adressen zu finden und die Gebäude Ihrer Organisation zu lokalisieren, indem ein genauer Standort für Büros, Campus und Gebäude sowie eine Wegbeschreibung und Navigation bereitgestellt werden. Administratoren sollten alle wichtigen Standorte Ihrer Organisation hinzufügen. Im Gegensatz zu Lesezeichen und Fragen und Antworten wird der Index nicht sofort aktualisiert, und es kann mehrere Stunden dauern, bis neue oder geänderte Standorte in den Suchergebnissen angezeigt werden.
 
 ### <a name="add-or-edit-a-single-location"></a>Hinzufügen oder Bearbeiten eines einzelnen Standorts
+
 1. Gehen Sie zum **Microsoft 365 Admin Center**.
 1. Wechseln Sie im Navigationsbereich zu **Einstellungen**, und wählen Sie **Microsoft Search** aus.
 1. Wählen Sie die Registerkarte **Standorte** aus. Standardmäßig ist die Registerkarte **Lesezeichen** auf der Seite **Microsoft Search** ausgewählt.
@@ -245,14 +262,17 @@ Der Standort hilft Ihren Benutzern, Adressen zu finden und die Gebäude Ihrer Or
 1. Speichern Sie Ihre Änderungen.
 
 ### <a name="bulk-add-or-edit-locations"></a>Massenhinzufügen oder -bearbeiten von Standorten
+
 Administratoren können die Import- oder Exportfunktion verwenden, um Standorte per Massenvorgang hinzuzufügen oder zu bearbeiten. 
 
 Verwenden Sie die Import-/Exportfunktion zum:
-1. Massenhinzufügen von Standorten – Fügen Sie Details in der Vorlagendatei für Standorte hinzu, und importieren Sie sie dann. 
-1. Massenbearbeiten von Standorten – Exportieren Sie Standorte in eine CSV-Datei, bearbeiten Sie dann die Standortdetails in der exportierten CSV-Datei, und importieren Sie die aktualisierte CSV-Datei.
-1. Sichern von Standorten – Exportieren Sie vorhandene Standorte in eine CSV-Datei.
+
+- Massenhinzufügen von Standorten – Fügen Sie Details in der Vorlagendatei für Standorte hinzu, und importieren Sie sie dann. 
+- Massenbearbeiten von Standorten – Exportieren Sie Standorte in eine CSV-Datei, bearbeiten Sie dann die Standortdetails in der exportierten CSV-Datei, und importieren Sie die aktualisierte CSV-Datei.
+- Sichern von Standorten – Exportieren Sie vorhandene Standorte in eine CSV-Datei.
 
 So exportieren oder importieren Sie Standorte:
+
 1. Wählen Sie in der oberen rechten Ecke der Registerkarte **Standorte** **Importieren** aus.
 Wählen Sie **Exportieren** aus, um die vorhandenen Standorte in eine CSV-Datei herunterzuladen.
 1. Wählen Sie im rechten Bereich die Option zum Importieren mithilfe einer CSV-Datei. Laden Sie die Vorlagendatei herunter, um eine Liste der erforderlichen Felder und Details zu erhalten.
@@ -261,6 +281,7 @@ Wählen Sie **Exportieren** aus, um die vorhandenen Standorte in eine CSV-Datei 
 1. Wählen Sie **Importieren** aus.
 
 Hier sind einige wichtige Punkte in Bezug auf die Vorlagendatei:
+
 - Bearbeiten Sie niemals Daten in diesen Feldern: *ID*, *Zuletzt geändert* und *Zuletzt geändert von*.
 - Wenn Sie die *ID* eines vorhandenen Lesezeichens angeben, wird sie durch die Informationen in der Importdatei ersetzt.
 - Wenn ein Lesezeichen mit dem gleichen Titel oder der gleichen URL vorhanden ist, wird das Lesezeichen mit Informationen in der Importdatei aktualisiert.
@@ -273,10 +294,13 @@ Hier sind einige wichtige Punkte in Bezug auf die Vorlagendatei:
 Weitere Informationen zum Vermeiden von Fehlern finden Sie unter [Vermeiden von Importfehlern.](#prevent-import-errors)
 
 ## <a name="review-and-update-bookmarks-qa-and-locations"></a>Überprüfen und Aktualisieren von Lesezeichen, Fragen und Antworten und Standorten
-**Microsoft Search** stellt Nutzungsstatistiken für Lesezeichen, Fragen und Antworten und Standorte bereit. Die Nutzungsstatistiken zeigen, wie Ihre Benutzer mit den Suchergebnissen interagieren, ob die Benutzer das Gewünschte suchen und ob Lücken in den verfügbaren Inhalten vorhanden sind. Sie helfen dem Administrator, die Leistung zu überwachen und geeignete Maßnahmen zur Feinabstimmung der Suchergebnisse zu ergreifen. 
+
+ Microsoft Search stellt Nutzungsstatistiken für Lesezeichen, Fragen und Antworten und Standorte bereit. Die Nutzungsstatistiken zeigen, wie Ihre Benutzer mit den Suchergebnissen interagieren, ob die Benutzer das Gewünschte suchen und ob Lücken in den verfügbaren Inhalten vorhanden sind. Sie helfen dem Administrator, die Leistung zu überwachen und geeignete Maßnahmen zur Feinabstimmung der Suchergebnisse zu ergreifen. 
 
 ### <a name="get-details-about-bookmarks-qa-and-locations"></a>Abrufen von Details zu Lesezeichen, Fragen und Antworten und Standorten
+
 Zeigen Sie an, wie viele Lesezeichen, Fragen und Antworten und Standorte veröffentlicht, geplant oder vorgeschlagen wurden. Verwenden Sie das Dashboard, um die Gesamtanzahl von Lesezeichen, Fragen und Antworten oder Standorten nach Status anzuzeigen:
+
 - **Veröffentlicht**: die Anzahl der veröffentlichten Ergebnissen, die für Benutzer zur Verfügung stehen
 - **Geplant:** die Anzahl der geplanten Ergebnissen in der Veröffentlichungspipeline
 - **Vorgeschlagen:** die Anzahl der Vorschläge von Benutzern
@@ -284,11 +308,13 @@ Zeigen Sie an, wie viele Lesezeichen, Fragen und Antworten und Standorte veröff
 Vorgeschlagene Lesezeichen, Fragen und Antworten und Standorte sind ein guter Indikator für Lücken in Ihren Inhalten. Sie helfen Ihnen zu verstehen, wonach Ihre Benutzer suchen und was sie nicht finden können. Dies könnte darauf hindeuten, dass Sie mehr Lesezeichen, Fragen und Antworten oder Standorte erstellen müssen oder Ihre vorhandenen Inhalte aktualisieren müssen, indem Sie bessere Schlüsselwörter, reservierte Schlüsselwörter und Suchzeichenfolgen verwenden, um die Auffindbarkeit von Inhalten zu verbessern.
 
 ### <a name="review-top-search-queries"></a>Überprüfen der wichtigsten Suchabfragen
+
 Ermitteln Sie, welche Suchen die meisten Aufrufe während der letzten 90 Tage generiert haben. Aufruf bezieht sich darauf, wie oft eine Seite im Suchergebnis angezeigt wurde. Die Karte **Wichtigste Abfragen** zeigt die 25 wichtigsten Benutzersuchen für jeden Ergebnistyp mit der Gesamtanzahl von Suchen und deren Klickrate (Click-Through Rate, CTR). Mithilfe dieses Berichts können Sie das Suchvorgangsaufkommen identifizieren und Abfragen mit hoher und niedriger Suchaktivität ermitteln. 
 
 Eine geringe Anzahl von Suchen deutet möglicherweise auf eine Unzufriedenheit bei den Benutzern hin, entweder weil die Benutzer nicht nach diesem Suchinhalt suchen oder andere Schlüsselwörter verwenden, um den jeweiligen Inhalt zu finden. Die CTR zeigt an, wie oft Benutzer die höhergestuften Ergebnisse auswählen und wie nützlich Ihre Abfrageregeln und -ergebnisse für Benutzer sind. Eine niedrige CTR zeigt an, dass Benutzer den Inhalt finden, aber feststellen, dass der Inhalt nicht ihrer Suche entspricht. In solchen Fällen beschließen Administratoren möglicherweise, den Inhalt zu überprüfen und sicherzustellen, dass er mit den Such- und Updatetiteln, -beschreibungen und -schlüsselwörtern des Benutzers übereinstimmt, um ihn mit den Suchabfragen des Benutzers abzustimmen. 
 
 ### <a name="analyze-impressions-by-result-type"></a>Analysieren von Aufrufen nach Ergebnistyp
+
 Einfach zu lesende Diagramme in der Karte **Aufrufverteilung nach Ergebnistyp** zeigen Aufrufe über verschiedene Zeitrahmen. Die Zeitachse zeigt die tägliche Anzahl von Aufrufen für einen Ergebnistyp. Ermitteln Sie, welcher Ergebnistyp am häufigsten oder seltensten verwendet wird. Die seltene Verwendung eines bestimmten Ergebnistyps bedeutet nicht unbedingt, dass die Ergebnistypen nicht gut sind. Sie zeigt nur, wie Benutzer das Suchergebnis verwenden.
 
 Verwenden Sie diesen Bericht, um zu verstehen, welche Ergebnistypen Benutzer verwenden und welche Änderungen im Benutzerverhalten über einen bestimmten Zeitraum auftreten. Wenn ein bestimmter Ergebnistyp von Benutzern bevorzugt wird, beschließen Administratoren möglicherweise, mehr Suchergebnisse desselben Typs zu erstellen oder die Schlüsselwörter von Ergebnistypen, die von Benutzern nicht verwendet werden, zu überprüfen, um sicherzustellen, dass die Schlüsselwörter angemessen sind.

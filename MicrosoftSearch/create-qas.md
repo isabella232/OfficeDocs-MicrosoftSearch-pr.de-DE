@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: d432b9d9-3792-47a0-9a13-30a1a83caabc
 ROBOTS: NoIndex
 description: Möglichkeiten zum Erstellen von Antworten auf häufig gestellte Fragen zu Ihren Microsoft Search-Arbeitsergebnissen
-ms.openlocfilehash: 9b4d63490c95ec9d5468abbae281c9cc84ab25ca
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 78bbd6aa64c9bc2e1890e33beee645b0a9c61ef3
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591494"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639784"
 ---
 # <a name="create-qas"></a>F & As erstellen
 
 > [!IMPORTANT]
-> Dieser Artikel bezieht sich auf Microsoft Search im Bing-Verwaltungsportal. Wir verschieben das Portal zum Microsoft 365 Admin Center, und dann wird es entfernt. Es wird empfohlen, dass Sie zu Beginn das Microsoft 365 Admin Center verwenden. [Übersicht über Microsoft Search](overview-microsoft-search.md).
+> Dieser Artikel bezieht sich auf Microsoft Search im Bing-Verwaltungsportal. Wir verschieben das Portal zum Microsoft 365 Admin Center, und dann wird Microsoft Search im Bing-Portal entfernt. Wir empfehlen, für die ersten Schritte das Microsoft 365 Admin Center zu verwenden. [Übersicht über Microsoft Search](overview-microsoft-search.md).
 
 F&As stellen eine Antwort oder Informationen für Benutzer bereit, einschließlich eines optionalen Links. Im Idealfall umfasst ein F&A alle Details, die Ihre Benutzer suchen, sodass sie nicht zur Quelle wechseln müssen. Sie können Ihre F&A-Inhalte formatieren und Bilder, Listen und Tabellen einschließen.
   

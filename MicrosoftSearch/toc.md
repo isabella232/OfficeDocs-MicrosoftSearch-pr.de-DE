@@ -1,10 +1,15 @@
-#[Übersicht über Microsoft Search ](overview-microsoft-search.md)
-#[Einrichten von Microsoft Search](setup-microsoft-search.md)
-#Inhalte leicht auffindbar machen
+#Plan für Microsoft Search
+##[Übersicht](overview-microsoft-search.md)
+##[Einrichten](setup-microsoft-search.md)
+##[Festlegen von Microsoft Edge als Standardbrowser](set-default-browser.md)
+##[Festlegen von Bing als Standardsuchmaschine](set-default-search-engine.md)
+##[Festlegen von Bing.com als Standardstartseite](set-default-homepage.md)
+##[Erste Schritte mit Microsoft Search in SharePoint](get-started-search-in-sharepoint-online.md)
+#Leichtes Auffindbarmachen von Inhalten
 ##[Planen der Inhalte](plan-your-content.md)
 ##[Verwalten von Lesezeichen](manage-bookmarks.md)
 ##[F & As verwalten](manage-qas.md)
 ##[Verwalten von Speicherorten](manage-locations.md)
-#[Microsoft Search in SharePoint Online](get-started-search-in-sharepoint-online.md)
-#[Handbuch zur Benutzerakzeptanz](user-adoption-guide.md)
+#[Einführungsleitfaden für Benutzer](user-adoption-guide.md)
+#[Häufig gestellte Fragen](faqs.md)
 #[Verwendung von Microsoft Search](use/about-microsoft-search.md)

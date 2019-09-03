@@ -38,8 +38,7 @@ PowerApps ist ein Dienst, mit dem Sie Geschäfts-Apps erstellen können, die in 
 
 PowerApps funktionieren in jedem beliebigen Browser und auf jedem beliebigen Gerät und können in weniger als einer Minute hinzugefügt werden.
   
-1. 
-  [Suchen der App-ID für die PowerApp](https://docs.microsoft.com/de-DE/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id), die Sie integrieren möchten 
+1. [Suchen der App-ID für die PowerApp](https://docs.microsoft.com/de-DE/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id), die Sie integrieren möchten 
     
 2. Navigieren Sie im Microsoft Search Verwaltungsportal zu **Lesezeichen**.
     

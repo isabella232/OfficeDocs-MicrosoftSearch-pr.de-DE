@@ -118,8 +118,7 @@ Wenn Benutzer mit Bing suchen, erhalten Sie die relevantesten Ergebnisse aus dem
 ## <a name="what-types-of-results-can-users-find"></a>Nach welchen Ergebnistypen können Benutzer suchen?
 Benutzer finden folgende Ergebnistypen bei der Suche in:
 
-**SharePoint**: Dateien, Ordner, Personen in Ihrer Organisation, Organigramme, Websites, Websiteseiten, Neuerungen, Listen und Listenelemente. Wenn definiert, Antworten auf häufig gestellte Fragen, Lesezeichen, die zu verlässlichen Informationen führen, Orte sowie Tools. 
-  [Erfahren Sie, welche Typen von Dateien Sie suchen können.](https://docs.microsoft.com/de-DE/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
+**SharePoint**: Dateien, Ordner, Personen in Ihrer Organisation, Organigramme, Websites, Websiteseiten, Neuerungen, Listen und Listenelemente. Wenn definiert, Antworten auf häufig gestellte Fragen, Lesezeichen, die zu verlässlichen Informationen führen, Orte sowie Tools. [Erfahren Sie, welche Typen von Dateien Sie suchen können.](https://docs.microsoft.com/de-DE/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
 
 **Office.com- und Word-, Excel- und PowerPoint Online-Startseiten**: Apps, Dateien, Ordner, Personen, Organigramme, SharePoint-Websites, Websiteseiten, Listen und Listenelemente. Wenn definiert, Antworten auf häufig gestellte Fragen, Lesezeichen, die zu verlässlichen Informationen führen, Orte sowie Tools. Dateien desselben Typs wie in SharePoint werden gefunden.
 

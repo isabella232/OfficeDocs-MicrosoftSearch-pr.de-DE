@@ -48,9 +48,7 @@ Microsoft Search respektiert die Sicherheitseinstellungen der Inhaltsquelle. Wel
 | Kontakte          | Sie können festlegen, dass bestimmte Benutzer in Ihrer Adressliste nicht durchsucht werden, indem Sie den Parameter `HiddenFromAddressListEnabled` unter Verwendung des Cmdlets [Set-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-user) auf `true` festlegen. |
 | Microsoft Teams | [Verwalten des Benutzerzugriffs auf Microsoft Teams](https://docs.microsoft.com/microsoftteams/user-access)                                                                                                                                                      |
 | OneDrive        | [Verwalten der Freigabe](https://docs.microsoft.com/OneDrive/manage-sharing)                                                                                                                                                                                |
-| SharePoint      | 
-  [Planung von Berechtigungen](https://docs.microsoft.com/de-DE/sharepoint/plan-your-permissions-strategy)<br> 
-  [Erstellen von Berechtigungsstufen](https://docs.microsoft.com/de-DE/sharepoint/how-to-create-and-edit-permission-levels)                          |
+| SharePoint      | [Planung von Berechtigungen](https://docs.microsoft.com/de-DE/sharepoint/plan-your-permissions-strategy)<br> [Erstellen von Berechtigungsstufen](https://docs.microsoft.com/de-DE/sharepoint/how-to-create-and-edit-permission-levels)                          |
 | OneNote         | In OneNote eingebettete Dateien können nicht durchsucht werden. [Ändern der Berechtigungen für ein Notizbuch auf OneDrive](https://support.office.com/article/B9600CCF-045A-40E6-9913-4A7EB02869A5)                                                                    |
 | Yammer          | [Yammer-Sicherheitseinstellungen](https://docs.microsoft.com/Yammer/manage-security-and-compliance/yammer-security-settings)                                                                                                                               |
 
@@ -89,5 +87,4 @@ Erstellen Sie Self-Service-Ressourcen, auf die Mitarbeiter selbst leicht zugreif
 
 - [Finden erforderlicher Informationen in Office mit Microsoft Search](https://support.office.com/article/find-what-you-need-with-microsoft-search-in-office-2457d4d8-48a8-4ad4-ab89-5a0657aa8446?ui=en-US&rs=en-US&ad=US)
 - [Office 365-Schulungscenter](https://support.office.com/office-training-center)
-- 
-  [Microsoft Search Center](https://support.office.com/de-DE/article/-working-title-microsoft-search-center-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc?ui=en-US&rs=en-US&ad=US)
+- [Microsoft Search Center](https://support.office.com/de-DE/article/-working-title-microsoft-search-center-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc?ui=en-US&rs=en-US&ad=US)

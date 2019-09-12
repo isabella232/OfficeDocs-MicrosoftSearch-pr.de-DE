@@ -47,7 +47,6 @@ Bringen Sie Ihren Benutzern bei, von der SharePoint-Startseite aus zu suchen, an
 ## <a name="see-also"></a>Siehe auch
 [Übersicht über Microsoft Search ](overview-microsoft-search.md)
 
-
-  [Weitere Informationen zu Suchumgebungen in SharePoint](https://docs.microsoft.com/de-DE/sharepoint/overview-of-search).
+[Weitere Informationen zu Suchumgebungen in SharePoint](https://docs.microsoft.com/de-DE/sharepoint/overview-of-search).
 
 [Wann sollte welche Suchumgebung in SharePoint verwendet werden?](https://docs.microsoft.com/sharepoint/get-started-with-modern-search-experience)

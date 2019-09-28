@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erstellen Sie Lesezeichen, Standorte und F&A-Artikel, um die Inhalte Ihrer Organisation leicht auffindbar zu machen.
-ms.openlocfilehash: a2f8018a85d792473f268a735abb368babfc582c
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: 2ed18cf8dcb855725a7cf3d51737e767000e9e83
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639856"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288919"
 ---
 # <a name="make-content-easy-to-find"></a>Inhalte leicht auffindbar machen
 
@@ -116,7 +116,7 @@ Standardmäßig ist die Registerkarte **Lesezeichen** ausgewählt.
 Suchadministratoren können Suchinhalte mühelos mithilfe von Browsererweiterungen erstellen. Installieren Sie die Browsererweiterung, und gehen Sie dann zu der Website, die Sie als Lesezeichen hinzufügen möchten, und fügen die Website als Lesezeichen hinzu.
 
 Derzeit sind Browsererweiterungen für Microsoft Edge und Chrome verfügbar. 
-- Gehen Sie zum Herunterladen der Microsoft Edge-Erweiterung zum [Microsoft Store](https://www.microsoft.com/en-us/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab), und laden Sie die App herunter.
+- Gehen Sie zum Herunterladen der Microsoft Edge-Erweiterung zum [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab), und laden Sie die App herunter.
 - Gehen Sie zum Herunterladen der Chrome-Erweiterung zum [Chrome Web Store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm), und laden Sie die App herunter.
 
 ### <a name="bulk-add-or-edit-bookmarks"></a>Massenhinzufügen oder -bearbeiten von Lesezeichen
@@ -161,13 +161,13 @@ Helfen Sie Ihren Benutzern beim Ausführen von Aufgaben, z. B. der Eingabe von U
 #### <a name="what-are-powerapps"></a>Was sind PowerApps?
 
 PowerApps ist ein Dienst, mit dem Sie Geschäfts-Apps erstellen können, die in einem Browser oder auf einem Smartphone oder Tablet ausgeführt werden, ohne dass eine Codierung erforderlich ist. PowerApps funktionieren in jedem beliebigen Browser und auf jedem beliebigen Gerät und können in weniger als einer Minute hinzugefügt werden. Weitere Informationen zu PowerApps finden Sie unter:
-- [Interaktives Lernen](https://docs.microsoft.com/de-DE/learn/browse/?products=powerapps)
-- [Dokumentation](https://docs.microsoft.com/de-DE/powerapps/maker/canvas-apps/get-sessionid)
+- [Interaktives Lernen](https://docs.microsoft.com/learn/browse/?products=powerapps)
+- [Dokumentation](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid)
 - [PowerApps Home](https://make.preview.powerapps.com/environments/839eace6-59ab-4243-97ec-a5b8fcc104e4/home)
 
 #### <a name="add-a-powerapp-to-a-bookmark"></a>Hinzufügen einer PowerApp zu einem Lesezeichen
 
-1. Suchen Sie die [App-ID für die PowerApp](https://docs.microsoft.com/de-DE/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id), die Sie hinzufügen möchten.
+1. Suchen Sie die [App-ID für die PowerApp](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id), die Sie hinzufügen möchten.
 1. Melden Sie sich an und gehen Sie zum **Microsoft 365 Admin Center**.
 1. Wechseln Sie im Navigationsbereich zu **Einstellungen**, und wählen Sie dann **Microsoft Search** aus.
 1. Fügen Sie ein Lesezeichen hinzu oder suchen Sie ein vorhandenes Lesezeichen, dem Sie eine **PowerApp** hinzufügen möchten.

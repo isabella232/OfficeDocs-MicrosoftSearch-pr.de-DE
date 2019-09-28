@@ -14,17 +14,17 @@ search.appverid:
 - MOE150
 ms.assetid: 50461cb9-8707-46c1-935a-1b9608a98800
 description: Schützen Sie Ihre Unternehmensdaten und Benutzer, während Sie mit Microsoft Search Informationen für autorisierte Benutzer bereitstellen
-ms.openlocfilehash: 7aef4acad9f387e50fb03478a7c00d57fa451c00
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: 759fc49a4196e336d3a6016a91aa588fa1278b4d
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639614"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37289000"
 ---
 # <a name="security-for-microsoft-search"></a>Sicherheit für Microsoft Search
 
 > [!IMPORTANT]
-> Dieser Artikel bezieht sich auf Microsoft Search im Bing-Verwaltungsportal. Wir verschieben das Portal zum Microsoft 365 Admin Center, und dann wird das Microsoft Search im Bing-Portal entfernt. Es wird empfohlen, dass Sie zu Beginn das Microsoft 365 Admin Center verwenden. [Übersicht über Microsoft Search](overview-microsoft-search.md).
+> Dieser Artikel bezieht sich auf Microsoft Search im Bing-Verwaltungsportal. Wir verschieben das Portal zum Microsoft 365 Admin Center, und dann wird Microsoft Search im Bing-Portal entfernt. Wir empfehlen, für die ersten Schritte das Microsoft 365 Admin Center zu verwenden. [Übersicht über Microsoft Search](overview-microsoft-search.md).
 
 Mit Sicherheit auf Unternehmensniveau sorgt Microsoft Search immer dafür, dass Ihre Benutzer und Daten geschützt sind.
 
@@ -72,4 +72,4 @@ Unabhängig davon, ob eine Benutzerabfrage ein Arbeitsergebnis oder mehrere in d
     
 ## <a name="gdpr"></a>DSGVO
 
-Der [Blogbeitrag vom 21. Mai 2018](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/) von Microsoft bekräftigt unsere Verpflichtung zur Einhaltung der DSGVO und zeigt, wie Microsoft Unternehmen und Organisationen hilft, die eigenen DSGVO-Auflagen einzuhalten. Weitere Details finden Sie im Microsoft [Trust Center-FAQ](https://www.microsoft.com/en-us/trustcenter/privacy/gdpr/gdpr-faqs). Microsoft Search-Abfragen, die sich auf Kundendaten von Unternehmenskunden in Onlinediensten ungünstig auswirken, erfüllen ebenfalls die Verarbeitungspflichten aus Artikel 28, wie im [Trust Center-FAQ](https://www.microsoft.com/en-us/trustcenter/privacy/gdpr/gdpr-faqs) beschrieben. Im Hinblick auf Abfragen von Microsoft Search, die im öffentlichen Bing verwendet werden, gilt Microsoft als Datenverantwortlicher und hat Maßnahmen implementiert, um die Abfragen wie in der DSGVO beschrieben, unkenntlich zu machen.
+Der [Blogbeitrag vom 21. Mai 2018](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/) von Microsoft bekräftigt unsere Verpflichtung zur Einhaltung der DSGVO und zeigt, wie Microsoft Unternehmen und Organisationen hilft, die eigenen DSGVO-Auflagen einzuhalten. Weitere Details finden Sie im Microsoft [Trust Center-FAQ](https://www.microsoft.com/trustcenter/privacy/gdpr/gdpr-faqs). Microsoft Search-Abfragen, die sich auf Kundendaten von Unternehmenskunden in Onlinediensten ungünstig auswirken, erfüllen ebenfalls die Verarbeitungspflichten aus Artikel 28, wie im [Trust Center-FAQ](https://www.microsoft.com/trustcenter/privacy/gdpr/gdpr-faqs) beschrieben. Im Hinblick auf Abfragen von Microsoft Search, die im öffentlichen Bing verwendet werden, gilt Microsoft als Datenverantwortlicher und hat Maßnahmen implementiert, um die Abfragen wie in der DSGVO beschrieben, unkenntlich zu machen.

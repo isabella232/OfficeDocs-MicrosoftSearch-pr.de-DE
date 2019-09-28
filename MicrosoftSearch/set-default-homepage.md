@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: c020bd72-9906-4dfd-bc77-57287f5927ce
 ROBOTS: NOINDEX
 description: Erfahren Sie, wie Bing als standardmäßige Startseite für Ihr Unternehmen mit Microsoft Search festlegen.
-ms.openlocfilehash: 707b6fefe1bd3e096f758df92fedca28f3f1530a
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: c3302863fab8888b8304b909c2c74ce71b391ade
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639829"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37289009"
 ---
 # <a name="make-bingcom-the-default-home-page"></a>Festlegen von Bing.com als Standardstartseite
 
@@ -40,11 +40,11 @@ Benutzer können dies nicht mehr ändern, sobald diese Richtlinie festgelegt wur
 ## <a name="google-chrome-on-windows-xp-sp2-or-later"></a>Google Chrome unter Windows XP SP2 oder höher
 
 
-Den Windows Support-Artikel zum Verwalten von ADMX-Dateien und die neuesten ADMX-Dateien für verschiedene Windows-Versionen finden Sie [auf der Microsoft-Supportwebsite](https://support.microsoft.com/de-DE/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra).
+Den Windows Support-Artikel zum Verwalten von ADMX-Dateien und die neuesten ADMX-Dateien für verschiedene Windows-Versionen finden Sie [auf der Microsoft-Supportwebsite](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra).
 
 Sie benötigen auch die neueste Google-Richtliniendatei. Sie finden sie unter [Hilfe zu Google Chrome Enterprise](https://support.google.com/chrome/a/answer/187202).
   
-Wenn Sie die in diesem Abschnitt beschriebenen Einstellungen in der Gruppenrichtlinien-Verwaltungskonsole nicht finden, laden Sie die entsprechenden ADMX herunter, und kopieren Sie sie in den [zentralen Speicher](https://docs.microsoft.com/de-DE/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29). Der zentrale Speicher auf dem Controller ist ein Ordner mit der folgenden Benennungskonvention:
+Wenn Sie die in diesem Abschnitt beschriebenen Einstellungen in der Gruppenrichtlinien-Verwaltungskonsole nicht finden, laden Sie die entsprechenden ADMX herunter, und kopieren Sie sie in den [zentralen Speicher](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29). Der zentrale Speicher auf dem Controller ist ein Ordner mit der folgenden Benennungskonvention:
   
  **%systemroot%\sysvol\\<domain\>\policies\PolicyDefinitions**
   

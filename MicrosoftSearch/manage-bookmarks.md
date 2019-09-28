@@ -1,5 +1,5 @@
 ---
-title: Lesezeichen verwalten
+title: Verwalten von Lesezeichen
 ms.author: anfowler
 author: adefowler
 manager: mnirkhe
@@ -13,19 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
-description: Erstellen und aktualisieren Sie Lesezeichen und Methoden zur Massenbearbeitung von Lesezeichenergebnissen für Microsoft Search.
-ms.openlocfilehash: 0cd37ebcd7cd3ea7bbe55064fd41a3c42b2e4725
-ms.sourcegitcommit: f9760d027637cc0d2e5c3a9e47928422cb6e452a
-ms.translationtype: HT
+description: Erstellen und Aktualisieren von Lesezeichen und Möglichkeiten zum Massen bearbeiten von Lesezeichen Ergebnissen für Microsoft Search
+ms.openlocfilehash: 02b9bfecd97210ba8cd5b46bf3bc108bf66b6f01
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36170320"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288973"
 ---
-# <a name="manage-bookmarks"></a>Lesezeichen verwalten
+# <a name="manage-bookmarks"></a>Verwalten von Lesezeichen
 
 Sie können ein Lesezeichen in wenigen Schritten erstellen. Jedes Lesezeichen enthält einen Titel, eine URL und eine Gruppe von Schlüsselwörtern, die es auslösen. Ein Lesezeichen kann mehrere Schlüsselwörter haben, und mehrere Lesezeichen können ein gemeinsames Schlüsselwort nutzen, aber ein reserviertes Schlüsselwort kann nicht gemeinsam genutzt werden. Wenn ein Lesezeichen erstellt oder geändert wird, wird der Suchindex sofort aktualisiert, und das Lesezeichen steht Benutzern sofort zur Verfügung.
 
-Wenn Ihre Organisation höhergestufte Ergebnisse in SharePoint eingerichtet hat, können Sie die höhergestuften Ergebnisse in **Microsoft Search** importieren und den importierten Inhalt für Ihre Benutzer verfügbar machen. Dies ist eine einfache Möglichkeit, Suchergebnisse schnell aufzufüllen, sobald Sie **Microsoft Search** einrichten, und es für Ihre Benutzer effektiver zu gestalten. Wir empfehlen Ihnen, höhergestufte Ergebnisse aus SharePoint als Referenz zu verwenden, um zu verstehen, wie man relevante Suchergebnisse benennt und erstellt. 
+Wenn Ihre Organisation die Ergebnisse in SharePoint höher gestuft hat, können Sie die heraufgestuften Ergebnisse in **Microsoft Search** importieren und die importierten Inhalte ihren Benutzern zur Verfügung stellen. Dies ist eine einfache Möglichkeit, Suchergebnisse schnell aufzufüllen, sobald Sie **Microsoft Search** einrichten, und es für Ihre Benutzer effektiver zu gestalten. Wir empfehlen Ihnen, höhergestufte Ergebnisse aus SharePoint als Referenz zu verwenden, um zu verstehen, wie man relevante Suchergebnisse benennt und erstellt. 
 
 ## <a name="add-or-edit-a-single-bookmark"></a>Hinzufügen oder Bearbeiten eines einzelnen Lesezeichens
 1. Gehen Sie zum **Microsoft 365 Admin Center**.
@@ -39,7 +39,7 @@ Standardmäßig ist die Registerkarte **Lesezeichen** ausgewählt.
 Suchadministratoren können Suchinhalte mühelos mithilfe von Browsererweiterungen erstellen. Installieren Sie die Browsererweiterung, und gehen Sie dann zu der Website, die Sie als Lesezeichen hinzufügen möchten, und fügen die Website als Lesezeichen hinzu.
 
 Derzeit sind Browsererweiterungen für Microsoft Edge und Chrome verfügbar. 
-- Gehen Sie zum Herunterladen der Microsoft Edge-Erweiterung zum [Microsoft Store](https://www.microsoft.com/en-us/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab), und laden Sie die App herunter.
+- Gehen Sie zum Herunterladen der Microsoft Edge-Erweiterung zum [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab), und laden Sie die App herunter.
 - Gehen Sie zum Herunterladen der Chrome-Erweiterung zum [Chrome Web Store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm), und laden Sie die App herunter.
 
 ## <a name="bulk-add-or-edit-bookmarks"></a>Massenhinzufügen oder -bearbeiten von Lesezeichen
@@ -81,12 +81,13 @@ Helfen Sie Ihren Benutzern beim Ausführen von Aufgaben, z. B. der Eingabe von U
 
 ### <a name="what-are-powerapps"></a>Was sind PowerApps?
 PowerApps ist ein Dienst, mit dem Sie Geschäfts-Apps erstellen können, die in einem Browser oder auf einem Smartphone oder Tablet ausgeführt werden, ohne dass eine Codierung erforderlich ist. PowerApps funktionieren in jedem beliebigen Browser und auf jedem beliebigen Gerät und können in weniger als einer Minute hinzugefügt werden. Weitere Informationen zu PowerApps finden Sie unter:
-- [Interaktives Lernen](https://docs.microsoft.com/de-DE/learn/browse/?products=powerapps)
-- [Dokumentation](https://docs.microsoft.com/de-DE/powerapps/maker/canvas-apps/get-sessionid)
+- 
+  [Interaktives Lernen](https://docs.microsoft.com/learn/browse/?products=powerapps)
+- [Dokumentation](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid)
 - [PowerApps Home](https://make.preview.powerapps.com/environments/839eace6-59ab-4243-97ec-a5b8fcc104e4/home)
 
 ### <a name="add-a-powerapp-to-a-bookmark"></a>Hinzufügen einer PowerApp zu einem Lesezeichen
-1. Suchen Sie die [App-ID für die PowerApp](https://docs.microsoft.com/de-DE/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id), die Sie hinzufügen möchten.
+1. Suchen Sie die [App-ID für die PowerApp](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id), die Sie hinzufügen möchten.
 1. Melden Sie sich an und gehen Sie zum **Microsoft 365 Admin Center**.
 1. Wechseln Sie im Navigationsbereich zu **Einstellungen**, und wählen Sie dann **Microsoft Search** aus.
 1. Fügen Sie ein Lesezeichen hinzu oder suchen Sie ein vorhandenes Lesezeichen, dem Sie eine **PowerApp** hinzufügen möchten.

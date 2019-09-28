@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: 94f6fa41-0570-4668-b2fe-d51ed177716c
 ROBOTS: NOINDEX
 description: Erfahren Sie, wie Sie sich automatisch bei der Microsoft-Suche anmelden können, um Arbeitsergebnisse schnell und einfach zu finden.
-ms.openlocfilehash: a52cc9c88202e662b8598efa451b2bb964a861dc
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 31177e8a6c565cbb002a69ac50e16de3056008b4
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591035"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288964"
 ---
 # <a name="why-am-i-automatically-signed-in"></a>Warum werde ich automatisch angemeldet?
 
@@ -41,11 +41,11 @@ Jede Organisation ist anders, und Microsoft kann nicht garantieren, wie Ihre Suc
   
 ## <a name="sign-out-of-microsoft-search"></a>Abmelden bei der Microsoft-Suche
 
-Sie können sich jederzeit bei Bing abmelden: Klicken Sie in der oberen rechten Ecke einer Bing-Seite auf Ihr Profil, und klicken Sie dann **** auf Abmelden.
+Sie können sich jederzeit bei Bing abmelden: Klicken Sie in der oberen rechten Ecke einer Bing-Seite auf Ihr Profil, und klicken Sie dann auf **Abmelden**.
   
 Sie werden auf diesem Gerät nicht automatisch erneut angemeldet. Wenn Sie andere Browser oder Geräte zur Anmeldung bei der Microsoft-Suche verwendet haben, müssen Sie sich auch dort abmelden. 
   
-Wenn Sie abgemeldet sind, erhalten Ihre Suchvorgänge keinen zusätzlichen Schutz. Sie werden als standardmäßige Bing-Consumer-Suchvorgänge behandelt und unterliegen der [Microsoft-Datenschutzerklärung](https://privacy.microsoft.com/en-us/privacystatement).
+Wenn Sie abgemeldet sind, erhalten Ihre Suchvorgänge keinen zusätzlichen Schutz. Sie werden als standardmäßige Bing-Consumer-Suchvorgänge behandelt und unterliegen der [Microsoft-Datenschutzerklärung](https://privacy.microsoft.com/privacystatement).
   
 ## <a name="view-your-search-history"></a>Anzeigen des Suchverlaufs
 

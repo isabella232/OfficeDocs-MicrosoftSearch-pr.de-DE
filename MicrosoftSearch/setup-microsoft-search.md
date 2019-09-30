@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erstmaliges Einrichten von Microsoft Search.
-ms.openlocfilehash: 7c80701e83fea7b9b93e4e01f98fd1eeedbfa749
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: 3b3df3e3b3cb3e94abdf57bbb2c7e2db5f174898
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639500"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288991"
 ---
 # <a name="set-up-microsoft-search"></a>Einrichten von Microsoft Search
 
@@ -32,11 +32,11 @@ Microsoft Search ist im Rahmen von Microsoft 365 standardmäßig für alle Micro
 
 Sie können Microsoft Search vom Microsoft 365 Admin Center aus verwalten.
 
-1. Wechseln Sie im Microsoft 365 Admin Center zu **Einstellungen** > **Microsoft**.
+1. Wechseln Sie im Microsoft 365 Admin Center zu **Einstellungen** > **Microsoft Search**.
 
-**Hinweis:** Wenn Microsoft Search unter **Einstellungen** NICHT angezeigt wird, aktivieren Sie den Schalter **Preview testen** in der rechten oberen Ecke einer beliebigen Admin Center-Seite.
+**Bitte beachten:** Wenn Microsoft Search unter **Einstellungen** NICHT angezeigt wird, aktivieren Sie den Schalter für **Preview testen** (Try the preview) in der rechten oberen Ecke einer beliebigen Admin Center-Seite.
 
-Als Administrator sollten Sie einige Dinge berücksichtigen, durch die Sie die Microsoft Search-Benutzeroberfläche in Ihrer Organisation effizient und benutzerfreundlich gestalten können.
+Als Administrator sollten Sie einige Dinge berücksichtigen, durch die Sie die Microsoft Search-Nutzererfahrung in Ihrer Organisation effizient und benutzerfreundlich gestalten können.
 
 ## <a name="step-1-check-access-level-of-your-users"></a>Schritt 1: Zugriffsebene Ihrer Benutzer überprüfen
 
@@ -48,18 +48,18 @@ Microsoft Search respektiert die Sicherheitseinstellungen der Inhaltsquelle. Wel
 | Kontakte          | Sie können festlegen, dass bestimmte Benutzer in Ihrer Adressliste nicht durchsucht werden, indem Sie den Parameter `HiddenFromAddressListEnabled` unter Verwendung des Cmdlets [Set-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-user) auf `true` festlegen. |
 | Microsoft Teams | [Verwalten des Benutzerzugriffs auf Microsoft Teams](https://docs.microsoft.com/microsoftteams/user-access)                                                                                                                                                      |
 | OneDrive        | [Verwalten der Freigabe](https://docs.microsoft.com/OneDrive/manage-sharing)                                                                                                                                                                                |
-| SharePoint      | [Planung von Berechtigungen](https://docs.microsoft.com/de-DE/sharepoint/plan-your-permissions-strategy)<br> [Erstellen von Berechtigungsstufen](https://docs.microsoft.com/de-DE/sharepoint/how-to-create-and-edit-permission-levels)                          |
+| SharePoint      | [Planung von Berechtigungen](https://docs.microsoft.com/sharepoint/plan-your-permissions-strategy)<br> [Erstellen von Berechtigungsstufen](https://docs.microsoft.com/sharepoint/how-to-create-and-edit-permission-levels)                          |
 | OneNote         | In OneNote eingebettete Dateien können nicht durchsucht werden. [Ändern der Berechtigungen für ein Notizbuch auf OneDrive](https://support.office.com/article/B9600CCF-045A-40E6-9913-4A7EB02869A5)                                                                    |
 | Yammer          | [Yammer-Sicherheitseinstellungen](https://docs.microsoft.com/Yammer/manage-security-and-compliance/yammer-security-settings)                                                                                                                               |
 
 ## <a name="step-2-assign-search-admin-and-search-editor"></a>Schritt 2: Suchadministratoren und Such-Editoren ernennen
 
-In Microsoft Search können Sie die Sucheinstellungen und Inhalte Ihrer Organisation mit verwalten, indem Sie den Benutzern diese Rollen zuweisen:
+In Microsoft Search können Sie die Sucheinstellungen und Inhalte Ihrer Organisation mitverwalten, indem Sie den Benutzern diese Rollen zuweisen:
 
-1. **Suchadministrator**: Diese Rolle kann Suchergebnisinhalte erstellen und verwalten sowie Abfrageeinstellungen für verbesserte Suchergebnisse innerhalb der Organisation definieren. Der Suchadministrator verwaltet die Microsoft Search-Konfiguration und kann alle Inhaltsverwaltungsaufgaben ausführen, die ein Such-Editor durchführen kann.
-2. **Such-Editor**: Erstellt, verwaltet und löscht Inhalte für Microsoft Search im Microsoft 365 Admin Center. Diese Rolle kann redaktionelle Inhalte wie häufig gestellte Fragen und Antworten, wichtige Orte, häufig gesuchte und genutzte Websites und Apps erstellen und verwalten.
+1. **Suchadministrator**: Diese Rolle kann Suchergebnisinhalte erstellen und verwalten sowie Abfrageeinstellungen für verbesserte Suchergebnisse innerhalb der Organisation definieren. Der Suchadministrator verwaltet die Microsoft Search-Konfiguration und kann alle Inhaltsverwaltungsaufgaben ausführen, die ein Such-Editor durchführen darf.
+2. **Such-Editor:** Erstellt, verwaltet und löscht Inhalte für Microsoft Search im Microsoft 365 Admin Center. Diese Rolle kann redaktionelle Inhalte wie häufig gestellte Fragen und Antworten, wichtige Orte, häufig gesuchte und genutzte Websites und Apps erstellen und verwalten.
 
-Aktuell müssen die Rollen "Suchadministrator" und "Such-Editor" von einem globalen Administrator zugewiesen werden. Weitere Informationen finden Sie unter [Zuweisen von Administratorrollen](https://docs.microsoft.com/de-DE/office365/admin/add-users/assign-admin-roles?view=o365-worldwide).
+Aktuell müssen die Rollen „Suchadministrator“ und „Such-Editor“ von einem globalen Administrator zugewiesen werden. Weitere Informationen finden Sie unter [Administrator-Rollen zuweisen](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles?view=o365-worldwide) (Assign admin roles).
 
 Microsoft Search-Administratoren können die Suchoberfläche für Endbenutzer direkt beeinflussen. Dazu gehört die Auswahl der Ergebnistypen, die Sie Ihren Benutzern zur Verfügung stellen möchten. Es kann für eine Person schwierig sein, maßgebliche Inhalte zu vielen verschiedenen Themen, nach denen Benutzer in einer Organisation suchen, auszuwählen und zu erstellen. Es wird empfohlen, dass Sie die Expertise und das Wissen von Experten (SMEs) und anderen Benutzern nutzen, indem Sie sie als Such-Editoren hinzufügen.
 
@@ -69,7 +69,7 @@ Microsoft Search stellt Administratoren Tools zur Verfügung, mit denen sie eine
 
 - **Lesezeichen:** Lesezeichen ähneln den höhergestuften Ergebnis in SharePoint und tragen dazu bei, die bestmöglichen Ergebnisse für die Anfragen Ihrer Benutzer an die Spitze der Suchergebnisse zu setzen und es Ihren Benutzern so leicht zu machen, wichtige interne Websites zu finden.
 - **Fragen und Antworten:** Das Feature "Fragen und Antworten" ähnelt den häufig gestellten Fragen (FAQs) und liegen in der Regel in einem Frage- und Antwortformat vor. Hier werden die bestmöglichen Antworten auf die arbeitsbezogenen Fragen Ihrer Benutzer bereitgestellt.
-- **Standorte:** Standorte sind Adressen, mit denen Benutzer Gebäude, Büros und Campus Ihrer Organisation leichter finden.
+- **Standorte:** Standorte sind Adressen, mit denen Benutzer Gebäude, Büros und Campusbereiche Ihrer Organisation leichter finden.
 
 Je mehr Lesezeichen, Fragen und Antworten und Standorte Sie verwenden, desto mehr Wert und Nutzen bieten Sie den Benutzern. Zu viele dieser Elemente können jedoch einen erheblichen Verwaltungsaufwand verursachen, da sie regelmäßig überprüft und aktualisiert werden müssen, damit die Ergebnisse relevant und aktuell bleiben.
 
@@ -85,6 +85,6 @@ Informationen zum Erstellen und Verwalten von Suchinhalten finden Sie unter [Inh
 
 Erstellen Sie Self-Service-Ressourcen, auf die Mitarbeiter selbst leicht zugreifen können. Dies hilft, die Gesamtbelastung für Sie und Ihr Team zu reduzieren, die Kommunikation ständig voranzutreiben und Mitarbeiter bei Selbststudium und -weiterbildung zu unterstützen. Bieten Sie Ihren Benutzern Kommunikation, FAQs, Videos und aufgezeichnete Schulungen oder Webinare an. Hier finden Sie einige hilfreiche Links für den Einstieg:
 
-- [Finden erforderlicher Informationen in Office mit Microsoft Search](https://support.office.com/article/find-what-you-need-with-microsoft-search-in-office-2457d4d8-48a8-4ad4-ab89-5a0657aa8446?ui=en-US&rs=en-US&ad=US)
+- [Finden erforderlicher Informationen in Office mit Microsoft Search](https://support.office.com/article/find-what-you-need-with-microsoft-search-in-office-2457d4d8-48a8-4ad4-ab89-5a0657aa8446)
 - [Office 365-Schulungscenter](https://support.office.com/office-training-center)
-- [Microsoft Search Center](https://support.office.com/de-DE/article/-working-title-microsoft-search-center-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc?ui=en-US&rs=en-US&ad=US)
+- [Microsoft Search Center](https://support.office.com/article/-working-title-microsoft-search-center-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc)

@@ -10,6 +10,7 @@
 ##[Verwalten von Lesezeichen](manage-bookmarks.md)
 ##[F & As verwalten](manage-qas.md)
 ##[Verwalten von Speicherorten](manage-locations.md)
+##[Verwalten von Grundrissen](manage-floorplans.md)
 #[Einführungsleitfaden für Benutzer](user-adoption-guide.md)
 #[Häufig gestellte Fragen](faqs.md)
 #[Verwendung von Microsoft Search](use/about-microsoft-search.md)

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Hier erhalten Sie einen Überblick über Microsoft Search, dessen Vorteile und welche Apps gegenwärtig Microsoft Search umfassen.
-ms.openlocfilehash: 55b6cad9f871eb1eb8d103c51e7cfeda02e6a452
-ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
+ms.openlocfilehash: c0599a09b2018062b1181762c2ce3c93cb16367a
+ms.sourcegitcommit: 5204b3c85e2fc190a8807d5268fb87145624a969
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37289045"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "37502938"
 ---
 # <a name="overview-of-microsoft-search"></a>Übersicht über Microsoft Search 
 
@@ -29,7 +29,7 @@ Microsoft Search unterstützt Benutzer beim Finden der richtigen Antworten, Pers
 - Benutzer erhalten Ergebnisse, die im **Kontext** der App relevant sind, aus der heraus sie suchen. Wenn sie z. B. in Outlook suchen, erhalten sie E-Mails, keine Websites wie in SharePoint. Bei der Suche in SharePoint erhalten sie Websites, Seiten und Dateien.
 - Ungeachtet der App, in der Benutzer arbeiten, ist Microsoft Search **privat**.  Microsoft Search verwendet Informationen aus Microsoft Graph, um Ergebnisse anzuzeigen, die für die einzelnen Benutzer relevant sind. Benutzer sehen möglicherweise andere Ergebnisse, auch wenn sie nach denselben Wörtern suchen. Sie sehen nur Ergebnisse, auf die sie bereits Zugriff haben. Microsoft Search ändert keine Berechtigungen.
 - Benutzer müssen sich nicht merken, wo die Informationen gespeichert sind. Beispiel: Ein Benutzer arbeitet in Word und möchte Informationen aus einer Präsentation wiederverwenden, die ein Kollege über OneDrive geteilt hat. Es ist nicht erforderlich, zu OneDrive zu wechseln und nach dieser Präsentation zu suchen. Er kann einfach aus Word suchen.  
-- In Bing erhalten Benutzer zusätzlich zu den Ergebnissen aus dem Internet auch Ergebnisse aus ihrer Organisation.
+- In [Bing](https://bing.com) erhalten Benutzer zusätzlich zu den Ergebnissen aus dem Internet auch Ergebnisse aus ihrer Organisation.
 
 ## <a name="what-users-see"></a>Anzeige für Benutzer
 
@@ -147,20 +147,14 @@ Microsoft Search in SharePoint ist die moderne Suchoberfläche in SharePoint Onl
 
 Sie können die klassische Suchumgebung anpassen, z. B. indem Sie benutzerdefinierte Einschränkungen zur Suchergebnisseite hinzufügen oder bestimmte Arten von Ergebnissen anders darstellen. In SharePoint können Sie Microsoft Search so nicht anpassen. Einige der Anpassungen, die Sie für die klassische Suche vornehmen, können sich auf die Microsoft Search in SharePoint auswirken. Wenn Ihre Organisation beide Suchfunktionen in SharePoint verwendet, [informieren Sie sich bitte über die Unterschiede, und wie Sie Auswirkungen auf Microsoft Search in SharePoint vermeiden können](https://docs.microsoft.com/sharepoint/differences-classic-modern-search).
 
-## <a name="microsoft-search-in-bing"></a>Microsoft Search in Bing
-
-Da arbeitsbezogene Suchvorgänge vertraulich sein können, besitzt Microsoft Search eine Reihe von Vertrauensmaßnahmen zur Handhabung der öffentlichen Webergebnisse von Bing.
-
-Microsoft Search-Anfragen erfolgen über HTTPS. Dadurch wird sichergestellt, dass die Verbindung mit Ende-zu-Ende verschlüsselt wird, um die Sicherheit zu erhöhen. Zudem wird bei allen Suchprotokollen im Zusammenhang mit Microsoft Search-Datenverkehr die Identifizierung rückgängig gemacht, und die Suchprotokolle werden separat vom öffentlichen Nicht-Microsoft Search-Datenverkehr gespeichert.
-
-Unabhängig davon, ob eine Benutzerabfrage ein oder mehrere arbeitsbezogene Ergebnisse in der übermittelten Antwort enthält, werden folgende Maßnahmen getroffen:
-
-**Protokollierung** – Alle Suchprotokolle, die sich auf den Microsoft Search-Datenverkehr beziehen, werden für die Dauer von 18 Monaten in nicht identifizierbarem Zustand aufbewahrt. Abfragen, die in diesen Systemprotokollen gespeichert sind, werden lediglich zum Modellieren und Trainieren von öffentlichen Features wie der Vorschlagssuche oder bei verwandten Suchvorgängen für öffentliche Webergebnisse verwendet, wenn eine Reihe von Einschränkungen und Frequenz-Schwellenwerten erfüllt sind, was uns darauf Vertrauen lässt, dass diese Abfragen allgemein und nicht für eine bestimmte Organisation spezifisch sind. Die Abfrage muss in einer bedeutenden Anzahl von Fällen in Verbindung mit Daten von Benutzern vorkommen, welche die Microsoft Suchfunktion nicht verwenden und die Abfrage darf nicht ausschließlich Enterprise-Suchergebnisse auslösen. Abfragen, die diese Anforderungen nicht erfüllen, werden getrennt vom öffentlichen, nicht von Microsoft durchgeführten Such Datenverkehr gespeichert. Der eingeschränkte Zugriff wird über verschiedene Sicherheitsmechanismen verwaltet, einschließlich Sicherheitsgruppen und anderen Ebenen innerhalb des Engineering-Systems.
-
-**Suchverlauf** – Wenn Sie mit einem Geschäfts-, Schul- oder Unikonto angemeldet sind, steht der Suchverlauf eines Benutzers nicht auf anderen Computern oder Geräten zur Verfügung.
-
-**Werbung** – Suchabfragen von Unternehmen werden nie für Werbetreibende freigegeben und diesen auch nicht vorgeschlagen.
-Werbung wird nie basierend auf der Arbeitsidentität oder Organisation eines Benutzers ausgerichtet.
+## <a name="microsoft-search-in-bing-protects-enterprise-searches"></a>Microsoft Search in Bing schützt die Unternehmenssuche 
+Wenn ein Benutzer eine Unternehmenssuchabfrage in Microsoft Search eingibt, erfolgen zwei gleichzeitige Suchanforderungen auf: (1) eine Suche in den internen Ressourcen des Unternehmens, und (2) eine separate Suche nach öffentlichen Ergebnissen aus Bing.com. Da Unternehmenssuchen möglicherweise sensibel sind, hat Microsoft Search eine Reihe von Vertrauensmeasures implementiert, die beschreiben, wie die getrennte Suche nach öffentlichen Ergebnissen aus Bing.com behandelt wird. 
+-   **Protokollierung**
+    - Alle Suchprotokolle, die sich auf den Microsoft Search-Datenverkehr beziehen, werden von ihrer Arbeitsplatzidentität getrennt.
+    - Wenn eine Reihe von Einschränkungen oder Häufigkeitsschwellenwerten erfüllt sind, die mit hoher Wahrscheinlichkeit darauf schließen lassen, dass die Abfrage nicht spezifisch für eine bestimmte Organisation ist, wird die Abfrage gemäß der Beschreibung im Abschnitt "Bing Services" der [Datenschutzbestimmungen](https://privacy.microsoft.com/privacystatement) behandelt. So werden solche Abfragen z. B. zum Modellieren und Trainieren von öffentlichen Features wie "Vorschlagssuche" oder "Verwandten Suchvorgänge" verwendet. 
+    - Abfragen, die diese Einschränkungen oder Häufigkeitsschwellenwerte nicht erfüllen, werden getrennt vom öffentlichen, Nicht-Microsoft Search-Datenverkehr gespeichert.
+-   **Werbung**
+    - Die auf Bing.com in Verbindung mit Unternehmenssuchen angezeigte Werbung bezieht sich nur auf den Inhalt der Suchabfragen. Anzeigen sind niemals an Benutzer basierend auf Ihrer Arbeitsplatzidentität gerichtet.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -22,14 +22,14 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 08/27/2019
 ms.locfileid: "36639793"
 ---
-# <a name="manage-network-connections"></a><span data-ttu-id="19d2b-103">Verwalten der Netzwerkverbindungen</span><span class="sxs-lookup"><span data-stu-id="19d2b-103">Manage network connections</span></span>
+# <a name="manage-network-connections"></a><span data-ttu-id="e8891-103">Verwalten der Netzwerkverbindungen</span><span class="sxs-lookup"><span data-stu-id="e8891-103">Manage network connections</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="19d2b-104">Dieser Artikel bezieht sich auf Microsoft Search im Bing-Verwaltungsportal.</span><span class="sxs-lookup"><span data-stu-id="19d2b-104">This article applies to the Microsoft Search in Bing admin portal.</span></span> <span data-ttu-id="19d2b-105">Wir verschieben das Portal zum Microsoft 365 Admin Center, und dann wird das Microsoft Search im Bing-Portal entfernt.</span><span class="sxs-lookup"><span data-stu-id="19d2b-105">We’re moving the portal to the Microsoft 365 admin center, and then the Microsoft Search in Bing portal will be removed.</span></span> <span data-ttu-id="19d2b-106">Es wird empfohlen, dass Sie zu Beginn das Microsoft 365 Admin Center verwenden.</span><span class="sxs-lookup"><span data-stu-id="19d2b-106">We recommend that you use the Microsoft 365 admin center to get started.</span></span> <span data-ttu-id="19d2b-107">[Übersicht über Microsoft Search](overview-microsoft-search.md).</span><span class="sxs-lookup"><span data-stu-id="19d2b-107">Overview of Microsoft Search</span></span>
+> <span data-ttu-id="e8891-104">Dieser Artikel bezieht sich auf Microsoft Search im Bing-Verwaltungsportal.</span><span class="sxs-lookup"><span data-stu-id="e8891-104">This article applies to the Microsoft Search in Bing admin portal.</span></span> <span data-ttu-id="e8891-105">Wir verschieben das Portal zum Microsoft 365 Admin Center, und dann wird das Microsoft Search im Bing-Portal entfernt.</span><span class="sxs-lookup"><span data-stu-id="e8891-105">We’re moving the portal to the Microsoft 365 admin center, and then the Microsoft Search in Bing portal will be removed.</span></span> <span data-ttu-id="e8891-106">Es wird empfohlen, dass Sie zu Beginn das Microsoft 365 Admin Center verwenden.</span><span class="sxs-lookup"><span data-stu-id="e8891-106">We recommend that you use the Microsoft 365 admin center to get started.</span></span> <span data-ttu-id="e8891-107">[Übersicht über Microsoft Search](overview-microsoft-search.md).</span><span class="sxs-lookup"><span data-stu-id="e8891-107">Overview of Microsoft Search</span></span>
     
-<span data-ttu-id="19d2b-108">Um sicherzustellen, dass Sie und Ihre Benutzer eine Verbindung zu Microsoft Search-Endpunkten herstellen können, fügen Sie diese URLs zu Ihren Firewall-Zulassungslisten hinzu.</span><span class="sxs-lookup"><span data-stu-id="19d2b-108">To ensure you and your users can connect to Microsoft Search endpoints, add these URLs to your firewall allow lists.</span></span>
+<span data-ttu-id="e8891-108">Um sicherzustellen, dass Sie und Ihre Benutzer eine Verbindung zu Microsoft Search-Endpunkten herstellen können, fügen Sie diese URLs zu Ihren Firewall-Zulassungslisten hinzu.</span><span class="sxs-lookup"><span data-stu-id="e8891-108">To ensure you and your users can connect to Microsoft Search endpoints, add these URLs to your firewall allow lists.</span></span>
   
-## <a name="for-the-microsoft-search-admin-portal"></a><span data-ttu-id="19d2b-109">Für das Microsoft Search-Verwaltungsportal:</span><span class="sxs-lookup"><span data-stu-id="19d2b-109">For the Microsoft Search Admin portal:</span></span>
+## <a name="for-the-microsoft-search-admin-portal"></a><span data-ttu-id="e8891-109">Für das Microsoft Search-Verwaltungsportal:</span><span class="sxs-lookup"><span data-stu-id="e8891-109">For the Microsoft Search Admin portal:</span></span>
 
 - `www.bingatwork.com`
     
@@ -43,7 +43,7 @@ ms.locfileid: "36639793"
     
 - `\*.bingforbusiness.com`
     
-## <a name="for-microsoft-search-in-bing"></a><span data-ttu-id="19d2b-110">Für Microsoft Search in Bing:</span><span class="sxs-lookup"><span data-stu-id="19d2b-110">For Microsoft Search in Bing:</span></span>
+## <a name="for-microsoft-search-in-bing"></a><span data-ttu-id="e8891-110">Für Microsoft Search in Bing:</span><span class="sxs-lookup"><span data-stu-id="e8891-110">For Microsoft Search in Bing:</span></span>
 
 - `business.bing.com`
     

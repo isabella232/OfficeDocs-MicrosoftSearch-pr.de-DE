@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Erstellen und Aktualisieren von Lesezeichen und Möglichkeiten zum Massen bearbeiten von Lesezeichen Ergebnissen für Microsoft Search
-ms.openlocfilehash: 02b9bfecd97210ba8cd5b46bf3bc108bf66b6f01
-ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
+ms.openlocfilehash: fa1da7d120522ea76d68c1a84f7bee7590701c88
+ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288973"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37949221"
 ---
 # <a name="manage-bookmarks"></a>Verwalten von Lesezeichen
 
@@ -65,7 +65,7 @@ Hier sind einige wichtige Punkte, die in Bezug auf die Vorlagendatei zu beachten
 - Wenn ein Lesezeichen mit dem gleichen Titel oder der gleichen URL vorhanden ist, wird das Lesezeichen mit Informationen in der Importdatei aktualisiert.
 - Nicht alle Felder in der Vorlagendatei sind erforderlich, und die erforderlichen Felder variieren je nach dem Lesezeichenstatus.
 - Auf der Grundlage des Felds *Status* werden Lesezeichen als „Entwurf“, „vorgeschlagen“ oder „geplant“ gespeichert, oder sie werden automatisch veröffentlicht.
-- Bei Organisationen mit mehreren Mandanten können Sie Ihre Lesezeichen von einem Mandanten exportieren und zu einem anderen importieren. Sie müssen jedoch die Daten in der Spalte *ID* vor dem Import entfernen.
+- Für Partner, die mehrere Organisationen verwalten, können Sie Ihre Lesezeichen aus einer org exportieren und in eine andere importieren. Sie müssen jedoch die Daten in der Spalte *ID* vor dem Import entfernen.
 
 ### <a name="prevent-import-errors"></a>Vermeiden von Importfehlern
 Sie erhalten eine Fehlermeldung, wenn erforderliche Daten fehlen oder ungültig sind, und eine Protokolldatei mit weiteren Informationen über die zu korrigierenden Zeilen und Spalten wird erstellt. Nehmen Sie die notwendigen Änderungen vor, und versuchen Sie, die Datei erneut zu importieren. Sie können keine Lesezeichen importieren oder speichern, bis alle Fehler behoben sind.
@@ -81,8 +81,7 @@ Helfen Sie Ihren Benutzern beim Ausführen von Aufgaben, z. B. der Eingabe von U
 
 ### <a name="what-are-powerapps"></a>Was sind PowerApps?
 PowerApps ist ein Dienst, mit dem Sie Geschäfts-Apps erstellen können, die in einem Browser oder auf einem Smartphone oder Tablet ausgeführt werden, ohne dass eine Codierung erforderlich ist. PowerApps funktionieren in jedem beliebigen Browser und auf jedem beliebigen Gerät und können in weniger als einer Minute hinzugefügt werden. Weitere Informationen zu PowerApps finden Sie unter:
-- 
-  [Interaktives Lernen](https://docs.microsoft.com/learn/browse/?products=powerapps)
+- [Interaktives Lernen](https://docs.microsoft.com/learn/browse/?products=powerapps)
 - [Dokumentation](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid)
 - [PowerApps Home](https://make.preview.powerapps.com/environments/839eace6-59ab-4243-97ec-a5b8fcc104e4/home)
 

@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 ROBOTS: NOINDEX
 description: Erfahren Sie mehr über Methoden und Prozesse, die Sie bei der erfolgreichen Einführung der Microsoft-Suche in Ihrer Organisation unterstützen.
-ms.openlocfilehash: 3bca460fe4d764fd1fee1eac16faa467c66cd4b9
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: 439c7a8e9fbfdeb5b2bc42276dccb2377f3f0dac
+ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639883"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37949356"
 ---
 # <a name="user-adoption-guide"></a>Einführungsleitfaden für Benutzer
 
@@ -38,12 +38,12 @@ Die Tabelle zeigt die Team Hierarchie und den Beitrag jeder Person.
   
 |**Rolle**|**Verantwortung**|**Department**|
 |:-----|:-----|:-----|
-|Executive Sponsor  <br/> |Grundlegendes zu den Konzepten und Werten der Microsoft-Suche für Ihre Organisation  <br/> Bereitstellen von Führungsunterstützung für IT/Business-Team  <br/> Ressourcen zuordnen  <br/> Direkte Kommunikation mit den Mitarbeitern  <br/> |Führungskräfte  <br/> |
+|Leitenden Sponsors  <br/> |Grundlegendes zu den Konzepten und Werten der Microsoft-Suche für Ihre Organisation  <br/> Bereitstellen von Führungsunterstützung für IT/Business-Team  <br/> Ressourcen zuordnen  <br/> Direkte Kommunikation mit den Mitarbeitern  <br/> |Führungskräfte  <br/> |
 |Geschäftsbesitzer  <br/> |Identifizieren von Produkt-und Benutzerszenarien  <br/> Bestimmen der Erfolgsmetrik für Abteilungen und Organisation  <br/> |Any  <br/> |
 |Change Management-Team  <br/> |Sicherstellen, dass der Produkt Wert leicht zu verstehen ist  <br/> Erstellen eines Plans für das Rollout  <br/> |IT  <br/> |
-|Pioniere  <br/> |Evangelisieren des Produkts für Kollegen und Teams  <br/> |Any (Mitarbeiter)  <br/> |
+|Experten  <br/> |Evangelisieren des Produkts für Kollegen und Teams  <br/> |Any (Mitarbeiter)  <br/> |
 |Suchadministrator  <br/> |Identifizieren der Mitglieder des Haupt Teams für die Benutzerakzeptanz  <br/> Verwalten der Microsoft-Suche, einschließlich Aussehen und Verhalten der Erfahrung und der laufenden Verwaltung  <br/> Führen Sie Diskussionen aus, um den Wert von Microsoft Search anzuzeigen.  <br/> |IT  <br/> |
-|Editors  <br/> |Erstellen von Inhalten im Administratorportal  <br/> |IT/any  <br/> |
+|Editors  <br/> |Erstellen von Inhalten im Admin Center  <br/> |IT/any  <br/> |
    
 ## <a name="stage-2-scenarios"></a>Phase 2: Szenarien
 
@@ -71,7 +71,7 @@ Um Ihnen dabei zu helfen, ihre Ziele für das Rollout zu erreichen und positive 
   
 1. **Änderungsverwaltung:** Bestimmen Sie, wie Sie das Bewusstsein für die Microsoft-Suche und den Erfolg der Kommunikation darüber messen. 
     
-2. **Verwendung:** Sie können Daten aus Ihrem Einblicke-Dashboard einschließlich täglicher und monatlicher aktiver Benutzer (Dau und Mau), der Inhaltstypen, die die meisten Ansichten erhalten, und der wichtigsten Suchschlüsselwörter zur Messung der Nutzung im Laufe der Zeit nutzen. Weitere Informationen finden Sie unter [Verwenden des](get-insights.md)Insights-Dashboards.
+2. **Verwendung:** Sie können Daten aus Ihrem Einblicke-Dashboard einschließlich täglicher und monatlicher aktiver Benutzer (Dau und Mau), der Inhaltstypen, die die meisten Ansichten erhalten, und der wichtigsten Suchschlüsselwörter zur Messung der Nutzung im Laufe der Zeit nutzen. Weitere Informationen finden Sie unter [Verwenden des Insights-Dashboards](get-insights.md).
     
 3. **Benutzerzufriedenheit:** Ermitteln Sie anhand der Daten, die Sie in Umfragen und Benutzer Fokusgruppen gesammelt haben, ihren Basisplan. NET Satisfaction (NSAT) und Net Promoter Scores (NPS) können auch hilfreiche Messungen bereitstellen. Unabhängig von der verwendeten Methode sollten Sie Sie konsistent halten, damit Sie die Auswirkungen im Laufe der Zeit sehen können. 
     
@@ -95,7 +95,7 @@ Weitere Informationen finden Sie unter [Planen von Inhalten](plan-your-content.m
   
 Microsoft Search-Benutzer müssen sich bei Bing mit einem Arbeits-oder Schulkonto anmelden. So machen Sie die Anmeldung für Ihre Benutzer so nahtlos wie möglich:
   
-- Stellen Sie sicher, dass Azure Active Directory-Konfigurationen ordnungsgemäß festgelegt sind, einige Benutzer versuchen, sich anzumelden. Weitere Informationen finden Sie unter [Testen](test-single-sign-on.md)des einmaligen Anmeldens.
+- Stellen Sie sicher, dass Azure Active Directory-Konfigurationen ordnungsgemäß festgelegt sind, einige Benutzer versuchen, sich anzumelden. Weitere Informationen finden Sie unter [Testen des einmaligen Anmeldens](test-single-sign-on.md).
     
 - Legen Sie Browser Standardwerte für von einem Unternehmen verwaltete Geräte auf Bing fest. Weitere Informationen finden Sie unter [Festlegen des Standardbrowsers](set-default-browser.md).
     
@@ -121,7 +121,7 @@ Alle Kommunikationen sollten Benutzer darüber informieren, wie Sie sich bei Bin
   
  **Partnerteams einbinden**
   
-Als integraler Bestandteil von Microsoft 365 erfüllt Microsoft Search die dsgvo-und Tier-C-Richtlinien. Je nach Ihrer Organisation kann es erforderlich sein, Informationen zur Microsoft-Suche mit Ihren Datenschutz-und Sicherheitsteams freizugeben. Weitere Informationen finden Sie unter [Security for Microsoft Search](security.md).
+Als integraler Bestandteil von Microsoft 365 erfüllt Microsoft Search die dsgvo-und Tier-C-Richtlinien. Je nach Ihrer Organisation kann es erforderlich sein, Informationen zur Microsoft-Suche mit Ihren Datenschutz-und Sicherheitsteams freizugeben. Weitere Informationen finden Sie unter [Security for Microsoft Search](overview-microsoft-search.md#microsoft-search-in-bing-protects-enterprise-searches).
   
 Stellen Sie sicher, dass Ihr Helpdesk über die Features und Funktionen von Microsoft Search sowie die Benutzeranforderungen für die Anmeldung Bescheid weiß, damit Sie die Benutzer effektiver unterstützen können. Weitere Informationen finden Sie unter [Verwenden von Microsoft Search](use/about-microsoft-search.md) und [FAQs](faqs.md).
   

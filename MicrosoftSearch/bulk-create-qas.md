@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 7bada218-8908-4956-aae3-6ffaeef384ca
 ROBOTS: NoIndex
 description: Fügen Sie Antworten auf häufig gestellte Fragen mit den Importtools im Microsoft Search-Verwaltungsportal schnell hinzu.
-ms.openlocfilehash: c0ec4aaa0ee93e94c8569dc383456018ccc6679d
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
-ms.translationtype: HT
+ms.openlocfilehash: 660f5663ff6238f4ab59dab36d51f1311d5c7260
+ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639775"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37949032"
 ---
 # <a name="bulk-create-qas"></a>Massenerstellung von Fragen und Antworten
 
@@ -45,7 +45,7 @@ Laden Sie die CSV-Vorlage herunter, und verwenden Sie sie zur Massenerstellung o
     
 7. Klicken Sie auf **Importieren**.
 
-# <a name="prevent-import-errors"></a>Vermeiden von Importfehlern      
+## <a name="prevent-import-errors"></a>Vermeiden von Importfehlern      
 Wenn erforderliche Daten fehlen oder ungültig sind, wird eine Fehlermeldung angezeigt. Je nach Fehler wird möglicherweise eine Protokolldatei mit weiteren Informationen zu den Zeilen und Spalten generiert, die korrigiert werden müssen. Nehmen Sie alle erforderlichen Änderungen vor und versuchen Sie erneut, die Datei zu importieren.
 
 > [!NOTE]
@@ -61,7 +61,7 @@ Auf der Grundlage des Statusfelds werden Fragen und Antworten als "Entwurf", "vo
 
 Und wenn Sie die ID eines vorhandenen Frage&Antwort-Eintrags angeben, wird dieser durch die Informationen in der Importdatei ersetzt.
 
-Bei Organisationen mit mehreren Mandanten können Sie Ihre Frage&Antwort-Einträge von einem Mandanten exportieren und zu einem anderen importieren. Sie müssen jedoch alle Daten in der Spalte "ID" vor dem Import entfernen.
+Für Partner, die mehrere Organisationen verwalten, können Sie Ihre Q-&aus einer org exportieren und in eine andere importieren. Sie müssen jedoch alle Daten in der Spalte "ID" vor dem Import entfernen.
 
 Unter [Erstellen von Fragen und Antworten](create-qas.md) erfahren Sie mehr zu erforderlichen und empfohlenen Feldern.
 

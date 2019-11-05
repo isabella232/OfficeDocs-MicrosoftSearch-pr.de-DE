@@ -12,26 +12,26 @@ search.appverid:
 - MET150
 - MOE150
 description: Übersicht über Microsoft Graph-Konnektoren für die Microsfot-Suche
-ms.openlocfilehash: c60154e5769e96cf8a6a4a399d344da259f4e7b0
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: c372d4750c6644f0f98054a2531b6431fb8cd334
+ms.sourcegitcommit: 90f82efc3671c477536cbe8d8846132910b64600
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949796"
+ms.locfileid: "37961953"
 ---
 # <a name="overview-of-microsoft-graph-connectors"></a>Übersicht über Microsoft Graph-Connectors
 
 Microsoft Search indiziert alle Ihre Microsoft 365-Daten, damit Sie für Benutzer durchsucht werden können. Mit Microsoft Graph-Connectors kann Ihre Organisation Daten aus Drittanbietern indizieren, damit Sie in Microsoft-Suchergebnissen angezeigt werden. Die drittanbieterdaten können lokal oder in öffentlichen oder privaten Clouds gehostet werden. Connectors erweitern Sie die Typen von Inhaltsquellen, die in Ihren Microsoft 365-Produktivitäts-apps und dem breiteren Microsoft-Ökosystem durchsucht werden können.
 
 > [!IMPORTANT]
-> **Haftungsausschluss**: Microsoft Graph-Connectors, Indizierungs-APIs und Such-APIs befinden sich derzeit in der Vorschau. Weitere Informationen zur Vorschau finden Sie unter [Connectors Preview](connectors-preview.md). Um an der Vorschau teilzunehmen, müssen Sie zuerst das [Anmeldeformular für Microsoft Graph Connectors Preview](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u)einreichen.
+> **Haftungsausschluss**: Microsoft Graph-Connectors und Microsoft Search-APIs (Index und Suche) befinden sich derzeit in der Vorschau. Weitere Informationen zur Vorschau finden Sie unter [Microsoft Graph Connectors Preview](connectors-preview.md). Um an der Vorschau teilzunehmen, müssen Sie zuerst das [Anmeldeformular für Microsoft Graph Connectors Preview](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u)einreichen.
 
 ## <a name="architecture"></a>Architektur
 Das folgende Architekturdiagramm der Microsoft Graph-Plattform zeigt, wie der Connector-Inhalt durch die Inhaltsindizierung zu Benutzer Ergebnissen in [Microsoft Search](https://docs.microsoft.com/microsoftsearch/overview-microsoft-search) -Clients fließt. In diesem Artikel werden die wichtigsten Bausteine im Datenfluss Prozess von Microsoft Graph Connectors erläutert.
 
-[siehe temporäres Diagramm unten]![](media/highlevel-connectors_FINAL.jpg)
+![](media/highlevel-connectors_FINAL.png)
 
-Die API instanziiert eine Verbindung pro Datenquelle. Anschließend fließen die Quelldaten durch die Inhalts Indizierungs-API von Microsoft, um indiziert und gespeichert zu werden. Hergestellte Verbindungen interagieren mit der Microsoft-Suche, sodass Benutzer Suchergebnisse abrufen können.
+Die API instanziiert eine Verbindung pro Datenquelle. Anschließend werden die Daten von der API indiziert und gespeichert. Hergestellte Verbindungen interagieren mit der Microsoft-Suche, sodass Benutzer Suchergebnisse abrufen können.
 
 Sie können alle von Microsoft erstellten Connectors im [Microsoft 365 Admin Center](https://admin.microsoft.com)konfigurieren. Das Admin Center vereinfacht die Konfiguration Ihres Connectors mit einer einfachen Benutzeroberfläche.
 
@@ -42,7 +42,7 @@ Es gibt derzeit 6 von Microsoft erstellte Connectors, und über 100-Connectors s
 
 Um eine Vorschau der Connectors von einem unserer Ecosystem-Partner anzuzeigen, wenden Sie sich direkt an Sie. Weitere Informationen finden Sie im [Microsoft Graph Connectors-Katalog](connectors-gallery.md).
 
-Sie können auch einen eigenen Connector mit der [Microsoft Graph-Indizierungs-API](/graph/search-index-overview)erstellen.
+Sie können auch [einen eigenen Connector erstellen](https://docs.microsoft.com/graph/search-concept-overview).
 
 ### <a name="connectors-by-microsoft"></a>Connectors von Microsoft
 Die Microsoft Graph Connectors Preview-Version enthält 6 von Microsoft erstellte Connectors. Sie können Sie im [Microsoft 365 Admin Center](https://admin.microsoft.com) einrichten und erfahren, wie Sie [ihren von Microsoft erstellten Connector](configure-connector.md)einrichten.
@@ -72,10 +72,10 @@ Es stehen über 100 Connectors für die Vorschau von unseren Ecosystem-Partnern 
 Erfahren Sie mehr über Connectors von unseren Partnern im [Microsoft Graph Connectors-Katalog](connectors-gallery.md).
 
 ### <a name="build-your-own-connector"></a>Erstellen eines eigenen Connectors
-Um benutzerdefinierte Datentypen oder Dateien zu indizieren, können Entwickler Connectors in [Microsoft Graph](https://developer.microsoft.com/graph/)erstellen. Bei einem Connector handelt es sich um eine Anwendung, die die Microsoft Graph-Indizierungs-API verwendet, um eine Verbindung zu erstellen und Elemente in den Microsoft-Suchindex zu verschieben. Weitere Informationen finden Sie in der [Übersicht zur Microsoft Graph-Indizierungs-API](https://docs.microsoft.com/graph/search-index-overview).
+Um benutzerdefinierte Datentypen oder Dateien zu indizieren, können Entwickler Connectors in [Microsoft Graph](https://developer.microsoft.com/graph/)erstellen. Bei einem Connector handelt es sich um eine Anwendung, mit der [eine Verbindung erstellt](https://docs.microsoft.com/graph/search-index-manage-connections) und Elemente in den Microsoft Search-Index verschoben werden. Weitere Informationen finden Sie in der [Übersicht zum Erweitern der Microsoft-Suchumgebung für apps in Microsoft Graph](https://docs.microsoft.com/graph/search-concept-overview).
 
 ### <a name="search-results-with-your-custom-built-connector"></a>Suchergebnisse mit Ihrem benutzerdefinierten Connector
-Nachdem benutzerdefinierte Daten indiziert wurden, können Entwickler diese Daten mithilfe der Such-API in Microsoft Graph Abfragen. Sie können Ihre Daten in einer beliebigen Anwendung anzeigen. Weitere Informationen finden Sie unter [Übersicht über die Microsoft Graph-Such-API](https://docs.microsoft.com/graph/api/resources/indexing-api-overview).
+Nachdem benutzerdefinierte Daten indiziert wurden, können Entwickler [diese Daten Abfragen](https://docs.microsoft.com/graph/search-concept-custom-types). Sie können Ihre Daten in einer beliebigen Anwendung anzeigen. Weitere Informationen finden Sie in der [Übersicht zum Erweitern der Microsoft-Suchumgebung für apps in Microsoft Graph](https://docs.microsoft.com/graph/search-concept-overview).
 
 ## <a name="license-requirements"></a>Lizenzanforderungen
 Um Daten aus Konnektoren in ihren Suchergebnissen anzuzeigen, benötigen Benutzer eines der folgenden Microsoft 365-Abonnements:

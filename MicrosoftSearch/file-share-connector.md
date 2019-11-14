@@ -3,7 +3,6 @@ title: Dateifreigabe-Connector für Microsoft Search
 ms.author: v-pamcn
 author: TrishaMc1
 manager: mnirkhe
-ms.date: 10/08/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Richten Sie den Dateifreigabe-Konnektor für Microsoft Search ein.
-ms.openlocfilehash: d5fbc1af2868ce7baa70017f617a9731340fb19a
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: 9791ee3460eb174fd7a478baa6a9beb45f1b1aab
+ms.sourcegitcommit: 6b531b2ce7253c16251c7089795dedf1d2f3fc33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949783"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38310716"
 ---
 # <a name="file-share-connector"></a>Dateifreigabe-Konnektor
 
@@ -27,13 +26,15 @@ Mit dem Dateifreigabe-Konnektor können Benutzer in Ihrer Organisation lokale Da
 Dieser Artikel richtet sich an Microsoft 365-Administratoren oder Personen, die einen Dateifreigabe-Konnektor konfigurieren, ausführen und überwachen. Es wird erläutert, wie Sie die Connector-und connectorfunktionen, Einschränkungen und Techniken zur Problembehandlung konfigurieren.
 
 ## <a name="install-a-data-gateway"></a>Installieren eines Datengateways
-Um auf Ihre drittanbieterdaten zugreifen zu können, müssen Sie ein Microsoft Power BI-Gateway installieren und konfigurieren. Weitere Informationen finden Sie unter [Install and on-premises Gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) .  
+Um auf Ihre drittanbieterdaten zugreifen zu können, müssen Sie ein Microsoft Power BI-Gateway installieren und konfigurieren. Weitere Informationen finden Sie unter [Install an on-premises Gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) .  
+
+## <a name="content-requirements"></a>Inhaltsanforderungen
+**Dateitypen**. Nur Dateien in diesen Formaten können indiziert und durchsucht werden: doc, DOCM, docx, dot, DOTX, eml, GIF, HTML, JPEG, MHT, MHTML, msg, nws, OBD, OBT, Odp, ODS, ODT, One, PDF, Pot, PPS, PPT, PPTM, PPTX, txt, XLB, XLC, xlsb, xls, xlsx, XLT, XLXM, XML, XPS und zip. Nur der Textinhalt dieser Formate wird indiziert. Alle Multimedia-Inhalte werden ignoriert.
+ 
+**Dateigrößenbeschränkungen**. Die maximal unterstützte Dateigröße beträgt 100 MB. Dateien, die größer als 100 MB sind, werden von der Indizierung übersprungen. Der maximale Grenzwert für die Post verarbeitete Größe beträgt 4 MB. Die Verarbeitung wird angehalten, wenn die Größe einer Datei 4 MB erreicht. Einige in der Datei vorhandene Ausdrücke funktionieren daher möglicherweise nicht für die Suche.
 
 ## <a name="connect-to-a-data-source"></a>Herstellen einer Verbindung mit einer Datenquelle
-Erstellen Sie auf der Seite mit der **Datenquelle verbinden** einen Ordner, und geben Sie einen Pfad zur Dateifreigabe an. Wählen Sie dann das zuvor installierte Gateway aus. Geben Sie die Anmeldeinformationen für ein Windows-Benutzerkonto mit **Lesezugriff** auf alle Dateien in der Freigabe ein. Anschließend können Sie die in der Freigabe vorhandenen Dateien überprüfen und alle abgerufenen Metadaten anzeigen.
-
-## <a name="manage-search-permissions"></a>Verwalten von Suchberechtigungen
-Der Dateifreigabe-Konnektor unterstützt nur Suchberechtigungen, die für **alle**sichtbar sind. Indizierte Daten werden in den Suchergebnissen angezeigt und sind für alle Benutzer in der Organisation sichtbar.
+Wählen Sie auf der Seite mit **Datenquelle verbinden** die Option **Dateifreigabe** aus, und geben Sie den Namen, die Verbindungs-ID und die Beschreibung an. Geben Sie auf der nächsten Seite den Pfad zur Dateifreigabe an, und wählen Sie das zuvor installierte Gateway aus. Geben Sie die Anmeldeinformationen für ein Windows-Benutzerkonto mit Lesezugriff auf alle Dateien in der Freigabe ein. Durchlaufen Sie die restlichen Einstellungen, und veröffentlichen Sie die Verbindung.
 
 ## <a name="set-the-refresh-schedule"></a>Festlegen des Aktualisierungszeitplans
 Das empfohlene Standardintervall für die Aktualisierungsplanung beträgt 15 Minuten, Sie können es jedoch in ein anderes Intervall ändern, das Sie bevorzugen.
@@ -111,5 +112,5 @@ Wenn etwas mit einer Verbindung kritisch falsch ist, wird der Status als **Fehle
 ## <a name="limitations"></a>Einschränkungen
 Der Dateifreigabe-Konnektor hat diese Einschränkungen in der Vorschauversion:
 * Sie können nur Dateien mit festen Eigenschaften indizieren, keine Dateien mit benutzerdefinierten Eigenschaften.
-* Dateifreigabe-Zugriffssteuerungslisten (Access Control Lists, ACLs) werden derzeit nicht unterstützt.
+* Dateifreigabe-Zugriffssteuerungslisten (Access Control Lists, ACLs) werden derzeit nicht unterstützt. Nur NTFS-ACL-Dateien werden unterstützt.
 * Externe Identitäten werden nicht unterstützt. Sie müssen Azure Active Directory Identitäten zugeordnet werden.

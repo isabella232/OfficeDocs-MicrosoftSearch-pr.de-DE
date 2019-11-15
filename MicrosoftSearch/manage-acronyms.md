@@ -3,7 +3,6 @@ title: Verwalten von Akronym-Antworten in der Microsoft-Suche
 ms.author: v-pamcna
 author: TrishaMc1
 manager: mnirkhe
-ms.date: 10/28/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Antworten zum Erstellen und Aktualisieren von Akronymen in Microsoft Search
-ms.openlocfilehash: 8ff48f1eaa4ef8dab83411fad2f0ee4367158cd1
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: 4f47d5b743709657459ccbc6b03897c29a51e109
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949832"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626819"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Verwalten von Akronymen Antworten in der Microsoft-Suche
 

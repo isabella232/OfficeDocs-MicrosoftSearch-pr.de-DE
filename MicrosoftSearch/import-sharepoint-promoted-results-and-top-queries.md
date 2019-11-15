@@ -3,7 +3,6 @@ title: Importieren von höhergestuften SharePoint-Ergebnissen und den wichtigste
 ms.author: dawholl
 author: dawholl
 manager: kellis
-ms.date: 9/8/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
@@ -15,17 +14,17 @@ search.appverid:
 ms.assetid: 3d2a1498-174e-4214-9cf1-8b58cce5a872
 ROBOTS: NOINDEX
 description: Verwenden von Suchabfragen aus SharePoint zum Erstellen von Arbeitsergebnissen für die Microsoft-Suche
-ms.openlocfilehash: ebfd10f8705ce5b9a36b9c13d549e28a3f1c6b91
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: c69203ce2138a7609e1b52614f8bfccc98bc9616
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639802"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626846"
 ---
 # <a name="import-sharepoint-promoted-results-and-top-queries"></a>Importieren von höhergestuften SharePoint-Ergebnissen und den wichtigsten Abfragen
 
 > [!IMPORTANT]
-> Dieser Artikel bezieht sich auf das Microsoft Search in Bing Admin Portal. Das Portal wird in das Microsoft 365 Admin Center verschoben, und das Microsoft Search in Bing-Portal wird entfernt. Es wird empfohlen, dass Sie das Microsoft 365 Admin Center verwenden, um mit den ersten Schritten zu beginnen. [Übersicht über die Microsoft-Suche](overview-microsoft-search.md).
+> Dieser Artikel bezieht sich auf Microsoft Search im Bing-Verwaltungsportal. Wir verschieben das Portal zum Microsoft 365 Admin Center, und dann wird Microsoft Search im Bing-Portal entfernt. Wir empfehlen, für die ersten Schritte das Microsoft 365 Admin Center zu verwenden. [Übersicht über Microsoft Search](overview-microsoft-search.md).
     
 Um die Abfragen und besten Suchergebnisse von Benutzern zu nutzen, die Sie in SharePoint erstellt haben, enthält Microsoft Search zwei Tools zum Importieren dieser Informationen als vorgeschlagene Lesezeichen: 
   

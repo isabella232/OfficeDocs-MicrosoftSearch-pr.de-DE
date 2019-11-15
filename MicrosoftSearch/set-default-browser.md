@@ -3,24 +3,22 @@ title: Festlegen des Standardbrowsers
 ms.author: anfowler
 author: adefowler
 manager: shohara
-ms.date: 12/20/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: 53e2b71a-348b-4dfe-a504-6e97d573effe
-ROBOTS: NOINDEX
 description: Legen Sie Microsoft Edge oder Internet Explorer als Standardbrowser für Microsoft Search-Benutzer fest.
-ms.openlocfilehash: ed145a1811aba0b58158ed04dd3bf8dc089a0682
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
-ms.translationtype: HT
+ms.openlocfilehash: b99127411d070b37fe34a4f8468449f2354cb6be
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639739"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626936"
 ---
 # <a name="make-microsoft-edge-the-default-browser"></a>Festlegen von Microsoft Edge als Standardbrowser
   

@@ -3,7 +3,6 @@ title: Verwalten von Grundrissen
 ms.author: rasrivas
 author: rasrivas
 manager: tonytha
-ms.date: 11/01/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Das Feature "Grundrisse" in der Microsoft-Suche hilft Benutzern, Personen, Büros und andere Annehmlichkeiten in einem Gebäude zu finden.
-ms.openlocfilehash: 68912a8f440443c14cbc27019c7b30dc2d7a34c6
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: 9871cda3790f210dc0c406d1d29abe2c571c1085
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949804"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626792"
 ---
 # <a name="manage-floor-plans"></a>Verwalten von Grundrissen
 
@@ -90,7 +89,7 @@ Um grundrissplänen zugeordnet zu werden, müssen alle Office-Standorte und Mita
 
 ## <a name="troubleshoot-errors"></a>Beheben von Fehlern
 
-Sie können den nächsten Schritt zur Definition von Boden-, Flügel-und Rauminformationen erst dann durchführen, wenn alle Fehler behoben sind. In der folgenden Tabelle werden Fehlermeldungen und Aktionen zum Beheben der Probleme durch die Datei hochgeladen.
+Sie können den nächsten Schritt zur Definition von Boden-, Flügel-und Rauminformationen erst dann durchführen, wenn alle Fehler behoben sind. In der folgenden Tabelle werden Fehlermeldungen zu Dateiuploads und Aktionen zum Beheben der Probleme aufgeführt.
 
 | Fehlermeldung   | Typ    | Aktion       |
 |:----------------| :--------- | :-------------- |

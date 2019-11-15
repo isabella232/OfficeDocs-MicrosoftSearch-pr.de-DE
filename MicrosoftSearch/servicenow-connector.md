@@ -3,7 +3,6 @@ title: ServiceNow Connector für Microsoft Search
 ms.author: v-pamcn
 author: TrishaMc1
 manager: mnirkhe
-ms.date: 10/08/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten des ServiceNow Connectors für Microsoft Search
-ms.openlocfilehash: b83bf04dc06ffab26a0067d15b36a99496c199a8
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: 78b2831e9a52b6bf0204b5a6b2aba147b529b3f5
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949836"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626954"
 ---
 # <a name="servicenow-connector"></a>ServiceNow-Connector
 
@@ -43,10 +42,10 @@ Die folgende Tabelle enthält Anleitungen zum Ausfüllen des Endpunkts-erstellun
 **Field** | **Beschreibung** | **Empfohlener Wert**
 --- | --- | ---
 Name | Dieser eindeutige Wert identifiziert die Anwendung, für die Sie OAuth-Zugriff benötigen. | Microsoft Search
-Client-ID | Eine schreibgeschützte, automatisch generierte eindeutige ID für die Anwendung. Die Instanz verwendet die Client-ID, wenn Sie ein Zugriffstoken anfordert. | NV
+Client-ID | Eine schreibgeschützte, automatisch generierte eindeutige ID für die Anwendung. Die Instanz verwendet die Client-ID, wenn Sie ein Zugriffstoken anfordert. | –
 Geheimer Client Schlüssel | Mit dieser freigegebenen geheimen Zeichenfolge autorisieren die ServiceNow-Instanz und die Microsoft Search die Kommunikation miteinander. | Beachten Sie bewährte Methoden für die Sicherheit, indem Sie dies als Kennwort behandeln.
 Umleitungs-URL | Eine erforderliche Rückruf-URL, an die der autorisierungsserver umgeleitet wird. | Siehe [OAuth-Rückruf](https://gcs.office.com/v1.0/admin/oauth/callback).
-Logo-URL | Eine URL, die das Bild für das Anwendungslogo enthält. | NV
+Logo-URL | Eine URL, die das Bild für das Anwendungslogo enthält. | –
 Aktiv | Aktivieren Sie das Kontrollkästchen, um die Anwendungsregistrierung aktiv zu machen. | Auf aktiv festlegen
 Lebensdauer des Aktualisierungs Tokens | Die Anzahl der Sekunden, die ein Aktualisierungstoken gültig ist. Standardmäßig laufen Aktualisierungstoken in 100 Tagen (8640000 Sekunden) ab. | 31.536.000 (1 Jahr)
 Lebensdauer des Zugriffstokens | Die Anzahl der Sekunden, die ein Zugriffstoken gültig ist. | 43.200 (12 Stunden)

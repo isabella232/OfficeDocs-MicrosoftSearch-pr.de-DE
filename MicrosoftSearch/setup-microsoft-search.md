@@ -3,22 +3,21 @@ title: Einrichten von Microsoft Search
 ms.author: anfowler
 author: adefowler
 manager: mnirkhe
-ms.date: 08/06/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Erstmaliges Einrichten von Microsoft Search.
-ms.openlocfilehash: 3b3df3e3b3cb3e94abdf57bbb2c7e2db5f174898
-ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
-ms.translationtype: HT
+ms.openlocfilehash: 94ee7ece8a56d599778b151d5b836240d8832762
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288991"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626909"
 ---
 # <a name="set-up-microsoft-search"></a>Einrichten von Microsoft Search
 
@@ -28,7 +27,7 @@ Weitere Informationen zu den Microsoft Search-Features finden Sie unter [Übersi
 
 ## <a name="get-started"></a>Erste Schritte
 
-Microsoft Search ist im Rahmen von Microsoft 365 standardmäßig für alle Microsoft-Apps aktiviert, die das Feature unterstützen. Ein Benutzer braucht sich lediglich mit seinem Geschäfts-, Schul- oder Unikonto anzumelden und einen Browser mit Bing als Standardsuchanbieter zu verwenden.
+Microsoft Search ist im Rahmen von Microsoft 365 standardmäßig für alle Microsoft-Apps aktiviert, die das Feature unterstützen. Es ist kein Setup erforderlich, aber Sie können die allgemeine Microsoft-Suchumgebung durch einige grundlegende administrative Aufgaben verbessern.
 
 Sie können Microsoft Search vom Microsoft 365 Admin Center aus verwalten.
 
@@ -38,21 +37,7 @@ Sie können Microsoft Search vom Microsoft 365 Admin Center aus verwalten.
 
 Als Administrator sollten Sie einige Dinge berücksichtigen, durch die Sie die Microsoft Search-Nutzererfahrung in Ihrer Organisation effizient und benutzerfreundlich gestalten können.
 
-## <a name="step-1-check-access-level-of-your-users"></a>Schritt 1: Zugriffsebene Ihrer Benutzer überprüfen
-
-Microsoft Search respektiert die Sicherheitseinstellungen der Inhaltsquelle. Welche Suchergebnisse Benutzern angezeigt werden, hängt von ihren Berechtigungen und Zugriffsebenen ab. Überprüfen Sie die Zugriffsebenen der Benutzer in Ihrer Organisation, um sicherzustellen, dass Benutzer nur Inhalte finden, auf die sie zugreifen dürfen.
-
-| Dienst         | Beschreibung                                                                                                                                                                                                                                         |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Gruppen          | [Hinzufügen oder Entfernen von Mitgliedern aus Gruppen](https://docs.microsoft.com/office365/admin/create-groups/add-or-remove-members-from-groups)                                                                                                                     |
-| Kontakte          | Sie können festlegen, dass bestimmte Benutzer in Ihrer Adressliste nicht durchsucht werden, indem Sie den Parameter `HiddenFromAddressListEnabled` unter Verwendung des Cmdlets [Set-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-user) auf `true` festlegen. |
-| Microsoft Teams | [Verwalten des Benutzerzugriffs auf Microsoft Teams](https://docs.microsoft.com/microsoftteams/user-access)                                                                                                                                                      |
-| OneDrive        | [Verwalten der Freigabe](https://docs.microsoft.com/OneDrive/manage-sharing)                                                                                                                                                                                |
-| SharePoint      | [Planung von Berechtigungen](https://docs.microsoft.com/sharepoint/plan-your-permissions-strategy)<br> [Erstellen von Berechtigungsstufen](https://docs.microsoft.com/sharepoint/how-to-create-and-edit-permission-levels)                          |
-| OneNote         | In OneNote eingebettete Dateien können nicht durchsucht werden. [Ändern der Berechtigungen für ein Notizbuch auf OneDrive](https://support.office.com/article/B9600CCF-045A-40E6-9913-4A7EB02869A5)                                                                    |
-| Yammer          | [Yammer-Sicherheitseinstellungen](https://docs.microsoft.com/Yammer/manage-security-and-compliance/yammer-security-settings)                                                                                                                               |
-
-## <a name="step-2-assign-search-admin-and-search-editor"></a>Schritt 2: Suchadministratoren und Such-Editoren ernennen
+## <a name="step-1-assign-search-admin-and-search-editor"></a>Schritt 1: Zuweisen von Such-admin und Such-Editor
 
 In Microsoft Search können Sie die Sucheinstellungen und Inhalte Ihrer Organisation mitverwalten, indem Sie den Benutzern diese Rollen zuweisen:
 
@@ -63,27 +48,18 @@ Aktuell müssen die Rollen „Suchadministrator“ und „Such-Editor“ von ein
 
 Microsoft Search-Administratoren können die Suchoberfläche für Endbenutzer direkt beeinflussen. Dazu gehört die Auswahl der Ergebnistypen, die Sie Ihren Benutzern zur Verfügung stellen möchten. Es kann für eine Person schwierig sein, maßgebliche Inhalte zu vielen verschiedenen Themen, nach denen Benutzer in einer Organisation suchen, auszuwählen und zu erstellen. Es wird empfohlen, dass Sie die Expertise und das Wissen von Experten (SMEs) und anderen Benutzern nutzen, indem Sie sie als Such-Editoren hinzufügen.
 
-## <a name="step-3-make-content-easy-to-find"></a>Schritt 3: Inhalte leicht auffindbar machen
+## <a name="step-2-create-answers"></a>Schritt 2: Antworten erstellen
 
-Microsoft Search stellt Administratoren Tools zur Verfügung, mit denen sie eine robuste Suchoberfläche für ihre Benutzer erstellen können. In Microsoft Search können Administratoren drei verschiedene Suchinhalte erstellen, um die Sucherfahrung und Auffindbarkeit von Inhalten zu verbessern:
+Microsoft Search stellt Administratoren Tools zur Verfügung, mit denen sie eine robuste Suchoberfläche für ihre Benutzer erstellen können. In der Microsoft-Suche verfügen Administratoren über drei verschiedene Suchinhalte, die Sie für eine bessere Suchumgebung erstellen und die "Auffindbarkeit" des Inhalts verbessern können:
 
-- **Lesezeichen:** Lesezeichen ähneln den höhergestuften Ergebnis in SharePoint und tragen dazu bei, die bestmöglichen Ergebnisse für die Anfragen Ihrer Benutzer an die Spitze der Suchergebnisse zu setzen und es Ihren Benutzern so leicht zu machen, wichtige interne Websites zu finden.
-- **Fragen und Antworten:** Das Feature "Fragen und Antworten" ähnelt den häufig gestellten Fragen (FAQs) und liegen in der Regel in einem Frage- und Antwortformat vor. Hier werden die bestmöglichen Antworten auf die arbeitsbezogenen Fragen Ihrer Benutzer bereitgestellt.
-- **Standorte:** Standorte sind Adressen, mit denen Benutzer Gebäude, Büros und Campusbereiche Ihrer Organisation leichter finden.
+Lesezeichen sind die am häufigsten verwendeten Antworttypen. Sie fördern die bestmöglichen Ergebnisse für die Abfragen Ihrer Benutzer oben in den Suchergebnissen und erleichtern Ihren Benutzern die Suche nach dem, was Sie suchen.
+Informationsinhalte, die für alle Benutzer verfügbar sind; beispielsweise Informationen über das Unternehmen, Hilfe für Windows und Office-Apps usw. Inhalte, nach denen Personen in der Organisation im Allgemeinen in ihrer täglichen Arbeit suchen. Allgemeine arbeitsbezogene Suchen sind z. B. Mitarbeitervergütungen, Arbeitszeit- und Spesenabrechnung, Übermittlung von Bestellungen und Hilfe von IT-Diensten.
 
-Je mehr Lesezeichen, Fragen und Antworten und Standorte Sie verwenden, desto mehr Wert und Nutzen bieten Sie den Benutzern. Zu viele dieser Elemente können jedoch einen erheblichen Verwaltungsaufwand verursachen, da sie regelmäßig überprüft und aktualisiert werden müssen, damit die Ergebnisse relevant und aktuell bleiben.
+Informationen zum Erstellen und Verwalten von Antworten finden Sie unter [Planen von Inhalten](plan-your-content.md).
 
-Hier sind einige Beispiele für Inhalte, für die Sie die Verwendung von Lesezeichen für Ihre Benutzer in Betracht ziehen sollten:
+## <a name="next-steps"></a>Nächste Schritte
 
-- Organisations-, Produkt- oder Dienstinformationen.
-- Informative Inhalte, die für jedermann verfügbar sind, z. B. Informationen über das Unternehmen, Hilfe zu Windows- und Office-Apps, etc.
-- Inhalte, nach denen Personen in der Organisation im Allgemeinen bei ihrer täglichen Arbeit suchen. Allgemeine arbeitsbezogene Suchen sind z. B. Mitarbeitervergütungen, Arbeitszeit- und Spesenabrechnung, Übermittlung von Bestellungen und Hilfe von IT-Diensten.
-
-Informationen zum Erstellen und Verwalten von Suchinhalten finden Sie unter [Inhalte leicht auffindbar machen](make-content-easy-to-find.md).
-
-## <a name="step-4-training-and-communication"></a>Schritt 4: Schulung und Kommunikation
-
-Erstellen Sie Self-Service-Ressourcen, auf die Mitarbeiter selbst leicht zugreifen können. Dies hilft, die Gesamtbelastung für Sie und Ihr Team zu reduzieren, die Kommunikation ständig voranzutreiben und Mitarbeiter bei Selbststudium und -weiterbildung zu unterstützen. Bieten Sie Ihren Benutzern Kommunikation, FAQs, Videos und aufgezeichnete Schulungen oder Webinare an. Hier finden Sie einige hilfreiche Links für den Einstieg:
+Wenn Sie mehr darüber erfahren möchten, wie Ihre Benutzer die Microsoft-Suche verwenden, lesen Sie die folgenden Artikel:
 
 - [Finden erforderlicher Informationen in Office mit Microsoft Search](https://support.office.com/article/find-what-you-need-with-microsoft-search-in-office-2457d4d8-48a8-4ad4-ab89-5a0657aa8446)
 - [Office 365-Schulungscenter](https://support.office.com/office-training-center)

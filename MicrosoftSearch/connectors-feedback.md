@@ -1,6 +1,6 @@
 ---
 title: Feedback Seite für Connectors
-ms.author: v-pamcn
+ms.author: mounika.narayanan
 author: monaray
 manager: mnirkhe
 ms.audience: Admin
@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Vorgehensweise Bereitstellen von Feedback für Microsoft Search Connectors
-ms.openlocfilehash: 67d921677acf29d861475eca5323e31fbf315418
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: a2ed1b513c0d5f34ba1406ab7c36bec57c7ff3ee
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949797"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626480"
 ---
-# <a name="feedback"></a>Feedback
+# <a name="provide-feedback-for-microsoft-search-connectors"></a>Bereitstellen von Feedback für Microsoft Search-Connectors
 
 Das Microsoft Graph Connectors-Team antwortet auf die Such Verwaltungs Community auf mehreren Kanälen:
 

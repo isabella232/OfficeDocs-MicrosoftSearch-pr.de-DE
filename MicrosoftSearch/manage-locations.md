@@ -3,7 +3,6 @@ title: Orte verwalten
 ms.author: dawholl
 author: dawholl
 manager: kellis
-ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -14,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
 description: Im Laufe der Zeit müssen Sie Status und Inhalt eines Ortes möglicherweise aktualisieren, damit er relevant bleibt. 
-ms.openlocfilehash: d026e518011f3b3739beb2b6aaa044f8a5e9c0d4
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
-ms.translationtype: HT
+ms.openlocfilehash: 25fa6fdb8f95c04332e8df16c7589286ecaefdb0
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591557"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626783"
 ---
 # <a name="manage-locations"></a>Orte verwalten
 
@@ -57,7 +56,7 @@ Hier sind einige wichtige Punkte in Bezug auf die Vorlagendatei:
 - Wenn ein Lesezeichen mit dem gleichen Titel oder der gleichen URL vorhanden ist, wird das Lesezeichen mit Informationen in der Importdatei aktualisiert.
 - Nicht alle Felder in der Vorlagendatei sind erforderlich, und die erforderlichen Felder variieren je nach dem Lesezeichenstatus.
 - Auf der Grundlage des Felds *Status* werden Lesezeichen als „Entwurf“, „vorgeschlagen“ oder „geplant“ gespeichert, oder sie werden automatisch veröffentlicht.
-- Bei Organisationen mit mehreren Mandanten können Sie Ihre Lesezeichen von einem Mandanten exportieren und zu einem anderen importieren. Sie müssen jedoch die Daten in der Spalte *ID* vor dem Import entfernen.
+- Für Partner, die mehrere Organisationen verwalten, können Sie Ihre Lesezeichen aus einer org exportieren und in eine andere importieren. Sie müssen jedoch die Daten in der Spalte *ID* vor dem Import entfernen.
 
 **Hinweis:** Sie können Standorte nicht importieren, wenn Fehler in der Vorlagendatei vorhanden sind. Um Fehler zu verhindern, stellen Sie sicher, dass die Importdatei ordnungsgemäß formatiert ist, und geben Sie alle erforderlichen Informationen an. 
 

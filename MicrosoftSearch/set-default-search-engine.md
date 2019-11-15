@@ -3,24 +3,22 @@ title: Festlegen der Standardsuchmaschine
 ms.author: anfowler
 author: adefowler
 manager: shohara
-ms.date: 12/20/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: ee40010e-5d7f-4ba8-a3f8-d240dab3af6d
-ROBOTS: NOINDEX
 description: Erfahren Sie, wie Sie Bing als Standardsuchmaschine Ihres Unternehmens für Microsoft Search festlegen.
-ms.openlocfilehash: 0106799b4307e979c5fbafc4ed8c1ddb55098b14
-ms.sourcegitcommit: 5204b3c85e2fc190a8807d5268fb87145624a969
-ms.translationtype: HT
+ms.openlocfilehash: 4ae46ba5d2896f645feee28f7b07de600cf4e5b1
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "37502947"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626918"
 ---
 # <a name="make-bing-the-default-search-engine"></a>Festlegen von Bing als Standardsuchmaschine
   

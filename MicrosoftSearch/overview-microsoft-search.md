@@ -1,160 +1,97 @@
 ---
 title: Übersicht über Microsoft Search
-ms.author: tlarsen
-author: tlarsen
-manager: mnirkhe
-ms.date: 12/11/2018
+ms.author: anfowler
+author: adefowler
+manager: shohara
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Hier erhalten Sie einen Überblick über Microsoft Search, dessen Vorteile und welche Apps gegenwärtig Microsoft Search umfassen.
-ms.openlocfilehash: c0599a09b2018062b1181762c2ce3c93cb16367a
-ms.sourcegitcommit: 5204b3c85e2fc190a8807d5268fb87145624a969
-ms.translationtype: HT
+description: Erhalten Sie einen Überblick darüber, was Microsoft-Suche ist, welche Vorteile und welche apps Microsoft Search unterstützen.
+ms.openlocfilehash: 28bd561e53bb1878c601a08e919e37f524a6470c
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "37502938"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626972"
 ---
 # <a name="overview-of-microsoft-search"></a>Übersicht über Microsoft Search 
 
-Microsoft Search ist die einheitliche Suchfunktion in den Microsoft 365-Produktivitäts-Apps und in der umfassenderen Microsoft-Umgebung. Mit der Zeit wird Microsoft Search in mehr und mehr Microsoft 365-Apps verfügbar sein.
+Mit der Microsoft-Suche können Sie herausfinden, was Sie benötigen, um das zu erledigen, woran Sie gerade arbeiten. Unabhängig davon, ob Sie nach Personen, Dateien, Organigrammen, Websites oder Antworten auf häufige Fragen suchen, können Sie die Microsoft-Suche während Ihres Arbeitstags verwenden, um Antworten zu erhalten.
 
 Microsoft Search unterstützt Benutzer beim Finden der richtigen Antworten, Personen und Inhalte, um ihre Aufgaben in der App zu erledigen, in der sie bereits arbeiten.
 
-- Benutzer erhalten Ergebnisse, die im **Kontext** der App relevant sind, aus der heraus sie suchen. Wenn sie z. B. in Outlook suchen, erhalten sie E-Mails, keine Websites wie in SharePoint. Bei der Suche in SharePoint erhalten sie Websites, Seiten und Dateien.
-- Ungeachtet der App, in der Benutzer arbeiten, ist Microsoft Search **privat**.  Microsoft Search verwendet Informationen aus Microsoft Graph, um Ergebnisse anzuzeigen, die für die einzelnen Benutzer relevant sind. Benutzer sehen möglicherweise andere Ergebnisse, auch wenn sie nach denselben Wörtern suchen. Sie sehen nur Ergebnisse, auf die sie bereits Zugriff haben. Microsoft Search ändert keine Berechtigungen.
-- Benutzer müssen sich nicht merken, wo die Informationen gespeichert sind. Beispiel: Ein Benutzer arbeitet in Word und möchte Informationen aus einer Präsentation wiederverwenden, die ein Kollege über OneDrive geteilt hat. Es ist nicht erforderlich, zu OneDrive zu wechseln und nach dieser Präsentation zu suchen. Er kann einfach aus Word suchen.  
+- Benutzer erhalten Ergebnisse, die im **Kontext** der App relevant sind, aus der heraus sie suchen. Wenn Sie beispielsweise in [Microsoft Outlook](https://www.microsoft.com/outlook)suchen, finden Sie e-Mails und keine [SharePoint](http://sharepoint.com/) -Websites. Bei der Suche in SharePoint erhalten sie Websites, Seiten und Dateien.
+- Ungeachtet der App, in der Benutzer arbeiten, ist Microsoft Search **privat**. Microsoft Search verwendet Einblicke aus [Microsoft Graph](https://developer.microsoft.com/graph/) , um Ergebnisse anzuzeigen, die für jeden Benutzer relevant sind. Benutzer sehen möglicherweise andere Ergebnisse, auch wenn sie nach denselben Wörtern suchen. Sie sehen nur Ergebnisse, auf die sie bereits Zugriff haben. Microsoft Search ändert keine Berechtigungen.
+- Benutzer müssen sich nicht merken, wo die Informationen gespeichert sind. Ein Benutzer arbeitet beispielsweise in [Microsoft Word](https://products.office.com/word) und möchte Informationen aus einer Präsentation wieder verwenden, die ein Kollege aus seinem [OneDrive](https://onedrive.live.com/about/)freigegeben hat. Es ist nicht erforderlich, zu OneDrive zu wechseln und nach dieser Präsentation zu suchen. Er kann einfach aus Word suchen.
 - In [Bing](https://bing.com) erhalten Benutzer zusätzlich zu den Ergebnissen aus dem Internet auch Ergebnisse aus ihrer Organisation.
 
 ## <a name="what-users-see"></a>Anzeige für Benutzer
 
-In Bing können Benutzer dasselbe Suchfeld wie für Websuchen verwenden. In den Microsoft 365-Apps wird Benutzern das Microsoft Suchfeld in der Kopfzeile angezeigt. Das sieht ungefähr so aus:
+In [Bing](https://bing.com)verwenden Benutzer dasselbe Suchfeld wie für die Suche im Internet. In den Office-Apps finden Benutzer das Microsoft-Suchfeld in der Kopfzeilenleiste. Das sieht ungefähr so aus:
 
 ![Screenshots von App-Fenstern mit Microsoft Suchfeld in der Kopfzeile](media/Headings_520.png)
 
+Wenn Benutzer in das **Suchfeld** klicken, schlägt die Suche Ergebnisse basierend auf Ihren vorherigen Aktivitäten in Office 365 und basierend auf Inhalten, die in Ihrer Organisation trendorientiert sind. Dateien, an denen sie zuletzt gearbeitet haben, Befehle, die sie kürzlich verwendet haben, sowie Personen, mit denen sie zusammenarbeiten, sind Beispiele für Aktivitäten, die die Suche berücksichtigt. Wenn Benutzer mit der Eingabe in das **Suchfeld** beginnen, werden die vorgeschlagenen Ergebnisse aktualisiert. Benutzer können Suchergebnisse direkt über das **Suchfeld** öffnen. Hier ist ein Beispiel für eine Suche in [SharePoint](http://sharepoint.com/).
 
-Wenn Benutzer in das Suchfeld klicken, schlägt die Suche Ergebnisse basierend auf ihren vorherigen Aktivitäten in Office 365 und basierend auf Inhalten vor, die in Ihrer Organisation im Trend sind. Dateien, an denen sie zuletzt gearbeitet haben, Befehle, die sie kürzlich verwendet haben, sowie Personen, mit denen sie zusammenarbeiten, sind Beispiele für Aktivitäten, die die Suche berücksichtigt. Wenn Benutzer mit der Eingabe im Suchfeld beginnen, werden die vorgeschlagenen Ergebnisse aktualisiert. Benutzer können direkt über das Suchfeld Suchergebnisse öffnen. Hier ein Beispiel für eine Suche in SharePoint.
+![Screenshots des Microsoft Suchfelds mit einer Abfrage und vorgeschlagenen Ergebnissen](media/SERP_text_520.png)
 
-![Screenshots des Microsoft Suchfelds mit einer Abfrage und vorgeschlagenen Ergebnissen](media/search_box.png)
+Wenn die Vorschläge im Suchfeld nicht das sind, wonach Benutzer suchen, öffnet **Enter** die vollständige Ergebnisliste. Sie können Metadaten verwenden, beispielsweise wer das Element zuletzt geändert hat und wann, wo sich das Element befindet, und es in der Vorschau anzeigen, um zu verifizieren, ob es sich um das richtige Element handelt.
 
-Wenn die Vorschläge im Suchfeld nicht dem entsprechen, wonach sie suchen, wird durch Drücken der **EINGABETASTE** eine vollständige Liste der Ergebnisse angezeigt. Sie können Metadaten verwenden, beispielsweise wer das Element zuletzt geändert hat und wann, wo sich das Element befindet, und es in der Vorschau anzeigen, um zu verifizieren, ob es sich um das richtige Element handelt.
-
-![Screenshots der Microsoft Search-Ergebnisseite](media/SERP_text_520.png)
+![Screenshots der Microsoft Search-Ergebnisseite](media/search_box.png)
 
 ## <a name="benefits-of-microsoft-search"></a>Vorteile von Microsoft Search
 
-**Suche in Microsoft 365 über jedes beliebige Microsoft Search-Feld** – Benutzer können über ein beliebiges Microsoft Search-Feld suchen und schnell zu der Aufgabe zurückkehren, die sie gerade durchgeführt haben. Microsoft Search vereint Ergebnisse aus Datenquellen in Office 365, einschließlich SharePoint, OneDrive for Business und Exchange.
+**Suche in Microsoft 365 über jedes beliebige Microsoft Search-Feld** – Benutzer können über ein beliebiges Microsoft Search-Feld suchen und schnell zu der Aufgabe zurückkehren, die sie gerade durchgeführt haben. Microsoft Search vereint Ergebnisse aus Datenquellen in Office 365, einschließlich [SharePoint](http://sharepoint.com/), [Microsoft OneDrive für Unternehmen](https://onedrive.live.com/about/en-us/business/)und [Exchange Server](https://products.office.com/en-us/exchange/microsoft-exchange-server).
 
-**Einfache Suche** – Microsoft Search empfiehlt Ergebnisse basierend auf den vorangegangenen Aktivitäten von Benutzern in Office 365, direkt im Suchfeld.
+**Einfache Suche** – Microsoft Search schlägt Ergebnisse basierend auf den vorherigen Aktivitäten von Benutzern in Office 365, direkt im **Suchfeld** vor.
 
 **Suche nach freigegebenen Dateien** – Microsoft Search verwendet erweiterte Abfragen, um die Suche nach freigegebenen Dateien zu vereinfachen. Benutzer können ganz einfach Dateien suchen, an denen sie gemeinsam arbeiten.
 
-**Anzeige relevanter Inhalte** – Stellen Sie die Informationen und Antworten bereit, die Ihre Benutzer zum Erledigen von Aufgaben benötigen, zum Beispiel Richtlinien, Leistungen, Ressourcen, Tools und mehr. Sie können auch bestimmte Zielgruppen festlegen, wie neue Mitarbeiter oder Remotemitarbeiter.
-
-**Microsoft Search-Weiterentwicklung** – Der Satz an Inhaltstypen, nach denen Benutzer suchen können, und die Funktionalität des Suchfelds werden immer weiter verbessert.
+**Anzeige relevanter Inhalte** – Stellen Sie die Informationen und Antworten bereit, die Ihre Benutzer zum Erledigen von Aufgaben benötigen, zum Beispiel Richtlinien, Leistungen, Ressourcen, Tools und mehr. Sie können auch auf bestimmte Gruppen wie neue Mitarbeiter, Remotemitarbeiter oder andere Geographen abzielen.
 
 **Verwaltung in allen Apps** – Microsoft Search ist standardmäßig in**unter** aktiviert und von Ihnen durchgeführte Administrationsvorgänge werden in allen Apps auf Microsoft Search angewendet.
 
-## <a name="apps-that-currently-have-microsoft-search"></a>Diese Apps verfügen derzeit über Microsoft Search.
-
- Microsoft Search ist standardmäßig für alle Microsoft-Apps aktiviert, die das Feature unterstützen. Ein Benutzer muss sich lediglich mit einem Geschäfts-, Schul- oder Unikonto anmelden.
-
-Die folgenden Apps bieten derzeit Microsoft Search:
-- SharePoint Online
-- OneDrive for Business
-- Outlook im Web
-- Office-Apps unter Windows
-
-Darüber hinaus finden angemeldete Benutzer Microsoft Search in:
-
-- Bing-Homepage
-- Office.com
-- Startseiten für Word, Excel und PowerPoint Online
-
-Benutzer, die Bing als Standardsuchmaschine verwenden, können eine Suche in Bing auch über die Edge-Adressleiste initiieren.
-
-## <a name="requirements"></a>Anforderungen
-
-Sie müssen über eines der folgenden Office 365- oder Microsoft 365-Abonnements verfügen:
-
-- Office 365 Business Essentials und Business Premium
-- Office 365 A1/A3/A5
-- Office 365 Education E1/E3
-- Office 365 Enterprise E1/E3/E3 Developer/E5
-- Office 365 F1
-- Microsoft 365 Business
-- Microsoft 365 A3/A5
-- Microsoft 365 F1/E3/E5
-
-Für diese Lizenzen müssen sowohl Benutzer als auch Suchadministratoren zugewiesen werden. Nur Benutzer mit aktiven Konten können Microsoft Search verwenden, und sie müssen **angemeldet** sein, da für Microsoft Search Azure Active Directory erforderlich ist.
-
 ## <a name="tailoring-microsoft-search-to-your-organization"></a>Anpassen von Microsoft Search an Ihre Organisation
 
-Als Administrator können Sie Ihren Benutzern das Abrufen nützlicher organisationsspezifischer Ergebnisse erleichtern, wenn sie über ihre SharePoint-Startseite, office.com oder Bing suchen. Dazu definieren Sie Antworten, die von Microsoft Search als Reaktion auf bestimmte Schlüsselwörter in Abfragen angezeigt werden. Es gibt mehrere Arten von Antworten, die Sie definieren können: 
+Als Administrator können Sie eine erstaunliche Microsoft-Suchumgebung für Ihre Benutzer erstellen. 
 
-**Anzeige nützlicher Inhalte** – Unterstützen Sie Benutzer dabei, wichtige Tools und Ressourcen in Ihrer Organisation anhand von Lesezeichen zu finden. Genauso, wie Sie ein Lesezeichen zu einer öffentlichen Webseite erstellen können, können Sie ein Lesezeichen für alle internen Webseiten erstellen, die Ihre Benutzer suchen können. Sie können auch eine Power-App in das Lesezeichen integrieren, damit Benutzer ihre Aufgabe direkt aus dem Lesezeichen abschließen können.
+**Nützliche Inhalte anzeigen** – Antworten bieten schnelle, autorisierende Ergebnisse für Suchabfragen basierend auf Schlüsselwörtern. [Erleichtern der Suche nach Inhalten](make-content-easy-to-find.md)
 
-**Antworten auf häufig gestellte Fragen** – Geben Sie die beste Antwort für die in Ihrer Organisation am häufigsten gestellten Fragen. Wenn Benutzer häufig eine Frage in das Suchfeld eingeben, zeigt Microsoft Search die Antwort als Ergebnis an, statt nur einen Link zu der Webseite bereitstellen.
+**Hinzufügen von externem Inhalt** – mit Microsoft Graph-Connectors können Sie externen Inhalt in den Index einbinden. Verwenden Sie Connectors, um die Suchumgebung mit Daten und Dateien von außerhalb von Microsoft 365 zu bereichern. [Übersicht über Microsoft Graph-Connectors](connectors-overview.md)
 
-**Anzeige nützlicher Orte** – Zeigen Sie Kartenergebnisse und Adressinformationen für Gebäude, Büros und andere Arbeitsbereiche Ihrer Organisation auf einer Karte an. Benutzer können die Karten verwenden, um eine Wegbeschreibung zu erhalten, zu sehen, was es in der Nähe gibt, und vieles mehr.
-
-Sie können Verwendungsstatistiken anzeigen, aus denen hervorgeht, wie Benutzer ihre Antworten verwenden und ob Benutzer das Gesuchte finden. Basierend darauf können Sie Antworten optimieren oder neue Antworten hinzufügen.
-
-Weitere Informationen zur Verwendung von Schlüsselwörtern und reservierten Schlüsselwörtern finden Sie unter [Inhalte leicht auffindbar machen](make-content-easy-to-find.md).
+**Anpassen der Benutzeroberfläche** : Sie können die Benutzeroberfläche mithilfe von vertikalen und anderen Konfigurationen anpassen. [Anpassen der Seite "Microsoft-Suche"](customize-search-page.md)
 
 ## <a name="what-content-is-searched"></a>Wir werden Inhalte durchsucht?
 
-Microsoft Search durchsucht die Inhalte, die Ihre Organisation in SharePoint Online, OneDrive for Business und Exchange gespeichert hat, einschließlich der globalen Adressliste und Office 365-Gruppen. Microsoft Search führt keine mandantenübergreifende Suche aus, und es werden keine Ergebnisse aus Inhalten angezeigt, die von Organisationen gemeinsam genutzt werden. Wenn Ihre Organisation eine hybride SharePoint-Umgebung eingerichtet hat und die Cloud-Hybridsuche verwendet, liefert Microsoft Search sowohl Suchergebnisse aus Onlineinhalten als auch aus lokalen SharePoint-Inhalten, einschließlich aller externen Inhalte, die Sie mit Ihrer SharePoint Server-Umgebung verbunden haben. [Weitere Informationen zu hybriden Suchumgebungen](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint).
+Microsoft Search zeigt die Inhalte, die Ihre Organisation in Microsoft 365 gespeichert oder über Connectors indiziert hat. Die Microsoft-Suche sucht nicht in Mandanten oder zeigt Ergebnisse aus Inhalten an, die von anderen Organisationen gemeinsam verwendet werden. Wenn Ihre Organisation eine hybride SharePoint-Umgebung eingerichtet hat und die Cloud-Hybridsuche verwendet, liefert Microsoft Search sowohl Suchergebnisse aus Onlineinhalten als auch aus lokalen SharePoint-Inhalten, einschließlich aller externen Inhalte, die Sie mit Ihrer SharePoint Server-Umgebung verbunden haben. [Weitere Informationen zu hybriden Suchumgebungen](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint).
 
-Wenn Benutzer über die SharePoint-Startseite oder office.com suchen, durchsucht Microsoft Search die gesamten Inhalte ihrer Organisation, und es werde die Ergebnisse angezeigt, für die die Benutzer über entsprechende Berechtigungen verfügen. Dies wird als **globaler Suchbereich** bezeichnet.
-
-Wenn Benutzer mit Bing suchen, erhalten Sie die relevantesten Ergebnisse aus dem gesamten Inhalt Ihrer Organisation, der in die Liste der Ergebnisse aus dem **Internet** eingebettet wird. Wenn sie **alle** Organisationsergebnisse anzeigen lassen wollen, ist der globale Suchbereich nur einen Klick entfernt.
-
-## <a name="what-types-of-results-can-users-find"></a>Nach welchen Ergebnistypen können Benutzer suchen?
-Benutzer finden folgende Ergebnistypen bei der Suche in:
-
-**SharePoint**: Dateien, Ordner, Personen in Ihrer Organisation, Organigramme, Websites, Websiteseiten, Neuerungen, Listen und Listenelemente. Wenn definiert, Antworten auf häufig gestellte Fragen, Lesezeichen, die zu verlässlichen Informationen führen, Orte sowie Tools. [Erfahren Sie, welche Typen von Dateien Sie suchen können.](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
-
-**Office.com- und Word-, Excel- und PowerPoint Online-Startseiten**: Apps, Dateien, Ordner, Personen, Organigramme, SharePoint-Websites, Websiteseiten, Listen und Listenelemente. Wenn definiert, Antworten auf häufig gestellte Fragen, Lesezeichen, die zu verlässlichen Informationen führen, Orte sowie Tools. Dateien desselben Typs wie in SharePoint werden gefunden.
-
-**Bing**: Inhalt im Internet, Dateien, Office 365-Gruppen, Personen, Unterhaltungen in Yammer und Teams, Organigramme, SharePoint-Websites. Wenn definiert, Antworten auf häufig gestellte Fragen, Lesezeichen, die zu verlässlichen Informationen führen, Orte sowie Tools.  Word-, Excel-, PowerPoint-, Visio-, OneNote- und PDF-Dateien werden gefunden.
-
-**Outlook**: E-Mails, Anhänge und Personen in Ihrer Organisation.
-
-**Office-Apps unter Windows**: Aktionen in der App, Personen in Ihrer Organisation und im Internet, Dateien, Worterläuterungen, Übereinstimmungen für die Abfrage in der Datei oder im Hilfeinhalt, Inhalte im Internet. Word-, Excel-, PowerPoint-, Visio- und OneNote-Dateien werden gefunden.
-
-**OneDrive**: Dateien desselben Typs wie in SharePoint werden gefunden.
+Benutzer erhalten dieselben Ergebnisse aus der Unternehmenssuche, die Sie von anderen Standorten erhalten, und erhalten auch Ergebnisse aus dem Internet.
 
 ## <a name="how-does-microsoft-search-work"></a>Wie funktioniert Microsoft Search?
 
 Wenn ein Benutzer sucht, verarbeitet Microsoft Search die Abfrage und analysiert die Suchabsicht aus längeren Ausdrücken. Dabei kommt künstliche Intelligenz (AI) zum Einsatz, um gängige überflüssige Ausdrücke zu erlernen, die Benutzer ihren Abfragen hinzufügen und die keine Auswirkung auf die Suchabsicht haben. Wenn ein Benutzer beispielsweise nach „wie kann ich mein Kennwort ändern“ sucht, extrahieren wir die weniger wichtigen Wörter aus der Abfrage und lösen die Suche basierend auf den relevanten Wörtern wie „Kennwort ändern“ aus.  
-
-Microsoft Search erstellt keinen neuen Index, sondern durchsucht die vorhandenen Indizes von SharePoint Online-, OneDrive for Business- und Exchange-Inhalten.
-
 Die Suchergebnisse, für die der Benutzer die **Berechtigung** hat, werden auf der Suchergebnisseite präsentiert. Microsoft Search verwendet intelligente Rangfolgealgorithmen, um Ergebnisse basierend auf Relevanz anzufordern.
 
-## <a name="microsoft-search-in-sharepoint"></a>Microsoft Search in SharePoint
+## <a name="microsoft-search-in-bing-protects-enterprise-searches"></a>Microsoft Search in Bing schützt die Unternehmenssuche
 
-Microsoft Search in SharePoint ist die moderne Suchoberfläche in SharePoint Online. SharePoint Online bietet auch eine klassische Oberfläche. Beide Oberflächen sind standardmäßig aktiviert, sodass beide dieselben Inhalte durchsuchen. Als Administrator können Sie keine der beiden Suchumgebungen aktivieren. Welche Suchoberfläche den Benutzern angezeigt wird, hängt davon ab, von wo aus sie die Suche verwenden:
+Wenn ein Benutzer in Bing eine Suchabfrage in Microsoft Search eingibt, treten zwei gleichzeitige Suchanforderungen auf:
 
-- Das Microsoft Search-Suchfeld wird Benutzern auf der SharePoint-Startseite, auf Hubwebsites, Kommunikationswebsites und modernen Teamwebsites angezeigt.
-- Das klassische Suchfeld wird Benutzern auf Veröffentlichungsseiten, klassischen Teamwebsites und im Suchcenter angezeigt.
+- Eine Suche nach internen Ressourcen Ihrer Organisation.
+- Eine getrennte Suche nach öffentlichen Ergebnissen aus Bing.com. 
 
-Sie können die klassische Suchumgebung anpassen, z. B. indem Sie benutzerdefinierte Einschränkungen zur Suchergebnisseite hinzufügen oder bestimmte Arten von Ergebnissen anders darstellen. In SharePoint können Sie Microsoft Search so nicht anpassen. Einige der Anpassungen, die Sie für die klassische Suche vornehmen, können sich auf die Microsoft Search in SharePoint auswirken. Wenn Ihre Organisation beide Suchfunktionen in SharePoint verwendet, [informieren Sie sich bitte über die Unterschiede, und wie Sie Auswirkungen auf Microsoft Search in SharePoint vermeiden können](https://docs.microsoft.com/sharepoint/differences-classic-modern-search).
+Da Enterprise-suchen möglicherweise vertraulich sind, hat Microsoft Search eine Reihe von Vertrauensmaßnahmen implementiert, die beschreiben, wie `Bing.com` die getrennte Suche von öffentlichen Ergebnissen behandelt wird.
 
-## <a name="microsoft-search-in-bing-protects-enterprise-searches"></a>Microsoft Search in Bing schützt die Unternehmenssuche 
-Wenn ein Benutzer eine Unternehmenssuchabfrage in Microsoft Search eingibt, erfolgen zwei gleichzeitige Suchanforderungen auf: (1) eine Suche in den internen Ressourcen des Unternehmens, und (2) eine separate Suche nach öffentlichen Ergebnissen aus Bing.com. Da Unternehmenssuchen möglicherweise sensibel sind, hat Microsoft Search eine Reihe von Vertrauensmeasures implementiert, die beschreiben, wie die getrennte Suche nach öffentlichen Ergebnissen aus Bing.com behandelt wird. 
--   **Protokollierung**
-    - Alle Suchprotokolle, die sich auf den Microsoft Search-Datenverkehr beziehen, werden von ihrer Arbeitsplatzidentität getrennt.
-    - Wenn eine Reihe von Einschränkungen oder Häufigkeitsschwellenwerten erfüllt sind, die mit hoher Wahrscheinlichkeit darauf schließen lassen, dass die Abfrage nicht spezifisch für eine bestimmte Organisation ist, wird die Abfrage gemäß der Beschreibung im Abschnitt "Bing Services" der [Datenschutzbestimmungen](https://privacy.microsoft.com/privacystatement) behandelt. So werden solche Abfragen z. B. zum Modellieren und Trainieren von öffentlichen Features wie "Vorschlagssuche" oder "Verwandten Suchvorgänge" verwendet. 
-    - Abfragen, die diese Einschränkungen oder Häufigkeitsschwellenwerte nicht erfüllen, werden getrennt vom öffentlichen, Nicht-Microsoft Search-Datenverkehr gespeichert.
--   **Werbung**
-    - Die auf Bing.com in Verbindung mit Unternehmenssuchen angezeigte Werbung bezieht sich nur auf den Inhalt der Suchabfragen. Anzeigen sind niemals an Benutzer basierend auf Ihrer Arbeitsplatzidentität gerichtet.
+### <a name="logging"></a>Protokollierung
+ - Alle `Bing.com` Suchprotokolle, die sich auf die Microsoft-Suche in Bing-Datenverkehr beziehen, werden von der Identität Ihres Arbeitsplatzes nicht zugeordnet.
+- Wenn eine Reihe von Einschränkungen oder Häufigkeitsschwellenwerten erfüllt sind, die mit hoher Wahrscheinlichkeit darauf schließen lassen, dass die Abfrage nicht spezifisch für eine bestimmte Organisation ist, wird die Abfrage gemäß der Beschreibung im Abschnitt "Bing Services" der [Datenschutzbestimmungen](https://privacy.microsoft.com/privacystatement) behandelt. Beispielsweise werden solche Abfragen verwendet, um öffentliche Features wie Autosuggestion oder Verwandte Suchvorgänge zu modellieren und zu trainieren.
+- Abfragen, die diese Einschränkungen oder Häufigkeitsschwellenwerte nicht erfüllen, werden getrennt vom öffentlichen, Nicht-Microsoft Search-Datenverkehr gespeichert.
+### <a name="advertising"></a>Werbung 
+Werbung, die `Bing.com` im Zusammenhang mit der Unternehmenssuche angezeigt wird, bezieht sich ausschließlich auf den Inhalt der Suchabfragen. Anzeigen sind niemals an Benutzer basierend auf Ihrer Arbeitsplatzidentität gerichtet.
 
 ## <a name="see-also"></a>Siehe auch
 

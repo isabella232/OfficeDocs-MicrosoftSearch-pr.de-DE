@@ -1,9 +1,8 @@
 ---
 title: Verwalten von Microsoft Graph-Connectors für Microsoft Search
-ms.author: v-pamcn
+ms.author: mounika.narayanan
 author: monaray
 manager: mnirkhe
-ms.date: 11/04/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Verwalten von Microsoft Graph-Connectors für Microsoft Search.
-ms.openlocfilehash: 5aab310a05d073221918a8aaa80ea1e06c818e51
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: c74dc8f6d08519860e757b0ebe19e83dcf42159b
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949823"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626801"
 ---
 # <a name="manage-your-connector-for-microsoft-search"></a>Verwalten des Connectors für Microsoft Search
 
@@ -34,9 +33,9 @@ Für jeden Connectortyp unterstützt das [Microsoft 365 Admin Center](https://ad
 **Vorgang** | **Von Microsoft erstellter Connector** | **Partner oder benutzerdefinierter Connector**
 --- | --- | ---
 Hinzufügen einer Verbindung | : heavy_check_mark: (siehe [Konfigurieren Ihres von Microsoft erstellten Connectors](configure-connector.md)) | : x: (Bezug auf Ihren Partner oder den benutzerdefinierten Connector-Administrator UX)
-Löschen einer Verbindung | :heavy_check_mark: | :heavy_check_mark:
-Bearbeiten einer veröffentlichten Verbindung | : heavy_check_mark: Name<br></br> : heavy_check_mark: Description<br></br> : heavy_check_mark: Authentifizierungsanmeldeinformationen für Ihre externe Datenquelle<br></br> : heavy_check_mark: Gateway-Anmeldeinformationen für Ihre lokale Datenquelle<br></br> : heavy_check_mark: Aktualisierungszeitplan<br></br> | : heavy_check_mark: Name<br></br> : heavy_check_mark: Description
-Bearbeiten einer Entwurfs Verbindung | :heavy_check_mark: | x
+Löschen einer Verbindung | : heavy_check_mark: | : heavy_check_mark:
+Bearbeiten einer veröffentlichten Verbindung | : heavy_check_mark: Name<br></br> : heavy_check_mark: Beschreibung<br></br> : heavy_check_mark: Authentifizierungsanmeldeinformationen für Ihre externe Datenquelle<br></br> : heavy_check_mark: Gateway-Anmeldeinformationen für Ihre lokale Datenquelle<br></br> : heavy_check_mark: Aktualisierungszeitplan<br></br> | : heavy_check_mark: Name<br></br> : heavy_check_mark: Beschreibung
+Bearbeiten einer Entwurfs Verbindung | : heavy_check_mark: | x
 
 ## <a name="monitor-your-connection-status"></a>Überwachen des Verbindungsstatus
 Nachdem Sie eine Verbindung erstellt haben, wird die Anzahl der verarbeiteten Elemente auf der Registerkarte **Connectors** auf der Seite **Microsoft-Suche** angezeigt. Nachdem die anfängliche vollständige Durchforstung erfolgreich abgeschlossen wurde, wird der Fortschritt für periodische inkrementelle Crawls angezeigt. Diese Seite enthält Informationen zu den täglichen Vorgängen des Connectors sowie eine Übersicht über die Protokolle und den Fehler Verlauf.

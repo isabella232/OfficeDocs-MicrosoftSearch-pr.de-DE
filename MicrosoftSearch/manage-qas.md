@@ -3,7 +3,6 @@ title: F & As verwalten
 ms.author: anfowler
 author: adefowler
 manager: mnirkhe
-ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -14,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
 description: Suchen und aktualisieren Sie Antworten einzeln oder verwenden Sie die verfügbaren Microsoft Search-Tools, um alle gleichzeitig zu bearbeiten
-ms.openlocfilehash: 8620842e64a40eb32467c42a289bdec3b67d303b
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
-ms.translationtype: HT
+ms.openlocfilehash: 903aab52e8d51e45588a390b5ccdccbaae2cf04a
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591521"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626774"
 ---
 # <a name="manage-qas"></a>F & As verwalten
 
@@ -76,7 +75,7 @@ Hier sind einige wichtige Punkte in Bezug auf die Vorlagendatei:
 - Wenn ein Lesezeichen mit dem gleichen Titel oder der gleichen URL vorhanden ist, wird das Lesezeichen mit Informationen in der Importdatei aktualisiert.
 - Nicht alle Felder in der Vorlagendatei sind erforderlich, und die erforderlichen Felder variieren je nach dem Lesezeichenstatus.
 - Auf der Grundlage des Felds „Status“ werden Lesezeichen als „Entwurf“, „vorgeschlagen“ oder „geplant“ gespeichert, oder sie werden automatisch veröffentlicht.
-- Bei Organisationen mit mehreren Mandanten können Sie Ihre Lesezeichen von einem Mandanten exportieren und zu einem anderen importieren. Sie müssen jedoch die Daten in der Spalte *ID* vor dem Import entfernen.
+- Für Partner, die mehrere Organisationen verwalten, können Sie Ihre Lesezeichen aus einer org exportieren und in eine andere importieren. Sie müssen jedoch die Daten in der Spalte *ID* vor dem Import entfernen.
 
 **Hinweis:** Sie können Fragen und Antworten nicht importieren, wenn Fehler in der Vorlagendatei vorhanden sind. Um Fehler zu verhindern, stellen Sie sicher, dass die Importdatei ordnungsgemäß formatiert ist, und geben Sie alle erforderlichen Informationen an. 
 

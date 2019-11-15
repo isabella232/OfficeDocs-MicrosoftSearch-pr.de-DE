@@ -3,7 +3,6 @@ title: Einführungsleitfaden für Benutzer
 ms.author: dawholl
 author: dawholl
 manager: kellis
-ms.date: 10/1/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
@@ -13,14 +12,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
-ROBOTS: NOINDEX
 description: Erfahren Sie mehr über Methoden und Prozesse, die Sie bei der erfolgreichen Einführung der Microsoft-Suche in Ihrer Organisation unterstützen.
-ms.openlocfilehash: 439c7a8e9fbfdeb5b2bc42276dccb2377f3f0dac
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: 59fbc5ea629d385fbdc01f56a8bca3f5c6e7626f
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949356"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626882"
 ---
 # <a name="user-adoption-guide"></a>Einführungsleitfaden für Benutzer
 
@@ -38,20 +36,20 @@ Die Tabelle zeigt die Team Hierarchie und den Beitrag jeder Person.
   
 |**Rolle**|**Verantwortung**|**Department**|
 |:-----|:-----|:-----|
-|Leitenden Sponsors  <br/> |Grundlegendes zu den Konzepten und Werten der Microsoft-Suche für Ihre Organisation  <br/> Bereitstellen von Führungsunterstützung für IT/Business-Team  <br/> Ressourcen zuordnen  <br/> Direkte Kommunikation mit den Mitarbeitern  <br/> |Führungskräfte  <br/> |
-|Geschäftsbesitzer  <br/> |Identifizieren von Produkt-und Benutzerszenarien  <br/> Bestimmen der Erfolgsmetrik für Abteilungen und Organisation  <br/> |Any  <br/> |
-|Change Management-Team  <br/> |Sicherstellen, dass der Produkt Wert leicht zu verstehen ist  <br/> Erstellen eines Plans für das Rollout  <br/> |IT  <br/> |
-|Experten  <br/> |Evangelisieren des Produkts für Kollegen und Teams  <br/> |Any (Mitarbeiter)  <br/> |
-|Suchadministrator  <br/> |Identifizieren der Mitglieder des Haupt Teams für die Benutzerakzeptanz  <br/> Verwalten der Microsoft-Suche, einschließlich Aussehen und Verhalten der Erfahrung und der laufenden Verwaltung  <br/> Führen Sie Diskussionen aus, um den Wert von Microsoft Search anzuzeigen.  <br/> |IT  <br/> |
-|Editors  <br/> |Erstellen von Inhalten im Admin Center  <br/> |IT/any  <br/> |
+|Leitenden Sponsors  <br/> |Verstehen Sie die allgemeine Vorstellung und den Wert der Microsoft-Suche für Ihre Organisation.  <br/> Bereitstellen von Führungsunterstützung für IT/Business-Team  <br/> Ressourcen zuordnen.  <br/> Direkte Kommunikation mit Mitarbeitern.  <br/> |Führungskräfte  <br/> |
+|Geschäftsbesitzer  <br/> |Identifizieren von Produkt-und Benutzerszenarien  <br/> Bestimmen der Erfolgsmetrik für Abteilungen und Organisation.  <br/> |Any  <br/> |
+|Change Management-Team  <br/> |Stellen Sie sicher, dass der Produkt Wert leicht zu verstehen ist.  <br/> Erstellen Sie einen Plan für das Rollout.  <br/> |IT-Abteilung  <br/> |
+|Experten  <br/> |Evangelisieren Sie das Produkt für Kollegen und Teams.  <br/> |Any (Mitarbeiter)  <br/> |
+|Suchadministrator  <br/> |Identifizieren der Mitglieder des Haupt Teams für die Benutzerakzeptanz  <br/> Verwalten der Microsoft-Suche, einschließlich Aussehen und Verhalten der Erfahrung und der laufenden Verwaltung.  <br/> Führen Sie Diskussionen aus, um den Wert von Microsoft Search anzuzeigen.  <br/> |IT-Abteilung  <br/> |
+|Editors  <br/> |Erstellen Sie Inhalte im Microsoft 365 [Admin Center](https://admin.microsoft.com).  <br/> |IT/any  <br/> |
    
 ## <a name="stage-2-scenarios"></a>Phase 2: Szenarien
 
 Um die Benutzerakzeptanz sicherzustellen, ist es wichtig, Endbenutzerszenarien zu ermitteln und zu definieren. Diese sollten reale Beispiele dafür enthalten, wie Benutzer die Microsoft-Suche verwenden können, um die benötigten Informationen zu finden, Fragen zu beantworten und Aufgaben schneller abzuschließen. Um den Erfolg Ihres Rollouts und der Benutzerakzeptanz zu messen, müssen Sie auch die Metriken bestimmen, die Sie verwenden, bevor Sie beginnen.
   
- **Verstehen, was Ihre Benutzer benötigen und möchten**
+### <a name="understand-what-your-users-need-and-want"></a>Verstehen, was Ihre Benutzer benötigen und möchten
   
-Wenn es darum geht, Informationen zu finden und Antworten zu erhalten, ist es wichtig, dass Sie die Anforderungen und Probleme Ihres Benutzers kennen. Sie können quantitative Methoden wie Daten aus Office 365-und SharePoint-Such Nutzung oder qualitative Methoden wie Umfragen und Benutzer Fokusgruppen zum Abrufen dieser Daten verwenden. Auf diese Weise können Sie bestimmen, wann, wo und wie die Microsoft-Suche einen Mehrwert bieten kann.
+Wenn es darum geht, Informationen zu finden und Antworten zu erhalten, ist es wichtig, dass Sie die Anforderungen und Probleme Ihres Benutzers kennen. Sie können quantitative Methoden wie Daten aus [Office 365](https://Office.com) -und [SharePoint](https://products.office.com/sharepoint/collaboration) -Such Nutzung oder qualitative Methoden wie Umfragen und Benutzer Fokusgruppen zum Abrufen dieser Daten verwenden. Auf diese Weise können Sie bestimmen, wann, wo und wie die Microsoft-Suche einen Mehrwert bieten kann.
   
 Für verschiedene Rollen und Teams in Ihrer Organisation sollten Sie Folgendes in Frage stellen:
   
@@ -61,17 +59,17 @@ Für verschiedene Rollen und Teams in Ihrer Organisation sollten Sie Folgendes i
     
 - Was die Benutzer sehen möchten, wenn es um die Suche nach Informationen geht.
     
-- Wie die Vorteile von Microsoft Search auf Ihre Organisation zutreffen. Weitere Informationen finden Sie Untergründe für die [Microsoft-Suche](why-microsoft-search.md).
+- Wie die Vorteile von Microsoft Search auf Ihre Organisation zutreffen. Weitere Informationen finden Sie unter [Übersicht über die Microsoft-Suche](overview-microsoft-search.md).
     
 Wählen Sie die Benutzerszenarien aus, die die größten positiven Auswirkungen für Ihre Benutzer haben werden.
   
- **Ermitteln der Erfolgskennzahlen**
+ ### <a name="identify-success-metrics"></a>Ermitteln der Erfolgskennzahlen
   
 Um Ihnen dabei zu helfen, ihre Ziele für das Rollout zu erreichen und positive Auswirkungen für Ihre Organisation zu erzielen, müssen Sie vor dem Start wichtige Erfolgskennzahlen bestimmen. Halten Sie Ihre Ziele einfach und messbar, und bewerten Sie die Leistung regelmäßig, damit Sie bei Bedarf schnell reagieren können.
   
 1. **Änderungsverwaltung:** Bestimmen Sie, wie Sie das Bewusstsein für die Microsoft-Suche und den Erfolg der Kommunikation darüber messen. 
     
-2. **Verwendung:** Sie können Daten aus Ihrem Einblicke-Dashboard einschließlich täglicher und monatlicher aktiver Benutzer (Dau und Mau), der Inhaltstypen, die die meisten Ansichten erhalten, und der wichtigsten Suchschlüsselwörter zur Messung der Nutzung im Laufe der Zeit nutzen. Weitere Informationen finden Sie unter [Verwenden des Insights-Dashboards](get-insights.md).
+2. **Verwendung:** Sie können Daten aus Ihrem Einblicke-Dashboard einschließlich täglicher und monatlicher aktiver Benutzer (Dau und Mau), der Inhaltstypen, die die meisten Ansichten erhalten, und der wichtigsten Suchschlüsselwörter zur Messung der Nutzung im Laufe der Zeit nutzen. Weitere Informationen finden Sie unter [Microsoft Search Insights Dashboard Reports](get-insights.md).
     
 3. **Benutzerzufriedenheit:** Ermitteln Sie anhand der Daten, die Sie in Umfragen und Benutzer Fokusgruppen gesammelt haben, ihren Basisplan. NET Satisfaction (NSAT) und Net Promoter Scores (NPS) können auch hilfreiche Messungen bereitstellen. Unabhängig von der verwendeten Methode sollten Sie Sie konsistent halten, damit Sie die Auswirkungen im Laufe der Zeit sehen können. 
     
@@ -81,7 +79,7 @@ Um Ihnen dabei zu helfen, ihre Ziele für das Rollout zu erreichen und positive 
 
 Das investieren von Zeit in die Vorbereitung auf Ihr Microsoft Search-Rollout führt zu positiven Auswirkungen für Ihre Organisation. Microsoft stellt ein <a href="https://resources.techcommunity.microsoft.com/microsoft-search-in-bing-adoption-kit/">Einführungs Kit</a> bereit, das Planungsanleitungen, anpassbare e-Mail-Ankündigungen, Umfrage Vorlagen, Präsentationen von Führungskräften und vieles mehr enthält. Es gibt auch ein <a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">Microsoft Search-Ressourcen Center</a> , in dem IT-Implementierer andere Schulungs-und Adoptions Ressourcen finden können, die dazu beitragen, dass Ihr Microsoft Search-Rollout erfolgreich verläuft.
   
- **Produkt-und Inhalts Bereitschaft**
+### <a name="product-and-content-readiness"></a>Produkt-und Inhalts Bereitschaft
   
 Administratoren beeinflussen direkt die Suchumgebung für Endbenutzer und bestimmen, wie die Microsoft-Suche für die Organisation aussieht. Dazu gehört die Auswahl der Ergebnistypen, die Sie Ihren Benutzern zur Verfügung stellen möchten. Diese Ergebnisse können Links, die auch als Lesezeichen bezeichnet werden, zu Dokumenten, Websites, Personen, Gruppen, Speicherorten, Unterhaltungen und anderen Arbeitsplatzressourcen einschließen.
   
@@ -91,53 +89,53 @@ Redakteure sind Fachexperten, die die Verwaltung von Lesezeichen und Q&im Rahmen
   
 Weitere Informationen finden Sie unter [Planen von Inhalten](plan-your-content.md).
   
- **Anmelden**
+### <a name="signing-in"></a>Anmelden
   
-Microsoft Search-Benutzer müssen sich bei Bing mit einem Arbeits-oder Schulkonto anmelden. So machen Sie die Anmeldung für Ihre Benutzer so nahtlos wie möglich:
+Microsoft Search-Benutzer müssen sich bei [Bing](https://Bing.com) mit einem Arbeits-oder Schulkonto anmelden. So machen Sie die Anmeldung für Ihre Benutzer so nahtlos wie möglich:
   
-- Stellen Sie sicher, dass Azure Active Directory-Konfigurationen ordnungsgemäß festgelegt sind, einige Benutzer versuchen, sich anzumelden. Weitere Informationen finden Sie unter [Testen des einmaligen Anmeldens](test-single-sign-on.md).
+- Um sicherzustellen, dass [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) -Konfigurationen ordnungsgemäß festgelegt sind, müssen einige Benutzer versuchen, sich anzumelden. Weitere Informationen finden Sie unter [Testen des einmaligen Anmeldens](test-single-sign-on.md).
     
 - Legen Sie Browser Standardwerte für von einem Unternehmen verwaltete Geräte auf Bing fest. Weitere Informationen finden Sie unter [Festlegen des Standardbrowsers](set-default-browser.md).
     
-- Stellen Sie Such Erweiterungen für Edge-und Chrome-Benutzer über Gruppenrichtlinien bereit. Weitere Informationen finden Sie unter [Admin Portal Tools](admin-portal-tools.md).
+- Stellen Sie Such Erweiterungen für [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) -und [Google Chrome](https://www.google.com) -Benutzer über Gruppenrichtlinien bereit. Weitere Informationen finden Sie unter [Übersicht über die Microsoft-Suche](overview-microsoft-search.md).
     
- **Entwurfs Kommunikation**
+### <a name="draft-communications"></a>Entwurfs Kommunikation
   
 Verwenden Sie ihre realen Szenarien, um Benutzer über die Microsoft-Suche zu informieren und um zu erfahren, wie Sie Zeit sparen können. Ihr Change Management-Team kann bei der Erstellung einer Rollout-Strategie und der Vorbereitung von Sicherheiten und Kampagnen für die Endbenutzer Bereitschaft behilflich sein.
   
 Beginnen Sie mit der Planung der Kommunikation und der Ereignisse für Ihre Organisation:
   
-- Banner, Poster oder Broschüren, die an prominenten Stellen plaziert werden
+- Platzieren Sie Banner, Poster oder Broschüren an prominenten stellen.
     
-- Demos oder Kabinen für persönliche Produkte
+- Demos oder Kabinen für persönliche Produkte.
     
-- Online Ereignisse für lokale und Remoteteams
+- Online Ereignisse für lokale und Remoteteams.
     
-- Lassen Sie Ihren Executive Sponsor eine Besprechungs Sitzung hosten oder eine Ankündigungs-e-Mail senden
+- Lassen Sie Ihren Executive Sponsor eine Besprechungs Sitzung hosten, oder senden Sie eine Ankündigungs-e-Mail.
     
-- Freigeben der Selbsthilfe Dokumentation zur Verwendung der Microsoft-Suche
+- Teilen Sie die Self-Help-Dokumentation zur Verwendung der Microsoft-Suche.
     
-Alle Kommunikationen sollten Benutzer darüber informieren, wie Sie sich bei Bing anmelden können, um Arbeitsergebnisse zu finden.
+Alle Kommunikationen sollten Benutzer darüber informieren, wie Sie sich bei [Bing](https://Bing.com) anmelden können, um Arbeitsergebnisse zu finden.
   
- **Partnerteams einbinden**
+### <a name="engage-partner-teams"></a>Partnerteams einbinden
   
-Als integraler Bestandteil von Microsoft 365 erfüllt Microsoft Search die dsgvo-und Tier-C-Richtlinien. Je nach Ihrer Organisation kann es erforderlich sein, Informationen zur Microsoft-Suche mit Ihren Datenschutz-und Sicherheitsteams freizugeben. Weitere Informationen finden Sie unter [Security for Microsoft Search](overview-microsoft-search.md#microsoft-search-in-bing-protects-enterprise-searches).
+Als integraler Bestandteil von [Microsoft 365](https://www.microsoft.com/microsoft-365)erfüllt Microsoft Search die dsgvo-und Tier-C-Richtlinien. Je nach Ihrer Organisation ist es möglicherweise erforderlich, Informationen zur Microsoft-Suche mit Ihren Datenschutz-und Sicherheitsteams freizugeben. Weitere Informationen finden Sie unter [Security for Microsoft Search](overview-microsoft-search.md#microsoft-search-in-bing-protects-enterprise-searches).
   
-Stellen Sie sicher, dass Ihr Helpdesk über die Features und Funktionen von Microsoft Search sowie die Benutzeranforderungen für die Anmeldung Bescheid weiß, damit Sie die Benutzer effektiver unterstützen können. Weitere Informationen finden Sie unter [Verwenden von Microsoft Search](use/about-microsoft-search.md) und [FAQs](faqs.md).
+Stellen Sie sicher, dass Ihr Helpdesk über die Features und Funktionen von Microsoft Search sowie die Benutzeranforderungen für die Anmeldung Bescheid weiß, damit Sie die Benutzer effektiver unterstützen können. Weitere Informationen finden Sie unter Informationen [zur Microsoft-Suche in Microsoft 365](https://support.office.com/en-us/article/Learn-about-Microsoft-Search-in-Microsoft-365-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc) und [FAQs](faqs.md).
   
- **Auswerten mit Pilotbenutzern**
+### <a name="evaluate-with-pilot-users"></a>Auswerten mit Pilotbenutzern
   
 Beginnen Sie mit einer kleinen Gruppe von Benutzern, um die Auswirkungen der Microsoft-Suche zu bewerten und frühes Feedback zu sammeln. Dadurch haben Sie Zeit, Inhalte zu ändern, Ihre Kommunikationen zu aktualisieren und die Erwartungen für das umfassende Rollout festzulegen. Die Suche nach Power-Benutzern oder Early Adopters sind dafür große Kandidaten.
   
 Hilfe bei der Suche nach Pilotbenutzern:
   
-- Arbeiten Sie mit einem Unternehmenssponsor in Ihrer Organisation zusammen.
+- Partner mit einem Unternehmenssponsor in Ihrer Organisation.
     
-- Identifizieren Sie eine Gruppe von Early Adoptern.
+- Identifizieren einer Gruppe von Early Adopters.
     
-- Identifizieren Sie Gruppen, die ein hohes Volumen an Unternehmenssuchvorgängen ausführen.
+- Identifizieren von Gruppen, die große Mengen an Unternehmens suchen ausführen
     
-- Identifizieren Sie Benutzer an anderen geografischen Standorten (auch international).
+- Identifizieren von Benutzern an anderen geografischen Standorten, einschließlich internationaler.
     
 Fordern Sie Ihre Pilotbenutzer auf, die Eingabe mithilfe der Feedbackoptionen in der Microsoft-Suche oder über einfache Umfragen bereitzustellen.
   
@@ -163,11 +161,11 @@ Wenn Sie die Pilotphase starten, sollten Sie eine Vorschau der Microsoft-Suche m
 
 Jede Organisation denkt an Produkt-Rollouts anders. Hier sind ein paar Dinge, die Sie beachten sollten.
   
- **Allgemeine Bereitstellung**
+### <a name="broad-deployment"></a>Allgemeine Bereitstellung
   
-Wenn Sie bereit sind, können Sie entweder allen Benutzern in Ihrer Organisation den Zugriff auf die Microsoft-Suche erlauben oder einen phasenweisen Ansatz verwenden, um langsamer auszurollen. 
+Wenn Sie bereit sind, können Sie entweder allen Benutzern in Ihrer Organisation den Zugriff auf die Microsoft-Suche gestatten oder einen phasenweisen Ansatz verwenden, um langsamer auszurollen. 
   
- **Sensibilisierung generieren**
+### <a name="generate-awareness"></a>Sensibilisierung generieren
   
 Erstellen Sie Aufregung in Ihrer Organisation über die Microsoft-Suche:
   
@@ -175,22 +173,22 @@ Erstellen Sie Aufregung in Ihrer Organisation über die Microsoft-Suche:
     
 - Übermitteln Sie die Kommunikationen und Ereignisse, die Sie in Phase 3 geplant haben.
     
- **Fortlaufende Kommunikation**
+### <a name="ongoing-communication"></a>Fortlaufende Kommunikation
   
 Pflegen Sie in den ersten Wochen und Monaten einen Kommunikations Rhythmus, um das Engagement bei der Microsoft-Suche zu fördern. Dadurch werden Benutzer informiert und neue Benutzer eingebunden. In jeder Kommunikation sollte erklärt werden, warum die Microsoft-Suche für Ihre Arbeit hilfreich sein kann.
   
 Senden Sie laufende Kommunikationen, die Features und Suchvorgänge hervorheben, sowie Benutzer Erfolgsgeschichten.
   
- **Feedback sammeln und verbessern**
+### <a name="gather-feedback-and-improve"></a>Feedback sammeln und verbessern
   
 Unterstützen Sie Benutzer und informieren Sie Sie, indem Sie Ihnen zuhören und auf Ihr Feedback reagieren.
   
 Verwenden Sie das Einblicke-Dashboard, um zu sehen, wie das Produkt und der Inhalt ausgeführt werden. Nutzen Sie diese Informationen, um Bookmarks, Q&as und andere Kommunikationen zu aktualisieren. Dies hilft Ihnen auch:
   
-1. Verbessern der Inhaltsqualität: Überprüfen von Titeln, Beschreibungen und URLs, Optimieren von Schlüsselwörtern, Entfernen veralteter Informationen und Hinzufügen neuer Informationen
+- Verbessern der Inhaltsqualität: Überprüfen von Titeln, Beschreibungen und URLs, Optimieren von Schlüsselwörtern, Entfernen veralteter Informationen und Hinzufügen neuer Informationen.
     
-2. Bestimmen der am häufigsten verwendeten Features (oder seltener)
+2. Ermitteln Sie, welche Funktionen am häufigsten oder selten verwendet werden. 
     
-3. Durchführen von Umfragen, Fokusgruppen und Feedback Sitzungen, um zu verstehen, was Benutzer von der Microsoft-Suche halten, die Akzeptanz verbessern und Verbesserungsbereiche identifizieren
+3. Durchführen von Umfragen, Fokusgruppen und Feedback Sitzungen, um zu verstehen, was Benutzer von der Microsoft-Suche halten, die Akzeptanz verbessern und Verbesserungsbereiche identifizieren.
     
 Bildung und Feedback sind ein iterativer Prozess. Es kann erforderlich sein, Änderungen an Inhalten und Kommunikation vorzunehmen, wenn Ihre Benutzer die Microsoft-Suche annehmen.

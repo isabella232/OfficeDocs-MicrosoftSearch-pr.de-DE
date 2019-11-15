@@ -3,7 +3,6 @@ title: Integration von PowerApps
 ms.author: dawholl
 author: dawholl
 manager: kellis
-ms.date: 12/18/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,14 +12,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1fadcba3-4a7f-4a55-8476-d4e64d49a15f
-ROBOTS: NOINDEX
 description: Einschließen von browserbasierten apps in Lesezeichen Ergebnisse für Microsoft-Suche
-ms.openlocfilehash: 36389a8b53390c7dd18cf98285b0faa6df73c8b4
-ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
+ms.openlocfilehash: e3fda45bbc7bef5634fb08a7dd6fc0143d6da054
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288928"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626837"
 ---
 # <a name="integrate-powerapps"></a>Integration von PowerApps
    
@@ -30,8 +28,7 @@ Helfen Sie Ihren Benutzern, Aufgaben wie das Eingeben von Urlaubszeiten oder Ber
 
 PowerApps ist ein Dienst, mit dem Sie Geschäfts-Apps erstellen können, die in einem Browser oder auf einem Smartphone oder Tablet ausgeführt werden, ohne dass eine Codierung erforderlich ist. Weitere Informationen:
   
-- 
-  [Interaktives Lernen](https://docs.microsoft.com/learn/browse/?products=powerapps)
+- [Interaktives Lernen](https://docs.microsoft.com/learn/browse/?products=powerapps)
     
 - [Dokumentation](https://docs.microsoft.com/powerapps/)
     
@@ -55,6 +52,6 @@ PowerApps funktionieren in jedem beliebigen Browser und auf jedem beliebigen Ger
     
     Das PowerApp in der Vorschau ist voll funktionsfähig, damit es einfach zu testen und zu verwenden ist.
     
-7. Klicken Sie auf **veröffentlichen**
+7. Klicken Sie auf **Veröffentlichen**.
     
 Wenn ein autorisierter Microsoft Search-Benutzer nach Bing nach einem der Schlüsselwörter oder reservierten Schlüsselwörter des Lesezeichens sucht, wird das PowerApp im Lesezeichen Ergebnis angezeigt.

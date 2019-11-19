@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie mehr über die Microsoft Graph Connectors Preview für Microsoft Search.
-ms.openlocfilehash: 3ac27bd1e859f9ffc825e5e77d96f0de56b13647
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 6080674e1a6b789cbe5b3492f93f5f932b536e53
+ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626264"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38699368"
 ---
 # <a name="microsoft-graph-connectors-preview"></a>Vorschau der Microsoft Graph-Konnektoren
 
@@ -38,4 +38,4 @@ Die Vorschauversion weist die folgenden Einschränkungen auf:
 * Es gibt keine Unterstützung für Schemaaktualisierungen. Nachdem Sie eine Verbindungseinrichtung erstellt haben, können Sie das Schema nicht aktualisieren. Sie können die Verbindung nur löschen und neu erstellen.
 * Indizierte Inhalte werden nur auf der Suchergebnisseite unter einer benutzerdefinierten vertikalen angezeigt. Diese Einschränkung gilt für Inhalte mit benutzerdefinierten Typen.
 * Vor der allgemeinen Verfügbarkeit müssen alle Verbindungen, die Sie während des Vorschauzeitraums eingerichtet haben, möglicherweise gelöscht und neu erstellt werden. Diese Verbindungen funktionieren nicht mehr, wenn Sie mit Änderungen, die zur Verbesserung des Produkts vorgenommen wurden, nicht kompatibel sind.
-* Grenzwert für Verbindungen. Jeder Mandant kann bis zu 10 Verbindungen erstellen.
+* Es gibt einen Grenzwert für Verbindungen. Jeder Mandant kann bis zu 10 Verbindungen erstellen.

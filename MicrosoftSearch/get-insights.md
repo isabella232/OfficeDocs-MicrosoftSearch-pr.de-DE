@@ -13,31 +13,31 @@ search.appverid:
 - MOE150
 ms.assetid: ebce7fdc-e89b-473c-8131-67e659bb3f73
 description: Analysieren von Metriken und Verwalten von Inhalten aus dem Insights-Dashboard in der Microsoft-Suche
-ms.openlocfilehash: d75622ad8c414f225615ea14082c8197e2947dd4
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: bbfc8b230690eeef1f7a23d70d7af29b88924e7d
+ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626873"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38699862"
 ---
 # <a name="microsoft-search-insights-dashboard-reports"></a>Microsoft Search Insights Dashboard-Berichte
 
-Sie können das Microsoft Search Insights-Dashboard verwenden, um die Bing-Daten für Ihre veröffentlichten Antworten zu verwalten. Dies ist nur einer der Schritte, die erforderlich sind, um die [Suche nach Inhalten](make-content-easy-to-find.md) für Ihre Benutzer zu vereinfachen.
+Sie können das Microsoft Search Insights-Dashboard verwenden, um [Bing](https://Bing.com) -Daten für Ihre veröffentlichten Antworten zu verwalten. Dies ist nur einer der Schritte, die erforderlich sind, um die [Suche nach Inhalten](make-content-easy-to-find.md) für Ihre Benutzer zu vereinfachen.
 
-Wenn Sie zum ersten Mal im Microsoft 365 Admin Center zur Microsoft-Suche wechseln, geben Sie das Einblicke-Dashboard ein.
+Wenn Sie zum ersten Mal im Microsoft 365 [Admin Center](https://admin.microsoft.com)zu Microsoft Search wechseln, geben Sie das Einblicke-Dashboard ein.
 
 ![Insights-Dashboard. png](media/Insights-dashboard.png)
 
-Hier sind die Berichte, die im Insights-Dashboard zur Verfügung stehen.
+Die folgenden Berichte sind im Insights-Dashboard verfügbar.
 
 > [!NOTE]
-> Die Daten in den Berichten stellt nur Bing-Daten dar.
+> Die Daten in den Berichten stellt nur [Bing](https://Bing.com) -Daten dar.
 
 ## <a name="top-queries"></a>Häufigste Suchvorgänge
 
-Dieser Bericht enthält Details zu den häufigsten 2000 Bing-Suchabfragen, die von Benutzern ausgeführt werden. Damit eine Abfrage in Top- **Abfragen**angezeigt wird, muss die Abfrage mindestens drei Klicks erhalten.
+Dieser Bericht enthält Details zu den häufigsten 2000 [Bing](https://Bing.com) -Suchabfragen, die von Benutzern ausgeführt werden. Damit eine Abfrage in Top- **Abfragen**angezeigt wird, muss die Abfrage mindestens drei Klicks erhalten.
 
-![Top-Abfragen Berichten Sie mit den Tabellenüberschriften: Abfrage, Gesamt Abfragen und Klickrate.](media/Insights-topqueries.png)
+![Top-Abfragen Bericht mit den Tabellenkopfzeilen: Abfrage, Gesamt Abfragen und Klickraten.](media/Insights-topqueries.png)
 
 Eine niedrige Klickrate (Click-through Rate) bedeutet, dass Benutzer nicht nach Ihren Wünschen suchen.
 
@@ -47,7 +47,7 @@ Sie können verschiedene Ansichten des Berichts auswählen, indem Sie nach dem T
 
 ## <a name="impression-distribution"></a>Impression-Verteilung
 
-In diesem Bericht wird die Druckverteilung in Bing im Laufe der Zeit für verschiedene Antworten dargestellt. Beispiele sind Lesezeichen, Personen, Q&A, Dateien, Speicherorte, Datei Websites, Gruppen und Unterhaltungen. 
+In diesem Bericht wird die Druckverteilung in [Bing](https://Bing.com) im Laufe der Zeit für verschiedene Antworten dargestellt. Beispiele sind Lesezeichen, Personen, Q&A, Dateien, Speicherorte, Datei Websites, Gruppen und Unterhaltungen. 
 
 ![Impressions Bericht mit 90 Tagen, die als Zeitraum ausgewählt wurden.](media/Insights-impressions.png)
 

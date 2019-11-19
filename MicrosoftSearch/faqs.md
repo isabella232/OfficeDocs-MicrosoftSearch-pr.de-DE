@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erhalten Sie Antworten auf häufig gestellte Fragen zur Unternehmenssuche und zu Microsoft Search
-ms.openlocfilehash: 3ff2aabae4e09170b6b0380d520bfc620d5de5d8
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: edfb8346263d60184d8655afa24118ed4b3e3bca
+ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626255"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38699793"
 ---
 # <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
@@ -28,26 +28,26 @@ Nachfolgend finden Sie eine Liste der am häufigsten gestellten Fragen.
 
 ## <a name="is-advanced-query-understanding-supported"></a>Wird das Verstehen von erweiterten Abfragen unterstützt?
 
-Ja, bei umfangreicheren Ausdrücken analysiert Microsoft Search die Abfrageabsicht. Dieses Feature verwendet KI, um häufig von Benutzern hinzugefügte, überflüssige Ausdrücke zu lernen, die für die Absicht der Suche nicht relevant sind. Wenn ein Benutzer z. B. die Suche "Gib mir bitte Informationen dazu, wie ich mein Kennwort ändern kann" eingibt, werden die weniger wichtigen Wörter aus der Abfrage entfernt. Die Abfrage wird dann basierend auf den relevanten Wörtern, wie z. B. "Kennwort ändern", durchgeführt.
+Ja, die Microsoft-Suche analysiert Abfrage Absicht aus größeren Ausdrücken. Dieses Feature verwendet AI, um allgemeine überflüssige Ausdrücke zu erfahren, die Benutzer zu Ihren Abfragen hinzufügen, die sich nicht auf die suchabsicht auswirken. Wenn ein Benutzer beispielsweise nach " *Weitere Informationen" zum Ändern des Kennworts*sucht, extrahieren wir die weniger wichtigen Wörter aus der Abfrage und dem Auslöser basierend auf den entsprechenden wie das *Kennwort ändern*.
   
-Dieses Feature setzt im Admin Center festgelegte Schlüsselwörter nicht außer Kraft.
+Dieses Feature überschreibt keine Stichwörter, die im Microsoft 365 [Admin Center](https://admin.microsoft.com)festgelegt sind.
   
 ## <a name="can-you-search-for-files-on-premises"></a>Können Sie nach lokalen Dateien suchen?
 
-Ja. Sie können lokale SharePoint-Dateien durchsuchen, wenn Sie über eine Hybridbereitstellung von SharePoint verfügen.
+Ja. Sie können lokale [SharePoint](http://sharepoint.com/) -Dateien durchsuchen, wenn Sie über eine hybridbereitstellung von SharePoint verfügen.
   
 ## <a name="how-do-i-make-bing-the-default-search-engine-for-people-in-my-org"></a>Wie kann ich Bing als Standardsuchmaschine für Personen in meiner Organisation festlegen?
 
-Hier finden Sie die Anweisungen zum Festlegen der Standardsuchmaschine, der Standardstartseite und des Standardbrowsers, um Ihren Benutzern die optimale Erfahrung mit Microsoft Search in Bing zu ermöglichen:
+Hier finden Sie die Anweisungen zum Festlegen der standardmäßigen Suchmaschine, der Standardstartseite und des Standardbrowsers, damit Ihre Benutzer die besten Erfahrungen mit der Microsoft-Suche in [Bing](https://Bing.com)erhalten:
 
-- [Festlegen von Edge als Standardbrowser](set-default-browser.md)
+- [Festlegen von Microsoft Edge als Standardbrowser](set-default-browser.md)
 - [Festlegen von Bing als Standardsuchmaschine](set-default-search-engine.md)
 - [Festlegen von Bing.com als Startseite des Unternehmens](set-default-homepage.md)
 
   
 ## <a name="how-are-my-search-results-protected"></a>Wie werden meine Suchergebnisse geschützt?
 
-Für den Zugriff auf Ergebnisse aus der vertrauenswürdigen Cloud ist Azure Active Directory-Authentifizierung erforderlich. Authentifizierten Benutzern werden nur Inhalte angezeigt, auf die sie Zugriff haben. Suchabfragen werden anonymisiert und Protokolle vom Datenverkehr öffentlicher Bing-Suchen getrennt. Ein solcher Grad an Schutz steht sonst in der Branche nicht zur Verfügung.
+Für den Zugriff auf Ergebnisse aus der vertrauenswürdigen Cloud ist die [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) -Authentifizierung erforderlich. Authentifizierten Benutzern werden nur Inhalte angezeigt, auf die sie Zugriff haben. Suchabfragen werden nicht identifiziert, und Protokolle werden vom öffentlichen [Bing](https://Bing.com) -Such Datenverkehr getrennt. Ein solcher Grad an Schutz steht sonst in der Branche nicht zur Verfügung.
 
 ## <a name="can-i-search-across-federated-organizations"></a>Kann ich in Verbundorganisationen suchen?
 
@@ -59,5 +59,5 @@ Details finden Sie in der [Compliance-Framework für Branchenstandards und geset
 
 ## <a name="can-users-earn-microsoft-rewards-points-with-their-work-or-school-account"></a>Können Benutzer mit Ihrem Geschäfts-, Schul- oder Unikonto Microsoft Rewards-Punkte erwerben?
 
-Microsoft Search setzt voraus, dass Unternehmensbenutzer sich mit einem Geschäfts-, Schul- oder Unikonto anmelden. Mit diesen Konten können sich Benutzer aber nicht beim Microsoft Rewards-Programm anmelden oder daran teilnehmen. Allerdings gibt es einen Fall, bei dem Unternehmensbenutzer möglicherweise sehen, dass Prämienpunkte anfallen. Dies kann vorkommen, wenn ein Microsoft Search-Benutzer über ein Rewards-Konto verfügt, das mit einem <a href="https://www.microsoft.com/en-us/welcome?rtc=1">Microsoft-Konto</a> erstellt wurde. (Die mit einem Microsoft-Konto verknüpfte E-Mail-Adresse kann von Outlook.com, Hotmail.com, Gmail, Yahoo oder anderen Anbietern stammen.) Wenn Benutzer sich bei derselben Browsersitzung abwechselnd mit ihrem Geschäfts-, Schul- oder Unikonto und ihrem Microsoft-Konto anmelden, werden möglicherweise Punkte auf dem Rewards-Konto angesammelt. Benutzer können das Ansammeln von Punkten während der Suche mit Microsoft Search beenden, indem sie ihre Cookies löschen. 
+Microsoft Search setzt voraus, dass Unternehmensbenutzer sich mit einem Geschäfts-, Schul- oder Unikonto anmelden. Mit diesen Konten können sich Benutzer aber nicht beim Microsoft Rewards-Programm anmelden oder daran teilnehmen. Allerdings gibt es einen Fall, bei dem Unternehmensbenutzer möglicherweise sehen, dass Prämienpunkte anfallen. Dies kann vorkommen, wenn ein Microsoft Search-Benutzer über ein Rewards-Konto verfügt, das mit einem <a href="https://www.microsoft.com/welcome?rtc=1">Microsoft-Konto</a> erstellt wurde. (Die mit einem Microsoft-Konto verknüpfte E-Mail-Adresse kann von Outlook.com, Hotmail.com, Gmail, Yahoo oder anderen Anbietern stammen.) Wenn Benutzer sich bei derselben Browsersitzung abwechselnd mit ihrem Geschäfts-, Schul- oder Unikonto und ihrem Microsoft-Konto anmelden, werden möglicherweise Punkte auf dem Rewards-Konto angesammelt. Benutzer können das Ansammeln von Punkten während der Suche mit Microsoft Search beenden, indem sie ihre Cookies löschen. 
 

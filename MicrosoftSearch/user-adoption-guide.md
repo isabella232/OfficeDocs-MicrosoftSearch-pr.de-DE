@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 description: Erfahren Sie mehr über Methoden und Prozesse, die Sie bei der erfolgreichen Einführung der Microsoft-Suche in Ihrer Organisation unterstützen.
-ms.openlocfilehash: 59fbc5ea629d385fbdc01f56a8bca3f5c6e7626f
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 135b07b7dd4e26eaaebd0c09d0d94689b83f2b16
+ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626882"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38699530"
 ---
 # <a name="user-adoption-guide"></a>Einführungsleitfaden für Benutzer
 
@@ -121,7 +121,7 @@ Alle Kommunikationen sollten Benutzer darüber informieren, wie Sie sich bei [Bi
   
 Als integraler Bestandteil von [Microsoft 365](https://www.microsoft.com/microsoft-365)erfüllt Microsoft Search die dsgvo-und Tier-C-Richtlinien. Je nach Ihrer Organisation ist es möglicherweise erforderlich, Informationen zur Microsoft-Suche mit Ihren Datenschutz-und Sicherheitsteams freizugeben. Weitere Informationen finden Sie unter [Security for Microsoft Search](overview-microsoft-search.md#microsoft-search-in-bing-protects-enterprise-searches).
   
-Stellen Sie sicher, dass Ihr Helpdesk über die Features und Funktionen von Microsoft Search sowie die Benutzeranforderungen für die Anmeldung Bescheid weiß, damit Sie die Benutzer effektiver unterstützen können. Weitere Informationen finden Sie unter Informationen [zur Microsoft-Suche in Microsoft 365](https://support.office.com/en-us/article/Learn-about-Microsoft-Search-in-Microsoft-365-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc) und [FAQs](faqs.md).
+Stellen Sie sicher, dass Ihr Helpdesk über die Features und Funktionen von Microsoft Search sowie die Benutzeranforderungen für die Anmeldung Bescheid weiß, damit Sie die Benutzer effektiver unterstützen können. Weitere Informationen finden Sie unter Informationen [zur Microsoft-Suche in Microsoft 365](https://support.office.com/article/Learn-about-Microsoft-Search-in-Microsoft-365-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc) und [FAQs](faqs.md).
   
 ### <a name="evaluate-with-pilot-users"></a>Auswerten mit Pilotbenutzern
   

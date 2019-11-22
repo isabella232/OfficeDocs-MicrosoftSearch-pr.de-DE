@@ -1,7 +1,7 @@
 ---
 title: Anpassen des Suchergebnis Layouts
 ms.author: anfowler
-author: adefowler
+author: jeffkizn
 manager: shohara
 ms.audience: Admin
 ms.topic: article
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erstellen eines Layouts zum Anzeigen Ihrer benutzerdefinierten Suchergebnisse mithilfe adaptiver Karten
-ms.openlocfilehash: 6f406bb32a18678f1ca0546e37edb8013e2ba450
-ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
+ms.openlocfilehash: 6d1409eaf070275a4c6dbc713b1ec7914e09e541
+ms.sourcegitcommit: b28d7f4dfc71ecd7edc28c964a3da2180e1f4c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699566"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793550"
 ---
 # <a name="create-a-layout-to-customize-search-results"></a>Erstellen eines Layouts zum Anpassen von Suchergebnissen
 

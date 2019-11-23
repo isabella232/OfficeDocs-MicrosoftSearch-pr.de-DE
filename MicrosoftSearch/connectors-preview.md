@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie mehr über die Microsoft Graph Connectors Preview für Microsoft Search.
-ms.openlocfilehash: 6080674e1a6b789cbe5b3492f93f5f932b536e53
-ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
+ms.openlocfilehash: 054dc00bcb5cc0c110858fd329fbf2dbf16fb38b
+ms.sourcegitcommit: 1255c2612aec290ae117bdc24c3b4dabd1e5ca11
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699368"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "39205876"
 ---
 # <a name="microsoft-graph-connectors-preview"></a>Vorschau der Microsoft Graph-Konnektoren
 
-Microsoft Graph-Connectors, Indizierungs-APIs und Such-APIs befinden sich derzeit in der Vorschau. Um auf Connectors-Funktionen zugreifen zu können, müssen Sie den Beitritt zum Vorschauprogramm anfordern, indem Sie das <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u" target="_blank">Anmeldeformular für die Microsoft Graph-Konnektoren</a>in der Vorschau einreichen. Dies ist eine frühe Vorschau, und es gibt keine Garantie auf Service Level. Wir ermutigen Kunden, konnektorfunktionen zu testen und Feedback zu geben. Es wird nicht empfohlen, Connectors für Produktionszwecke während des Vorschauzeitraums zu verwenden.
+Microsoft Graph-Connectors und Microsoft Search-APIs (Abfrage und Index) befinden sich derzeit im Vorschaustatus. Um auf Connectors-Funktionen zugreifen zu können, müssen Sie den Beitritt zum Vorschauprogramm anfordern, indem Sie das <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u" target="_blank">Anmeldeformular für die Microsoft Graph-Konnektoren</a>in der Vorschau einreichen. Dies ist eine frühe Vorschau, und es gibt keine Garantie auf Service Level. Wir ermutigen Kunden, konnektorfunktionen zu testen und Feedback zu geben. Es wird nicht empfohlen, Connectors für Produktionszwecke während des Vorschauzeitraums zu verwenden.
 
 ## <a name="set-up-targeted-release"></a>Einrichten der gezielten Version
 Wenn Sie Connectors testen möchten, müssen Sie die Option **Targeted Release** für alle Benutzer in Ihrer Organisation festgelegt haben. Die gezielte Freigabeanforderung gilt unabhängig davon, welche der folgenden Vorschau Umgebungen Sie auswählen.

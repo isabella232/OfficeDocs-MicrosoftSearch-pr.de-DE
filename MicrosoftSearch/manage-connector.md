@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Verwalten von Microsoft Graph-Connectors für Microsoft Search.
-ms.openlocfilehash: 962ceb488fa308eb31a98a8fad33d628f3590e89
-ms.sourcegitcommit: 1255c2612aec290ae117bdc24c3b4dabd1e5ca11
+ms.openlocfilehash: d7bd094fdc5cea521d1ee600eea3cd70067a0386
+ms.sourcegitcommit: 897b92bae1b905d7c47566e31c4c07cd16d44b17
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "39205867"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39254721"
 ---
 # <a name="manage-your-connector-for-microsoft-search"></a>Verwalten des Connectors für Microsoft Search
 
@@ -65,11 +65,11 @@ Unten sehen Sie eine Liste mit verschiedenen Fehlern, die für jede Verbindung a
 1003 | Das dem Connector zugeordnete Konto verfügt nicht über die Berechtigung, auf das Element zuzugreifen. |  Stellen Sie sicher, dass das richtige Konto Zugriff auf das Element hat, das Sie indizieren möchten.
 1004 | Das lokale Daten Gateway kann nicht erreicht werden. Stellen Sie sicher, dass der Gatewaydienst aktiv ist. | Wechseln Sie zu dem Computer, der über das Gateway verfügt, und überprüfen Sie, ob das Power BI-Gateway ausgeführt wird, indem Sie die Power BI-Gateway-Anwendung öffnen. Stellen Sie sicher, dass das Gateway mit dem für Microsoft Search verwendeten Administratorkonto angemeldet ist. 
 1005 | Anmeldeinformationen, die dieser Datenquelle zugeordnet sind, sind abgelaufen. Erneuern Sie die Anmeldeinformationen, und aktualisieren Sie die Verbindung. | Klicken Sie auf **Bearbeiten** , um die Authentifizierungsanmeldeinformationen zu aktualisieren. 
-1006 | Ihre Gateway-Version ist veraltet und unterstützt diesen Connector nicht mehr. Das Gateway muss aktualisiert werden. | Weitere Informationen finden Sie unter (install a on-premiseshttps://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-installData Gateway) [], um die neueste Version des Power BI-Gateways auf dem Computer mit dem Gateway herunterzuladen und zu installieren.
+1006 | Ihre Gateway-Version ist veraltet und unterstützt diesen Connector nicht mehr. Das Gateway muss aktualisiert werden. | Weitere Informationen finden Sie unter (install a on-premiseshttps://docs.microsoft.com/data-integration/gateway/service-gateway-installData Gateway) [], um die neueste Version des Power BI-Gateways auf dem Computer mit dem Gateway herunterzuladen und zu installieren.
 2001 | Die Indizierung wird aufgrund einer großen Anzahl von Updates in der Warteschlange eingeschränkt. Je nach Warteschlange kann es einige Zeit dauern, bis die Aktualisierungen abgeschlossen sind. | Warten Sie, bis die Warteschlange gelöscht wird.
 2002 | Die Indizierung ist aufgrund einer nicht unterstützten Element Formatierung fehlgeschlagen. | Weitere Informationen finden Sie in der Connector-spezifischen Dokumentation.
 2003 | Die Indizierung ist aufgrund eines nicht unterstützten Elementinhalts fehlgeschlagen. | Weitere Informationen finden Sie in der Connector-spezifischen Dokumentation. 
-2004 | Die [Dateigröße](https://docs.microsoft.com/en-us/microsoftsearch/file-share-connector#content-requirements) ist zu groß, um indiziert zu werden. Sie muss vor der Verarbeitung 100 MB oder weniger betragen und darf nach der Verarbeitung nicht größer als 4 MB sein. Die Datei wird in diesem Fall teilweise indiziert. Einige in der Datei vorhandene Ausdrücke geben möglicherweise kein Suchergebnis zurück. |  
+2004 | Die [Dateigröße](https://docs.microsoft.com/microsoftsearch/file-share-connector#content-requirements) ist zu groß, um indiziert zu werden. Sie muss vor der Verarbeitung 100 MB oder weniger betragen und darf nach der Verarbeitung nicht größer als 4 MB sein. Die Datei wird in diesem Fall teilweise indiziert. Einige in der Datei vorhandene Ausdrücke geben möglicherweise kein Suchergebnis zurück. |  
 5000 | Etwas ist schief gelaufen. Wenn dieser Vorgang fortgesetzt wird, wenden Sie sich an den Support. | 
 
 ## <a name="preview-limitations"></a>Vorschau Einschränkungen

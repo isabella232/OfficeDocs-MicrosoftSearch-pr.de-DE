@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Erstellen und Aktualisieren von Lesezeichen und Möglichkeiten zum Massen bearbeiten von Lesezeichen Ergebnissen für Microsoft Search
-ms.openlocfilehash: 94e24db6643307a83ffae21e03b2ea354e209f53
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: a50be90e9590086762df7c6b0fd2e0ad3349ec5d
+ms.sourcegitcommit: 897b92bae1b905d7c47566e31c4c07cd16d44b17
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626810"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39254739"
 ---
 # <a name="manage-bookmarks"></a>Verwalten von Lesezeichen
 
@@ -70,10 +70,17 @@ Hier sind einige wichtige Punkte, die in Bezug auf die Vorlagendatei zu beachten
 Sie erhalten eine Fehlermeldung, wenn erforderliche Daten fehlen oder ungültig sind, und eine Protokolldatei mit weiteren Informationen über die zu korrigierenden Zeilen und Spalten wird erstellt. Nehmen Sie die notwendigen Änderungen vor, und versuchen Sie, die Datei erneut zu importieren. Sie können keine Lesezeichen importieren oder speichern, bis alle Fehler behoben sind.
 
 Um Fehler zu verhindern, stellen Sie sicher, dass die Importdatei ordnungsgemäß formatiert ist und:
+
 - die Kopfzeile und alle Spalten enthält, die in der Importvorlage vorhanden waren
 - die Spaltenreihenfolge die gleiche ist wie in der Importvorlage
 - alle Spalten Werte haben, mit Ausnahme der drei, die leer sein dürfen: *ID*, *Zuletzt geändert* und *Zuletzt geändert von* 
 - die Spalte *Status* nicht leer ist, da diese Information erforderlich ist
+
+Führen Sie die folgenden bewährten Methoden aus, um zu verhindern, dass Lesezeichen-zu-Bookmark-Fehler auftreten:
+
+- Verwenden Sie keine doppelten URLs für unterschiedliche Lesezeichen. Wenn eine URL bereits einer anderen Textmarke zugewiesen ist und Sie Sie erneut aus einer Importdatei hinzufügen, wird eine Fehlermeldung angezeigt. Dies gilt auch für doppelte URLs für andere Arten von Antworten.
+- Verwenden Sie die Spalte Bookmark ID beim Aktualisieren vorhandener Textmarken. Sie können jede andere Eigenschaft einer vorhandenen Textmarke wie Stichwort oder Beschreibung aktualisieren, aber Sie sollten sicherstellen, dass die Lesezeichen-ID in der entsprechenden Spalte der Importdatei vorhanden ist. Wenn die Lesezeichen-ID vorhanden ist, wird Sie vom Dienst nicht als neue Hinzufügung betrachtet, und es wird ein Fehler verarbeitet.
+
 
 ## <a name="powerapps"></a>PowerApps
 Helfen Sie Ihren Benutzern beim Ausführen von Aufgaben, z. B. der Eingabe von Urlaubszeiten oder dem Erstellen von Spesenabrechnungen, indem Sie bestehende PowerApps zu Ihren Lesezeichen hinzufügen. 

@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Erstmaliges Einrichten von Microsoft Search.
-ms.openlocfilehash: 94ee7ece8a56d599778b151d5b836240d8832762
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: d8b796e0ff61972f3e244c1a5af98319884769dc
+ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626909"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39663060"
 ---
 # <a name="set-up-microsoft-search"></a>Einrichten von Microsoft Search
 
-Microsoft Search bietet eine benutzerfreundliche Oberfläche, die Benutzern das Auffinden von Informationen erleichtert (z. B. Dateien und Dokumente, interne Websites und Unternehmenstools, Personen und Gruppen, Orte und Wegbeschreibungen, Gespräche und Antworten), indem sie in der Organisation des Benutzers sicher auf alle Datenquellen, einschließlich E-Mails, Dateien, SharePoint-Dateien, OneDrive-Inhalte und andere gemeinsam genutzte Ressourcen sowie auf das Internet zugreift.
+Die Microsoft-Suche bietet eine benutzerfreundliche Oberfläche, mit der Benutzerinformationen wie Dateien und Dokumente, interne Websites und Geschäftstools, Personen und Gruppen, Orte und Richtungen, Unterhaltungen und Antworten suchen können. Dies geschieht durch sicheren Zugriff auf alle Datenquellen, einschließlich e-Mails, Dateien, SharePoint-Dateien, OneDrive-Inhalte und andere freigegebene Ressourcen sowie das Internet in der Organisation des Benutzers.
 
 Weitere Informationen zu den Microsoft Search-Features finden Sie unter [Übersicht über Microsoft Search](overview-microsoft-search.md).
 

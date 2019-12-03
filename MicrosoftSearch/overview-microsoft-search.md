@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erhalten Sie einen Überblick darüber, was Microsoft-Suche ist, welche Vorteile und welche apps Microsoft Search unterstützen.
-ms.openlocfilehash: 28bd561e53bb1878c601a08e919e37f524a6470c
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 938cf8875d9cc707041b950c6c13bab27e366670
+ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626972"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39663069"
 ---
 # <a name="overview-of-microsoft-search"></a>Übersicht über Microsoft Search 
 
@@ -46,7 +46,7 @@ Wenn die Vorschläge im Suchfeld nicht das sind, wonach Benutzer suchen, öffnet
 
 ## <a name="benefits-of-microsoft-search"></a>Vorteile von Microsoft Search
 
-**Suche in Microsoft 365 über jedes beliebige Microsoft Search-Feld** – Benutzer können über ein beliebiges Microsoft Search-Feld suchen und schnell zu der Aufgabe zurückkehren, die sie gerade durchgeführt haben. Microsoft Search vereint Ergebnisse aus Datenquellen in Office 365, einschließlich [SharePoint](http://sharepoint.com/), [Microsoft OneDrive für Unternehmen](https://onedrive.live.com/about/en-us/business/)und [Exchange Server](https://products.office.com/en-us/exchange/microsoft-exchange-server).
+**Suche in Microsoft 365 über jedes beliebige Microsoft Search-Feld** – Benutzer können über ein beliebiges Microsoft Search-Feld suchen und schnell zu der Aufgabe zurückkehren, die sie gerade durchgeführt haben. Microsoft Search vereint Ergebnisse aus Datenquellen in Office 365, einschließlich [SharePoint](http://sharepoint.com/), [Microsoft OneDrive für Unternehmen](https://onedrive.live.com/about/business/)und [Exchange Server](https://products.office.com/exchange/microsoft-exchange-server).
 
 **Einfache Suche** – Microsoft Search schlägt Ergebnisse basierend auf den vorherigen Aktivitäten von Benutzern in Office 365, direkt im **Suchfeld** vor.
 
@@ -64,7 +64,7 @@ Als Administrator können Sie eine erstaunliche Microsoft-Suchumgebung für Ihre
 
 **Hinzufügen von externem Inhalt** – mit Microsoft Graph-Connectors können Sie externen Inhalt in den Index einbinden. Verwenden Sie Connectors, um die Suchumgebung mit Daten und Dateien von außerhalb von Microsoft 365 zu bereichern. [Übersicht über Microsoft Graph-Connectors](connectors-overview.md)
 
-**Anpassen der Benutzeroberfläche** : Sie können die Benutzeroberfläche mithilfe von vertikalen und anderen Konfigurationen anpassen. [Anpassen der Seite "Microsoft-Suche"](customize-search-page.md)
+**Anpassen der Benutzeroberfläche** – Sie können die Benutzeroberfläche mithilfe von vertikalen und anderen Konfigurationen anpassen. [Anpassen der Seite "Microsoft-Suche"](customize-search-page.md)
 
 ## <a name="what-content-is-searched"></a>Wir werden Inhalte durchsucht?
 
@@ -87,7 +87,7 @@ Wenn ein Benutzer in Bing eine Suchabfrage in Microsoft Search eingibt, treten z
 Da Enterprise-suchen möglicherweise vertraulich sind, hat Microsoft Search eine Reihe von Vertrauensmaßnahmen implementiert, die beschreiben, wie `Bing.com` die getrennte Suche von öffentlichen Ergebnissen behandelt wird.
 
 ### <a name="logging"></a>Protokollierung
- - Alle `Bing.com` Suchprotokolle, die sich auf die Microsoft-Suche in Bing-Datenverkehr beziehen, werden von der Identität Ihres Arbeitsplatzes nicht zugeordnet.
+- Alle `Bing.com` Suchprotokolle, die sich auf die Microsoft-Suche in Bing-Datenverkehr beziehen, werden von der Identität Ihres Arbeitsplatzes nicht zugeordnet.
 - Wenn eine Reihe von Einschränkungen oder Häufigkeitsschwellenwerten erfüllt sind, die mit hoher Wahrscheinlichkeit darauf schließen lassen, dass die Abfrage nicht spezifisch für eine bestimmte Organisation ist, wird die Abfrage gemäß der Beschreibung im Abschnitt "Bing Services" der [Datenschutzbestimmungen](https://privacy.microsoft.com/privacystatement) behandelt. Beispielsweise werden solche Abfragen verwendet, um öffentliche Features wie Autosuggestion oder Verwandte Suchvorgänge zu modellieren und zu trainieren.
 - Abfragen, die diese Einschränkungen oder Häufigkeitsschwellenwerte nicht erfüllen, werden getrennt vom öffentlichen, Nicht-Microsoft Search-Datenverkehr gespeichert.
 ### <a name="advertising"></a>Werbung 

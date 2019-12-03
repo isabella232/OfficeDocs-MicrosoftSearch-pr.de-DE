@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Erstellen und Aktualisieren von Lesezeichen und Möglichkeiten zum Massen bearbeiten von Lesezeichen Ergebnissen für Microsoft Search
-ms.openlocfilehash: a50be90e9590086762df7c6b0fd2e0ad3349ec5d
-ms.sourcegitcommit: 897b92bae1b905d7c47566e31c4c07cd16d44b17
+ms.openlocfilehash: b65e61e4435e36fad5760f0a8d34bf444b51178b
+ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39254739"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39663144"
 ---
 # <a name="manage-bookmarks"></a>Verwalten von Lesezeichen
 
@@ -77,10 +77,8 @@ Um Fehler zu verhindern, stellen Sie sicher, dass die Importdatei ordnungsgemä�
 - die Spalte *Status* nicht leer ist, da diese Information erforderlich ist
 
 Führen Sie die folgenden bewährten Methoden aus, um zu verhindern, dass Lesezeichen-zu-Bookmark-Fehler auftreten:
-
 - Verwenden Sie keine doppelten URLs für unterschiedliche Lesezeichen. Wenn eine URL bereits einer anderen Textmarke zugewiesen ist und Sie Sie erneut aus einer Importdatei hinzufügen, wird eine Fehlermeldung angezeigt. Dies gilt auch für doppelte URLs für andere Arten von Antworten.
-- Verwenden Sie die Spalte Bookmark ID beim Aktualisieren vorhandener Textmarken. Sie können jede andere Eigenschaft einer vorhandenen Textmarke wie Stichwort oder Beschreibung aktualisieren, aber Sie sollten sicherstellen, dass die Lesezeichen-ID in der entsprechenden Spalte der Importdatei vorhanden ist. Wenn die Lesezeichen-ID vorhanden ist, wird Sie vom Dienst nicht als neue Hinzufügung betrachtet, und es wird ein Fehler verarbeitet.
-
+- Verwenden Sie die Spalte *Bookmark ID* beim Aktualisieren vorhandener Textmarken. Sie können jede andere Eigenschaft einer vorhandenen Textmarke wie Stichwort oder Beschreibung aktualisieren, aber Sie sollten sicherstellen, dass sich die *Lesezeichen-ID* in der entsprechenden Spalte der Importdatei befindet. Wenn die *Lesezeichen-ID* vorhanden ist, wird Sie vom Dienst nicht als neue Hinzufügung betrachtet, und Sie wird nicht als Fehler verarbeitet.
 
 ## <a name="powerapps"></a>PowerApps
 Helfen Sie Ihren Benutzern beim Ausführen von Aufgaben, z. B. der Eingabe von Urlaubszeiten oder dem Erstellen von Spesenabrechnungen, indem Sie bestehende PowerApps zu Ihren Lesezeichen hinzufügen. 

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Richten Sie den Microsoft SQL Connector für Microsoft Search ein.
-ms.openlocfilehash: a073a6d3f226e5f8b0ea297494a8889f1f50bab1
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: c31399e65bd4bfc154d10d2e6057fa23d11f030d
+ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626756"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39663161"
 ---
 # <a name="microsoft-sql-server-connector"></a>Microsoft SQL Server-Connector
 
@@ -48,6 +48,16 @@ In diesem Schritt konfigurieren Sie die SQL-Abfrage, die eine vollständige Durc
 Im Beispiel wird die Auswahl von fünf Datenspalten veranschaulicht, die die Daten für die Suche enthalten: OrderID, OrderTitle, OrderDesc, CreatedDateTime und IsDeleted. Um die Ansichtsberechtigungen für jede Datenzeile festzulegen, können Sie optional diese ACL-Spalten auswählen: AllowedUsers, AllowedGroups, DeniedUsers und DeniedGroups. Alle diese Datenspalten können **abgefragt**, **durchsuchbar**oder **abrufbar**gemacht werden.
 
 Wählen Sie Datenspalten aus, wie in der folgenden Beispielabfrage gezeigt:`SELECT OrderId, OrderTitle, OrderDesc, AllowedUsers, AllowedGroups, DeniedUsers, DeniedGroups, CreatedDateTime, IsDeleted`
+ 
+Um den Zugriff auf die Suchergebnisse zu verwalten, können Sie eine oder mehrere ACL-Spalten in der Abfrage angeben. Mit SQL Connector können Sie den Zugriff auf Datensatzebene steuern. Sie können auswählen, dass für alle Datensätze in einer Tabelle dieselbe Zugriffssteuerung gilt. Wenn die ACL-Informationen in einer separaten Tabelle gespeichert werden, müssen Sie möglicherweise eine Verknüpfung mit diesen Tabellen in Ihrer Abfrage durchführen.
+
+Die Verwendung der einzelnen ACL-Spalten in der obigen Abfrage wird im folgenden beschrieben. In der folgenden Liste werden die vier **Zugriffssteuerungsmechanismen**erläutert. 
+* **AllowedUsers**: Hiermit wird die Liste der Benutzer-IDs angegeben, die auf die Suchergebnisse zugreifen können. Im folgenden Beispiel würde die Liste der Benutzer: John@contoso.com, Keith@contoso.com und Lisa@contoso.com nur Zugriff auf einen Datensatz mit OrderID = 12 haben. 
+* **AllowedGroups**: Hiermit wird die Benutzergruppe angegeben, die auf die Suchergebnisse zugreifen kann. Im folgenden Beispiel hätte Group Sales-Team@contoso.com nur Zugriff auf Record mit OrderID = 12.
+* **DeniedUsers**: Dies gibt die Liste der Benutzer an, die **keinen** Zugriff auf die Suchergebnisse haben. Im folgenden Beispiel haben Benutzer John@contoso.com und Keith@contoso.com keinen Zugriff auf Record mit OrderID = 13, während alle anderen Zugriff auf diesen Datensatz haben. 
+* **DeniedGroups**: Hiermit wird die Gruppe von Benutzern angegeben, die **keinen** Zugriff auf die Suchergebnisse haben. Im folgenden Beispiel haben Gruppen Engg-Team@contoso.com und PM-Team@contoso.com keinen Zugriff auf Record mit OrderID = 15, während alle anderen Zugriff auf diesen Datensatz haben.  
+
+![](media/MSSQL-ACL1.png)
 
 ### <a name="watermark-required"></a>Wasserzeichen (erforderlich)
 Um zu verhindern, dass die Datenbank überladen wird, führt der Connector Batches aus und setzt vollständige Durchforstungs Abfragen mit einer Wasserzeichen Spalte vollständig Durchforstung fort. Durch Verwendung des Werts der Spalte Wasserzeichen wird jeder nachfolgende Batch abgerufen, und die Abfrage wird vom letzten Prüfpunkt fortgesetzt. Im Wesentlichen handelt es sich hierbei um einen Mechanismus zum Steuern der Datenaktualisierung für vollständige Durchforstungen.
@@ -67,6 +77,18 @@ Um vorläufig gelöschte Zeilen in Ihrer Datenbank von der Indizierung auszuschl
 
 ![Einstellungen für "weiche Löschung": "weiche Löschspalte" und "Wert der Spalte" weiche Löschung ", die eine gelöschte Zeile angibt.](media/MSSQL-softdelete.png)
 
+### <a name="full-crawl-manage-search-permissions"></a>Vollständige Durchforstung: Verwalten von Suchberechtigungen
+Klicken Sie auf **Berechtigungen verwalten** , um die verschiedenen Spalten der Zugriffssteuerung (ACL) auszuwählen, die den Zugriffssteuerungsmechanismus angeben. Wählen Sie den Spaltennamen aus, den Sie in der vollständigen Durchforstungs-SQL-Abfrage angegeben haben. 
+
+Für jede der ACL-Spalten wird eine mehrwertige Spalte erwartet. Diese mehrere ID-Werte können durch Trennzeichen wie Semikolon (;), Komma (,) usw. getrennt werden. Sie müssen dieses Trennzeichen im Feld **Wert Trennzeichen** angeben.
+ 
+Die folgenden ID-Typen werden für die Verwendung als ACLs unterstützt: 
+* **Benutzerprinzipalname (UPN)**: ein Benutzerprinzipalname (UPN) ist der Name eines Systembenutzers in einem e-Mail-Adressformat. Ein UPN (zum Beispiel: John.Doe@Domain.com) besteht aus dem Benutzernamen (Anmeldename), dem Trennzeichen (dem @-Symbol) und dem Domänennamen (UPN-Suffix). 
+* **Azure Active Directory (AAD) ID**: in Aad hat jeder Benutzer oder jede Gruppe eine Objekt-ID, die so aussieht, als ob "e0d3ad3d-0000-1111-2222-3c5f5c52ab9b" 
+* **Active Directory (AD)-Sicherheits-ID**: in einem lokalen AD-Setup verfügt jeder Benutzer und jede Gruppe über eine unveränderliche, eindeutige Sicherheits-ID, die so ähnlich aussieht wie die-1-5-21-3878594291-2115959936-132693609-65242. "
+
+![](media/MSSQL-ACL2.png)
+
 ## <a name="incremental-crawl-optional"></a>Inkrementelle Durchforstung (optional)
 Geben Sie in diesem optionalen Schritt eine SQL-Abfrage ein, um einen inkrementellen Crawl der Datenbank auszuführen. Mit dieser Abfrage nimmt der Microsoft SQL Server-Connector seit der letzten inkrementellen Durchforstung Änderungen an den Daten vor. Wählen Sie wie in der vollständigen Durchforstung alle Spalten aus, die **abgefragt**, **durchsuchbar**oder **abrufbar**gemacht werden sollen. Geben Sie dieselbe Gruppe von ACL-Spalten an, die Sie in der vollständigen Durchforstungs Abfrage angegeben haben.
 
@@ -74,9 +96,11 @@ Die Komponenten in der folgenden Abbildung ähneln den vollständigen Durchforst
 
 ![Inkrementelles Durchforstungs Skript mit Sortier-, AclTable-und Beispiel Eigenschaften, die verwendet werden können.](media/MSSQL-incrcrawl.png)
 
+## <a name="manage-search-permissions"></a>Verwalten von Suchberechtigungen 
+Sie können die [im vollständigen Durchforstungs Bildschirm angegebenen ACLs](#full-crawl-manage-search-permissions) verwenden, oder Sie können Sie außer Kraft setzen, damit Ihre Inhalte für alle sichtbar sind.
+
 ## <a name="limitations"></a>Einschränkungen
 Der Microsoft SQL Server-Connector weist diese Einschränkungen in der Vorschauversion auf:
 * In der lokalen Datenbank muss SQL Server Version 2008 oder höher ausgeführt werden.
-* ACLs werden nur mit einem Benutzerprinzipalnamen (User Principal Name, UPN), Azure Active Directory (Azure AD) oder Active Directory Sicherheit unterstützt.
+* ACLs werden nur mit einem Benutzerprinzipalnamen (User Principal Name, UPN), Azure Active Directory (Azure AD) oder Active Directory Sicherheit unterstützt. 
 * Das Indizieren von umfangreichen Inhalten in Datenbankspalten wird nicht unterstützt. Beispiele für solche Inhalte sind HTML-, JSON-, XML-, BLOBs-und Dokumentanalysen, die als Links in den Datenbankspalten vorhanden sind.
-

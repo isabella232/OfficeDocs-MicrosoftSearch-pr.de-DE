@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 description: Erfahren Sie mehr über Methoden und Prozesse, die Sie bei der erfolgreichen Einführung der Microsoft-Suche in Ihrer Organisation unterstützen.
-ms.openlocfilehash: 135b07b7dd4e26eaaebd0c09d0d94689b83f2b16
-ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
+ms.openlocfilehash: 4c40013297b8b7a91e589137e70716bd8e4fd326
+ms.sourcegitcommit: f4cb37fdf85b895337caee827fb72b5b7fcaa8ad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699530"
+ms.lasthandoff: 12/12/2019
+ms.locfileid: "39995005"
 ---
 # <a name="user-adoption-guide"></a>Einführungsleitfaden für Benutzer
 
@@ -38,9 +38,9 @@ Die Tabelle zeigt die Team Hierarchie und den Beitrag jeder Person.
 |:-----|:-----|:-----|
 |Leitenden Sponsors  <br/> |Verstehen Sie die allgemeine Vorstellung und den Wert der Microsoft-Suche für Ihre Organisation.  <br/> Bereitstellen von Führungsunterstützung für IT/Business-Team  <br/> Ressourcen zuordnen.  <br/> Direkte Kommunikation mit Mitarbeitern.  <br/> |Führungskräfte  <br/> |
 |Geschäftsbesitzer  <br/> |Identifizieren von Produkt-und Benutzerszenarien  <br/> Bestimmen der Erfolgsmetrik für Abteilungen und Organisation.  <br/> |Any  <br/> |
-|Change Management-Team  <br/> |Stellen Sie sicher, dass der Produkt Wert leicht zu verstehen ist.  <br/> Erstellen Sie einen Plan für das Rollout.  <br/> |IT-Abteilung  <br/> |
+|Change Management-Team  <br/> |Stellen Sie sicher, dass der Produkt Wert leicht zu verstehen ist.  <br/> Erstellen Sie einen Plan für das Rollout.  <br/> |IT  <br/> |
 |Experten  <br/> |Evangelisieren Sie das Produkt für Kollegen und Teams.  <br/> |Any (Mitarbeiter)  <br/> |
-|Suchadministrator  <br/> |Identifizieren der Mitglieder des Haupt Teams für die Benutzerakzeptanz  <br/> Verwalten der Microsoft-Suche, einschließlich Aussehen und Verhalten der Erfahrung und der laufenden Verwaltung.  <br/> Führen Sie Diskussionen aus, um den Wert von Microsoft Search anzuzeigen.  <br/> |IT-Abteilung  <br/> |
+|Suchadministrator  <br/> |Identifizieren der Mitglieder des Haupt Teams für die Benutzerakzeptanz  <br/> Verwalten der Microsoft-Suche, einschließlich Aussehen und Verhalten der Erfahrung und der laufenden Verwaltung.  <br/> Führen Sie Diskussionen aus, um den Wert von Microsoft Search anzuzeigen.  <br/> |IT  <br/> |
 |Editors  <br/> |Erstellen Sie Inhalte im Microsoft 365 [Admin Center](https://admin.microsoft.com).  <br/> |IT/any  <br/> |
    
 ## <a name="stage-2-scenarios"></a>Phase 2: Szenarien
@@ -119,7 +119,7 @@ Alle Kommunikationen sollten Benutzer darüber informieren, wie Sie sich bei [Bi
   
 ### <a name="engage-partner-teams"></a>Partnerteams einbinden
   
-Als integraler Bestandteil von [Microsoft 365](https://www.microsoft.com/microsoft-365)erfüllt Microsoft Search die dsgvo-und Tier-C-Richtlinien. Je nach Ihrer Organisation ist es möglicherweise erforderlich, Informationen zur Microsoft-Suche mit Ihren Datenschutz-und Sicherheitsteams freizugeben. Weitere Informationen finden Sie unter [Security for Microsoft Search](overview-microsoft-search.md#microsoft-search-in-bing-protects-enterprise-searches).
+Als integraler Bestandteil von [Microsoft 365](https://www.microsoft.com/microsoft-365)erfüllt Microsoft Search die dsgvo-und Tier-C-Richtlinien. Je nach Ihrer Organisation ist es möglicherweise erforderlich, Informationen zur Microsoft-Suche mit Ihren Datenschutz-und Sicherheitsteams freizugeben. Weitere Informationen finden Sie unter [Sicherheit und Datenschutz für die Microsoft-Suche in Bing](security-for-search.md).
   
 Stellen Sie sicher, dass Ihr Helpdesk über die Features und Funktionen von Microsoft Search sowie die Benutzeranforderungen für die Anmeldung Bescheid weiß, damit Sie die Benutzer effektiver unterstützen können. Weitere Informationen finden Sie unter Informationen [zur Microsoft-Suche in Microsoft 365](https://support.office.com/article/Learn-about-Microsoft-Search-in-Microsoft-365-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc) und [FAQs](faqs.md).
   

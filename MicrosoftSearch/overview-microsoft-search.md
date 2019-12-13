@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erhalten Sie einen Überblick darüber, was Microsoft-Suche ist, welche Vorteile und welche apps Microsoft Search unterstützen.
-ms.openlocfilehash: 938cf8875d9cc707041b950c6c13bab27e366670
-ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
+ms.openlocfilehash: 4acc3b9fcb7453f84db256cc20e839066dc94af5
+ms.sourcegitcommit: f4cb37fdf85b895337caee827fb72b5b7fcaa8ad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "39663069"
+ms.lasthandoff: 12/12/2019
+ms.locfileid: "39995032"
 ---
 # <a name="overview-of-microsoft-search"></a>Übersicht über Microsoft Search 
 
@@ -70,28 +70,16 @@ Als Administrator können Sie eine erstaunliche Microsoft-Suchumgebung für Ihre
 
 Microsoft Search zeigt die Inhalte, die Ihre Organisation in Microsoft 365 gespeichert oder über Connectors indiziert hat. Die Microsoft-Suche sucht nicht in Mandanten oder zeigt Ergebnisse aus Inhalten an, die von anderen Organisationen gemeinsam verwendet werden. Wenn Ihre Organisation eine hybride SharePoint-Umgebung eingerichtet hat und die Cloud-Hybridsuche verwendet, liefert Microsoft Search sowohl Suchergebnisse aus Onlineinhalten als auch aus lokalen SharePoint-Inhalten, einschließlich aller externen Inhalte, die Sie mit Ihrer SharePoint Server-Umgebung verbunden haben. [Weitere Informationen zu hybriden Suchumgebungen](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint).
 
-Benutzer erhalten dieselben Ergebnisse aus der Unternehmenssuche, die Sie von anderen Standorten erhalten, und erhalten auch Ergebnisse aus dem Internet.
+Benutzer erhalten dieselben Suchergebnisse, die Sie von anderen Speicherorten erhalten, und erhalten auch Ergebnisse aus dem Internet.
 
 ## <a name="how-does-microsoft-search-work"></a>Wie funktioniert Microsoft Search?
 
 Wenn ein Benutzer sucht, verarbeitet Microsoft Search die Abfrage und analysiert die Suchabsicht aus längeren Ausdrücken. Dabei kommt künstliche Intelligenz (AI) zum Einsatz, um gängige überflüssige Ausdrücke zu erlernen, die Benutzer ihren Abfragen hinzufügen und die keine Auswirkung auf die Suchabsicht haben. Wenn ein Benutzer beispielsweise nach „wie kann ich mein Kennwort ändern“ sucht, extrahieren wir die weniger wichtigen Wörter aus der Abfrage und lösen die Suche basierend auf den relevanten Wörtern wie „Kennwort ändern“ aus.  
 Die Suchergebnisse, für die der Benutzer die **Berechtigung** hat, werden auf der Suchergebnisseite präsentiert. Microsoft Search verwendet intelligente Rangfolgealgorithmen, um Ergebnisse basierend auf Relevanz anzufordern.
 
-## <a name="microsoft-search-in-bing-protects-enterprise-searches"></a>Microsoft Search in Bing schützt die Unternehmenssuche
+## <a name="how-does-microsoft-search-in-bing-help-protect-my-company-data"></a>Wie hilft die Microsoft-Suche in Bing, meine Unternehmensdaten zu schützen?
 
-Wenn ein Benutzer in Bing eine Suchabfrage in Microsoft Search eingibt, treten zwei gleichzeitige Suchanforderungen auf:
-
-- Eine Suche nach internen Ressourcen Ihrer Organisation.
-- Eine getrennte Suche nach öffentlichen Ergebnissen aus Bing.com. 
-
-Da Enterprise-suchen möglicherweise vertraulich sind, hat Microsoft Search eine Reihe von Vertrauensmaßnahmen implementiert, die beschreiben, wie `Bing.com` die getrennte Suche von öffentlichen Ergebnissen behandelt wird.
-
-### <a name="logging"></a>Protokollierung
-- Alle `Bing.com` Suchprotokolle, die sich auf die Microsoft-Suche in Bing-Datenverkehr beziehen, werden von der Identität Ihres Arbeitsplatzes nicht zugeordnet.
-- Wenn eine Reihe von Einschränkungen oder Häufigkeitsschwellenwerten erfüllt sind, die mit hoher Wahrscheinlichkeit darauf schließen lassen, dass die Abfrage nicht spezifisch für eine bestimmte Organisation ist, wird die Abfrage gemäß der Beschreibung im Abschnitt "Bing Services" der [Datenschutzbestimmungen](https://privacy.microsoft.com/privacystatement) behandelt. Beispielsweise werden solche Abfragen verwendet, um öffentliche Features wie Autosuggestion oder Verwandte Suchvorgänge zu modellieren und zu trainieren.
-- Abfragen, die diese Einschränkungen oder Häufigkeitsschwellenwerte nicht erfüllen, werden getrennt vom öffentlichen, Nicht-Microsoft Search-Datenverkehr gespeichert.
-### <a name="advertising"></a>Werbung 
-Werbung, die `Bing.com` im Zusammenhang mit der Unternehmenssuche angezeigt wird, bezieht sich ausschließlich auf den Inhalt der Suchabfragen. Anzeigen sind niemals an Benutzer basierend auf Ihrer Arbeitsplatzidentität gerichtet.
+[Sicherheit und Datenschutz für die Microsoft-Suche in Bing](security-for-search.md)
 
 ## <a name="see-also"></a>Siehe auch
 

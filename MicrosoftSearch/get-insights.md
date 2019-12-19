@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: ebce7fdc-e89b-473c-8131-67e659bb3f73
 description: Analysieren von Metriken und Verwalten von Inhalten aus dem Insights-Dashboard in der Microsoft-Suche
-ms.openlocfilehash: bbfc8b230690eeef1f7a23d70d7af29b88924e7d
-ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
+ms.openlocfilehash: 8ed0e13b53f61c699e8cf5628341adba3b96be9c
+ms.sourcegitcommit: 26481c00963d836de4ed64a454fb6c5b49c5075d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699862"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40738053"
 ---
 # <a name="microsoft-search-insights-dashboard-reports"></a>Microsoft Search Insights Dashboard-Berichte
 
@@ -47,7 +47,7 @@ Sie können verschiedene Ansichten des Berichts auswählen, indem Sie nach dem T
 
 ## <a name="impression-distribution"></a>Impression-Verteilung
 
-In diesem Bericht wird die Druckverteilung in [Bing](https://Bing.com) im Laufe der Zeit für verschiedene Antworten dargestellt. Beispiele sind Lesezeichen, Personen, Q&A, Dateien, Speicherorte, Datei Websites, Gruppen und Unterhaltungen. 
+In diesem Bericht wird die Druckverteilung in [Bing](https://Bing.com) im Laufe der Zeit für verschiedene Antworten dargestellt. Beispiele sind Lesezeichen, Personen, Q&A, Dateien, Speicherorte, Datei Websites, Gruppen und Unterhaltungen.
 
 ![Impressions Bericht mit 90 Tagen, die als Zeitraum ausgewählt wurden.](media/Insights-impressions.png)
 

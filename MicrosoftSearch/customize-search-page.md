@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Hinzufügen von Such vertikalen und Anpassen von Suchergebnissen
-ms.openlocfilehash: 28e8fdc7fe7f08abe265c53772a161b8a7095503
-ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
+ms.openlocfilehash: 852622c0c66afb996f941c609980a0d792af7364
+ms.sourcegitcommit: c41334350654daef3a4cd45b5b18ea4401286997
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699557"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "40947026"
 ---
-# <a name="customize-the-microsoft-search-page"></a>Anpassen der Seite "Microsoft-Suche"
+# <a name="customize-the-search-results-page"></a>Anpassen der Suchergebnisseite
 
 Durch das Erstellen von Such vertikalen und Ergebnistypen können Sie die Suchergebnisse anpassen, die Benutzern angezeigt werden, wenn Sie in [Bing](https://Bing.com)nach [SharePoint](http://sharepoint.com/), [Microsoft Office](https://Office.com)und Microsoft Search suchen. Vertikals erleichtern Benutzern die Suche nach Informationen, für die Sie die Berechtigung erhalten haben. Sie können beispielsweise eine Such Sparte für Marketing Analyse Daten aus Drittanbietersoftware für Ihre Benutzer in der Marketingabteilung erstellen. Sie können auch Ergebnistypen definieren und das Layout für diese Daten anpassen.  
 

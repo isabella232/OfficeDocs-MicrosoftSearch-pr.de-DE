@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie mehr über die Microsoft Graph Connectors Preview für Microsoft Search.
-ms.openlocfilehash: 054dc00bcb5cc0c110858fd329fbf2dbf16fb38b
-ms.sourcegitcommit: 1255c2612aec290ae117bdc24c3b4dabd1e5ca11
+ms.openlocfilehash: f95f6283fa875a1cfa84556640b16a902b2f2185
+ms.sourcegitcommit: c41334350654daef3a4cd45b5b18ea4401286997
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "39205876"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "40947017"
 ---
 # <a name="microsoft-graph-connectors-preview"></a>Vorschau der Microsoft Graph-Konnektoren
 
@@ -34,6 +34,7 @@ Um Konnektoren, Indizierungs-APIs und Such-APIs zu testen, empfehlen wir diese b
 
 ## <a name="preview-limitations"></a>Vorschau Einschränkungen
 Die Vorschauversion weist die folgenden Einschränkungen auf:
+* Die öffentliche Vorschau für Microsoft Graph-Connectors steht nur für Mandanten in den Regionen USA und Europa zur Verfügung. 
 * Der Durchsatz für die Einnahme wird mit etwa vier Elementen pro Sekunde gedrosselt.
 * Es gibt keine Unterstützung für Schemaaktualisierungen. Nachdem Sie eine Verbindungseinrichtung erstellt haben, können Sie das Schema nicht aktualisieren. Sie können die Verbindung nur löschen und neu erstellen.
 * Indizierte Inhalte werden nur auf der Suchergebnisseite unter einer benutzerdefinierten vertikalen angezeigt. Diese Einschränkung gilt für Inhalte mit benutzerdefinierten Typen.

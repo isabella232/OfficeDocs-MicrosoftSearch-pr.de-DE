@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Hinzufügen von Such vertikalen und Anpassen von Suchergebnissen
-ms.openlocfilehash: 852622c0c66afb996f941c609980a0d792af7364
-ms.sourcegitcommit: c41334350654daef3a4cd45b5b18ea4401286997
+ms.openlocfilehash: 198e5c85c1544b05cdc622f7b617e8bddbcd6a00
+ms.sourcegitcommit: 78dc72e99e148898455e016b4ccb110d16b3d81c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "40947026"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40987676"
 ---
 # <a name="customize-the-search-results-page"></a>Anpassen der Suchergebnisseite
 
@@ -101,7 +101,7 @@ Nachdem Sie den Assistenten gestartet haben, werden Sie durch die Schritte zum D
 ### <a name="view-the-vertical-after-enabling"></a>Anzeigen der vertikalen nach Aktivierung
 
 Nachdem Sie die vertikale aktiviert haben, kann es eine Weile dauern, bis Sie Sie anzeigen können.
-Wenn Sie nach dem Aktivieren warten möchten, können Sie **cacheClear = true** an die URL in [SharePoint](http://sharepoint.com/) und [Office](https://Office.com) anfügen, um die vertikale sofort anzuzeigen.
+Wenn Sie nicht warten möchten, nachdem Sie es aktiviert haben, können Sie **cacheClear = true** an die URL in [SharePoint](http://sharepoint.com/) und [Office](https://Office.com) anfügen, um die vertikale sofort anzuzeigen.
 
 ## <a name="troubleshooting"></a>Problembehandlung
 

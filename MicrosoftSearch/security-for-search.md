@@ -1,8 +1,8 @@
 ---
 title: Sicherheit und Datenschutz für die Microsoft-Suche in Bing
-ms.author: anfowler
-author: adefowler
-manager: shohara
+ms.author: jeffkizn
+author: jeffkizn
+manager: pmanek
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Schützen der Daten Ihres Unternehmens und der Endbenutzer bei der Bereitstellung von Informationen für autorisierte Benutzer mit Microsoft Search in Bing
-ms.openlocfilehash: d3d8822b68fc730885e973c0c24c52070d50eba8
-ms.sourcegitcommit: f4cb37fdf85b895337caee827fb72b5b7fcaa8ad
+ms.openlocfilehash: 7f19327f3d62f68ed876875596610181b5f1bc0e
+ms.sourcegitcommit: ac1209d11b8cc265d2224917fbe2a2bb0f65ef84
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2019
-ms.locfileid: "39995387"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41005621"
 ---
 # <a name="security-and-privacy-for-microsoft-search-in-bing"></a>Sicherheit und Datenschutz für die Microsoft-Suche in Bing
 
@@ -30,16 +30,16 @@ Die Microsoft-Suche in Bing-Anforderungen erfolgt über HTTPS. Die Verbindung is
 ## <a name="authentication-and-authorization-with-azure-active-directory"></a>Authentifizierung und Autorisierung mit Azure Active Directory
 
 Die Authentifizierung für Microsoft Search in Bing ist an Azure Active Directory gebunden. Wenn Microsoft Search-Benutzer zu Bing wechseln, werden in der Bing-Kopfzeile Anmeldeoptionen für ein Microsoft-Konto sowie ein Arbeits-oder Schulkonto angezeigt. Wenn Bing nicht ermitteln kann, ob ein Benutzer ein berechtigter Teilnehmer ist, können Benutzer zur Seite [Microsoft-Suche durch](https://www.bing.com/business/explore) suchen wechseln, auf der Sie automatisch zur Anmeldeseite Ihrer Organisation umgeleitet werden.
- 
+
 Benutzer können nur über ein Geschäfts- oder Schulkonto auf Microsoft Search zugreifen. Sie müssen sich mit denselben Anmeldeinformationen anmelden, mit denen sie auch Zugriff auf Office 365-Dienste wie SharePoint oder Outlook erhalten. Ein persönliches Microsoft-Konto kann nicht zum Anmelden bei Microsoft Search verwendet werden.
-    
+
 ## <a name="single-sign-on"></a>Einmaliges Anmelden
 
 Wenn ein Benutzer bereits mit seinem Arbeits-oder Schulkonto in einem anderen Dienst wie Outlook oder SharePoint authentifiziert ist, wird er automatisch beim gleichen Arbeits-oder Schulkonto angemeldet, wenn er im selben Browser zu Bing geht. Wenn sich der Benutzer von seinem geschäftlichen oder Schulkonto abmeldet, wird er auch automatisch von anderen Microsoft Office Diensten im gleichen Browser abgemeldet.
   
 ## <a name="communicates-with-the-microsoft-cloud-from-the-browser"></a>Kommuniziert mit der Microsoft-Cloud aus dem Browser
 
-Wenn sich ein Benutzer mit seinem geschäftlichen oder Schulkonto anmeldet, lädt Bing die erforderlichen Clientbibliotheken in den Browser herunter, um die Microsoft-Suchergebnisse zu aktivieren. Bei der Suche ruft der in-Browser-Code die Office 365 Cloud auf, um Arbeitsergebnisse zu erhalten. Zu diesem Zweck verwendet Microsoft Search eine dedizierte API, die Stufe C (SOC2 Type 1) gemäß dem Office 365 [Compliance Framework for Industry Standards and Regulations] (https://download.microsoft.com/download/B/2/7/B27B3EF3-8849-4C18-8BA4-5AD755728620/Compliance%20Framework_customer%20guidance.pdf) (PDF-Download) entspricht. Dies bedeutet, dass Arbeitsergebnisse und Arbeitsdaten niemals durch nicht kompatible Bing-Systeme fließen.
+Wenn sich ein Benutzer mit seinem Geschäfts- oder Schulkonto anmeldet, lädt Bing die notwendigen Client-Bibliotheken in den Browser, um Ergebnisse von Microsoft Search zu aktivieren. Bei der Suche ruft der Code des Browsers Arbeitsergebnisse von der Office 365-Cloud ab. Dazu verwendet Microsoft Search eine dedizierte API, die zur Ebene C (SOC2 Typ 1) kompatibel ist und der [Compliance-Framework für Branchenstandards und gesetzliche Vorschriften](https://download.microsoft.com/download/1/4/3/1434ABAB-B8E9-412D-8C3A-187B5FCB7A2F/Compliance%20Framework%20document.pdf) (PDF-Download) für Office 365 entspricht. Dies bedeutet, dass Arbeitsergebnisse und Arbeitsdaten nie über nicht kompatible Bing-Systeme fließen.
   
 ## <a name="permissions"></a>Berechtigungen
 
@@ -56,8 +56,6 @@ Da Arbeitsplatz suchen möglicherweise vertraulich sind, hat Microsoft Search ei
 
 ### <a name="logging"></a>Protokollierung
 
-<Need an intro paragraph here>
-
 - Alle Bing.com-Suchprotokolle, die sich auf die Microsoft-Suche in Bing-Datenverkehr beziehen, werden von der Identität Ihres Arbeitsplatzes nicht zugeordnet.
 - Wenn eine Reihe von Einschränkungen oder Frequenz Schwellenwerten erfüllt werden, die uns Vertrauen, dass die Abfrage nicht für eine bestimmte Organisation spezifisch ist, wird die Abfrage wie im Abschnitt Suchen und künstliche Intelligenz der [Datenschutz](https://privacy.microsoft.com/privacystatement)Richtlinie beschrieben behandelt. Beispielsweise werden solche Abfragen verwendet, um öffentliche Features wie Autosuggestion oder Verwandte Suchvorgänge zu modellieren und zu trainieren.
 - Abfragen, die diese Einschränkungen oder Häufigkeitsschwellenwerte nicht erfüllen, werden getrennt vom öffentlichen, Nicht-Microsoft Search-Datenverkehr gespeichert.
@@ -65,10 +63,9 @@ Da Arbeitsplatz suchen möglicherweise vertraulich sind, hat Microsoft Search ei
 ### <a name="advertising"></a>Werbung
 
 Werbung, die in Bing.com im Zusammenhang mit der Arbeitsplatzsuche angezeigt wird, bezieht sich ausschließlich auf den Inhalt der Suchabfragen. Anzeigen sind niemals an Benutzer basierend auf Ihrer Arbeitsplatzidentität gerichtet.
-     
+
 ## <a name="gdpr"></a>DSGVO
 
-Der [Blogbeitrag von Microsoft vom 21. Mai 2018](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/) spiegelt unser Engagement für dsgvo Compliance wider und wie Microsoft Unternehmen und Organisationen mit ihren eigenen dsgvo-Compliance-Verpflichtungen hilft. Weitere Informationen finden Sie im Microsoft [Trust Center-FAQ](https://www.microsoft.com/trustcenter/privacy/gdpr/gdpr-faqs). 
+Der [Blogbeitrag von Microsoft vom 21. Mai 2018](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/) spiegelt unser Engagement für dsgvo Compliance wider und wie Microsoft Unternehmen und Organisationen mit ihren eigenen dsgvo-Compliance-Verpflichtungen hilft. Weitere Informationen finden Sie im Microsoft [Trust Center-FAQ](https://www.microsoft.com/trustcenter/privacy/gdpr/gdpr-faqs).
 
 Microsoft-Suchabfragen, die für die internen Ressourcen eines Kunden ausgeführt werden und zurückgegebene Ergebnisse werden als Kundendaten betrachtet und erfüllen daher auch die in Artikel 28 beschriebenen Prozessor Zusagen, wie Sie in den [Trust Center-häufig](https://www.microsoft.com/trustcenter/privacy/gdpr/gdpr-faqs)gestellten Fragen beschrieben werden. In Bezug auf Abfragen von Microsoft Search, die zu Public Bing wechseln, erfüllt Microsoft die dsgvo-Verpflichtungen als Daten Verantwortlicher.
-

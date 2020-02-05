@@ -1,8 +1,8 @@
 ---
 title: Anpassen des Suchergebnis Layouts
-ms.author: anfowler
-author: jeffkizn
-manager: shohara
+ms.author: jypal
+author: jypal6
+manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,30 +12,31 @@ search.appverid:
 - MET150
 - MOE150
 description: Erstellen eines Layouts zum Anzeigen Ihrer benutzerdefinierten Suchergebnisse mithilfe adaptiver Karten
-ms.openlocfilehash: 6d1409eaf070275a4c6dbc713b1ec7914e09e541
-ms.sourcegitcommit: b28d7f4dfc71ecd7edc28c964a3da2180e1f4c74
+ms.openlocfilehash: e31be1f9c1602fcd696c99d584388facee22df74
+ms.sourcegitcommit: c22e8c3dcc53857da677db98a1a2b7d5ca2c6170
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793550"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721777"
 ---
+<!-- markdownlint-disable no-hard-tabs -->
 # <a name="create-a-layout-to-customize-search-results"></a>Erstellen eines Layouts zum Anpassen von Suchergebnissen
 
 Sie können das Ergebnis Layout für eine benutzerdefinierte vertikale mithilfe des Such Layout-Designers entwerfen. Sie können mit dem Entwurf des Layouts beginnen, indem Sie Vorlagen auswählen, die im Layout-Designer angeboten werden, und diese verwenden, wenn Sie Ihren Anforderungen entsprechen. Sie können diese Vorlagen auch auf verschiedene Arten bearbeiten, um Ihren Anforderungen zu entsprechen. Beispiel: Hinzufügen/Entfernen von Bildern, Hinzufügen/Entfernen von Text und Ändern von Text. Wenn keine der Vorlagen Ihren Anforderungen entspricht, können Sie mit dem Entwerfen Ihres Layouts mit einer leeren Vorlage beginnen.  
 
- 
-
 Nachdem das Layout bereit ist, verwenden Sie die [Vorlage Sprache für Adaptive Karten](https://docs.microsoft.com/adaptive-cards/templating/language) , um ein Ergebnis Layout-JSON zu erstellen, die zum Definieren eines Ergebnistyps verwendet wird. Sie ordnen die Ergebniseigenschaften dem Layout mithilfe des Zuordnungs Schritts im Layout-Designer zu.  
 
 ## <a name="create-a-layout-on-your-own"></a>Erstellen eines Layouts auf eigene Faust
+
 Das Erstellen eines Layouts auf eigene Faust erfordert Kenntnisse über [Adaptive Karten](https://docs.microsoft.com/adaptive-cards/authoring-cards/getting-started) und deren [Schema](https://adaptivecards.io/explorer/). Das Suchergebnislayout verwendet eine Teilmenge der Elemente, die von adaptiven Karten angeboten werden, und Sie können den Layout-Designer verwenden, um mehr über den unterstützten Satz von Elementen zu erfahren.  
 
 Erstellen Sie beim Erstellen Ihres eigenen Layouts das Layout für die Adaptive Karte mithilfe von Daten aus dem Connector, und schließen Sie dann das Layout ab.
 Es gibt zwei Hauptschritte beim Erstellen Ihres eigenen Layouts:
+
 - Entwerfen Sie das Layout.
 - Trennen Sie die Daten von der Vorlage.
 
-#### <a name="design-the-layout"></a>Entwerfen des Layouts
+### <a name="design-the-layout"></a>Entwerfen des Layouts
 
 In diesem Beispiel wird ein Layout mit einer Kopfzeile, einem Link und einem beschreibenden Text angezeigt.
 
@@ -43,130 +44,128 @@ In diesem Beispiel wird ein Layout mit einer Kopfzeile, einem Link und einem bes
 
 Und hier ist die zugehörige JSON-Datei des Layouts:
 
-
 ```json
-{ 
-    "type": "AdaptiveCard", 
-    "version": "1.0", 
-     "body": [ 
-{ 
+{
+    "type": "AdaptiveCard",
+    "version": "1.0",
+     "body": [
+{
 
-            "type": "ColumnSet", 
-             "columns": [ 
-                 { 
-                     "type": "Column", 
-                     "width": 8, 
-                     "items": [ 
-                         { 
-                             "type": "TextBlock", 
-                             "text": "Contoso Marketing Analysis - Q3 FY18", 
-                             "color": "Accent", 
-                             "size": "Medium", 
-                             "spacing": "None", 
-                             "$when": "{title != \"\"}", 
-                             "weight": "Bolder" 
-                        }, 
-                        { 
+            "type": "ColumnSet",
+             "columns": [
+                 {
+                     "type": "Column",
+                     "width": 8,
+                     "items": [
+                         {
+                             "type": "TextBlock",
+                             "text": "Contoso Marketing Analysis - Q3 FY18",
+                             "color": "Accent",
+                             "size": "Medium",
+                             "spacing": "None",
+                             "$when": "{title != \"\"}",
+                             "weight": "Bolder"
+                        },
+                        {
                         "type": "TextBlock",  
-                        "text": "https://contoso.com/hr/link", 
+                        "text": "https://contoso.com/hr/link",
                         "spacing": "None",  
-                        "color": "Dark", 
-                        "weight": "Bolder" 
+                        "color": "Dark",
+                        "weight": "Bolder"
 
-                        }, 
+                        },
 
                         {  
-                        "type": "TextBlock", 
+                        "type": "TextBlock",
                         "text": "Marketing team at Contoso.., and looking at the Contoso Marketing documents on the team site. This contains the data from FY20 and will taken over to FY21...Marketing Planning is ongoing for FY20..",  
-                        "wrap": true, 
-                        "maxLines": 2, 
-                        "spacing": "Medium" 
-                        } 
-                        ], 
+                        "wrap": true,
+                        "maxLines": 2,
+                        "spacing": "Medium"
+                        }
+                        ],
 
-                    "horizontalAlignment": "Center", 
-                    "spacing": "None" 
+                    "horizontalAlignment": "Center",
+                    "spacing": "None"
 
-                } 
+                }
 
-            ] 
+            ]
 
-        } 
-        ], 
+        }
+        ],
 
-    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json" 
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
 }
 ```
 
-#### <a name="separate-the-data-from-the-layout"></a>Trennen der Daten vom Layout
+### <a name="separate-the-data-from-the-layout"></a>Trennen der Daten vom Layout
 
-Sie können die Daten vom Layout trennen und die Daten binden. 
+Sie können die Daten vom Layout trennen und die Daten binden.
 
 Hier ist das Layout JSON nach dem Binden der Daten:
 
-
 ```json
-{ 
+{
 
-    "type": "AdaptiveCard", 
-    "version": "1.0", 
-    "body": [ 
-    { 
-    "type": "ColumnSet", 
-"columns": [ 
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [
+    {
+    "type": "ColumnSet",
+"columns": [
 
-                { 
-                "type": "Column", 
-                "width": 8, 
-                "items": [ 
-                { 
-                "type": "TextBlock", 
-                "text": "[{title}]({titleUrl})", 
-                "color": "Accent", 
+                {
+                "type": "Column",
+                "width": 8,
+                "items": [
+                {
+                "type": "TextBlock",
+                "text": "[{title}]({titleUrl})",
+                "color": "Accent",
                 "size": "Medium",
-                "spacing": "None", 
-                "weight": "Bolder" 
+                "spacing": "None",
+                "weight": "Bolder"
 
-                 }, 
-                 { 
-                 "type": "TextBlock", 
+                 },
+                 {
+                 "type": "TextBlock",
                  "text": "{link}",
-                 "spacing": "None", 
+                 "spacing": "None",
                  "color": "Dark",
-                 "weight": "Bolder" 
-                 }, 
-                 { 
+                 "weight": "Bolder"
+                 },
+                 {
                  "type": "TextBlock",
                  "text": "{description}",
                  "wrap": true,
-                 "maxLines": 2, 
-                 "spacing": "Medium" 
-                 } 
-                 ], 
-                 "horizontalAlignment": "Center", 
-                 "spacing": "None" 
-                 } 
-                 ] 
+                 "maxLines": 2,
+                 "spacing": "Medium"
+                 }
+                 ],
+                 "horizontalAlignment": "Center",
+                 "spacing": "None"
+                 }
+                 ]
 
-        } 
+        }
 
-    ], 
+    ],
 
-    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json" 
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
 }
 ```
 
 Beispieldaten: Geben Sie Beispieldaten im **Beispieldaten Editor** an, um die datengebundene Karte im **Vorschaumodus**anzuzeigen.
 
 ```json
-{ 
+{
 
-    "title": "Contoso Marketing Analysis - Q3 FY18", 
-    "titleUrl": "https://contoso.com/hr/link", 
-    "link": "https://contoso.com/hr/link", 
-    "description": "Marketing team, and looking at the Contoso Marketing documents on the team site. Yo can't see right...Marketing Planning presentation?" 
+    "title": "Contoso Marketing Analysis - Q3 FY18",
+    "titleUrl": "https://contoso.com/hr/link",
+    "link": "https://contoso.com/hr/link",
+    "description": "Marketing team, and looking at the Contoso Marketing documents on the team site. Yo can't see right...Marketing Planning presentation?"
 
-} 
+}
 ```
 
 ## <a name="map-the-layout-to-the-result-properties"></a>Zuordnen des Layouts zu den Ergebniseigenschaften
@@ -177,17 +176,17 @@ Sie müssen jedes Feld des Layouts einer Result-Eigenschaft oder einer Connector
 
 Wählen Sie ein Feld im Layout aus, um die Variablen hervorzuheben, die zugeordnet werden müssen. Sie können mehrere Variablen für ein einzelnes Feld verwenden, und alle Felder müssen den Ergebniseigenschaften zugeordnet werden.
 
-## <a name="things-to-consider"></a>Dinge, die Sie beachten sollten...
+## <a name="things-to-consider"></a>Zu berücksichtigende Aspekte
 
 Bevor Sie beginnen, sollten Sie einige Dinge tun, die Sie vermeiden sollten, um sicherzustellen, dass Ihre Layouts erfolgreich sein werden.
 
 ### <a name="do"></a>Dos
 
-- Bearbeiten Sie eine Vorlage, um den Link "Logo" im Layout bereitzustellen, wenn Sie statische Links für Logos verwenden und keine Ergebniseigenschaften sind.   
+- Bearbeiten Sie eine Vorlage, um den Link "Logo" im Layout bereitzustellen, wenn Sie statische Links für Logos verwenden und keine Ergebniseigenschaften sind.
 - Überprüfen Sie das Ergebnis Layout für Szenarien, in denen keine Daten für eine Result-Eigenschaft zurückgegeben werden, die in der Ergebnis-JSON verwendet wird. Verwenden Sie `$when` die Bedingung, um ein Element auszublenden, wenn die Eigenschaft keine Daten enthält.  
 - Stellen Sie sicher, dass die `$when` Datentypen der Bedingung und der Result-Eigenschaft übereinstimmen. Vergleichen `Number` Sie beispielsweise nicht mit `Text` in der `$when` Bedingung.  
 - Denken Sie an Designanforderungen beim Entwerfen eines Ergebnis Layouts.  
-- Stellen Sie sicher, `Textblock`  dass das Element dynamischen Inhalt verarbeiten kann. Für diesen Zweck können `wrap` Sie `maxLines` die Eigenschaften und des-Elements verwenden. 
+- Stellen Sie sicher, `Textblock`  dass das Element dynamischen Inhalt verarbeiten kann. Für diesen Zweck können `wrap` Sie `maxLines` die Eigenschaften und des-Elements verwenden.
 - Formatieren Sie das Datum Ordnungs `{DATE()}` gemäß, wenn Sie in Abschlag verwenden.  
 
 ### <a name="dont"></a>Don’ts
@@ -196,8 +195,8 @@ Bevor Sie beginnen, sollten Sie einige Dinge tun, die Sie vermeiden sollten, um 
 - Vermeiden Sie das Zuschneiden des Ergebnisses auf der Ergebnisseite, indem Sie der maximalen Höhe des Ergebnis Layouts JSON folgen. Wenn Sie die maximale Höhe des Ergebnis Layouts überschreiten, wird das Ergebnis auf der Ergebnisseite abgeschnitten.
 - Verwenden Sie `px` keine Werte in Elementeigenschaften.
 
-
 ## <a name="resources"></a>Ressourcen
+
 [Anpassen der Suchergebnisseite](customize-search-page.md)
 
 [Adaptive Karten](https://docs.microsoft.com/adaptive-cards/authoring-cards/getting-started)

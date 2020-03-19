@@ -8,7 +8,6 @@
 ## [Akronyme](manage-acronyms.md)
 ## [Lesezeichen](manage-bookmarks.md)
 ## [Grundrisse](manage-floorplans.md)
-### [Bewährte Methoden](floorplans-bestpractices.md)
 ## [Standorte](manage-locations.md)
 ## [Fragen und Antworten](manage-qas.md)
 # Connectors (Vorschau)

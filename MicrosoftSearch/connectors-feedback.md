@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vorgehensweise Bereitstellen von Feedback für Microsoft Search Connectors
-ms.openlocfilehash: a2ed1b513c0d5f34ba1406ab7c36bec57c7ff3ee
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 7f16081954d4943b05142a64a1440784750209fc
+ms.sourcegitcommit: 0fa3dc45ca9fe266822911b397beceae754726e3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626480"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42891430"
 ---
 # <a name="provide-feedback-for-microsoft-search-connectors"></a>Bereitstellen von Feedback für Microsoft Search-Connectors
 
@@ -25,5 +25,5 @@ Das Microsoft Graph Connectors-Team antwortet auf die Such Verwaltungs Community
 
 * **Allgemeine Fragen:** Senden Sie eine e-Mail an die [Microsoft Graph Connectors-Feedback Gruppe](mailto:MicrosoftGraphConnectorsFeedback@service.microsoft.com).
 * **Feedback zur Dokumentation:** Wenn Sie Fragen zur Microsoft Graph Connectors-Dokumentation haben oder uns mitteilen möchten, was Ihnen gefällt oder nicht gefällt, können Sie am Ende eines Artikels Feedback geben. 
-* **Feature-Anforderungen:** Wenn unsere Plattform Sie nicht dazu befähigt, das zu tun, was Sie benötigen, machen Sie Ihre Vorschläge unter den Category **Connectors** im <a href="https://office365.uservoice.com/forums/925270-microsoft-search" target="_blank" data-linktype="external">Microsoft Search UserVoice</a>.
+* **Feature-Anforderungen:** Wenn unsere Plattform Sie nicht dazu befähigt, das zu tun, was Sie benötigen, machen Sie Ihre Vorschläge unter den Category **Connectors** im <a href="https://microsoftsearch.uservoice.com/forums/926998-connectors" target="_blank" data-linktype="external">Microsoft Search UserVoice</a>.
 

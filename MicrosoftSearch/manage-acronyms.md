@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Antworten zum Erstellen und Aktualisieren von Akronymen in Microsoft Search
-ms.openlocfilehash: 4f47d5b743709657459ccbc6b03897c29a51e109
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: aa857cefe9a2a40a8519a91829e327d01a3f2391
+ms.sourcegitcommit: 25cdb5e6111ec6bc6c130a36aa5f13a6328e1092
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626819"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42928229"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Verwalten von Akronymen Antworten in der Microsoft-Suche
 
@@ -39,7 +39,7 @@ Microsoft Search-Benutzer können Definitionen mit Akronymen in [Bing](https://B
 Die vorgeschlagenen Ergebnisse umfassen alle Bedeutungen von DNN, die in der Organisation des Benutzers vorhanden sind.
 
 > [!NOTE]
-> Benutzer müssen eine Abfrage eingeben, die die angegebenen *Schlüsselwörter* für das Akronym enthält, um die entsprechenden Antworten auszulösen.  
+> Benutzer müssen eine Abfrage eingeben, die die angegebenen *Schlüsselwörter* für das Akronym enthält, um die entsprechenden Antworten auszulösen. Bei Akronym-Abfragen wird die Groß-/Kleinschreibung nicht beachtet. 
 
 ## <a name="set-up-acronyms-answers"></a>Antworten zum Einrichten von Akronymen
 Wechseln Sie im Microsoft 365 [Admin Center](https://admin.microsoft.com)zu **Einstellungen** > **Microsoft-Such** >**Akronyme**, und wählen Sie dann **Akronyme hinzufügen**aus. 

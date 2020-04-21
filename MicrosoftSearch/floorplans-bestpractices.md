@@ -1,8 +1,8 @@
 ---
 title: Bewährte Methoden für Microsoft Search-Grundrisse
-ms.author: anfowler
-author: adefowler
-manager: shohara
+ms.author: jeffkizn
+author: jeffkizn
+manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Bewährte Methoden für Microsoft Search-Grundrisse
-ms.openlocfilehash: ddad671592ab3cf05400faa1261ee7258f3868bb
-ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
+ms.openlocfilehash: 47eb46df48f1871f6d34d4b00787cf11ccbac1ea
+ms.sourcegitcommit: 6b1c6a4e502d95b42a030a963f9452c387d8a5cd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699852"
+ms.lasthandoff: 04/20/2020
+ms.locfileid: "43571014"
 ---
+<!-- markdownlint-disable no-inline-html -->
 # <a name="best-practices-for-microsoft-search-floor-plans"></a>Bewährte Methoden für Microsoft Search-Grundrisse
 
 Um die Microsoft Search-Grundrisse erfolgreich zu implementieren, müssen Sie drei Datenteile koordinieren:
@@ -30,6 +31,7 @@ Um die Microsoft Search-Grundrisse erfolgreich zu implementieren, müssen Sie dr
 Die bewährten Methoden zum Bereitstellen von Microsoft Search-Grundrissen werden in den folgenden Abschnitten ebenfalls beschrieben.
 
 ## <a name="building-location-data"></a>Erstellen von Standortdaten
+
 Bevor Sie Grundrisse hinzufügen, müssen Sie Ihre Gebäude zu Microsoft-Such Standorten hinzufügen. Geben Sie die folgenden erforderlichen Gebäudedaten an:
 
 |Erforderliche Gebäudedaten  |Beispiel  |
@@ -42,7 +44,8 @@ Bevor Sie Grundrisse hinzufügen, müssen Sie Ihre Gebäude zu Microsoft-Such St
 Sie können mehrere Gebäude gleichzeitig hinzufügen, indem Sie das **Import** -Feature auf der Registerkarte **Speicherorte** verwenden, anstatt jeweils einen Ort hinzuzufügen. Mit dem **Import** -Feature können Sie den Breitengrad angeben. Weitere Informationen finden Sie unter [Verwalten von Speicherorten](manage-locations.md).
 
 ## <a name="floor-plan-map-in-dwg-format"></a>Grundriss Karte im DWG-Format
-Um Maps in Microsoft Search zu erstellen, müssen Sie Grundrisse im DWG-Format mit spezifischen Informationen hochladen. Informationen zum Erstellen und Anzeigen von DWG-formatierten Dateien finden Sie unter [DWG Viewer](https://www.autodesk.in/products/dwg). 
+
+Um Maps in Microsoft Search zu erstellen, müssen Sie Grundrisse im DWG-Format mit spezifischen Informationen hochladen. Informationen zum Erstellen und Anzeigen von DWG-formatierten Dateien finden Sie unter [DWG Viewer](https://www.autodesk.in/products/dwg).
 
 Grundriss Karten zeigen vier Elemente an:
 
@@ -60,6 +63,7 @@ In diesem Diagramm sind die Raumnummern das wichtigste Element. Sie werden dem B
 Diese Informationen werden in [Azure AD](https://azure.microsoft.com/services/active-directory/) in der **PhysicalDeliveryOfficeName** -Eigenschaft gespeichert. Im Microsoft 365 [Admin Center](https://admin.microsoft.com)wird es als **Office** -Eigenschaft bezeichnet und kann in **aktive Benutzer**hinzugefügt werden.
 
 ### <a name="dwg-files"></a>DWG-Dateien
+
 Microsoft Search erfordert Grund Plandateien in DWG, einem [AutoCAD](https://www.autodesk.com/autocad) -Zeichnungsformat. Die Dateien müssen **Layout** -und **Bezeichnungs** Daten enthalten. **Raumnummern** sind die wichtigsten Beschriftungen für Grundrisse.
 
 Es wird empfohlen, dass Sie Ihr Büronummern System mit der in der folgenden Tabelle dargestellten Exact-Match-Methode erstellen. Sie sind jedoch nicht auf diese Bezeichnung limitiert. Wenn beispielsweise der Bürostandort des Benutzers in [Azure AD](https://azure.microsoft.com/services/active-directory/) **B1 1001**ist, können Sie die Raumnummer in der DWG-Datei mit einer der folgenden Optionen bezeichnen.
@@ -71,6 +75,7 @@ Es wird empfohlen, dass Sie Ihr Büronummern System mit der in der folgenden Tab
 |Nur Raumnummer abgleichen <br> **1**<br>Zimmer Nummer: 1        |    ![Einzelne Office Floor-Karte mit der Office-Nummer "1"](media/floorplans-layoutroomonly.png)     |
 
 ## <a name="user-account-office-location"></a>Benutzerkonto-Office-Standort
+
 Um den Standort eines Mitarbeiters zuzuordnen, werden die Raumnummern in DWG-Dateien den Office-Speicherorten im Konto des Benutzers in [Azure AD](https://azure.microsoft.com/services/active-directory/)zugeordnet. Die **Office-Standort** Eigenschaft muss mit den Office-Standortinformationen in der DWG-Datei übereinstimmen.
 
 In der folgenden Tabelle werden die bewährten Methoden für die Zuordnung von Standortdaten erläutert:
@@ -83,5 +88,6 @@ In der folgenden Tabelle werden die bewährten Methoden für die Zuordnung von S
 |
 
 ## <a name="next-steps"></a>Nächste Schritte
+
 [Verwalten von Speicherorten](manage-locations.md)<br>
 [Verwalten von Grundrissen](manage-floorplans.md)

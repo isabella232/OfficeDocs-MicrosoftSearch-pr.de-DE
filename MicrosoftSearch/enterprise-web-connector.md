@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten des Connectors für die Enterprise-Websites für Microsoft Search
-ms.openlocfilehash: 14eef035f4cc054ab87582b573cb6b7e3c12d0c7
-ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
+ms.openlocfilehash: de466d4cc1156f520bb6a5fe3117389bd29f3e78
+ms.sourcegitcommit: 8ccbf0ea4463d17f810c2f5b484882869a74a996
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699521"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793549"
 ---
 # <a name="enterprise-websites-connector"></a>Enterprise-Websites-Connector
 
@@ -57,7 +57,25 @@ Quelleigenschaften werden basierend auf dem Datenformat der Unternehmenswebsite 
 Es gibt keine Unterstützung für Zugriffssteuerungslisten (Access Control Lists, ACLs). Daher wird empfohlen, nur die Websites zu verbinden, die für jeden Benutzer in Ihrer Organisation sichtbar sind.
 
 ## <a name="set-the-refresh-schedule"></a>Festlegen des Aktualisierungszeitplans
-Der Connector für Unternehmenswebsites unterstützt nur eine vollständige Durchforstung. Dies bedeutet, dass der Connector während jeder Durchforstung alle Inhalte der Website liest. Um sicherzustellen, dass der Connector genügend Zeit zum Lesen des Inhalts erhält, wird empfohlen, ein Intervall für eine große Aktualisierungsplanung festzulegen. Wir empfehlen eine geplante Aktualisierung zwischen drei Tagen und zwei Wochen.
+Der Connector für Unternehmenswebsites unterstützt nur eine vollständige Durchforstung. Dies bedeutet, dass der Connector während jeder Durchforstung alle Inhalte der Website liest. Um sicherzustellen, dass der Connector genügend Zeit zum Lesen des Inhalts erhält, wird empfohlen, ein Intervall für eine große Aktualisierungsplanung festzulegen. Wir empfehlen eine geplante Aktualisierung zwischen drei Tagen und zwei Wochen. 
 
-## <a name="limitations"></a>Einschränkungen 
+## <a name="troubleshooting"></a>Problembehandlung
+Wenn etwas mit einer Verbindung kritisch falsch ist, wird der Status als Fehler angezeigt. Wenn Sie weitere Informationen zu den Fehlertypen erhalten möchten, wechseln Sie zur Seite Fehlerdetails, nachdem Sie die fehlerhafte Verbindung ausgewählt haben.  Klicken Sie auf den Fehlercode, um ausführlichere Fehler anzuzeigen. Weitere Informationen finden Sie auch unter [Manage Your Connector](https://docs.microsoft.com/microsoftsearch/manage-connector) .
+
+ **Detaillierter Fehlercode** | **Fehlermeldung**
+ --- | --- 
+ 6001   | Die Website, die zum Indizieren versucht wird, ist nicht erreichbar 
+ 6005 | Die Quellseite, die versucht wird, zu indizieren, wurde durch die Konfiguration "robots. txt" blockiert.
+ 6008 | DNS konnte nicht aufgelöst werden
+ 6009 | Für alle clientseitigen Fehler (mit Ausnahme von HTTP 404, 408) finden Sie weitere Informationen unter http 4xx-Fehlercodes.
+ 6013 | Die Quellseite, die zum Indizieren versucht wird, konnte nicht gefunden werden. (HTTP 404-Fehler)
+ 6018 | Die Quellseite reagiert nicht, und für die Anforderung ist ein Timeout aufgetreten. (Http 408-Fehler)
+ 6021 | Auf der Quellseite, die versucht wird, zu indizieren, sind keine Textinhalte auf der Seite zu finden.
+ 6023 | Die Quellseite, die versucht wird, zu indizieren, wird nicht unterstützt (keine HTML-Seite)
+ 6024 | Die Quellseite, die versucht wird, zu indizieren, enthält nicht unterstützte Inhalte.
+
+* Fehler 6001-6013 tritt auf, wenn die Datenquelle aufgrund eines Netzwerkproblems nicht erreichbar ist oder wenn die Datenquelle selbst gelöscht, verschoben oder umbenannt wird. Überprüfen, ob die bereitgestellten Datenquellendetails noch gültig sind.
+* Fehler 6021-24 Fehler tritt auf, wenn die Datenquelle nicht textliche Inhalte auf der Seite enthält oder wenn es sich bei der Seite nicht um einen HTML-Code handelt. Überprüfen Sie die Datenquelle, und fügen Sie diese Seite in Ausschlussliste hinzu, oder ignorieren Sie den Fehler.
+
+## <a name="limitations"></a>Einschränkungen
 Der Connector für Unternehmenswebsites unterstützt die Suche von Daten auf dynamischen Webseiten nicht. Beispiele für diese Webseiten Leben in Inhaltsverwaltungssystemen wie [Confluence](https://www.atlassian.com/software/confluence) und [Unily](https://www.unily.com/) oder in Datenbanken, in denen Websiteinhalte gespeichert sind.

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten des Connectors für die Enterprise-Websites für Microsoft Search
-ms.openlocfilehash: de466d4cc1156f520bb6a5fe3117389bd29f3e78
-ms.sourcegitcommit: 8ccbf0ea4463d17f810c2f5b484882869a74a996
+ms.openlocfilehash: 4ed926cfdacca66d90854147afdc3c7932d1bd5f
+ms.sourcegitcommit: 49659ecd2ac47c85acc297b21e9e34701213862c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43793549"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43803952"
 ---
 # <a name="enterprise-websites-connector"></a>Enterprise-Websites-Connector
 
@@ -60,7 +60,7 @@ Es gibt keine Unterstützung für Zugriffssteuerungslisten (Access Control Lists
 Der Connector für Unternehmenswebsites unterstützt nur eine vollständige Durchforstung. Dies bedeutet, dass der Connector während jeder Durchforstung alle Inhalte der Website liest. Um sicherzustellen, dass der Connector genügend Zeit zum Lesen des Inhalts erhält, wird empfohlen, ein Intervall für eine große Aktualisierungsplanung festzulegen. Wir empfehlen eine geplante Aktualisierung zwischen drei Tagen und zwei Wochen. 
 
 ## <a name="troubleshooting"></a>Problembehandlung
-Wenn etwas mit einer Verbindung kritisch falsch ist, wird der Status als Fehler angezeigt. Wenn Sie weitere Informationen zu den Fehlertypen erhalten möchten, wechseln Sie zur Seite Fehlerdetails, nachdem Sie die fehlerhafte Verbindung ausgewählt haben.  Klicken Sie auf den Fehlercode, um ausführlichere Fehler anzuzeigen. Weitere Informationen finden Sie auch unter [Manage Your Connector](https://docs.microsoft.com/microsoftsearch/manage-connector) .
+Beim Lesen des Inhalts der Website kann bei der Durchforstung einige Quellfehler auftreten, die durch die detaillierten Fehlercodes unten dargestellt werden. Wenn Sie weitere Informationen zu den Fehlertypen erhalten möchten, wechseln Sie zur Seite **Fehlerdetails** , nachdem Sie die Verbindung ausgewählt haben. Klicken Sie auf den **Fehlercode** , um ausführlichere Fehler anzuzeigen. Weitere Informationen finden Sie auch unter [Manage Your Connector](https://docs.microsoft.com/microsoftsearch/manage-connector) .
 
  **Detaillierter Fehlercode** | **Fehlermeldung**
  --- | --- 
@@ -75,7 +75,7 @@ Wenn etwas mit einer Verbindung kritisch falsch ist, wird der Status als Fehler 
  6024 | Die Quellseite, die versucht wird, zu indizieren, enthält nicht unterstützte Inhalte.
 
 * Fehler 6001-6013 tritt auf, wenn die Datenquelle aufgrund eines Netzwerkproblems nicht erreichbar ist oder wenn die Datenquelle selbst gelöscht, verschoben oder umbenannt wird. Überprüfen, ob die bereitgestellten Datenquellendetails noch gültig sind.
-* Fehler 6021-24 Fehler tritt auf, wenn die Datenquelle nicht textliche Inhalte auf der Seite enthält oder wenn es sich bei der Seite nicht um einen HTML-Code handelt. Überprüfen Sie die Datenquelle, und fügen Sie diese Seite in Ausschlussliste hinzu, oder ignorieren Sie den Fehler.
+* Fehler 6021-6024 Fehler tritt auf, wenn die Datenquelle nicht textliche Inhalte auf der Seite enthält oder wenn es sich bei der Seite nicht um einen HTML-Code handelt. Überprüfen Sie die Datenquelle, und fügen Sie diese Seite in Ausschlussliste hinzu, oder ignorieren Sie den Fehler.
 
 ## <a name="limitations"></a>Einschränkungen
-Der Connector für Unternehmenswebsites unterstützt die Suche von Daten auf dynamischen Webseiten nicht. Beispiele für diese Webseiten Leben in Inhaltsverwaltungssystemen wie [Confluence](https://www.atlassian.com/software/confluence) und [Unily](https://www.unily.com/) oder in Datenbanken, in denen Websiteinhalte gespeichert sind.
+Der Connector für Unternehmenswebsites unterstützt die Suche von Daten auf **dynamischen**Webseiten nicht. Beispiele für diese Webseiten Leben in Inhaltsverwaltungssystemen wie [Confluence](https://www.atlassian.com/software/confluence) und [Unily](https://www.unily.com/) oder in Datenbanken, in denen Websiteinhalte gespeichert sind.

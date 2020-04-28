@@ -1,8 +1,8 @@
 ---
 title: Übersicht über Microsoft Search
-ms.author: anfowler
-author: adefowler
-manager: shohara
+ms.author: jeffkizn
+author: jeffkizn
+manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erhalten Sie einen Überblick darüber, was Microsoft-Suche ist, welche Vorteile und welche apps Microsoft Search unterstützen.
-ms.openlocfilehash: 4acc3b9fcb7453f84db256cc20e839066dc94af5
-ms.sourcegitcommit: f4cb37fdf85b895337caee827fb72b5b7fcaa8ad
+ms.openlocfilehash: fc21328f9a72ac77e37ae366bd138770509d6080
+ms.sourcegitcommit: d40d44d01b27dfed92577446fe7a30008b28deb4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2019
-ms.locfileid: "39995032"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43914489"
 ---
 # <a name="overview-of-microsoft-search"></a>Übersicht über Microsoft Search 
 
@@ -58,31 +58,29 @@ Wenn die Vorschläge im Suchfeld nicht das sind, wonach Benutzer suchen, öffnet
 
 ## <a name="tailoring-microsoft-search-to-your-organization"></a>Anpassen von Microsoft Search an Ihre Organisation
 
-Als Administrator können Sie eine erstaunliche Microsoft-Suchumgebung für Ihre Benutzer erstellen. 
+Als Administrator können Sie eine erstaunliche Microsoft-Suchumgebung für Ihre Benutzer erstellen.
 
-**Nützliche Inhalte anzeigen** – Antworten bieten schnelle, autorisierende Ergebnisse für Suchabfragen basierend auf Schlüsselwörtern. [Erleichtern der Suche nach Inhalten](make-content-easy-to-find.md)
+**Nützliche Inhalte anzeigen** – Antworten bieten schnelle, autorisierende Ergebnisse für Suchabfragen basierend auf Schlüsselwörtern. [Planen Sie Ihre Inhalte](plan-your-content.md).
 
 **Hinzufügen von externem Inhalt** – mit Microsoft Graph-Connectors können Sie externen Inhalt in den Index einbinden. Verwenden Sie Connectors, um die Suchumgebung mit Daten und Dateien von außerhalb von Microsoft 365 zu bereichern. [Übersicht über Microsoft Graph-Connectors](connectors-overview.md)
 
 **Anpassen der Benutzeroberfläche** – Sie können die Benutzeroberfläche mithilfe von vertikalen und anderen Konfigurationen anpassen. [Anpassen der Seite "Microsoft-Suche"](customize-search-page.md)
 
-## <a name="what-content-is-searched"></a>Wir werden Inhalte durchsucht?
+## <a name="what-content-is-searched"></a>Durchsuchte Inhalte
 
 Microsoft Search zeigt die Inhalte, die Ihre Organisation in Microsoft 365 gespeichert oder über Connectors indiziert hat. Die Microsoft-Suche sucht nicht in Mandanten oder zeigt Ergebnisse aus Inhalten an, die von anderen Organisationen gemeinsam verwendet werden. Wenn Ihre Organisation eine hybride SharePoint-Umgebung eingerichtet hat und die Cloud-Hybridsuche verwendet, liefert Microsoft Search sowohl Suchergebnisse aus Onlineinhalten als auch aus lokalen SharePoint-Inhalten, einschließlich aller externen Inhalte, die Sie mit Ihrer SharePoint Server-Umgebung verbunden haben. [Weitere Informationen zu hybriden Suchumgebungen](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint).
 
 Benutzer erhalten dieselben Suchergebnisse, die Sie von anderen Speicherorten erhalten, und erhalten auch Ergebnisse aus dem Internet.
 
-## <a name="how-does-microsoft-search-work"></a>Wie funktioniert Microsoft Search?
+## <a name="how-microsoft-search-works"></a>Funktionsweise der Microsoft-Suche
 
 Wenn ein Benutzer sucht, verarbeitet Microsoft Search die Abfrage und analysiert die Suchabsicht aus längeren Ausdrücken. Dabei kommt künstliche Intelligenz (AI) zum Einsatz, um gängige überflüssige Ausdrücke zu erlernen, die Benutzer ihren Abfragen hinzufügen und die keine Auswirkung auf die Suchabsicht haben. Wenn ein Benutzer beispielsweise nach „wie kann ich mein Kennwort ändern“ sucht, extrahieren wir die weniger wichtigen Wörter aus der Abfrage und lösen die Suche basierend auf den relevanten Wörtern wie „Kennwort ändern“ aus.  
 Die Suchergebnisse, für die der Benutzer die **Berechtigung** hat, werden auf der Suchergebnisseite präsentiert. Microsoft Search verwendet intelligente Rangfolgealgorithmen, um Ergebnisse basierend auf Relevanz anzufordern.
 
-## <a name="how-does-microsoft-search-in-bing-help-protect-my-company-data"></a>Wie hilft die Microsoft-Suche in Bing, meine Unternehmensdaten zu schützen?
+## <a name="how-microsoft-search-in-bing-protects-your-company-data"></a>So schützt die Microsoft-Suche in Bing Ihre Unternehmensdaten
 
 [Sicherheit und Datenschutz für die Microsoft-Suche in Bing](security-for-search.md)
 
 ## <a name="see-also"></a>Siehe auch
 
 [Einrichten von Microsoft Search](setup-microsoft-search.md)
-
-[Inhalte leicht auffindbar machen](make-content-easy-to-find.md)

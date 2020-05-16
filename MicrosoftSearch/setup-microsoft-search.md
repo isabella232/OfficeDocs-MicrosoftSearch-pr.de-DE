@@ -1,8 +1,8 @@
 ---
 title: Einrichten von Microsoft Search
-ms.author: anfowler
-author: adefowler
-manager: mnirkhe
+ms.author: jeffkizn
+author: jeffkizn
+manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Erstmaliges Einrichten von Microsoft Search.
-ms.openlocfilehash: d8b796e0ff61972f3e244c1a5af98319884769dc
-ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
+ms.openlocfilehash: 37b5f33fe7b49a11c4558debac5b9acae4cc40cd
+ms.sourcegitcommit: aa48b6510883e1617aa13a50b1056fb149c47586
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "39663060"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44256637"
 ---
 # <a name="set-up-microsoft-search"></a>Einrichten von Microsoft Search
 
-Die Microsoft-Suche bietet eine benutzerfreundliche Oberfläche, mit der Benutzerinformationen wie Dateien und Dokumente, interne Websites und Geschäftstools, Personen und Gruppen, Orte und Richtungen, Unterhaltungen und Antworten suchen können. Dies geschieht durch sicheren Zugriff auf alle Datenquellen, einschließlich e-Mails, Dateien, SharePoint-Dateien, OneDrive-Inhalte und andere freigegebene Ressourcen sowie das Internet in der Organisation des Benutzers.
+Die Microsoft-Suche bietet eine benutzerfreundliche Oberfläche, mit der Benutzerinformationen wie Dateien und Dokumente, interne Websites und Geschäftstools, Personen und Gruppen, Orte und Richtungen, Unterhaltungen und Antworten suchen können. Dies geschieht durch sicheren Zugriff auf alle Datenquellen, einschließlich e-Mails, Dateien, SharePoint-Dateien, OneDrive-Inhalte und andere freigegebene Ressourcen. Mit der Microsoft-Suche in Bing können Sie auch Suchergebnisse aus dem Internet abrufen.
 
 Weitere Informationen zu den Microsoft Search-Features finden Sie unter [Übersicht über Microsoft Search](overview-microsoft-search.md).
 

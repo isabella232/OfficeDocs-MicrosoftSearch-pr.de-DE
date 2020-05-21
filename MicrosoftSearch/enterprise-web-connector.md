@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten des Connectors für die Enterprise-Websites für Microsoft Search
-ms.openlocfilehash: 4ed926cfdacca66d90854147afdc3c7932d1bd5f
-ms.sourcegitcommit: 49659ecd2ac47c85acc297b21e9e34701213862c
+ms.openlocfilehash: 66fd0804bf26d70208cdaca519f91dba3a1ba166
+ms.sourcegitcommit: 924bcf4dd1b4bfa5684d43a3f8e784d869c659e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43803952"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44326830"
 ---
 # <a name="enterprise-websites-connector"></a>Enterprise-Websites-Connector
 
@@ -26,7 +26,7 @@ Mit dem Enterprise-Website-Konnektor kann Ihre Organisation Artikel und **Inhalt
 Dieser Artikel richtet sich an [Microsoft 365](https://www.microsoft.com/microsoft-365) -Administratoren oder Personen, die einen Connector für Unternehmenswebsites konfigurieren, ausführen und überwachen. Es wird erläutert, wie Sie die Connector-und connectorfunktionen, Einschränkungen und Techniken zur Problembehandlung konfigurieren.  
 
 ## <a name="connect-to-a-data-source"></a>Herstellen einer Verbindung mit einer Datenquelle 
-Zum Herstellen einer Verbindung mit Ihrer Datenquelle benötigen Sie die Stamm-URL und eine Form der Authentifizierung: Standardauthentifizierung oder OAuth 2,0 mit [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/).
+Zum Herstellen einer Verbindung mit Ihrer Datenquelle benötigen Sie die Stamm-URL und die Standardauthentifizierung.
 
 ### <a name="root-url"></a>Stamm-URL
 Die Stamm-URL ist das, was die Durchforstung initiiert und für die Authentifizierung verwendet wird. Sie können die URL von der Startseite der Website abrufen, die Sie durchforsten möchten.

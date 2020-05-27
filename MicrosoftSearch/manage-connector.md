@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Verwalten von Microsoft Graph-Connectors für Microsoft Search.
-ms.openlocfilehash: d7bd094fdc5cea521d1ee600eea3cd70067a0386
-ms.sourcegitcommit: 897b92bae1b905d7c47566e31c4c07cd16d44b17
+ms.openlocfilehash: 04e4635a67ea35381b95c1c753a35eb640d655d4
+ms.sourcegitcommit: 1524ae5fe97350ce4294d74e381872b5b7a9f645
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39254721"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371308"
 ---
 # <a name="manage-your-connector-for-microsoft-search"></a>Verwalten des Connectors für Microsoft Search
 
@@ -25,8 +25,8 @@ Für den Zugriff auf und die Verwaltung Ihrer Connectors müssen Sie als Suchadm
 
 ## <a name="get-started"></a>Erste Schritte
 
-1. Melden Sie sich beim [Microsoft 365 Admin Center](https://admin.microsoft.com)an.
-2. Wechseln Sie zu **Einstellungen** > **Microsoft-Such** > -**Konnektoren**.
+1. Melden Sie sich beim [Microsoft 365 Admin Center](https://admin.microsoft.com) an.
+2. Wechseln Sie zu **Einstellungen**  >  **Microsoft-Such**  >  -**Konnektoren**.
 
 Für jeden Connectortyp unterstützt das [Microsoft 365 Admin Center](https://admin.microsoft.com) die in der folgenden Tabelle aufgeführten Vorgänge:
 
@@ -63,13 +63,15 @@ Unten sehen Sie eine Liste mit verschiedenen Fehlern, die für jede Verbindung a
 1001 | Die Daten können nicht aktualisiert werden, da die Datenquelle die Verbindung drosselt. | Um die Drosselung der Datenquelle zu überprüfen, ob die Skalierungs Grenzwerte erhöht werden können, oder warten Sie, bis eine geringere Datenverkehrs intensive Tageszeit vorliegt.
 1002 | Authentifizierung bei der Datenquelle nicht möglich. Stellen Sie sicher, dass die dieser Datenquelle zugeordneten Anmeldeinformationen richtig sind. | Klicken Sie auf **Bearbeiten** , um die Authentifizierungsanmeldeinformationen zu aktualisieren.
 1003 | Das dem Connector zugeordnete Konto verfügt nicht über die Berechtigung, auf das Element zuzugreifen. |  Stellen Sie sicher, dass das richtige Konto Zugriff auf das Element hat, das Sie indizieren möchten.
-1004 | Das lokale Daten Gateway kann nicht erreicht werden. Stellen Sie sicher, dass der Gatewaydienst aktiv ist. | Wechseln Sie zu dem Computer, der über das Gateway verfügt, und überprüfen Sie, ob das Power BI-Gateway ausgeführt wird, indem Sie die Power BI-Gateway-Anwendung öffnen. Stellen Sie sicher, dass das Gateway mit dem für Microsoft Search verwendeten Administratorkonto angemeldet ist. 
+1004 | Das lokale Daten Gateway konnte nicht erreicht werden. Stellen Sie sicher, dass der Gatewaydienst aktiv ist und die Gateway-Details in der Verbindungskonfiguration aktualisiert werden. | Überprüfen Sie den Computer mit dem Gateway, öffnen Sie die Power BI-Gateway-Anwendung, und stellen Sie sicher, dass das Gateway aktiv ist. Stellen Sie sicher, dass das Gateway das gleiche Administratorkonto wie die Microsoft-Suche verwendet, und vergewissern Sie sich, dass alle Gateway-Details in der Verbindungskonfiguration aktualisiert werden. 
 1005 | Anmeldeinformationen, die dieser Datenquelle zugeordnet sind, sind abgelaufen. Erneuern Sie die Anmeldeinformationen, und aktualisieren Sie die Verbindung. | Klicken Sie auf **Bearbeiten** , um die Authentifizierungsanmeldeinformationen zu aktualisieren. 
-1006 | Ihre Gateway-Version ist veraltet und unterstützt diesen Connector nicht mehr. Das Gateway muss aktualisiert werden. | Weitere Informationen finden Sie unter (install a on-premiseshttps://docs.microsoft.com/data-integration/gateway/service-gateway-installData Gateway) [], um die neueste Version des Power BI-Gateways auf dem Computer mit dem Gateway herunterzuladen und zu installieren.
+1006 | Ihre Gateway-Version ist veraltet und unterstützt diesen Connector nicht mehr. Das Gateway muss aktualisiert werden. | Besuchen Sie die [Installieren eines lokalen Datengateways](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) , um die neueste Version des Power BI-Gateways auf dem Computer mit dem Gateway herunterzuladen und zu installieren.
+1007 | Keine gültige Power BI-Lizenz erkannt. Sie benötigen eine gültige Power BI-Lizenz zum Durchführen dieser Durchforstung. | Sie benötigen eine gültige Power BI-Lizenz zum Durchführen dieser Durchforstung. Stellen Sie sicher, dass Ihre Organisation über eine gültige Lizenz verfügt. Wenn dies der Fall ist, versuchen Sie es erneut. Wenn dies nicht der Fall ist, erhalten Sie eine Lizenz, und versuchen Sie es dann erneut.
+1008 | Die Gesamtkontingent Auslastung Ihres Mandanten hat seinen Grenzwert erreicht. Versuchen Sie, eine Verbindung zu löschen, um einen Teil ihres Kontingents freizugeben oder ihre Einnahme Filter anzupassen, um geringere Daten zu erzielen. | Versuchen Sie, eine Verbindung zu löschen, um einen Teil ihres Kontingents freizugeben oder ihre Einnahme Filter anzupassen, um geringere Daten zu erzielen. Wenn das Problem dadurch nicht behoben wird, wenden Sie sich an den Microsoft-Support.
 2001 | Die Indizierung wird aufgrund einer großen Anzahl von Updates in der Warteschlange eingeschränkt. Je nach Warteschlange kann es einige Zeit dauern, bis die Aktualisierungen abgeschlossen sind. | Warten Sie, bis die Warteschlange gelöscht wird.
 2002 | Die Indizierung ist aufgrund einer nicht unterstützten Element Formatierung fehlgeschlagen. | Weitere Informationen finden Sie in der Connector-spezifischen Dokumentation.
 2003 | Die Indizierung ist aufgrund eines nicht unterstützten Elementinhalts fehlgeschlagen. | Weitere Informationen finden Sie in der Connector-spezifischen Dokumentation. 
-2004 | Die [Dateigröße](https://docs.microsoft.com/microsoftsearch/file-share-connector#content-requirements) ist zu groß, um indiziert zu werden. Sie muss vor der Verarbeitung 100 MB oder weniger betragen und darf nach der Verarbeitung nicht größer als 4 MB sein. Die Datei wird in diesem Fall teilweise indiziert. Einige in der Datei vorhandene Ausdrücke geben möglicherweise kein Suchergebnis zurück. |  
+2004 | Die [Dateigröße](https://docs.microsoft.com/microsoftsearch/file-share-connector#content-requirements) ist zu groß, um indiziert zu werden. Sie muss vor der Verarbeitung 100 MB oder weniger betragen und darf nach der Verarbeitung nicht größer als 4 MB sein. Die Datei wird in diesem Fall teilweise indiziert. Einige in der Datei vorhandene Ausdrücke geben möglicherweise kein Suchergebnis zurück. | Weitere Informationen finden Sie unter [Dateifreigabe spezifische Dokumentation](https://docs.microsoft.com/MicrosoftSearch/file-share-connector#content-requirements) .
 5000 | Etwas ist schief gelaufen. Wenn dieser Vorgang fortgesetzt wird, wenden Sie sich an den Support. | 
 
 ## <a name="preview-limitations"></a>Vorschau Einschränkungen

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten des Connectors für die Enterprise-Websites für Microsoft Search
-ms.openlocfilehash: 66fd0804bf26d70208cdaca519f91dba3a1ba166
-ms.sourcegitcommit: 924bcf4dd1b4bfa5684d43a3f8e784d869c659e7
+ms.openlocfilehash: c4b799a3127a4a302e3f07953a59ea0319a09052
+ms.sourcegitcommit: c186be143164f21a3fecdb3037acd90a26c0fcf3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44326830"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44374335"
 ---
 # <a name="enterprise-websites-connector"></a>Enterprise-Websites-Connector
 
@@ -33,22 +33,6 @@ Die Stamm-URL ist das, was die Durchforstung initiiert und für die Authentifizi
 
 ### <a name="authentication"></a>Authentifizierung 
 Für die Standardauthentifizierung ist ein Benutzername und ein Kennwort erforderlich. Erstellen Sie dieses bot-Konto mithilfe des Microsoft 365 [Admin Center](https://admin.microsoft.com).
-
-OAuth 2,0 mit [Azure AD](https://docs.microsoft.com/azure/active-directory/) erfordert eine Mandanten-ID, eine Ressourcen-ID, eine Client-ID und einen geheimen Client Schlüssel.
-Weitere Informationen finden Sie unter [Autorisieren des Zugriffs auf Azure Active Directory Webanwendungen mithilfe des OAuth 2,0-Code Zuteilungs Flusses](https://docs.microsoft.com/azure/active-directory/develop/v1-protocols-oauth-code). Registrieren Sie sich mit den folgenden Werten:
-* **Name:** Microsoft-Suche
-* **Redirect_URI:**`https://gcs.office.com/v1.0/admin/oauth/callback`
-
-Um die Werte für benannte Mandanten, Ressourcen, client_id und client_secret abzurufen, rufen **Sie den Autorisierungscode zum Anfordern eines Zugriffstokens** auf der Webseite der Umleitungs-URL auf.
-
-Weitere Informationen finden Sie unter [Quick Start: Registrieren einer Anwendung mit der Microsoft Identity-Plattform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
-
-### <a name="reverse-proxy-url"></a>Reverse Proxy-URL 
-Der Connector für Enterprise-Websites ist Cloud-basiert, sodass kein Zugriff auf lokale Inhalte möglich ist. Um diesen Zugriff bereitzustellen, installieren Sie einen Reverseproxy. Ein Reverse-Proxy bietet sicheren, zuverlässigen Zugriff auf lokale Websites. Wir empfehlen [Azure Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
-
-Die Reverse-Proxyanforderung für die Stamm-URL und-Authentifizierung ist identisch mit dem cloudbasierten Inhalt, mit der Ausnahme, dass die Stamm-URL und die Authentifizierung vom Reverseproxy bereitgestellt werden.
-
-Weitere Informationen finden Sie unter [Sicherheitsüberlegungen für den Remotezugriff auf apps mit Azure AD-Anwendungs Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-security).
 
 ## <a name="select-the-source-properties"></a>Auswählen der Quelleigenschaften 
 Quelleigenschaften werden basierend auf dem Datenformat der Unternehmenswebsite definiert. Sie können jedoch eine **Ausschlussliste** erstellen, um einige URLs von der Durchforstung auszuschließen, wenn dieser Inhalt vertraulich ist oder nicht durchforstet werden kann. Um eine Ausschlussliste zu erstellen, navigieren Sie durch die Stamm-URL. Sie haben die Möglichkeit, die ausgeschlossenen URLs während des Konfigurationsprozesses der Liste hinzuzufügen.

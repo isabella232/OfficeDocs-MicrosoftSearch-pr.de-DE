@@ -1,8 +1,8 @@
 ---
 title: Verwalten von Akronym-Antworten in der Microsoft-Suche
-ms.author: v-pamcna
-author: TrishaMc1
-manager: mnirkhe
+ms.author: jeffkizn
+author: jeffkizn
+manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,21 +12,21 @@ search.appverid:
 - MET150
 - MOE150
 description: Antworten zum Erstellen und Aktualisieren von Akronymen in Microsoft Search
-ms.openlocfilehash: aa857cefe9a2a40a8519a91829e327d01a3f2391
-ms.sourcegitcommit: 25cdb5e6111ec6bc6c130a36aa5f13a6328e1092
+ms.openlocfilehash: af5b82aa2c578fde67a36980cfceef131f605b4e
+ms.sourcegitcommit: d4f49d51fa7d07b3bfd9ba93ed14f4c46d310154
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42928229"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44412675"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Verwalten von Akronymen Antworten in der Microsoft-Suche
 
-Mitarbeiter führen häufig unbekannte Akronyme und Abkürzungen aus, die von Ihrer Organisation oder Ihrem Team verwendet werden. Begriffe, die für Organisationen oder Teams spezifisch sind, sind möglicherweise neu für Personen, die von einem Team in ein anderes umziehen, für diejenigen, die mit internen Partnerteams oder neuen Mitarbeitern arbeiten.
+Benutzer führen häufig unbekannte Akronyme und Abkürzungen aus, die von Ihrer Organisation oder Ihrem Team verwendet werden. Begriffe, die für Organisationen oder Teams spezifisch sind, sind möglicherweise neu für Personen, die von einem Team in ein anderes umziehen, die mit internen Partnerteams arbeiten oder neu in der Organisation sind.
 
 Organisationen haben nicht immer einen einzigen Verweis für Ihre Standardterminologie. Durch das Fehlen eines einzelnen Verweises ist es schwer, Definitionen oder Erweiterungen für diese Akronyme zu finden. Microsoft Search löst dieses Problem mit Akronymen.
 
 ## <a name="what-users-experience"></a>Benutzererfahrung
-Microsoft Search-Benutzer können Definitionen mit Akronymen in [Bing](https://Bing.com), [Microsoft Office 365](https://Office.com)und [Microsoft SharePoint Online](https://products.office.com/sharepoint/collaboration)abrufen. In den **Such** Feldern in den Kopfzeilenleisten geben Benutzer Abfragen wie diese Beispiele ein:
+Microsoft Search-Benutzer können Definitionen mit Akronymen in [Bing](https://Bing.com)abrufen. In das **Suchfeld** geben Benutzer Abfragen wie diese Beispiele ein:
 
 - *Was ist* DNN
 - *Definieren* Sie DNN
@@ -36,13 +36,13 @@ Microsoft Search-Benutzer können Definitionen mit Akronymen in [Bing](https://B
 - *Bedeutung von* DNN
 - DNN *bedeutet*
 
-Die vorgeschlagenen Ergebnisse umfassen alle Bedeutungen von DNN, die in der Organisation des Benutzers vorhanden sind.
+Das Ergebnis enthält alle Bedeutungen von DNN, die in der Organisation des Benutzers vorhanden sind.
 
 > [!NOTE]
 > Benutzer müssen eine Abfrage eingeben, die die angegebenen *Schlüsselwörter* für das Akronym enthält, um die entsprechenden Antworten auszulösen. Bei Akronym-Abfragen wird die Groß-/Kleinschreibung nicht beachtet. 
 
 ## <a name="set-up-acronyms-answers"></a>Antworten zum Einrichten von Akronymen
-Wechseln Sie im Microsoft 365 [Admin Center](https://admin.microsoft.com)zu **Einstellungen** > **Microsoft-Such** >**Akronyme**, und wählen Sie dann **Akronyme hinzufügen**aus. 
+Wechseln Sie im Microsoft 365 [Admin Center](https://admin.microsoft.com)zu **Einstellungen**  >  **Microsoft-Such**  > **Akronyme**, und wählen Sie dann **Akronyme hinzufügen**aus. 
 
 Microsoft Search fragt zwei Datenquellen ab, um Akronyme Antworten auf die Suchvorgänge von Benutzern bereitzustellen:
 
@@ -50,7 +50,7 @@ Microsoft Search fragt zwei Datenquellen ab, um Akronyme Antworten auf die Suchv
 2.  **Verminte Akronyme**. Durch die Microsoft-Suche von den persönlichen e-Mails und Dokumenten und öffentlich verfügbaren Daten innerhalb der Organisation abgebaut.
 
 ### <a name="set-up-editorial-acronyms"></a>Einrichten von redaktionellen Akronymen
-IT-Administratoren können redaktionelle Akronyme auf der [Registerkarte Akronyme](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch) im [Microsoft 365 Admin Center]( https://admin.microsoft.com)einrichten. Sie können Akronyme aus einer internen Website oder einem Repository zum Admin Center hinzufügen. Redaktionelle Akronyme können dem **veröffentlichten** oder dem **Entwurfs** Status hinzugefügt werden:
+Suchadministratoren können redaktionelle Akronyme auf der [Registerkarte Akronyme](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch) im [Microsoft 365 Admin Center]( https://admin.microsoft.com)einrichten. Sie können Akronyme aus einer internen Website oder einem Repository zum Admin Center hinzufügen. Redaktionelle Akronyme können dem **veröffentlichten** oder dem **Entwurfs** Status hinzugefügt werden:
 
 **Veröffentlichter Status**. Akronyme stehen den Mitarbeitern der Organisation über die Microsoft-Suche zur Verfügung.
 
@@ -86,10 +86,10 @@ Es kann eine Herausforderung für Administratoren sein, alle in einer Organisati
 - Dokumente in [SharePoint](https://products.office.com/sharepoint/collaboration), [Microsoft OneDrive]( https://onedrive.live.com/about/) und [Microsoft OneNote](http://www.onenote.com/).
 - Öffentliche Dokumente innerhalb der Organisation, auf die Benutzer in SharePoint, OneDrive oder OneNote zugreifen können.
 
-Die Microsoft-Suche stellt sicher, dass nur Benutzer mit Zugriff und Berechtigungen für ein Dokument die von dieser abgebauten Akronyme sehen können. Die Akronyme werden aus dem Posteingang eines Benutzers abgebaut und im Benutzer Fragment gespeichert. Nur der Benutzer kann auf die im Posteingang des Benutzers verminten Akronyme zugreifen.
+Die Microsoft-Suche stellt sicher, dass nur Benutzer mit Zugriff und Berechtigungen für ein Dokument die von dieser abgebauten Akronyme sehen können. Wenn ein Akronym aus dem Postfach eines Benutzers abgebaut wird, kann nur dieser Benutzer dieses Akronym sehen.
 
 > [!NOTE]
-> Für verminte Akronyme ist kein IT-Administratorsetup erforderlich.
+> Für verminte Akronyme ist kein Setup erforderlich.
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 **F.: wie werden redaktionelle und verminte Daten bewertet?**
@@ -102,15 +102,7 @@ Die Microsoft-Suche stellt sicher, dass nur Benutzer mit Zugriff und Berechtigun
 
 **F.: wie lösen Benutzer Akronyme Antworten aus?**
 
-**A**: um Akronyme Antworten zu erhalten, müssen Benutzer bestimmte Abfragemuster in einem [Bing](https://bing.com)-, [Office 365](https://Office.com)-oder [SharePoint](https://products.office.com/sharepoint/collaboration) - **Suchfeld** eingeben. Beispiele für Abfragen, die Antworten für den Begriff *DNN* finden, lauten wie folgt:
-
-- *Was ist* DNN
-- *Definieren* Sie DNN
-- DNN- *Definition*
-- *Erweitern* Sie DNN
-- DNN- *Erweiterung*
-- *Bedeutung von* DNN
-- DNN *bedeutet*
+**A**: um Akronyme Antworten zu erhalten, müssen Benutzer bestimmte Abfragemuster in ein [Bing](https://bing.com) - **Suchfeld** eingeben. Derzeit sind Akronym-Antworten in [Office 365](https://Office.com) oder [SharePoint](https://products.office.com/sharepoint/collaboration)nicht verfügbar.
 
 **F.: wie lange dauert es, bis abgebaute Akronyme angezeigt werden, nachdem Sie eine neue e-Mail oder ein neues Dokument empfangen oder gesendet haben?**
 
@@ -131,4 +123,4 @@ Nachdem Sie ein Support Ticket erstellt haben, dauert es bis zu 48 Stunden, dami
 
 **F.: Wann werden Akronyme Antworten in [Office 365](https://Office.com) und [SharePoint Online](https://products.office.com/sharepoint/collaboration)angezeigt?**
 
-**A**: Akronyme Antworten sind derzeit nur in der Microsoft-Suche in [Bing](https://bing.com)verfügbar. Sie werden in Office 365 und SharePoint Online in 2020 eingeführt.
+**A**.: Akronyme Antworten in Office 365 und SharePoint Online sind Teil unserer Produkt-Roadmap, aber wir können derzeit kein Datum oder keinen Zeitrahmen bereitstellen.

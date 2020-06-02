@@ -12,31 +12,31 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
-description: Suchen und aktualisieren Sie Antworten einzeln oder verwenden Sie die verfügbaren Microsoft Search-Tools, um alle gleichzeitig zu bearbeiten
-ms.openlocfilehash: 0877de027b68589e5ba15cd8109ea7edeeae8725
-ms.sourcegitcommit: c22e8c3dcc53857da677db98a1a2b7d5ca2c6170
+description: Suchen und aktualisieren Sie die Antworten einzeln, oder verwenden Sie die verfügbaren Microsoft-Such Tools, um Q&als alle gleichzeitig zu bearbeiten.
+ms.openlocfilehash: af966cfaae6680a063feb25d2736303106c19978
+ms.sourcegitcommit: 0050e113517a36e3ca26028a04ac5c236caaf524
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41721741"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470272"
 ---
 # <a name="manage-qas"></a>F & As verwalten
 
-Die Erstellung von Fragen und Antworten ist vergleichbar mit der Erstellung von Lesezeichen. Fragen und Antworten ermöglichen es Ihnen, die Frage des Benutzers zu beantworten, statt nur einen Link zur Webseite bereitzustellen. Sie können die Antwort mit den verfügbaren Tools als Rich-Text formatieren. Wenn ein Lesezeichen sowie Fragen und Antworten ein gemeinsames Schlüsselwort nutzen, wird zuerst das Lesezeichenergebnis angezeigt. Wie Lesezeichen wird der F&A-Index sofort nach dem Hinzufügen oder Ändern einer Frage und Antwort aktualisiert.
+Die Erstellung von Fragen und Antworten ist vergleichbar mit der Erstellung von Lesezeichen. Q&, damit Sie die Fragen des Benutzers beantworten können, anstatt lediglich einen Link zu einer Webseite bereitzustellen. Sie können die Antwort auch in Rich-Text formatieren. Wenn ein Lesezeichen und ein Q&a dasselbe Stichwort verwenden, wird zuerst das Ergebnis der Textmarke angezeigt. Wie bei Lesezeichen wird das q&ein Index unmittelbar nach dem Hinzufügen oder Ändern eines q&a aktualisiert.
 
 ## <a name="add-or-edit-a-single-qa"></a>Hinzufügen oder Bearbeiten einer einzelnen Frage und Antwort
 
 1. Gehen Sie zum **Microsoft 365 Admin Center**.
 1. Wechseln Sie im Navigationsbereich zu **Einstellungen**, und wählen Sie **Microsoft Search** aus.
-1. Wählen Sie die Registerkarte **F&A** aus. Standardmäßig ist die erste Registerkarte (**Lesezeichen**) ausgewählt.
+1. Wählen Sie das **Q-&eine** Registerkarte aus.
 1. Wählen Sie zum Hinzufügen einer Frage und Antwort **Neu hinzufügen** aus.
-Wählen Sie zum Bearbeiten einer Frage und Antwort die Frage und Antwort in der entsprechenden F&A-Liste aus.
-1. Während Sie die Informationen hinzufügen oder bearbeiten, wird die Vorschau automatisch aktualisiert.
+Wählen Sie zum Bearbeiten einer Frage und Antwort die Frage und Antwort in der entsprechenden F&A-Liste aus. Während Sie die Informationen hinzufügen oder bearbeiten, wird die Vorschau automatisch aktualisiert.
 1. Speichern Sie Ihre Änderungen.
 
 ### <a name="supported-html-tags"></a>Unterstützte HTML-Tags
 
-Sie können vorhandene HTML-Inhalte verwenden oder ihrer Antwort (Beschreibung) HTML-Tags hinzufügen. Nicht unterstützte Tags werden ignoriert.  
+Sie können vorhandene HTML-Inhalte verwenden oder ihrer Antwort (Beschreibung) HTML-Tags hinzufügen. Nicht unterstützte Tags werden ignoriert.
+
 Die folgenden HTML-Tags werden unterstützt:
 
 - blockquote
@@ -60,40 +60,40 @@ Die folgenden HTML-Tags werden unterstützt:
 
 Suchadministratoren können Suchinhalte mühelos mithilfe von Browsererweiterungen erstellen. Installieren Sie die Browser Erweiterung, und wechseln Sie dann zu der Website, von der Sie ein Q&a generieren möchten. Anschließend können Sie Q&a erstellen und einen Link zur Quellwebsite hinzufügen.
 
-Derzeit sind Browsererweiterungen für Microsoft Edge und Chrome verfügbar.
+Derzeit stehen Browsererweiterungen für Microsoft Edge und Chrome zur Verfügung.
 
-- Um Edge-Erweiterungen herunterzuladen, wechseln Sie zu [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) , und laden Sie die APP herunter.
-- Um Chrome Extensions herunterzuladen, wechseln Sie zum [Chrome-Webstore](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) , und laden Sie die APP herunter.
+- Um Edge-Erweiterungen herunterzuladen, wechseln Sie zu [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab).
+- Um Chrome-Erweiterungen herunterzuladen, wechseln Sie zum [Chrome-Webstore](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm).
 
 ## <a name="bulk-add-or-edit-qas"></a>Massenhinzufügen oder -bearbeiten von F & As
 
-Administratoren können die Import- und Exportfunktion verwenden, um Fragen und Antworten per Massenvorgang zu erstellen oder zu bearbeiten. Dies ist eine nützliche Funktion, wenn Administratoren eine große Anzahl von Fragen und Antworten hinzufügen oder bearbeiten müssen.
+Administratoren können die Funktionen zum Importieren und Exportieren zum Massen erstellen oder Bearbeiten von Q&as verwenden.
 
-Verwenden Sie die Import-/Exportfunktion zum:
+Verwenden Sie die Funktion zum Importieren/Exportieren für:
 
-1. Massenhinzufügen von Fragen und Antworten – Fügen Sie Details in der Vorlagendatei für Fragen und Antworten hinzu, und importieren Sie sie dann.
-1. Massenbearbeiten von Fragen und Antworten – Exportieren Sie Fragen und Antworten in eine CSV-Datei, bearbeiten Sie dann die F&A-Details in der exportierten CSV-Datei, und importieren Sie die aktualisierte CSV-Datei.
-1. Sichern von Fragen und Antworten – Exportieren Sie Fragen und Antworten in eine CSV-Datei.
+- Massen Hinzufügen von q&as – fügen Sie Details im q-&einer Vorlagendatei hinzu, und importieren Sie Sie.
+- Massenbearbeitung q&as-Export q&als CSV-Datei, bearbeiten Sie die q #d2 Details in der exportierten Datei, und importieren Sie die Datei.
+- Sichern Sie q&as-Export q&als CSV-Datei.
 
-So importieren oder exportieren Sie Fragen und Antworten:
+So importieren oder exportieren Sie Q&wie:
 
 1. Wählen Sie in der oberen rechten Ecke der Registerkarte „F&A“ **Importieren** aus.
-Wählen Sie **Exportieren** aus, um alle vorhandenen Fragen und Antworten in eine CSV-Datei herunterzuladen.
-1. Wählen Sie im rechten Bereich die Option zum Importieren mithilfe einer CSV-Datei.
-Laden Sie die Vorlagendatei herunter, um eine Liste der erforderlichen Felder und Details zu erhalten.
-1. Fügen Sie F&A-Details in der Vorlagendatei hinzu oder bearbeiten Sie sie, und speichern Sie sie auf Ihrem Computer.
-1. Klicken Sie im Bereich **Fragen und Antworten importieren** auf **Durchsuchen**, und wählen Sie dann die CSV-Datei aus, die Sie importieren möchten.
+Wählen Sie **exportieren** aus, um alle vorhandenen Q-&wie in einer CSV-Datei herunterzuladen.
+1. Wählen Sie im rechten Bereich die Option zum Importieren mithilfe einer CSV-Datei aus. Laden Sie die Vorlagendatei herunter, um eine Liste der erforderlichen Felder und Details zu erhalten.
+1. Fügen oder bearbeiten Sie Q&Details in der Vorlagendatei, und speichern Sie Sie auf Ihrem Computer.
+1. Wählen Sie im Bereich **Q importieren&einen** **Durchsuchen**aus, und wählen Sie dann die CSV-Datei aus, die Sie importieren möchten.
 1. Wählen Sie **Importieren** aus.
 
-Hier sind einige wichtige Punkte in Bezug auf die Vorlagendatei:
+Wichtige Vorlagendatei Tipps:
 
-- Bearbeiten Sie niemals Daten in diesen Feldern: *ID*, *Zuletzt geändert* und *Zuletzt geändert von*.
-- Wenn Sie die *ID* eines vorhandenen Lesezeichens angeben, wird sie durch die Informationen in der Importdatei ersetzt.
+- Bearbeiten Sie niemals Daten in diesen Feldern: **ID**, **Zuletzt geändert** und **Zuletzt geändert von**.
+- Wenn Sie die **ID** eines vorhandenen Lesezeichens angeben, wird sie durch die Informationen in der Importdatei ersetzt.
 - Wenn ein Lesezeichen mit dem gleichen Titel oder der gleichen URL vorhanden ist, wird das Lesezeichen mit Informationen in der Importdatei aktualisiert.
-- Nicht alle Felder in der Vorlagendatei sind erforderlich, und die erforderlichen Felder variieren je nach dem Lesezeichenstatus.
-- Auf der Grundlage des Felds „Status“ werden Lesezeichen als „Entwurf“, „vorgeschlagen“ oder „geplant“ gespeichert, oder sie werden automatisch veröffentlicht.
-- Für Partner, die mehrere Organisationen verwalten, können Sie Ihre Lesezeichen aus einer org exportieren und in eine andere importieren. Sie müssen jedoch die Daten in der Spalte *ID* vor dem Import entfernen.
+- Nicht alle Felder in der Vorlagendatei sind erforderlich, und die erforderlichen Felder sind je nach Lesezeichen Status unterschiedlich.
+- Basierend auf dem Feld **Status** werden Lesezeichen als *Entwurf*, *vorgeschlagen*oder *geplant*gespeichert, oder Sie werden automatisch veröffentlicht.
+- Für Partner, die mehrere Organisationen verwalten: Sie können Ihre Lesezeichen aus einer org exportieren und in eine andere importieren. Sie müssen jedoch die Daten in der Spalte **ID** vor dem Import entfernen.
 
-**Hinweis:** Sie können Fragen und Antworten nicht importieren, wenn Fehler in der Vorlagendatei vorhanden sind. Um Fehler zu verhindern, stellen Sie sicher, dass die Importdatei ordnungsgemäß formatiert ist, und geben Sie alle erforderlichen Informationen an.
+> [!NOTE]
+> Sie können Q&nicht als Fehler in der Vorlagendatei importieren. Um Fehler zu vermeiden, stellen Sie sicher, dass die Importdatei ordnungsgemäß formatiert ist und alle erforderlichen Informationen enthält.
 
-Weitere Informationen zum Vermeiden von Fehlern finden Sie unter [Vermeiden von Importfehlern](manage-bookmarks.md#prevent-import-errors).
+Weitere Informationen zum Vermeiden von Fehlern finden Sie unter [Prevent Import Errors](manage-bookmarks.md#prevent-import-errors).

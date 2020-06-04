@@ -1,8 +1,8 @@
 ---
 title: Planen der Inhalte
-ms.author: anfowler
-author: adefowler
-manager: mnirkhe
+ms.author: jeffkizn
+author: jeffkizn
+manager: parulm
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
@@ -13,18 +13,18 @@ search.appverid:
 - MOE150
 ms.assetid: bb9d90b6-6c86-4b19-9235-3bd9b19826ab
 description: Bereitstellen hochwertige Inhalte ohne zusätzliche Ressourcen bei Verwendung von Microsoft Search
-ms.openlocfilehash: d51fb15199a4c1aedd4af0932ce9bb5683d8abc6
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 65cc9fbec655ec849e32d7b6e14c6947ab30bbc2
+ms.sourcegitcommit: 46303c60e905c89c133278fa41e87055f81a8637
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626945"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44535347"
 ---
 # <a name="plan-your-content"></a>Planen der Inhalte
 
-**Microsoft Search** hilft Benutzern, relevante Inhalte zu finden. **Microsoft Search** ist eine sichere Möglichkeit, sowohl Ihre Intranet- als auch Ihre Webinhalte zu durchsuchen. Diese web- und organisationsübergreifende Art der Integration steht nur bei Microsoft zur Verfügung. 
+**Microsoft Search** hilft Benutzern, relevante Inhalte zu finden. **Microsoft Search** ist eine sichere Möglichkeit, sowohl Ihre Intranet- als auch Ihre Webinhalte zu durchsuchen. Diese web- und organisationsübergreifende Art der Integration steht nur bei Microsoft zur Verfügung.
 
-Suchadministratoren nutzen ihr Wissen über die Organisation und ihre Benutzer, um die relevanten Inhalte für Benutzer leicht auffindbar zu machen. 
+Suchadministratoren nutzen ihr Wissen über die Organisation und ihre Benutzer, um die relevanten Inhalte für Benutzer leicht auffindbar zu machen.
 
 ## <a name="step-1-identify-information-your-users-need"></a>Schritt 1: Identifizieren der Informationen, die Ihre Benutzer benötigen
 
@@ -47,19 +47,19 @@ In einer Organisation suchen Benutzer nach einem breiten Spektrum von Themen, da
 
 ### <a name="leverage-smes"></a>Nutzen von SMEs
 
-Nutzen Sie SMEs in der Organisation, einschließlich Experten von der Personalabteilung, dem Support, dem Vertrieb, der Technologie und anderen Schlüsselbereichen. Damit Ihre SMEs Inhalte direkt beisteuern können, fügen Sie sie als Sucheditoren hinzu. 
+Nutzen Sie SMEs in der Organisation, einschließlich Experten von der Personalabteilung, dem Support, dem Vertrieb, der Technologie und anderen Schlüsselbereichen. Damit Ihre SMEs Inhalte direkt beisteuern können, fügen Sie sie als Sucheditoren hinzu.
 
 ### <a name="involve-your-users"></a>Einbeziehen Ihrer Benutzer
 
 Bitten Sie Benutzer, Ressourcen als Lesezeichen vorzuschlagen. Bitte Sie Benutzer, zusätzlich zum Vorschlagen von Inhalten Fehler wie fehlerhafte oder ungültige Links zu melden.
 
-## <a name="step-3-improve-findability-of-content"></a>Schritt 3: Verbessern der Auffindbarkeit von Inhalten 
+## <a name="step-3-improve-findability-of-content"></a>Schritt 3: Verbessern der Auffindbarkeit von Inhalten
 
 In **Microsoft Search** erstellt der Suchadministrator Lesezeichen, Fragen und Antworten, Standorte und PowerApps, um die Auffindbarkeit von Inhalten zu verbessern. Jede dieser Suchkomponenten enthält einen Titel, eine URL und eine Gruppe von Schlüsselwörtern, die sie auslösen.
 
 ### <a name="titles-and-descriptions"></a>Titel und Beschreibungen
 
-Benutzer verwenden Titel und Beschreibungen, um zu ermitteln, ob das Ergebnis ihre Suchabfrage beantwortet oder ob sie eine andere Suche ausprobieren müssen. Titel und Beschreibungen sollten den grundlegenden Zweck des Ergebnisses widerspiegeln. Ein gutes Beispiel für einen Titel könnte „Vergütungen für Kinderbetreuung“ mit der Beschreibung „Informationen zu Vergütungen als Hilfe bei der Bezahlung von Kinderbetreuungskosten“ sein. So werden die Benutzer, die nach „Kinderbetreuung“ suchen, informiert, dass finanzielle Unterstützungsleistungen verfügbar sind. Außerdem wird ein Link zu weiteren Informationen bereitgestellt. 
+Benutzer verwenden Titel und Beschreibungen, um zu ermitteln, ob das Ergebnis ihre Suchabfrage beantwortet oder ob sie eine andere Suche ausprobieren müssen. Titel und Beschreibungen sollten den grundlegenden Zweck des Ergebnisses widerspiegeln. Ein gutes Beispiel für einen Titel könnte „Vergütungen für Kinderbetreuung“ mit der Beschreibung „Informationen zu Vergütungen als Hilfe bei der Bezahlung von Kinderbetreuungskosten“ sein. So werden die Benutzer, die nach „Kinderbetreuung“ suchen, informiert, dass finanzielle Unterstützungsleistungen verfügbar sind. Außerdem wird ein Link zu weiteren Informationen bereitgestellt.
 
 ### <a name="keywords"></a>Schlüsselwörter
 
@@ -112,7 +112,7 @@ Es ist wichtig, dass autoritative Informationen wie Lesezeichen sowie Fragen und
 - Überprüfen Sie auf Änderungen des Tools, Websitenamens oder Teamnamens.
 - Überlegen Sie, ob das Lesezeichen oder die Fragen und Antworten genügend autoritativ sind oder eine klarere Beschreibung benötigen.
 
-**Microsoft Search** stellt Nutzungsstatistiken für Lesezeichen, Fragen und Antworten und Standorte bereit. Die Nutzungsstatistiken zeigen, wie Ihre Benutzer mit den Suchergebnissen interagieren, ob die Benutzer das Gewünschte suchen und ob Lücken in den verfügbaren Inhalten vorhanden sind. Sie helfen dem Administrator, die Leistung zu überwachen und geeignete Maßnahmen zur Feinabstimmung der Suchergebnisse zu ergreifen. 
+**Microsoft Search** stellt Nutzungsstatistiken für Lesezeichen, Fragen und Antworten und Standorte bereit. Die Nutzungsstatistiken zeigen, wie Ihre Benutzer mit den Suchergebnissen interagieren, ob die Benutzer das Gewünschte suchen und ob Lücken in den verfügbaren Inhalten vorhanden sind. Sie helfen dem Administrator, die Leistung zu überwachen und geeignete Maßnahmen zur Feinabstimmung der Suchergebnisse zu ergreifen.
 
 ### <a name="get-details-about-bookmarks-qa-and-locations"></a>Abrufen von Details zu Lesezeichen, Fragen und Antworten und Standorten
 
@@ -126,9 +126,9 @@ Vorgeschlagene Lesezeichen, Fragen und Antworten und Standorte sind ein guter In
 
 ### <a name="review-top-search-queries"></a>Überprüfen der wichtigsten Suchabfragen
 
-Ermitteln Sie, welche Suchen die meisten Aufrufe während der letzten 90 Tage generiert haben. Aufruf bezieht sich darauf, wie oft eine Seite im Suchergebnis angezeigt wurde. Die Karte **Wichtigste Abfragen** zeigt die 25 wichtigsten Benutzersuchen für jeden Ergebnistyp mit der Gesamtanzahl von Suchen und deren Klickrate (Click-Through Rate, CTR). Mithilfe dieses Berichts können Sie das Suchvorgangsaufkommen identifizieren und Abfragen mit hoher und niedriger Suchaktivität ermitteln. 
+Ermitteln Sie, welche Suchen die meisten Aufrufe während der letzten 90 Tage generiert haben. Aufruf bezieht sich darauf, wie oft eine Seite im Suchergebnis angezeigt wurde. Die Karte **Wichtigste Abfragen** zeigt die 25 wichtigsten Benutzersuchen für jeden Ergebnistyp mit der Gesamtanzahl von Suchen und deren Klickrate (Click-Through Rate, CTR). Mithilfe dieses Berichts können Sie das Suchvorgangsaufkommen identifizieren und Abfragen mit hoher und niedriger Suchaktivität ermitteln.
 
-Eine geringe Anzahl von Suchen deutet möglicherweise auf eine Unzufriedenheit bei den Benutzern hin, entweder weil die Benutzer nicht nach diesem Suchinhalt suchen oder andere Schlüsselwörter verwenden, um den jeweiligen Inhalt zu finden. Die CTR zeigt an, wie oft Benutzer die höhergestuften Ergebnisse auswählen und wie nützlich Ihre Abfrageregeln und -ergebnisse für Benutzer sind. Eine niedrige CTR zeigt an, dass Benutzer den Inhalt finden, aber feststellen, dass der Inhalt nicht ihrer Suche entspricht. In solchen Fällen beschließen Administratoren möglicherweise, den Inhalt zu überprüfen und sicherzustellen, dass er mit den Such- und Updatetiteln, -beschreibungen und -schlüsselwörtern des Benutzers übereinstimmt, um ihn mit den Suchabfragen des Benutzers abzustimmen. 
+Eine geringe Anzahl von Suchen deutet möglicherweise auf eine Unzufriedenheit bei den Benutzern hin, entweder weil die Benutzer nicht nach diesem Suchinhalt suchen oder andere Schlüsselwörter verwenden, um den jeweiligen Inhalt zu finden. Die CTR zeigt an, wie oft Benutzer die höhergestuften Ergebnisse auswählen und wie nützlich Ihre Abfrageregeln und -ergebnisse für Benutzer sind. Eine niedrige CTR zeigt an, dass Benutzer den Inhalt finden, aber feststellen, dass der Inhalt nicht ihrer Suche entspricht. In solchen Fällen beschließen Administratoren möglicherweise, den Inhalt zu überprüfen und sicherzustellen, dass er mit den Such- und Updatetiteln, -beschreibungen und -schlüsselwörtern des Benutzers übereinstimmt, um ihn mit den Suchabfragen des Benutzers abzustimmen.
 
 ### <a name="analyze-impressions-by-result-type"></a>Analysieren von Aufrufen nach Ergebnistyp
 

@@ -12,30 +12,47 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie mehr über die Microsoft Graph Connectors Preview für Microsoft Search.
-ms.openlocfilehash: 52bf174875bf3e262c0cb71d53ec209e481ee0b7
-ms.sourcegitcommit: 1e8dc8e10722ed26ba85cbb5e8c9df62f3625de6
+ms.openlocfilehash: 4bcd8360957be69bc701e8b356cd222de32bfc5f
+ms.sourcegitcommit: 64eea81f8c1db9ee955013462a7b51612fb7d0b7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41578687"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "44604383"
 ---
 # <a name="microsoft-graph-connectors-preview"></a>Vorschau der Microsoft Graph-Konnektoren
 
-Microsoft Graph-Connectors und Microsoft Search-APIs (Abfrage und Index) befinden sich derzeit im Vorschaustatus. Um auf Connectors-Funktionen zugreifen zu können, müssen Sie den Beitritt zum Vorschauprogramm anfordern, indem Sie das <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u" target="_blank">Anmeldeformular für die Microsoft Graph-Konnektoren</a>in der Vorschau einreichen. Dies ist eine frühe Vorschau, und es gibt keine Garantie auf Service Level. Wir ermutigen Kunden, konnektorfunktionen zu testen und Feedback zu geben. Es wird nicht empfohlen, Connectors für Produktionszwecke während des Vorschauzeitraums zu verwenden.
+Microsoft Graph-Connectors und Microsoft Search-APIs (Abfrage und Index) befinden sich derzeit im Vorschaustatus. Um Zugriff auf Connectors-Funktionen zu erhalten, müssen Sie die Option "Targeted Release" in Ihrem Mandanten aktivieren. Dies ist eine frühe Vorschau, und es gibt keine Garantie auf Service Level. Wir ermutigen Kunden, konnektorfunktionen zu testen und Feedback zu geben. Es wird nicht empfohlen, Connectors für Produktionszwecke während des Vorschauzeitraums zu verwenden.
 
 ## <a name="set-up-targeted-release"></a>Einrichten der gezielten Version
-Wenn Sie Connectors testen möchten, müssen Sie die Option **Targeted Release** für alle Benutzer in Ihrer Organisation festgelegt haben. Die gezielte Freigabeanforderung gilt unabhängig davon, welche der folgenden Vorschau Umgebungen Sie auswählen.
-Weitere Informationen zur Option "Targeted Release" und dazu, wie Sie Sie festlegen, finden Sie unter <a href="https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide" target="_blank">Einrichten der Standard-oder Targeted Release-Optionen in Office 365</a>.
 
-## <a name="choose-a-preview-environment"></a>Auswählen einer vorschauumgebung 
+Wenn Sie Connectors testen möchten, müssen Sie die Option **Targeted Release** für alle Benutzer in Ihrer Organisation festgelegt haben. Weitere Informationen zur Option "Targeted Release" und dazu, wie Sie Sie festlegen, finden Sie unter [Einrichten der Standard-oder Targeted Release-Optionen in Office 365](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide).
+
+## <a name="choose-a-preview-environment"></a>Auswählen einer vorschauumgebung
+
 Um Konnektoren, Indizierungs-APIs und Such-APIs zu testen, empfehlen wir diese beiden Methoden:
+
 1. **Test Mandant**.  Wir empfehlen Ihnen, einen Testmandanten zu verwenden, um die Vorschau der Microsoft Graph-Konnektoren auszuprobieren.
+
 2. **Testen der Websitesammlung**. Wenn Sie keinen Testmandanten haben, können Sie eine TestWebsite Sammlung zum Ausprobieren von connectorfunktionen erstellen. Wenn Sie Ergebnisse aus Konnektoren anzeigen möchten, ohne dass sich dies auf die Suchseiten in Ihrer Organisation auswirkt, passen Sie die Suchumgebung nur für diese Websitesammlung an.
 
 ## <a name="preview-limitations"></a>Vorschau Einschränkungen
-Die Vorschauversion weist die folgenden Einschränkungen auf: 
+
+Die Vorschauversion weist die folgenden Einschränkungen auf:
+
 * Der Durchsatz für die Einnahme wird mit etwa vier Elementen pro Sekunde gedrosselt.
+
 * Es gibt keine Unterstützung für Schemaaktualisierungen. Nachdem Sie eine Verbindungseinrichtung erstellt haben, können Sie das Schema nicht aktualisieren. Sie können die Verbindung nur löschen und neu erstellen.
+
 * Indizierte Inhalte werden nur auf der Suchergebnisseite unter einer benutzerdefinierten vertikalen angezeigt. Diese Einschränkung gilt für Inhalte mit benutzerdefinierten Typen.
-* Vor der allgemeinen Verfügbarkeit müssen alle Verbindungen, die Sie während des Vorschauzeitraums eingerichtet haben, möglicherweise gelöscht und neu erstellt werden. Diese Verbindungen funktionieren nicht mehr, wenn Sie mit Änderungen, die zur Verbesserung des Produkts vorgenommen wurden, nicht kompatibel sind.
+
+* Jede Verbindung, die Sie während des Vorschauzeitraums eingerichtet haben, muss möglicherweise gelöscht und neu erstellt werden. Diese Verbindungen funktionieren nicht mehr, wenn Sie mit Änderungen, die zur Verbesserung des Produkts vorgenommen wurden, nicht kompatibel sind.
+
 * Es gibt einen Grenzwert für Verbindungen. Jeder Mandant kann bis zu 10 Verbindungen erstellen.
+
+* Größe des Quell-Repositorys. Es wird empfohlen, Connectors mit einem Quell-Repository mit etwa 200.000 Elementen in der Vorschau anzuzeigen, da dies unsere getestete Skalierungsgrenze für die Suche darstellt. Wir arbeiten daran, die Leistung der Suche zu verbessern, und wir erwarten, dass in naher Zukunft größere Repository-Größen unterstützt werden.
+
+* Die Bearbeitungsunterstützung für die Verbindung ist nicht verfügbar. Nachdem die Verbindung erstellt wurde, können Sie Sie nicht bearbeiten oder ändern. Wenn Sie Details ändern müssen, müssen Sie die Verbindung löschen und neu erstellen.
+
+* Connector-Inhalte können nur nach benutzerdefinierten vertikalen durchsucht werden.
+
+* Connector-Inhalt aus nur einer Verbindung kann in jeder benutzerdefinierten vertikalen angezeigt werden und erfordert die Erstellung von Ergebnistypen.

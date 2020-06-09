@@ -12,21 +12,22 @@ search.appverid:
 - MET150
 - MOE150
 description: Übersicht über Microsoft Graph Connectors für Microsoft Search
-ms.openlocfilehash: 8b02eadac099d75174fe849f7f2f97c26bf6c3af
-ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
+ms.openlocfilehash: 0b5420eb4eb93eb257fab30f3e56a20e6456e1b3
+ms.sourcegitcommit: 64eea81f8c1db9ee955013462a7b51612fb7d0b7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "39663135"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "44604392"
 ---
 # <a name="overview-of-microsoft-graph-connectors"></a>Übersicht über Microsoft Graph-Connectors
 
 Microsoft Search indiziert alle Ihre [Microsoft 365](https://www.microsoft.com/microsoft-365) -Daten, damit Sie für Benutzer durchsucht werden können. Mit Microsoft Graph-Connectors kann Ihre Organisation Daten aus Drittanbietern indizieren, damit Sie in Microsoft-Suchergebnissen angezeigt werden. Die drittanbieterdaten können lokal oder in öffentlichen oder privaten Clouds gehostet werden. Connectors erweitern Sie die Typen von Inhaltsquellen, die in Ihren Microsoft 365-Produktivitäts-apps und dem breiteren Microsoft-Ökosystem durchsucht werden können.
 
 > [!IMPORTANT]
-> **Haftungsausschluss**: Microsoft Graph-Connectors und Microsoft Search-APIs (Abfrage und Index) befinden sich derzeit im Vorschaustatus. Wenn Sie Connectors mit Microsoft Search verwenden oder Connectors erstellen möchten, müssen Sie sich für das [Connectors-Vorschauprogramm](connectors-preview.md) registrieren. Um an dem Vorschau Programm teilzunehmen, senden [Sie das Anmeldeformular für Microsoft Graph Connectors Preview](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u).
+> **Haftungsausschluss**: Microsoft Graph-Connectors und Microsoft Search-APIs (Abfrage und Index) sind derzeit im Vorschaustatus für Mandanten in der gezielten Version verfügbar. Um Connectors mit Microsoft Search zu verwenden oder um Connectors zu erstellen, wählen Sie [Targeted Release](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)aus. Weitere Informationen zur Vorschau finden Sie unter [Connectors Preview Program](connectors-preview.md).
 
 ## <a name="architecture"></a>Architektur
+
 Das folgende Architekturdiagramm der Microsoft Graph-Plattform zeigt, wie der Connector-Inhalt durch die Inhaltsindizierung zu Benutzer Ergebnissen in [Microsoft Search](https://docs.microsoft.com/microsoftsearch/overview-microsoft-search) -Clients fließt. In diesem Artikel werden die wichtigsten Bausteine im Datenfluss Prozess von Microsoft Graph Connectors erläutert.
 
 ![Diagramm: lokale und Cloud-basierte Daten werden von Konnektoren abgerufen und von der Microsoft-Such-API indiziert, und der Microsoft Search-Dienst sendet die Ergebnisse an die Benutzer.](media/highlevel-connectors_FINAL.png)
@@ -38,6 +39,7 @@ Sie können alle von Microsoft erstellten Connectors im Microsoft 365 [Admin Cen
 Um eine **Verbindung** mit einer Datenquelle herzustellen, benötigen Administratoren authentifizierten Zugriff auf die Daten und das gesamte Inhalts-Repository. Die Daten werden für die Indizierung an den Graph Connector-Dienst zugeführt.
 
 ## <a name="available-connectors"></a>Verfügbare Connectors
+
 Es gibt derzeit 6 von Microsoft erstellte Connectors, und über 100-Connectors stehen in unseren Ecosystem-Partnern zur Verfügung.
 
 Um eine Vorschau der Connectors von einem unserer Ecosystem-Partner anzuzeigen, wenden Sie sich direkt an Sie. Weitere Informationen finden Sie im [Microsoft Graph Connectors-Katalog](connectors-gallery.md).
@@ -45,6 +47,7 @@ Um eine Vorschau der Connectors von einem unserer Ecosystem-Partner anzuzeigen, 
 Sie können auch [einen eigenen Connector erstellen](https://docs.microsoft.com/graph/search-concept-overview).
 
 ### <a name="connectors-by-microsoft"></a>Connectors von Microsoft
+
 Die Microsoft Graph Connectors Preview-Version enthält 6 von Microsoft erstellte Connectors. Sie können Sie im [Admin Center](https://admin.microsoft.com) einrichten und erfahren, wie Sie [ihren von Microsoft erstellten Connector](configure-connector.md)einrichten.
 
 Die folgenden Abschnitte enthalten kurze Beschreibungen für diese von Microsoft erstellten Connectors. Sie können weitere Informationen in den verknüpften Artikeln für jeden Connector erhalten.
@@ -68,16 +71,22 @@ Erfahren Sie mehr über den [Microsoft SQL Server-Connector](MSSQL-connector.md)
 Erfahren Sie mehr über den [ServiceNow-Connector](servicenow-connector.md).
 
 ### <a name="connectors-from-our-partners"></a>Connectors von unseren Partnern
+
 Es stehen über 100 Connectors für die Vorschau von unseren Ecosystem-Partnern zur Verfügung. Um eine Vorschau der Connectors von einem unserer Ecosystem-Partner anzuzeigen, wenden Sie sich direkt an Sie.
 Erfahren Sie mehr über Connectors von unseren Partnern im [Microsoft Graph Connectors-Katalog](connectors-gallery.md).
 
 ### <a name="build-your-own-connector"></a>Erstellen eines eigenen Connectors
+
 Um benutzerdefinierte Datentypen oder Dateien zu indizieren, können Entwickler Connectors in [Microsoft Graph](https://developer.microsoft.com/graph/)erstellen. Bei einem Connector handelt es sich um eine Anwendung, mit der [eine Verbindung erstellt](https://docs.microsoft.com/graph/search-index-manage-connections) und Elemente in den Microsoft Search-Index verschoben werden. Weitere Informationen finden Sie in der [Übersicht zum Erweitern der Microsoft-Suchumgebung für apps in Microsoft Graph](https://docs.microsoft.com/graph/search-concept-overview).
 
 ### <a name="search-results-with-your-custom-built-connector"></a>Suchergebnisse mit Ihrem benutzerdefinierten Connector
+
 Nachdem benutzerdefinierte Daten indiziert wurden, können Entwickler [diese Daten Abfragen](https://docs.microsoft.com/graph/search-concept-custom-types). Sie können Ihre Daten in einer beliebigen Anwendung anzeigen. Weitere Informationen finden Sie in der [Übersicht zum Erweitern der Microsoft-Suchumgebung für apps in Microsoft Graph](https://docs.microsoft.com/graph/search-concept-overview).
 
 ## <a name="license-requirements"></a>Lizenzanforderungen
+
 Um Daten aus Konnektoren in ihren Suchergebnissen anzuzeigen, benötigen Benutzer eines der folgenden Microsoft 365-Abonnements:
-- <a href="https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans" target="_blank">Microsoft 365 für Enterprise E3 oder E5</a>
-- <a href="https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab:primaryr1" target="_blank">Microsoft 365 Education a3 oder A5</a>
+
+- [Microsoft 365 für Enterprise E3 oder E5](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)
+
+- [Microsoft 365 Education a3 oder A5](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab:primaryr1)

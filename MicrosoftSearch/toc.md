@@ -20,7 +20,7 @@
 ### [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
 ### [Unternehmenswebsites](enterprise-web-connector.md)
 ### [Dateifreigabe](file-share-connector.md)
-### [Microsoft SQL Server](MSSQL-connector.md)
+### [Azure SQL und SQL Server](MSSQL-connector.md)
 ### [MediaWiki](mediawiki-connector.md)
 ### [ServiceNow](servicenow-connector.md)
 ## [Feedback](connectors-feedback.md)

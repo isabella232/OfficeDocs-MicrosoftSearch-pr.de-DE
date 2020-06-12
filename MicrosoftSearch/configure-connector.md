@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Konfigurieren Ihres von Microsoft erstellten Connectors für Microsoft Search
-ms.openlocfilehash: 3c54f04c1ac6cc42eef2e27a2b40b6ce92357630
-ms.sourcegitcommit: 46303c60e905c89c133278fa41e87055f81a8637
+ms.openlocfilehash: eb81f9cdc9caf2020bae64984f11ae7e1b87dae9
+ms.sourcegitcommit: a8a6c949f249d106f37103e127d2ea7df730f7a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44535309"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44702758"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 
@@ -34,10 +34,10 @@ Dieser Artikel führt Sie durch die Schritte zum Konfigurieren eines von Microso
 
 ## <a name="set-up"></a>Einrichten
 
-Wenn Sie einen der von Microsoft erstellten Connectors konfigurieren möchten, wechseln Sie zum [Admin Center](https://admin.microsoft.com):
+Führen Sie die folgenden Schritte aus, um einen der von Microsoft erstellten Connectors zu konfigurieren.
 
-1. Melden Sie sich mit den Anmeldeinformationen für Ihren [Microsoft 365](https://www.microsoft.com/microsoft-365) -Testmandanten bei Ihrem Konto an.
-2. Wechseln Sie zu **Einstellungen**  >  **Microsoft-Such**  >  -**Konnektoren**.
+1. Wechseln Sie zur [Registerkarte Connectors](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) im [Microsoft 365 Admin Center](https://admin.microsoft.com).
+2. Melden Sie sich mit den Anmeldeinformationen für Ihren [Microsoft 365](https://www.microsoft.com/microsoft-365) -Mandanten bei Ihrem Konto an.
 3. Wählen Sie **Add a Connector**aus.
 4. Wählen Sie in der Liste der verfügbaren Connectors den Connector Ihrer Wahl aus.
 
@@ -67,7 +67,7 @@ Administratoren können die Suchschema Attribute so festlegen, dass die Suchfunk
 
 Suchschema Attribute umfassen **durchsuchbar**, **abgefragt**und **abrufbar**. In der folgenden Tabelle sind die Attribute aufgeführt, die von Microsoft Graph-Connectors unterstützt werden, und deren Funktionen erläutert.
 
-**Suchschema Attribut** | **Funktion** | **Beispiel**
+Suchschema Attribut | Funktion | Beispiel
 --- | --- | ---
 Durchsuchbare | Legt den Textinhalt einer Eigenschaft durchsuchbar. Eigenschaften Inhalte sind im Volltextindex enthalten. | Wenn die Eigenschaft **Title**lautet, gibt eine Abfrage für **Enterprise** Antworten zurück, die das Wort **Enterprise** in einem beliebigen Text oder Titel enthalten.
 QUERYABLE | Sucht nach einer Suchabfrage nach einer Übereinstimmung für eine bestimmte Eigenschaft. Der Eigenschaften Name kann dann entweder programmgesteuert oder wörtlich in der Abfrage angegeben werden. |  Wenn die **Title** -Eigenschaft abgefragt wird, wird der Abfrage **Titel: Enterprise** unterstützt.

@@ -15,16 +15,22 @@ search.appverid:
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
 ROBOTS: NoIndex
 description: Erhalten Sie relevante Suchvorschläge und Arbeitsergebnisser schneller, indem Sie ein Microsoft Search-Suchfeld zu einer Intranetwebsite oder -seite hinzufügen.
-ms.openlocfilehash: bcf1c6890415fdd9ae22f28cdf6d3dec1ffcaac4
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: af12ce4d17c2695e196f8e4d79ccd515f002f238
+ms.sourcegitcommit: 92206ea179ec00b22496f6fd2866b5406449cf40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37948906"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44798225"
 ---
 # <a name="add-a-search-box-to-your-intranet-site"></a>Hinzufügen eines Suchfelds zu Ihrer Intranetwebsite
 
-Für schnellen Zugriff auf relevante Suchvorschläge und Arbeitsergebnisse, fügen Sie ein Microsoft Search-Suchfeld zu einer beliebigen Intranetwebsite oder -seite hinzu.
+Um Ihren Benutzern einfachen Zugriff auf Ergebnisse aus Ihrer Organisation zu ermöglichen, fügen Sie eine Microsoft Search in Bing Suchfeld zu jeder Intranetsite oder Website hinzu. Dies sind einige der Vorteile:
+
+- Ein Suchfeld auf Ihrem SharePoint-oder Intranet-Portal stellt einen vertrauten, vertrauenswürdigen Einstiegspunkt zum Starten der Suche bereit.
+- Unterstützt alle wichtigen Webbrowser, einschließlich Google Chrome und Microsoft Edge
+- Nur Suchvorschläge aus Ihrer Organisation werden angezeigt, Webvorschläge werden nie berücksichtigt.
+- Führt Benutzer zu einer Microsoft-Suche auf der Seite Bing work results, die anzeigen und Webergebnisse ausschließt.
+- Sie steuern die Darstellung und das Verhalten des Such Felds.
   
 ## <a name="add-a-search-box-to-an-intranet-page"></a>Hinzufügen eines Suchfelds zu einer Intranetseite
 
@@ -88,8 +94,8 @@ Sie können eine Vielzahl von Konfigurationsoptionen verwenden, um das Suchfeld 
         dropShadow: true,                       // default: true
         iconColor: "#067FA6",                   // default: #067FA6
         companyNameInGhostText: "Contoso"       // default: not specified
-                                                // when absent, ghost text will be "Search work and the web"
-                                                // when specified, text will be "Search the web and [Contoso]"
+                                                // when absent, ghost text will be "Search work"
+                                                // when specified, text will be "Search <companyNameInGhostText>"
     };
 </script>
 <script async src="https://www.bing.com/business/s?k=sb"></script>

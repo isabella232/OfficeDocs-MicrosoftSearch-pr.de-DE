@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Übersicht über Microsoft Graph Connectors für Microsoft Search
-ms.openlocfilehash: 0b5420eb4eb93eb257fab30f3e56a20e6456e1b3
-ms.sourcegitcommit: 64eea81f8c1db9ee955013462a7b51612fb7d0b7
+ms.openlocfilehash: 08ddb8e61606007c706134242e865459f0399b86
+ms.sourcegitcommit: 68cd28a84df120473270f27e4eb62de9eae455f9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "44604392"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44850871"
 ---
 # <a name="overview-of-microsoft-graph-connectors"></a>Übersicht über Microsoft Graph-Connectors
 
@@ -55,6 +55,12 @@ Die folgenden Abschnitte enthalten kurze Beschreibungen für diese von Microsoft
 - **[Azure Data Lake-Speicher Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)**. Mit diesem Microsoft Graph-Connector können Benutzer in Ihrer Organisation nach Dateien und Inhalten suchen, die in Azure-BLOB-Containern gespeichert sind. Der Azure Data Lake Storage Gen2-Connector indiziert auch Hierarchie fähige Ordner in Azure Data Lake-Speicher Gen2-Konten, die Sie angeben.
 Erfahren Sie mehr über den [Azure Data Lake-Speicher Gen2-Connector](azure-data-lake-connector.md).
 
+- **[Azure DevOps](https://azure.microsoft.com/services/devops)**. Mit diesem Microsoft Graph-Connector können Benutzer in Ihrer Organisation in ihrer Azure DevOps-Instanz nach Arbeitsaufgaben suchen.
+Erfahren Sie mehr über den [Azure DevOps-Connector](azure-devops-connector.md).
+
+- **[Azure SQL](https://azure.microsoft.com/services/sql-database)**. Mit diesem Microsoft Graph-Connector können Benutzer in Ihrer Organisation nach Daten aus ihrer Azure SQL-Datenbank suchen.
+Erfahren Sie mehr über den [Azure SQL Connector](MSSQL-connector.md).
+
 - **Enterprise-Websites**. Mit diesem Microsoft Graph-Connector können Benutzer in Ihrer Organisation Seiten in einer nicht-SharePoint-Unternehmenswebsite durchsuchen.
 Erfahren Sie mehr über den [Enterprise-Websites-Connector](enterprise-web-connector.md).
 
@@ -85,8 +91,8 @@ Nachdem benutzerdefinierte Daten indiziert wurden, können Entwickler [diese Dat
 
 ## <a name="license-requirements"></a>Lizenzanforderungen
 
-Um Daten aus Konnektoren in ihren Suchergebnissen anzuzeigen, benötigen Benutzer eines der folgenden Microsoft 365-Abonnements:
+Um Daten aus Konnektoren in ihren Suchergebnissen anzuzeigen, müssen Benutzer über eines der folgenden Microsoft 365-oder Office 365-Abonnements verfügen:
 
-- [Microsoft 365 für Enterprise E3 oder E5](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)
+- [Microsoft 365 oder Office 365 Enterprise E3 oder E5](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)
 
-- [Microsoft 365 Education a3 oder A5](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab:primaryr1)
+- [Microsoft 365 oder Office 365 Education a3 oder A5](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab:primaryr1)

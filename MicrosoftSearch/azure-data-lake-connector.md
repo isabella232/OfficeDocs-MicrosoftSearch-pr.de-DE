@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten des Azure Data Lake Storage Gen2 Connectors für Microsoft Search
-ms.openlocfilehash: 392960a5f7e6c93442ac7e1f60245217e194b42b
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: f8cb94e806e619d6dae7258b6c2d708d93afb9a8
+ms.sourcegitcommit: 7eda9b621def0659d7e7bc8b989f8adc929cce93
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626471"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44861076"
 ---
-# <a name="azure-data-lake-storage-gen2-connector-for-microsoft-search"></a>Azure Data Lake Storage Gen2 Connector für Microsoft Search
+# <a name="azure-data-lake-storage-gen2-connector"></a>Azure Data Lake-Speicher Gen2-Connector
 
 Mit dem [Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) -Connector können Benutzer in Ihrer Organisation nach Dateien und deren Inhalten suchen. Dieser Connector greift auf Daten zu, die in Azure-BLOB-Containern und Hierarchie fähigen Ordnern in einem Azure Data Lake-Speicher für Generation 2 gespeichert sind.
 

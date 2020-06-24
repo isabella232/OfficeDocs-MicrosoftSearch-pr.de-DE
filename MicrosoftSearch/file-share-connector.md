@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Richten Sie den Dateifreigabe-Konnektor für Microsoft Search ein.
-ms.openlocfilehash: ece8997138182c1cd4ac7230aa2a3501af912933
-ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
+ms.openlocfilehash: 2349ad753508d5f19a70648d9cbf1df495b27108
+ms.sourcegitcommit: 7eda9b621def0659d7e7bc8b989f8adc929cce93
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699779"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44861094"
 ---
-# <a name="the-file-share-connector-for-microsoft-search"></a>Der Dateifreigabe-Connector für Microsoft Search
+# <a name="file-share-connector"></a>Dateifreigabe-Konnektor
 
 Mit dem Dateifreigabe-Konnektor können Benutzer in Ihrer Organisation lokale Dateifreigaben durchsuchen. Die Suchergebnisse aus diesen Freigaben werden mit den Ergebnissen aus [SharePoint](http://sharepoint.com/) und [Microsoft OneDrive für Unternehmen](https://onedrive.live.com/about/business/)zusammengeführt.
 
@@ -50,7 +50,7 @@ Führen Sie die folgenden Schritte aus, um die Suchergebnisseite einzurichten:
 
 2. Installieren Sie eine [SharePoint Online Management-Shell](https://www.microsoft.com/download/details.aspx?id=35588).
 
-3. Öffnen Sie SharePoint Online Verwaltungsshell als Administrator, und importieren Sie das **Microsoft. SharePoint. Client. dll** - `C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.SharePoint.Client\v4.0_16.0.0.0__71e9bce111e9429c\Microsoft.SharePoint.Client.dll`Modul, das unter vorhanden ist.
+3. Öffnen Sie SharePoint Online Verwaltungsshell als Administrator, und importieren Sie das **Microsoft.SharePoint.Client.dll** -Modul, das unter vorhanden ist `C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.SharePoint.Client\v4.0_16.0.0.0__71e9bce111e9429c\Microsoft.SharePoint.Client.dll` .
 
 > [!NOTE]
 > Dieser Pfad ist möglicherweise nicht für alle Benutzer gleich.
@@ -89,7 +89,7 @@ Write-Host "Success" -ForegroundColor Cyan
 Read-Host -Prompt 'Press enter to exit'
 ```
 
-5. Geben Sie die erforderlichen Werte in [Microsoft PowerShell](https://microsoft.com/powershell)ein, beispielsweise Organisationsname, Benutzername, Kennwort und Website-URL. Wenn Ihre Administratoranmeldeinformationen **beispielsweise**sind `admin@a830edad9050849823J19081300.onmicrosoft.com`, lautet der Name Ihrer Organisation **a830edad9050849823J19081300**, und Ihre Website-URL lautet `https:// a830edad9050849823J19081300.sharepoint.com`.
+5. Geben Sie die erforderlichen Werte in [Microsoft PowerShell](https://microsoft.com/powershell)ein, beispielsweise Organisationsname, Benutzername, Kennwort und Website-URL. Wenn Ihre Administratoranmeldeinformationen **beispielsweise**sind `admin@a830edad9050849823J19081300.onmicrosoft.com` , lautet der Name Ihrer Organisation **a830edad9050849823J19081300**, und Ihre Website-URL lautet `https:// a830edad9050849823J19081300.sharepoint.com` .
 
 > [!NOTE]
 > Die Einstellung **allproperties** kann nur auf einer Websitesammlungsebene (Teams/Comms-Website) ausgeführt werden.

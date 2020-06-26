@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
 description: Suchen und aktualisieren Sie die Antworten einzeln, oder verwenden Sie die verfügbaren Microsoft-Such Tools, um Q&als alle gleichzeitig zu bearbeiten.
-ms.openlocfilehash: af966cfaae6680a063feb25d2736303106c19978
-ms.sourcegitcommit: 0050e113517a36e3ca26028a04ac5c236caaf524
+ms.openlocfilehash: 2ec06fb0940172621255946283290450c1f2e036
+ms.sourcegitcommit: 7ad6f4b0ab6cd7b912862273a8b4d48a6507bc29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470272"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "44878233"
 ---
 # <a name="manage-qas"></a>F & As verwalten
 
@@ -62,8 +62,8 @@ Suchadministratoren können Suchinhalte mühelos mithilfe von Browsererweiterung
 
 Derzeit stehen Browsererweiterungen für Microsoft Edge und Chrome zur Verfügung.
 
-- Um Edge-Erweiterungen herunterzuladen, wechseln Sie zu [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab).
-- Um Chrome-Erweiterungen herunterzuladen, wechseln Sie zum [Chrome-Webstore](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm).
+- Um Erweiterungen für Edge (Legacy) herunterzuladen, wechseln Sie zu [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab).
+- Um Extensions Chrome oder Edge (Chromium) herunterzuladen, wechseln Sie zum [Chrome-Webstore](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm).
 
 ## <a name="bulk-add-or-edit-qas"></a>Massenhinzufügen oder -bearbeiten von F & As
 

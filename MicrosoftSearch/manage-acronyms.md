@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Antworten zum Erstellen und Aktualisieren von Akronymen in Microsoft Search
-ms.openlocfilehash: cd9e1a48288e6df8f5746d937684a3f2eedd65df
-ms.sourcegitcommit: 46303c60e905c89c133278fa41e87055f81a8637
+ms.openlocfilehash: 9d58306751f735cef77eba4404597c73c0528c11
+ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44535356"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996076"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Verwalten von Akronymen Antworten in der Microsoft-Suche
 
@@ -44,16 +44,16 @@ Das Ergebnis enthält alle Bedeutungen von DNN, die in der Organisation des Benu
 
 ## <a name="set-up-acronyms-answers"></a>Antworten zum Einrichten von Akronymen
 
-Wechseln Sie im Microsoft 365 [Admin Center](https://admin.microsoft.com)zu **Einstellungen**  >  **Microsoft-Such**  > **Akronyme**, und wählen Sie dann **Akronyme hinzufügen**aus.
+Wechseln Sie im Microsoft 365 [Admin Center](https://admin.microsoft.com)zu **Einstellungen**  >  **Microsoft Search**  >  **Answers**  >  [**Akronyme**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms), und wählen Sie dann **Akronyme hinzufügen**aus.
 
 Microsoft Search fragt zwei Datenquellen ab, um Akronyme Antworten auf die Suchvorgänge von Benutzern bereitzustellen:
 
-1. **Redaktionelle Akronyme**. Von IT-Administratoren im [Admin Center](https://admin.microsoft.com)bereitgestellt.
+1. **Redaktionelle Akronyme**. Von IT-Administratoren im [Admin Center](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)bereitgestellt.
 2. **Verminte Akronyme**. Durch die Microsoft-Suche von den persönlichen e-Mails und Dokumenten und öffentlich verfügbaren Daten innerhalb der Organisation abgebaut.
 
 ### <a name="set-up-editorial-acronyms"></a>Einrichten von redaktionellen Akronymen
 
-Suchadministratoren können redaktionelle Akronyme auf der [Registerkarte Akronyme](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch) im [Microsoft 365 Admin Center]( https://admin.microsoft.com)einrichten. Sie können Akronyme aus einer internen Website oder einem Repository zum Admin Center hinzufügen. Redaktionelle Akronyme können dem **veröffentlichten** oder dem **Entwurfs** Status hinzugefügt werden:
+Suchadministratoren können redaktionelle Akronyme auf der [Registerkarte Akronyme](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms) im [Microsoft Search Admin Center](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)einrichten. Sie können Akronyme aus einer internen Website oder einem Repository zum Admin Center hinzufügen. Redaktionelle Akronyme können dem **veröffentlichten** oder dem **Entwurfs** Status hinzugefügt werden:
 
 **Veröffentlichter Status**. Akronyme stehen den Mitarbeitern der Organisation über die Microsoft-Suche zur Verfügung.
 

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Erstellen und Aktualisieren von Lesezeichen und Möglichkeiten zum Massen bearbeiten von Lesezeichen Ergebnissen für Microsoft Search
-ms.openlocfilehash: 292a04714f4baa115473df86bfbeb2f3c8860114
-ms.sourcegitcommit: c22e8c3dcc53857da677db98a1a2b7d5ca2c6170
+ms.openlocfilehash: 64e430309ef1969ab804e8d757b987332f0a6006
+ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41721750"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996103"
 ---
 # <a name="manage-bookmarks"></a>Verwalten von Lesezeichen
 
@@ -29,8 +29,7 @@ Wenn Ihre Organisation die Ergebnisse in SharePoint höher gestuft hat, können 
 ## <a name="add-or-edit-a-single-bookmark"></a>Hinzufügen oder Bearbeiten eines einzelnen Lesezeichens
 
 1. Gehen Sie zum **Microsoft 365 Admin Center**.
-1. Wechseln Sie im Navigationsbereich zu **Einstellungen**, und wählen Sie dann **Microsoft Search** aus.
-Standardmäßig ist die Registerkarte **Lesezeichen** ausgewählt.
+1. Wechseln Sie im Navigationsbereich zu **Einstellungen**  >  **Microsoft Search**  >  **Answers**  >  [**Bookmarks**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks).
 1. Wählen Sie zum Hinzufügen eines Lesezeichens **Neu hinzufügen** aus.
 Wählen Sie zum Bearbeiten eines Lesezeichens das Lesezeichen in der entsprechenden Lesezeichenliste aus.
 1. Während Sie die Informationen hinzufügen oder bearbeiten, wird die Vorschau automatisch aktualisiert.
@@ -106,8 +105,8 @@ Power Apps ist ein Dienst, mit dem Sie Geschäftsanwendungen erstellen können, 
 ### <a name="add-a-power-app-to-a-bookmark"></a>Hinzufügen einer Power-APP zu einer Textmarke
 
 1. Suchen Sie die [App-ID für die Power-App](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) , die Sie hinzufügen möchten.
-1. Melden Sie sich an und gehen Sie zum **Microsoft 365 Admin Center**.
-1. Wechseln Sie im Navigationsbereich zu **Einstellungen**, und wählen Sie dann **Microsoft Search** aus.
+1. Melden Sie sich beim [**Microsoft 365 Admin Center**](https://admin.microsoft.com)an.
+1. Wechseln Sie im Navigationsbereich zu **Einstellungen**  >  **Microsoft Search**  >  **Answers**  >  [**Bookmarks**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks).
 1. Fügen Sie ein Lesezeichen hinzu oder suchen Sie ein vorhandenes Lesezeichen, dem Sie eine **PowerApp** hinzufügen möchten.
 1. Wählen Sie in den **Lesezeicheneinstellungen** **PowerApp** und dann **PowerApp hinzufügen** aus.
 1. Geben oder fügen Sie die **App-ID** ein.

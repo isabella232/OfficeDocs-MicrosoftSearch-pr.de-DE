@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Das Feature "Grundrisse" in der Microsoft-Suche hilft Benutzern, Personen, Büros und andere Annehmlichkeiten in einem Gebäude zu finden.
-ms.openlocfilehash: e005767c255cb899793b6b4849882c7ec0561256
-ms.sourcegitcommit: 7ad6f4b0ab6cd7b912862273a8b4d48a6507bc29
+ms.openlocfilehash: 95941e57946f49de3a0558dc2d2c59b999151b37
+ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44878242"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996112"
 ---
 # <a name="manage-floor-plans"></a>Verwalten von Grundrissen
 
@@ -67,7 +67,7 @@ Verwenden Sie die **Microsoft-Suche** , um nach einem Benutzer zu suchen und zu 
 
 ### <a name="step-5-add-building-locations"></a>Schritt 5: Hinzufügen von Erstellungs Standorten
 
-In den Grundrissen werden [Standorte](manage-locations.md) verwendet, um ihre Gebäude zu definieren. Wechseln Sie im Microsoft 365 [Admin Center](https://admin.microsoft.com)zu **Einstellungen**  >  **Microsoft-Such**  >  **Speicherorte**, und wählen Sie dann **Hinzufügen**aus. Geben Sie den Namen, die Adresse und die Schlüsselwörter für das Gebäude ein. Fügen Sie so viele Gebäude hinzu, wie Sie benötigen.
+In den Grundrissen werden [Standorte](manage-locations.md) verwendet, um ihre Gebäude zu definieren. Wechseln Sie im Microsoft 365 [Admin Center](https://admin.microsoft.com)zu **Einstellungen**  >  **Microsoft Search**  >  **Answers**-  >  [**Speicherorte**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations), und wählen Sie dann **Hinzufügen**aus. Geben Sie den Namen, die Adresse und die Schlüsselwörter für das Gebäude ein. Fügen Sie so viele Gebäude hinzu, wie Sie benötigen.
 
 ![floorplans-locations.png](media/floorplans-locations.png)
 
@@ -77,13 +77,13 @@ Weitere Informationen zu Speicherorten finden Sie unter [Verwalten von Speichero
 
 Bevor Sie Grundrisse verwenden können, müssen die Office-Standorte indiziert werden. Hierbei handelt es sich um einen einmaligen Vorgang, der bis zu 48 Stunden dauern kann. Die Gesamtzeit hängt von der Größe Ihrer Organisation ab.
 
-Wechseln Sie in [Admin Center](https://admin.microsoft.com)zu **Einstellungen**  >  **Microsoft-Such**  >  **Bodenpläne**, und wählen Sie dann **Erste Schritte**aus. Wenn dieser Hinweis nicht angezeigt wird, wurde dieser Schritt bereits für Ihre Organisation abgeschlossen.
+Wechseln Sie in [Admin Center](https://admin.microsoft.com)zu **Einstellungen**  >  **Microsoft Search**  >  **Answers**  >  [**Floor Plans**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans), und wählen Sie dann **Erste Schritte**aus. Wenn dieser Hinweis nicht angezeigt wird, wurde dieser Schritt bereits für Ihre Organisation abgeschlossen.
 
 ![floorplans_hydrationstep.png](media/floorplans_hydrationstep.png)
 
 ### <a name="step-7-upload-floor-plans"></a>Schritt 7: Hochladen von Grundrissen
 
-1. Wechseln Sie im [Admin Center](https://admin.microsoft.com)zu **Einstellungen**  >  **Microsoft-Such**  >  **Bodenpläne**, und wählen Sie dann **Hinzufügen**aus.
+1. Wechseln Sie im [Admin Center](https://admin.microsoft.com)zu **Einstellungen**  >  **Microsoft Search**  >  **Answers**  >  [**Floor Plans**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans).
 2. Wählen Sie in der Dropdownliste ein Gebäude aus, und wählen Sie **weiter**aus. Wenn das Gebäude nicht aufgeführt ist, gehen Sie zurück und [fügen Sie Gebäudestandorte hinzu](#step-5-add-building-locations).
 3. Wählen Sie **Dateien hochladen**aus, und wählen Sie dann den Grundriss aus, den Sie hochladen möchten.
 4. Wenn der Upload abgeschlossen ist, müssen Sie die in der Grundriss Datei dargestellte Boden Nummer eingeben. Wählen Sie dann **Weiter** aus.
@@ -142,7 +142,7 @@ Zum Aktualisieren eines vorhandenen Grundrisses wählen Sie den Grundriss aus, d
 
 **A:** Erstellen Sie eine DWG-Datei in Microsoft Visio, Autodesk AutoCAD oder einem anderen DWG-Editor. Stellen Sie sicher, dass 10 oder mehr Räume in der Datei beschriftet sind.
 
-**F:** * * Was ist das beste Format für Textbeschriftungen in DWG-Dateien?
+**Q:** Was ist das beste Format für Textbeschriftungen in DWG-Dateien?
 
 **A:** Um die besten Ergebnisse zu erzielen, sollten Textbeschriftungen Boden Nummern und Raumnummern enthalten. Die folgenden Beispiele verwenden 2 oder SC für den GEBÄUDECODE.
 <!-- markdownlint-disable no-inline-html -->

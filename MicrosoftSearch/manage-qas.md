@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
 description: Suchen und aktualisieren Sie die Antworten einzeln, oder verwenden Sie die verfügbaren Microsoft-Such Tools, um Q&als alle gleichzeitig zu bearbeiten.
-ms.openlocfilehash: 2ec06fb0940172621255946283290450c1f2e036
-ms.sourcegitcommit: 7ad6f4b0ab6cd7b912862273a8b4d48a6507bc29
+ms.openlocfilehash: 78a6ee0ff14f3347b0b2e2a65cc1ee0f68500981
+ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44878233"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996085"
 ---
 # <a name="manage-qas"></a>F & As verwalten
 
@@ -27,8 +27,7 @@ Die Erstellung von Fragen und Antworten ist vergleichbar mit der Erstellung von 
 ## <a name="add-or-edit-a-single-qa"></a>Hinzufügen oder Bearbeiten einer einzelnen Frage und Antwort
 
 1. Gehen Sie zum **Microsoft 365 Admin Center**.
-1. Wechseln Sie im Navigationsbereich zu **Einstellungen**, und wählen Sie **Microsoft Search** aus.
-1. Wählen Sie das **Q-&eine** Registerkarte aus.
+1. Wechseln Sie im Navigationsbereich zu **Einstellungen**  >  **Microsoft Search**  >  **Answers**  >  [**Q&A**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/qnas)
 1. Wählen Sie zum Hinzufügen einer Frage und Antwort **Neu hinzufügen** aus.
 Wählen Sie zum Bearbeiten einer Frage und Antwort die Frage und Antwort in der entsprechenden F&A-Liste aus. Während Sie die Informationen hinzufügen oder bearbeiten, wird die Vorschau automatisch aktualisiert.
 1. Speichern Sie Ihre Änderungen.

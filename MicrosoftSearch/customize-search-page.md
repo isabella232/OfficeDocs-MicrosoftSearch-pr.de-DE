@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Hinzufügen von Such vertikalen und Anpassen von Suchergebnissen
-ms.openlocfilehash: 44b1b9ff211a65313f5c5cf532334335994c486d
-ms.sourcegitcommit: 0050e113517a36e3ca26028a04ac5c236caaf524
+ms.openlocfilehash: 60ab3423db0a86982df9c4332f0f22267c49dc04
+ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470281"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996058"
 ---
 # <a name="customize-the-search-results-page"></a>Anpassen der Suchergebnisseite
 
@@ -59,7 +59,7 @@ Sie können eine begrenzte Menge von [KQL (Keyword Query Language)](https://docs
 
 Führen Sie die folgenden Schritte aus, um die vertikale auf der Microsoft-Suche in [SharePoint](https://sharepoint.com/) Home, [Office](https://office.com)oder [Bing](https://bing.com)zu erstellen:
 
-1. Wechseln Sie im Microsoft 365 [Admin Center](https://admin.microsoft.com)zu **Einstellungen**   >  **Microsoft Search**   >  **Verticals**.
+1. Wechseln Sie im Microsoft 365 [Admin Center](https://admin.microsoft.com)zu **Einstellungen**   >  **Microsoft Search**   >  **Customization**  >  [**Verticals**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals).
 1. Wählen Sie **Add** to Get Started aus.  
 
 ### <a name="create-a-vertical-at-the-site-level"></a>Erstellen eines vertikalen auf Websiteebene
@@ -77,7 +77,7 @@ Beachten Sie, dass vertikale im deaktivierten Zustand erstellt werden. Sie müss
 
 Sie können definieren, wie die Ergebnisse in der vertikalen angezeigt werden, indem Sie das Layout mithilfe von Ergebnistypen entwerfen. Das Ergebnis Layout ermöglicht es Ihnen, wichtige Informationen direkt in den Suchergebnissen anzuzeigen, sodass Benutzer nicht jedes Ergebnis auswählen müssen, um zu sehen, ob Sie die gewünschten Ergebnisse gefunden haben.
 
-Ein Ergebnistyp einer Suche ist eine Regel, die bewirkt, dass unterschiedliche Arten von Suchergebnissen auf verschiedene Weisen angezeigt werden. Ein Ergebnistyp hat folgende Bestandteile:
+A search result type is a rule that causes distinct kinds of search results to be displayed in different ways. It consists of the following:
 
 - **Eine oder mehrere Bedingungen** zum Vergleichen der einzelnen Suchergebnisse, beispielsweise die Inhaltsquelle des Suchergebnisses.  
 - Ein **Ergebnis Layout** , das für Suchergebnisse verwendet wird, die die Bedingungen erfüllen. Das Ergebnis Layout steuert, wie alle Ergebnisse, die die Bedingungen erfüllen, auf einer Suchergebnisseite angezeigt werden und sich Verhalten.
@@ -88,7 +88,7 @@ Nachdem Sie den Assistenten gestartet haben, werden Sie durch die Schritte zum D
   
 ### <a name="create-a-result-type-at-the-organization-level"></a>Erstellen eines Ergebnistyps auf Organisationsebene
 
-1. Wechseln Sie im [Admin Center](https://admin.microsoft.com)zu **Einstellung**  >  **Microsoft Search**, und wählen Sie dann **Ergebnistyp**aus.
+1. Wechseln Sie im [Admin Center](https://admin.microsoft.com)zu **Einstellungen**von  >  **Microsoft Search**  >  **Customizations**  >  [**Ergebnistypen**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)für die Microsoft-Such Anpassung.
 1. Zum Hinzufügen eines **Ergebnistyps**wählen Sie **Hinzufügen**aus. Zum Bearbeiten eines Ergebnistyps wählen Sie den Ergebnistyp in der entsprechenden Liste aus.
 
 ### <a name="create-a-results-type-at-the-site-level"></a>Erstellen eines Ergebnistyps auf Websiteebene
@@ -107,7 +107,7 @@ Nachdem Sie die vertikale aktiviert haben, kann es eine Weile dauern, bis Sie Si
 
 Hier finden Sie eine Liste mit häufig auftretenden Problemen und Aktionen, die Sie beheben können.
 
-|Fehler (ungefährer Wortlaut)  |Aktion  |
+|Error  |Aktion  |
 |---------|---------|
 | Ich sehe eine Fehlermeldung "something went wrong" auf der vertikalen. | Sowohl die vertikalen als auch die Ergebnistypen sind erforderlich, um das Setup abzuschließen. Stellen Sie sicher, dass Sie beide für dieselbe Inhaltsquelle erstellt haben. |
 | Das Ergebnis Layout wird nicht angezeigt, obwohl ich ein erstellt habe. | Es dauert ein paar Minuten, da diese Einstellungen im allgemeinen zwischengespeichert werden. Warten Sie einige Minuten, und versuchen Sie es erneut.        |

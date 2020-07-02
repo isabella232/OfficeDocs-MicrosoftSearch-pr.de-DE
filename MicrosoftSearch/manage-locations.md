@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
 description: Im Laufe der Zeit müssen Sie Status und Inhalt eines Ortes möglicherweise aktualisieren, damit er relevant bleibt. 
-ms.openlocfilehash: bb229086f7dd8c1b8d17a0b8335bb618850106be
-ms.sourcegitcommit: 063fec4a336b6b3118d4769a4bd0cc2d568ea7e2
+ms.openlocfilehash: a5d3209e2b6e9269ff2e5986cf81de705ae1cc4d
+ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42276988"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996067"
 ---
 # <a name="manage-locations"></a>Orte verwalten
 
@@ -29,8 +29,7 @@ Der Standort hilft Ihren Benutzern, Adressen zu finden und die Gebäude Ihrer Or
 ### <a name="add-or-edit-a-single-location"></a>Hinzufügen oder Bearbeiten eines einzelnen Standorts
 
 1. Gehen Sie zum **Microsoft 365 Admin Center**.
-1. Wechseln Sie im Navigationsbereich zu **Einstellungen**, und wählen Sie **Microsoft Search** aus.
-1. Wählen Sie die Registerkarte **Standorte** aus. Standardmäßig ist die Registerkarte **Lesezeichen** auf der Seite **Microsoft Search** ausgewählt.
+1. Wechseln Sie im Navigationsbereich zu **Einstellungen**  >  **Microsoft Search**  >  **Answers**-  >  [**Speicherorte**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)
 1. Wählen Sie **Neu hinzufügen** aus, um einen neuen Standort zu hinzuzufügen.
 1. Wählen Sie zum Bearbeiten eines Standorts den Standort in der entsprechenden Standortliste aus.
 1. Während Sie die Informationen hinzufügen oder bearbeiten, wird die Vorschau automatisch aktualisiert.
@@ -65,6 +64,7 @@ Hier sind einige wichtige Punkte in Bezug auf die Vorlagendatei:
 - Basierend auf dem Feld *State* werden die Standorte als Entwurf, vorgeschlagen, geplant oder automatisch veröffentlicht.
 - Für Partner, die mehrere Organisationen verwalten, können Sie Ihre Standorte aus einer Organisation exportieren und in eine andere importieren. Sie müssen jedoch die Daten in der Spalte *ID* vor dem Import entfernen.
 
-**Hinweis:** Sie können Standorte nicht importieren, wenn Fehler in der Vorlagendatei vorhanden sind. Um Fehler zu verhindern, stellen Sie sicher, dass die Importdatei ordnungsgemäß formatiert ist, und geben Sie alle erforderlichen Informationen an.
+> [!NOTE]
+> Sie können keine Speicherorte importieren, wenn in der Vorlagendatei Fehler vorliegen. Um Fehler zu verhindern, stellen Sie sicher, dass die Importdatei ordnungsgemäß formatiert ist, und geben Sie alle erforderlichen Informationen an.
 
 Weitere Informationen zum Vermeiden von Fehlern finden Sie unter [Vermeiden von Importfehlern](manage-bookmarks.md#prevent-import-errors).

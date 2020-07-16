@@ -12,22 +12,22 @@ search.appverid:
 - MET150
 - MOE150
 description: Antworten zum Erstellen und Aktualisieren von Akronymen in Microsoft Search
-ms.openlocfilehash: 9d58306751f735cef77eba4404597c73c0528c11
-ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
+ms.openlocfilehash: bbdd27b00be323db8d80994fe9ff6ab7fac17416
+ms.sourcegitcommit: b5142052ed17cd430b4c193b67d8f3d90d94ba6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44996076"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45143865"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Verwalten von Akronymen Antworten in der Microsoft-Suche
 
-Benutzer führen häufig unbekannte Akronyme und Abkürzungen aus, die von Ihrer Organisation oder Ihrem Team verwendet werden. Begriffe, die für Organisationen oder Teams spezifisch sind, sind möglicherweise neu für Personen, die von einem Team in ein anderes umziehen, die mit internen Partnerteams arbeiten oder neu in der Organisation sind.
+Benutzer führen häufig unbekannte Akronyme und Abkürzungen aus, die von Ihrer Organisation oder Ihrem Team verwendet werden. Begriffe, die für Organisationen oder Teams spezifisch sind, sind möglicherweise neu für Personen, die von einem Team in ein anderes umziehen, mit internen Partnerteams arbeiten oder neu in der Organisation sind.
 
 Organisationen haben nicht immer einen einzigen Verweis für Ihre Standardterminologie. Durch das Fehlen eines einzelnen Verweises ist es schwer, Definitionen oder Erweiterungen für diese Akronyme zu finden. Microsoft Search löst dieses Problem mit Akronymen.
 
 ## <a name="what-users-experience"></a>Benutzererfahrung
 
-Microsoft Search-Benutzer können Definitionen mit Akronymen in [Bing](https://Bing.com)abrufen. In das **Suchfeld** geben Benutzer Abfragen wie diese Beispiele ein:
+Microsoft Search-Benutzer können Definitionen mit Akronymen in [Bing](https://Bing.com) und [SharePoint](https://products.office.com/sharepoint/collaboration)abrufen. In das **Suchfeld** geben Benutzer Abfragen wie diese Beispiele ein:
 
 - *Was ist* DNN
 - *Definieren* Sie DNN
@@ -74,7 +74,7 @@ Administratoren können Akronyme einzeln hinzufügen oder Sie in einer CSV-Datei
 
 **Erweiterung**. Enthält die Erweiterung des Akronyms. Ein Beispiel ist ein *tiefes neuronales Netzwerk*.
 
-**Beschreibung**. Eine kurze Beschreibung des Akronyms, mit der Benutzer schnell Einblicke in die Bedeutung des Akronyms und seiner Erweiterung erhalten. *Ein tiefes neuronales Netzwerk ist beispielsweise ein neuronales Netzwerk mit einem gewissen Grad an Komplexität, ein neuronales Netzwerk mit mehr als zwei Schichten*.
+**Beschreibung**. Eine kurze Beschreibung des Akronyms, mit der Benutzer weitere Informationen zum Akronym und seiner Erweiterung erhalten. *Ein tiefes neuronales Netzwerk ist beispielsweise ein neuronales Netzwerk mit einem gewissen Grad an Komplexität, ein neuronales Netzwerk mit mehr als zwei Schichten*.
 
 **Source**. Die URL der Seite oder Website, auf der Benutzer weitere Informationen zum Akronym erhalten möchten.
 
@@ -88,7 +88,7 @@ Administratoren können Akronyme einzeln hinzufügen oder Sie in einer CSV-Datei
 Es kann eine Herausforderung für Administratoren sein, alle in einer Organisation verwendeten Akronyme für Antworten hinzuzufügen. Dieses Feature kann Akronyme finden, von denen die Suchadministratoren gar nicht wissen. Dafür werden in Microsoft Search auch Akronyme aus folgenden Quellen untersucht:
 
 - Benutzer-e-Mails.
-- Dokumente in [SharePoint](https://products.office.com/sharepoint/collaboration), [Microsoft OneDrive]( https://onedrive.live.com/about/) und [Microsoft OneNote](http://www.onenote.com/).
+- Dokumente in [SharePoint](https://products.office.com/sharepoint/collaboration), [Microsoft OneDrive]( https://onedrive.live.com/about/)und [Microsoft OneNote](https://www.onenote.com/).
 - Öffentliche Dokumente innerhalb der Organisation, auf die Benutzer in SharePoint, OneDrive oder OneNote zugreifen können.
 
 Die Microsoft-Suche stellt sicher, dass nur Benutzer mit Zugriff und Berechtigungen für ein Dokument die von dieser abgebauten Akronyme sehen können. Wenn ein Akronym aus dem Postfach eines Benutzers abgebaut wird, kann nur dieser Benutzer dieses Akronym sehen.
@@ -108,7 +108,7 @@ Die Microsoft-Suche stellt sicher, dass nur Benutzer mit Zugriff und Berechtigun
 
 **F.: wie lösen Benutzer Akronyme Antworten aus?**
 
-**A**: um Akronyme Antworten zu erhalten, müssen Benutzer bestimmte Abfragemuster in ein [Bing](https://bing.com) - **Suchfeld** eingeben. Derzeit sind Akronym-Antworten in [Office 365](https://Office.com) oder [SharePoint](https://products.office.com/sharepoint/collaboration)nicht verfügbar.
+**A**: um Akronyme Antworten zu erhalten, müssen Benutzer bestimmte Abfragemuster in einem [Bing](https://bing.com) -oder [SharePoint](https://products.office.com/sharepoint/collaboration) - **Suchfeld** eingeben. Derzeit sind Akronym-Antworten in [Office 365](https://Office.com)nicht verfügbar.
 
 **F.: wie lange dauert es, bis abgebaute Akronyme angezeigt werden, nachdem Sie eine neue e-Mail oder ein neues Dokument empfangen oder gesendet haben?**
 
@@ -127,6 +127,6 @@ Die Microsoft-Suche stellt sicher, dass nur Benutzer mit Zugriff und Berechtigun
 **A**: um die Anzeige von verminten Akronymen in Suchergebnissen zu deaktivieren, erstellen Sie ein Kundensupport Ticket, indem Sie die Anweisungen unter [Contact Support for Business Products](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?redirectSourcePath=%252f%252farticle%252fContact-Office-365-for-business-support-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online#BKMK_call_support)befolgen.
 Nachdem Sie ein Support Ticket erstellt haben, dauert es bis zu 48 Stunden, damit verminte Akronyme nicht mehr in den Suchergebnissen angezeigt werden.
 
-**F.: Wann werden Akronyme Antworten in [Office 365](https://Office.com) und [SharePoint Online](https://products.office.com/sharepoint/collaboration)angezeigt?**
+**F.: Wann werden Akronyme in [Office 365](https://Office.com)Antworten angezeigt?**
 
-**A**.: Akronyme Antworten in Office 365 und SharePoint Online sind Teil unserer Produkt-Roadmap, aber wir können derzeit kein Datum oder keinen Zeitrahmen bereitstellen.
+**A**.: Akronyme Antworten in Office 365 sind Teil unserer Produkt-Roadmap, aber wir können derzeit kein Datum oder keinen Zeitrahmen bereitstellen.

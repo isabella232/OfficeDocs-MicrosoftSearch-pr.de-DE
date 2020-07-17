@@ -77,7 +77,7 @@ Beachten Sie, dass vertikale im deaktivierten Zustand erstellt werden. Sie müss
 
 Sie können definieren, wie die Ergebnisse in der vertikalen angezeigt werden, indem Sie das Layout mithilfe von Ergebnistypen entwerfen. Das Ergebnis Layout ermöglicht es Ihnen, wichtige Informationen direkt in den Suchergebnissen anzuzeigen, sodass Benutzer nicht jedes Ergebnis auswählen müssen, um zu sehen, ob Sie die gewünschten Ergebnisse gefunden haben.
 
-A search result type is a rule that causes distinct kinds of search results to be displayed in different ways. It consists of the following:
+Ein Ergebnistyp einer Suche ist eine Regel, die bewirkt, dass unterschiedliche Arten von Suchergebnissen auf verschiedene Weisen angezeigt werden. Ein Ergebnistyp hat folgende Bestandteile:
 
 - **Eine oder mehrere Bedingungen** zum Vergleichen der einzelnen Suchergebnisse, beispielsweise die Inhaltsquelle des Suchergebnisses.  
 - Ein **Ergebnis Layout** , das für Suchergebnisse verwendet wird, die die Bedingungen erfüllen. Das Ergebnis Layout steuert, wie alle Ergebnisse, die die Bedingungen erfüllen, auf einer Suchergebnisseite angezeigt werden und sich Verhalten.

@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Erstellen und Aktualisieren von Lesezeichen und Möglichkeiten zum Massen bearbeiten von Lesezeichen Ergebnissen für Microsoft Search
-ms.openlocfilehash: 64e430309ef1969ab804e8d757b987332f0a6006
-ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
+ms.openlocfilehash: 926fae2a4bd6bb6a436a3b5ea46f21077a23dcab
+ms.sourcegitcommit: 996b2c0538e28b71441461a371a62339cb6d476f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44996103"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45167457"
 ---
 # <a name="manage-bookmarks"></a>Verwalten von Lesezeichen
 
-Sie können ein Lesezeichen in wenigen Schritten erstellen. Jedes Lesezeichen enthält einen Titel, eine URL und eine Gruppe von Schlüsselwörtern, die es auslösen. Ein Lesezeichen kann mehrere Schlüsselwörter haben, und mehrere Lesezeichen können ein gemeinsames Schlüsselwort nutzen, aber ein reserviertes Schlüsselwort kann nicht gemeinsam genutzt werden. Wenn ein Lesezeichen erstellt oder geändert wird, wird der Suchindex sofort aktualisiert, und das Lesezeichen steht Benutzern sofort zur Verfügung.
+Sie können ein Lesezeichen in wenigen Schritten erstellen. Jedes Lesezeichen enthält einen Titel, eine URL und eine Gruppe von Schlüsselwörtern, die es auslösen. Sie können auch Kategorien zu einer Textmarke hinzufügen, die zum Sortieren und Filtern im Administratorportal verwendet werden kann. Ein Lesezeichen kann mehrere Schlüsselwörter haben, und mehrere Lesezeichen können ein gemeinsames Schlüsselwort nutzen, aber ein reserviertes Schlüsselwort kann nicht gemeinsam genutzt werden. Wenn ein Lesezeichen erstellt oder geändert wird, wird der Suchindex sofort aktualisiert, und das Lesezeichen steht Benutzern sofort zur Verfügung.
 
 Wenn Ihre Organisation die Ergebnisse in SharePoint höher gestuft hat, können Sie die heraufgestuften Ergebnisse in **Microsoft Search** importieren und die importierten Inhalte ihren Benutzern zur Verfügung stellen. Dies ist eine einfache Möglichkeit, Suchergebnisse schnell aufzufüllen, sobald Sie **Microsoft Search** einrichten, und es für Ihre Benutzer effektiver zu gestalten. Wir empfehlen Ihnen, höhergestufte Ergebnisse aus SharePoint als Referenz zu verwenden, um zu verstehen, wie man relevante Suchergebnisse benennt und erstellt.
 

@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Übersicht über Microsoft Graph Connectors für Microsoft Search
-ms.openlocfilehash: 08ddb8e61606007c706134242e865459f0399b86
-ms.sourcegitcommit: 68cd28a84df120473270f27e4eb62de9eae455f9
+ms.openlocfilehash: ecedd135336f37da26cee71be06dd421cdb95f61
+ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44850871"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387994"
 ---
 # <a name="overview-of-microsoft-graph-connectors"></a>Übersicht über Microsoft Graph-Connectors
 
-Microsoft Search indiziert alle Ihre [Microsoft 365](https://www.microsoft.com/microsoft-365) -Daten, damit Sie für Benutzer durchsucht werden können. Mit Microsoft Graph-Connectors kann Ihre Organisation Daten aus Drittanbietern indizieren, damit Sie in Microsoft-Suchergebnissen angezeigt werden. Die drittanbieterdaten können lokal oder in öffentlichen oder privaten Clouds gehostet werden. Connectors erweitern Sie die Typen von Inhaltsquellen, die in Ihren Microsoft 365-Produktivitäts-apps und dem breiteren Microsoft-Ökosystem durchsucht werden können.
+Microsoft Search indiziert alle Ihre [Microsoft 365](https://www.microsoft.com/microsoft-365) -Daten, damit Sie für Benutzer durchsucht werden können. Mit Microsoft Graph Connectors kann Ihre Organisation Daten von Drittanbietern indizieren, die in den Ergebnissen von Microsoft Search angezeigt werden sollen. Die drittanbieterdaten können lokal oder in öffentlichen oder privaten Clouds gehostet werden. Connectors erweitern Sie die Typen von Inhaltsquellen, die in Ihren Microsoft 365-Produktivitäts-apps und dem breiteren Microsoft-Ökosystem durchsucht werden können.
 
 > [!IMPORTANT]
 > **Haftungsausschluss**: Microsoft Graph-Connectors und Microsoft Search-APIs (Abfrage und Index) sind derzeit im Vorschaustatus für Mandanten in der gezielten Version verfügbar. Um Connectors mit Microsoft Search zu verwenden oder um Connectors zu erstellen, wählen Sie [Targeted Release](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)aus. Weitere Informationen zur Vorschau finden Sie unter [Connectors Preview Program](connectors-preview.md).
@@ -63,9 +63,6 @@ Erfahren Sie mehr über den [Azure SQL Connector](MSSQL-connector.md).
 
 - **Enterprise-Websites**. Mit diesem Microsoft Graph-Connector können Benutzer in Ihrer Organisation Seiten in einer nicht-SharePoint-Unternehmenswebsite durchsuchen.
 Erfahren Sie mehr über den [Enterprise-Websites-Connector](enterprise-web-connector.md).
-
-- **Dateifreigabe**. Mit diesem Microsoft Graph-Connector können Benutzer in Ihrer Organisation nach Dateien suchen, die in lokalen Windows-Dateifreigaben gespeichert sind.
-Erfahren Sie mehr über den [Dateifreigabe-Konnektor](file-share-connector.md).
 
 - **[MediaWiki](https://www.mediawiki.org/wiki/MediaWiki)**. Mit diesem Microsoft Graph-Connector können Benutzer nach Knowledge-Base-Artikeln auf Wiki-Websites suchen, die Ihre Organisation mit MediaWiki erstellt.
 Erfahren Sie mehr über den [MediaWiki-Connector](mediawiki-connector.md).

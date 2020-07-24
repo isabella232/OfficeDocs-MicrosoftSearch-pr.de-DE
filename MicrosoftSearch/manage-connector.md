@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Verwalten von Microsoft Graph-Connectors für Microsoft Search.
-ms.openlocfilehash: 3e652b9afad78f784ff4c726ecab34bef883d4c3
-ms.sourcegitcommit: a8a6c949f249d106f37103e127d2ea7df730f7a3
+ms.openlocfilehash: dfbc58d7e51fca0491dc7e4452ba4312ff3dfd69
+ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44702767"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45388003"
 ---
 # <a name="manage-your-connector-for-microsoft-search"></a>Verwalten des Connectors für Microsoft Search
 
@@ -48,7 +48,7 @@ Vier Zustände werden in der Spalte **Status** für jede Verbindung angezeigt:
 
 * **Angehalten**. Die durch forstungen werden von den Administratoren durch die Option Pause angehalten. Die nächste Durchforstung wird nur ausgeführt, wenn Sie manuell fortgesetzt wird. Die Daten aus dieser Verbindung sind jedoch weiterhin durchsuchbar.
 
-* **Fehlerhaft**. Die Verbindung hatte einen kritischen Fehler. Für diesen Fehler ist ein manueller Eingriff erforderlich. Der Administrator muss die entsprechende Aktion basierend auf der angezeigten Fehlermeldung durchführen. Daten, die bis zum Auftreten des Fehlers indiziert wurden, sind durchsuchbar.
+* **Fehler**. Die Verbindung hatte einen kritischen Fehler. Für diesen Fehler ist ein manueller Eingriff erforderlich. Der Administrator muss die entsprechende Aktion basierend auf der angezeigten Fehlermeldung durchführen. Daten, die bis zum Auftreten des Fehlers indiziert wurden, sind durchsuchbar.
 
 ### <a name="monitor-errors"></a>Überwachen von Fehlern
 
@@ -76,7 +76,6 @@ Fehlercode | Fehlermeldung | Lösung
 2001 | Die Indizierung wird aufgrund einer großen Anzahl von Updates in der Warteschlange eingeschränkt. Je nach Warteschlange kann es einige Zeit dauern, bis die Aktualisierungen abgeschlossen sind. | Warten Sie, bis die Warteschlange gelöscht wird.
 2002 | Die Indizierung ist aufgrund einer nicht unterstützten Element Formatierung fehlgeschlagen. | Weitere Informationen finden Sie in der Connector-spezifischen Dokumentation.
 2003 | Die Indizierung ist aufgrund eines nicht unterstützten Elementinhalts fehlgeschlagen. | Weitere Informationen finden Sie in der Connector-spezifischen Dokumentation.
-2004 | Die [Dateigröße](https://docs.microsoft.com/microsoftsearch/file-share-connector#content-requirements) ist zu groß, um indiziert zu werden. Sie muss vor der Verarbeitung 100 MB oder weniger betragen und darf nach der Verarbeitung nicht größer als 4 MB sein. Die Datei wird in diesem Fall teilweise indiziert. Einige in der Datei vorhandene Ausdrücke geben möglicherweise kein Suchergebnis zurück. | Weitere Informationen finden Sie unter [Dateifreigabe spezifische Dokumentation](https://docs.microsoft.com/MicrosoftSearch/file-share-connector#content-requirements) .
 5000 | Etwas ist schief gelaufen. Wenn dieser Vorgang fortgesetzt wird, wenden Sie sich an den Support. |
 
 ## <a name="preview-limitations"></a>Vorschau Einschränkungen

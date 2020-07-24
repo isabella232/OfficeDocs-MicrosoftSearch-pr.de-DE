@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Konfigurieren Ihres von Microsoft erstellten Connectors für Microsoft Search
-ms.openlocfilehash: e5b40326bdd83f461e7ce9a45889ad82245e20aa
-ms.sourcegitcommit: 68cd28a84df120473270f27e4eb62de9eae455f9
+ms.openlocfilehash: 30c60e94e8e633bce90bbc1984eee35d3ceda771
+ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44850889"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387971"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 
@@ -26,10 +26,9 @@ ms.locfileid: "44850889"
 Dieser Artikel führt Sie durch die Schritte zum Konfigurieren eines von Microsoft erstellten Connectors. In diesem Artikel wird der Fluss der Einrichtung einer Verbindung im Microsoft 365 [Admin Center](https://admin.microsoft.com)erläutert. Weitere Informationen zum Einrichten spezieller von Microsoft erstellte Connectors finden Sie in den folgenden Artikeln:
 
 * [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
-* [Azure-DevOps](azure-devops-connector.md)
+* [Azure DevOps](azure-devops-connector.md)
 * [Azure SQL](MSSQL-connector.md)
 * [Unternehmenswebsites](enterprise-web-connector.md)
-* [Dateifreigabe](file-share-connector.md)
 * [MediaWiki](mediawiki-connector.md)
 * [Microsoft SQL Server](MSSQL-connector.md)
 * [ServiceNow](servicenow-connector.md)
@@ -43,7 +42,7 @@ Führen Sie die folgenden Schritte aus, um einen der von Microsoft erstellten Co
 3. Wählen Sie **Add a Connector**aus.
 4. Wählen Sie in der Liste der verfügbaren Connectors den Connector Ihrer Wahl aus.
 
-![Zu den verfügbaren Datenquellen gehören: ADLS Gen2 Connector, Enterprise-Websites, ServiceNow, Dateifreigabe, Microsoft SQL Server und MediaWiki.](media/addconnector_final.png)
+![Zu den verfügbaren Datenquellen gehören: Azure DevOps Connector, ServiceNow, ADLS Gen2, Enterprise-Websites, MediaWiki, Microsoft SQL Server und Azure SQL.](media/add_connector.png)
 
 ### <a name="name-the-connector"></a>Nennen Sie den Connector
 
@@ -75,7 +74,7 @@ Durchsuchbare | Legt den Textinhalt einer Eigenschaft durchsuchbar. Eigenschafte
 QUERYABLE | Sucht nach einer Suchabfrage nach einer Übereinstimmung für eine bestimmte Eigenschaft. Der Eigenschaften Name kann dann entweder programmgesteuert oder wörtlich in der Abfrage angegeben werden. |  Wenn die **Title** -Eigenschaft abgefragt wird, wird der Abfrage **Titel: Enterprise** unterstützt.
 Abrufbar | Nur Abruf bare Eigenschaften können im Ergebnistyp verwendet werden und im Suchergebnis angezeigt werden. |
 
-Für alle Connectors mit Ausnahme des Dateifreigabe-Konnektors müssen benutzerdefinierte Typen manuell festgelegt werden. Zum Aktivieren der Suchfunktionen für jedes Feld benötigen Sie ein Suchschema, das einer Liste von Eigenschaften zugeordnet ist. Der Verbindungs-Assistent wählt automatisch ein Suchschema basierend auf den von Ihnen ausgewählten Quelleigenschaften aus. Sie können dieses Schema ändern, indem Sie die Kontrollkästchen für jede Eigenschaft und jedes Attribut auf der Seite Suchschema aktivieren.
+Für alle Connectors müssen benutzerdefinierte Typen manuell festgelegt werden. Zum Aktivieren der Suchfunktionen für jedes Feld benötigen Sie ein Suchschema, das einer Liste von Eigenschaften zugeordnet ist. Der Verbindungs-Assistent wählt automatisch ein Suchschema basierend auf den von Ihnen ausgewählten Quelleigenschaften aus. Sie können dieses Schema ändern, indem Sie die Kontrollkästchen für jede Eigenschaft und jedes Attribut auf der Seite Suchschema aktivieren.
 
 ![Das Schema für einen Connector kann durch Hinzufügen oder Entfernen von Abfrage-, Such-und Abruffunktionen angepasst werden.](media/manageschema.png)
 
@@ -90,7 +89,7 @@ Diese Einschränkungen und Empfehlungen gelten für Suchschema Einstellungen:
 
 ### <a name="manage-search-permissions"></a>Verwalten von Suchberechtigungen
 
-Zugriffssteuerungslisten (Access Control Lists, ACLs) bestimmen, welche Benutzer in Ihrer Organisation auf die einzelnen Datenelemente zugreifen können. Der Dateifreigabe-Connector unterstützt nur ACLs, die [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/)zugeordnet werden können. Alle anderen Connectors unterstützen Suchberechtigungen, die für alle Benutzer sichtbar sind.
+Zugriffssteuerungslisten (Access Control Lists, ACLs) bestimmen, welche Benutzer in Ihrer Organisation auf die einzelnen Datenelemente zugreifen können. Alle Connectors unterstützen Suchberechtigungen, die für alle Benutzer sichtbar sind.
 
 ### <a name="set-the-refresh-schedule"></a>Festlegen des Aktualisierungszeitplans
 
@@ -98,11 +97,11 @@ Der Aktualisierungszeitplan legt fest, wie oft Ihre Daten mit dem Index in Micro
 
 Bei einer **vollständigen Durchforstung**verarbeitet und indiziert die Suchmaschine jedes Element in der Inhaltsquelle, unabhängig von vorherigen Crawls. Die vollständige Durchforstung funktioniert am besten in diesen Situationen:
 
-* Sie müssen Löschungen von Daten erkennen.
+* Erkennen von Löschungen von Daten.
 * Fehler beim Crawlen von Inhalten durch den inkrementellen Crawl.
-* Ein Software Update für Microsoft Search ist erforderlich. Updates ändern das Suchschema.
 * ACLs wurden geändert.
 * Durchforstungsregeln wurden geändert.
+* Ein Software Update für Microsoft Search ist erforderlich. Updates ändern das Suchschema.
 
 Bei einer **inkrementellen Durchforstung**kann die Suchmaschine nur die Elemente verarbeiten und indizieren, die seit der letzten erfolgreichen Durchforstung erstellt oder geändert wurden. Daher werden nicht alle Daten in der Inhaltsquelle erneut indiziert. Inkrementelle Crawls funktionieren am besten, um Inhalte, Metadaten, Berechtigungen und andere Updates zu erkennen.
 
@@ -120,10 +119,10 @@ Nachdem Sie den Connector konfiguriert haben, führt Sie das [Admin Center](http
 
 Mit der Microsoft Search-Benutzeroberfläche können Ihre Endbenutzer Inhalte aus Ihren [Microsoft 365](https://www.microsoft.com/microsoft-365) -Produktivitäts-apps und dem breiteren Microsoft-Ökosystem durchsuchen. Die vertikale Suche bezieht sich auf die Registerkarten, die angezeigt werden, wenn ein Benutzer in [Bing](https://Bing.com)die Suchergebnisse in [SharePoint](https://sharepoint.com/), [Microsoft Office](https://Office.com)und Microsoft-Suche anzeigt. Sie können die Such vertikalen so anpassen, dass die Ergebnisse eingegrenzt werden, sodass nur ein bestimmter Typ von Suchergebnissen angezeigt wird. Diese vertikalen Werte werden als Registerkarte oben auf der Suchergebnisseite angezeigt. Ein moderner Ergebnistyp (MRT) ist die Benutzeroberfläche, die festlegt, wie Ergebnisse dargestellt werden.
 
-Sie müssen ihre eigenen vertikalen und Ergebnistypen erstellen, damit Endbenutzer Suchergebnisse aus neuen Verbindungen anzeigen können. Ohne diesen Schritt werden Daten aus ihrer Verbindung nicht auf der Suchergebnisseite angezeigt.
+Erstellen Sie Ihre eigenen vertikalen und Ergebnistypen, sodass Endbenutzer Suchergebnisse aus neuen Verbindungen anzeigen können. Ohne diesen Schritt werden Daten aus ihrer Verbindung nicht auf der Suchergebnisseite angezeigt.
 
 Weitere Informationen zum Erstellen von vertikalen und MRT finden Sie unter [Anpassen der Suchergebnisseite](customize-search-page.md).
 
-## <a name="how-do-i-know-this-worked"></a>Woher weiß ich, dass der Vorgang erfolgreich war?
+## <a name="how-do-i-know-the-connection-setup-worked"></a>Woher weiß ich, dass das Verbindungssetup funktioniert hat?
 
 Wechseln Sie zur Liste der veröffentlichten Verbindungen auf der Registerkarte **Connectors** im [Admin Center](https://admin.microsoft.com). Informationen zum Erstellen von Updates und Löschungen finden Sie unter [Manage Your Connector](manage-connector.md).

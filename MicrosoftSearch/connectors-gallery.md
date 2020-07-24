@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Listet alle Microsoft Graph-Connectors für Microsoft Search auf.
-ms.openlocfilehash: 47782a9a429bf3ad75cffaadf6f67402638fd3a6
-ms.sourcegitcommit: 68cd28a84df120473270f27e4eb62de9eae455f9
+ms.openlocfilehash: 82718cdadc57bf9133b61183cdbd912e269fdc70
+ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44850938"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45388012"
 ---
 # <a name="microsoft-graph-connectors-gallery"></a>Microsoft Graph Connectors-Katalog
 
@@ -55,7 +55,7 @@ ms.locfileid: "44850938"
             <div class="cardPadding">
                 <div class="card" style="overflow: hidden; height: 235px;">
                     <div class="cardText">
-                        <h3>Azure-DevOps</h3>
+                        <h3>Azure DevOps</h3>
                         <p>von <a href="https://www.microsoft.com" target="_blank" data-linktype="external">Microsoft</a></p>
                         <p>Mit diesem Microsoft Graph-Connector können Benutzer in Ihrer Organisation in ihrer Azure DevOps-Instanz nach Arbeitsaufgaben suchen.</p>
                         <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
@@ -120,27 +120,6 @@ ms.locfileid: "44850938"
             <div class="cardPadding">
                 <div class="card" style="overflow: hidden; height: 235px;">
                     <div class="cardText">
-                        <h3>Dateifreigabe</h3>
-                        <p>von <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>Mit diesem Microsoft Graph-Connector können Benutzer in Ihrer Organisation nach Dateien suchen, die in lokalen Windows-Dateifreigaben gespeichert sind.</p>
-                        <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
-                            <div style="font-weight:500;width:150px;display:inline">
-                                <a href="file-share-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
-                                    <font color="0065BA">Weitere Details</font>
-                                </a>
-                             <img src="media/FileConnectorLogo_Small.png" alt="File share" width="35" height="35" align="right" style="display:inline; margin-left:210px" data-linktype="relative-path"  />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card" style="overflow: hidden; height: 235px;">
-                    <div class="cardText">
                         <h3>MediaWiki</h3>
                         <p>von <a href="https://www.microsoft.com">Microsoft</a></p>
                         <p>Mit diesem Microsoft Graph-Connector können Benutzer nach wissensbasierten Artikeln auf Wiki-Websites suchen, die Ihre Organisation mit MediaWiki erstellt.</p>
@@ -157,8 +136,6 @@ ms.locfileid: "44850938"
             </div>
         </div>
     </li>
-</ul>
-<ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -180,6 +157,8 @@ ms.locfileid: "44850938"
             </div>
         </div>
     </li>
+</ul>
+<ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -476,7 +455,7 @@ ms.locfileid: "44850938"
                     <div class="cardText">
                         <h3>Azure-Daten-See</h3>
                         <p>von <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Der Azure Data Lake-Connector crawlt Inhalte aus der Azure Data Lake Store Cloud entweder auf Stamm-oder angegebenen Pfaden. Jede Datei wird mit Ihren Metadaten (Größe, Speicherort, letzter Zugriff usw.) übermittelt. Updates werden automatisch ermittelt.</p>
+                        <p>Der Azure Data Lake-Connector crawlt Inhalte aus der ADLS-Cloud entweder auf Stamm-oder angegebenen Pfaden. Jede Datei wird mit Ihren Metadaten (Größe, Speicherort, letzter Zugriff usw.) übermittelt. Updates werden automatisch ermittelt.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Azure+Data+Lake+Connector"><font color="0065BA">Weitere Details</font></a>
                         </p>
@@ -1104,7 +1083,7 @@ ms.locfileid: "44850938"
                     <div class="cardText">
                         <h3>Arbeit mit Iman</h3>
                         <p>von <a href="https://www.bainsight.com">BA Insight</a></p>
-                        <p>Der Arbeit-Konnektor "Iman" bietet volle Sicherheit und arbeitet mit hohem Durchsatz, um die Durchforstungs Zeiten zu minimieren und gleichzeitig eine geringe Leistungsbeeinträchtigung der Arbeit zu erzielen. Sie erfordert nur Lesezugriff, und es ist nicht erforderlich, Client Software auf einem beliebigen Server für die Installation von Iman zu installieren. Dies führt zu einem nahtlosen und gleichzeitigen Zugriff auf alle Inhalte, die in Iman-Arbeit gespeichert sind.</p>
+                        <p>Der Arbeit-Konnektor von Iman bietet vollständige Sicherheit und arbeitet mit hohem Durchsatz, um die Durchforstungs Zeiten zu minimieren und gleichzeitig eine geringe Leistung für die Arbeit zu erzielen. Sie erfordert nur Lesezugriff, und es ist nicht erforderlich, Client Software auf einem beliebigen Server für die Installation von Iman zu installieren. Dies führt zu einem nahtlosen und gleichzeitigen Zugriff auf alle Inhalte, die in Iman-Arbeit gespeichert sind.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/imanage-work-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">Weitere Details</font></a>
                         </p>
@@ -1222,7 +1201,7 @@ ms.locfileid: "44850938"
                     <div class="cardText">
                         <h3>LDAP</h3>
                         <p>von <a href="https://www.bainsight.com">BA Insight</a></p>
-                        <p>Mit dem LDAP-Connector können Organisationen eine Verbindung mit einem LDAP-kompatiblen Verzeichnis herstellen und einen beliebigen Datensatz daraus indizieren. Organisationen können auf bestimmte Teilmengen des Verzeichnisses Filtern und nur bestimmte Felder abrufen, sodass es einfach ist, nach Benutzern, Kontakten oder Gruppen zu suchen, die an einer beliebigen Stelle in Ihrem Verzeichnis gespeichert sind.</p>
+                        <p>Der LDAP-Connector ermöglicht es Organisationen, eine Verbindung mit einem beliebigen LDAP-kompatiblen Verzeichnis herzustellen und einen beliebigen Datensatz daraus zu indizieren. Organisationen können auf bestimmte Teilmengen des Verzeichnisses Filtern und nur bestimmte Felder abrufen, sodass es einfach ist, nach Benutzern, Kontakten oder Gruppen zu suchen, die an einer beliebigen Stelle in Ihrem Verzeichnis gespeichert sind.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/indexing-connectors/1/"><font color="0065BA">Weitere Details</font></a>
                         </p>
@@ -1476,7 +1455,7 @@ ms.locfileid: "44850938"
             <div class="cardPadding">
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
-                        <h3>Netdocuments</h3>
+                        <h3>NetDocuments</h3>
                         <p>von <a href="https://www.bainsight.com">BA Insight</a></p>
                         <p>Der netdocuments-Connector indiziert in NetDocs gespeicherte Inhalte, damit Benutzer netdocuments-Inhalte direkt in Ihrem Portal suchen und abrufen können. Der Connector wendet die Dokumentsicherheit in NetDocs automatisch an die Microsoft-Suche an, sodass die Benutzerinformationen sicher bleiben. In netdocuments gespeicherte Metadaten können äquivalenten Ausdrücken zugeordnet werden, sodass Benutzer eine nahtlose Suchumgebung haben.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
@@ -1988,7 +1967,7 @@ ms.locfileid: "44850938"
                     <div class="cardText">
                         <h3>SharePoint Online</h3>
                         <p>von <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Der SharePoint Online-Konnektor crawlt Inhalte von einer beliebigen SharePoint Online Website Sammlungs-URL.Der Connector ruft Websites, Listen, Ordner, Listenelemente und Anlagen sowie andere Seiten (im aspx-Format) ab. Dieser Connector unterstützt SharePoint, das im Microsoft O365-Angebot läuft. Unterstützung für das Crawlen der lokalen Angebote von SharePoint werden von SharePoint 2010/2007-Connector und SharePoint 2013 Connector unterstützt.</p>
+                        <p>Der SharePoint Online-Konnektor crawlt Inhalte von einer beliebigen SharePoint Online Website Sammlungs-URL.Der Connector ruft Websites, Listen, Ordner, Listenelemente und Anlagen sowie andere Seiten (im aspx-Format) ab. Dieser Connector unterstützt SharePoint, das im Microsoft O365-Angebot läuft. Unterstützung für das Crawlen der lokalen Angebote von SharePoint wird von SharePoint 2010/2007-Connector und SharePoint 2013 Connector unterstützt.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/SharePoint+Online+Connector"><font color="0065BA">Weitere Details</font></a>
                         </p>

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Hinzufügen von Such vertikalen und Anpassen von Suchergebnissen
-ms.openlocfilehash: 60ab3423db0a86982df9c4332f0f22267c49dc04
-ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
+ms.openlocfilehash: 9bc0448c1105c26b0e083316db04887327d8db41
+ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44996058"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387985"
 ---
 # <a name="customize-the-search-results-page"></a>Anpassen der Suchergebnisseite
 
@@ -41,7 +41,7 @@ Sie können Such vertikale hinzufügen, die für Ihre Organisation relevant sind
 
 Bevor Sie beginnen, stellen Sie sicher, dass der Connector indiziert wurde. Je nach Dateigröße kann dies bis zu 48 Stunden dauern.
 
-Sie können keinen vertikalen Inhalt für Inhalte erstellen, die sich in [SharePoint](https://sharepoint.com/) befinden, oder aus Inhalten, die durch den [Dateifreigabe-Konnektor](file-share-connector.md)indiziert sind. Informationen zum [Indizieren von Inhalten](configure-connector.md).
+Sie können keinen vertikalen Inhalt für Inhalte erstellen, die sich in [SharePoint](https://sharepoint.com/)befinden.
 
 Es gibt drei grundlegende Schritte zum Hinzufügen eines vertikalen:
 
@@ -107,7 +107,7 @@ Nachdem Sie die vertikale aktiviert haben, kann es eine Weile dauern, bis Sie Si
 
 Hier finden Sie eine Liste mit häufig auftretenden Problemen und Aktionen, die Sie beheben können.
 
-|Error  |Aktion  |
+|Fehler  |Aktion  |
 |---------|---------|
 | Ich sehe eine Fehlermeldung "something went wrong" auf der vertikalen. | Sowohl die vertikalen als auch die Ergebnistypen sind erforderlich, um das Setup abzuschließen. Stellen Sie sicher, dass Sie beide für dieselbe Inhaltsquelle erstellt haben. |
 | Das Ergebnis Layout wird nicht angezeigt, obwohl ich ein erstellt habe. | Es dauert ein paar Minuten, da diese Einstellungen im allgemeinen zwischengespeichert werden. Warten Sie einige Minuten, und versuchen Sie es erneut.        |

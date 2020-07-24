@@ -21,7 +21,6 @@
 ### [Azure DevOps](azure-devops-connector.md)
 ### [Azure SQL und Microsoft SQL Server](MSSQL-connector.md)
 ### [Unternehmenswebsites](enterprise-web-connector.md)
-### [Dateifreigabe](file-share-connector.md)
 ### [MediaWiki](mediawiki-connector.md)
 ### [ServiceNow](servicenow-connector.md)
 ## [Feedback](connectors-feedback.md)

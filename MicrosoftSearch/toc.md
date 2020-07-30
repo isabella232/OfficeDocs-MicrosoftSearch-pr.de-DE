@@ -27,8 +27,10 @@
 ## [Nutzungsbedingungen](terms-of-use.md)
 # Anpassen und konfigurieren
 ## [Branchen und Ergebnistypen verwalten](customize-search-page.md)
-## [Microsoft Search – Ergebnislayouts](customize-results-layout.md)
-## [Microsoft Search in SharePoint](get-started-search-in-sharepoint-online.md)
+## [Verwalten von Layouts für Suchergebnisse](customize-results-layout.md)
+## Microsoft Search in SharePoint
+### [Übersicht](get-started-search-in-sharepoint-online.md)
+### [Erstellen einer benutzerdefinierten Suchergebnisseite](create-search-results-pages.md)
 ## Microsoft Search in Bing
 ### [Sicherheit und Datenschutz](security-for-search.md)
 ### [Hinzufügen eines Suchfelds zu Ihrer Intranetwebsite](add-a-search-box-to-your-intranet-site.md)

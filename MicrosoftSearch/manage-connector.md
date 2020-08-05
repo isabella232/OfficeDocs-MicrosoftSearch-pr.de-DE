@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Verwalten von Microsoft Graph-Connectors für Microsoft Search.
-ms.openlocfilehash: dfbc58d7e51fca0491dc7e4452ba4312ff3dfd69
-ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
+ms.openlocfilehash: adf98bccab703e2ae5ecd99b059e1426a50609c5
+ms.sourcegitcommit: 89484fec9af755240d5d1bc399501d51ee40571d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45388003"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46563897"
 ---
 # <a name="manage-your-connector-for-microsoft-search"></a>Verwalten des Connectors für Microsoft Search
 
@@ -58,7 +58,7 @@ Für jeden **aktiven Connector** auf der Registerkarte **Connectors** werden all
 
 Um die spezifischen Details eines Fehlers anzuzeigen, wählen Sie den entsprechenden Fehlercode aus. Ein Bildschirm mit Fehlerdetails und einem Link wird angezeigt. Die neuesten Fehler werden oben angezeigt. Siehe das Beispiel in der folgenden Tabelle.
 
-![Connectorliste mit ausgewähltem Konnektor und Detailbereich, der die Liste der Fehler für den Connector anzeigt. ](media/errormonitoring2.png)
+![Connectorliste mit ausgewähltem Konnektor und Detailbereich, der die Liste der Fehler für den Connector anzeigt.](media/errormonitoring2.png)
 
 Unten sehen Sie eine Liste mit verschiedenen Fehlern, die für jede Verbindung angezeigt werden können. Wenn diese Lösungen nicht funktionieren, wenden Sie sich an den Support oder senden Sie uns [Feedback](connectors-feedback.md).
 
@@ -78,6 +78,35 @@ Fehlercode | Fehlermeldung | Lösung
 2003 | Die Indizierung ist aufgrund eines nicht unterstützten Elementinhalts fehlgeschlagen. | Weitere Informationen finden Sie in der Connector-spezifischen Dokumentation.
 5000 | Etwas ist schief gelaufen. Wenn dieser Vorgang fortgesetzt wird, wenden Sie sich an den Support. |
 
+## <a name="monitor-your-index-quota-utilization"></a>Überwachen der Auslastung des Index Kontingents 
+Während des Vorschauzeitraums verfügt jede Organisation über ein festes Kontingent von bis zu 2 Millionen Elementen für die Indizierung von Inhalten aus externen Systemen über alle Verbindungen hinweg.
+
+> [!NOTE]
+> Graph Connectors Quota steht für die Dauer der Vorschau kostenlos zur Verfügung. Dies ändert sich bei allgemeiner Verfügbarkeit. 
+
+Das verfügbare Index Kontingent und der Verbrauch werden auf der Zielseite für Konnektoren angezeigt.
+
+![Index Kontingent Auslastungs Leiste.](media/quota_utilization.png)
+
+In der Kontingent Auslastungs Leiste werden verschiedene Zustände basierend auf dem Kontingent Verbrauch in Ihrer Organisation angegeben:
+
+Status | Kontingent Verbrauch
+--- | ---
+Normal | 1-69%
+Hoch | 70-89%
+Kritisch | 90%-99%
+Vollständig | 100 %
+
+Die Anzahl der indizierten Elemente wird auch bei jeder Verbindung angezeigt. Die Anzahl von Elementen, die von den einzelnen Verbindungen indiziert werden, trägt zum Gesamtkontingent bei, das für Ihre Organisation verfügbar ist.
+
+Wenn das Index Kontingent für Ihre Organisation überschritten wird, werden alle aktiven Verbindungen beeinträchtigt, und diese Verbindungen werden das Aufnehmen von Inhalten beenden. Um dies zu beheben, können Sie eine der folgenden Aktionen ausführen:
+
+* Identifizieren Sie Verbindungen, bei denen zu viele Inhalte aufgenommen werden, und aktualisieren Sie diese, um weniger Elemente zu indizieren, um Platz für Kontingente zu geben. Um die Verbindung zu aktualisieren, müssen Sie löschen und eine neue Verbindung mit einem neuen Einnahme Filter erstellen, der weniger Elemente einbringt.
+
+* Dauerhaftes Löschen einer oder mehrerer Verbindungen
+
+* Wenden Sie sich an Microsoft, wenn Sie die Index Kontingentgrenze für Ihre Organisation erweitern müssen.
+
 ## <a name="preview-limitations"></a>Vorschau Einschränkungen
 
 * Wenn Sie einen von Microsoft erstellten Connector **veröffentlichen** , kann es einige Minuten dauern, bis die Verbindung erstellt wurde. Während dieser Zeit zeigt die Verbindung den Status als ausstehend an. Außerdem gibt es keine automatische Aktualisierung, Sie müssen also manuell aktualisieren.
@@ -85,3 +114,5 @@ Fehlercode | Fehlermeldung | Lösung
 * Das [Microsoft 365 Admin Center](https://admin.microsoft.com) unterstützt das Anzeigen und Bearbeiten des **Suchschemas** nach dem Veröffentlichen einer Verbindung nicht. Um das Suchschema zu bearbeiten, löschen Sie die Verbindung, und erstellen Sie dann eine neue.
 
 * Wenn Sie den **Aktualisierungszeitplan**ihrer Verbindung verwalten, wird die Anzahl der Elemente angezeigt, die während jeder Sitzung synchronisiert werden. Der Synchronisierungsverlauf ist jedoch nicht verfügbar.
+
+* Wenn die Kontingent Nutzung für Ihre Organisation kritische oder höhere Grenzwerte einschlägt, werden Sie **nicht** über das Nachrichten Center benachrichtigt.  Überprüfen Sie regelmäßig die Seite Connectors Management, um sicherzustellen, dass die konfigurierten Verbindungen nicht die allgemeinen Kontingents Grenzwerte für Ihre Organisation überschritten haben.

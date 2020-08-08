@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 description: Erfahren Sie mehr über Methoden und Prozesse, die Sie bei der erfolgreichen Einführung der Microsoft-Suche in Ihrer Organisation unterstützen.
-ms.openlocfilehash: 4c40013297b8b7a91e589137e70716bd8e4fd326
-ms.sourcegitcommit: f4cb37fdf85b895337caee827fb72b5b7fcaa8ad
+ms.openlocfilehash: 76079dd2db378185a999acf9cc49cd04a7f97bbe
+ms.sourcegitcommit: b3738f5ab02bfba9dedf099e035f3850607be480
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2019
-ms.locfileid: "39995005"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46591517"
 ---
 # <a name="user-adoption-guide"></a>Einführungsleitfaden für Benutzer
 
@@ -36,8 +36,8 @@ Die Tabelle zeigt die Team Hierarchie und den Beitrag jeder Person.
   
 |**Rolle**|**Verantwortung**|**Department**|
 |:-----|:-----|:-----|
-|Leitenden Sponsors  <br/> |Verstehen Sie die allgemeine Vorstellung und den Wert der Microsoft-Suche für Ihre Organisation.  <br/> Bereitstellen von Führungsunterstützung für IT/Business-Team  <br/> Ressourcen zuordnen.  <br/> Direkte Kommunikation mit Mitarbeitern.  <br/> |Führungskräfte  <br/> |
-|Geschäftsbesitzer  <br/> |Identifizieren von Produkt-und Benutzerszenarien  <br/> Bestimmen der Erfolgsmetrik für Abteilungen und Organisation.  <br/> |Any  <br/> |
+|Geschäftsführender Sponsor („Executive sponsor“)  <br/> |Verstehen Sie die allgemeine Vorstellung und den Wert der Microsoft-Suche für Ihre Organisation.  <br/> Bereitstellen von Führungsunterstützung für IT/Business-Team  <br/> Ressourcen zuordnen.  <br/> Direkte Kommunikation mit Mitarbeitern.  <br/> |Führungskräfte  <br/> |
+|Unternehmensinhaber  <br/> |Identifizieren von Produkt-und Benutzerszenarien  <br/> Bestimmen der Erfolgsmetrik für Abteilungen und Organisation.  <br/> |Beliebig  <br/> |
 |Change Management-Team  <br/> |Stellen Sie sicher, dass der Produkt Wert leicht zu verstehen ist.  <br/> Erstellen Sie einen Plan für das Rollout.  <br/> |IT  <br/> |
 |Experten  <br/> |Evangelisieren Sie das Produkt für Kollegen und Teams.  <br/> |Any (Mitarbeiter)  <br/> |
 |Suchadministrator  <br/> |Identifizieren der Mitglieder des Haupt Teams für die Benutzerakzeptanz  <br/> Verwalten der Microsoft-Suche, einschließlich Aussehen und Verhalten der Erfahrung und der laufenden Verwaltung.  <br/> Führen Sie Diskussionen aus, um den Wert von Microsoft Search anzuzeigen.  <br/> |IT  <br/> |
@@ -77,7 +77,7 @@ Um Ihnen dabei zu helfen, ihre Ziele für das Rollout zu erreichen und positive 
     
 ## <a name="stage-3-readiness"></a>Phase 3: Bereitschaft
 
-Das investieren von Zeit in die Vorbereitung auf Ihr Microsoft Search-Rollout führt zu positiven Auswirkungen für Ihre Organisation. Microsoft stellt ein <a href="https://resources.techcommunity.microsoft.com/microsoft-search-in-bing-adoption-kit/">Einführungs Kit</a> bereit, das Planungsanleitungen, anpassbare e-Mail-Ankündigungen, Umfrage Vorlagen, Präsentationen von Führungskräften und vieles mehr enthält. Es gibt auch ein <a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">Microsoft Search-Ressourcen Center</a> , in dem IT-Implementierer andere Schulungs-und Adoptions Ressourcen finden können, die dazu beitragen, dass Ihr Microsoft Search-Rollout erfolgreich verläuft.
+Das investieren von Zeit in die Vorbereitung auf Ihr Microsoft Search-Rollout führt zu positiven Auswirkungen für Ihre Organisation. Microsoft stellt ein <a href="https://go.microsoft.com/fwlink/?linkid=2114710">Einführungs Kit</a> bereit, das eine e-Mail-Vorlage für Ankündigungen, ein leichtes, für die Freigabe auf Ihren internen Kommunikationswebsites erstellte visuelle Inhalte sowie eine Schulungspräsentation enthält. Es gibt auch ein <a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">Microsoft Search-Ressourcen Center</a> , in dem Sie weitere Schulungs-und Adoptions Ressourcen finden können, die dazu beitragen, dass Ihr Microsoft Search-Rollout erfolgreich verläuft.
   
 ### <a name="product-and-content-readiness"></a>Produkt-und Inhalts Bereitschaft
   

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Antworten zum Erstellen und Aktualisieren von Akronymen in Microsoft Search
-ms.openlocfilehash: bbdd27b00be323db8d80994fe9ff6ab7fac17416
-ms.sourcegitcommit: b5142052ed17cd430b4c193b67d8f3d90d94ba6e
+ms.openlocfilehash: 68e62884898e3aa081fc32438ad9a80068092738
+ms.sourcegitcommit: b3738f5ab02bfba9dedf099e035f3850607be480
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45143865"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46591508"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Verwalten von Akronymen Antworten in der Microsoft-Suche
 
@@ -27,7 +27,7 @@ Organisationen haben nicht immer einen einzigen Verweis für Ihre Standardtermin
 
 ## <a name="what-users-experience"></a>Benutzererfahrung
 
-Microsoft Search-Benutzer können Definitionen mit Akronymen in [Bing](https://Bing.com) und [SharePoint](https://products.office.com/sharepoint/collaboration)abrufen. In das **Suchfeld** geben Benutzer Abfragen wie diese Beispiele ein:
+Microsoft Search-Benutzer können Definitionen mit Akronymen in [Bing](https://Bing.com), [SharePoint](https://products.office.com/sharepoint/collaboration)und [Office 365](https://Office.com)abrufen. In das **Suchfeld** geben Benutzer Abfragen wie diese Beispiele ein:
 
 - *Was ist* DNN
 - *Definieren* Sie DNN
@@ -108,7 +108,7 @@ Die Microsoft-Suche stellt sicher, dass nur Benutzer mit Zugriff und Berechtigun
 
 **F.: wie lösen Benutzer Akronyme Antworten aus?**
 
-**A**: um Akronyme Antworten zu erhalten, müssen Benutzer bestimmte Abfragemuster in einem [Bing](https://bing.com) -oder [SharePoint](https://products.office.com/sharepoint/collaboration) - **Suchfeld** eingeben. Derzeit sind Akronym-Antworten in [Office 365](https://Office.com)nicht verfügbar.
+**A**: um Akronyme Antworten zu erhalten, müssen Benutzer bestimmte Abfragemuster in ein [Bing](https://bing.com)-, [SharePoint](https://products.office.com/sharepoint/collaboration)-oder [Office 365](https://Office.com) **Suchfeld** eingeben.
 
 **F.: wie lange dauert es, bis abgebaute Akronyme angezeigt werden, nachdem Sie eine neue e-Mail oder ein neues Dokument empfangen oder gesendet haben?**
 
@@ -126,7 +126,3 @@ Die Microsoft-Suche stellt sicher, dass nur Benutzer mit Zugriff und Berechtigun
 
 **A**: um die Anzeige von verminten Akronymen in Suchergebnissen zu deaktivieren, erstellen Sie ein Kundensupport Ticket, indem Sie die Anweisungen unter [Contact Support for Business Products](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?redirectSourcePath=%252f%252farticle%252fContact-Office-365-for-business-support-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online#BKMK_call_support)befolgen.
 Nachdem Sie ein Support Ticket erstellt haben, dauert es bis zu 48 Stunden, damit verminte Akronyme nicht mehr in den Suchergebnissen angezeigt werden.
-
-**F.: Wann werden Akronyme in [Office 365](https://Office.com)Antworten angezeigt?**
-
-**A**.: Akronyme Antworten in Office 365 sind Teil unserer Produkt-Roadmap, aber wir können derzeit kein Datum oder keinen Zeitrahmen bereitstellen.

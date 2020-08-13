@@ -12,21 +12,35 @@ search.appverid:
 - MET150
 - MOE150
 description: Richten Sie den Microsoft SQL Server oder Azure SQL Connector für Microsoft Search ein.
-ms.openlocfilehash: e664a9a6e389531f8b5735673150839a1b106ce1
-ms.sourcegitcommit: 68cd28a84df120473270f27e4eb62de9eae455f9
+ms.openlocfilehash: 55c2e86697d2159bf93bc950c47a37630739dba9
+ms.sourcegitcommit: dd082bf862414604e32d1a768e7c155c2d757f51
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44850898"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46657013"
 ---
 # <a name="azure-sql-and-microsoft-sql-server-connectors"></a>Azure SQL-und Microsoft SQL Server-Connectors
 
 Mit einem Microsoft SQL Server oder Azure SQL Connector kann Ihre Organisation Daten aus einer lokalen SQL Server Datenbank oder einer Datenbank, die in ihrer Azure SQL-Instanz in der Cloud gehostet wird, ermitteln und indizieren. Der Connector indiziert angegebene Inhalte in Microsoft Search. Um den Index mit den Quelldaten auf dem neuesten Stand zu halten, unterstützt er periodische vollständige und inkrementelle Crawls. Mit diesen SQL-Connectors können Sie auch den Zugriff auf Suchergebnisse für bestimmte Benutzer einschränken.
 
-Dieser Artikel richtet sich an Microsoft 365-Administratoren oder Personen, die einen Microsoft SQL Server-Connector konfigurieren, ausführen und überwachen. Es wird erläutert, wie Sie die Connector-und connectorfunktionen, Einschränkungen und Techniken zur Problembehandlung konfigurieren.
+Dieser Artikel richtet sich an Microsoft 365-Administratoren oder Personen, die einen Microsoft SQL Server oder Azure SQL Connector konfigurieren, ausführen und überwachen. Es wird erläutert, wie Sie die Connector-und connectorfunktionen, Einschränkungen und Techniken zur Problembehandlung konfigurieren. 
 
 ## <a name="install-a-data-gateway-required-for-on-premises-microsoft-sql-server-connector-only"></a>Installieren eines Datengateways (nur für lokalen Microsoft SQL Server-Connector erforderlich)
 Um auf Ihre drittanbieterdaten zugreifen zu können, müssen Sie ein Microsoft Power BI-Gateway installieren und konfigurieren. Weitere Informationen finden Sie unter [Install an on-premises Gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) .  
+
+## <a name="register-an-app"></a>Registrieren einer App
+Für Azure SQL Connector müssen Sie eine app in Azure Active Directory registrieren, damit die Microsoft-Such-App auf Daten für die Indizierung zugreifen kann. Weitere Informationen zum Registrieren einer App finden Sie in der Microsoft Graph-Dokumentation zum [Registrieren einer APP](https://docs.microsoft.com/graph/auth-register-app-v2). 
+
+Nachdem Sie die APP-Registrierung abgeschlossen und den APP-Namen, die Client-ID und die Mandanten-ID unterzeichnet haben, müssen Sie [einen neuen geheimen Client Schlüssel generieren](https://docs.microsoft.com/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret). Der geheime Client Schlüssel wird nur einmal angezeigt. Beachten Sie, dass & den geheimen Client Schlüssel sicher speichern. Verwenden Sie die Client-ID und den geheimen Client Schlüssel beim Konfigurieren einer neuen Verbindung in Microsoft Search. 
+
+Um die registrierte APP zu ihrer Azure SQL-Datenbank hinzuzufügen, müssen Sie Folgendes tun:
+ - Melden Sie sich bei ihrer Azure SQL DB an.
+ - Öffnen eines neuen Abfragefensters
+ - Erstellen Sie einen neuen Benutzer, indem Sie den Befehl ' Create User [App Name] from external Provider ' ausführen.
+ - Benutzer zur Rolle hinzufügen, indem Sie command ' exec sp_addrolemember ' db_datareader ', [App Name] ' oder ' Alter Role db_datareader Add Member [App Name] ' ausführen
+
+>[!NOTE]
+>Wenn Sie den Zugriff auf alle in Azure Active Directory registrierten apps widerrufen möchten, lesen Sie in der Azure-Dokumentation nach, wie Sie [eine registrierte App entfernen](https://docs.microsoft.com/azure/active-directory/develop/quickstart-remove-app).
 
 ## <a name="connect-to-a-data-source"></a>Herstellen einer Verbindung mit einer Datenquelle
 Um den Microsoft SQL Server-Connector mit einer Datenquelle zu verbinden, müssen Sie den Datenbankserver, den Sie durchforsten möchten, und das lokale Gateway konfigurieren. Sie können dann mit der erforderlichen Authentifizierungsmethode eine Verbindung mit der Datenbank herstellen.
@@ -59,7 +73,22 @@ Die Verwendung der einzelnen ACL-Spalten in der obigen Abfrage wird im folgenden
 * **DeniedUsers**: Dies gibt die Liste der Benutzer an, die **keinen** Zugriff auf die Suchergebnisse haben. Im folgenden Beispiel haben Benutzer John@contoso.com und Keith@contoso.com keinen Zugriff auf Record mit OrderID = 13, während alle anderen Zugriff auf diesen Datensatz haben. 
 * **DeniedGroups**: Hiermit wird die Gruppe von Benutzern angegeben, die **keinen** Zugriff auf die Suchergebnisse haben. Im folgenden Beispiel haben Gruppen Engg-Team@contoso.com und PM-Team@contoso.com keinen Zugriff auf Record mit OrderID = 15, während alle anderen Zugriff auf diesen Datensatz haben.  
 
-![](media/MSSQL-ACL1.png)
+![Beispieldaten, die die Sortier-und AclTable mit Beispiel Eigenschaften anzeigen](media/MSSQL-ACL1.png)
+
+### <a name="supported-data-types"></a>Unterstützte Datentypen
+In der folgenden Tabelle werden die SQL-Datentypen zusammengefasst, die in den MS SQL-und Azure SQL-Connectors unterstützt werden. Die Tabelle fasst auch den Indizierungs Datentyp für den unterstützten SQL-Datentyp zusammen. Weitere Informationen zu Microsoft Graph-Konnektoren, die unterstützte Datentypen für die Indizierung sind, finden Sie in der Dokumentation zu [Eigenschaften Ressourcentypen](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties). 
+
+| Kategorie | Source-Datentyp | Indizierungs Datentyp |
+| ------------ | ------------ | ------------ |
+| Datum und Uhrzeit | date <br> Datum/Uhrzeit <br> datetime2 <br> smalldatetime | Datum/Uhrzeit |
+| Exakt numerisch | bigint <br> int <br> smallint <br> tinyint | Int64 |
+| Exakt numerisch | Bit | Boolescher Wert |
+| Annähernd numerisch | Gleitkommazahl <br> Echtzeit | double |
+| Zeichenfolge | Char <br> varchar <br> text | string |
+| Unicode-Zeichenfolgen | NCHAR <br> nvarchar <br> ntext | string |
+| Andere Datentypen | uniqueidentifier | string |
+
+Für alle anderen Datentypen, die derzeit nicht direkt unterstützt werden, muss die Spalte explizit in einen unterstützten Datentyp umgewandelt werden.
 
 ### <a name="watermark-required"></a>Wasserzeichen (erforderlich)
 Um zu verhindern, dass die Datenbank überladen wird, führt der Connector Batches aus und setzt vollständige Durchforstungs Abfragen mit einer Wasserzeichen Spalte vollständig Durchforstung fort. Durch Verwendung des Werts der Spalte Wasserzeichen wird jeder nachfolgende Batch abgerufen, und die Abfrage wird vom letzten Prüfpunkt fortgesetzt. Im Wesentlichen handelt es sich hierbei um einen Mechanismus zum Steuern der Datenaktualisierung für vollständige Durchforstungen.
@@ -70,9 +99,9 @@ Erstellen Sie Abfrage Ausschnitte für Wasserzeichen, wie in den folgenden Beisp
 
 In der in der folgenden Abbildung gezeigten Konfiguration `CreatedDateTime` befindet sich die ausgewählte Wasserzeichen Spalte. Um den ersten Zeilenbatch abzurufen, geben Sie den Datentyp der Spalte Wasserzeichen an. In diesem Fall ist der Datentyp `DateTime` .
 
-![](media/MSSQL-watermark.png)
+![Konfiguration der Wasserzeichen Spalte](media/MSSQL-watermark.png)
 
-Die erste Abfrage ruft die erste **N** -Menge von Zeilen mithilfe von: "CreatedDateTime > January 1, 1753 00:00:00" (min-Wert des datetime-Datentyps) ab. Nachdem der erste Batch abgerufen wurde, wird der höchste `CreatedDateTime` im Batch zurückgegebene Wert als Prüfpunkt gespeichert, wenn die Zeilen in aufsteigender Reihenfolge sortiert werden. Ein Beispiel ist der 1. März 2019 03:00:00. Anschließend wird der nächste Batch von **N** Zeilen mithilfe von "CreatedDateTime > March 1, 2019 03:00:00" in der Abfrage abgerufen.
+Die erste Abfrage ruft die erste **N** -Anzahl von Zeilen mithilfe von: "CreatedDateTime > January 1, 1753 00:00:00" (min-Wert des datetime-Datentyps) ab. Nachdem der erste Batch abgerufen wurde, wird der höchste `CreatedDateTime` im Batch zurückgegebene Wert als Prüfpunkt gespeichert, wenn die Zeilen in aufsteigender Reihenfolge sortiert werden. Ein Beispiel ist der 1. März 2019 03:00:00. Anschließend wird der nächste Batch von **N** Zeilen mithilfe von "CreatedDateTime > March 1, 2019 03:00:00" in der Abfrage abgerufen.
 
 ### <a name="skipping-soft-deleted-rows-optional"></a>Überspringen von weich gelöschten Zeilen (optional)
 Um vorläufig gelöschte Zeilen in Ihrer Datenbank von der Indizierung auszuschließen, geben Sie den Namen und den Wert der Soft-Delete-Spalte an, der angibt, dass die Zeile gelöscht wird.
@@ -86,10 +115,10 @@ Für jede der ACL-Spalten wird eine mehrwertige Spalte erwartet. Diese mehrere I
  
 Die folgenden ID-Typen werden für die Verwendung als ACLs unterstützt: 
 * **Benutzerprinzipalname (UPN)**: ein Benutzerprinzipalname (UPN) ist der Name eines Systembenutzers in einem e-Mail-Adressformat. Ein UPN (zum Beispiel: John.Doe@Domain.com) besteht aus dem Benutzernamen (Anmeldename), dem Trennzeichen (dem @-Symbol) und dem Domänennamen (UPN-Suffix). 
-* **Azure Active Directory (AAD) ID**: in Aad hat jeder Benutzer oder jede Gruppe eine Objekt-ID, die so aussieht, als ob "e0d3ad3d-0000-1111-2222-3c5f5c52ab9b" 
-* **Active Directory (AD)-Sicherheits-ID**: in einem lokalen AD-Setup verfügt jeder Benutzer und jede Gruppe über eine unveränderliche, eindeutige Sicherheits-ID, die so ähnlich aussieht wie die-1-5-21-3878594291-2115959936-132693609-65242. "
+* **Azure Active Directory (AAD) ID**: in Azure AD hat jeder Benutzer oder jede Gruppe eine Objekt-ID, die so aussieht wie "e0d3ad3d-0000-1111-2222-3c5f5c52ab9b". 
+* **Active Directory (AD)-Sicherheits-ID**: in einer lokalen AD-Einrichtung haben jeder Benutzer und jede Gruppe eine unveränderliche, eindeutige Sicherheits-ID, die ungefähr so aussieht, wie es-1-5-21-3878594291-2115959936-132693609-65242. "
 
-![](media/MSSQL-ACL2.png)
+![Berechtigungseinstellungen für die Suche zum Konfigurieren von Zugriffssteuerungslisten](media/MSSQL-ACL2.png)
 
 ## <a name="incremental-crawl-optional"></a>Inkrementelle Durchforstung (optional)
 Geben Sie in diesem optionalen Schritt eine SQL-Abfrage ein, um einen inkrementellen Crawl der Datenbank auszuführen. Mit dieser Abfrage ermittelt der SQL Connector alle Änderungen an den Daten seit der letzten inkrementellen Durchforstung. Wählen Sie wie in der vollständigen Durchforstung alle Spalten aus, die **abgefragt**, **durchsuchbar**oder **abrufbar**gemacht werden sollen. Geben Sie dieselbe Gruppe von ACL-Spalten an, die Sie in der vollständigen Durchforstungs Abfrage angegeben haben.

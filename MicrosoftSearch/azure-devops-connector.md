@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten des Azure DevOps Connectors für Microsoft Search
-ms.openlocfilehash: e2698d7d4a50c15bf765aa4eeada20fbc7328772
-ms.sourcegitcommit: 7eda9b621def0659d7e7bc8b989f8adc929cce93
-ms.translationtype: Auto
+ms.openlocfilehash: 1030dd2b508e5364f53f92e7c8ce8c12c040ce70
+ms.sourcegitcommit: 85d40512e8616c851da1a38c137ca0e4e8625813
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44861103"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47359721"
 ---
 # <a name="azure-devops-connector"></a>Azure DevOps-Connector
 
@@ -44,7 +44,7 @@ In der folgenden Tabelle finden Sie Anleitungen zum Ausfüllen des App-Registrie
 | Anwendungsname     | Dieser eindeutige Wert identifiziert die Anwendung, die Sie zu autorisieren haben.    | Microsoft Search     |
 | Anwendungswebsite  | Dieses erforderliche Feld ist die URL der Anwendung, die während des Connector-Setups Zugriff auf Ihre Azure DevOps-Instanz anfordert.  | <https://gcs.office.com/>                |
 | Autorisierungs-Rückruf-URL        | Eine erforderliche Rückruf-URL, an die der autorisierungsserver umgeleitet wird. | <https://gcs.office.com/v1.0/admin/oauth/callback>|
-| Autorisierte Bereiche | Dies ist der Umfang des Zugriffs für die Anwendung. | Wählen Sie die folgenden Bereiche aus: Identity (lesen), Arbeitsaufgaben (lesen), Variablen Gruppen (lesen), Projekt und Team (lesen)|
+| Autorisierte Bereiche | Dies ist der Umfang des Zugriffs für die Anwendung. | Wählen Sie die folgenden Bereiche aus: Identity (lesen), Arbeitsaufgaben (lesen), Variablen Gruppen (lesen), Projekt und Team (lesen), Grafik (lesen)|
 
 Beim Registrieren der APP mit den obigen Details erhalten Sie die **App-ID** und den **geheimen Client Schlüssel** , die zum Konfigurieren des Connectors verwendet werden.
 

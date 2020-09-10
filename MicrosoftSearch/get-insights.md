@@ -13,20 +13,20 @@ search.appverid:
 - MOE150
 ms.assetid: ebce7fdc-e89b-473c-8131-67e659bb3f73
 description: Analysieren von Metriken und Verwalten von Inhalten aus dem Insights-Dashboard in der Microsoft-Suche
-ms.openlocfilehash: 230c1cdec9c1f6e94adf7123bc9a3ad048dee892
-ms.sourcegitcommit: 6b1c6a4e502d95b42a030a963f9452c387d8a5cd
+ms.openlocfilehash: a107be18900f1b68270e5afbeb0966eea04d656f
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2020
-ms.locfileid: "43571005"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422991"
 ---
 # <a name="microsoft-search-insights-dashboard-reports"></a>Microsoft Search Insights Dashboard-Berichte
 
 Sie können das Microsoft Search Insights-Dashboard verwenden, um [Bing](https://Bing.com) -Daten für Ihre veröffentlichten Antworten zu verwalten. Dies ist nur einer der Schritte, die erforderlich sind, um die [Suche nach Inhalten](make-content-easy-to-find.md) für Ihre Benutzer zu vereinfachen.
 
-Wenn Sie zum ersten Mal im Microsoft 365 [Admin Center](https://admin.microsoft.com)zu Microsoft Search wechseln, geben Sie das Einblicke-Dashboard ein.
+Wenn Sie zum ersten Mal im [Microsoft 365 Admin Center](https://admin.microsoft.com)zu Microsoft Search wechseln, geben Sie das Einblicke-Dashboard ein.
 
-![Insights-Dashboard. png](media/Insights-dashboard.png)
+![Insights-dashboard.png](media/Insights-dashboard.png)
 
 Die folgenden Berichte sind im Insights-Dashboard verfügbar.
 

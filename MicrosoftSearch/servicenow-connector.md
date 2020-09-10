@@ -1,8 +1,8 @@
 ---
 title: ServiceNow Connector für Microsoft Search
-ms.author: v-pamcn
-author: TrishaMc1
-manager: mnirkhe
+ms.author: monaray
+author: monaray97
+manager: jameslau
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten des ServiceNow Connectors für Microsoft Search
-ms.openlocfilehash: 75e07eb82dd63e95ce17a0506f96c853a7bcea2f
-ms.sourcegitcommit: 398b9847e3041732c32af9e6087d8e6c2e96c1cf
+ms.openlocfilehash: 29e8e490f114ce8537ddb973ed16ccb34f24f82f
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2019
-ms.locfileid: "39998566"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422865"
 ---
 # <a name="servicenow-connector"></a>ServiceNow-Connector
 
@@ -26,12 +26,14 @@ Mit dem ServiceNow-Connector kann Ihre Organisation Knowledge Base-Artikel indiz
 Dieser Artikel richtet sich an Microsoft 365-Administratoren oder Personen, die einen ServiceNow-Connector konfigurieren, ausführen und überwachen. Es wird erläutert, wie Sie die Connector-und connectorfunktionen, Einschränkungen und Techniken zur Problembehandlung konfigurieren.
 
 ## <a name="connect-to-a-data-source"></a>Herstellen einer Verbindung mit einer Datenquelle
+
 Zum Herstellen einer Verbindung mit ihren ServiceNow-Daten benötigen Sie die **ServiceNow-Instanz-URL**Ihrer Organisation, Anmeldeinformationen für dieses Konto sowie die Client-ID und den geheimen Client Schlüssel für die OAuth-Authentifizierung.  
 
-Die ServiceNow- **Instanz-URL** Ihrer Organisation sieht in der Regel wie **https://&lt;ihrer-Organisations-Domain>. Service-now.com**aus. Zusammen mit dieser URL benötigen Sie ein Konto zum Einrichten der Verbindung mit ServiceNow sowie dazu, dass Microsoft Search die Artikel aus ServiceNow regelmäßig basierend auf dem Aktualisierungszeitplan aktualisieren kann.
+Die ServiceNow- **Instanz-URL** Ihrer Organisation sieht in der Regel wie **https:// &lt; ihrer-Organisations-Domain>. Service-now.com**aus. Zusammen mit dieser URL benötigen Sie ein Konto zum Einrichten der Verbindung mit ServiceNow sowie dazu, dass Microsoft Search die Artikel aus ServiceNow regelmäßig basierend auf dem Aktualisierungszeitplan aktualisieren kann.
 
-Wählen Sie eine von zwei unterstützten Methoden aus, um Inhalte von ServiceNow zu authentifizieren und zu synchronisieren: 
-1. Standardauthentifizierung 
+Wählen Sie eine von zwei unterstützten Methoden aus, um Inhalte von ServiceNow zu authentifizieren und zu synchronisieren:
+
+1. Standardauthentifizierung
 2. OAuth (empfohlen)
 
 > [!Note]
@@ -50,16 +52,20 @@ Aktiv | Aktivieren Sie das Kontrollkästchen, um die Anwendungsregistrierung akt
 Lebensdauer des Aktualisierungs Tokens | Die Anzahl der Sekunden, die ein Aktualisierungstoken gültig ist. Standardmäßig laufen Aktualisierungstoken in 100 Tagen (8640000 Sekunden) ab. | 31.536.000 (1 Jahr)
 Lebensdauer des Zugriffstokens | Die Anzahl der Sekunden, die ein Zugriffstoken gültig ist. | 43.200 (12 Stunden)
 
-## <a name="set-a-sync-filter"></a>Festlegen eines Synchronisierungsfilters 
+## <a name="set-a-sync-filter"></a>Festlegen eines Synchronisierungsfilters
+
 Mit einem Synchronisierungsfilter können Sie Bedingungen für die Synchronisierung von Artikeln angeben. Es ist wie eine **Where** -Klausel in einer **SQL-SELECT** -Anweisung. Beispielsweise können Sie auswählen, nur veröffentlichte und aktive Artikel zu indizieren. Auf der SyncNow-Konfigurationsseite wird beschrieben, wie ein Synchronisierungsfilter erfasst und festgelegt wird.
 
 ## <a name="manage-the-search-schema"></a>Verwalten des Suchschemas
+
 Konfigurieren Sie nach erfolgreicher Verbindung die Suchschema Zuordnung. Sie können auswählen, welche Eigenschaften **abgefragt**, **durchsuchbar**und **abrufbar**gemacht werden sollen.
 
 ## <a name="manage-search-permissions"></a>Verwalten von Suchberechtigungen
+
 Der ServiceNow-Connector unterstützt nur Suchberechtigungen, die für **alle**sichtbar sind. Indizierte Daten werden in den Suchergebnissen angezeigt und sind für alle Benutzer in der Organisation sichtbar.
- 
-## <a name="set-the-refresh-schedule"></a>Festlegen des Aktualisierungszeitplans 
+
+## <a name="set-the-refresh-schedule"></a>Festlegen des Aktualisierungszeitplans
+
 Der ServiceNow-Connector unterstützt Aktualisierungs Zeitpläne für vollständige und inkrementelle Crawls. Es wird empfohlen, beides festzulegen.
 
 Ein vollständiger durchforstungszeitplan findet gelöschte Artikel, die zuvor mit dem Microsoft-Suchindex synchronisiert wurden, sowie alle Artikel, die aus dem Synchronisierungsfilter verschoben wurden. Wenn Sie zum ersten Mal eine Verbindung mit ServiceNow herstellen, wird eine vollständige Durchforstung ausgeführt, um alle Knowledge Base-Artikel zu synchronisieren. Sie müssen inkrementelle Crawls planen, um neue Elemente zu synchronisieren und Aktualisierungen vorzunehmen.

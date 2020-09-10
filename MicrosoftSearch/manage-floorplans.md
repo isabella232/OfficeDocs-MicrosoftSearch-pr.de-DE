@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Das Feature "Grundrisse" in der Microsoft-Suche hilft Benutzern, Personen, Büros und andere Annehmlichkeiten in einem Gebäude zu finden.
-ms.openlocfilehash: 95941e57946f49de3a0558dc2d2c59b999151b37
-ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
+ms.openlocfilehash: c1a3c30f98408a6d98f34c41f4132bcca0bd316e
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44996112"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422919"
 ---
 # <a name="manage-floor-plans"></a>Verwalten von Grundrissen
 
@@ -51,7 +51,7 @@ Weitere Informationen zum Anzeigen und Aktualisieren von DWG-Dateien finden Sie 
 
 Der Bürostandort eines Benutzers ist eine Kombination aus einem GEBÄUDECODE und einer raumbeschriftung. Wenn der GEBÄUDECODE beispielsweise *2* ist und die raumbeschriftung *1173*ist, lautet der Office-Standort *2/1173*.
 
-Hinzufügen oder Aktualisieren von Office-Speicherorten für jeden Benutzer in Ihrer Organisation. Sie können den Office-Standort im Benutzerprofil im Microsoft 365 [Admin Center](https://admin.microsoft.com) ändern, oder Sie können sich in Ihrer lokalen Active Directory ändern, um Sie in Azure Active Directory zu synchronisieren. *PhysicalDeliveryOfficeName* ist das Feld, das für Office-Standort verwendet wird. Wenn Ihre Raumbeschriftungen keine Boden Nummern enthalten, lesen Sie die FAQ für Tipps.
+Hinzufügen oder Aktualisieren von Office-Speicherorten für jeden Benutzer in Ihrer Organisation. Sie können den Office-Standort im Benutzerprofil im [Microsoft 365 Admin Center](https://admin.microsoft.com) ändern, oder Sie können sich in Ihrer lokalen Active Directory ändern, um Sie in Azure Active Directory zu synchronisieren. *PhysicalDeliveryOfficeName* ist das Feld, das für Office-Standort verwendet wird. Wenn Ihre Raumbeschriftungen keine Boden Nummern enthalten, lesen Sie die FAQ für Tipps.
 
 In diesem Beispiel befindet sich Allans Büro in Raum 1173 auf der ersten Etage des Gebäudes 2.
 ![floorplans-userlestview.png](media/floorplans-userlistview.png)
@@ -67,7 +67,7 @@ Verwenden Sie die **Microsoft-Suche** , um nach einem Benutzer zu suchen und zu 
 
 ### <a name="step-5-add-building-locations"></a>Schritt 5: Hinzufügen von Erstellungs Standorten
 
-In den Grundrissen werden [Standorte](manage-locations.md) verwendet, um ihre Gebäude zu definieren. Wechseln Sie im Microsoft 365 [Admin Center](https://admin.microsoft.com)zu **Einstellungen**  >  **Microsoft Search**  >  **Answers**-  >  [**Speicherorte**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations), und wählen Sie dann **Hinzufügen**aus. Geben Sie den Namen, die Adresse und die Schlüsselwörter für das Gebäude ein. Fügen Sie so viele Gebäude hinzu, wie Sie benötigen.
+In den Grundrissen werden [Standorte](manage-locations.md) verwendet, um ihre Gebäude zu definieren. Wechseln Sie im [Microsoft 365 Admin Center](https://admin.microsoft.com)zu [**Standorte**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations), und wählen Sie dann **Hinzufügen**aus. Geben Sie den Namen, die Adresse und die Schlüsselwörter für das Gebäude ein. Fügen Sie so viele Gebäude hinzu, wie Sie benötigen.
 
 ![floorplans-locations.png](media/floorplans-locations.png)
 
@@ -77,13 +77,13 @@ Weitere Informationen zu Speicherorten finden Sie unter [Verwalten von Speichero
 
 Bevor Sie Grundrisse verwenden können, müssen die Office-Standorte indiziert werden. Hierbei handelt es sich um einen einmaligen Vorgang, der bis zu 48 Stunden dauern kann. Die Gesamtzeit hängt von der Größe Ihrer Organisation ab.
 
-Wechseln Sie in [Admin Center](https://admin.microsoft.com)zu **Einstellungen**  >  **Microsoft Search**  >  **Answers**  >  [**Floor Plans**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans), und wählen Sie dann **Erste Schritte**aus. Wenn dieser Hinweis nicht angezeigt wird, wurde dieser Schritt bereits für Ihre Organisation abgeschlossen.
+Wechseln Sie in [Admin Center](https://admin.microsoft.com)zu [**Grundrisse**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans), und wählen Sie dann **Erste Schritte**aus. Wenn dieser Hinweis nicht angezeigt wird, wurde dieser Schritt bereits für Ihre Organisation abgeschlossen.
 
 ![floorplans_hydrationstep.png](media/floorplans_hydrationstep.png)
 
 ### <a name="step-7-upload-floor-plans"></a>Schritt 7: Hochladen von Grundrissen
 
-1. Wechseln Sie im [Admin Center](https://admin.microsoft.com)zu **Einstellungen**  >  **Microsoft Search**  >  **Answers**  >  [**Floor Plans**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans).
+1. Wechseln Sie im [Admin Center](https://admin.microsoft.com)zu [**Grundrisse**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans).
 2. Wählen Sie in der Dropdownliste ein Gebäude aus, und wählen Sie **weiter**aus. Wenn das Gebäude nicht aufgeführt ist, gehen Sie zurück und [fügen Sie Gebäudestandorte hinzu](#step-5-add-building-locations).
 3. Wählen Sie **Dateien hochladen**aus, und wählen Sie dann den Grundriss aus, den Sie hochladen möchten.
 4. Wenn der Upload abgeschlossen ist, müssen Sie die in der Grundriss Datei dargestellte Boden Nummer eingeben. Wählen Sie dann **Weiter** aus.
@@ -115,14 +115,14 @@ Zum Aktualisieren eines vorhandenen Grundrisses wählen Sie den Grundriss aus, d
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
-|**Schritt**|**Fehlermeldung**|**Typ**|**Action**|
+|**Schritt**|**Fehlermeldung**|**Type**|**Aktion**|
 |:-----|:-----|:-----|:-----|
-|Hochladen von Grundrissen|CC_1. DWG kann nicht gelesen werden. Laden Sie den Grundriss erneut hoch oder löschen Sie ihn.|Error|Versuchen Sie erneut, die Datei hochzuladen. Wenn dies nicht funktioniert, löschen Sie die Datei, und versuchen Sie es erneut.|
-|Hochladen von Grundrissen|Es gibt zwei Dateien mit dem Namen CC_1. dwg. Löschen Sie eine dieser oder laden Sie Sie mit einem anderen Namen erneut hoch.|Error|Wenn der Dateiname falsch ist, machen Sie den Dateinamen durch Hinzufügen von Floor-oder Wing-Informationen eindeutig, und laden Sie die Datei erneut hoch. Wenn Sie versehentlich dieselbe Datei zweimal hinzugefügt haben, löschen Sie Sie einfach.|
-|Hochladen von Grundrissen|Keine Daten gefunden.|Error|Überprüfen Sie Ihre Datei, um sicherzustellen, dass Sie richtig ist, und laden Sie Sie dann erneut hoch, oder löschen Sie Sie.|
+|Hochladen von Grundrissen|CC_1. DWG kann nicht gelesen werden. Laden Sie den Grundriss erneut hoch oder löschen Sie ihn.|Fehler|Versuchen Sie erneut, die Datei hochzuladen. Wenn dies nicht funktioniert, löschen Sie die Datei, und versuchen Sie es erneut.|
+|Hochladen von Grundrissen|Es gibt zwei Dateien mit dem Namen CC_1. dwg. Löschen Sie eine dieser oder laden Sie Sie mit einem anderen Namen erneut hoch.|Fehler|Wenn der Dateiname falsch ist, machen Sie den Dateinamen durch Hinzufügen von Floor-oder Wing-Informationen eindeutig, und laden Sie die Datei erneut hoch. Wenn Sie versehentlich dieselbe Datei zweimal hinzugefügt haben, löschen Sie Sie einfach.|
+|Hochladen von Grundrissen|Keine Daten gefunden.|Fehler|Überprüfen Sie Ihre Datei, um sicherzustellen, dass Sie richtig ist, und laden Sie Sie dann erneut hoch, oder löschen Sie Sie.|
 |Hochladen von Grundrissen|In dieser Datei fehlen externe Verweise. Laden Sie CC_1_furniture. DWG entweder hoch, oder löschen Sie diese Datei.|Warnung|Externe Referenzdateien hochladen oder löschen.|
 |Hochladen von Grundrissen|In der DWG-Datei konnten keine Raumnummern oder Tags gelesen werden. Löschen Sie diese Datei.|Warnung|Überprüfen Sie Ihre DWG-Datei, um sicherzustellen, dass die Daten enthalten sind, und löschen Sie die Datei, und versuchen Sie es erneut.|
-|Verknüpfen von Office-Standorten|Keine Office-Speicherorte in Azure Active Directory gefunden. Hinzufügen von Standortdaten zu Azure Active Directory vor dem Einrichten von Grundrissen.|Error|[Aktualisieren von Office-Speicherorten in Benutzerprofilen](#step-3-update-office-locations-on-user-profiles) |
+|Verknüpfen von Office-Standorten|Keine Office-Speicherorte in Azure Active Directory gefunden. Hinzufügen von Standortdaten zu Azure Active Directory vor dem Einrichten von Grundrissen.|Fehler|[Aktualisieren von Office-Speicherorten in Benutzerprofilen](#step-3-update-office-locations-on-user-profiles) |
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
@@ -148,17 +148,17 @@ Zum Aktualisieren eines vorhandenen Grundrisses wählen Sie den Grundriss aus, d
 <!-- markdownlint-disable no-inline-html -->
 |Raum Beschriftungstypen|Untergrenze|Raum|Beispieltext Bezeichnung|Office-Standort (GEBÄUDECODE/Textbezeichnung)|
 |:-----|:-----|:-----|:-----|:-----|
-|Verfügt über eine Boden-und Raumnummer|1 |173|1173|2/1173|
+|Verfügt über eine Boden-und Raumnummer|1|173|1173|2/1173|
 || 21|45|21045|2/21045|
 ||23|100K|23-100K|2/23-100K|
-||1 |G06-07|1G06-07|2/1G06-07|
-||2 |1024A|02.1024|2/02.1024 a|
-||2 |1024A|02.1024|2/02.1024 a|
-||2 |105,01|2105,01|2/2105.01|
+||1|G06-07|1G06-07|2/1G06-07|
+||2|1024A|02.1024|2/02.1024 a|
+||2|1024A|02.1024|2/02.1024 a|
+||2|105,01|2105,01|2/2105.01|
 |Verfügt über GEBÄUDECODE, Boden und Raumnummer|0|X-11-M-12|2-0-X-11-M-12|2/2 -0-X-11-M-12<br/>2-0-X-11-M-12|
-||2 |128A|22128A|2/22128A<br/>22128A|
-||1 |B2-11|21-B2-11|2/21-B2-11<br/>21-B2-11|
-||2 |45|SC2045|SC/SC2045<br/>SC2045|
+||2|128A|22128A|2/22128A<br/>22128A|
+||1|B2-11|21-B2-11|2/21-B2-11<br/>21-B2-11|
+||2|45|SC2045|SC/SC2045<br/>SC2045|
 
 **Q:** Kann ich eine DWG-Datei verwenden, die keine Boden Nummern enthält?
 

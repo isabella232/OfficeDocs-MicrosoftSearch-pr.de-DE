@@ -1,7 +1,7 @@
 ---
 title: Microsoft SQL Server und Azure SQL Connector für Microsoft Search
-ms.author: mounika.narayanan
-author: monaray
+ms.author: monaray
+author: monaray97
 manager: mnirkhe
 ms.audience: Admin
 ms.topic: article
@@ -12,37 +12,41 @@ search.appverid:
 - MET150
 - MOE150
 description: Richten Sie den Microsoft SQL Server oder Azure SQL Connector für Microsoft Search ein.
-ms.openlocfilehash: 55c2e86697d2159bf93bc950c47a37630739dba9
-ms.sourcegitcommit: dd082bf862414604e32d1a768e7c155c2d757f51
+ms.openlocfilehash: e67b1e6175744fd741b265c056798f18dc28b1d4
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46657013"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422910"
 ---
 # <a name="azure-sql-and-microsoft-sql-server-connectors"></a>Azure SQL-und Microsoft SQL Server-Connectors
 
 Mit einem Microsoft SQL Server oder Azure SQL Connector kann Ihre Organisation Daten aus einer lokalen SQL Server Datenbank oder einer Datenbank, die in ihrer Azure SQL-Instanz in der Cloud gehostet wird, ermitteln und indizieren. Der Connector indiziert angegebene Inhalte in Microsoft Search. Um den Index mit den Quelldaten auf dem neuesten Stand zu halten, unterstützt er periodische vollständige und inkrementelle Crawls. Mit diesen SQL-Connectors können Sie auch den Zugriff auf Suchergebnisse für bestimmte Benutzer einschränken.
 
-Dieser Artikel richtet sich an Microsoft 365-Administratoren oder Personen, die einen Microsoft SQL Server oder Azure SQL Connector konfigurieren, ausführen und überwachen. Es wird erläutert, wie Sie die Connector-und connectorfunktionen, Einschränkungen und Techniken zur Problembehandlung konfigurieren. 
+Dieser Artikel richtet sich an Microsoft 365-Administratoren oder Personen, die einen Microsoft SQL Server oder Azure SQL Connector konfigurieren, ausführen und überwachen. Es wird erläutert, wie Sie die Connector-und connectorfunktionen, Einschränkungen und Techniken zur Problembehandlung konfigurieren.
 
 ## <a name="install-a-data-gateway-required-for-on-premises-microsoft-sql-server-connector-only"></a>Installieren eines Datengateways (nur für lokalen Microsoft SQL Server-Connector erforderlich)
+
 Um auf Ihre drittanbieterdaten zugreifen zu können, müssen Sie ein Microsoft Power BI-Gateway installieren und konfigurieren. Weitere Informationen finden Sie unter [Install an on-premises Gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) .  
 
 ## <a name="register-an-app"></a>Registrieren einer App
-Für Azure SQL Connector müssen Sie eine app in Azure Active Directory registrieren, damit die Microsoft-Such-App auf Daten für die Indizierung zugreifen kann. Weitere Informationen zum Registrieren einer App finden Sie in der Microsoft Graph-Dokumentation zum [Registrieren einer APP](https://docs.microsoft.com/graph/auth-register-app-v2). 
 
-Nachdem Sie die APP-Registrierung abgeschlossen und den APP-Namen, die Client-ID und die Mandanten-ID unterzeichnet haben, müssen Sie [einen neuen geheimen Client Schlüssel generieren](https://docs.microsoft.com/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret). Der geheime Client Schlüssel wird nur einmal angezeigt. Beachten Sie, dass & den geheimen Client Schlüssel sicher speichern. Verwenden Sie die Client-ID und den geheimen Client Schlüssel beim Konfigurieren einer neuen Verbindung in Microsoft Search. 
+Für Azure SQL Connector müssen Sie eine app in Azure Active Directory registrieren, damit die Microsoft-Such-App auf Daten für die Indizierung zugreifen kann. Weitere Informationen zum Registrieren einer App finden Sie in der Microsoft Graph-Dokumentation zum [Registrieren einer APP](https://docs.microsoft.com/graph/auth-register-app-v2).
+
+Nachdem Sie die APP-Registrierung abgeschlossen und den APP-Namen, die Client-ID und die Mandanten-ID unterzeichnet haben, müssen Sie [einen neuen geheimen Client Schlüssel generieren](https://docs.microsoft.com/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret). Der geheime Client Schlüssel wird nur einmal angezeigt. Beachten Sie, dass & den geheimen Client Schlüssel sicher speichern. Verwenden Sie die Client-ID und den geheimen Client Schlüssel beim Konfigurieren einer neuen Verbindung in Microsoft Search.
 
 Um die registrierte APP zu ihrer Azure SQL-Datenbank hinzuzufügen, müssen Sie Folgendes tun:
- - Melden Sie sich bei ihrer Azure SQL DB an.
- - Öffnen eines neuen Abfragefensters
- - Erstellen Sie einen neuen Benutzer, indem Sie den Befehl ' Create User [App Name] from external Provider ' ausführen.
- - Benutzer zur Rolle hinzufügen, indem Sie command ' exec sp_addrolemember ' db_datareader ', [App Name] ' oder ' Alter Role db_datareader Add Member [App Name] ' ausführen
+
+- Melden Sie sich bei ihrer Azure SQL DB an.
+- Öffnen eines neuen Abfragefensters
+- Erstellen Sie einen neuen Benutzer, indem Sie den Befehl ' Create User [App Name] from external Provider ' ausführen.
+- Benutzer zur Rolle hinzufügen, indem Sie command ' exec sp_addrolemember ' db_datareader ', [App Name] ' oder ' Alter Role db_datareader Add Member [App Name] ' ausführen
 
 >[!NOTE]
 >Wenn Sie den Zugriff auf alle in Azure Active Directory registrierten apps widerrufen möchten, lesen Sie in der Azure-Dokumentation nach, wie Sie [eine registrierte App entfernen](https://docs.microsoft.com/azure/active-directory/develop/quickstart-remove-app).
 
 ## <a name="connect-to-a-data-source"></a>Herstellen einer Verbindung mit einer Datenquelle
+
 Um den Microsoft SQL Server-Connector mit einer Datenquelle zu verbinden, müssen Sie den Datenbankserver, den Sie durchforsten möchten, und das lokale Gateway konfigurieren. Sie können dann mit der erforderlichen Authentifizierungsmethode eine Verbindung mit der Datenbank herstellen.
 
 Für den Azure SQL Connector müssen Sie nur den Servernamen oder die IP-Adresse angeben, mit der Sie eine Verbindung herstellen möchten. Azure SQL Connector unterstützt nur Azure Active Directory Open ID Connect (OIDC)-Authentifizierung, um eine Verbindung mit der Datenbank herzustellen.
@@ -53,6 +57,7 @@ Für den Azure SQL Connector müssen Sie nur den Servernamen oder die IP-Adresse
 Zum Durchsuchen des Datenbankinhalts müssen Sie beim Konfigurieren des Connectors SQL-Abfragen angeben. Diese SQL-Abfragen müssen alle Datenbankspalten benennen, die Sie indizieren möchten (also Quelleigenschaften), einschließlich aller SQL-Joins, die ausgeführt werden müssen, um alle Spalten abzurufen. Wenn Sie den Zugriff auf Suchergebnisse einschränken möchten, müssen Sie Zugriffssteuerungslisten (Access Control Lists, ACLs) in SQL-Abfragen angeben, wenn Sie den Connector konfigurieren.
 
 ## <a name="full-crawl-required"></a>Vollständige Durchforstung (erforderlich)
+
 In diesem Schritt konfigurieren Sie die SQL-Abfrage, die eine vollständige Durchforstung der Datenbank ausführt. Bei der vollständigen Durchforstung werden alle Spalten oder Eigenschaften ausgewählt, die **abgefragt**, **durchsuchbar**oder **abrufbar**gemacht werden sollen. Sie können auch ACL-Spalten angeben, um den Zugriff auf Suchergebnisse auf bestimmte Benutzer oder Gruppen zu beschränken.
 
 > [!Tip]
@@ -61,23 +66,26 @@ In diesem Schritt konfigurieren Sie die SQL-Abfrage, die eine vollständige Durc
 ![Skript, das die Sortier-und AclTable mit Beispiel Eigenschaften zeigt](media/MSSQL-fullcrawl.png)
 
 ### <a name="select-data-columns-required-and-acl-columns-optional"></a>Auswählen von Datenspalten (erforderlich) und ACL-Spalten (optional)
+
 Im Beispiel wird die Auswahl von fünf Datenspalten veranschaulicht, die die Daten für die Suche enthalten: OrderID, OrderTitle, OrderDesc, CreatedDateTime und IsDeleted. Um die Ansichtsberechtigungen für jede Datenzeile festzulegen, können Sie optional diese ACL-Spalten auswählen: AllowedUsers, AllowedGroups, DeniedUsers und DeniedGroups. Alle diese Datenspalten können **abgefragt**, **durchsuchbar**oder **abrufbar**gemacht werden.
 
-Wählen Sie Datenspalten aus, wie in der folgenden Beispielabfrage gezeigt:`SELECT OrderId, OrderTitle, OrderDesc, AllowedUsers, AllowedGroups, DeniedUsers, DeniedGroups, CreatedDateTime, IsDeleted`
- 
+Wählen Sie Datenspalten aus, wie in der folgenden Beispielabfrage gezeigt: `SELECT OrderId, OrderTitle, OrderDesc, AllowedUsers, AllowedGroups, DeniedUsers, DeniedGroups, CreatedDateTime, IsDeleted`
+
 Um den Zugriff auf die Suchergebnisse zu verwalten, können Sie eine oder mehrere ACL-Spalten in der Abfrage angeben. Mit SQL Connector können Sie den Zugriff auf Datensatzebene steuern. Sie können auswählen, dass für alle Datensätze in einer Tabelle dieselbe Zugriffssteuerung gilt. Wenn die ACL-Informationen in einer separaten Tabelle gespeichert werden, müssen Sie möglicherweise eine Verknüpfung mit diesen Tabellen in Ihrer Abfrage durchführen.
 
-Die Verwendung der einzelnen ACL-Spalten in der obigen Abfrage wird im folgenden beschrieben. In der folgenden Liste werden die vier **Zugriffssteuerungsmechanismen**erläutert. 
-* **AllowedUsers**: Hiermit wird die Liste der Benutzer-IDs angegeben, die auf die Suchergebnisse zugreifen können. Im folgenden Beispiel würde die Liste der Benutzer: John@contoso.com, Keith@contoso.com und Lisa@contoso.com nur Zugriff auf einen Datensatz mit OrderID = 12 haben. 
+Die Verwendung der einzelnen ACL-Spalten in der obigen Abfrage wird im folgenden beschrieben. In der folgenden Liste werden die vier **Zugriffssteuerungsmechanismen**erläutert.
+
+* **AllowedUsers**: Hiermit wird die Liste der Benutzer-IDs angegeben, die auf die Suchergebnisse zugreifen können. Im folgenden Beispiel würde die Liste der Benutzer: John@contoso.com, Keith@contoso.com und Lisa@contoso.com nur Zugriff auf einen Datensatz mit OrderID = 12 haben.
 * **AllowedGroups**: Hiermit wird die Benutzergruppe angegeben, die auf die Suchergebnisse zugreifen kann. Im folgenden Beispiel hätte Group Sales-Team@contoso.com nur Zugriff auf Record mit OrderID = 12.
-* **DeniedUsers**: Dies gibt die Liste der Benutzer an, die **keinen** Zugriff auf die Suchergebnisse haben. Im folgenden Beispiel haben Benutzer John@contoso.com und Keith@contoso.com keinen Zugriff auf Record mit OrderID = 13, während alle anderen Zugriff auf diesen Datensatz haben. 
+* **DeniedUsers**: Dies gibt die Liste der Benutzer an, die **keinen** Zugriff auf die Suchergebnisse haben. Im folgenden Beispiel haben Benutzer John@contoso.com und Keith@contoso.com keinen Zugriff auf Record mit OrderID = 13, während alle anderen Zugriff auf diesen Datensatz haben.
 * **DeniedGroups**: Hiermit wird die Gruppe von Benutzern angegeben, die **keinen** Zugriff auf die Suchergebnisse haben. Im folgenden Beispiel haben Gruppen Engg-Team@contoso.com und PM-Team@contoso.com keinen Zugriff auf Record mit OrderID = 15, während alle anderen Zugriff auf diesen Datensatz haben.  
 
 ![Beispieldaten, die die Sortier-und AclTable mit Beispiel Eigenschaften anzeigen](media/MSSQL-ACL1.png)
 
 ### <a name="supported-data-types"></a>Unterstützte Datentypen
-In der folgenden Tabelle werden die SQL-Datentypen zusammengefasst, die in den MS SQL-und Azure SQL-Connectors unterstützt werden. Die Tabelle fasst auch den Indizierungs Datentyp für den unterstützten SQL-Datentyp zusammen. Weitere Informationen zu Microsoft Graph-Konnektoren, die unterstützte Datentypen für die Indizierung sind, finden Sie in der Dokumentation zu [Eigenschaften Ressourcentypen](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties). 
 
+In der folgenden Tabelle werden die SQL-Datentypen zusammengefasst, die in den MS SQL-und Azure SQL-Connectors unterstützt werden. Die Tabelle fasst auch den Indizierungs Datentyp für den unterstützten SQL-Datentyp zusammen. Weitere Informationen zu Microsoft Graph-Konnektoren, die unterstützte Datentypen für die Indizierung sind, finden Sie in der Dokumentation zu [Eigenschaften Ressourcentypen](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties).
+<!-- markdownlint-disable no-inline-html -->
 | Kategorie | Source-Datentyp | Indizierungs Datentyp |
 | ------------ | ------------ | ------------ |
 | Datum und Uhrzeit | date <br> Datum/Uhrzeit <br> datetime2 <br> smalldatetime | Datum/Uhrzeit |
@@ -85,15 +93,17 @@ In der folgenden Tabelle werden die SQL-Datentypen zusammengefasst, die in den M
 | Exakt numerisch | Bit | Boolescher Wert |
 | Annähernd numerisch | Gleitkommazahl <br> Echtzeit | double |
 | Zeichenfolge | Char <br> varchar <br> text | string |
-| Unicode-Zeichenfolgen | NCHAR <br> nvarchar <br> ntext | string |
-| Andere Datentypen | uniqueidentifier | string |
+| Unicode-Zeichenfolgen | NCHAR <br> nvarchar <br> ntext | Zeichenfolge |
+| Andere Datentypen | uniqueidentifier | Zeichenfolge |
 
 Für alle anderen Datentypen, die derzeit nicht direkt unterstützt werden, muss die Spalte explizit in einen unterstützten Datentyp umgewandelt werden.
 
 ### <a name="watermark-required"></a>Wasserzeichen (erforderlich)
+
 Um zu verhindern, dass die Datenbank überladen wird, führt der Connector Batches aus und setzt vollständige Durchforstungs Abfragen mit einer Wasserzeichen Spalte vollständig Durchforstung fort. Durch Verwendung des Werts der Spalte Wasserzeichen wird jeder nachfolgende Batch abgerufen, und die Abfrage wird vom letzten Prüfpunkt fortgesetzt. Im Wesentlichen handelt es sich hierbei um einen Mechanismus zum Steuern der Datenaktualisierung für vollständige Durchforstungen.
 
 Erstellen Sie Abfrage Ausschnitte für Wasserzeichen, wie in den folgenden Beispielen gezeigt:
+
 * `WHERE (CreatedDateTime > @watermark)`. Zitieren Sie den Namen der Wasserzeichen Spalte mit dem reservierten Schlüsselwort `@watermark` . Wenn die Sortierreihenfolge der Wasserzeichen Spalte aufsteigend ist, verwenden Sie `>` ; andernfalls verwenden Sie `<` .
 * `ORDER BY CreatedDateTime ASC`. Sortieren Sie in aufsteigender oder absteigender Reihenfolge nach der Wasserzeichen Spalte.
 
@@ -104,34 +114,41 @@ In der in der folgenden Abbildung gezeigten Konfiguration `CreatedDateTime` befi
 Die erste Abfrage ruft die erste **N** -Anzahl von Zeilen mithilfe von: "CreatedDateTime > January 1, 1753 00:00:00" (min-Wert des datetime-Datentyps) ab. Nachdem der erste Batch abgerufen wurde, wird der höchste `CreatedDateTime` im Batch zurückgegebene Wert als Prüfpunkt gespeichert, wenn die Zeilen in aufsteigender Reihenfolge sortiert werden. Ein Beispiel ist der 1. März 2019 03:00:00. Anschließend wird der nächste Batch von **N** Zeilen mithilfe von "CreatedDateTime > March 1, 2019 03:00:00" in der Abfrage abgerufen.
 
 ### <a name="skipping-soft-deleted-rows-optional"></a>Überspringen von weich gelöschten Zeilen (optional)
+
 Um vorläufig gelöschte Zeilen in Ihrer Datenbank von der Indizierung auszuschließen, geben Sie den Namen und den Wert der Soft-Delete-Spalte an, der angibt, dass die Zeile gelöscht wird.
 
 ![Einstellungen für "weiche Löschung": "weiche Löschspalte" und "Wert der Spalte" weiche Löschung ", die eine gelöschte Zeile angibt.](media/MSSQL-softdelete.png)
 
 ### <a name="full-crawl-manage-search-permissions"></a>Vollständige Durchforstung: Verwalten von Suchberechtigungen
-Klicken Sie auf **Berechtigungen verwalten** , um die verschiedenen Spalten der Zugriffssteuerung (ACL) auszuwählen, die den Zugriffssteuerungsmechanismus angeben. Wählen Sie den Spaltennamen aus, den Sie in der vollständigen Durchforstungs-SQL-Abfrage angegeben haben. 
+
+Klicken Sie auf **Berechtigungen verwalten** , um die verschiedenen Spalten der Zugriffssteuerung (ACL) auszuwählen, die den Zugriffssteuerungsmechanismus angeben. Wählen Sie den Spaltennamen aus, den Sie in der vollständigen Durchforstungs-SQL-Abfrage angegeben haben.
 
 Für jede der ACL-Spalten wird eine mehrwertige Spalte erwartet. Diese mehrere ID-Werte können durch Trennzeichen wie Semikolon (;), Komma (,) usw. getrennt werden. Sie müssen dieses Trennzeichen im Feld **Wert Trennzeichen** angeben.
- 
-Die folgenden ID-Typen werden für die Verwendung als ACLs unterstützt: 
+
+Die folgenden ID-Typen werden für die Verwendung als ACLs unterstützt:
+
 * **Benutzerprinzipalname (UPN)**: ein Benutzerprinzipalname (UPN) ist der Name eines Systembenutzers in einem e-Mail-Adressformat. Ein UPN (zum Beispiel: John.Doe@Domain.com) besteht aus dem Benutzernamen (Anmeldename), dem Trennzeichen (dem @-Symbol) und dem Domänennamen (UPN-Suffix). 
-* **Azure Active Directory (AAD) ID**: in Azure AD hat jeder Benutzer oder jede Gruppe eine Objekt-ID, die so aussieht wie "e0d3ad3d-0000-1111-2222-3c5f5c52ab9b". 
+* **Azure Active Directory (AAD) ID**: in Azure AD hat jeder Benutzer oder jede Gruppe eine Objekt-ID, die so aussieht wie "e0d3ad3d-0000-1111-2222-3c5f5c52ab9b".
 * **Active Directory (AD)-Sicherheits-ID**: in einer lokalen AD-Einrichtung haben jeder Benutzer und jede Gruppe eine unveränderliche, eindeutige Sicherheits-ID, die ungefähr so aussieht, wie es-1-5-21-3878594291-2115959936-132693609-65242. "
 
 ![Berechtigungseinstellungen für die Suche zum Konfigurieren von Zugriffssteuerungslisten](media/MSSQL-ACL2.png)
 
 ## <a name="incremental-crawl-optional"></a>Inkrementelle Durchforstung (optional)
+
 Geben Sie in diesem optionalen Schritt eine SQL-Abfrage ein, um einen inkrementellen Crawl der Datenbank auszuführen. Mit dieser Abfrage ermittelt der SQL Connector alle Änderungen an den Daten seit der letzten inkrementellen Durchforstung. Wählen Sie wie in der vollständigen Durchforstung alle Spalten aus, die **abgefragt**, **durchsuchbar**oder **abrufbar**gemacht werden sollen. Geben Sie dieselbe Gruppe von ACL-Spalten an, die Sie in der vollständigen Durchforstungs Abfrage angegeben haben.
 
 Die Komponenten in der folgenden Abbildung ähneln den vollständigen Durchforstungskomponenten mit einer Ausnahme. In diesem Fall ist "ModifiedDateTime" die ausgewählte Wasserzeichen Spalte. Lesen Sie die [vollständigen Crawl Schritte](#full-crawl-required) , um zu erfahren, wie Sie Ihre inkrementelle Durchforstungs Abfrage schreiben und das folgende Bild als Beispiel betrachten.
 
 ![Inkrementelles Durchforstungs Skript mit Sortier-, AclTable-und Beispiel Eigenschaften, die verwendet werden können.](media/MSSQL-incrcrawl.png)
 
-## <a name="manage-search-permissions"></a>Verwalten von Suchberechtigungen 
+## <a name="manage-search-permissions"></a>Verwalten von Suchberechtigungen
+
 Sie können die [im vollständigen Durchforstungs Bildschirm angegebenen ACLs](#full-crawl-manage-search-permissions) verwenden, oder Sie können Sie außer Kraft setzen, damit Ihre Inhalte für alle sichtbar sind.
 
 ## <a name="limitations"></a>Einschränkungen
+
 Die SQL-Connectors weisen diese Einschränkungen in der Vorschauversion auf:
+
 * Microsoft SQL Server Connector: die lokale Datenbank muss SQL Server, Version 2008 oder höher, ausführen.
-* ACLs werden nur mit einem Benutzerprinzipalnamen (User Principal Name, UPN), Azure Active Directory (Azure AD) oder Active Directory Sicherheit unterstützt. 
+* ACLs werden nur mit einem Benutzerprinzipalnamen (User Principal Name, UPN), Azure Active Directory (Azure AD) oder Active Directory Sicherheit unterstützt.
 * Das Indizieren von umfangreichen Inhalten in Datenbankspalten wird nicht unterstützt. Beispiele für solche Inhalte sind HTML-, JSON-, XML-, BLOBs-und Dokumentanalysen, die als Links in den Datenbankspalten vorhanden sind.

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erhalten Sie Antworten auf häufig gestellte Fragen zur Unternehmenssuche und zu Microsoft Search
-ms.openlocfilehash: 1acf4b5c4b3e771072ea67f4d807454723352c3f
-ms.sourcegitcommit: c22e8c3dcc53857da677db98a1a2b7d5ca2c6170
+ms.openlocfilehash: c4b0d888e7765cf965832c252a79bdcf8aa5f6cf
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41721759"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422964"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 # <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
@@ -31,7 +31,7 @@ Nachfolgend finden Sie eine Liste der am häufigsten gestellten Fragen.
 
 Ja, die Microsoft-Suche analysiert Abfrage Absicht aus größeren Ausdrücken. Dieses Feature verwendet AI, um allgemeine überflüssige Ausdrücke zu erfahren, die Benutzer zu Ihren Abfragen hinzufügen, die sich nicht auf die suchabsicht auswirken. Wenn ein Benutzer beispielsweise nach " *Weitere Informationen" zum Ändern des Kennworts*sucht, extrahieren wir die weniger wichtigen Wörter aus der Abfrage und dem Auslöser basierend auf den entsprechenden wie das *Kennwort ändern*.
   
-Dieses Feature überschreibt keine Stichwörter, die im Microsoft 365 [Admin Center](https://admin.microsoft.com)festgelegt sind.
+Dieses Feature überschreibt keine Stichwörter, die im [Microsoft 365 Admin Center](https://admin.microsoft.com)festgelegt sind.
   
 ## <a name="can-you-search-for-files-on-premises"></a>Können Sie nach lokalen Dateien suchen?
 

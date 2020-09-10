@@ -1,7 +1,7 @@
 ---
 title: Verwalten von Microsoft Graph-Connectors für Microsoft Search
-ms.author: mounika.narayanan
-author: monaray
+ms.author: monaray
+author: monaray97
 manager: mnirkhe
 ms.audience: Admin
 ms.topic: article
@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Verwalten von Microsoft Graph-Connectors für Microsoft Search.
-ms.openlocfilehash: adf98bccab703e2ae5ecd99b059e1426a50609c5
-ms.sourcegitcommit: 89484fec9af755240d5d1bc399501d51ee40571d
+ms.openlocfilehash: f836d3efc6e52028f2b38c5131fa369f1c9e630f
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46563897"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422937"
 ---
+<!-- markdownlint-disable no-inline-html -->
 # <a name="manage-your-connector-for-microsoft-search"></a>Verwalten des Connectors für Microsoft Search
 
 Für den Zugriff auf und die Verwaltung Ihrer Connectors müssen Sie als Suchadministrator für Ihren Mandanten festgelegt sein. Wenden Sie sich an Ihren mandantenadministrator, um Sie für die Suchadministrator Rolle zu informieren.
@@ -78,11 +79,12 @@ Fehlercode | Fehlermeldung | Lösung
 2003 | Die Indizierung ist aufgrund eines nicht unterstützten Elementinhalts fehlgeschlagen. | Weitere Informationen finden Sie in der Connector-spezifischen Dokumentation.
 5000 | Etwas ist schief gelaufen. Wenn dieser Vorgang fortgesetzt wird, wenden Sie sich an den Support. |
 
-## <a name="monitor-your-index-quota-utilization"></a>Überwachen der Auslastung des Index Kontingents 
+## <a name="monitor-your-index-quota-utilization"></a>Überwachen der Auslastung des Index Kontingents
+
 Während des Vorschauzeitraums verfügt jede Organisation über ein festes Kontingent von bis zu 2 Millionen Elementen für die Indizierung von Inhalten aus externen Systemen über alle Verbindungen hinweg.
 
 > [!NOTE]
-> Graph Connectors Quota steht für die Dauer der Vorschau kostenlos zur Verfügung. Dies ändert sich bei allgemeiner Verfügbarkeit. 
+> Graph Connectors Quota steht für die Dauer der Vorschau kostenlos zur Verfügung. Dies ändert sich bei allgemeiner Verfügbarkeit.
 
 Das verfügbare Index Kontingent und der Verbrauch werden auf der Zielseite für Konnektoren angezeigt.
 

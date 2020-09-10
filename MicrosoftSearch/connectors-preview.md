@@ -1,7 +1,7 @@
 ---
 title: Vorschau der Connectors
-ms.author: mounika.narayanan
-author: monaray
+ms.author: monaray
+author: monaray97
 manager: shohara
 ms.audience: Admin
 ms.topic: article
@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie mehr über die Microsoft Graph Connectors Preview für Microsoft Search.
-ms.openlocfilehash: 4bcd8360957be69bc701e8b356cd222de32bfc5f
-ms.sourcegitcommit: 64eea81f8c1db9ee955013462a7b51612fb7d0b7
+ms.openlocfilehash: 81d169074a316b6ab07f47156e0f057e50c12e3e
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "44604383"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422892"
 ---
 # <a name="microsoft-graph-connectors-preview"></a>Vorschau der Microsoft Graph-Konnektoren
 
-Microsoft Graph-Connectors und Microsoft Search-APIs (Abfrage und Index) befinden sich derzeit im Vorschaustatus. Um Zugriff auf Connectors-Funktionen zu erhalten, müssen Sie die Option "Targeted Release" in Ihrem Mandanten aktivieren. Dies ist eine frühe Vorschau, und es gibt keine Garantie auf Service Level. Wir ermutigen Kunden, konnektorfunktionen zu testen und Feedback zu geben. Es wird nicht empfohlen, Connectors für Produktionszwecke während des Vorschauzeitraums zu verwenden.
+Microsoft Graph-Connectors und Microsoft Search-APIs (Abfrage und Index) befinden sich zurzeit im Vorschaustatus. Um Zugriff auf Connectors-Funktionen zu erhalten, müssen Sie die Option "Targeted Release" in Ihrem Mandanten aktivieren. Dies ist eine frühe Vorschau, und es gibt keine Garantie auf Service Level. Wir ermutigen Kunden, konnektorfunktionen zu testen und Feedback zu geben. Es wird nicht empfohlen, Connectors für Produktionszwecke während des Vorschauzeitraums zu verwenden.
 
 ## <a name="set-up-targeted-release"></a>Einrichten der gezielten Version
 

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Antworten zum Erstellen und Aktualisieren von Akronymen in Microsoft Search
-ms.openlocfilehash: 68e62884898e3aa081fc32438ad9a80068092738
-ms.sourcegitcommit: b3738f5ab02bfba9dedf099e035f3850607be480
+ms.openlocfilehash: e328ecb7604a144b51f3a1483eef1b1c3a7e0bcb
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46591508"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422946"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Verwalten von Akronymen Antworten in der Microsoft-Suche
 
@@ -44,7 +44,7 @@ Das Ergebnis enthält alle Bedeutungen von DNN, die in der Organisation des Benu
 
 ## <a name="set-up-acronyms-answers"></a>Antworten zum Einrichten von Akronymen
 
-Wechseln Sie im Microsoft 365 [Admin Center](https://admin.microsoft.com)zu **Einstellungen**  >  **Microsoft Search**  >  **Answers**  >  [**Akronyme**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms), und wählen Sie dann **Akronyme hinzufügen**aus.
+Wechseln Sie im [Microsoft 365 Admin Center](https://admin.microsoft.com)zu [**Akronyme**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms), und wählen Sie dann **Akronym hinzufügen**aus.
 
 Microsoft Search fragt zwei Datenquellen ab, um Akronyme Antworten auf die Suchvorgänge von Benutzern bereitzustellen:
 
@@ -53,7 +53,7 @@ Microsoft Search fragt zwei Datenquellen ab, um Akronyme Antworten auf die Suchv
 
 ### <a name="set-up-editorial-acronyms"></a>Einrichten von redaktionellen Akronymen
 
-Suchadministratoren können redaktionelle Akronyme auf der [Registerkarte Akronyme](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms) im [Microsoft Search Admin Center](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)einrichten. Sie können Akronyme aus einer internen Website oder einem Repository zum Admin Center hinzufügen. Redaktionelle Akronyme können dem **veröffentlichten** oder dem **Entwurfs** Status hinzugefügt werden:
+Suchadministratoren können redaktionelle Akronyme auf der [Registerkarte Akronyme](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms) im  [Microsoft Search Admin Center](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)einrichten. Sie können Akronyme aus einer internen Website oder einem Repository zum Admin Center hinzufügen. Redaktionelle Akronyme können dem **veröffentlichten** oder dem **Entwurfs** Status hinzugefügt werden:
 
 **Veröffentlichter Status**. Akronyme stehen den Mitarbeitern der Organisation über die Microsoft-Suche zur Verfügung.
 
@@ -64,7 +64,7 @@ Suchadministratoren können redaktionelle Akronyme auf der [Registerkarte Akrony
 
 Administratoren können Akronyme einzeln hinzufügen oder Sie in einer CSV-Datei Massenimportieren. Laden Sie eine CSV-Datei mit den in der folgenden Tabelle gezeigten Feldern hoch:
 
-| Akronym (obligatorisch) | Expansion (obligatorisch) | Beschreibung  | Quelle | Status (obligatorisch) |
+| Akronym (obligatorisch) | Expansion (obligatorisch) | Beschreibung  | Source | Status (obligatorisch) |
 | --------- | --------- | ---------- | --------- |--------- |
 | *XXX* | *Abkürzung für buchstabiert* |  | *URL* | *Veröffentlicht oder Entwurf* |
 

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
 description: Im Laufe der Zeit müssen Sie Status und Inhalt eines Ortes möglicherweise aktualisieren, damit er relevant bleibt. 
-ms.openlocfilehash: a5d3209e2b6e9269ff2e5986cf81de705ae1cc4d
-ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
+ms.openlocfilehash: ab093cca1c340268b2fd43f7594eb48eddf32208
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44996067"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422883"
 ---
 # <a name="manage-locations"></a>Orte verwalten
 
@@ -28,9 +28,8 @@ Der Standort hilft Ihren Benutzern, Adressen zu finden und die Gebäude Ihrer Or
 
 ### <a name="add-or-edit-a-single-location"></a>Hinzufügen oder Bearbeiten eines einzelnen Standorts
 
-1. Gehen Sie zum **Microsoft 365 Admin Center**.
-1. Wechseln Sie im Navigationsbereich zu **Einstellungen**  >  **Microsoft Search**  >  **Answers**-  >  [**Speicherorte**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)
-1. Wählen Sie **Neu hinzufügen** aus, um einen neuen Standort zu hinzuzufügen.
+1. Wechseln Sie im [Microsoft 365 Admin Center](https://admin.microsoft.com)zu [**Standorte**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)
+1. Um einen neuen Speicherort hinzuzufügen, wählen Sie **Hinzufügen**aus.
 1. Wählen Sie zum Bearbeiten eines Standorts den Standort in der entsprechenden Standortliste aus.
 1. Während Sie die Informationen hinzufügen oder bearbeiten, wird die Vorschau automatisch aktualisiert.
 1. Speichern Sie Ihre Änderungen.

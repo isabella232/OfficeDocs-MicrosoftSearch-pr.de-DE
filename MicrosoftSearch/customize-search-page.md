@@ -1,7 +1,7 @@
 ---
 title: Anpassen der Seite "Microsoft-Suche"
-ms.author: jypal6
-author: jypal
+ms.author: jypal
+author: jypal6
 manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Hinzufügen von Such vertikalen und Anpassen von Suchergebnissen
-ms.openlocfilehash: 9bc0448c1105c26b0e083316db04887327d8db41
-ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
+ms.openlocfilehash: f9ecaa0c7aaaf75b40ed87db45f6ec4921488212
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45387985"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422982"
 ---
 # <a name="customize-the-search-results-page"></a>Anpassen der Suchergebnisseite
 
@@ -59,7 +59,7 @@ Sie können eine begrenzte Menge von [KQL (Keyword Query Language)](https://docs
 
 Führen Sie die folgenden Schritte aus, um die vertikale auf der Microsoft-Suche in [SharePoint](https://sharepoint.com/) Home, [Office](https://office.com)oder [Bing](https://bing.com)zu erstellen:
 
-1. Wechseln Sie im Microsoft 365 [Admin Center](https://admin.microsoft.com)zu **Einstellungen**   >  **Microsoft Search**   >  **Customization**  >  [**Verticals**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals).
+1. Wechseln Sie im [Microsoft 365 Admin Center](https://admin.microsoft.com)zu [**vertikal**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals).
 1. Wählen Sie **Add** to Get Started aus.  
 
 ### <a name="create-a-vertical-at-the-site-level"></a>Erstellen eines vertikalen auf Websiteebene
@@ -88,7 +88,7 @@ Nachdem Sie den Assistenten gestartet haben, werden Sie durch die Schritte zum D
   
 ### <a name="create-a-result-type-at-the-organization-level"></a>Erstellen eines Ergebnistyps auf Organisationsebene
 
-1. Wechseln Sie im [Admin Center](https://admin.microsoft.com)zu **Einstellungen**von  >  **Microsoft Search**  >  **Customizations**  >  [**Ergebnistypen**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)für die Microsoft-Such Anpassung.
+1. Wechseln Sie im [Microsoft 365 Admin Center](https://admin.microsoft.com)zu [**Ergebnistypen**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes).
 1. Zum Hinzufügen eines **Ergebnistyps**wählen Sie **Hinzufügen**aus. Zum Bearbeiten eines Ergebnistyps wählen Sie den Ergebnistyp in der entsprechenden Liste aus.
 
 ### <a name="create-a-results-type-at-the-site-level"></a>Erstellen eines Ergebnistyps auf Websiteebene
@@ -97,7 +97,7 @@ Nachdem Sie den Assistenten gestartet haben, werden Sie durch die Schritte zum D
 1. Wählen Sie **Website Informationen** aus, und zeigen Sie dann **Alle Websiteeinstellungen**an.
 1. Suchen Sie nach dem Abschnitt Microsoft-Suche, und wählen Sie dann **Microsoft-Suche für diese Websitesammlung konfigurieren**aus.
 1. Wechseln Sie im Navigationsbereich zu **benutzerdefiniertes Verhalten**, und wählen Sie die Registerkarte **Ergebnistyp** aus.
-2. Zum Hinzufügen eines Ergebnistyps wählen Sie **Hinzufügen**aus.  Oder wählen Sie zum Bearbeiten eines Ergebnistyps den Ergebnistyp in der Liste aus.
+1. Zum Hinzufügen eines Ergebnistyps wählen Sie **Hinzufügen**aus.  Oder wählen Sie zum Bearbeiten eines Ergebnistyps den Ergebnistyp in der Liste aus.
 
 ### <a name="view-the-vertical-after-its-enabled"></a>Anzeigen der vertikalen nach der Aktivierung
 

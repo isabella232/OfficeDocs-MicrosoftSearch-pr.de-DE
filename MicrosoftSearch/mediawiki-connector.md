@@ -1,8 +1,8 @@
 ---
 title: MediaWiki Connector für Microsoft Search
-ms.author: v-pamcn
-author: monaray
-manager: mnirkhe
+ms.author: monaray
+author: monaray97
+manager: jameslau
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten von MediaWiki Connector für Microsoft Search
-ms.openlocfilehash: 2aa0ef494aa42b1a7364ec68f6532dec737b9c25
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: b9c8d80ae5cb8e86b0f6341bfe9231b709569e7a
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626963"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47423018"
 ---
 # <a name="mediawiki-connector"></a>MediaWiki-Connector
 
@@ -26,19 +26,25 @@ Mit dem MediaWiki-Konnektor kann Ihre Organisation Daten aus einem wiki ermittel
 Dieser Artikel richtet sich an Microsoft 365-Administratoren oder Personen, die einen MediaWiki-Connector konfigurieren, ausführen und überwachen. Es wird erläutert, wie Sie die Connector-und connectorfunktionen, Einschränkungen und Techniken zur Problembehandlung konfigurieren.
 
 ## <a name="connect-to-a-data-source"></a>Herstellen einer Verbindung mit einer Datenquelle
+
 Geben Sie Ihre MediaWiki-URL und Anmeldeinformationen für die Authentifizierung der Verbindung ein. Sie benötigen die folgenden Informationen: **Mandanten-ID**, **Ressourcen-** ID, **Client-ID**und den **geheimen Client Schlüssel**.
 
 ## <a name="manage-the-search-schema"></a>Verwalten des Suchschemas
+
 Konfigurieren Sie nach erfolgreicher Verbindung die Suchschema Zuordnung. Sie können auswählen, welche Eigenschaften **abgefragt**, **durchsuchbar**und **abrufbar**gemacht werden sollen.
 
 ## <a name="manage-search-permissions"></a>Verwalten von Suchberechtigungen
+
 Der MediaWiki-Connector unterstützt nur Suchberechtigungen, die für **alle**sichtbar sind. Indizierte Daten werden in den Suchergebnissen angezeigt und sind für alle Benutzer in der Organisation sichtbar.
 
-## <a name="set-the-refresh-schedule"></a>Festlegen des Aktualisierungszeitplans 
+## <a name="set-the-refresh-schedule"></a>Festlegen des Aktualisierungszeitplans
+
 In diesem Zeitplan werden die indizierten Daten aktualisiert, sodass Änderungen am wiki in der Microsoft-Suche wiedergegeben werden. Alle neuen Seiten, gelöschten Seiten, Seiteninhalte oder Metadaten-Änderungen werden nach dem angegebenen Aktualisierungsintervall in den Suchergebnissen angezeigt. Die Durchforstungs Zeit hängt von der Größe des Wikis ab. Der Connector crawlt derzeit um etwa 50 Seiten pro Minute.
 
-## <a name="limitations"></a>Einschränkungen 
+## <a name="limitations"></a>Einschränkungen
+
 Der MediaWiki-Konnektor hat diese Einschränkungen in der Preview-Version:
+
 * Unterstützt nur Cloud-basierte Wikis.
 * Unterstützt nur Basic oder OAuth 2,0 mit Azure Active Directory oder Azure-Authentifizierung.
 * Unterstützt keine Namespace Auswahl für die Indizierung. Indiziert nur **Haupt**-, **Kategorie**-und **Datei** Namespaces.

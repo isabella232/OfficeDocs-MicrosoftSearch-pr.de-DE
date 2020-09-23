@@ -11,48 +11,46 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Richten Sie den Microsoft SQL Server oder Azure SQL Connector für Microsoft Search ein.
-ms.openlocfilehash: e67b1e6175744fd741b265c056798f18dc28b1d4
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+description: Richten Sie die Microsoft SQL Server oder Azure SQL Connector für Microsoft Search ein.
+ms.openlocfilehash: 71fd8b6cdf090c9dda9ac94973661d865536a984
+ms.sourcegitcommit: 6baf6f4b8a6466ee1a6ad142be8541f659fcf5d9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422910"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48214488"
 ---
-# <a name="azure-sql-and-microsoft-sql-server-connectors"></a>Azure SQL-und Microsoft SQL Server-Connectors
+# <a name="azure-sql-and-microsoft-sql-server-connectors"></a>Azure SQL-und Microsoft SQL Server-Konnektoren
 
 Mit einem Microsoft SQL Server oder Azure SQL Connector kann Ihre Organisation Daten aus einer lokalen SQL Server Datenbank oder einer Datenbank, die in ihrer Azure SQL-Instanz in der Cloud gehostet wird, ermitteln und indizieren. Der Connector indiziert angegebene Inhalte in Microsoft Search. Um den Index mit den Quelldaten auf dem neuesten Stand zu halten, unterstützt er periodische vollständige und inkrementelle Crawls. Mit diesen SQL-Connectors können Sie auch den Zugriff auf Suchergebnisse für bestimmte Benutzer einschränken.
 
-Dieser Artikel richtet sich an Microsoft 365-Administratoren oder Personen, die einen Microsoft SQL Server oder Azure SQL Connector konfigurieren, ausführen und überwachen. Es wird erläutert, wie Sie die Connector-und connectorfunktionen, Einschränkungen und Techniken zur Problembehandlung konfigurieren.
+Dieser Artikel richtet sich an Microsoft 365-Administratoren oder an alle Benutzer, die eine Microsoft SQL Server oder Azure SQL Connector konfigurieren, ausführen und überwachen. Es wird erläutert, wie Sie die Connector-und connectorfunktionen, Einschränkungen und Techniken zur Problembehandlung konfigurieren.
 
-## <a name="install-a-data-gateway-required-for-on-premises-microsoft-sql-server-connector-only"></a>Installieren eines Datengateways (nur für lokalen Microsoft SQL Server-Connector erforderlich)
+## <a name="install-a-data-gateway-required-for-on-premises-microsoft-sql-server-connector-only"></a>Installieren eines Datengateways (nur für lokale Microsoft SQL Server Connector erforderlich)
 
 Um auf Ihre drittanbieterdaten zugreifen zu können, müssen Sie ein Microsoft Power BI-Gateway installieren und konfigurieren. Weitere Informationen finden Sie unter [Install an on-premises Gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) .  
 
 ## <a name="register-an-app"></a>Registrieren einer App
+Für Azure SQL Connector müssen Sie eine app in Azure Active Directory registrieren, damit die Microsoft-Such-App auf Daten für die Indizierung zugreifen kann. Weitere Informationen zum Registrieren einer App finden Sie in der Microsoft Graph-Dokumentation zum [Registrieren einer APP](https://docs.microsoft.com/graph/auth-register-app-v2). 
 
-Für Azure SQL Connector müssen Sie eine app in Azure Active Directory registrieren, damit die Microsoft-Such-App auf Daten für die Indizierung zugreifen kann. Weitere Informationen zum Registrieren einer App finden Sie in der Microsoft Graph-Dokumentation zum [Registrieren einer APP](https://docs.microsoft.com/graph/auth-register-app-v2).
-
-Nachdem Sie die APP-Registrierung abgeschlossen und den APP-Namen, die Client-ID und die Mandanten-ID unterzeichnet haben, müssen Sie [einen neuen geheimen Client Schlüssel generieren](https://docs.microsoft.com/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret). Der geheime Client Schlüssel wird nur einmal angezeigt. Beachten Sie, dass & den geheimen Client Schlüssel sicher speichern. Verwenden Sie die Client-ID und den geheimen Client Schlüssel beim Konfigurieren einer neuen Verbindung in Microsoft Search.
+Nachdem Sie die APP-Registrierung abgeschlossen und den APP-Namen, die Client-ID und die Mandanten-ID unterzeichnet haben, müssen Sie [einen neuen geheimen Client Schlüssel generieren](https://docs.microsoft.com/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret). Der geheime Client Schlüssel wird nur einmal angezeigt. Beachten Sie, dass & den geheimen Client Schlüssel sicher speichern. Verwenden Sie die Client-ID und den geheimen Client Schlüssel beim Konfigurieren einer neuen Verbindung in Microsoft Search. 
 
 Um die registrierte APP zu ihrer Azure SQL-Datenbank hinzuzufügen, müssen Sie Folgendes tun:
-
-- Melden Sie sich bei ihrer Azure SQL DB an.
-- Öffnen eines neuen Abfragefensters
-- Erstellen Sie einen neuen Benutzer, indem Sie den Befehl ' Create User [App Name] from external Provider ' ausführen.
-- Benutzer zur Rolle hinzufügen, indem Sie command ' exec sp_addrolemember ' db_datareader ', [App Name] ' oder ' Alter Role db_datareader Add Member [App Name] ' ausführen
+ - Melden Sie sich bei ihrer Azure SQL DB an.
+ - Öffnen eines neuen Abfragefensters
+ - Erstellen Sie einen neuen Benutzer, indem Sie den Befehl ' Create User [App Name] from external Provider ' ausführen.
+ - Benutzer zur Rolle hinzufügen, indem Sie command ' exec sp_addrolemember ' db_datareader ', [App Name] ' oder ' Alter Role db_datareader Add Member [App Name] ' ausführen
 
 >[!NOTE]
 >Wenn Sie den Zugriff auf alle in Azure Active Directory registrierten apps widerrufen möchten, lesen Sie in der Azure-Dokumentation nach, wie Sie [eine registrierte App entfernen](https://docs.microsoft.com/azure/active-directory/develop/quickstart-remove-app).
 
 ## <a name="connect-to-a-data-source"></a>Herstellen einer Verbindung mit einer Datenquelle
 
-Um den Microsoft SQL Server-Connector mit einer Datenquelle zu verbinden, müssen Sie den Datenbankserver, den Sie durchforsten möchten, und das lokale Gateway konfigurieren. Sie können dann mit der erforderlichen Authentifizierungsmethode eine Verbindung mit der Datenbank herstellen.
+Um den Microsoft SQL Server-Connector mit einer Datenquelle zu verbinden, müssen Sie den Daten Bank Server, den Sie durchforsten möchten, und das lokale Gateway konfigurieren. Sie können dann mit der erforderlichen Authentifizierungsmethode eine Verbindung mit der Datenbank herstellen.
 
 Für den Azure SQL Connector müssen Sie nur den Servernamen oder die IP-Adresse angeben, mit der Sie eine Verbindung herstellen möchten. Azure SQL Connector unterstützt nur Azure Active Directory Open ID Connect (OIDC)-Authentifizierung, um eine Verbindung mit der Datenbank herzustellen.
 
 > [!NOTE]
-> Für die Datenbank muss SQL Server Version 2008 oder höher ausgeführt werden, damit der Microsoft SQL Server-Connector eine Verbindung herstellen kann.
+> In der Datenbank muss SQL Server Version 2008 oder höher ausgeführt werden, damit der Microsoft SQL Server Connector eine Verbindung herstellen kann.
 
 Zum Durchsuchen des Datenbankinhalts müssen Sie beim Konfigurieren des Connectors SQL-Abfragen angeben. Diese SQL-Abfragen müssen alle Datenbankspalten benennen, die Sie indizieren möchten (also Quelleigenschaften), einschließlich aller SQL-Joins, die ausgeführt werden müssen, um alle Spalten abzurufen. Wenn Sie den Zugriff auf Suchergebnisse einschränken möchten, müssen Sie Zugriffssteuerungslisten (Access Control Lists, ACLs) in SQL-Abfragen angeben, wenn Sie den Connector konfigurieren.
 
@@ -81,22 +79,6 @@ Die Verwendung der einzelnen ACL-Spalten in der obigen Abfrage wird im folgenden
 * **DeniedGroups**: Hiermit wird die Gruppe von Benutzern angegeben, die **keinen** Zugriff auf die Suchergebnisse haben. Im folgenden Beispiel haben Gruppen Engg-Team@contoso.com und PM-Team@contoso.com keinen Zugriff auf Record mit OrderID = 15, während alle anderen Zugriff auf diesen Datensatz haben.  
 
 ![Beispieldaten, die die Sortier-und AclTable mit Beispiel Eigenschaften anzeigen](media/MSSQL-ACL1.png)
-
-### <a name="supported-data-types"></a>Unterstützte Datentypen
-
-In der folgenden Tabelle werden die SQL-Datentypen zusammengefasst, die in den MS SQL-und Azure SQL-Connectors unterstützt werden. Die Tabelle fasst auch den Indizierungs Datentyp für den unterstützten SQL-Datentyp zusammen. Weitere Informationen zu Microsoft Graph-Konnektoren, die unterstützte Datentypen für die Indizierung sind, finden Sie in der Dokumentation zu [Eigenschaften Ressourcentypen](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties).
-<!-- markdownlint-disable no-inline-html -->
-| Kategorie | Source-Datentyp | Indizierungs Datentyp |
-| ------------ | ------------ | ------------ |
-| Datum und Uhrzeit | date <br> Datum/Uhrzeit <br> datetime2 <br> smalldatetime | Datum/Uhrzeit |
-| Exakt numerisch | bigint <br> int <br> smallint <br> tinyint | Int64 |
-| Exakt numerisch | Bit | Boolescher Wert |
-| Annähernd numerisch | Gleitkommazahl <br> Echtzeit | double |
-| Zeichenfolge | Char <br> varchar <br> text | string |
-| Unicode-Zeichenfolgen | NCHAR <br> nvarchar <br> ntext | Zeichenfolge |
-| Andere Datentypen | uniqueidentifier | Zeichenfolge |
-
-Für alle anderen Datentypen, die derzeit nicht direkt unterstützt werden, muss die Spalte explizit in einen unterstützten Datentyp umgewandelt werden.
 
 ### <a name="watermark-required"></a>Wasserzeichen (erforderlich)
 

@@ -1,7 +1,7 @@
 ---
 title: Anpassen der Seite "Microsoft-Suche"
-ms.author: jypal
-author: jypal6
+ms.author: jeffkizn
+author: jypal
 manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Hinzufügen von Such vertikalen und Anpassen von Suchergebnissen
-ms.openlocfilehash: f9ecaa0c7aaaf75b40ed87db45f6ec4921488212
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: 8b212f385d126b4f6c3513b066936db28387377f
+ms.sourcegitcommit: be0c64845477127d73ee24dc727e4583ced3d0e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422982"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48206968"
 ---
 # <a name="customize-the-search-results-page"></a>Anpassen der Suchergebnisseite
 
@@ -107,7 +107,7 @@ Nachdem Sie die vertikale aktiviert haben, kann es eine Weile dauern, bis Sie Si
 
 Hier finden Sie eine Liste mit häufig auftretenden Problemen und Aktionen, die Sie beheben können.
 
-|Fehler  |Aktion  |
+|Error  |Aktion  |
 |---------|---------|
 | Ich sehe eine Fehlermeldung "something went wrong" auf der vertikalen. | Sowohl die vertikalen als auch die Ergebnistypen sind erforderlich, um das Setup abzuschließen. Stellen Sie sicher, dass Sie beide für dieselbe Inhaltsquelle erstellt haben. |
 | Das Ergebnis Layout wird nicht angezeigt, obwohl ich ein erstellt habe. | Es dauert ein paar Minuten, da diese Einstellungen im allgemeinen zwischengespeichert werden. Warten Sie einige Minuten, und versuchen Sie es erneut.        |

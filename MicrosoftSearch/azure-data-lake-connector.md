@@ -2,7 +2,7 @@
 title: Azure Data Lake-Connector für Microsoft-Suche
 ms.author: monaray
 author: monaray97
-manager: jameslau
+manager: shohara
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten des Azure Data Lake Storage Gen2 Connectors für Microsoft Search
-ms.openlocfilehash: 788b7106c15cd9773c86f46f91ba0e91e38028f3
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: 01fea60e91af5ba321ceb00578ea2b0745c9c394
+ms.sourcegitcommit: be0c64845477127d73ee24dc727e4583ced3d0e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422928"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48206932"
 ---
 # <a name="azure-data-lake-storage-gen2-connector"></a>Azure Data Lake-Speicher Gen2-Connector
 
@@ -29,7 +29,12 @@ Dieser Artikel richtet sich an [Microsoft 365](https://www.microsoft.com/microso
 ### <a name="primary-storage-connection-string"></a>Primäre Speicher Verbindungszeichenfolge 
 Geben Sie auf dem Bildschirm **Authentifizierung und Konfiguration** die primäre Speicher Verbindungszeichenfolge an. Diese Zeichenfolge ist erforderlich, um den Zugriff auf Ihr Speicherkonto zuzulassen. Navigieren Sie zum [Azure-Portal](https://ms.portal.azure.com/#home) zum **Schlüssel** Abschnitt Ihres relevanten Azure-speicherkontos, um die Verbindungszeichenfolge zu finden. Kopieren Sie die Verbindungszeichenfolge, und fügen Sie Sie in das entsprechende Feld auf dem Bildschirm ein.
 
-Wenn Sie das **AccountKey** (einen Parameter in der primären Speicher Verbindungszeichenfolge) nicht bereitstellen möchten, müssen Sie unserem Graph Connectors-Dienst Lesezugriff gewähren. Navigieren Sie zur Registerkarte **Zugriffssteuerung** Ihres Azure-speicherkontos, und befolgen Sie die Anweisungen dort, um Zugriff auf die folgende APP zu gewähren:
+Wenn Sie den **AccountKey** (einen Parameter in der primären Speicher Verbindungszeichenfolge) nicht bereitstellen möchten, müssen Sie für die folgenden Rollen Zugriff auf unseren Graph Connectors-Dienst gewähren. 
+* Speicher-BLOB-Datenleser
+* Speicher Warteschlangen-Daten Mitwirkende
+* Speicher-BLOB-Delegator (nur für hierarchischen Speicher)
+
+Navigieren Sie zur Registerkarte **Zugriffssteuerung** Ihres Azure-speicherkontos, und befolgen Sie die Anweisungen dort, um Zugriff auf die folgende APP zu gewähren:
 * **Erste Partei-APP-ID:** 56c1da01-2129-48f7-9355-af6d59d42766
 * **Name der ersten Partei-App:** Graph Connector-Dienst
 

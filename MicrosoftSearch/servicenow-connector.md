@@ -1,8 +1,8 @@
 ---
 title: ServiceNow Connector für Microsoft Search
-ms.author: monaray
-author: monaray97
-manager: jameslau
+ms.author: mnirkhe
+author: TrishaMc1
+manager: mnirkhe
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten des ServiceNow Connectors für Microsoft Search
-ms.openlocfilehash: 29e8e490f114ce8537ddb973ed16ccb34f24f82f
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: 357722f83e7f276615d231c8d3e56016bc17ba6e
+ms.sourcegitcommit: be0c64845477127d73ee24dc727e4583ced3d0e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422865"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48206959"
 ---
 # <a name="servicenow-connector"></a>ServiceNow-Connector
 
@@ -33,15 +33,15 @@ Die ServiceNow- **Instanz-URL** Ihrer Organisation sieht in der Regel wie **http
 
 Wählen Sie eine von zwei unterstützten Methoden aus, um Inhalte von ServiceNow zu authentifizieren und zu synchronisieren:
 
-1. Standardauthentifizierung
-2. OAuth (empfohlen)
+ - Standardauthentifizierung
+ - OAuth (empfohlen)
 
 > [!Note]
 > Um OAuth für die Authentifizierung zu verwenden, muss ein ServiceNow-Administrator einen Endpunkt in ihrer ServiceNow-Instanz bereitstellen, damit die Microsoft Search-App auf die Instanz zugreifen kann. Weitere Informationen finden Sie unter [Erstellen eines Endpunkts für Clients für den Zugriff auf die Instanz](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) in der ServiceNow-Dokumentation.
 
 Die folgende Tabelle enthält Anleitungen zum Ausfüllen des Endpunkts-erstellungsformulars:
 
-**Field** | **Beschreibung** | **Empfohlener Wert**
+Feld | Beschreibung | Empfohlener Wert
 --- | --- | ---
 Name | Dieser eindeutige Wert identifiziert die Anwendung, für die Sie OAuth-Zugriff benötigen. | Microsoft Search
 Client-ID | Eine schreibgeschützte, automatisch generierte eindeutige ID für die Anwendung. Die Instanz verwendet die Client-ID, wenn Sie ein Zugriffstoken anfordert. | NA

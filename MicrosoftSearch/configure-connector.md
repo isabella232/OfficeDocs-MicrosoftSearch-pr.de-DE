@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Konfigurieren Ihres von Microsoft erstellten Connectors für Microsoft Search
-ms.openlocfilehash: 19a0c21911a9c5410e13a36f0bcc694af4a5c41a
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: ce2515b3eaa859a8fbb00d83c4727865ab55e174
+ms.sourcegitcommit: 6aea7102c94855e9f80711c0f3d7bf5833ce8fb5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422856"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464476"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 
@@ -64,7 +64,17 @@ Die Datenfelder, die von der Drittanbieter-Datenquelle als Quelleigenschaften fe
 
 ### <a name="manage-the-search-schema"></a>Verwalten des Suchschemas
 
-Administratoren können die Suchschema Attribute so festlegen, dass die Suchfunktionen der einzelnen Quelleigenschaften gesteuert werden. Mithilfe eines Suchschemas können Sie bestimmen, welche Ergebnisse auf der Suchergebnisseite angezeigt werden und welche Informationen Endbenutzer anzeigen und darauf zugreifen können.
+#### <a name="content-property"></a>Content-Eigenschaft
+
+Sie können auswählen, welche Source-Eigenschaft die **Content** -Eigenschaft (Volltextindex des Elements) ist, indem Sie eine beliebige Zeichenfolgeneigenschaft aus der Dropdownliste der **Inhalts** Eigenschaft auswählen. Alternativ können Sie die standardmäßig ausgewählte Eigenschaft beibehalten, wenn eine vorhanden ist.
+
+Es ist besonders wichtig, dass die richtige Eigenschaft ausgewählt ist, da diese Eigenschaft für die Volltextindizierung von Inhalten, die Generierung von Codeausschnitt der Suchergebnisseite, die Spracherkennung, die Unterstützung von HTML/Text, die Rangfolge und Relevanz sowie die Abfrage Formulierung verwendet wird.
+
+Wenn Sie eine Eigenschaft für **Inhalt**auswählen, haben Sie die Möglichkeit, beim [Erstellen des Ergebnistyps](customize-results-layout.md)die vom System generierte Eigenschaft **ResultSnippet** zu verwenden. Diese Eigenschaft dient als Platzhalter für die dynamischen Ausschnitte, die zur Abfragezeit aus der **Content** -Eigenschaft generiert werden. Wenn Sie diese Eigenschaft in Ihrem Ergebnistyp verwenden, werden Ausschnitte in ihren Suchergebnissen generiert.
+
+#### <a name="search-schema-attributes"></a>Attribute für das Suchschema
+
+Sie können die Suchschema Attribute so festlegen, dass die Suchfunktionen der einzelnen Quelleigenschaften gesteuert werden. Mithilfe eines Suchschemas können Sie bestimmen, welche Ergebnisse auf der Suchergebnisseite angezeigt werden und welche Informationen Endbenutzer anzeigen und darauf zugreifen können.
 
 Suchschema Attribute umfassen **durchsuchbar**, **abgefragt**und **abrufbar**. In der folgenden Tabelle sind die Attribute aufgeführt, die von Microsoft Graph-Connectors unterstützt werden, und deren Funktionen erläutert.
 
@@ -78,11 +88,14 @@ Für alle Connectors müssen benutzerdefinierte Typen manuell festgelegt werden.
 
 ![Das Schema für einen Connector kann durch Hinzufügen oder Entfernen von Abfrage-, Such-und Abruffunktionen angepasst werden.](media/manageschema.png)
 
-Diese Einschränkungen und Empfehlungen gelten für Suchschema Einstellungen:
+#### <a name="restrictions-and-recommendations-for-search-schema-settings"></a>Einschränkungen und Empfehlungen für Suchschema Einstellungen
 
-* Für Konnektoren, die benutzerdefinierte Typen indizieren, wird empfohlen, dass Sie das Feld, das den Hauptinhalt des Inhalts **Abrufs**enthält, **nicht** markieren. Es treten erhebliche Leistungsprobleme auf, wenn Suchergebnisse mit diesem Suchattribut gerendert werden. Ein Beispiel ist das **Text** Inhaltsfeld für einen [ServiceNow](https://www.servicenow.com) Knowledge Base-Artikel.
+* Die **Content** -Eigenschaft ist nur durchsuchbar. Wenn diese Eigenschaft im Dropdownmenü ausgewählt ist, kann Sie nicht als **abrufbar** oder **abgefragt**markiert werden. Es treten erhebliche Leistungsprobleme auf, wenn Suchergebnisse mit der **Content** -Eigenschaft gerendert werden. Ein Beispiel ist das **Text** Inhaltsfeld für einen [ServiceNow](https://www.servicenow.com) Knowledge Base-Artikel.
+
 * Nur Eigenschaften, die als abrufbares Rendering in den Suchergebnissen markiert sind, können zum Erstellen moderner Ergebnistypen (MRT) verwendet werden.
+
 * Nur Zeichenfolgeneigenschaften können durchsuchbar gekennzeichnet werden.
+
 
 > [!Note]
 > Nachdem Sie eine Verbindung erstellt haben, **können** Sie das Schema nicht ändern. Hierzu müssen Sie die Verbindung löschen und eine neue erstellen.

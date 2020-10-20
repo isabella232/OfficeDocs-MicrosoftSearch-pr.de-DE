@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erstellen eines Layouts zum Anzeigen Ihrer benutzerdefinierten Suchergebnisse mithilfe adaptiver Karten
-ms.openlocfilehash: e31be1f9c1602fcd696c99d584388facee22df74
-ms.sourcegitcommit: c22e8c3dcc53857da677db98a1a2b7d5ca2c6170
+ms.openlocfilehash: 0856adfd85a921cf026cd59a8ca2c5beea2ffcf2
+ms.sourcegitcommit: 7ceefb7a96ae6886145b929791c7448c139366b4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41721777"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "48595273"
 ---
 <!-- markdownlint-disable no-hard-tabs -->
 # <a name="create-a-layout-to-customize-search-results"></a>Erstellen eines Layouts zum Anpassen von Suchergebnissen
@@ -176,6 +176,10 @@ Sie müssen jedes Feld des Layouts einer Result-Eigenschaft oder einer Connector
 
 Wählen Sie ein Feld im Layout aus, um die Variablen hervorzuheben, die zugeordnet werden müssen. Sie können mehrere Variablen für ein einzelnes Feld verwenden, und alle Felder müssen den Ergebniseigenschaften zugeordnet werden.
 
+### <a name="show-snippet-on-search-result"></a>Ausschnitt im Suchergebnis anzeigen  
+
+Dynamische Codeausschnitte, die für die **Content** -Eigenschaft des Connector-Ergebnisses generiert wurden, können im Suchergebnis angezeigt werden. **ResultSnippet** ist die Systemeigenschaft, die als Platzhalter Eigenschaft für die für jedes Verbindungs Ergebnis generierten Codeausschnitte fungiert. Um die Codeausschnitte im Ergebnis Layout anzuzeigen, muss die **ResultSnippet** -Systemeigenschaft einem entsprechenden Feld (beispielsweise Description) im Suchergebnislayout zugeordnet werden. Ausschnitte, die für jedes Ergebnis generiert werden, heben auch die Übereinstimmungen im Codeausschnitt mit dem vom Benutzer eingegebenen Abfrageausdruck hervor. 
+
 ## <a name="things-to-consider"></a>Zu berücksichtigende Aspekte
 
 Bevor Sie beginnen, sollten Sie einige Dinge tun, die Sie vermeiden sollten, um sicherzustellen, dass Ihre Layouts erfolgreich sein werden.
@@ -183,17 +187,18 @@ Bevor Sie beginnen, sollten Sie einige Dinge tun, die Sie vermeiden sollten, um 
 ### <a name="do"></a>Dos
 
 - Bearbeiten Sie eine Vorlage, um den Link "Logo" im Layout bereitzustellen, wenn Sie statische Links für Logos verwenden und keine Ergebniseigenschaften sind.
-- Überprüfen Sie das Ergebnis Layout für Szenarien, in denen keine Daten für eine Result-Eigenschaft zurückgegeben werden, die in der Ergebnis-JSON verwendet wird. Verwenden Sie `$when` die Bedingung, um ein Element auszublenden, wenn die Eigenschaft keine Daten enthält.  
-- Stellen Sie sicher, dass die `$when` Datentypen der Bedingung und der Result-Eigenschaft übereinstimmen. Vergleichen `Number` Sie beispielsweise nicht mit `Text` in der `$when` Bedingung.  
+- Überprüfen Sie das Ergebnis Layout für Szenarien, in denen keine Daten für eine Result-Eigenschaft zurückgegeben werden, die in der Ergebnis-JSON verwendet wird. Verwenden Sie die `$when` Bedingung, um ein Element auszublenden, wenn die Eigenschaft keine Daten enthält.  
+- Stellen Sie sicher, dass die Datentypen der `$when` Bedingung und der Result-Eigenschaft übereinstimmen. Vergleichen Sie beispielsweise nicht `Number` mit `Text` in der `$when` Bedingung.  
 - Denken Sie an Designanforderungen beim Entwerfen eines Ergebnis Layouts.  
-- Stellen Sie sicher, `Textblock`  dass das Element dynamischen Inhalt verarbeiten kann. Für diesen Zweck können `wrap` Sie `maxLines` die Eigenschaften und des-Elements verwenden.
-- Formatieren Sie das Datum Ordnungs `{DATE()}` gemäß, wenn Sie in Abschlag verwenden.  
+- Stellen Sie sicher, dass das `Textblock`   Element dynamischen Inhalt verarbeiten kann. `wrap`Für diesen Zweck können Sie die Eigenschaften und des- `maxLines` Elements verwenden.
+- Formatieren Sie das Datum ordnungsgemäß, wenn Sie `{DATE()}` in Abschlag verwenden.  
 
 ### <a name="dont"></a>Don’ts
 
 - Definieren Sie beim Binden von Werten keine ungültigen Datentypen. Weitere Informationen zu Datentypen finden Sie unter [Verwalten des Suchschemas](https://docs.microsoft.com/sharepoint/search/manage-the-search-schema).
 - Vermeiden Sie das Zuschneiden des Ergebnisses auf der Ergebnisseite, indem Sie der maximalen Höhe des Ergebnis Layouts JSON folgen. Wenn Sie die maximale Höhe des Ergebnis Layouts überschreiten, wird das Ergebnis auf der Ergebnisseite abgeschnitten.
-- Verwenden Sie `px` keine Werte in Elementeigenschaften.
+- Verwenden Sie keine `px` Werte in Elementeigenschaften.
+- Verwenden Sie keinen Abschlag, wenn Sie mit der **ResultSnippet** -Eigenschaft im Ergebnis Layout die Abfrage Übereinstimmung im Suchergebnis hervorheben möchten. 
 
 ## <a name="resources"></a>Ressourcen
 

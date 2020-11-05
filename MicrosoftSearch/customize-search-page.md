@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Hinzufügen von Such vertikalen und Anpassen von Suchergebnissen
-ms.openlocfilehash: 8b212f385d126b4f6c3513b066936db28387377f
-ms.sourcegitcommit: be0c64845477127d73ee24dc727e4583ced3d0e6
+ms.openlocfilehash: 8999a811b6ed0e04963a87ff0170869b38dba727
+ms.sourcegitcommit: 995ce23d4e47a3456a02dba0ba7c9cd0de64528a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48206968"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919501"
 ---
 # <a name="customize-the-search-results-page"></a>Anpassen der Suchergebnisseite
 
@@ -30,18 +30,16 @@ Sie können vertikale und Ergebnistypen auf diesen Ebenen erstellen:
 
 ## <a name="search-verticals-explained"></a>Erläuterte Such vertikalen
 
-Oben auf der Microsoft-Suchergebnisseite gibt es eine Reihe von Registerkarten. Dies sind die Such vertikalen. Bei einer Such vertikalen werden nur Ergebnisse eines bestimmten Typs oder von bestimmten Inhalten angezeigt. Beispiele sind **Dateien** oder **Nachrichten**. Standardmäßig zeigt Microsoft Search die vertikalen **alle**, **Personen**, **Dateien**, **Websites**und **Nachrichten**an.  
+Oben auf der Microsoft-Suchergebnisseite gibt es eine Reihe von Registerkarten. Dies sind die Such vertikalen. Bei einer Such vertikalen werden nur Ergebnisse eines bestimmten Typs oder von bestimmten Inhalten angezeigt. Beispiele sind **Dateien** oder **Nachrichten**. Standardmäßig zeigt Microsoft Search die vertikalen **alle** , **Personen** , **Dateien** , **Websites** und **Nachrichten** an.  
 
 Sie können Such vertikale hinzufügen, die für Ihre Organisation relevant sind. Diese werden auf der Seite Microsoft-Suchergebnisse in [SharePoint](https://sharepoint.com/), [Office](https://Office.com)und [Bing](https://bing.com)angezeigt. Sie können beispielsweise eine vertikale für marketingbezogene Inhalte und eine weitere für den Vertrieb erstellen, basierend auf dem Typ der Informationen, die jede Gruppe benötigt. Sie können vertikale Werte hinzufügen, um Ergebnisse nur aus Inhalten anzuzeigen, die über Connectors indiziert sind.  
 
 >[!NOTE]
-> Vertikale und Ergebnistypen befinden sich derzeit als Teil der Vorschau der Microsoft Graph-Konnektoren in der Vorschau. Weitere Informationen zur Vorschau finden Sie unter [Connectors Preview](connectors-preview.md). Um an der Vorschau teilzunehmen, müssen Sie zuerst das [Anmeldeformular für Microsoft Graph Connectors Preview](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u)einreichen.
+> Vertikale und Ergebnistypen befinden sich derzeit als Teil der Vorschau der Microsoft Graph-Konnektoren in der Vorschau und können nicht für Inhalte verwendet werden, die sich in [SharePoint](https://sharepoint.com/)befinden. Weitere Informationen zur Vorschau finden Sie unter [Connectors Preview](connectors-preview.md). Um an der Vorschau teilzunehmen, müssen Sie zuerst das [Anmeldeformular für Microsoft Graph Connectors Preview](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u)einreichen.
 
 ## <a name="things-to-consider"></a>Zu berücksichtigende Aspekte
 
 Bevor Sie beginnen, stellen Sie sicher, dass der Connector indiziert wurde. Je nach Dateigröße kann dies bis zu 48 Stunden dauern.
-
-Sie können keinen vertikalen Inhalt für Inhalte erstellen, die sich in [SharePoint](https://sharepoint.com/)befinden.
 
 Es gibt drei grundlegende Schritte zum Hinzufügen eines vertikalen:
 
@@ -59,16 +57,16 @@ Sie können eine begrenzte Menge von [KQL (Keyword Query Language)](https://docs
 
 Führen Sie die folgenden Schritte aus, um die vertikale auf der Microsoft-Suche in [SharePoint](https://sharepoint.com/) Home, [Office](https://office.com)oder [Bing](https://bing.com)zu erstellen:
 
-1. Wechseln Sie im [Microsoft 365 Admin Center](https://admin.microsoft.com)zu [**vertikal**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals).
+1. Wechseln Sie im  [Microsoft 365 Admin Center](https://admin.microsoft.com)zu  [**vertikal**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals).
 1. Wählen Sie **Add** to Get Started aus.  
 
 ### <a name="create-a-vertical-at-the-site-level"></a>Erstellen eines vertikalen auf Websiteebene
 
 1. Wechseln Sie auf der [SharePoint](https://sharepoint.com/) -Website, auf der Sie die vertikale möchten, zu **Einstellungen**.
-1. Wählen Sie **Website Informationen** aus, und zeigen Sie dann **Alle Websiteeinstellungen**an.
-1. Suchen Sie nach dem Abschnitt **Microsoft-Suche** , und wählen Sie dann **Microsoft-Suche für diese Websitesammlung konfigurieren**aus.
-1. Wechseln Sie im Navigationsbereich zu **benutzerdefiniertes Erlebnis**, und wählen Sie dann die Registerkarte **vertikal** aus.
-1. Um eine vertikale hinzuzufügen, wählen Sie **Hinzufügen**aus.
+1. Wählen Sie **Website Informationen** aus, und zeigen Sie dann **Alle Websiteeinstellungen** an.
+1. Suchen Sie nach dem Abschnitt **Microsoft-Suche** , und wählen Sie dann **Microsoft-Suche für diese Websitesammlung konfigurieren** aus.
+1. Wechseln Sie im Navigationsbereich zu  **benutzerdefiniertes Erlebnis** , und wählen Sie dann die Registerkarte **vertikal** aus.
+1. Um eine vertikale hinzuzufügen, wählen Sie **Hinzufügen** aus.
   Um eine vertikale zu bearbeiten, wählen Sie Sie aus der Liste aus.
 
 Beachten Sie, dass vertikale im deaktivierten Zustand erstellt werden. Sie müssen aktiviert sein, damit Sie von Benutzern angezeigt werden können.
@@ -89,15 +87,15 @@ Nachdem Sie den Assistenten gestartet haben, werden Sie durch die Schritte zum D
 ### <a name="create-a-result-type-at-the-organization-level"></a>Erstellen eines Ergebnistyps auf Organisationsebene
 
 1. Wechseln Sie im [Microsoft 365 Admin Center](https://admin.microsoft.com)zu [**Ergebnistypen**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes).
-1. Zum Hinzufügen eines **Ergebnistyps**wählen Sie **Hinzufügen**aus. Zum Bearbeiten eines Ergebnistyps wählen Sie den Ergebnistyp in der entsprechenden Liste aus.
+1. Zum Hinzufügen eines **Ergebnistyps** wählen Sie  **Hinzufügen** aus. Zum Bearbeiten eines Ergebnistyps wählen Sie den Ergebnistyp in der entsprechenden Liste aus.
 
 ### <a name="create-a-results-type-at-the-site-level"></a>Erstellen eines Ergebnistyps auf Websiteebene
 
 1. Wechseln Sie auf der [SharePoint](https://sharepoint.com/) -Website, auf der Sie den Ergebnistyp erstellen möchten, zu **Einstellungen**.
-1. Wählen Sie **Website Informationen** aus, und zeigen Sie dann **Alle Websiteeinstellungen**an.
-1. Suchen Sie nach dem Abschnitt Microsoft-Suche, und wählen Sie dann **Microsoft-Suche für diese Websitesammlung konfigurieren**aus.
-1. Wechseln Sie im Navigationsbereich zu **benutzerdefiniertes Verhalten**, und wählen Sie die Registerkarte **Ergebnistyp** aus.
-1. Zum Hinzufügen eines Ergebnistyps wählen Sie **Hinzufügen**aus.  Oder wählen Sie zum Bearbeiten eines Ergebnistyps den Ergebnistyp in der Liste aus.
+1. Wählen Sie **Website Informationen** aus, und zeigen Sie dann **Alle Websiteeinstellungen** an.
+1. Suchen Sie nach dem Abschnitt Microsoft-Suche, und wählen Sie dann **Microsoft-Suche für diese Websitesammlung konfigurieren** aus.
+1. Wechseln Sie im Navigationsbereich zu  **benutzerdefiniertes Verhalten** , und wählen Sie die Registerkarte **Ergebnistyp** aus.
+1. Zum Hinzufügen eines Ergebnistyps wählen Sie **Hinzufügen** aus.  Oder wählen Sie zum Bearbeiten eines Ergebnistyps den Ergebnistyp in der Liste aus.
 
 ### <a name="view-the-vertical-after-its-enabled"></a>Anzeigen der vertikalen nach der Aktivierung
 

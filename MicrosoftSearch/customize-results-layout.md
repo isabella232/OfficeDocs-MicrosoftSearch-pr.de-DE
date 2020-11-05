@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erstellen eines Layouts zum Anzeigen Ihrer benutzerdefinierten Suchergebnisse mithilfe adaptiver Karten
-ms.openlocfilehash: 0856adfd85a921cf026cd59a8ca2c5beea2ffcf2
-ms.sourcegitcommit: 7ceefb7a96ae6886145b929791c7448c139366b4
+ms.openlocfilehash: 5bd42eded291781f5122cfede3759327b5222108
+ms.sourcegitcommit: 995ce23d4e47a3456a02dba0ba7c9cd0de64528a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "48595273"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919510"
 ---
 <!-- markdownlint-disable no-hard-tabs -->
 # <a name="create-a-layout-to-customize-search-results"></a>Erstellen eines Layouts zum Anpassen von Suchergebnissen
@@ -155,7 +155,7 @@ Hier ist das Layout JSON nach dem Binden der Daten:
 }
 ```
 
-Beispieldaten: Geben Sie Beispieldaten im **Beispieldaten Editor** an, um die datengebundene Karte im **Vorschaumodus**anzuzeigen.
+Beispieldaten: Geben Sie Beispieldaten im **Beispieldaten Editor** an, um die datengebundene Karte im **Vorschaumodus** anzuzeigen.
 
 ```json
 {
@@ -178,7 +178,7 @@ Wählen Sie ein Feld im Layout aus, um die Variablen hervorzuheben, die zugeordn
 
 ### <a name="show-snippet-on-search-result"></a>Ausschnitt im Suchergebnis anzeigen  
 
-Dynamische Codeausschnitte, die für die **Content** -Eigenschaft des Connector-Ergebnisses generiert wurden, können im Suchergebnis angezeigt werden. **ResultSnippet** ist die Systemeigenschaft, die als Platzhalter Eigenschaft für die für jedes Verbindungs Ergebnis generierten Codeausschnitte fungiert. Um die Codeausschnitte im Ergebnis Layout anzuzeigen, muss die **ResultSnippet** -Systemeigenschaft einem entsprechenden Feld (beispielsweise Description) im Suchergebnislayout zugeordnet werden. Ausschnitte, die für jedes Ergebnis generiert werden, heben auch die Übereinstimmungen im Codeausschnitt mit dem vom Benutzer eingegebenen Abfrageausdruck hervor. 
+Dynamische Codeausschnitte, die für die **Content** -Eigenschaft des Connector-Ergebnisses generiert wurden, können im Suchergebnis angezeigt werden. **ResultSnippet** ist die Systemeigenschaft, die als Platzhalter Eigenschaft für die für jedes Verbindungs Ergebnis generierten Codeausschnitte fungiert. Um die Codeausschnitte im Ergebnis Layout anzuzeigen, muss die **ResultSnippet** -Systemeigenschaft einem entsprechenden Feld (beispielsweise Description) im Suchergebnislayout zugeordnet werden. Ausschnitte, die für jedes Ergebnis generiert werden, heben auch die Übereinstimmungen im Codeausschnitt mit dem vom Benutzer eingegebenen Abfrageausdruck hervor.
 
 ## <a name="things-to-consider"></a>Zu berücksichtigende Aspekte
 
@@ -198,7 +198,7 @@ Bevor Sie beginnen, sollten Sie einige Dinge tun, die Sie vermeiden sollten, um 
 - Definieren Sie beim Binden von Werten keine ungültigen Datentypen. Weitere Informationen zu Datentypen finden Sie unter [Verwalten des Suchschemas](https://docs.microsoft.com/sharepoint/search/manage-the-search-schema).
 - Vermeiden Sie das Zuschneiden des Ergebnisses auf der Ergebnisseite, indem Sie der maximalen Höhe des Ergebnis Layouts JSON folgen. Wenn Sie die maximale Höhe des Ergebnis Layouts überschreiten, wird das Ergebnis auf der Ergebnisseite abgeschnitten.
 - Verwenden Sie keine `px` Werte in Elementeigenschaften.
-- Verwenden Sie keinen Abschlag, wenn Sie mit der **ResultSnippet** -Eigenschaft im Ergebnis Layout die Abfrage Übereinstimmung im Suchergebnis hervorheben möchten. 
+- Verwenden Sie keinen Abschlag, wenn Sie mit der **ResultSnippet** -Eigenschaft im Ergebnis Layout die Abfrage Übereinstimmung im Suchergebnis hervorheben möchten.
 
 ## <a name="resources"></a>Ressourcen
 

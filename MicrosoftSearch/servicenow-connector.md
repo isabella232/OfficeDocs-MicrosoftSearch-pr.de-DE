@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten des ServiceNow Connectors für Microsoft Search
-ms.openlocfilehash: f7ae05ad00a96a6f05780acfeb8c75911505ee6f
-ms.sourcegitcommit: 2ce86461e845c3ea84feb215df17685d2ef705c5
+ms.openlocfilehash: b60583e61687b13c7fd631cd1c4a9f6d663724e8
+ms.sourcegitcommit: 59435698bece013ae64ca2a68c43455ca10e3fdf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48340856"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48927198"
 ---
 # <a name="servicenow-connector"></a>ServiceNow-Connector
 
@@ -28,11 +28,11 @@ Dieser Artikel richtet sich an Microsoft 365-Administratoren oder Personen, die 
 Informationen zum Zugriff auf von Microsoft erstellte Connectors finden Sie unter [Einrichten Ihres von Microsoft erstellten Connectors für Microsoft Search](https://docs.microsoft.com/microsoftsearch/configure-connector). ServiceNow Connector Specific Configuration wird im folgenden Artikel erläutert.
 
 ## <a name="connection-settings"></a>Verbindungseinstellungen
-Zum Herstellen einer Verbindung mit ihren ServiceNow-Daten benötigen Sie die **ServiceNow-Instanz-URL**Ihrer Organisation, Anmeldeinformationen für dieses Konto sowie die Client-ID und den geheimen Client Schlüssel für die OAuth-Authentifizierung.  
+Zum Herstellen einer Verbindung mit ihren ServiceNow-Daten benötigen Sie die **ServiceNow-Instanz-URL** Ihrer Organisation, Anmeldeinformationen für dieses Konto sowie die Client-ID und den geheimen Client Schlüssel für die OAuth-Authentifizierung.  
 
-Die ServiceNow- **Instanz-URL** Ihrer Organisation sieht in der Regel wie **https:// &lt; ihrer-Organisations-Domain>. Service-now.com**aus. Zusammen mit dieser URL benötigen Sie ein Konto zum Einrichten der Verbindung mit ServiceNow sowie dazu, dass Microsoft Search die Artikel aus ServiceNow regelmäßig basierend auf dem Aktualisierungszeitplan aktualisieren kann. Das Konto sollte über eine <em>Wissens</em> Rolle verfügen. [Erfahren Sie, wie Sie der Rolle für ServiceNow-Konten zuweisen](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html).
+Die ServiceNow- **Instanz-URL** Ihrer Organisation sieht in der Regel wie **https:// &lt; ihrer-Organisations-Domain>. Service-now.com** aus. Zusammen mit dieser URL benötigen Sie ein Konto zum Einrichten der Verbindung mit ServiceNow sowie dazu, dass Microsoft Search die Artikel aus ServiceNow regelmäßig basierend auf dem Aktualisierungszeitplan aktualisieren kann. Das Konto sollte über eine <em>Wissens</em> Rolle verfügen. [Erfahren Sie, wie Sie der Rolle für ServiceNow-Konten zuweisen](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html).
 
-Wählen Sie **eine der drei** unterstützten Methoden aus, um Inhalte von ServiceNow zu authentifizieren und zu synchronisieren: 
+Wählen Sie **eine der drei** unterstützten Methoden aus, um Inhalte von ServiceNow zu authentifizieren und zu synchronisieren:
 1. Standardauthentifizierung 
 2. ServiceNow OAuth (empfohlen)
 3. Azure AD OpenID Connect
@@ -50,7 +50,7 @@ Die folgende Tabelle enthält Anleitungen zum Ausfüllen des Endpunkts-erstellun
 Name | Dieser eindeutige Wert identifiziert die Anwendung, für die Sie OAuth-Zugriff benötigen. | Microsoft Search
 Client-ID | Eine schreibgeschützte, automatisch generierte eindeutige ID für die Anwendung. Die Instanz verwendet die Client-ID, wenn Sie ein Zugriffstoken anfordert. | NA
 Geheimer Client Schlüssel | Mit dieser freigegebenen geheimen Zeichenfolge autorisieren die ServiceNow-Instanz und die Microsoft Search die Kommunikation miteinander. | Beachten Sie bewährte Methoden für die Sicherheit, indem Sie dies als Kennwort behandeln.
-Umleitungs-URL | Eine erforderliche Rückruf-URL, an die der autorisierungsserver umgeleitet wird. | https://gcs.office.com/v1.0/admin/oauth/callback
+Umleitungs-URL | Eine erforderliche Rückruf-URL, an die der autorisierungsserver umgeleitet wird. | https://gcs.office.com/v1.0/admin/oauth/callback
 Logo-URL | Eine URL, die das Bild für das Anwendungslogo enthält. | NA
 Aktiv | Aktivieren Sie das Kontrollkästchen, um die Anwendungsregistrierung aktiv zu machen. | Auf aktiv festlegen
 Lebensdauer des Aktualisierungs Tokens | Die Anzahl der Sekunden, die ein Aktualisierungstoken gültig ist. Standardmäßig laufen Aktualisierungstoken in 100 Tagen (8640000 Sekunden) ab. | 31.536.000 (1 Jahr)
@@ -122,7 +122,7 @@ OIDC-Anbieter |  Azure AD
 OIDC-Metadaten-URL | Dies muss das Format https \: //Login.microsoftonline.com/"tenandId"/.well-known/OpenID-Configuration <br/>Ersetzen Sie "Mandantenkennung" durch die Verzeichnis (Mandanten-ID) aus Schritt 1 (ohne Anführungszeichen).
 Lebensdauer des OIDC-Konfigurations Cache |  120
 Anwendung | Global
-Benutzer Forderung | Sub
+Benutzer Forderung | sub
 Benutzerfeld | Benutzer-ID
 Aktivieren der Überprüfung der Überprüfung der Forderung | Deaktiviert
 
@@ -150,11 +150,11 @@ Verwenden Sie die Anwendungs-ID als Client-ID (aus Schritt 1) und den geheimen C
 ## <a name="filter-data"></a>Filtern von Daten 
 Mit einer ServiceNow-Abfragezeichenfolge können Sie Bedingungen für die Synchronisierung von Artikeln angeben. Es ist wie eine **Where** -Klausel in einer **SQL-SELECT** -Anweisung. Beispielsweise können Sie auswählen, nur veröffentlichte und aktive Artikel zu indizieren. Weitere Informationen zum Erstellen einer eigenen Abfragezeichenfolge finden Sie unter [Generieren einer codierten Abfragezeichenfolge mithilfe eines Filters](https://docs.servicenow.com/bundle/paris-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html).
 
-## <a name="manage-the-search-schema"></a>Verwalten des Suchschemas
-Konfigurieren Sie nach erfolgreicher Verbindung die Suchschema Zuordnung. Sie können auswählen, welche Eigenschaften **abgefragt**, **durchsuchbar**und **abrufbar**gemacht werden sollen. Weitere Informationen zum Verwalten des Suchschemas finden Sie unter [Verwalten des Suchschemas](https://docs.microsoft.com/microsoftsearch/configure-connector#manage-the-search-schema).
-
 ## <a name="manage-search-permissions"></a>Verwalten von Suchberechtigungen
-Der ServiceNow-Connector unterstützt nur Suchberechtigungen, die für **alle**sichtbar sind. Indizierte Daten werden in den Suchergebnissen angezeigt und sind für alle Benutzer in der Organisation sichtbar.
+Der ServiceNow-Connector unterstützt nur Suchberechtigungen, die für **alle** sichtbar sind. Indizierte Daten werden in den Suchergebnissen angezeigt und sind für alle Benutzer in der Organisation sichtbar.
+
+## <a name="manage-the-search-schema"></a>Verwalten des Suchschemas
+Konfigurieren Sie nach erfolgreicher Verbindung die Suchschema Zuordnung. Sie können auswählen, welche Eigenschaften **abgefragt** , **durchsuchbar** und **abrufbar** gemacht werden sollen. Weitere Informationen zum Verwalten des Suchschemas finden Sie unter [Verwalten des Suchschemas](https://docs.microsoft.com/microsoftsearch/configure-connector#manage-the-search-schema).
 
 ## <a name="set-the-refresh-schedule"></a>Festlegen des Aktualisierungszeitplans
 Der ServiceNow-Connector unterstützt Aktualisierungs Zeitpläne für vollständige und inkrementelle Crawls. Es wird empfohlen, beides festzulegen.
@@ -162,6 +162,7 @@ Der ServiceNow-Connector unterstützt Aktualisierungs Zeitpläne für vollständ
 Ein vollständiger durchforstungszeitplan findet gelöschte Artikel, die zuvor mit dem Microsoft-Suchindex synchronisiert wurden, sowie alle Artikel, die aus dem Synchronisierungsfilter verschoben wurden. Wenn Sie zum ersten Mal eine Verbindung mit ServiceNow herstellen, wird eine vollständige Durchforstung ausgeführt, um alle Knowledge Base-Artikel zu synchronisieren. Sie müssen inkrementelle Crawls planen, um neue Elemente zu synchronisieren und Aktualisierungen vorzunehmen.
 
 Der empfohlene Standardwert ist ein Tag für eine vollständige Durchforstung und vier Stunden für eine inkrementelle Durchforstung.
+
 ## <a name="review-and-publish"></a>Überprüfen und veröffentlichen
 Nachdem Sie den Connector konfiguriert haben, können Sie die Verbindung überprüfen und veröffentlichen.
 

@@ -1,5 +1,5 @@
 ---
-title: Anpassen des Suchergebnis Layouts
+title: Verwalten von Layouts für Suchergebnisse
 ms.author: jypal
 author: jypal6
 manager: jeffkizn
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erstellen eines Layouts zum Anzeigen Ihrer benutzerdefinierten Suchergebnisse mithilfe adaptiver Karten
-ms.openlocfilehash: 5bd42eded291781f5122cfede3759327b5222108
-ms.sourcegitcommit: 995ce23d4e47a3456a02dba0ba7c9cd0de64528a
+ms.openlocfilehash: 425e5404c14d500f6ecd84ad449dafb05bbfd31b
+ms.sourcegitcommit: 59435698bece013ae64ca2a68c43455ca10e3fdf
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919510"
+ms.locfileid: "48927180"
 ---
 <!-- markdownlint-disable no-hard-tabs -->
 # <a name="create-a-layout-to-customize-search-results"></a>Erstellen eines Layouts zum Anpassen von Suchergebnissen
@@ -198,7 +198,7 @@ Bevor Sie beginnen, sollten Sie einige Dinge tun, die Sie vermeiden sollten, um 
 - Definieren Sie beim Binden von Werten keine ungültigen Datentypen. Weitere Informationen zu Datentypen finden Sie unter [Verwalten des Suchschemas](https://docs.microsoft.com/sharepoint/search/manage-the-search-schema).
 - Vermeiden Sie das Zuschneiden des Ergebnisses auf der Ergebnisseite, indem Sie der maximalen Höhe des Ergebnis Layouts JSON folgen. Wenn Sie die maximale Höhe des Ergebnis Layouts überschreiten, wird das Ergebnis auf der Ergebnisseite abgeschnitten.
 - Verwenden Sie keine `px` Werte in Elementeigenschaften.
-- Verwenden Sie keinen Abschlag, wenn Sie mit der **ResultSnippet** -Eigenschaft im Ergebnis Layout die Abfrage Übereinstimmung im Suchergebnis hervorheben möchten.
+- Verwenden Sie keinen Abschlag mit der **ResultSnippet** -Eigenschaft im Ergebnis Layout, um die Abfrage Übereinstimmung im Suchergebnis hervorzuheben.
 
 ## <a name="resources"></a>Ressourcen
 

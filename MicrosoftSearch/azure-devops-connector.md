@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten des Azure DevOps Connectors für Microsoft Search
-ms.openlocfilehash: 1030dd2b508e5364f53f92e7c8ce8c12c040ce70
-ms.sourcegitcommit: 85d40512e8616c851da1a38c137ca0e4e8625813
+ms.openlocfilehash: a0028c3b336c2b5e3d01bb14006ee0debb4524f2
+ms.sourcegitcommit: 59435698bece013ae64ca2a68c43455ca10e3fdf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47359721"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48927189"
 ---
 # <a name="azure-devops-connector"></a>Azure DevOps-Connector
 
@@ -69,15 +69,16 @@ Wählen Sie als nächstes aus, welche Felder die Verbindung indizieren soll, und
 
 ![Auswählen von Eigenschaften](media/ADO_choose_properties.png)
 
-## <a name="manage-the-search-schema"></a>Verwalten des Suchschemas
-
-Konfigurieren Sie die Zuordnung für das Suchschema. Sie können auswählen, welche Eigenschaften **abgefragt**, **durchsuchbar** und **abrufbar**gemacht werden sollen.
-
 ## <a name="manage-search-permissions"></a>Verwalten von Suchberechtigungen
 
-Der Azure DevOps-Connector unterstützt derzeit nur Suchberechtigungen **, die für alle sichtbar**sind. Indizierte Daten werden in den Suchergebnissen für alle Benutzer angezeigt.
+Der Azure DevOps-Connector unterstützt derzeit nur Suchberechtigungen **, die für alle sichtbar** sind. Indizierte Daten werden in den Suchergebnissen für alle Benutzer angezeigt.
 
-## <a name="set-the-refresh-schedule"></a>Festlegen des Aktualisierungszeitplans
+## <a name="manage-search-schema"></a>Verwalten des Suchschemas
+
+Konfigurieren Sie die Zuordnung für das Suchschema. Sie können auswählen, welche Eigenschaften **abgefragt** , **durchsuchbar** und **abrufbar** gemacht werden sollen.
+
+
+## <a name="set-refresh-schedule"></a>Zeitplan für die Aktualisierung festlegen
 
 Der Azure DevOps-Connector unterstützt Aktualisierungs Zeitpläne für vollständige und inkrementelle Crawls. Bei einer vollständigen Durchforstung werden gelöschte Arbeitsaufgaben gesucht, die zuvor mit dem Microsoft-Suchindex synchronisiert wurden. Eine vollständige Durchforstung wird ausgeführt, um alle Arbeitsaufgaben zu synchronisieren. Um neue Arbeitsaufgaben und Aktualisierungen an vorhandenen Arbeitsaufgaben zu synchronisieren, müssen Sie inkrementelle Durchforstungen planen.
 

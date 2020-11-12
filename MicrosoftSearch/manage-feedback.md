@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: Überprüfen und Bearbeiten von Benutzer Feedback in der Microsoft-Suche
-ms.openlocfilehash: fd47403fd86be2e2fb1ba7baee7473958a8e5572
-ms.sourcegitcommit: 4b2cc0a4cd3d7cdcd8eb23a8baa9703173889a73
+ms.openlocfilehash: 332410cd29a7256cccd651c3a668fdf3eb473ba4
+ms.sourcegitcommit: 102371815e739da33d1711197cdc743ae8124baa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48986958"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48996792"
 ---
 # <a name="managing-user-feedback"></a>Verwalten von Benutzer Feedback
 
@@ -32,7 +32,7 @@ Wenn Personen in Ihrer Organisation die Microsoft-Suche verwenden, haben Sie mö
 
 ![Globales Feedback Formular](media/feedback/feedback-global-dialog.png)
 
-Benutzer haben außerdem die Möglichkeit, Ihre Abfrage und andere Diagnoseinformationen zusammen mit der Kategorie und den Kommentaren an Microsoft zu senden. Die Diagnoseinformationen umfassen einige personenbezogene Daten wie eine Benutzer-ID. [Erfahren Sie mehr](https://privacy.microsoft.com/en-US/privacystatement) über Datenschutz und wie wir diese Daten schützen. Die Diagnosedaten enthalten die wichtigsten Informationen, die Microsoft für die Verwendung des Feedback Elements für die Produktverbesserung benötigt.
+Benutzer haben außerdem die Möglichkeit, Ihre Abfrage und andere Diagnoseinformationen zusammen mit der Kategorie und den Kommentaren an Microsoft zu senden. [Erfahren Sie mehr](https://privacy.microsoft.com/en-US/privacystatement) über Datenschutz und wie wir diese Daten schützen. Die Diagnosedaten enthalten die wichtigsten Informationen, die Microsoft für die Verwendung des Feedback Elements für die Produktverbesserung benötigt.
 
 Die meisten Feedback-Übermittlungen werden im Abschnitt [Feedback](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/feedback) des Microsoft Search Admin Center angezeigt. Das Feedback, das mit der Kategorie **Ich möchte vorschlagen, dass eine interne Link** Kategorie als vorgeschlagenes Lesezeichen im Abschnitt [Lesezeichen](https://admin-ignite.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) angezeigt wird, wird durch Filtern nach dem **vorgeschlagenen** Status angezeigt.
 

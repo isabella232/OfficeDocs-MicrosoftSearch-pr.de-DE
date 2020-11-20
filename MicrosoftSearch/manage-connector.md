@@ -12,15 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Verwalten von Microsoft Graph-Connectors für Microsoft Search.
-ms.openlocfilehash: f836d3efc6e52028f2b38c5131fa369f1c9e630f
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: a9b3feff3a5c289fef3f5091518d074970209b9d
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422937"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367676"
 ---
 <!-- markdownlint-disable no-inline-html -->
-# <a name="manage-your-connector-for-microsoft-search"></a>Verwalten des Connectors für Microsoft Search
+
+# <a name="manage-your-connections-for-microsoft-search"></a>Verwalten von Verbindungen für Microsoft Search
 
 Für den Zugriff auf und die Verwaltung Ihrer Connectors müssen Sie als Suchadministrator für Ihren Mandanten festgelegt sein. Wenden Sie sich an Ihren mandantenadministrator, um Sie für die Suchadministrator Rolle zu informieren.
 
@@ -33,9 +34,9 @@ Für jeden Connectortyp unterstützt das [Microsoft 365 Admin Center](https://ad
 Vorgang | Von Microsoft erstellter Connector | Partner oder benutzerdefinierter Connector
 --- | --- | ---
 Hinzufügen einer Verbindung | : heavy_check_mark: (siehe [Konfigurieren Ihres von Microsoft erstellten Connectors](configure-connector.md)) | : x: (Bezug auf Ihren Partner oder den benutzerdefinierten Connector-Administrator UX)
-Löschen einer Verbindung | : heavy_check_mark: | : heavy_check_mark:
+Löschen einer Verbindung | :heavy_check_mark: | :heavy_check_mark:
 Bearbeiten einer veröffentlichten Verbindung | : heavy_check_mark: Name<br></br> : heavy_check_mark: Beschreibung<br></br> : heavy_check_mark: Authentifizierungsanmeldeinformationen für Ihre externe Datenquelle<br></br> : heavy_check_mark: Gateway-Anmeldeinformationen für Ihre lokale Datenquelle<br></br> : heavy_check_mark: Aktualisierungszeitplan<br></br> | : heavy_check_mark: Name<br></br> : heavy_check_mark: Beschreibung
-Bearbeiten einer Entwurfs Verbindung | : heavy_check_mark: | x
+Bearbeiten einer Entwurfs Verbindung | :heavy_check_mark: | :x:
 
 ## <a name="monitor-your-connection-status"></a>Überwachen des Verbindungsstatus
 
@@ -50,6 +51,20 @@ Vier Zustände werden in der Spalte **Status** für jede Verbindung angezeigt:
 * **Angehalten**. Die durch forstungen werden von den Administratoren durch die Option Pause angehalten. Die nächste Durchforstung wird nur ausgeführt, wenn Sie manuell fortgesetzt wird. Die Daten aus dieser Verbindung sind jedoch weiterhin durchsuchbar.
 
 * **Fehler**. Die Verbindung hatte einen kritischen Fehler. Für diesen Fehler ist ein manueller Eingriff erforderlich. Der Administrator muss die entsprechende Aktion basierend auf der angezeigten Fehlermeldung durchführen. Daten, die bis zum Auftreten des Fehlers indiziert wurden, sind durchsuchbar.
+
+### <a name="view-your-last-crawl-info"></a>Anzeigen der letzten Durchforstungs Informationen
+
+Nachdem die erste anfängliche inkrementelle oder vollständige Durchforstung erfolgreich abgeschlossen wurde, werden die letzten Durchforstungs Datenwerte unter dem letzten Durchforstungs Kopf im Detailbereich angezeigt. Wenn keine letzte Durchforstung ausgeführt wurde, werden keine Informationen unter dem letzten Durchforstungs Header angezeigt. Diese Informationen zur letzten Durchforstung helfen Ihnen, Einblicke in die durchgeführte Durchforstung zu gewinnen und die erforderlichen Schritte zu ergreifen, wenn es erforderlich ist.
+
+Die folgenden letzten Durchforstungs Werte sind für jede Verbindung verfügbar:
+
+Wert | Beschreibung
+--- | ---
+Abgeschlossen unter | Datum und Uhrzeit, zu denen die letzte Durchforstung abgeschlossen wurde
+Typ | Inkrementelle oder vollständige Durchforstung
+Dauer | wie viel Zeit dauerte die letzte Durchforstung bis zum Abschluss
+Erfolge | Die Anzahl der Elemente, die in der letzten Durchforstung erfolgreich aufgenommen wurden.
+Fehler | Anzahl von Elementen, die bei der letzten Durchforstung Fehler aufgetreten sind
 
 ### <a name="monitor-errors"></a>Überwachen von Fehlern
 
@@ -81,14 +96,13 @@ Fehlercode | Fehlermeldung | Lösung
 
 ## <a name="monitor-your-index-quota-utilization"></a>Überwachen der Auslastung des Index Kontingents
 
-Während des Vorschauzeitraums verfügt jede Organisation über ein festes Kontingent von bis zu 2 Millionen Elementen für die Indizierung von Inhalten aus externen Systemen über alle Verbindungen hinweg.
+Das verfügbare Index Kontingent und der Verbrauch werden auf der Zielseite für die Connectors angezeigt.
 
-> [!NOTE]
-> Graph Connectors Quota steht für die Dauer der Vorschau kostenlos zur Verfügung. Dies ändert sich bei allgemeiner Verfügbarkeit.
+![Auslastungsbalken für Index Kontingente](media/quota_utilization.png)
 
-Das verfügbare Index Kontingent und der Verbrauch werden auf der Zielseite für Konnektoren angezeigt.
-
-![Index Kontingent Auslastungs Leiste.](media/quota_utilization.png)
+>[!NOTE]
+>Während des Vorschauzeitraums wurde für jede Organisation, die Grafik-Konnektoren ausprobieren, ein kostenloses fest Kontingent von bis zu 2 Millionen Elementen für alle Verbindungen bereitgestellt. Da Graph-Konnektoren allgemein verfügbar sind, läuft das ﻿kostenlose Kontingent am 1. Februar 2021 für Organisationen ab, die Graph-Konnektoren in der Vorschau verwendet haben.
+>Von Microsoft erstellte Graph-Konnektoren mit der Bezeichnung ["Vorschau"](connectors-preview.md) werden nicht in das gesamte berechnete Index Kontingent für Ihre Organisation einbezogen. Sie wird jedoch auf die maximale Anzahl von 10 Verbindungen, die Sie für Ihre Organisation konfigurieren können, und die maximale Anzahl von 7 Millionen-Elementen zählen, die Ihre Organisation über Verbindungen hinweg indizieren kann.
 
 In der Kontingent Auslastungs Leiste werden verschiedene Zustände basierend auf dem Kontingent Verbrauch in Ihrer Organisation angegeben:
 
@@ -101,20 +115,30 @@ Vollständig | 100 %
 
 Die Anzahl der indizierten Elemente wird auch bei jeder Verbindung angezeigt. Die Anzahl von Elementen, die von den einzelnen Verbindungen indiziert werden, trägt zum Gesamtkontingent bei, das für Ihre Organisation verfügbar ist.
 
-Wenn das Index Kontingent für Ihre Organisation überschritten wird, werden alle aktiven Verbindungen beeinträchtigt, und diese Verbindungen werden das Aufnehmen von Inhalten beenden. Um dies zu beheben, können Sie eine der folgenden Aktionen ausführen:
+Wenn das Index Kontingent für Ihre Organisation überschritten wird, werden alle aktiven Verbindungen betroffen sein, und diese Verbindungen werden in den Zustand **Limit überschritten** ausgeführt. In diesem Zustand werden Ihre aktiven Verbindungen  
+
+* Es können keine neuen Elemente hinzugefügt werden.
+
+* Kann vorhandene Elemente aktualisieren oder löschen.
+
+Um dies zu beheben, können Sie eine der folgenden Aktionen ausführen:
+
+* Hier erfahren Sie, wie Sie Index Kontingente für Ihre Organisation unter [Lizenzanforderungen und Preise](licensing.md)erwerben.
 
 * Identifizieren Sie Verbindungen, bei denen zu viele Inhalte aufgenommen werden, und aktualisieren Sie diese, um weniger Elemente zu indizieren, um Platz für Kontingente zu geben. Um die Verbindung zu aktualisieren, müssen Sie löschen und eine neue Verbindung mit einem neuen Einnahme Filter erstellen, der weniger Elemente einbringt.
 
 * Dauerhaftes Löschen einer oder mehrerer Verbindungen
 
-* Wenden Sie sich an Microsoft, wenn Sie die Index Kontingentgrenze für Ihre Organisation erweitern müssen.
+## <a name="limitations"></a>Einschränkungen
 
-## <a name="preview-limitations"></a>Vorschau Einschränkungen
+* Wenn Sie einen von Microsoft erstellten Connector **veröffentlichen** , kann es einige Minuten dauern, bis die Verbindung erstellt wurde. Während dieser Zeit wird der Status der Verbindung als "Ausstehend" angezeigt.
 
-* Wenn Sie einen von Microsoft erstellten Connector **veröffentlichen** , kann es einige Minuten dauern, bis die Verbindung erstellt wurde. Während dieser Zeit zeigt die Verbindung den Status als ausstehend an. Außerdem gibt es keine automatische Aktualisierung, Sie müssen also manuell aktualisieren.
+* Das [Microsoft 365 Admin Center](https://admin.microsoft.com) unterstützt nicht das Bearbeiten des **Suchschemas** , nachdem eine Verbindung veröffentlicht wurde. Um das Suchschema zu bearbeiten, löschen Sie die Verbindung, und erstellen Sie dann eine neue.
 
-* Das [Microsoft 365 Admin Center](https://admin.microsoft.com) unterstützt das Anzeigen und Bearbeiten des **Suchschemas** nach dem Veröffentlichen einer Verbindung nicht. Um das Suchschema zu bearbeiten, löschen Sie die Verbindung, und erstellen Sie dann eine neue.
+* Der Durchsatz für die Einnahme wird mit etwa vier Elementen pro Sekunde gedrosselt.
 
-* Wenn Sie den **Aktualisierungszeitplan**ihrer Verbindung verwalten, wird die Anzahl der Elemente angezeigt, die während jeder Sitzung synchronisiert werden. Der Synchronisierungsverlauf ist jedoch nicht verfügbar.
+* Es gibt keine Unterstützung für Schemaaktualisierungen. Nachdem Sie eine Verbindungseinrichtung erstellt haben, können Sie das Schema nicht aktualisieren. Sie können die Verbindung nur löschen und neu erstellen.
 
-* Wenn die Kontingent Nutzung für Ihre Organisation kritische oder höhere Grenzwerte einschlägt, werden Sie **nicht** über das Nachrichten Center benachrichtigt.  Überprüfen Sie regelmäßig die Seite Connectors Management, um sicherzustellen, dass die konfigurierten Verbindungen nicht die allgemeinen Kontingents Grenzwerte für Ihre Organisation überschritten haben.
+* Es gibt einen Grenzwert für Verbindungen. Jeder Mandant kann bis zu 10 Verbindungen erstellen.
+
+* Die Bearbeitungsunterstützung für die Verbindung ist nicht verfügbar. Nachdem die Verbindung erstellt wurde, können Sie Sie nicht bearbeiten oder ändern. Wenn Sie Details ändern müssen, müssen Sie die Verbindung löschen und neu erstellen.

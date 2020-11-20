@@ -11,15 +11,15 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Vorgehensweise Bereitstellen von Feedback für Microsoft Search Connectors
-ms.openlocfilehash: 678fb84e6b3495fbe518c93f15a9685ac2d9376a
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+description: Bereitstellen von Feedback für Microsoft Graph-Connectors
+ms.openlocfilehash: 75e46e40400163fae729497abd4dab898e69dd25
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422735"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367496"
 ---
-# <a name="provide-feedback-for-microsoft-search-connectors"></a>Bereitstellen von Feedback für Microsoft Search-Connectors
+# <a name="provide-feedback-for-microsoft-graph-connectors"></a>Feedback für Microsoft Graph-Connectors bereitstellen
 
 Das Microsoft Graph Connectors-Team antwortet auf die Such Verwaltungs Community auf mehreren Kanälen:
 

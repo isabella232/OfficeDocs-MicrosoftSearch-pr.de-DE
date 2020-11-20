@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Richten Sie die Microsoft SQL Server oder Azure SQL Connector für Microsoft Search ein.
-ms.openlocfilehash: 71fd8b6cdf090c9dda9ac94973661d865536a984
-ms.sourcegitcommit: 6baf6f4b8a6466ee1a6ad142be8541f659fcf5d9
+ms.openlocfilehash: dc90693e7629c004ecc48b020262ec5cfd0808c0
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48214488"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367577"
 ---
 # <a name="azure-sql-and-microsoft-sql-server-connectors"></a>Azure SQL-und Microsoft SQL Server-Konnektoren
 
@@ -56,7 +56,7 @@ Zum Durchsuchen des Datenbankinhalts müssen Sie beim Konfigurieren des Connecto
 
 ## <a name="full-crawl-required"></a>Vollständige Durchforstung (erforderlich)
 
-In diesem Schritt konfigurieren Sie die SQL-Abfrage, die eine vollständige Durchforstung der Datenbank ausführt. Bei der vollständigen Durchforstung werden alle Spalten oder Eigenschaften ausgewählt, die **abgefragt**, **durchsuchbar**oder **abrufbar**gemacht werden sollen. Sie können auch ACL-Spalten angeben, um den Zugriff auf Suchergebnisse auf bestimmte Benutzer oder Gruppen zu beschränken.
+In diesem Schritt konfigurieren Sie die SQL-Abfrage, die eine vollständige Durchforstung der Datenbank ausführt. Bei der vollständigen Durchforstung werden alle Spalten oder Eigenschaften ausgewählt, die **abgefragt**, **durchsuchbar** oder **abrufbar** gemacht werden sollen. Sie können auch ACL-Spalten angeben, um den Zugriff auf Suchergebnisse auf bestimmte Benutzer oder Gruppen zu beschränken.
 
 > [!Tip]
 > Wenn Sie alle benötigten Spalten abrufen möchten, können Sie mehreren Tabellen beitreten.
@@ -65,13 +65,13 @@ In diesem Schritt konfigurieren Sie die SQL-Abfrage, die eine vollständige Durc
 
 ### <a name="select-data-columns-required-and-acl-columns-optional"></a>Auswählen von Datenspalten (erforderlich) und ACL-Spalten (optional)
 
-Im Beispiel wird die Auswahl von fünf Datenspalten veranschaulicht, die die Daten für die Suche enthalten: OrderID, OrderTitle, OrderDesc, CreatedDateTime und IsDeleted. Um die Ansichtsberechtigungen für jede Datenzeile festzulegen, können Sie optional diese ACL-Spalten auswählen: AllowedUsers, AllowedGroups, DeniedUsers und DeniedGroups. Alle diese Datenspalten können **abgefragt**, **durchsuchbar**oder **abrufbar**gemacht werden.
+Im Beispiel wird die Auswahl von fünf Datenspalten veranschaulicht, die die Daten für die Suche enthalten: OrderID, OrderTitle, OrderDesc, CreatedDateTime und IsDeleted. Um die Ansichtsberechtigungen für jede Datenzeile festzulegen, können Sie optional diese ACL-Spalten auswählen: AllowedUsers, AllowedGroups, DeniedUsers und DeniedGroups. Alle diese Datenspalten können **abgefragt**, **durchsuchbar** oder **abrufbar** gemacht werden.
 
 Wählen Sie Datenspalten aus, wie in der folgenden Beispielabfrage gezeigt: `SELECT OrderId, OrderTitle, OrderDesc, AllowedUsers, AllowedGroups, DeniedUsers, DeniedGroups, CreatedDateTime, IsDeleted`
 
 Um den Zugriff auf die Suchergebnisse zu verwalten, können Sie eine oder mehrere ACL-Spalten in der Abfrage angeben. Mit SQL Connector können Sie den Zugriff auf Datensatzebene steuern. Sie können auswählen, dass für alle Datensätze in einer Tabelle dieselbe Zugriffssteuerung gilt. Wenn die ACL-Informationen in einer separaten Tabelle gespeichert werden, müssen Sie möglicherweise eine Verknüpfung mit diesen Tabellen in Ihrer Abfrage durchführen.
 
-Die Verwendung der einzelnen ACL-Spalten in der obigen Abfrage wird im folgenden beschrieben. In der folgenden Liste werden die vier **Zugriffssteuerungsmechanismen**erläutert.
+Die Verwendung der einzelnen ACL-Spalten in der obigen Abfrage wird im folgenden beschrieben. In der folgenden Liste werden die vier **Zugriffssteuerungsmechanismen** erläutert.
 
 * **AllowedUsers**: Hiermit wird die Liste der Benutzer-IDs angegeben, die auf die Suchergebnisse zugreifen können. Im folgenden Beispiel würde die Liste der Benutzer: John@contoso.com, Keith@contoso.com und Lisa@contoso.com nur Zugriff auf einen Datensatz mit OrderID = 12 haben.
 * **AllowedGroups**: Hiermit wird die Benutzergruppe angegeben, die auf die Suchergebnisse zugreifen kann. Im folgenden Beispiel hätte Group Sales-Team@contoso.com nur Zugriff auf Record mit OrderID = 12.
@@ -117,7 +117,7 @@ Die folgenden ID-Typen werden für die Verwendung als ACLs unterstützt:
 
 ## <a name="incremental-crawl-optional"></a>Inkrementelle Durchforstung (optional)
 
-Geben Sie in diesem optionalen Schritt eine SQL-Abfrage ein, um einen inkrementellen Crawl der Datenbank auszuführen. Mit dieser Abfrage ermittelt der SQL Connector alle Änderungen an den Daten seit der letzten inkrementellen Durchforstung. Wählen Sie wie in der vollständigen Durchforstung alle Spalten aus, die **abgefragt**, **durchsuchbar**oder **abrufbar**gemacht werden sollen. Geben Sie dieselbe Gruppe von ACL-Spalten an, die Sie in der vollständigen Durchforstungs Abfrage angegeben haben.
+Geben Sie in diesem optionalen Schritt eine SQL-Abfrage ein, um einen inkrementellen Crawl der Datenbank auszuführen. Mit dieser Abfrage ermittelt der SQL Connector alle Änderungen an den Daten seit der letzten inkrementellen Durchforstung. Wählen Sie wie in der vollständigen Durchforstung alle Spalten aus, die **abgefragt**, **durchsuchbar** oder **abrufbar** gemacht werden sollen. Geben Sie dieselbe Gruppe von ACL-Spalten an, die Sie in der vollständigen Durchforstungs Abfrage angegeben haben.
 
 Die Komponenten in der folgenden Abbildung ähneln den vollständigen Durchforstungskomponenten mit einer Ausnahme. In diesem Fall ist "ModifiedDateTime" die ausgewählte Wasserzeichen Spalte. Lesen Sie die [vollständigen Crawl Schritte](#full-crawl-required) , um zu erfahren, wie Sie Ihre inkrementelle Durchforstungs Abfrage schreiben und das folgende Bild als Beispiel betrachten.
 
@@ -126,6 +126,14 @@ Die Komponenten in der folgenden Abbildung ähneln den vollständigen Durchforst
 ## <a name="manage-search-permissions"></a>Verwalten von Suchberechtigungen
 
 Sie können die [im vollständigen Durchforstungs Bildschirm angegebenen ACLs](#full-crawl-manage-search-permissions) verwenden, oder Sie können Sie außer Kraft setzen, damit Ihre Inhalte für alle sichtbar sind.
+
+## <a name="assign-property-labels"></a>Zuweisen von Eigenschaften Bezeichnungen
+
+Sie können jeder Beschriftung eine Source-Eigenschaft zuweisen, indem Sie in einem Menü mit Optionen auswählen. Dieser Schritt ist zwar nicht zwingend erforderlich, aber einige Eigenschaften Bezeichnungen verbessern die Suchrelevanz und stellen genauere Suchergebnisse für Endbenutzer sicher.
+
+## <a name="manage-schema"></a>Schema verwalten
+
+Auf dem Bildschirm " **Schema verwalten** " haben Sie die Möglichkeit, die den Eigenschaften zugeordneten Schema **Attribute (** abfragbar, **durchsuchbar**, **abrufbar** und **verfeinernd**) zu ändern, optionale Aliase hinzuzufügen und die **Content** -Eigenschaft auszuwählen.
 
 ## <a name="limitations"></a>Einschränkungen
 

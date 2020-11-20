@@ -12,21 +12,21 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten des Azure DevOps Connectors für Microsoft Search
-ms.openlocfilehash: a0028c3b336c2b5e3d01bb14006ee0debb4524f2
-ms.sourcegitcommit: 59435698bece013ae64ca2a68c43455ca10e3fdf
+ms.openlocfilehash: b9c566e3e07bfca6d4d25b14915f0160f3928b15
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48927189"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367550"
 ---
-# <a name="azure-devops-connector"></a>Azure DevOps-Connector
+# <a name="azure-devops-connector-preview"></a>Azure DevOps Connector (Vorschau)
 
 Mit dem Azure DevOps-Connector kann Ihre Organisation Arbeitsaufgaben in Ihrer Instanz des Azure DevOps-Diensts indizieren. Nachdem Sie den Connector-und den Index Inhalt aus Azure DevOps konfiguriert haben, können Endbenutzer nach diesen Elementen in der Microsoft-Suche suchen.
 
 Dieser Artikel richtet sich an Microsoft 365-Administratoren oder Personen, die einen Azure DevOps-Connector konfigurieren, ausführen und überwachen. Es wird erläutert, wie Sie die Connector-und connectorfunktionen, Einschränkungen und Techniken zur Problembehandlung konfigurieren.
 
 >[!IMPORTANT]
->Der Azure DevOps-Connector unterstützt nur den Azure DevOps Cloud Service. Azure DevOps Server 2019, TFS 2018, TFS 2017, TFS 2015 und TFS 2013 werden von diesem Connector nicht unterstützt.
+>Der Azure DevOps-Connector unterstützt nur den Azure DevOps Cloud Service. Azure DevOps Server 2019, TFS 2018, TFS 2017, TFS 2015 und TFS 2013 werden von diesem Connector nicht unterstützt. 
 
 ## <a name="connect-to-a-data-source"></a>Herstellen einer Verbindung mit einer Datenquelle
 
@@ -34,17 +34,17 @@ Um eine Verbindung mit ihrer Azure DevOps-Instanz herzustellen, benötigen Sie I
 
 ### <a name="register-an-app"></a>Registrieren einer App
 
-Sie müssen eine app in Azure DevOps registrieren, damit die Microsoft Search-App auf die Instanz zugreifen kann. Weitere Informationen finden Sie unter Azure DevOps-Dokumentation zum [Registrieren einer APP](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/oauth?view=azure-devops#register-your-app).
+Sie müssen eine app in Azure DevOps registrieren, damit die Microsoft Search-App auf die Instanz zugreifen kann. Weitere Informationen finden Sie unter Azure DevOps-Dokumentation zum [Registrieren einer APP](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/oauth?view=azure-devops#register-your-app). 
 
 In der folgenden Tabelle finden Sie Anleitungen zum Ausfüllen des App-Registrierungsformulars:
 
- **Obligatorische Felder** | **Beschreibung**      | **Empfohlener Wert**
---- | --- | ---
-| Firmenname         | Dies ist der Name Ihres Unternehmens. | Verwenden eines geeigneten Werts   |
-| Anwendungsname     | Dieser eindeutige Wert identifiziert die Anwendung, die Sie zu autorisieren haben.    | Microsoft Search     |
-| Anwendungswebsite  | Dieses erforderliche Feld ist die URL der Anwendung, die während des Connector-Setups Zugriff auf Ihre Azure DevOps-Instanz anfordert.  | <https://gcs.office.com/>                |
-| Autorisierungs-Rückruf-URL        | Eine erforderliche Rückruf-URL, an die der autorisierungsserver umgeleitet wird. | <https://gcs.office.com/v1.0/admin/oauth/callback>|
-| Autorisierte Bereiche | Dies ist der Umfang des Zugriffs für die Anwendung. | Wählen Sie die folgenden Bereiche aus: Identity (lesen), Arbeitsaufgaben (lesen), Variablen Gruppen (lesen), Projekt und Team (lesen), Grafik (lesen)|
+ **Obligatorische Felder** | **Beschreibung**      | **Empfohlener Wert** 
+--- | --- | --- 
+| Firmenname         | Dies ist der Name Ihres Unternehmens. | Verwenden eines geeigneten Werts   | 
+| Anwendungsname     | Dieser eindeutige Wert identifiziert die Anwendung, die Sie zu autorisieren haben.    | Microsoft Search     | 
+| Anwendungswebsite  | Dieses erforderliche Feld ist die URL der Anwendung, die während des Connector-Setups Zugriff auf Ihre Azure DevOps-Instanz anfordert.  | <https://gcs.office.com/>                | 
+| Autorisierungs-Rückruf-URL        | Eine erforderliche Rückruf-URL, an die der autorisierungsserver umgeleitet wird. | <https://gcs.office.com/v1.0/admin/oauth/callback>| 
+| Autorisierte Bereiche | Dies ist der Umfang des Zugriffs für die Anwendung. | Wählen Sie die folgenden Bereiche aus: Identity (lesen), Arbeitsaufgaben (lesen), Variablen Gruppen (lesen), Projekt und Team (lesen), Grafik (lesen)| 
 
 Beim Registrieren der APP mit den obigen Details erhalten Sie die **App-ID** und den **geheimen Client Schlüssel** , die zum Konfigurieren des Connectors verwendet werden.
 
@@ -71,15 +71,18 @@ Wählen Sie als nächstes aus, welche Felder die Verbindung indizieren soll, und
 
 ## <a name="manage-search-permissions"></a>Verwalten von Suchberechtigungen
 
-Der Azure DevOps-Connector unterstützt derzeit nur Suchberechtigungen **, die für alle sichtbar** sind. Indizierte Daten werden in den Suchergebnissen für alle Benutzer angezeigt.
+Der Azure DevOps-Connector unterstützt Suchberechtigungen, die  **nur für Personen mit Zugriff auf diese Datenquelle** oder für **alle** sichtbar sind. Wenn Sie **nur Personen mit Zugriff auf diese Datenquelle** auswählen, werden indizierte Daten in den Suchergebnissen für Benutzer angezeigt, die basierend auf den Berechtigungen für Benutzer oder Gruppen auf Organisations-, Projekt-oder Bereichspfad Ebene in Azure DevOps auf diese zugreifen können. Wenn Sie **alle** auswählen, werden indizierte Daten für alle Benutzer in den Suchergebnissen angezeigt.
 
-## <a name="manage-search-schema"></a>Verwalten des Suchschemas
+## <a name="assign-property-labels"></a>Zuweisen von Eigenschaften Bezeichnungen
 
-Konfigurieren Sie die Zuordnung für das Suchschema. Sie können auswählen, welche Eigenschaften **abgefragt** , **durchsuchbar** und **abrufbar** gemacht werden sollen.
+Sie können jeder Beschriftung eine Source-Eigenschaft zuweisen, indem Sie in einem Menü mit Optionen auswählen. Dieser Schritt ist zwar nicht zwingend erforderlich, aber einige Eigenschaften Bezeichnungen verbessern die Suchrelevanz und stellen genauere Suchergebnisse für Endbenutzer sicher.
 
+## <a name="manage-schema"></a>Schema verwalten
 
-## <a name="set-refresh-schedule"></a>Zeitplan für die Aktualisierung festlegen
+Auf dem Bildschirm " **Schema verwalten** " haben Sie die Möglichkeit, die den Eigenschaften zugeordneten Schema **Attribute (** abfragbar, **durchsuchbar**, **abrufbar** und **verfeinernd**) zu ändern, optionale Aliase hinzuzufügen und die **Content** -Eigenschaft auszuwählen.
+
+## <a name="set-the-refresh-schedule"></a>Festlegen des Aktualisierungszeitplans
 
 Der Azure DevOps-Connector unterstützt Aktualisierungs Zeitpläne für vollständige und inkrementelle Crawls. Bei einer vollständigen Durchforstung werden gelöschte Arbeitsaufgaben gesucht, die zuvor mit dem Microsoft-Suchindex synchronisiert wurden. Eine vollständige Durchforstung wird ausgeführt, um alle Arbeitsaufgaben zu synchronisieren. Um neue Arbeitsaufgaben und Aktualisierungen an vorhandenen Arbeitsaufgaben zu synchronisieren, müssen Sie inkrementelle Durchforstungen planen.
 
-Der empfohlene Zeitplan beträgt eine Stunde für eine inkrementelle Durchforstung und einen Tag für eine vollständige Durchforstung.
+Der empfohlene Zeitplan beträgt eine Stunde für eine inkrementelle Durchforstung und einen Tag für eine vollständige Durchforstung. 

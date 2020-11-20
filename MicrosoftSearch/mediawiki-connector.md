@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten von MediaWiki Connector für Microsoft Search
-ms.openlocfilehash: d8aa4a99c353a80f7d3dcf768d8287200b17fdc6
-ms.sourcegitcommit: be0c64845477127d73ee24dc727e4583ced3d0e6
+ms.openlocfilehash: 7f6b34dcafc4b82ab3778ec1d7a4921383e44a44
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48206950"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367640"
 ---
 # <a name="mediawiki-connector"></a>MediaWiki-Connector
 
@@ -27,15 +27,19 @@ Dieser Artikel richtet sich an Microsoft 365-Administratoren oder Personen, die 
 
 ## <a name="connect-to-a-data-source"></a>Herstellen einer Verbindung mit einer Datenquelle
 
-Geben Sie Ihre MediaWiki-URL und Anmeldeinformationen für die Authentifizierung der Verbindung ein. Sie benötigen die folgenden Informationen: **Mandanten-ID**, **Ressourcen-** ID, **Client-ID**und den **geheimen Client Schlüssel**.
-
-## <a name="manage-the-search-schema"></a>Verwalten des Suchschemas
-
-Konfigurieren Sie nach erfolgreicher Verbindung die Suchschema Zuordnung. Sie können auswählen, welche Eigenschaften **abgefragt**, **durchsuchbar**und **abrufbar**gemacht werden sollen.
+Geben Sie Ihre MediaWiki-URL und Anmeldeinformationen für die Authentifizierung der Verbindung ein. Sie benötigen die folgenden Informationen: **Mandanten-ID**, **Ressourcen-** ID, **Client-ID** und den **geheimen Client Schlüssel**.
 
 ## <a name="manage-search-permissions"></a>Verwalten von Suchberechtigungen
 
-Der MediaWiki-Connector unterstützt nur Suchberechtigungen, die für **alle**sichtbar sind. Indizierte Daten werden in den Suchergebnissen angezeigt und sind für alle Benutzer in der Organisation sichtbar.
+Der MediaWiki-Connector unterstützt nur Suchberechtigungen, die für **alle** sichtbar sind. Indizierte Daten werden in den Suchergebnissen angezeigt und sind für alle Benutzer in der Organisation sichtbar.
+
+## <a name="assign-property-labels"></a>Zuweisen von Eigenschaften Bezeichnungen
+
+Sie können jeder Beschriftung eine Source-Eigenschaft zuweisen, indem Sie in einem Menü mit Optionen auswählen. Dieser Schritt ist zwar nicht zwingend erforderlich, aber einige Eigenschaften Bezeichnungen verbessern die Suchrelevanz und stellen genauere Suchergebnisse für Endbenutzer sicher.
+
+## <a name="manage-schema"></a>Schema verwalten
+
+Auf dem Bildschirm " **Schema verwalten** " haben Sie die Möglichkeit, die den Eigenschaften zugeordneten Schema **Attribute (** abfragbar, **durchsuchbar**, **abrufbar** und **verfeinernd**) zu ändern, optionale Aliase hinzuzufügen und die **Content** -Eigenschaft auszuwählen.
 
 ## <a name="set-the-refresh-schedule"></a>Festlegen des Aktualisierungszeitplans
 

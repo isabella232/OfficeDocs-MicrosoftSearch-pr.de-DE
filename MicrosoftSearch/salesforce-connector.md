@@ -2,7 +2,7 @@
 title: Salesforce Connector für Microsoft Search
 ms.author: rusamai
 author: rsamai
-manager: jameslao
+manager: jameslau
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -11,23 +11,22 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Einrichten von Salesforce Connector für Microsoft Search
-ms.openlocfilehash: 8de7784cae7d430bc385889bd836360c69492591
-ms.sourcegitcommit: 77ec27736f3c8434b2ac47e10897ac2606ee8a03
+ms.openlocfilehash: 149d1d9a297e09e9b895aeb0947c7ff4a3cbdf84
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48992916"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367649"
 ---
-# <a name="salesforce-connector"></a>Salesforce Connector
+# <a name="salesforce-connector-preview"></a>Salesforce Connector (Vorschau)
 
 Mit dem Salesforce Graph-Konnektor kann Ihre Organisation Kontakte, Verkaufschancen, Leads und Accounts-Objekte in ihrer Salesforce-Instanz indizieren. Nachdem Sie den Connector-und den Index Inhalt von Salesforce konfiguriert haben, können Endbenutzer nach diesen Elementen von einem beliebigen Microsoft Search-Client aus suchen.
 
 Dieser Artikel richtet sich an [Microsoft 365](https://www.microsoft.com/microsoft-365) -Administratoren oder Personen, die einen Salesforce Connector konfigurieren, ausführen und überwachen. Es wird erläutert, wie Sie die Connector-und connectorfunktionen, Einschränkungen und Techniken zur Problembehandlung konfigurieren.
 
 >[!IMPORTANT]
->Der Salesforce Graph Connector unterstützt derzeit die 19 Versionen Sommer 20, Frühling 20, Winter 20 und Sommer.
+>Der Salesforce Graph Connector unterstützt derzeit Sommer ' 19 oder höher.
 
 ## <a name="connection-settings"></a>Verbindungseinstellungen
 
@@ -60,7 +59,7 @@ Zum Herstellen einer Verbindung mit ihrer Salesforce-Instanz benötigen Sie die 
 - Kopieren Sie den Consumer-Schlüssel und das Consumer-Geheimnis. Diese werden als Client-ID und den geheimen Client Schlüssel verwendet, wenn Sie die Verbindungseinstellungen für Ihren Graph-Konnektor im Microsoft 365-Verwaltungsportal konfigurieren.
 
   ![Vom API-Abschnitt zurückgegebene Ergebnisse in der Salesforce-Instanz, nachdem der Administrator alle erforderlichen Konfigurationen übermittelt hat. Consumer Key befindet sich oben in der linken Spalte, und Consumer Secret befindet sich oben rechts in der Spalte.](media/salesforce-connector/clientsecret.png)
-- Führen Sie vor dem Schließen der Salesforce-Instanz die folgenden Schritte aus, um sicherzustellen, dass Aktualisierungstoken nicht ablaufen: 
+- Führen Sie vor dem Schließen der Salesforce-Instanz die folgenden Schritte aus, um sicherzustellen, dass Aktualisierungstoken nicht ablaufen:
     - Wechseln Sie zu apps-> App-Manager
     - Suchen Sie die soeben erstellte APP, und wählen Sie die Dropdownliste rechts aus. Wählen Sie **Verwalten** aus.
     - Auswählen von **Richtlinien bearbeiten**
@@ -89,21 +88,21 @@ Konfigurieren Sie die Verbindungseinstellungen für Ihren Graph-Konnektor wie fo
   ![Screenshot der erfolgreichen Anmeldung. Das grüne Banner, das besagt, dass die Verbindung erfolgreich verläuft, befindet sich unter dem Feld für Ihre Salesforce-Instanz-URL.](media/salesforce-connector/sf5.png)
 
 ## <a name="manage-search-permissions"></a>Verwalten von Suchberechtigungen
-Sie müssen auswählen, welche Benutzer Suchergebnisse aus dieser Datenquelle erhalten. Wenn Sie nur bestimmten Azure-Active Directory (AAD) oder nicht-Aad-Benutzern das Anzeigen der Suchergebnisse gestatten, müssen Sie die Identitäten zuordnen.
+Sie müssen auswählen, welche Benutzer Suchergebnisse aus dieser Datenquelle erhalten. Wenn Sie nur bestimmten Azure-Active Directory (Azure AD) oder nicht-Azure AD-Benutzern die Suchergebnisse anzeigen können, müssen Sie die Identitäten zuordnen.
 
 ### <a name="select-permissions"></a>Auswählen von Berechtigungen
-Sie können Zugriffssteuerungslisten (Access Control Lists, ACLs) aus ihrer Salesforce-Instanz aufnehmen oder jedem in Ihrer Organisation die Möglichkeit geben, Suchergebnisse aus dieser Datenquelle anzuzeigen. ACLs können Azure Active Directory (AAD)-Identitäten, nicht-Aad-Identitäten oder beides umfassen.
+Sie können Zugriffssteuerungslisten (Access Control Lists, ACLs) aus ihrer Salesforce-Instanz aufnehmen oder jedem in Ihrer Organisation die Möglichkeit geben, Suchergebnisse aus dieser Datenquelle anzuzeigen. ACLs können Azure Active Directory (AAD)-Identitäten (Benutzer, die von Azure AD zu Salesforce verbunden sind), nicht Azure AD Identitäten (Native Salesforce-Benutzer mit entsprechenden Identitäten in Azure AD) oder beides umfassen.
 
 ![Wählen Sie den Bildschirm Berechtigungen aus, der von einem Administrator abgeschlossen wurde. Der Administrator hat die Option "nur Personen mit Zugriff auf diese Datenquelle" ausgewählt und in einem Dropdownmenü mit Identitätstypen auch "Aad" ausgewählt.](media/salesforce-connector/sf6.png)
 
 ### <a name="map-non-aad-identities"></a>Zuordnen von nicht Aad Identitäten 
-Wenn Sie eine ACL aus ihrer Salesforce-Instanz aufnehmen und "nicht-Aad" für den Identitätstyp ausgewählt haben, finden Sie Anweisungen zum Zuordnen der Identitäten unter [Zuordnen der nicht Azure AD Identitäten ](map-non-aad.md) .
+Wenn Sie eine ACL aus ihrer Salesforce-Instanz aufnehmen und "nicht-Aad" für den Identitätstyp ausgewählt haben, finden Sie Anweisungen zum Zuordnen der Identitäten unter [Zuordnen der nicht Azure AD Identitäten](map-non-aad.md) .
 
 ### <a name="map-aad-identities"></a>Zuordnen von Aad-Identitäten
-Wenn Sie eine ACL aus ihrer Salesforce-Instanz aufnehmen und "Aad" für den Identitätstyp ausgewählt haben, finden Sie Anweisungen zum Zuordnen der Identitäten unter [Zuordnen der Azure AD Identitäten](map-aad.md) .
+Wenn Sie eine ACL aus ihrer Salesforce-Instanz aufnehmen und "Aad" für den Identitätstyp ausgewählt haben, finden Sie Anweisungen zum Zuordnen der Identitäten unter [Zuordnen der Azure AD Identitäten](map-aad.md) . Informationen zum Einrichten Azure AD SSO für Salesforce finden Sie in diesem [Lernprogramm](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/salesforce-tutorial).
 
 ## <a name="assign-property-labels"></a>Zuweisen von Eigenschaften Bezeichnungen 
-Sie können jeder Beschriftung eine Source-Eigenschaft zuweisen, indem Sie in einem Menü mit Optionen auswählen. Dieser Schritt ist zwar nicht zwingend erforderlich, aber einige Eigenschaften Bezeichnungen verbessern die Suchrelevanz und stellen genauere Suchergebnisse für Endbenutzer sicher. Standardmäßig wurden einigen Bezeichnungen wie "Title", "URL" und "LastModifiedBy" bereits Quelleigenschaften zugewiesen.
+Sie können jeder Beschriftung eine Source-Eigenschaft zuweisen, indem Sie in einem Menü mit Optionen auswählen. Dieser Schritt ist zwar nicht zwingend erforderlich, aber einige Eigenschaften Bezeichnungen verbessern die Suchrelevanz und stellen genauere Suchergebnisse für Endbenutzer sicher. Standardmäßig wurden einigen Bezeichnungen wie "Title", "" URL "," "CreatedBy" und "LastModifiedBy" bereits Quelleigenschaften zugewiesen.
 
 ![Bildschirm Eigenschaften Bezeichnungen zuweisen mit Standard Quelleigenschaften.](media/salesforce-connector/sf8.png)
 
@@ -126,7 +125,6 @@ Der empfohlene Zeitplan beträgt eine Woche für eine vollständige Durchforstun
 - Der Graph Connector unterstützt derzeit keine Apex-basierte, Gebiets basierte Freigabe und Freigabe mithilfe persönlicher Gruppen von salesforce.
 - Es gibt einen bekannten Bug in der Salesforce-API, den der Grafik-Konnektor verwendet, wobei die privaten org Wide-Standardwerte für Leads derzeit nicht berücksichtigt werden.  
 - Wenn ein Feld für ein Profil auf Field Level Security (FLS) festgelegt ist, nimmt der Graph Connector dieses Feld nicht für Profile in dieser Salesforce-Organisation auf. Benutzer können daher nicht nach Werten für diese Felder suchen, noch wird Sie in den Ergebnissen angezeigt.  
-- Alle FLS-Einstellungen werden während der vollständigen Synchronisierung des Connectors berücksichtigt.
 - Auf dem Bildschirm "Schema verwalten" werden diese allgemeinen Standardeigenschaften Namen einmal aufgeführt, und die Auswahl erfolgt, damit Sie abgefragt, durchsuchbar und abrufbar ist, für alle oder keine.
     - Name
     - Url 

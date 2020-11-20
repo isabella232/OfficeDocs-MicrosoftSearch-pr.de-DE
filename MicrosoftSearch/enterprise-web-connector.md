@@ -12,23 +12,27 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten des Connectors für die Enterprise-Websites für Microsoft Search
-ms.openlocfilehash: b4d9f837892bcfd795421530e0571fa0509a2761
-ms.sourcegitcommit: be0c64845477127d73ee24dc727e4583ced3d0e6
+ms.openlocfilehash: 4b9d8a8472c81c2bc647b3cef3cdb437073d36cf
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48206941"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367469"
 ---
 <!-- markdownlint-disable no-inline-html -->
 # <a name="enterprise-websites-connector"></a>Enterprise-Websites-Connector
 
-Mit dem Enterprise-Website-Konnektor kann Ihre Organisation Artikel und **Inhalte von den internen Websites aus**indizieren. Nachdem Sie den Connector konfiguriert und Inhalte von der Website synchronisiert haben, können Endbenutzer nach diesen Inhalten von einem beliebigen Microsoft Search-Client aus suchen.
+Mit dem Enterprise-Website-Konnektor kann Ihre Organisation Artikel und **Inhalte von den internen Websites aus** indizieren. Nachdem Sie den Connector konfiguriert und Inhalte von der Website synchronisiert haben, können Endbenutzer nach diesen Inhalten von einem beliebigen Microsoft Search-Client aus suchen.
 
 Dieser Artikel richtet sich an [Microsoft 365](https://www.microsoft.com/microsoft-365) -Administratoren oder Personen, die einen Connector für Unternehmenswebsites konfigurieren, ausführen und überwachen. Es wird erläutert, wie Sie die Connector-und connectorfunktionen, Einschränkungen und Techniken zur Problembehandlung konfigurieren.  
 
 ## <a name="connect-to-a-data-source"></a>Herstellen einer Verbindung mit einer Datenquelle
 
-Zum Herstellen einer Verbindung mit Ihrer Datenquelle benötigen Sie die Stamm-URL und eine Form der Authentifizierung: None, Standardauthentifizierung oder OAuth 2,0 mit [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/).
+Um eine Verbindung mit Ihrer Datenquelle herzustellen, müssen Sie die Stamm-URL der Website und die Art der Authentifizierung ausfüllen, die Sie verwenden möchten: keine, Standardauthentifizierung oder OAuth 2,0 mit [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/).
+
+### <a name="url"></a>URL
+
+Verwenden Sie das Feld URL, um den Stamm der Website anzugeben, die Sie crawlen möchten. Der Connector für Unternehmenswebsites verwendet diese URL als Ausgangspunkt und befolgt alle Links von dieser URL für die Durchforstung.
 
 ### <a name="authentication"></a>Authentifizierung
 
@@ -45,21 +49,25 @@ Um die Werte für die Ressource, client_id und client_secret abzurufen, wechseln
 
 Weitere Informationen finden Sie unter [Quick Start: Registrieren einer Anwendung mit der Microsoft Identity-Plattform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
-### <a name="root-url"></a>Stamm-URL
+## <a name="add-urls-to-exclude"></a>Hinzufügen von URLs zum Ausschließen
 
-Die Stamm-URL ist das, was die Durchforstung initiiert und für die Authentifizierung verwendet wird. Sie können die URL von der Startseite der Website abrufen, die Sie durchforsten möchten.
-
-## <a name="select-the-source-properties"></a>Auswählen der Quelleigenschaften
-
-Quelleigenschaften werden basierend auf dem Datenformat der Unternehmenswebsite definiert. Sie können jedoch eine **Ausschlussliste** erstellen, um einige URLs von der Durchforstung auszuschließen, wenn dieser Inhalt vertraulich ist oder nicht durchforstet werden kann. Um eine Ausschlussliste zu erstellen, navigieren Sie durch die Stamm-URL. Sie haben die Möglichkeit, die ausgeschlossenen URLs während des Konfigurationsprozesses der Liste hinzuzufügen.
+Sie können optional eine **Ausschlussliste** erstellen, um einige URLs von der Durchforstung auszuschließen, wenn dieser Inhalt vertraulich ist oder nicht durchforstet werden sollte. Um eine Ausschlussliste zu erstellen, navigieren Sie durch die Stamm-URL. Sie haben die Möglichkeit, die ausgeschlossenen URLs während des Konfigurationsprozesses der Liste hinzuzufügen.
 
 ## <a name="manage-search-permissions"></a>Verwalten von Suchberechtigungen
 
-Es gibt keine Unterstützung für Zugriffssteuerungslisten (Access Control Lists, ACLs). Daher wird empfohlen, nur die Websites zu verbinden, die für jeden Benutzer in Ihrer Organisation sichtbar sind.
+Der Connector für Unternehmenswebsites unterstützt nur Suchberechtigungen, die für **alle** sichtbar sind. Indizierte Daten werden in den Suchergebnissen angezeigt und sind für alle Benutzer in der Organisation sichtbar.
+
+## <a name="assign-property-labels"></a>Zuweisen von Eigenschaften Bezeichnungen
+
+Sie können jeder Beschriftung eine Source-Eigenschaft zuweisen, indem Sie in einem Menü mit Optionen auswählen. Dieser Schritt ist zwar nicht zwingend erforderlich, aber einige Eigenschaften Bezeichnungen verbessern die Suchrelevanz und stellen genauere Suchergebnisse für Endbenutzer sicher.
+
+## <a name="manage-schema"></a>Schema verwalten
+
+Auf dem Bildschirm " **Schema verwalten** " haben Sie die Möglichkeit, die den Eigenschaften zugeordneten Schema **Attribute (** abfragbar, **durchsuchbar**, **abrufbar** und **verfeinernd**) zu ändern, optionale Aliase hinzuzufügen und die **Content** -Eigenschaft auszuwählen.
 
 ## <a name="set-the-refresh-schedule"></a>Festlegen des Aktualisierungszeitplans
 
-Der Connector für Unternehmenswebsites unterstützt nur eine vollständige Durchforstung. Dies bedeutet, dass der Connector während jeder Durchforstung alle Inhalte der Website liest. Um sicherzustellen, dass der Connector genügend Zeit zum Lesen des Inhalts erhält, wird empfohlen, ein Intervall für eine große Aktualisierungsplanung festzulegen. Wir empfehlen eine geplante Aktualisierung zwischen einer und zwei Wochen.
+Der Connector für Unternehmenswebsites unterstützt nur eine vollständige Aktualisierung. Dies bedeutet, dass der Connector während jeder Aktualisierung alle Inhalte der Website erneut crawlt. Um sicherzustellen, dass der Connector genügend Zeit zum durchforsten des Inhalts erhält, wird empfohlen, ein Intervall für eine große Aktualisierungsplanung festzulegen. Wir empfehlen eine geplante Aktualisierung zwischen einer und zwei Wochen.
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
@@ -82,4 +90,4 @@ Beim Lesen des Inhalts der Website kann bei der Durchforstung einige Quellfehler
 
 ## <a name="limitations"></a>Einschränkungen
 
-Der Connector für Unternehmenswebsites unterstützt die Suche von Daten auf **dynamischen**Webseiten nicht. Beispiele für diese Webseiten Leben in Inhaltsverwaltungssystemen wie [Confluence](https://www.atlassian.com/software/confluence) und [Unily](https://www.unily.com/) oder in Datenbanken, in denen Websiteinhalte gespeichert sind.
+Der Connector für Unternehmenswebsites unterstützt die Suche von Daten auf **dynamischen** Webseiten nicht. Beispiele für diese Webseiten Leben in Inhaltsverwaltungssystemen wie [Confluence](https://www.atlassian.com/software/confluence) und [Unily](https://www.unily.com/) oder in Datenbanken, in denen Websiteinhalte gespeichert sind.

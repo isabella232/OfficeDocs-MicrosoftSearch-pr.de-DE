@@ -11,14 +11,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Schritte zum Zuordnen von Aad-Identitäten
-ms.openlocfilehash: e373302314e3044f6bd6b874a341c8a1ada77556
-ms.sourcegitcommit: 77ec27736f3c8434b2ac47e10897ac2606ee8a03
+ms.openlocfilehash: db0378e596c560edebd2ceb942e6327b47a5286b
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48992908"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367703"
 ---
 # <a name="map-your-azure-ad-identities"></a>Zuordnen Ihrer Azure AD Identitäten  
 
@@ -53,7 +52,7 @@ Im folgenden finden Sie einige Beispiele von Formeln mit Ausgaben für Sample re
 Nachdem Sie Ihre Formel bereitgestellt haben, können Sie optional auf **Vorschau** klicken, um eine Vorschau von fünf zufälligen Benutzern aus der Datenquelle anzuzeigen, deren jeweilige Benutzerzuordnungen angewendet wurden. Die Ausgabe der Vorschau enthält den Wert der Azure AD Benutzereigenschaften, die in Schritt 1 für diese Benutzer ausgewählt wurden, und die Ausgabe der letzten Formel, die in Schritt 2 für diesen Benutzer bereitgestellt wurde. Er gibt auch an, ob die Ausgabe der Formel über ein "Success"-oder "failed"-Symbol in einen Azure AD-Benutzer in Ihrem Mandanten aufgelöst werden kann.  
 
 >[!NOTE]
->Sie können weiterhin mit dem Erstellen Ihrer Verbindung fortfahren, wenn eine oder mehrere Benutzerzuordnungen den Status "Fehler" aufweisen, nachdem Sie auf " **Vorschau** " klicken. In der Vorschau werden 5 zufällige Benutzer und deren Zuordnungen aus der Datenquelle angezeigt. Wenn die von Ihnen bereitgestellten Zuordnungen nicht alle Benutzer zuordnen, kann dieser Fall auftreten.
+>Sie können weiterhin mit dem Erstellen Ihrer Verbindung fortfahren, wenn eine oder mehrere Benutzerzuordnungen den Status "Fehler" aufweisen, nachdem Sie auf " **Vorschau**" klicken. In der Vorschau werden 5 zufällige Benutzer und deren Zuordnungen aus der Datenquelle angezeigt. Wenn die von Ihnen bereitgestellten Zuordnungen nicht alle Benutzer zuordnen, kann dieser Fall auftreten.
 
 ## <a name="sample-azure-ad-mapping"></a>Beispiel Azure AD Zuordnung
 

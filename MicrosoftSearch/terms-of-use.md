@@ -12,16 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Rechtliche Nutzungsbedingungen für Microsoft Graph Connectors Public Preview für Microsoft Search
-ms.openlocfilehash: ee70ae9b747d6f0558426fd568a63abc6d2142f1
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: d9a8e4d55904edac845a46ed6b524ed09433135b
+ms.sourcegitcommit: ac4e261c01262be747341f810d2d1faf220d3961
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626900"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "49382570"
 ---
-# <a name="microsoft-graph-connectors-public-preview-terms-of-use"></a>Microsoft Graph Connectors Public Preview: Nutzungsbedingungen
-
-Microsoft Graph-Connectors sind eine Vorschaufunktion und unterliegen den gleichen Nutzungsbedingungen, die unter "Vorschaubilder" in den [Online Dienstbedingungen](http://www.microsoftvolumelicensing.com/Downloader.aspx?documenttype=OST&lang=English)beschrieben werden.
+# <a name="microsoft-graph-connectors-terms-of-use"></a>Microsoft Graph-Connectors: Nutzungsbedingungen
 
 Ihre Verwendung von Microsoft Graph-Connectors unterliegt möglicherweise den allgemeinen Geschäftsbedingungen von Drittanbietern. Microsoft ist nicht Vertragspartei ihrer Vereinbarung (en) mit Drittanbietern, und etwaige Bedenken oder Fragen bezüglich der Bedingungen oder Dienstleistungen von Drittanbietern sollten an den dritten weitergeleitet werden. Als Daten Controller für Ihre Daten sind Sie für die Indizierung von Daten in Ihren Microsoft 365-Mandanten verantwortlich.
 

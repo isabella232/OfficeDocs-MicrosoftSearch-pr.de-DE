@@ -1,5 +1,5 @@
 ---
-title: Microsoft SQL Server und Azure SQL Connector für Microsoft Search
+title: Oracle SQL Connector für Microsoft-Suche
 ms.author: vivg
 author: Vivek
 manager: harshkum
@@ -12,51 +12,29 @@ search.appverid:
 - MET150
 - MOE150
 description: Richten Sie den Oracle SQL Connector für Microsoft Search ein.
-ms.openlocfilehash: 118e073f355d2ce06e63745efbf5d090ba61d582
+ms.openlocfilehash: cf7946533b3806bb730cdc6a31f7745ebad2c59d
 ms.sourcegitcommit: ac4e261c01262be747341f810d2d1faf220d3961
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/23/2020
-ms.locfileid: "49382596"
+ms.locfileid: "49382679"
 ---
-# <a name="azure-sql-and-microsoft-sql-server-connectors"></a>Azure SQL-und Microsoft SQL Server-Connectors
+# <a name="oracle-sql-connector"></a>Oracle SQL Connector
 
-Mit einem Microsoft SQL Server oder Azure SQL Connector kann Ihre Organisation Daten aus einer lokalen SQL Server Datenbank oder einer Datenbank, die in ihrer Azure SQL-Instanz in der Cloud gehostet wird, ermitteln und indizieren. Der Connector indiziert angegebene Inhalte in Microsoft Search. Um den Index mit den Quelldaten auf dem neuesten Stand zu halten, unterstützt er periodische vollständige und inkrementelle Crawls. Mit diesen SQL-Connectors können Sie auch den Zugriff auf Suchergebnisse für bestimmte Benutzer einschränken.
+Mit dem Oracle SQL Connector kann Ihre Organisation Daten aus einer lokalen Oracle-Datenbank ermitteln und indizieren. Der Connector indiziert angegebene Inhalte in Microsoft Search. Um den Index mit den Quelldaten auf dem neuesten Stand zu halten, unterstützt er periodische vollständige und inkrementelle Crawls. Mit dem Oracle SQL Connector können Sie auch den Zugriff auf Suchergebnisse für bestimmte Benutzer einschränken.
 
-Dieser Artikel richtet sich an Microsoft 365-Administratoren oder Personen, die einen Microsoft SQL Server oder Azure SQL Connector konfigurieren, ausführen und überwachen. Es wird erläutert, wie Sie die Connector-und connectorfunktionen, Einschränkungen und Techniken zur Problembehandlung konfigurieren. 
+Dieser Artikel richtet sich an Microsoft 365-Administratoren oder Personen, die einen Oracle SQL Connector konfigurieren, ausführen und überwachen. Es wird erläutert, wie Sie die Connector-und connectorfunktionen, Einschränkungen und Techniken zur Problembehandlung konfigurieren.
 
-## <a name="install-the-graph-connector-agent-required-for-on-premises-microsoft-sql-server-connector-only"></a>Installieren des Graph Connector-Agents (nur für lokalen Microsoft SQL Server Connector erforderlich)
+## <a name="install-the-graph-connector-agent"></a>Installieren des Graph Connector-Agents
 Um auf Ihre lokalen drittanbieterdaten zugreifen zu können, müssen Sie den Graph Connector-Agent installieren und konfigurieren. Weitere Informationen finden Sie unter [install the graph Connector Agent](on-prem-agent.md) .  
 
-## <a name="register-an-app-for-azure-sql-connector-only"></a>Registrieren einer APP (nur für Azure SQL Connector)
-Für Azure SQL Connector müssen Sie eine app in Azure Active Directory registrieren, damit die Microsoft-Such-App auf Daten für die Indizierung zugreifen kann. Weitere Informationen zum Registrieren einer App finden Sie in der Microsoft Graph-Dokumentation zum [Registrieren einer APP](https://docs.microsoft.com/graph/auth-register-app-v2). 
-
-Nachdem Sie die APP-Registrierung abgeschlossen und den APP-Namen, die Client-ID und die Mandanten-ID unterzeichnet haben, müssen Sie [einen neuen geheimen Client Schlüssel generieren](https://docs.microsoft.com/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret). Der geheime Client Schlüssel wird nur einmal angezeigt. Beachten Sie, dass & den geheimen Client Schlüssel sicher speichern. Verwenden Sie die Client-ID und den geheimen Client Schlüssel beim Konfigurieren einer neuen Verbindung in Microsoft Search. 
-
-Um die registrierte APP zu ihrer Azure SQL-Datenbank hinzuzufügen, müssen Sie Folgendes tun:
- - Melden Sie sich bei ihrer Azure SQL DB an.
- - Öffnen eines neuen Abfragefensters
- - Erstellen Sie einen neuen Benutzer, indem Sie den Befehl ' Create User [App Name] from external Provider ' ausführen.
- - Benutzer zur Rolle hinzufügen, indem Sie command ' exec sp_addrolemember ' db_datareader ', [App Name] ' oder ' Alter Role db_datareader Add Member [App Name] ' ausführen
-
->[!NOTE]
->Wenn Sie den Zugriff auf alle in Azure Active Directory registrierten apps widerrufen möchten, lesen Sie in der Azure-Dokumentation nach, wie Sie [eine registrierte App entfernen](https://docs.microsoft.com/azure/active-directory/develop/quickstart-remove-app).
-
 ## <a name="connect-to-a-data-source"></a>Herstellen einer Verbindung mit einer Datenquelle
-Um den Microsoft SQL Server-Connector mit einer Datenquelle zu verbinden, müssen Sie den Datenbankserver, den Sie durchforsten möchten, und den on-Prem-Agent konfigurieren. Sie können dann mit der erforderlichen Authentifizierungsmethode eine Verbindung mit der Datenbank herstellen.
+Um den Oracle SQL Connector mit einer Datenquelle zu verbinden, müssen Sie den Datenbankserver, den Sie durchforsten möchten, und den lokalen Graph Connector-Agent konfigurieren. Sie können dann mit der erforderlichen Authentifizierungsmethode eine Verbindung mit der Datenbank herstellen.
+
+Für Oracle SQL Connector müssen Sie den Hostnamen, den Port und den Dienst (Daten Bank Name) zusammen mit der bevorzugten Authentifizierungsmethode, dem Benutzernamen und dem Kennwort angeben.
 
 > [!NOTE]
-> Für die Datenbank muss SQL Server Version 2008 oder höher ausgeführt werden, damit der Microsoft SQL Server-Connector eine Verbindung herstellen kann.
-
-Für den Azure SQL Connector müssen Sie nur den Servernamen oder die IP-Adresse angeben, mit der Sie eine Verbindung herstellen möchten. Azure SQL Connector unterstützt nur Azure Active Directory Open ID Connect (OIDC)-Authentifizierung, um eine Verbindung mit der Datenbank herzustellen.
-
-Um zusätzliche Sicherheit zu erhalten, können Sie IP-Firewallregeln für Ihren Azure SQL Server oder Ihre Datenbank konfigurieren. Weitere Informationen zum Einrichten von IP-Firewallregeln finden Sie in der Dokumentation zu [IP-Firewall-Regeln](https://docs.microsoft.com/azure/azure-sql/database/firewall-configure). Fügen Sie die folgenden Client-IP-Bereiche in die Einstellungen der Firewall ein.
-
-| Region | IP-Bereich |
-| ------------ | ------------ |
-| NAM | 52.250.92.252/30, 52.224.250.216/30 |
-| EUR | 20.54.41.208/30, 51.105.159.88/30 |
-| APC | 52.139.188.212/30, 20.43.146.44/30 |
+> Für die Datenbank muss die Oracle-Datenbank Version 11g oder höher ausgeführt werden, damit der Connector eine Verbindung herstellen kann. Der Connector unterstützt die Oracle-Datenbank, die auf Windows-, Linux-und Azure VM-Plattformen gehostet wird.
 
 Zum Durchsuchen des Datenbankinhalts müssen Sie beim Konfigurieren des Connectors SQL-Abfragen angeben. Diese SQL-Abfragen müssen alle Datenbankspalten benennen, die Sie indizieren möchten (also Quelleigenschaften), einschließlich aller SQL-Joins, die ausgeführt werden müssen, um alle Spalten abzurufen. Wenn Sie den Zugriff auf Suchergebnisse einschränken möchten, müssen Sie Zugriffssteuerungslisten (Access Control Lists, ACLs) in SQL-Abfragen angeben, wenn Sie den Connector konfigurieren.
 
@@ -84,17 +62,16 @@ Die Verwendung der einzelnen ACL-Spalten in der obigen Abfrage wird im folgenden
 ![Beispieldaten, die die Sortier-und AclTable mit Beispiel Eigenschaften anzeigen](media/MSSQL-ACL1.png)
 
 ### <a name="supported-data-types"></a>Unterstützte Datentypen
-In der folgenden Tabelle werden die SQL-Datentypen zusammengefasst, die in den MS SQL-und Azure SQL-Connectors unterstützt werden. Die Tabelle fasst auch den Indizierungs Datentyp für den unterstützten SQL-Datentyp zusammen. Weitere Informationen zu Microsoft Graph-Konnektoren, die unterstützte Datentypen für die Indizierung sind, finden Sie in der Dokumentation zu [Eigenschaften Ressourcentypen](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties). 
+In der folgenden Tabelle werden die Datentypen zusammengefasst, die vom Oracle SQL Connector unterstützt werden. Die Tabelle fasst auch den Indizierungs Datentyp für den unterstützten SQL-Datentyp zusammen. Weitere Informationen zu Microsoft Graph-Konnektoren, die unterstützte Datentypen für die Indizierung sind, finden Sie in der Dokumentation zu [Eigenschaften Ressourcentypen](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties). 
 
 | Kategorie | Source-Datentyp | Indizierungs Datentyp |
 | ------------ | ------------ | ------------ |
-| Datum und Uhrzeit | date <br> Datum/Uhrzeit <br> datetime2 <br> smalldatetime | Datum/Uhrzeit |
-| Exakt numerisch | bigint <br> int <br> smallint <br> tinyint | Int64 |
-| Exakt numerisch | Bit | Boolescher Wert |
-| Annähernd numerisch | Gleitkommazahl <br> Echtzeit | double |
-| Zeichenfolge | Char <br> varchar <br> text | string |
-| Unicode-Zeichenfolgen | NCHAR <br> nvarchar <br> ntext | string |
-| Andere Datentypen | uniqueidentifier | string |
+| Datentyp "Number" | Zahl (p, 0) | Int64 (für p <= 18) <br> Double (für p > 18) |
+| Datentyp für Gleitkommazahl | Zahl (p, s) <br> FLOAT (p) | double |
+| Date-Datentyp | DATE <br> Timestamp <br> Zeitstempel (n) | Datum/Uhrzeit |
+| Datentyp "Character" | CHAR (n) <br> VARCHAR <br> VARCHAR2 <br> Long <br> CLOB <br> NCLOB | string |
+| Unicode-Zeichendatentyp | NCHAR <br> NVARCHAR | string |
+| ROWID-Datentyp | ROWID <br> UROWID | string |
 
 Für alle anderen Datentypen, die derzeit nicht direkt unterstützt werden, muss die Spalte explizit in einen unterstützten Datentyp umgewandelt werden.
 
@@ -102,8 +79,8 @@ Für alle anderen Datentypen, die derzeit nicht direkt unterstützt werden, muss
 Um zu verhindern, dass die Datenbank überladen wird, führt der Connector Batches aus und setzt vollständige Durchforstungs Abfragen mit einer Wasserzeichen Spalte vollständig Durchforstung fort. Durch Verwendung des Werts der Spalte Wasserzeichen wird jeder nachfolgende Batch abgerufen, und die Abfrage wird vom letzten Prüfpunkt fortgesetzt. Im Wesentlichen handelt es sich hierbei um einen Mechanismus zum Steuern der Datenaktualisierung für vollständige Durchforstungen.
 
 Erstellen Sie Abfrage Ausschnitte für Wasserzeichen, wie in den folgenden Beispielen gezeigt:
-* `WHERE (CreatedDateTime > @watermark)`. Zitieren Sie den Namen der Wasserzeichen Spalte mit dem reservierten Schlüsselwort `@watermark` . Wenn die Sortierreihenfolge der Wasserzeichen Spalte aufsteigend ist, verwenden Sie `>` ; andernfalls verwenden Sie `<` .
-* `ORDER BY CreatedDateTime ASC`. Sortieren Sie in aufsteigender oder absteigender Reihenfolge nach der Wasserzeichen Spalte.
+* `WHERE (CreatedDateTime > @watermark)`. Zitieren Sie den Namen der Wasserzeichen Spalte mit dem reservierten Schlüsselwort `@watermark` . Sie können die Wasserzeichen Spalte nur in aufsteigender Reihenfolge sortieren.
+* `ORDER BY CreatedDateTime ASC`. Sortieren Sie in aufsteigender Reihenfolge nach der Wasserzeichen Spalte.
 
 In der in der folgenden Abbildung gezeigten Konfiguration `CreatedDateTime` befindet sich die ausgewählte Wasserzeichen Spalte. Um den ersten Zeilenbatch abzurufen, geben Sie den Datentyp der Spalte Wasserzeichen an. In diesem Fall ist der Datentyp `DateTime` .
 
@@ -138,13 +115,27 @@ Die Komponenten in der folgenden Abbildung ähneln den vollständigen Durchforst
 ## <a name="manage-search-permissions"></a>Verwalten von Suchberechtigungen 
 Sie können die [im vollständigen Durchforstungs Bildschirm angegebenen ACLs](#full-crawl-manage-search-permissions) verwenden, oder Sie können Sie außer Kraft setzen, damit Ihre Inhalte für alle sichtbar sind.
 
+## <a name="set-the-refresh-schedule"></a>Festlegen des Aktualisierungszeitplans
+Der Oracle SQL Connector unterstützt Aktualisierungs Zeitpläne für vollständige und inkrementelle Crawls. Es wird empfohlen, beides festzulegen.
+
+Ein vollständiger durchforstungszeitplan sucht gelöschte Zeilen, die zuvor mit dem Microsoft-Suchindex synchronisiert wurden, sowie alle Zeilen, die aus dem Synchronisierungsfilter verschoben wurden. Wenn Sie zum ersten Mal eine Verbindung mit der Datenbank herstellen, wird eine vollständige Durchforstung ausgeführt, um alle von der vollständigen Durchforstungs Abfrage abgerufenen Zeilen zu synchronisieren. Um neue Zeilen zu synchronisieren und Aktualisierungen vorzunehmen, müssen Sie inkrementelle Durchforstungen planen.
+
 ## <a name="next-steps-customize-the-search-results-page"></a>Nächste Schritte: Anpassen der Suchergebnisseite
 Erstellen Sie Ihre eigenen vertikalen und Ergebnistypen, sodass Endbenutzer Suchergebnisse aus neuen Verbindungen anzeigen können. Ohne diesen Schritt werden Daten aus ihrer Verbindung nicht auf der Suchergebnisseite angezeigt.
 
 Weitere Informationen zum Erstellen von vertikalen und MRT finden Sie unter [Anpassen der Suchergebnisseite](customize-search-page.md).
 
 ## <a name="limitations"></a>Einschränkungen
-Die SQL-Connectors weisen diese Einschränkungen in der Vorschauversion auf:
-* Microsoft SQL Server Connector: die lokale Datenbank muss SQL Server, Version 2008 oder höher, ausführen.
+Der Oracle SQL Connector weist diese Einschränkungen in der Vorschauversion auf:
+* In der lokalen Datenbank muss die Oracle-Datenbank Version 11g oder höher ausgeführt werden.
 * ACLs werden nur mit einem Benutzerprinzipalnamen (User Principal Name, UPN), Azure Active Directory (Azure AD) oder Active Directory Sicherheit unterstützt. 
 * Das Indizieren von umfangreichen Inhalten in Datenbankspalten wird nicht unterstützt. Beispiele für solche Inhalte sind HTML-, JSON-, XML-, BLOBs-und Dokumentanalysen, die als Links in den Datenbankspalten vorhanden sind.
+
+## <a name="troubleshooting-guide"></a>Leitfaden zur Problembehandlung
+Unten finden Sie eine Liste der häufigsten Fehler, die beim Konfigurieren des Connectors und ihrer möglichen Gründe beobachtet wurden.
+| Konfigurationsschritt | Fehlermeldung | Mögliche Ursache (n) |
+| ------------ | ------------ | ------------ |
+| Datenbankeinstellungen | Fehler vom Datenbankserver: Timeout der Verbindungsanforderung | Ungültiger Hostname <br> Host nicht erreichbar |
+| Datenbankeinstellungen | Fehler vom Datenbankserver: ORA-12541: TNS: No listner | Ungültiger Port |
+| Datenbankeinstellungen | Fehler vom Datenbankserver: ORA-12514: TNS: listner kennt derzeit nicht den in Connector-Deskriptor angeforderten Dienst | Ungültiger Dienstname (Datenbank) |
+| Datenbankeinstellungen | Fehler vom Datenbankserver: Fehler bei der Anmeldung für den Benutzer ' `user` '. | Ungültiger Benutzername oder Kennwort |

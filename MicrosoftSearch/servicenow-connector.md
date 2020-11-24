@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten des ServiceNow Connectors für Microsoft Search
-ms.openlocfilehash: 5bcc0870df7c2ad418bb2ae29e9d4d999dcbdf3f
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+ms.openlocfilehash: 520232f8055d5432ccb96a840a9466ae6a4e3b1a
+ms.sourcegitcommit: ac4e261c01262be747341f810d2d1faf220d3961
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367595"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "49382560"
 ---
 # <a name="servicenow-connector"></a>ServiceNow-Connector
 
@@ -171,6 +171,9 @@ Mit einer ServiceNow-Abfragezeichenfolge können Sie Bedingungen für die Synchr
 Der ServiceNow-Connector unterstützt Suchberechtigungen, die für **alle** Benutzer oder **nur für Personen mit Zugriff auf diese Datenquelle** sichtbar sind. Indizierte Daten werden in den Suchergebnissen angezeigt und sind für alle Benutzer in der Organisation oder für Benutzer sichtbar, die Zugriff auf diese haben. ServiceNow Connector unterstützt Standardbenutzer Kriterien-Berechtigungen ohne erweiterte Skripts. Wenn der Connector auf ein Benutzer Kriterium mit erweitertem Skript stößt, werden alle Daten, die diese benutzerkriterien verwenden, nicht in den Suchergebnissen angezeigt.
 
 Wenn Sie **nur Personen mit Zugriff auf diese Datenquelle** auswählen, müssen Sie entscheiden, ob Ihre ServiceNow-Instanz Azure-Active Directory (AAD)-Benutzer oder nicht-Aad-Benutzer enthält.
+
+>[!NOTE]
+>Der ServiceNow-Connector befindet sich in der **Vorschau** , wenn Sie **nur Personen mit Zugriff auf diese Datenquelle** auswählen.
 
 >[!NOTE]
 >Wenn Sie Aad als Typ der Identitäts Quelle auswählen, müssen Sie sicherstellen, dass Sie die UPN-Quelleigenschaft für die e-Mail-Zieleigenschaft in ServiceNow zuweisen. Informationen zum Überprüfen oder Ändern ihrer Zuordnungen finden Sie unter [Customizing User Provisioning Attribut-Mappings for Saas Applications in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/app-provisioning/customize-application-attributes).

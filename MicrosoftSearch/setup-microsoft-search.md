@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erstmaliges Einrichten von Microsoft Search.
-ms.openlocfilehash: 37b5f33fe7b49a11c4558debac5b9acae4cc40cd
-ms.sourcegitcommit: aa48b6510883e1617aa13a50b1056fb149c47586
+ms.openlocfilehash: 7d0b8e1b4bbb405e254b2fe2d29b11f081f5b460
+ms.sourcegitcommit: ac4e261c01262be747341f810d2d1faf220d3961
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44256637"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "49382587"
 ---
 # <a name="set-up-microsoft-search"></a>Einrichten von Microsoft Search
 
@@ -31,9 +31,7 @@ Microsoft Search ist im Rahmen von Microsoft 365 standardmäßig für alle Micro
 
 Sie können Microsoft Search vom Microsoft 365 Admin Center aus verwalten.
 
-1. Wechseln Sie im Microsoft 365 Admin Center zu **Einstellungen** > **Microsoft Search**.
-
-**Bitte beachten:** Wenn Microsoft Search unter **Einstellungen** NICHT angezeigt wird, aktivieren Sie den Schalter für **Preview testen** (Try the preview) in der rechten oberen Ecke einer beliebigen Admin Center-Seite.
+1. Wechseln Sie im Microsoft 365 Admin Center zu **Einstellungen**  >  [**Suchen & Intelligence**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch).
 
 Als Administrator sollten Sie einige Dinge berücksichtigen, durch die Sie die Microsoft Search-Nutzererfahrung in Ihrer Organisation effizient und benutzerfreundlich gestalten können.
 

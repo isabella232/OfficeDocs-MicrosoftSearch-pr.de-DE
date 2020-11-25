@@ -11,13 +11,14 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
+ROBOTS: NoIndex
 description: On-Prem-Agent
-ms.openlocfilehash: 30ddf0ac8c6df76d1c598606754066b3d2e93615
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+ms.openlocfilehash: 487c5b179e09fd99fa26ae7a237e89ca38b7be4d
+ms.sourcegitcommit: 69a1c544cc8db364991cb58d7818d7158ff108b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367758"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49408942"
 ---
 # <a name="on-prem-agent"></a>On-Prem-Agent
 
@@ -59,7 +60,7 @@ Nachdem Sie die APP für den Agent erstellt haben, müssen Sie den Agent mit den
 
 Authentifizierungsdetails können in einem der folgenden Formulare bereitgestellt werden.
 
-### <a name="configuring-the-client-secret-for-authentation"></a>Konfigurieren des geheimen Client Schlüssels für authentation
+### <a name="configuring-the-client-secret-for-authentication"></a>Konfigurieren des geheimen Client Schlüssels für die Authentifizierung
 
 1. Wechseln Sie zum [Azure-Portal](https://portal.azure.com) , und melden Sie sich mit den Administratoranmeldeinformationen für den Mandanten an.
 2. Öffnen Sie die **App-Registrierung** im Navigationsbereich, und wechseln Sie zur entsprechenden app. Wählen Sie unter **Verwalten** die Option **Zertifikate und Geheimnisse** aus.
@@ -68,7 +69,7 @@ Authentifizierungsdetails können in einem der folgenden Formulare bereitgestell
 
 ## <a name="using-thumbprint-certificate-for-authentication"></a>Verwenden des Fingerabdruck Zertifikats für die Authentifizierung
 
-Wenn Sie die Authentifizierungsdetails bereits konfiguriert haben, indem Sie [den geheimen Client Schlüssel für authentation konfigurieren](#Configuring-the-client-secret-for-authentication) , können Sie direkt zur [Setup Übersicht](configure-connector.md)springen.
+Wenn Sie die Authentifizierungsdetails bereits konfiguriert haben, indem Sie [den geheimen Client Schlüssel für die Authentifizierung konfigurieren](#configuring-the-client-secret-for-authentication) , können Sie direkt zur [Setup Übersicht](configure-connector.md)wechseln.
 
 1. Öffnen Sie die **App-Registrierung** , und wählen Sie im Navigationsbereich **Zertifikate und Geheimnisse** aus. Kopieren Sie den Fingerabdruck des Zertifikats.
 ![Liste der thumbrint-Zertifikate, wenn Zertifikate und Geheimnisse im linken Bereich ausgewählt sind](media/onprem-agent/certificates.png)

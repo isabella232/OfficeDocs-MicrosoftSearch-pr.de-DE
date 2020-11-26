@@ -1,5 +1,5 @@
 ---
-title: Auf dem Prem-Agent
+title: Lokaler Agent
 ms.author: rusamai
 author: rsamai
 manager: jameslau
@@ -13,35 +13,33 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: On-Prem-Agent
-ms.openlocfilehash: 487c5b179e09fd99fa26ae7a237e89ca38b7be4d
-ms.sourcegitcommit: 69a1c544cc8db364991cb58d7818d7158ff108b8
+ms.openlocfilehash: 763904f8dd96c5db8b0633e36795443502afe7d0
+ms.sourcegitcommit: 0ed8ec8b3c4e0f5f669005081fd8b2219f07b4f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/25/2020
-ms.locfileid: "49408942"
+ms.locfileid: "49420833"
 ---
-# <a name="on-prem-agent"></a>On-Prem-Agent
+# <a name="graph-connector-agent"></a>Grafik-Connector-Agent
 
-## <a name="graph-connector-agent"></a>Grafik-Connector-Agent
-
-Für on-Prem Graph Connectors müssen Sie die *Graph Connector Agent* -Software installieren. Es ermöglicht eine schnelle und sichere Datenübertragung zwischen lokalen Daten und Cloud-Diensten. Dieser Artikel führt Sie durch die Schritte zum Installieren und Konfigurieren der Software. Sobald die Konfiguration konfiguriert wurde, ist Sie für die Erstellung von Verbindungen mit Ihren on-Prem-Datenquellen aus dem [Microsoft 365 Admin Center](https://admin.microsoft.com)verfügbar.
+Bei Verwendung von on-Prem Graph Connectors müssen Sie die *Graph Connector Agent* -Software installieren. Es ermöglicht eine sichere Datenübertragung zwischen lokalen Daten und den Graph Connector-APIs. Dieser Artikel führt Sie durch das Installieren und Konfigurieren des Agents.
 
 ## <a name="installation"></a>Installation
 
-Laden Sie die neueste Version des Graph Connector-Agents mithilfe [dieses Links](https://download.microsoft.com/download/d/d/e/dde18236-9c67-437d-a864-894a0a888ef2/AgentPackage.msi) herunter, und installieren Sie die Software mithilfe des Installations-Assistenten. Mit der empfohlenen Konfiguration des unten beschriebenen Computers kann die Software nahtlos bis zu drei Verbindungen verarbeiten. Verbindungen darüber hinaus können die Leistung beeinträchtigen.
+Laden Sie die neueste Version von Graph Connector Agent [hier](https://aka.ms/gcadownload) herunter, und installieren Sie die Software mithilfe des Installations-Assistenten. Mit der empfohlenen Konfiguration des unten beschriebenen Computers kann die Software bis zu drei Verbindungen verarbeiten. Alle Verbindungen, die darüber hinausgehen, beeinträchtigen möglicherweise die Leistung aller Verbindungen auf dem Agent.
 
 Empfohlene Konfiguration:
 
-* Windows 10, Windows Server 2012 R2 und höher
-* 8 Kerne, 3GHz
-* 16GB RAM, 1GB Festplattenspeicherplatz
+* Windows 10, Windows Server 2016 R2 und höher
+* 8 Prozessorkerne, 3 GHz
+* 16 GB RAM, 2 GB Speicherplatz
 * Netzwerkzugriff auf Datenquelle und Internet über 443
 
-## <a name="creating-app-for-the-agent"></a>Erstellen einer APP für den Agent  
+## <a name="create-and-configure-an-app-for-the-agent"></a>Erstellen und Konfigurieren einer APP für den Agent  
 
-Die Agent-Instanz muss vor dem Erstellen von Verbindungen nur wenige wichtige Parameter eingezogen werden. Diese Parameter umfassen Authentifizierungsdetails, die für die Verwendung von Graph-Einnahme-APIs erforderlich sind.  
+Bevor Sie den Agent verwenden, müssen Sie eine APP erstellen und die Authentifizierungsdetails konfigurieren.
 
-Schritte zum Erstellen einer APP für den Agent.
+### <a name="create-an-app"></a>Erstellen einer APP
 
 1. Wechseln Sie zum [Azure-Portal](https://portal.azure.com) , und melden Sie sich mit den Administratoranmeldeinformationen für den Mandanten an.
 2. Navigieren Sie im Navigationsbereich zu **Azure Active Directory**  ->  **App-Registrierungen** , und wählen Sie **neue Registrierung** aus.
@@ -51,27 +49,65 @@ Schritte zum Erstellen einer APP für den Agent.
 6. Wählen Sie **Microsoft Graph** und dann **Anwendungsberechtigungen** aus.
 7. Suchen Sie nach "ExternalItem. ReadWrite. all" und "Directory. Read. all" aus den Berechtigungen, und wählen Sie **Berechtigungen hinzufügen** aus.
 8. Wählen Sie **Administrator Zustimmung für [Mandanten] erteilen** aus, und bestätigen Sie mit **Ja**.
-9. Stellen Sie sicher, dass die Berechtigungen den Status erteilt aufweisen.
+9. Stellen Sie sicher, dass sich die Berechtigungen im Status "erteilt" befinden.
      ![Berechtigungen, die in der rechten Spalte in grüner Form gewährt werden.](media/onprem-agent/granted-state.png)
 
-## <a name="configuring-graph-connector-agent"></a>Konfigurieren des Graph Connector-Agents
+### <a name="configure-authentication"></a>Konfigurieren einer Authentifizierung
 
-Nachdem Sie die APP für den Agent erstellt haben, müssen Sie den Agent mit den entsprechenden Authentifizierungsdetails konfigurieren.
+Authentifizierungsdetails können mit einem geheimen Client Schlüssel oder einem Zertifikat bereitgestellt werden. Befolgen Sie die Schritte Ihrer Wahl.
 
-Authentifizierungsdetails können in einem der folgenden Formulare bereitgestellt werden.
-
-### <a name="configuring-the-client-secret-for-authentication"></a>Konfigurieren des geheimen Client Schlüssels für die Authentifizierung
+#### <a name="configuring-the-client-secret-for-authentication"></a>Konfigurieren des geheimen Client Schlüssels für die Authentifizierung
 
 1. Wechseln Sie zum [Azure-Portal](https://portal.azure.com) , und melden Sie sich mit den Administratoranmeldeinformationen für den Mandanten an.
 2. Öffnen Sie die **App-Registrierung** im Navigationsbereich, und wechseln Sie zur entsprechenden app. Wählen Sie unter **Verwalten** die Option **Zertifikate und Geheimnisse** aus.
 3. Wählen Sie **neuer geheimer Client Schlüssel** aus, und wählen Sie einen Ablaufzeitraum für den geheimen Schlüssel aus. Kopieren Sie den generierten geheimen Schlüssel, und speichern Sie ihn, da er nicht erneut angezeigt wird.
-4. Verwenden Sie diesen geheimen Client Schlüssel zusammen mit der Anwendungs-ID, um den Agent zu konfigurieren. Verwenden Sie im Feld **Name** des Agents keine Leerzeichen. Alpha numerische Zeichen werden akzeptiert.
+4. Verwenden Sie diesen geheimen Client Schlüssel zusammen mit der Anwendungs-ID, um den Agent zu konfigurieren. Im Feld **Name** des Agents können keine Leerzeichen verwendet werden. Alpha numerische Zeichen werden akzeptiert.
 
-## <a name="using-thumbprint-certificate-for-authentication"></a>Verwenden des Fingerabdruck Zertifikats für die Authentifizierung
+#### <a name="using-a-certificate-for-authentication"></a>Verwenden eines Zertifikats für die Authentifizierung
 
-Wenn Sie die Authentifizierungsdetails bereits konfiguriert haben, indem Sie [den geheimen Client Schlüssel für die Authentifizierung konfigurieren](#configuring-the-client-secret-for-authentication) , können Sie direkt zur [Setup Übersicht](configure-connector.md)wechseln.
+Es gibt drei einfache Schritte für die Verwendung der zertifikatbasierten Authentifizierung:
 
+1. Erstellen oder Abrufen eines Zertifikats
+1. Hochladen des Zertifikats in das Azure-Portal
+1. Zuweisen des Zertifikats zum Agent
+
+##### <a name="step-1-get-a-certificate"></a>Schritt 1: Abrufen eines Zertifikats
+
+Das folgende Skript kann zum Generieren eines selbstsignierten Zertifikats verwendet werden. In Ihrer Organisation dürfen selbstsignierte Zertifikate nicht zugelassen werden. Verwenden Sie in diesem Fall diese Informationen, um die Anforderungen zu verstehen und ein Zertifikat entsprechend den Richtlinien Ihrer Organisation zu erwerben.
+
+```Powershell
+$dnsName = "<TenantDomain like agent.onmicrosoft.com>" # Your DNS name
+$password = "<password>" # Certificate password
+$folderPath = "D:\New folder\" # Where do you want the files to get saved to? The folder needs to exist.
+$fileName = "agentcert" # What do you want to call the cert files? without the file extension
+$yearsValid = 10 # Number of years until you need to renew the certificate
+$certStoreLocation = "cert:\LocalMachine\My"
+$expirationDate = (Get-Date).AddYears($yearsValid)
+$certificate = New-SelfSignedCertificate -DnsName $dnsName -CertStoreLocation $certStoreLocation -NotAfter $expirationDate -KeyExportPolicy Exportable -KeySpec Signature
+$certificatePath = $certStoreLocation + '\' + $certificate.Thumbprint
+$filePath = $folderPath + '\' + $fileName
+$securePassword = ConvertTo-SecureString -String $password -Force -AsPlainText
+Export-Certificate -Cert $certificatePath -FilePath ($filePath + '.cer')
+Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Password $securePassword
+```
+
+##### <a name="step-2-upload-the-certificate-in-the-azure-portal"></a>Schritt 2: Hochladen des Zertifikats im Azure-Portal
+
+1. Öffnen der Anwendung und navigieren zu Zertifikaten und geheimen Schlüsseln im linken Bereich
+1. Wählen Sie "Zertifikat hochladen" aus, und laden Sie die CER-Datei hoch
 1. Öffnen Sie die **App-Registrierung** , und wählen Sie im Navigationsbereich **Zertifikate und Geheimnisse** aus. Kopieren Sie den Fingerabdruck des Zertifikats.
+
 ![Liste der thumbrint-Zertifikate, wenn Zertifikate und Geheimnisse im linken Bereich ausgewählt sind](media/onprem-agent/certificates.png)
-2. Verwenden Sie entweder den geheimen Client Schlüssel oder den Fingerabdruck, um den Graph Connector-Agent zu registrieren.
-![Registrieren eines Formulars, in dem der Name, die APP-ID, der Anmeldeinformationstyp und das Zertifikat gefragt werden](media/onprem-agent/register.png)
+
+##### <a name="step-3-assign-the-certificate-to-the-agent"></a>Schritt 3: Zuweisen des Zertifikats zum Agent
+
+Wenn Sie das Beispielskript zum Generieren eines Zertifikats verwendet haben, kann die PFX-Datei an dem im Skript angegebenen Speicherort gefunden werden.
+
+1. Laden Sie die PFX-Zertifikatdatei auf den Agentcomputer herunter.
+1. Doppelklicken Sie auf die PFX-Datei, um das Zertifikat Installationsdialogfeld zu starten.
+1. Wählen Sie "lokaler Computer" für den Speicher Speicherort aus, während Sie das Zertifikat installieren.
+1. Öffnen Sie nach der Installation des Zertifikats im Startmenü die Option "Computerzertifikate verwalten".
+1. Wählen Sie das neu installierte Zertifikat unter "persönlich"-> ' Certificates ' aus.
+1. Klicken Sie mit der rechten Maustaste auf das Zertifikat, und wählen Sie "alle Aufgaben"-> "private Schlüssel verwalten..." aus. Option
+1. Klicken Sie im Dialogfeld Berechtigungen auf Option hinzufügen. Schreiben Sie im Dialogfeld Benutzerauswahl Folgendes: "NT Service\GcaHostService" und klicken Sie auf "OK". Klicken Sie nicht auf die Schaltfläche Namen überprüfen.
+1. Klicken Sie im Dialogfeld Berechtigungen auf OK. Der Agentcomputer ist jetzt für Agent zum Generieren von Token mit dem Zertifikat konfiguriert.

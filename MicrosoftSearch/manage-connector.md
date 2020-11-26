@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Verwalten von Microsoft Graph-Connectors für Microsoft Search.
-ms.openlocfilehash: a9b3feff3a5c289fef3f5091518d074970209b9d
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+ms.openlocfilehash: 04ae757e95c6d3713ad03da701f99c669fb2a59c
+ms.sourcegitcommit: 0ed8ec8b3c4e0f5f669005081fd8b2219f07b4f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367676"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49420842"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -92,6 +92,7 @@ Fehlercode | Fehlermeldung | Lösung
 2001 | Die Indizierung wird aufgrund einer großen Anzahl von Updates in der Warteschlange eingeschränkt. Je nach Warteschlange kann es einige Zeit dauern, bis die Aktualisierungen abgeschlossen sind. | Warten Sie, bis die Warteschlange gelöscht wird.
 2002 | Die Indizierung ist aufgrund einer nicht unterstützten Element Formatierung fehlgeschlagen. | Weitere Informationen finden Sie in der Connector-spezifischen Dokumentation.
 2003 | Die Indizierung ist aufgrund eines nicht unterstützten Elementinhalts fehlgeschlagen. | Weitere Informationen finden Sie in der Connector-spezifischen Dokumentation.
+2010 | Diese Verbindung ist aufgrund einer von Microsoft vorgenommenen Aktualisierung nicht mehr gültig. Löschen Sie die Verbindung, und erstellen Sie eine neue. | Löschen Sie die Verbindung, und erstellen Sie eine neue.
 5000 | Etwas ist schief gelaufen. Wenn dieser Vorgang fortgesetzt wird, wenden Sie sich an den Support. |
 
 ## <a name="monitor-your-index-quota-utilization"></a>Überwachen der Auslastung des Index Kontingents

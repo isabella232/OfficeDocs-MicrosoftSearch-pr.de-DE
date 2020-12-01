@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Details der Connectors result Cluster Experience
-ms.openlocfilehash: eac4180a247fe17b4e86b57a69f2b7bdb79e56bb
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+ms.openlocfilehash: fa6ac2dc720ed43e40454b952526734accd45ea4
+ms.sourcegitcommit: a328b9764abf5cd0c1c0a8c7def0c6e334da9a1d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367744"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "49477113"
 ---
 # <a name="graph-connectors-result-cluster"></a>Ergebnis Cluster "Graph Connectors"
 
 ## <a name="overview-of-the-graph-connectors-result-cluster-preview"></a>Übersicht über den Ergebnis Cluster "Graph Connectors" (Vorschau)  
 
- Mit Graph Connectors result Clusters können Unternehmen in Ihrer Standardansicht (Registerkarte alle) in SharePoint und Office.com nach Inhalten aus Drittanbieter-Datenquellen suchen.
+Mit Graph Connectors result Clusters können Unternehmen in Ihrer Standardansicht (Registerkarte alle) in SharePoint und Office.com nach Inhalten aus Drittanbieter-Datenquellen suchen.
 
 Ergebnis Cluster helfen Benutzern bei der Ermittlung aller Inhalte von Drittanbietern (previoulsy, die an einen einzelnen Connector und eine vertikale Verbindung gebunden sind) an einer Stelle. Die in einem Ergebnis Cluster angezeigten Ergebnisse werden basierend auf der Konfiguration des Mandanten Administrators in einer Such Sparte zusammengefasst.  
 
@@ -40,14 +40,14 @@ Die Suchergebnis Erfahrung für Connector-Elemente, die in ihrem Ergebnis Cluste
 ## <a name="enable-result-clusters"></a>Ergebnis Cluster aktivieren
   
 Die Ergebnis Cluster Erfahrung ist standardmäßig deaktiviert.  
+
 Führen Sie die folgenden Schritte aus, um die Benutzeroberfläche auf Organisationsebene zu aktivieren:
 
-Microsoft 365 Admin Center
-
 1. Wechseln Sie im [Microsoft 365 Admin Center](https://admin.microsoft.com/)zu **Einstellungen** für die  >  **Suche & Intelligence**  >  **Customization**  >  **Verticals**.  
-2. Wählen Sie die Option **alle** vertikal aus, und wechseln Sie zum Abschnitt **Ergebnisse der Konnektoren anzeigen** . Aktivieren Sie die Benutzeroberfläche auf Websiteebene.
+2. Wählen Sie die Option **alle** vertikal aus, und aktivieren Sie dann **Show Connector results**. 
 
-Share
+
+Führen Sie die folgenden Schritte aus, um die Benutzeroberfläche auf Websiteebene zu aktivieren:
 
 1. Wechseln Sie auf der SharePoint-Website, auf der Sie das Ergebnis-Cluster-Erlebnis wünschen, zu **Einstellungen**.
 2. Wechseln Sie zu **Website Informationen** > **Alle Websiteeinstellungen anzeigen**.

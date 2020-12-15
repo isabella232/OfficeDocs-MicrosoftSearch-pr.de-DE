@@ -12,19 +12,19 @@ search.appverid:
 - MET150
 - MOE150
 description: Überprüfen der Verwendungsberichte der Microsoft-Suche
-ms.openlocfilehash: 96599ad18cb45feb53b3a786730a3ce506f49600
-ms.sourcegitcommit: 13e52d6c66c811cc7612197ba5d8cc3598309314
+ms.openlocfilehash: f34a82892818f00737d313285e6af7bce7c8a90a
+ms.sourcegitcommit: 3aa3623022270872a2c1ed8b86201c42bc313c1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "49586369"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49675268"
 ---
 # <a name="microsoft-search-usage-reports"></a>Verwendungsberichte für Microsoft-Suche
 
 Suchverwendungsberichte ermöglichen Ihnen ein besseres Verständnis der Funktionsweise der Suchfunktion in Ihrer Organisation. Die aus diesen Berichten generierten Einblicke helfen Ihnen, [Inhalte leicht zu finden](https://docs.microsoft.com/microsoftsearch/make-content-easy-to-find) und Maßnahmen zu ergreifen, mit denen die Suche für Ihre Benutzer eine nützlichere und erfreulichere Erfahrung macht.
 
 > [!IMPORTANT]
-> Microsoft Search-Verwendungsberichte befinden sich derzeit in der Vorschau.
+> Microsoft Search-Nutzungsberichte befinden sich derzeit in der Vorschau und Rollen für Administratoren in der gezielten Version aus. Stellen Sie sicher, dass sich Ihr Administratorkonto im gezielten Release-Ring befindet, um diese Berichte anzuzeigen.
 
 Die [Verwendungsberichte für Microsoft-Suche](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) umfassen Diagramme und Tabellen, die aus Suchvorgängen generiert werden, die in SharePoint-Start-und Office.com-Suchfeldern ausgeführt werden. Sie können Daten aus den letzten 31 Tagen, pro Tag oder monatlich für das vorherige Jahr anzeigen. Diese Berichte werden nur bereitstellen, damit es Zeit nimmt, um die Verlaufsdaten zu sammeln.
 
@@ -41,11 +41,14 @@ Eine frühere Version dieser Seite enthielt Daten aus Suchvorgängen, die für M
 |Abgebrochene Abfragen|In diesem Bericht werden beliebte Suchabfragen angezeigt, die einen niedrigen Mausklick erhalten. Mithilfe dieses Berichts können Sie Suchvorgänge identifizieren, die unzufriedene Benutzer erzeugen, und das Auffinden von Inhalten verbessern. Sie können dann feststellen, ob eine Antwort wie eine Textmarke erstellt oder neue Inhalte über einen Graph-Konnektor aufgenommen werden, ist die richtige Aktion.|
 |Keine Ergebnis Abfragen|Dieser Bericht zeigt beliebte Suchabfragen, die keine Ergebnisse zurückgegeben. Mithilfe dieses Berichts können Sie Suchvorgänge identifizieren, die unzufriedene Benutzer erzeugen, und das Auffinden von Inhalten verbessern. Sie können dann feststellen, ob eine Antwort wie eine Textmarke erstellt oder neue Inhalte über einen Graph-Konnektor aufgenommen werden, ist die richtige Aktion.|
 
+> [!NOTE]
+> Es ist derzeit ein Problem mit der Klickrate (Klickraten) für Top-Abfragen angezeigt. Der im Dashboard angezeigte Wert ist 100-mal höher als der tatsächliche Wert. Um die reale CTR zu erhalten, teilen Sie die Zahl im Dashboard um 100, oder verwenden Sie die Schaltfläche herunterladen, um den Bericht in Excel abzurufen, in dem der Wert ordnungsgemäß angezeigt wird.
+
 ## <a name="viewing-reports"></a>Anzeigen von Berichten
 
 Wenn Sie zur Seite Verwendungsberichte navigieren, stehen alle Berichte zur Verfügung, die angezeigt werden können. Sie können den Datumsfilter verwenden, um einen bestimmten Tag oder Monat für die Anzeige auszuwählen.
 
-Durch das Herunterladen eines Berichts können Sie Berichte aus einer größeren Zeitspanne anzeigen. Klicken Sie auf den Download Pfeil, und wählen Sie die **letzten 31 Tage** oder **letzten 12 Monate** aus. Der Bericht wird als Excel-Arbeitsblatt heruntergeladen. Wenn Sie die letzten 31 Tage ausgewählt haben, ist das Arbeitsblatt für jeden Tag eine einzelne Registerkarte. Der Download der letzten 12 Monate enthält einen Tab für jeden Monat.
+Durch das Herunterladen eines Berichts können Sie Berichte aus einer größeren Zeitspanne anzeigen. Klicken Sie auf den Download Pfeil, und wählen Sie die **letzten 31 Tage** oder **letzten 12 Monate** aus. Der Bericht wird als Excel-Arbeitsblatt heruntergeladen. Wenn Sie die letzten 31 Tage ausgewählt haben, wird für jeden Tag eine einzelne Registerkarte für die Tabelle angezeigt. Der Download der letzten 12 Monate enthält einen Tab für jeden Monat.
 
 Klicken Sie zum Anzeigen der Top-Abfragen und Impression-verteilungsberichte von Bing auf den Link auf der Seite.
 
@@ -57,7 +60,7 @@ Die Kalenderansicht heute in Microsoft Search-Nutzungsberichten ist ein zweistuf
 
 Die oberen, aufgegebenen und fehlgeschlagenen Abfragetabellen zeigen Ergebnisse entweder aus dem Tag oder aus dem Monat, den Sie auswählen.
 
-**Wann werde ich aggregierte Daten für vergangene 7 Tage, vergangene 30 Tage usw. sehen, wie Bing es Top-Abfragen-Berichte?**
+**Wann werde ich aggregierte Daten für vergangene 7 Tage, vergangene 30 Tage usw. sehen. wie Bing es Top-Abfragen-Berichte?**
 
 Wir erwägen diese Art von Aggregation und vereinfachen die Datenbereichs Filterung für zukünftige Versionen dieser Berichte.
 

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Verwalten von Microsoft Graph-Connectors für Microsoft Search.
-ms.openlocfilehash: 04ae757e95c6d3713ad03da701f99c669fb2a59c
-ms.sourcegitcommit: 0ed8ec8b3c4e0f5f669005081fd8b2219f07b4f0
+ms.openlocfilehash: bf5a382ae0bd8308922599f0dfa9e087aad50c24
+ms.sourcegitcommit: b1ca58219fb16d5aff277f357dfa11ce6b0d42ca
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "49420842"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49695685"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -103,7 +103,7 @@ Das verfügbare Index Kontingent und der Verbrauch werden auf der Zielseite für
 
 >[!NOTE]
 >Während des Vorschauzeitraums wurde für jede Organisation, die Grafik-Konnektoren ausprobieren, ein kostenloses fest Kontingent von bis zu 2 Millionen Elementen für alle Verbindungen bereitgestellt. Da Graph-Konnektoren allgemein verfügbar sind, läuft das ﻿kostenlose Kontingent am 1. Februar 2021 für Organisationen ab, die Graph-Konnektoren in der Vorschau verwendet haben.
->Von Microsoft erstellte Graph-Konnektoren mit der Bezeichnung ["Vorschau"](connectors-preview.md) werden nicht in das gesamte berechnete Index Kontingent für Ihre Organisation einbezogen. Sie wird jedoch auf die maximale Anzahl von 10 Verbindungen, die Sie für Ihre Organisation konfigurieren können, und die maximale Anzahl von 7 Millionen-Elementen zählen, die Ihre Organisation über Verbindungen hinweg indizieren kann.
+>Von Microsoft erstellte Graph-Konnektoren mit der Bezeichnung ["Vorschau"](connectors-preview.md) werden nicht in das gesamte berechnete Index Kontingent für Ihre Organisation einbezogen. Sie wird jedoch auf die maximale Anzahl von 10 Verbindungen, die Sie für Ihre Organisation konfigurieren können, und die maximale Anzahl von 7 Millionen-Elementen, die Ihre Organisation über Verbindungen hinweg indizieren kann, abgerechnet. jede Verbindung ist 700.000 Elemente limitiert. 
 
 In der Kontingent Auslastungs Leiste werden verschiedene Zustände basierend auf dem Kontingent Verbrauch in Ihrer Organisation angegeben:
 

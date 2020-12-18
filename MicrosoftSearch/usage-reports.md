@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Überprüfen der Verwendungsberichte der Microsoft-Suche
-ms.openlocfilehash: f34a82892818f00737d313285e6af7bce7c8a90a
-ms.sourcegitcommit: 3aa3623022270872a2c1ed8b86201c42bc313c1f
+ms.openlocfilehash: 04de0de08423eff1368bc2b77e48d3fc8add038d
+ms.sourcegitcommit: 1d6fcf180f427abf3d8bfa4b8b6129e39f60ceb4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49675268"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49712611"
 ---
 # <a name="microsoft-search-usage-reports"></a>Verwendungsberichte für Microsoft-Suche
 
@@ -30,19 +30,18 @@ Die [Verwendungsberichte für Microsoft-Suche](https://admin.microsoft.com/Admin
 
 Eine frühere Version dieser Seite enthielt Daten aus Suchvorgängen, die für Microsoft Search in Bing on Bing.com ausgeführt wurden. Diese Daten werden in Kürze in diese Berichte integriert, aber im Moment können Sie diese Berichte dennoch anzeigen, indem Sie auf den Link unten auf der Seite klicken, um die **Top-Abfragen und die Impression-Verteilung von Bing anzuzeigen**.
 
-![Dashboard für Verwendungsberichte für Suche](media/usage-reports/usage_reports_v2.png)
+> [!div class="mx-imgBorder"]
+> ![Dashboard für Verwendungsberichte für Suche](media/usage-reports/usage_reports_v2.png)
+
 
 ## <a name="overview-of-search-reports"></a>Übersicht über suchberichte
 
-|**Bericht**|**Beschreibung**|
+| Bericht | Beschreibung |
 |:-----|:-----|
 |Abfragevolumen|Dieser Bericht zeigt die Anzahl der ausgeführten Suchabfragen an. Verwenden Sie diesen Bericht, um die Mengen Trends der Suchabfrage zu identifizieren und Zeiträume mit hoher und niedriger Suchaktivität zu bestimmen.|
 |Häufigste Suchvorgänge|Dieser Bericht enthält die beliebtesten Suchabfragen. Verwenden Sie diesen Bericht, um zu verstehen, nach welchen Arten von Informationen Ihre Benutzer suchen.|
 |Abgebrochene Abfragen|In diesem Bericht werden beliebte Suchabfragen angezeigt, die einen niedrigen Mausklick erhalten. Mithilfe dieses Berichts können Sie Suchvorgänge identifizieren, die unzufriedene Benutzer erzeugen, und das Auffinden von Inhalten verbessern. Sie können dann feststellen, ob eine Antwort wie eine Textmarke erstellt oder neue Inhalte über einen Graph-Konnektor aufgenommen werden, ist die richtige Aktion.|
 |Keine Ergebnis Abfragen|Dieser Bericht zeigt beliebte Suchabfragen, die keine Ergebnisse zurückgegeben. Mithilfe dieses Berichts können Sie Suchvorgänge identifizieren, die unzufriedene Benutzer erzeugen, und das Auffinden von Inhalten verbessern. Sie können dann feststellen, ob eine Antwort wie eine Textmarke erstellt oder neue Inhalte über einen Graph-Konnektor aufgenommen werden, ist die richtige Aktion.|
-
-> [!NOTE]
-> Es ist derzeit ein Problem mit der Klickrate (Klickraten) für Top-Abfragen angezeigt. Der im Dashboard angezeigte Wert ist 100-mal höher als der tatsächliche Wert. Um die reale CTR zu erhalten, teilen Sie die Zahl im Dashboard um 100, oder verwenden Sie die Schaltfläche herunterladen, um den Bericht in Excel abzurufen, in dem der Wert ordnungsgemäß angezeigt wird.
 
 ## <a name="viewing-reports"></a>Anzeigen von Berichten
 

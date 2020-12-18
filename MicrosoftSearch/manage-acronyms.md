@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Antworten zum Erstellen und Aktualisieren von Akronymen in Microsoft Search
-ms.openlocfilehash: e328ecb7604a144b51f3a1483eef1b1c3a7e0bcb
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: 9de9de8287e3ddf206f93f53573922f3cf526580
+ms.sourcegitcommit: ad225af81060a2e3d7e4c953eeb6977d54698b60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422946"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709682"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Verwalten von Akronymen Antworten in der Microsoft-Suche
 
@@ -44,7 +44,7 @@ Das Ergebnis enthält alle Bedeutungen von DNN, die in der Organisation des Benu
 
 ## <a name="set-up-acronyms-answers"></a>Antworten zum Einrichten von Akronymen
 
-Wechseln Sie im [Microsoft 365 Admin Center](https://admin.microsoft.com)zu [**Akronyme**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms), und wählen Sie dann **Akronym hinzufügen**aus.
+Wechseln Sie im [Microsoft 365 Admin Center](https://admin.microsoft.com)zu [**Akronyme**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms), und wählen Sie dann **Akronym hinzufügen** aus.
 
 Microsoft Search fragt zwei Datenquellen ab, um Akronyme Antworten auf die Suchvorgänge von Benutzern bereitzustellen:
 
@@ -76,7 +76,7 @@ Administratoren können Akronyme einzeln hinzufügen oder Sie in einer CSV-Datei
 
 **Beschreibung**. Eine kurze Beschreibung des Akronyms, mit der Benutzer weitere Informationen zum Akronym und seiner Erweiterung erhalten. *Ein tiefes neuronales Netzwerk ist beispielsweise ein neuronales Netzwerk mit einem gewissen Grad an Komplexität, ein neuronales Netzwerk mit mehr als zwei Schichten*.
 
-**Source**. Die URL der Seite oder Website, auf der Benutzer weitere Informationen zum Akronym erhalten möchten.
+**Quelle**. Die URL der Seite oder Website, auf der Benutzer weitere Informationen zum Akronym erhalten möchten.
 
 **State**. Dieses Feld kann zwei Werte annehmen:
 
@@ -100,7 +100,7 @@ Die Microsoft-Suche stellt sicher, dass nur Benutzer mit Zugriff und Berechtigun
 
 **F.: wie werden redaktionelle und verminte Daten bewertet?**
 
-**A:** Das Feature zählt derzeit redaktionelle Akronyme oberhalb der abgebauten Akronyme.
+**A:** Die Rangfolge der Ergebnisse kann von Person zu Person variieren, da die Ergebnisse für jeden Benutzer personalisiert werden.
 
 **F.: wie lange dauert es, bis redaktionelle Akronyme in der Microsoft-Suche sichtbar sind, nachdem Sie veröffentlicht wurden?**
 

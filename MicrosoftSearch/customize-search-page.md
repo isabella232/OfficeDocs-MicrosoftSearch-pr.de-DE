@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Hinzufügen von Such vertikalen und Anpassen von Suchergebnissen
-ms.openlocfilehash: 8522a6daf05b718ee6a066272da181be6e95905e
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+ms.openlocfilehash: edc541e902965472295a835906ef36fcd7fba730
+ms.sourcegitcommit: e1215758fd1325526e4b7b1612c3349137c6fbc3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367487"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49716985"
 ---
 # <a name="customize-the-search-results-page"></a>Anpassen der Suchergebnisseite
 
@@ -116,13 +116,13 @@ Nachdem Sie den Assistenten gestartet haben, werden Sie durch die Schritte zum D
 
 ## <a name="step-3-view-the-vertical-after-its-enabled"></a>Schritt 3: Anzeigen der vertikalen nach der Aktivierung
 
-Nachdem Sie die vertikale aktiviert haben, kann es eine Weile dauern, bis Sie Sie anzeigen können. Wenn Sie nicht nach dem Aktivieren warten möchten, können Sie **cacheClear = true** an die URL in [SharePoint](https://sharepoint.com/) und [Office](https://office.com) anfügen, um die vertikale sofort anzuzeigen.
+Nachdem Sie die vertikale aktiviert haben, kann es eine Weile dauern, bis Sie Sie anzeigen können. Wenn Sie nicht nach dem Aktivieren warten möchten, können Sie **cacheClear = true** an die URL in [SharePoint](https://sharepoint.com/) und [Office](https://office.com) anfügen, um die vertikale sofort anzuzeigen. Fügen [](https://bing.com)Sie für Bing **&Features = uncachedVerticals** an die vertikale Arbeit-URL an, um die vertikalen direkt anzuzeigen. 
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
 Hier finden Sie eine Liste mit häufig auftretenden Problemen und Aktionen, die Sie beheben können.
 
-|Error  |Aktion  |
+|Fehler  |Maßnahme  |
 |---------|---------|
 | Ich sehe eine Fehlermeldung "something went wrong" auf der vertikalen. | Sowohl die vertikalen als auch die Ergebnistypen sind erforderlich, um das Setup abzuschließen. Stellen Sie sicher, dass Sie beide für dieselbe Inhaltsquelle erstellt haben. |
 | Das Ergebnis Layout wird nicht angezeigt, obwohl ich ein erstellt habe. | Es dauert ein paar Minuten, da diese Einstellungen im allgemeinen zwischengespeichert werden. Warten Sie einige Minuten, und versuchen Sie es erneut.        |

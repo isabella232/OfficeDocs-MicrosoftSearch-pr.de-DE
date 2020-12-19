@@ -1,8 +1,8 @@
 ---
 title: Verwalten von Lesezeichen
-ms.author: jeffkizn
-author: jeffkizn
-manager: parulm
+ms.author: dawholl
+author: dawholl
+manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Erstellen und Aktualisieren von Lesezeichen und Möglichkeiten zum Massen bearbeiten von Lesezeichen Ergebnissen für Microsoft Search
-ms.openlocfilehash: 6a678464ec23c2d4c90190b6a02c0a73839b50ee
-ms.sourcegitcommit: 41d28060238091455c7b8b011c67ae60c8a41f1f
+ms.openlocfilehash: fee855e3d3fe780021530488dbaa5a864dcba2d8
+ms.sourcegitcommit: 9daa3c8f6eeab502b28975a308d4d1014a00eb25
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49619576"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49718648"
 ---
 # <a name="manage-bookmarks"></a>Verwalten von Lesezeichen
 
@@ -144,7 +144,7 @@ Eine Textmarke kann mehrere Schlüsselwörter enthalten, und Lesezeichen können
 
 **F.: Wie kann ich eine empfohlene Textmarke in Suchergebnissen oder im Admin Center identifizieren?**
 
-**A:** In den Suchergebnissen enthalten die empfohlenen Lesezeichen den Ausdruck "vorgeschlagen für Sie" vor der URL. Im Admin Center haben verminte Lesezeichen den Besitzer Wert "System".
+**A:** In den Suchergebnissen enthalten die empfohlenen Lesezeichen den Ausdruck "vorgeschlagen für Sie" vor der URL. Im Admin Center haben die empfohlenen Lesezeichen den Besitzer Wert "System".
 
 **F.: wie wird der Zugriff auf ein empfohlenes Lesezeichen verwaltet?**
 

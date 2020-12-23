@@ -1,8 +1,8 @@
 ---
 title: Verwalten von Akronym-Antworten in der Microsoft-Suche
-ms.author: jeffkizn
-author: jeffkizn
-manager: parulm
+ms.author: rakkum
+author: rakeshMSFT
+manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Antworten zum Erstellen und Aktualisieren von Akronymen in Microsoft Search
-ms.openlocfilehash: 9de9de8287e3ddf206f93f53573922f3cf526580
-ms.sourcegitcommit: ad225af81060a2e3d7e4c953eeb6977d54698b60
+ms.openlocfilehash: ff79e3d741e10d401873c29d86739e61c9f53329
+ms.sourcegitcommit: e6ceb07cae208648dadd5452a077414ab5a4513f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49709682"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "49728006"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Verwalten von Akronymen Antworten in der Microsoft-Suche
 
@@ -48,21 +48,21 @@ Wechseln Sie im [Microsoft 365 Admin Center](https://admin.microsoft.com)zu [**A
 
 Microsoft Search fragt zwei Datenquellen ab, um Akronyme Antworten auf die Suchvorgänge von Benutzern bereitzustellen:
 
-1. **Redaktionelle Akronyme**. Von IT-Administratoren im [Admin Center](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)bereitgestellt.
-2. **Verminte Akronyme**. Durch die Microsoft-Suche von den persönlichen e-Mails und Dokumenten und öffentlich verfügbaren Daten innerhalb der Organisation abgebaut.
+1. **Admin-kuratiert**. Von IT-Administratoren im [Admin Center](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)bereitgestellt.
+2. **System-kuratiert**. Von der Microsoft-Suche anhand von e-Mails und Dokumenten sowie öffentlich verfügbaren Daten in der Organisation ermittelt.
 
-### <a name="set-up-editorial-acronyms"></a>Einrichten von redaktionellen Akronymen
+### <a name="set-up-admin-curated-acronyms"></a>Einrichten von admin-kuratierten Akronymen
 
-Suchadministratoren können redaktionelle Akronyme auf der [Registerkarte Akronyme](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms) im  [Microsoft Search Admin Center](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)einrichten. Sie können Akronyme aus einer internen Website oder einem Repository zum Admin Center hinzufügen. Redaktionelle Akronyme können dem **veröffentlichten** oder dem **Entwurfs** Status hinzugefügt werden:
+Suchadministratoren können Akronyme auf der [Registerkarte Akronyme](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms) im  [Microsoft Search Admin Center](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)hinzufügen. Sie können Akronyme aus einer internen Website oder einem Repository zum Admin Center hinzufügen. Diese Akronyme können dem **veröffentlichten** oder dem **Entwurfs** Status hinzugefügt werden:
 
-**Veröffentlichter Status**. Akronyme stehen den Mitarbeitern der Organisation über die Microsoft-Suche zur Verfügung.
+**Veröffentlichter Status**. Akronyme stehen den Benutzern der Organisation über die Microsoft-Suche zur Verfügung.
 
 > [!NOTE]
 > Es kann bis zu drei Tage dauern, bis Akronyme zum veröffentlichten Status hinzugefügt wurden, um in Microsoft Search verfügbar zu sein.
 
-**Entwurfsstatus**. Wenn Administratoren Akronyme Antworten überprüfen möchten, bevor Sie in Microsoft Search verfügbar gemacht werden, können Sie die Akronyme dem Entwurfsstatus hinzufügen. Akronyme, die dem Entwurfsstatus hinzugefügt werden, sind in der Microsoft-Suche nicht verfügbar. Administratoren müssen die Akronyme dem veröffentlichten Status hinzufügen, damit Sie verfügbar sind.
+**Entwurfsstatus**. Wenn Sie ein Akronym überprüfen möchten, bevor Sie es in Microsoft Search verfügbar machen, können Sie das Akronym in einem Entwurfsstatus hinzufügen. Akronyme im Entwurfsstatus werden in den Suchergebnissen nicht angezeigt. Sie müssen das Akronym in den veröffentlichten Zustand versetzen, damit es in den Suchergebnissen angezeigt wird.
 
-Administratoren können Akronyme einzeln hinzufügen oder Sie in einer CSV-Datei Massenimportieren. Laden Sie eine CSV-Datei mit den in der folgenden Tabelle gezeigten Feldern hoch:
+Sie können Akronyme einzeln hinzufügen oder Sie in einer CSV-Datei Massenimportieren. Laden Sie eine CSV-Datei mit den in der folgenden Tabelle gezeigten Feldern hoch:
 
 | Akronym (obligatorisch) | Expansion (obligatorisch) | Beschreibung  | Source | Status (obligatorisch) |
 | --------- | --------- | ---------- | --------- |--------- |
@@ -83,26 +83,26 @@ Administratoren können Akronyme einzeln hinzufügen oder Sie in einer CSV-Datei
 - **Entwurf**. Das Akronym wird dem Status Entwurf hinzugefügt.
 - **Veröffentlicht** Das Akronym wird dem veröffentlichten Zustand hinzugefügt und wird in der Microsoft-Suche zur Verfügung gestellt.
 
-### <a name="mined-acronyms"></a>Verminte Akronyme
+### <a name="system-curated-acronyms"></a>Vom System kuratierte Akronyme
 
-Es kann eine Herausforderung für Administratoren sein, alle in einer Organisation verwendeten Akronyme für Antworten hinzuzufügen. Dieses Feature kann Akronyme finden, von denen die Suchadministratoren gar nicht wissen. Dafür werden in Microsoft Search auch Akronyme aus folgenden Quellen untersucht:
+Es kann eine Herausforderung für Administratoren sein, alle in einer Organisation verwendeten Akronyme für Antworten hinzuzufügen. Dieses Feature kann Akronyme finden, von denen die Suchadministratoren gar nicht wissen. Dafür erkennt und kuratiert Microsoft Search auch Akronyme aus diesen Quellen:
 
-- Benutzer-e-Mails.
-- Dokumente in [SharePoint](https://products.office.com/sharepoint/collaboration), [Microsoft OneDrive]( https://onedrive.live.com/about/)und [Microsoft OneNote](https://www.onenote.com/).
-- Öffentliche Dokumente innerhalb der Organisation, auf die Benutzer in SharePoint, OneDrive oder OneNote zugreifen können.
+- Benutzer-e-Mails
+- Dokumente in [SharePoint](https://products.office.com/sharepoint/collaboration), [Microsoft OneDrive]( https://onedrive.live.com/about/)und [Microsoft OneNote](https://www.onenote.com/)
+- Öffentliche Dokumente in der Organisation, auf die Benutzer in SharePoint, OneDrive oder OneNote zugreifen können
 
-Die Microsoft-Suche stellt sicher, dass nur Benutzer mit Zugriff und Berechtigungen für ein Dokument die von dieser abgebauten Akronyme sehen können. Wenn ein Akronym aus dem Postfach eines Benutzers abgebaut wird, kann nur dieser Benutzer dieses Akronym sehen.
+Bei der Microsoft-Suche wird sichergestellt, dass nur Benutzer mit Zugriff und Berechtigungen für ein Dokument die von ihm ermittelten Akronyme sehen können. Wenn ein Akronym im Postfach eines Benutzers gefunden wird, kann nur dieser Benutzer dieses Akronym sehen.
 
 > [!NOTE]
-> Für verminte Akronyme ist kein Setup erforderlich.
+> Für vom Administrator kuratierte Akronyme ist kein Setup erforderlich.
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
-**F.: wie werden redaktionelle und verminte Daten bewertet?**
+**F.: wie werden die vom Administrator kuratierten und die System kuratierten Daten bewertet?**
 
-**A:** Die Rangfolge der Ergebnisse kann von Person zu Person variieren, da die Ergebnisse für jeden Benutzer personalisiert werden.
+**A:** Die Rangfolge der Ergebnisse kann von Person zu Person variieren, da die Ergebnisse für jeden Benutzer personalisiert werden. Keine dieser Kategorien hat immer Vorrang vor der anderen Kategorie.
 
-**F.: wie lange dauert es, bis redaktionelle Akronyme in der Microsoft-Suche sichtbar sind, nachdem Sie veröffentlicht wurden?**
+**F.: wie lange dauert es, bis admin-kuratierte Akronyme in der Microsoft-Suche sichtbar sind, nachdem Sie veröffentlicht wurden?**
 
 **A:**  Es dauert bis zu drei Tage, bis Akronyme zum veröffentlichten Status hinzugefügt wurden, um in Microsoft Search verfügbar zu sein.
 
@@ -110,19 +110,19 @@ Die Microsoft-Suche stellt sicher, dass nur Benutzer mit Zugriff und Berechtigun
 
 **A**: um Akronyme Antworten zu erhalten, müssen Benutzer bestimmte Abfragemuster in ein [Bing](https://bing.com)-, [SharePoint](https://products.office.com/sharepoint/collaboration)-oder [Office 365](https://Office.com) **Suchfeld** eingeben.
 
-**F.: wie lange dauert es, bis abgebaute Akronyme angezeigt werden, nachdem Sie eine neue e-Mail oder ein neues Dokument empfangen oder gesendet haben?**
+**F.: wie lange dauert es, bis die vom System kuratierten Akronyme angezeigt werden, nachdem Sie eine neue e-Mail oder ein neues Dokument empfangen oder gesendet haben?**
 
-**A:** Verminte Akronyme aus einer neuen e-Mail oder einem Dokument benötigen bis zu sieben Tage, um in Microsoft-Suchergebnissen angezeigt zu werden.
+**A:** In einer neuen e-Mail oder einem Dokument gefundene Akronyme benötigen bis zu sieben Tage, um in Microsoft-Suchergebnissen angezeigt zu werden.
 
 **F.: müssen Dokumente in einem bestimmten Format vorliegen, damit Sie von Mining abgeholt werden können?**
 
 **A:** Nein. Wir unterstützen alle Dateitypen außer Bild, Ordner und ZIP-Dateien.
 
-**F.: werden Microsoft-Akronyme aus Dokumenten in allen Sprachen erhalten?**
+**F.: wird Microsoft Akronyme aus Dokumenten in allen Sprachen ermitteln?**
 
 **A**: Microsoft unterstützt nur das Mining von Dokumenten in englischer Sprache. Unterstützung für andere Sprachen wird in Phasen hinzugefügt.
 
-**F.: Was geschieht, wenn meine Organisation keine verminten Akronyme anzeigen möchte? Kann ich das Anzeigen von verminten Akronymen in Suchergebnissen beenden?**
+**F.: Was geschieht, wenn meine Organisation keine vom System kuratierten Akronyme anzeigen möchte? Kann ich die Anzeige dieser Art von Akronym in meinen Suchergebnissen beenden?**
 
-**A**: um die Anzeige von verminten Akronymen in Suchergebnissen zu deaktivieren, erstellen Sie ein Kundensupport Ticket, indem Sie die Anweisungen unter [Contact Support for Business Products](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?redirectSourcePath=%252f%252farticle%252fContact-Office-365-for-business-support-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online#BKMK_call_support)befolgen.
-Nachdem Sie ein Support Ticket erstellt haben, dauert es bis zu 48 Stunden, damit verminte Akronyme nicht mehr in den Suchergebnissen angezeigt werden.
+**A**: um das Anzeigen von System-kuratierten Akronymen in Suchergebnissen zu deaktivieren, erstellen Sie ein Kundensupport Ticket, indem Sie den Anweisungen unter [Contact Support for Business Products](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?redirectSourcePath=%252f%252farticle%252fContact-Office-365-for-business-support-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online#BKMK_call_support)folgen.
+Nachdem Sie ein Support Ticket erstellt haben, dauert es bis zu 48 Stunden, damit die vom System kuratierten Akronyme nicht mehr in den Suchergebnissen angezeigt werden.

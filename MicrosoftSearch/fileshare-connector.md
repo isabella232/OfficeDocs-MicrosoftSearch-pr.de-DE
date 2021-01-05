@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: Einrichten des Dateifreigabe-Konnektors für Microsoft Search
-ms.openlocfilehash: a95cfe90ca35a385bb9ce3a4c565c18c5a42ec80
-ms.sourcegitcommit: 69a1c544cc8db364991cb58d7818d7158ff108b8
+ms.openlocfilehash: bf9fb730abd4ca6e42b681893525bbe3dd8a1419
+ms.sourcegitcommit: 249f41723dd6fda1e93ee1a8f3f7571ef066454b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "49408933"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49750897"
 ---
 # <a name="file-share-connector"></a>Dateifreigabe-Konnektor
 
@@ -63,3 +63,7 @@ Auf dem Bildschirm " **Schema verwalten** " haben Sie die Möglichkeit, die den 
 ## <a name="set-the-refresh-schedule"></a>Festlegen des Aktualisierungszeitplans
 
 Das empfohlene Standardintervall für die Aktualisierungsplanung beträgt 15 Minuten, Sie können es jedoch basierend auf Ihren Einstellungen ändern.
+
+## <a name="result-layout"></a>Ergebnis Layout
+
+Es wird empfohlen, das Standardergebnis Layout zum Anzeigen der Ergebnisse der FileShare-Konnektoren zu verwenden, da es über entsprechende Symbole und Steuerelemente verfügt, mit denen Sie zum Dateipfad navigieren können. Wenn Sie ein neues Ergebnis Layout erstellen, wird die Standardeinstellung außer Kraft gesetzt.

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erhalten Sie einen Überblick darüber, was Microsoft-Suche ist, welche Vorteile und welche apps Microsoft Search unterstützen.
-ms.openlocfilehash: fc21328f9a72ac77e37ae366bd138770509d6080
-ms.sourcegitcommit: d40d44d01b27dfed92577446fe7a30008b28deb4
+ms.openlocfilehash: f06aff0ea0407983a40f60e03337d4ed281a53ad
+ms.sourcegitcommit: d6f8628be8108e6e9d6fb9efb7bd06bc2fcd561d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43914489"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "49749386"
 ---
 # <a name="overview-of-microsoft-search"></a>Übersicht über Microsoft Search 
 
@@ -40,7 +40,7 @@ Wenn Benutzer in das **Suchfeld** klicken, schlägt die Suche Ergebnisse basiere
 
 ![Screenshots des Microsoft Suchfelds mit einer Abfrage und vorgeschlagenen Ergebnissen](media/SERP_text_520.png)
 
-Wenn die Vorschläge im Suchfeld nicht das sind, wonach Benutzer suchen, öffnet **Enter** die vollständige Ergebnisliste. Sie können Metadaten verwenden, beispielsweise wer das Element zuletzt geändert hat und wann, wo sich das Element befindet, und es in der Vorschau anzeigen, um zu verifizieren, ob es sich um das richtige Element handelt.
+Wenn die Vorschläge im Suchfeld nicht das sind, wonach Benutzer suchen, öffnet **Enter** die vollständige Ergebnisliste. Sie können Metadaten verwenden, beispielsweise wer das Element zuletzt geändert hat und wann, wo sich das Element befindet, sowie eine Vorschau anzeigen, um zu bestimmen, ob es das ist, wonach es sucht.
 
 ![Screenshots der Microsoft Search-Ergebnisseite](media/search_box.png)
 
@@ -54,7 +54,7 @@ Wenn die Vorschläge im Suchfeld nicht das sind, wonach Benutzer suchen, öffnet
 
 **Anzeige relevanter Inhalte** – Stellen Sie die Informationen und Antworten bereit, die Ihre Benutzer zum Erledigen von Aufgaben benötigen, zum Beispiel Richtlinien, Leistungen, Ressourcen, Tools und mehr. Sie können auch auf bestimmte Gruppen wie neue Mitarbeiter, Remotemitarbeiter oder andere Geographen abzielen.
 
-**Verwaltung in allen Apps** – Microsoft Search ist standardmäßig in**unter** aktiviert und von Ihnen durchgeführte Administrationsvorgänge werden in allen Apps auf Microsoft Search angewendet.
+**Verwaltung in allen Apps** – Microsoft Search ist standardmäßig in **unter** aktiviert und von Ihnen durchgeführte Administrationsvorgänge werden in allen Apps auf Microsoft Search angewendet.
 
 ## <a name="tailoring-microsoft-search-to-your-organization"></a>Anpassen von Microsoft Search an Ihre Organisation
 

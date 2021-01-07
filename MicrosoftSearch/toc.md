@@ -9,6 +9,7 @@
 ## [Lesezeichen](manage-bookmarks.md)
 ## [Grundrisse](manage-floorplans.md)
 ## [Standorte](manage-locations.md)
+## [Power BI](manage-powerbi.md)
 ## [Fragen und Antworten](manage-qas.md)
 # Connectors (Vorschau)
 ## [Übersicht](connectors-overview.md)

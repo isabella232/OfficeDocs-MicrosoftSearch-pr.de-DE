@@ -1,5 +1,5 @@
 ---
-title: Verwalten von benutzerdefinierten Filtern
+title: Verwalten benutzerdefinierter Filter
 ms.author: rodhb
 author: rodhb
 manager: jeffkizn
@@ -11,51 +11,52 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Verwalten von benutzerdefinierten Filtern
-ms.openlocfilehash: 75273035a7825683f626464df7bbc8e294b41b6f
-ms.sourcegitcommit: 59435698bece013ae64ca2a68c43455ca10e3fdf
+description: Verwalten benutzerdefinierter Filter
+ms.openlocfilehash: a050921058eac50d7588f1e71f5b0f56cc8e5752
+ms.sourcegitcommit: a86265684871da86562a76c4961d0a6c1869f517
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48927382"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790330"
 ---
-# <a name="create-custom-filters"></a>Erstellen von benutzerdefinierten Filtern
+# <a name="manage-custom-filters"></a>Verwalten benutzerdefinierter Filter
 
-Sie können Filter erstellen, um die Suchumgebung anzupassen, die Benutzern bei der Suche in Microsoft [SharePoint](https://sharepoint.com/), Microsoft [Office](https://office.com)und Microsoft Search in [Bing](https://bing.com)angezeigt wird. Mithilfe von Filtern können Benutzer die Ergebnisse Ihrer Suchabfrage schnell verfeinern.
+Mithilfe von Filtern können Sie die Microsoft Search-Erfahrung anpassen. Mithilfe von Filtern können Benutzer den Satz von Ergebnissen aus ihrer Suchabfrage schnell verfeinern.
 
-Ein benutzerdefinierter Filter kann in einer vertikalen basierend auf einer Connection-Eigenschaft erstellt werden. Sie können beispielsweise einen **veröffentlichten on** -Filter für ServiceNow-Verbindung in einer benutzerdefinierten vertikalen erstellen.
+Ein benutzerdefinierter Filter kann basierend auf einer Verbindungseigenschaft in einer Vertikalen erstellt werden. Sie können z. B. eine **"Veröffentlicht am"-Filter** für eine "ServiceNow"-Verbindung innerhalb einer vertikalen Verbindung erstellen.
+
+## <a name="create-a-filter-in-an-organizational-level-vertical"></a>Erstellen eines Filters in einer Organisationsebene
+
+Führen Sie die folgenden Schritte aus, um einen Filter in Microsoft Search zu erstellen:
+
+1. Wechseln Sie im Microsoft 365 Admin Center zu ["Verticals".](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)
+1. Erstellen/Bearbeiten der Vertikalen, in der Sie den Filter erstellen möchten
+1. Navigieren Sie im Assistenten zum Schritt "Filter".
+1. Klicken Sie auf "Filter hinzufügen" und beginnen Sie.
+1. Nach dem Hinzufügen von Filtern können Sie die Vertikale überprüfen und speichern.
 
 ## <a name="things-to-consider"></a>Zu berücksichtigende Aspekte
 
-1. Zum Erstellen eines benutzerdefinierten Filters für die Inhaltsquelle für Verbindungen werden einige zusätzliche Funktionen bereitgestellt:
-- Sie können auch Filter für einen Alias für die Eigenschaften von Connector Source erstellen.
-- Wenn Ihre vertikale mehrere Verbindungen hat, können Sie einen allgemeinen Filter für diese Verbindungen erstellen. Dies kann durch Erstellen des Filters für einen gemeinsamen Alias erfolgen, der die Quelleigenschaften über verschiedene Verbindungen hinweg aliast. Sie können beispielsweise einen **Autor** Filter in einem ServiceNow & einer Jira-Verbindung erstellen, indem Sie wie folgt Aliase erstellen:
+1. Für Verbindungsinhalte sind zusätzliche Filterfunktionen vorhanden.
 
-| Verbindung | Eigenschaft | Alias |
-| --- | --- | --- |
-| Dienst jetzt | Besitzer | Ursprung |
-| Jira | Publisher | Ursprung |
+    - Sie können auch einen Filter für einen Alias für Connectorquelleneigenschaften erstellen.
+    - Wenn eine Vertikale mehrere Verbindungen hat, können Sie einen gemeinsamen Filter für diese Verbindungen erstellen. Dies kann durch Erstellen des Filters nach einem allgemeinen Alias durchgeführt werden, der Quelleigenschaften über die verschiedenen Verbindungen hinweg aliasiert. Sie können beispielsweise  einen Autorenfilter über eine ServiceNow- und eine Jira-Verbindung hinweg erstellen, indem Sie aliase wie folgt erstellen:
 
-2. Filter sind im Bereich der vertikalen vorhanden. Daher  
-- Wenn ein Filter in einer vertikalen erstellt wird, die auf Organisationsebene liegt, wird der Filter nur auf Organisationsebene angezeigt.
-- Wenn ein Filter in einer vertikalen erstellt wird, die auf Standortebene liegt, wird der Filter nur auf Websiteebene angezeigt.
+    | Verbindung | Eigenschaft | Alias |
+    | --- | --- | --- |
+    | Service Now | Besitzer | Ursprung |
+    | Jira | Publisher | Ursprung |
 
-## <a name="steps-to-create-custom-filter"></a>Schritte zum Erstellen eines benutzerdefinierten Filters
+1. Filter sind innerhalb des Bereichs einer Vertikalen vorhanden.
 
-### <a name="create-filter-in-organizational-level-vertical"></a>Filter in der Organisationsebene vertikal erstellen:
-
-Führen Sie die folgenden Schritte aus, um einen Filter für Microsoft Search zu erstellen:
-
-1. Wechseln Sie im Microsoft 365 Admin Center zur Seite [vertikal](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals) .
-2. Erstellen/Bearbeiten der vertikalen, in der Sie den Filter erstellen möchten
-3. Navigieren Sie zum Schritt "Filter" im Assistenten.
-4. Klicken Sie auf "Filter hinzufügen" und erste Schritte nach dem Hinzufügen von Filtern können Sie die vertikale überprüfen und speichern.
+    - Wenn ein Filter in einer Vertikalen erstellt wird, die sich auf Organisationsebene befindet, wäre der Filter nur auf Organisationsebene sichtbar.
+    - Wenn ein Filter in einer vertikalen Ebene erstellt wird, die sich auf Standortebene befindet, wäre der Filter nur auf Standortebene sichtbar.
 
 ## <a name="known-limitations"></a>Bekannte Einschränkungen
 
-1. Sie können derzeit nur Filter für & Datentyp verwaltete Eigenschaften von Zeichenfolgen erstellen.
-2. Sie können keine hierarchischen Filter erstellen
+1. Derzeit können Sie Filter nur für Zeichenfolgen erstellen, & verwaltete Eigenschaften des Datumstyps enthalten.
+1. Sie können keine hierarchischen Filter erstellen.
 
 ## <a name="resources"></a>Ressourcen
 
-[Anpassen der Suchergebnisseite](customize-search-page.md)
+[Branchen und Ergebnistypen verwalten](customize-search-page.md)

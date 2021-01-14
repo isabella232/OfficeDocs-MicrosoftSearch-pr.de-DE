@@ -1,5 +1,5 @@
 ---
-title: Klassische Seiten in SharePoint Online und Microsoft-Suche
+title: Klassische Seiten in SharePoint Online und Microsoft Search
 ms.author: keremy
 author: jeffkizn
 manager: parulm
@@ -11,47 +11,47 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Verwenden der Microsoft-Suche auf klassischen SharePoint-Seiten
-ms.openlocfilehash: 605e63a30ad166c63320c7e89e1b2745e628e15d
-ms.sourcegitcommit: c5fe4e01403379b3ee7ea4dbded8b31696311d79
+description: Verwenden von Microsoft Search auf klassischen SharePoint-Seiten
+ms.openlocfilehash: 9a5aeb2e683297faccfb55d3407653c1791b3961
+ms.sourcegitcommit: 7133d46ca9c3a5216ee9159db781febd17e5a831
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49700973"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49863174"
 ---
-# <a name="classic-pages-and-microsoft-search"></a>Klassische Seiten und Microsoft-Suche
+# <a name="classic-pages-and-microsoft-search"></a>Klassische Seiten und Microsoft Search
 
-SharePoint-Websites, die vor modernen Websites erstellt wurden, verwenden ein klassisches Suchfeld und eine klassische Suchergebnis Erfahrung. Wir werden ein Feature bereitstellen, das standardmäßig die klassischen Seiten verwendet, um die moderne Suchumgebung zu verwenden, die die Microsoft-Suche verwendet, wodurch personalisierte Ergebnisse mit höherer Relevanz bereitgestellt werden.
+SharePoint-Websites, die vor modernen Websites erstellt wurden, verwenden ein klassisches Suchfeld und klassische Suchergebnisse. Wir werden ein Feature zur Standardeinstellung klassischer Seiten für die Verwendung der modernen Suchfunktion mit Microsoft Search verwenden, die personalisierte Ergebnisse mit höherer Relevanz bietet.
 
-Die Verwendung von Microsoft Search wird für alle Websites, einschließlich Classic, empfohlen, aber wenn Ihre klassischen Websites benutzerdefinierte Gestaltungsvorlagen verwenden und/oder Sie Ihre klassischen Suchergebnisse angepasst haben, werden wir diese Anpassungen automatisch erkennen und nicht zur Microsoft-Suche wechseln.
+Die Verwendung von Microsoft Search wird für alle Websites empfohlen, einschließlich der klassischen, aber wenn Ihre klassischen Websites benutzerdefinierte Gestaltungsseiten verwenden und/oder Sie Ihre klassische Suchergebnisse angepasst haben, erkennen wir diese Anpassungen automatisch und wechseln nicht zu Microsoft Search.
 
-## <a name="classic-sites-that-will-automatically-switch-to-microsoft-search"></a>Klassische Websites, die automatisch zur Microsoft-Suche gewechselt werden
+## <a name="classic-sites-that-will-automatically-switch-to-microsoft-search"></a>Klassische Websites, die automatisch zu Microsoft Search wechseln
 
-Bei klassischen Websites wird Microsoft Search verwendet, wenn alle der folgenden Kriterien zutreffen.
+Klassische Websites beginnen mit der Verwendung von Microsoft Search, wenn alle folgenden Bedingungen erfüllt sind:
 
-* Die Website basiert auf der Vorlage für die Teamwebsite (wie STS # 0 und STS # 1).
+* Die Website basiert auf der Teamwebsitevorlage (z. B. STS#0 und STS#1).
 * Auf der Website ist das Veröffentlichungsfeature nicht aktiviert.
-* Die Website verwendet keine benutzerdefinierte Gestaltungsvorlage (eine andere Gestaltungsvorlage als Oslo. Master oder Seattle. Master).
-* Es gibt keine aktiven Abfrageregeln außer denen, die höher gestufte Ergebnisse für die Website, Websitesammlung oder den Mandanten in der Standardergebnis Quelle hinzufügen.
-* Es gibt keine benutzerdefinierten Ergebnistypen für die Website oder die Websitesammlung in der Standardergebnis Quelle.
-* Die Website oder die Websitesammlung, in der Sie enthalten ist, hat sich nicht aus dem Switch mit der unten beschriebenen SearchBoxInNavBar-Einstellung entschieden.
+* Die Website verwendet keine benutzerdefinierte Masterseite (eine andere Masterseite als oslo.master oder seattle.master).
+* Es gibt keine aktiven Abfrageregeln, mit denen höhergestufte Ergebnisse für die Website, Websitesammlung oder den Mandanten in der Standardergebnisquelle hinzugefügt werden.
+* Es gibt keine benutzerdefinierten Ergebnistypen für die Website oder die Websitesammlung in der Standardergebnisquelle.
+* Die Website oder die Websitesammlung wird mit der unten beschriebenen *Einstellung "SearchBoxInNavBar"* nicht von der Option ausgeschlossen.
 
-Nach dem Wechsel zur Microsoft-Suche wird durch die klassischen Seiten der Website das Suchfeld in der Suite-Navigationsleiste angezeigt und das klassische Suchfeld von der Seite entfernt. Wenn ein Benutzer nach einem Begriff sucht, werden die Ergebnisse dann mithilfe der modernen Suchumgebung von Microsoft Search angezeigt.
+Nach dem Wechsel zu Microsoft Search wird auf klassischen Seiten der Website das Suchfeld in der Suitenavigationsleiste angezeigt, und das klassische Suchfeld wird von der Seite entfernt. Wenn ein Benutzer dann nach einem Ausdruck sucht, werden die Ergebnisse mithilfe der modernen Suchfunktion von Microsoft Search angezeigt.
 
-## <a name="staying-with-the-classic-search-experience"></a>Wohnen mit der klassischen Suchumgebung
+## <a name="staying-with-the-classic-search-experience"></a>Mit der klassischen Sucherfahrung bleiben
 
-Wenn Ihre Website die oben aufgeführten Kriterien erfüllt, Sie jedoch nicht zu der Microsoft-Suchumgebung wechseln möchten, können Sie die folgenden Befehle als Website-oder Websitesammlungsbesitzer deaktivieren.
+Wenn Ihre Website die oben aufgeführten Kriterien erfüllt, Sie jedoch nicht möchten, dass sie zur Microsoft Search-Erfahrung wechselt, können Sie sich mit den folgenden Befehlen als Website- oder Websitesammlungsbesitzer abmelden.
 
-Sie können diesen Befehl jederzeit verwenden, bevor oder nachdem der Wechsel erfolgt ist, sodass es einfach ist, wieder zu der zuvor verwendeten Suchumgebung zurückzukehren.
+Sie können diesen Befehl jederzeit verwenden, bevor oder nachdem der Wechsel erfolgt ist. Daher ist es einfach, wieder zu der Sucherfahrung zurückwechseln, die Sie zuvor hatten.
 
-Um die folgenden Befehle auszuführen, verwenden Sie PowerShell mit SharePoint PNP PowerShell Extensions. Sie können die ersten Schritte [hier](https://docs.microsoft.com/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets?view=sharepoint-ps)installieren und weitere Informationen dazu erhalten. Sie melden sich bei Ihrer Website oder Websitesammlung mit folgendem Befehl an:
+Um die folgenden Befehle auszuführen, verwenden Sie PowerShell mit SharePoint PnP PowerShell-Erweiterungen. Hier können Sie die ersten Schritte installieren und weitere Informationen [dazu erhalten.](https://docs.microsoft.com/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets?view=sharepoint-ps) Mit dem folgenden Befehl melden Sie sich bei Ihrer Website oder Websitesammlung an:
 
 ```powershell
 Connect-PnPOnline -Url <yoursiteurl> -UseWebLogin
-# this will prompt you to sign into your site. Use the site owner credentials
+# this will prompt you to sign in to your site. Use the site owner credentials.
 ```
 
-Führen Sie den folgenden Befehl aus, um mit der klassischen Suchumgebung für eine Website zu bleiben:
+Führen Sie den folgenden Befehl aus, um mit der klassischen Sucherfahrung für eine Website zu bleiben:
 
 ```powershell
 Set-PnPSearchSettings -Scope Web -SearchBoxInNavBar ModernOnly
@@ -65,11 +65,11 @@ Set-PnPSearchSettings -Scope Site -SearchBoxInNavBar ModernOnly
 # ModernOnly | Inherit
 ```
 
-## <a name="opting-into-microsoft-search"></a>Opting in Microsoft Search
+## <a name="opting-into-microsoft-search"></a>Opting to Microsoft Search
 
-Für Websites, die die oben aufgeführten Kriterien nicht erfüllen, oder für bestimmte Websites in einer Websitesammlung, die sich für den klassischen Aufenthalt entschieden haben, können Sie die Microsoft-Suchumgebung manuell aktivieren.
+Für Websites, die die oben aufgeführten Kriterien nicht erfüllen, oder für bestimmte Websites in einer Websitesammlung, die sich für die klassische Verwendung entschieden haben, können Sie die Microsoft Search-Erfahrung manuell aktivieren.
 
-Um diese Einstellung für eine bestimmte Website zu ändern, können Sie diesen Befehl verwenden:
+Um diese Einstellung für einen bestimmten Standort zu ändern, können Sie diesen Befehl verwenden:
 
 ```powershell
 Set-PnPSearchSettings -Scope Web -SearchBoxInNavBar AllPages
@@ -84,4 +84,4 @@ Set-PnPSearchSettings -Scope Site -SearchBoxInNavBar AllPages
 ```
 
 > [!NOTE]
-> Sie können Microsoft Search nur für eine Team Website oder eine Veröffentlichungswebsite manuell aktivieren (Vorlagen-IDs, die "STS", "CMSPUBLISHING", "BLANKINTERNET" und "Group" enthalten).
+> Sie können Microsoft Search nur für eine Teamwebsite oder Veröffentlichungswebsite manuell aktivieren (Vorlagen-IDs, die "STS", "CMSPUBLISHING", "BLANKINTERNET" und "GROUP" enthalten).

@@ -1,5 +1,5 @@
 ---
-title: Lizenzanforderungen und-Preise
+title: Lizenzanforderungen und Preise
 ms.author: rusamai
 author: rsamai
 manager: jameslau
@@ -11,29 +11,39 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Lizenzanforderungen für Microsoft Graph Connectors Public Preview für Microsoft Search
-ms.openlocfilehash: 04683a0fe15d4f76286d6637d97345eda57a0330
-ms.sourcegitcommit: 995ce23d4e47a3456a02dba0ba7c9cd0de64528a
+description: Lizenzanforderungen für Microsoft Graph Connectors – öffentliche Vorschau für Microsoft Search
+ms.openlocfilehash: 4d8c279b948063c713fb0afaf713ab42c9714b54
+ms.sourcegitcommit: 469be70ad295a5837978d75babf5243115257f77
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920670"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49847528"
 ---
-# <a name="license-requirements-and-pricing"></a>Lizenzanforderungen und-Preise
+# <a name="license-requirements-and-pricing"></a>Lizenzanforderungen und Preise
 
-Dieser Artikel richtet sich an globale oder Abrechnungs Administratoren, die mehr über das erwerben zusätzlicher Graph Connector-Kontingente für Ihre Organisation erfahren möchten.
+Dieser Artikel richtet sich an globale Administratoren oder Abrechnungsadministratoren, die erfahren möchten, wie Sie zusätzliches Kontingent für Graph Connectors für ihre Organisation erwerben können.
 
-Sie benötigen eine gültige Microsoft 365-oder Office 365-Lizenz und ein ausreichendes Graph-Connector-Kontingent für Ihre Organisation, um Daten aus Konnektoren in ihren Suchergebnissen anzuzeigen. Alle Graph- [Konnektoren von Microsoft](configure-connector.md) sind kostenlos. Sie müssen jedoch über genügend Index Kontingent verfügen, um Inhalte aus diesen Konnektoren zu erfassen.
+Mit jeder gültigen Microsoft 365- oder Office 365-Lizenz können Sie Daten von Connectors in Ihren Suchergebnissen anzeigen.
 
-Jede Microsoft 365-oder Office 365-E5-Lizenz umfasst 500 Index Kontingente, die auf das Kontingent Ihrer Organisation für das Aufnehmen von Inhalten aus Graph-Konnektoren zählen. Wenn Ihre Organisation beispielsweise 100 Microsoft 365 E5-Lizenzen besitzt, verfügt Ihre Organisation über 100 x 500 = 50.000 Elemente im Wert von Graph Connectors Index Quota.
-
-Wenden Sie sich an Ihren Microsoft Account Manager, oder führen Sie die folgenden Schritte aus, um weitere Graph Connectors Quota zu erwerben:
-
-1. Wechseln Sie im [Microsoft 365 Admin Center](https://admin.microsoft.com) -Navigationsmenü zu **Abrechnungs >-Dienste kaufen**.
-2. Wählen Sie unten auf der Seite "Einkaufsdienste" **Add-ons** aus.
-3. Wählen Sie **extra Graph Connector Capacity** aus.
-4. Wählen Sie **kaufen** aus, und füllen Sie dann Ihre Bestell Einstellungen aus.
-5. Wählen Sie **jetzt Auschecken aus**.
+Zum Indizieren von Inhalten mithilfe von Graph Connectors benötigen Sie ein ausreichendes Indexkontingent. Graph Connectors Index quota is available via:
+- In Microsoft 365- oder Office 365 E5-Lizenzen integrierte Berechtigung
+- Kauf des Add-On-Indexkontingents (siehe weiter unten in den Kaufanweisungen)
 
 >[!NOTE]
->Derzeit unterstützen Graph-Connectors nur bis zu 7 Millionen Elemente des Index Kontingents für insgesamt, einschließlich integrierter Kontingente, die in Microsoft 365 oder Office 365 E5-Lizenzen gebündelt sind. Die Plattform wird in Zukunft höhere Grenzwerte unterstützen. Wenden Sie sich an den Microsoft-Support oder an Ihren Microsoft Account Manager, wenn Sie Fragen haben.
+>Alle Graph Connectors von Microsoft sind kostenlos. Sie benötigen jedoch ein ausreichendes Indexkontingent, um Inhalte von diesen Connectors zu erhalten.
+
+Der folgende Lizenztyp umfasst die Berechtigung für 500 Elemente des Indexkontingents, die zum Kontingent Ihrer Organisation für die Aufnahme von Inhalten aus Graph Connectors zählen.
+- Microsoft 365 E5 oder Office 365 E5
+
+Wenn Ihre Organisation beispielsweise über 100 Microsoft 365 E5-Lizenzen verfügt, hat Ihre Organisation ein Indexkontingent von 100 x 500 = 50.000 Elementen.
+
+Wenn Sie ein zusätzliches Graph-Connectors-Kontingent erwerben möchten, nehmen Sie Kontakt mit Ihrem Microsoft Account Manager auf, oder führen Sie die folgenden Schritte aus:
+
+1. Wechseln Sie [im Navigationsmenü des Microsoft 365 Admin](https://admin.microsoft.com) Centers zu **Abrechnungs- > Dienste kaufen.**
+2. Wählen Sie unten auf der Seite "Dienste kaufen" die **Option "Add-Ons" aus.**
+3. Wählen Sie **Extra Graph Connector Capacity aus.**
+4. Wählen **Sie "Kaufen"** aus, und schließen Sie ihre Bestelleinstellungen ab.
+5. Wählen **Sie "Jetzt auschecken" aus.**
+
+>[!NOTE]
+>Derzeit unterstützen Graph Connectors nur bis zu 7 Millionen Elemente des gesamten Indexkontingents, einschließlich aller integrierten Kontingente, die in Microsoft 365- oder Office 365 E5-Lizenzen gebündelt sind. Die Plattform wird in Zukunft höhere Grenzwerte unterstützen. Wenden Sie sich bei Fragen an den Microsoft-Support oder Ihren Microsoft-Konto-Manager.

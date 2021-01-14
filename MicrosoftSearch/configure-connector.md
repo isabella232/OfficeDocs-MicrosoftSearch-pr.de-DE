@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren Ihres von Microsoft erstellten Connectors für Microsoft Search
+title: Konfigurieren des von Microsoft erstellten Connectors für Microsoft Search
 ms.author: monaray
 author: monaray97
 manager: jameslau
@@ -11,158 +11,158 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Konfigurieren Ihres von Microsoft erstellten Connectors für Microsoft Search
-ms.openlocfilehash: 86ddf0387e3d00a005f25207a322c8470799b76b
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+description: Konfigurieren des von Microsoft erstellten Connectors für Microsoft Search
+ms.openlocfilehash: 61a7d444ddc4c290b5098c327faa8e70f0ef1049
+ms.sourcegitcommit: 469be70ad295a5837978d75babf5243115257f77
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367608"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49847546"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 
-# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Setup-Übersicht für Graph-Konnektoren von Microsoft 
+# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Setupübersicht für Graph Connectors von Microsoft 
 
-In diesem Artikel wird der grundlegende Prozess zusammengefasst, der erforderlich ist, um die Graph-Konnektoren von Microsoft mit dem [Microsoft 365 Admin Center](https://admin.microsoft.com) einzurichten. Der grundlegende Prozess umfasst die folgenden Schritte:  
+In diesem Artikel wird der grundlegende Prozess zusammengefasst, der für die Verwendung des [Microsoft 365 Admin Centers](https://admin.microsoft.com) zum Einrichten von Graph Connectors durch Microsoft erforderlich ist. Der grundlegende Prozess umfasst die folgenden Schritte:  
 <!---Add links to each section in the doc--->
 
-1. Fügen Sie einen Graph-Konnektor im Microsoft 365 Admin Center hinzu.
-2. Nennen Sie die Verbindung.
+1. Fügen Sie einen Graph Connector im Microsoft 365 Admin Center hinzu.
+2. Benennen Sie die Verbindung.
 3. Konfigurieren Sie die Verbindungseinstellungen.
 4. Verwalten von Suchberechtigungen.
-5. Zuweisen von Eigenschaften Bezeichnungen.
+5. Zuweisen von Eigenschaftenbeschriftungen.
 6. Verwalten des Schemas.
 7. Wählen Sie Aktualisierungseinstellungen aus.
 8. Überprüfen Sie die Verbindung.
 
-Beachten Sie, dass der Installationsvorgang für alle Graph-Konnektoren von Microsoft sehr ähnlich ist, jedoch nicht exakt identisch ist. **Lesen Sie zusätzlich zum Lesen dieses Artikels unbedingt den Connector-Specific für Ihre Datenquelle.**  
+Es ist wichtig zu beachten, dass der Einrichtungsprozess für alle Graph Connectors von Microsoft sehr ähnlich ist, aber nicht genau gleich ist. **Lesen Sie nicht nur diesen Artikel, sondern lesen Sie auch die connectorspezifischen Informationen für Ihre Datenquelle.**  
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph-Konnektors im Microsoft 365 Admin Center
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph-Connectors im Microsoft 365 Admin Center
 
 Führen Sie die folgenden Schritte aus, um einen der von Microsoft erstellten Connectors zu konfigurieren.
 
-1. Melden Sie sich bei Ihrem Administratorkonto im [Microsoft 365 Admin Center](https://admin.microsoft.com) an.
-2. Wählen Sie im Navigationsbereich die Option **Einstellungen** aus, und wählen Sie dann **Such & Intelligence** aus. Wählen Sie die [Registerkarte Connectors](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)aus.
-3.  Wählen Sie **+ Hinzufügen** aus, und wählen Sie dann im Menü der verfügbaren Optionen die gewünschte Datenquelle aus.
+1. Melden Sie sich bei Ihrem Administratorkonto im [Microsoft 365 Admin Center an.](https://admin.microsoft.com)
+2. Wählen Sie im Navigationsbereich **"Einstellungen"** und dann "Suche **& Intelligence" aus.** Wählen Sie die [Registerkarte "Connectors" aus.](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)
+3. Wählen **Sie +Hinzufügen** aus, und wählen Sie dann die Datenquelle Ihrer Wahl aus dem Menü der verfügbaren Optionen aus.
 
-![Zu den verfügbaren Datenquellen gehören: ADLS Gen2, Enterprise-Websites, Microsoft SQL Server, Azure SQL, Oracle SQL Database, ServiceNow, Dateifreigabe, Azure DevOps und MediaWiki.](media/add-connector.png)
+![Verfügbare Datenquellen sind: ADLS Gen2, Enterprise-Websites, Microsoft SQL-Server, Azure SQL, Oracle SQL-Datenbank, ServiceNow, Dateifreigabe, Azure DevOps und MediaWiki.](media/add-connector.png)
 
->[! Hinweis:] Sie können jedem Mandanten maximal zehn Graph-Verbindungen hinzufügen.
+>[! Hinweis:] Sie können maximal zehn Graph-Verbindungen zu jedem Mandanten hinzufügen.
 
 ## <a name="step-2-name-the-connection"></a>Schritt 2: Benennen der Verbindung
-Diese Attribute müssen angegeben werden: 
+Sie müssen die folgenden Attribute angeben: 
 
 * Name  
 * Verbindungs-ID 
-* Description (optional) 
+* Beschreibung (optional) 
 
 Die Verbindungs-ID erstellt implizite Eigenschaften für den Connector. Er darf nur alphanumerische Zeichen enthalten und darf maximal 32 Zeichen lang sein. 
 
 ## <a name="step-3-configure-the-connection-settings"></a>Schritt 3: Konfigurieren der Verbindungseinstellungen
 
-Der Prozess zum Konfigurieren der Verbindungseinstellungen variiert je nach Typ der Datenquelle. Lesen Sie die Connector-spezifischen Informationen für den Typ der Datenquelle, den Sie Ihrem Mandanten hinzufügen möchten, um diesen Schritt im Setupvorgang abzuschließen.  
+Der Prozess zum Konfigurieren der Verbindungseinstellungen variiert je nach Datenquellentyp. Informationen zum Typ der Datenquelle, die Sie Ihrem Mandanten hinzufügen möchten, um diesen Schritt im Setupprozess abzuschließen, finden Sie in den connectorspezifischen Informationen.  
 
-Weitere Informationen zum Herstellen einer Verbindung mit einer lokalen Datenquelle finden Sie unter [Install an on-premises Data Gateway](https://aka.ms/configuregateway).
+Weitere Informationen zum Herstellen einer Verbindung mit einer lokalen Datenquelle finden Sie unter ["Installieren eines lokalen Datengateways".](https://aka.ms/configuregateway)
 
 ## <a name="step-4-manage-search-permissions"></a>Schritt 4: Verwalten von Suchberechtigungen
 
-Zugriffssteuerungslisten (Access Control Lists, ACLs) bestimmen, welche Benutzer in Ihrer Organisation auf die einzelnen Datenelemente zugreifen können.  
+Zugriffssteuerungslisten (Access Control Lists, ACLs) bestimmen, welche Benutzer in Ihrer Organisation auf jedes Datenelement zugreifen können.  
 
-Einige Connectors wie [Microsoft SQL](MSSQL-connector.md) -und [Azure Data Lake-Speicher Gen2](azure-data-lake-connector.md) unterstützen systemeigene [Azure Active Directory (Azure AD)-](https://docs.microsoft.com/azure/active-directory/) ACLs.
+Einige Connectors wie [Microsoft SQL](MSSQL-connector.md) und Azure Data Lake [Storage Gen2](azure-data-lake-connector.md) unterstützen [nativ Azure Active Directory (Azure AD)-ACLs.](https://docs.microsoft.com/azure/active-directory/)
 
-Andere Connectors wie [ServiceNow](servicenow-connector.md), [Azure DevOps](azure-devops-connector.md)und [Salesforce](salesforce-connector.md) unterstützen das synchronisieren nicht Azure Ader Benutzer und Gruppen.  
+Andere Connectors wie [ServiceNow,](servicenow-connector.md) [Azure DevOps](azure-devops-connector.md)und [Salesforce](salesforce-connector.md) unterstützen die Synchronisierung von Nicht-Azure AD-Benutzern und -Gruppen.  
 
-## <a name="step-5-assign-property-labels"></a>Schritt 5: Zuweisen von Eigenschaften Bezeichnungen
-Sie können semantische Bezeichnungen ihren Quelleigenschaften auf der Seite "Eigenschaften Bezeichnungen zuweisen" zuweisen. Bezeichnungen sind bekannte von Microsoft bereitgestellte Tags, die eine semantische Bedeutung bieten. Sie ermöglichen es Microsoft, ihre connectordaten in Microsoft 365-Benutzeroberflächen zu integrieren, beispielsweise Erweiterte Suche, Personen Karten, intelligente Erkennung und vieles mehr.  
+## <a name="step-5-assign-property-labels"></a>Schritt 5: Zuweisen von Eigenschaftsbezeichnungen
+Sie können Ihren Quelleigenschaften auf der Seite "Eigenschaftenbezeichnungen zuweisen" semantische Bezeichnungen zuweisen. Bezeichnungen sind von Microsoft bereitgestellte bekannte Tags, die semantische Bedeutung bieten. Sie ermöglichen Es Microsoft, Ihre Connectordaten in Microsoft 365-Erfahrungen wie erweiterte Suche, Personenkarten, intelligente Ermittlung und vieles mehr zu integrieren.  
 
-In der folgenden Tabelle sind die aktuell unterstützten Bezeichnungen und deren Beschreibungen aufgeführt.  
+In der folgenden Tabelle sind die derzeit unterstützten Bezeichnungen und deren Beschreibungen aufgeführt.  
 
-Bezeichnung | Beschreibung
+Label | Beschreibung
 --- | ---  
-**title** | Der Titel für das Element, das in Such-und anderen Erfahrungen angezeigt werden soll 
+**title** | Der Titel für das Element, das in der Suche und anderen Erfahrungen angezeigt werden soll 
 **url** | Die Ziel-URL des Elements im Quellsystem 
 **createdBy** | Name der Person, die das Element erstellt hat 
 **lastModifiedBy** | Name der Person, die das Element zuletzt bearbeitet hat 
-**authors** | Name der Personen, die an dem Element teilgenommen/zusammengearbeitet haben 
+**authors** | Name der Personen, die an dem Element teilgenommen bzw. an dem Element zusammengearbeitet haben 
 **createdDateTime** | Wann wurde das Element erstellt? 
-**lastModifiedDateTime** | Wann wurde das Element zuletzt bearbeitet 
+**lastModifiedDateTime** | Wann wurde das Element zuletzt bearbeitet? 
 **fileName** | Name des Dateielements 
-**fileExtension** | Typ des Dateielements wie. PDF oder. Word 
+**fileExtension** | Dateielementtyp, z. B. PDF oder WORD 
 
-Die Eigenschaften auf dieser Seite sind basierend auf Ihrer Datenquelle vorab ausgewählt, aber Sie können diese Auswahl ändern, wenn es eine andere Eigenschaft gibt, die für eine bestimmte Bezeichnung besser geeignet ist.  
+Die Eigenschaften auf dieser Seite werden basierend auf Ihrer Datenquelle vorab ausgewählt. Sie können diese Auswahl jedoch ändern, wenn eine andere Eigenschaft für eine bestimmte Bezeichnung besser geeignet ist.  
 
-Der Beschriftungs **Titel** ist die wichtigste Bezeichnung. Es wird **dringend empfohlen** , dass Sie über eine Eigenschaft verfügen, die dieser Bezeichnung zugewiesen ist, damit Ihre Verbindung an der [Ergebnis Cluster Erfahrung](result-cluster.md)teilnehmen kann.
+Der **Bezeichnungstitel** ist die wichtigste Bezeichnung. Es wird **dringend empfohlen,** dass Sie dieser Bezeichnung eine Eigenschaft zugewiesen haben, damit Ihre Verbindung an der Ergebnisclustererfahrung [teilnehmen kann.](result-cluster.md)
 
-Falsch Zuordnungs Bezeichnungen führen zu einer Verschlechterung der Suchumgebung. Für einige Bezeichnungen ist es in Ordnung, dass keine Eigenschaft zugewiesen ist.  
+Falsche Zuordnungsbezeichnungen führen zu einer verschlechterten Sucherfahrung. Es ist in Ordnung, dass einigen Bezeichnungen keine Eigenschaft zugewiesen ist.  
 
 ## <a name="step-6-manage-schema"></a>Schritt 6: Verwalten des Schemas
 
-### <a name="content-property"></a>Content-Eigenschaft
+### <a name="content-property"></a>Inhaltseigenschaft
 
-Es wird dringend empfohlen, dass Sie im Dropdownmenü von Optionen eine * *-Inhaltseigenschaft auswählen oder den Standardwert beibehalten, wenn einer vorhanden ist. Diese Eigenschaft wird für die Volltextindizierung von Inhalten, die Generierung von Seitenausschnitt des Suchergebnisses, die Teilnahme an [Ergebnis Clustern](result-cluster.md) , die Spracherkennung, die Unterstützung von HTML/Text, die Rangfolge und Relevanz sowie die Abfrage Formulierung verwendet.
+Es wird dringend empfohlen, eine **Content-Eigenschaft" aus dem Dropdownmenü der Optionen auszuwählen oder die Standardeinstellung zu behalten, wenn eine vorhanden ist. Diese Eigenschaft wird für die Volltextindizierung von Inhalten, die Generierung von Codeausschnitten für [Suchergebnisse,](result-cluster.md) die Teilnahme am Ergebniscluster, spracherkennung, HTML/Text-Unterstützung, Rangfolge und Relevanz sowie Abfrageformulierung verwendet.
 
-Wenn Sie eine Inhaltseigenschaft auswählen, haben Sie die Möglichkeit, beim [Erstellen des Ergebnistyps](customize-results-layout.md)die vom System generierte Eigenschaft **ResultSnippet** zu verwenden. Diese Eigenschaft dient als Platzhalter für die dynamischen Ausschnitte, die zur Abfragezeit aus der Content-Eigenschaft generiert werden. Wenn Sie diese Eigenschaft in Ihrem Ergebnistyp verwenden, werden Ausschnitte in ihren Suchergebnissen generiert.
+Wenn Sie eine Inhaltseigenschaft auswählen, können Sie beim Erstellen des Ergebnistyps die vom System generierte Eigenschaft **"ResultSnippet"** [verwenden.](customize-results-layout.md) Diese Eigenschaft dient als Platzhalter für die dynamischen Codeausschnitte, die zur Abfragezeit aus der Inhaltseigenschaft generiert werden. Wenn Sie diese Eigenschaft in Ihrem Ergebnistyp verwenden, werden Codeausschnitte in ihren Suchergebnissen generiert.
 
 ### <a name="creating-aliases-for-source-properties"></a>Erstellen von Aliasen für Quelleigenschaften
 
-Sie können Aliase zu ihren Eigenschaften in der Spalte "Alias" auf der Seite "Schema verwalten" hinzufügen. Aliase sind benutzerfreundliche Namen für ihre Eigenschaften. Sie werden in Abfragen und beim Erstellen von Filtern verwendet. Sie werden auch verwendet, um Quelleigenschaften von mehreren Verbindungen so zu normalisieren, dass Sie denselben Namen haben. Auf diese Weise können Sie einen einzelnen Filter für eine vertikale mit mehreren Verbindungen erstellen. Weitere Informationen finden Sie unter [Anpassen der Suchergebnisseite](customize-search-page.md) .  
+Sie können Ihren Eigenschaften unter der Spalte "Alias" auf der Seite "Schema verwalten" Aliase hinzufügen. Aliase sind Anzeigenamen für Ihre Eigenschaften. Sie werden in Abfragen und beim Erstellen von Filtern verwendet. Sie werden auch verwendet, um Quelleigenschaften aus mehreren Verbindungen so zu normalisieren, dass sie denselben Namen haben. Auf diese Weise können Sie einen einzelnen Filter für eine Vertikale mit mehreren Verbindungen erstellen. Weitere [Informationen finden Sie auf der Seite "Suchergebnisse anpassen".](customize-search-page.md)  
 
-### <a name="search-schema-attributes"></a>Attribute für das Suchschema
+### <a name="search-schema-attributes"></a>Suchschemaattribute
 
-Sie können die Suchschema Attribute so festlegen, dass die Suchfunktionen der einzelnen Quelleigenschaften gesteuert werden. Mithilfe eines Suchschemas können Sie bestimmen, welche Ergebnisse auf der Suchergebnisseite angezeigt werden und welche Informationen Endbenutzer anzeigen und darauf zugreifen können.
+Sie können die Suchschemaattribute festlegen, um die Suchfunktionalität jeder Quelleigenschaft zu steuern. Ein Suchschema hilft zu bestimmen, welche Ergebnisse auf der Suchergebnissetseite angezeigt werden und welche Informationen Endbenutzer anzeigen und darauf zugreifen können.
 
-Suchschema Attribute sind **durchsuchbar** **, abfragbar,** **abrufbar** und **verfeinernd**. In der folgenden Tabelle sind die Attribute aufgeführt, die von Microsoft Graph-Connectors unterstützt werden, und deren Funktionen erläutert.
+Zu den **Suchschemaattributen gehören durchsuchbare,** **abfragbare,** **abrufbare** und **einsetzbare Suchschemaattribute.** In der folgenden Tabelle sind die einzelnen Attribute aufgeführt, die von Microsoft Graph Connectors unterstützt werden, und ihre Funktionen werden erläutert.
 
-Suchschema Attribut | Funktion | Beispiel
+Suchschemaattribut | Funktion | Beispiel
 --- | --- | ---
-Durchsuchbare | Legt den Textinhalt einer Eigenschaft durchsuchbar. Eigenschaften Inhalte sind im Volltextindex enthalten. | Wenn die Eigenschaft **Title** lautet, gibt eine Abfrage für **Enterprise** Antworten zurück, die das Wort **Enterprise** in einem beliebigen Text oder Titel enthalten.
-QUERYABLE | Sucht nach einer Suchabfrage nach einer Übereinstimmung für eine bestimmte Eigenschaft. Der Eigenschaften Name kann dann entweder programmgesteuert oder wörtlich in der Abfrage angegeben werden. |  Wenn die **Title** -Eigenschaft abgefragt wird, wird der Abfrage **Titel: Enterprise** unterstützt. 
-Abrufbar | Nur Abruf bare Eigenschaften können im Ergebnistyp verwendet werden und im Suchergebnis angezeigt werden. |
-Einschränkbaren | Raffinations Eigenschaften können wie auf der Seite Microsoft-Suchergebnisse verwendet werden. | Benutzer in Ihrer Organisation können auf der Suchergebnisseite nach **lastModifiedDateTime** [Filtern](custom-filters.md) , wenn die Eigenschaft beim Einrichten der Verbindung als "verfeinern" gekennzeichnet ist.
+DURCHSuchbar | Macht den Textinhalt einer Eigenschaft durchsuchbar. Eigenschafteninhalte sind im Volltextindex enthalten. | Wenn es sich bei der Eigenschaft um **einen** Titel handelt, gibt eine Abfrage für **Enterprise** Antworten zurück, die das Wort **"Enterprise"** in einem beliebigen Text oder Titel enthalten.
+ABSABFRAGEBAR | Sucht nach der Abfrage nach einer Übereinstimmung für eine bestimmte Eigenschaft. Der Eigenschaftenname kann dann entweder programmgesteuert oder ausführlich in der Abfrage angegeben werden. |  Wenn die **Eigenschaft "Title"** absingbar ist, wird die Abfrage **"Title: Enterprise"** unterstützt. 
+ABRUFBAR | Im Ergebnistyp können nur abrufbare Eigenschaften verwendet und im Suchergebnis angezeigt werden. |
+EINFEINBAR | Einsetzbare Eigenschaften können wie auf der Microsoft Search-Ergebnisse-Seite verwendet werden. | Benutzer in Ihrer Organisation können [auf](custom-filters.md) der Suchergebnissetseite nach **"lastModifiedDateTime"** filtern, wenn die Eigenschaft während des Verbindungsaufbaus als einfeinbar gekennzeichnet ist.
 
-Für alle Connectors mit Ausnahme des Dateifreigabe-Konnektors müssen benutzerdefinierte Typen manuell festgelegt werden. Zum Aktivieren der Suchfunktionen für jedes Feld benötigen Sie ein Suchschema, das einer Liste von Eigenschaften zugeordnet ist. Der Verbindungs-Assistent wählt automatisch ein Suchschema basierend auf den von Ihnen ausgewählten Quelleigenschaften aus. Sie können dieses Schema ändern, indem Sie die Kontrollkästchen für jede Eigenschaft und jedes Attribut auf der Seite Suchschema aktivieren.
+Für alle Connectors mit Ausnahme des Dateifreigabeconnectors müssen benutzerdefinierte Typen manuell festgelegt werden. Zum Aktivieren der Suchfunktionen für jedes Feld benötigen Sie ein Suchschema, das einer Liste von Eigenschaften zugeordnet ist. Der Verbindungsassistent wählt automatisch ein Suchschema basierend auf dem ausgewählten Quelleigenschaftensatz aus. Sie können dieses Schema ändern, indem Sie die Kontrollkästchen für jede Eigenschaft und jedes Attribut auf der Suchschemaseite aktivieren.
 
-![Das Schema für einen Connector kann durch Hinzufügen oder Entfernen von Abfrage-, Such-und Abruffunktionen angepasst werden.](media/manageschema.png)
+![Das Schema für einen Connector kann durch Hinzufügen oder Entfernen von Abfrage-, Such- und Abruffunktionen angepasst werden.](media/manageschema.png)
  
-### <a name="restrictions-and-recommendations-for-search-schema-settings"></a>Einschränkungen und Empfehlungen für Suchschema Einstellungen
+### <a name="restrictions-and-recommendations-for-search-schema-settings"></a>Einschränkungen und Empfehlungen für Suchschemaeinstellungen
 
-* Die **Content** -Eigenschaft ist nur durchsuchbar. Wenn diese Eigenschaft im Dropdownmenü ausgewählt ist, kann Sie nicht als **abrufbar** oder **abgefragt** markiert werden.
+* Die **Inhaltseigenschaft** ist nur durchsuchbar. Nachdem diese Eigenschaft in der Dropdownliste ausgewählt wurde, kann sie nicht als abrufbar **oder** **abfragbar markiert werden.**
 
-* Es treten erhebliche Leistungsprobleme auf, wenn Suchergebnisse mit der **Content** -Eigenschaft gerendert werden. Ein Beispiel ist das **Text** Inhaltsfeld für einen [ServiceNow](https://www.servicenow.com) Knowledge Base-Artikel.
+* Erhebliche Leistungsprobleme treten auf, wenn Suchergebnisse mit der **Inhaltseigenschaft gerendert** werden. Ein Beispiel ist das **Textfeld "Text"** für einen Knowledge Base-Artikel von [ServiceNow.](https://www.servicenow.com)
 
-* Nur Eigenschaften, die als abrufbares Rendering in den Suchergebnissen markiert sind, können zum Erstellen moderner Ergebnistypen (MRT) verwendet werden.
+* Nur Eigenschaften, die in den Suchergebnissen als abrufbar gekennzeichnet sind, können zum Erstellen moderner Ergebnistypen (MRTs) verwendet werden.
 
-* Nur Zeichenfolgeneigenschaften können durchsuchbar gekennzeichnet werden.
+* Nur Zeichenfolgeneigenschaften können als durchsuchbar markiert werden.
 
 > [!NOTE]
-> Nachdem Sie eine Verbindung erstellt haben, **können** Sie das Schema nicht ändern. Hierzu müssen Sie die Verbindung löschen und eine neue erstellen.
+> Nachdem Sie eine Verbindung erstellt haben, **können Sie das** Schema nicht mehr ändern. Dazu müssen Sie Ihre Verbindung löschen und eine neue erstellen.
 
 ## <a name="step-7-refresh-settings"></a>Schritt 7: Aktualisieren von Einstellungen
 
-Das Aktualisierungsintervall legt fest, wie oft Ihre Daten zwischen der Datenquelle und der Microsoft-Suche synchronisiert werden. Jeder Datenquellentyp hat einen anderen Satz optimaler Aktualisierungs Zeitpläne, basierend auf der Häufigkeit, mit der Daten geändert werden, und den Typ der Änderungen.
+Das Aktualisierungsintervall bestimmt, wie oft Ihre Daten zwischen der Datenquelle und Microsoft Search synchronisiert werden. Jeder Datenquellentyp verfügt über einen anderen Satz optimaler Aktualisierungszeitpläne, basierend auf der Anzahl der geänderten Daten und der Art der Änderungen.
 
-Es gibt zwei Arten von Aktualisierungsintervallen, die **vollständig aktualisiert** und **inkrementell aktualisiert** werden, aber inkrementelle Aktualisierungen sind für einige Datenquellen nicht verfügbar.
+Es gibt zwei Arten von Aktualisierungsintervallen, die **vollständige** Aktualisierung und inkrementelle Aktualisierung **sind,** aber inkrementelle Aktualisierungen sind für einige Datenquellen nicht verfügbar.
 
-Bei einer vollständigen Aktualisierung verarbeitet und indiziert die Suchmaschine jedes Element in der Inhaltsquelle, unabhängig von vorherigen Crawls. Eine vollständige Aktualisierung eignet sich am besten für diese Situationen:
+Bei einer vollständigen Aktualisierung verarbeitet und indiziert die Suchmaschine jedes Element in der Inhaltsquelle, unabhängig von vorherigen Durchforstungen. Eine vollständige Aktualisierung funktioniert am besten für die folgenden Situationen:
 
 * Erkennen von Löschungen von Daten.
-* Die inkrementelle Aktualisierung konnte den Inhalt aufgrund von Fehlern nicht aktualisieren.
-* ACLs wurden geändert.
+* Bei der inkrementellen Aktualisierung konnte der Inhalt aufgrund von Fehlern nicht aktualisiert werden.
+* AcLs wurden geändert.
 * Durchforstungsregeln wurden geändert.
-* Wenn das Schema für die Verbindung aktualisiert wurde (Schema Updates werden noch nicht unterstützt)
+* Wann das Schema für die Verbindung aktualisiert wurde (Schemaupdates werden noch nicht unterstützt)
 
-Bei einer **inkrementellen Aktualisierung** kann die Suchmaschine nur die Elemente verarbeiten und indizieren, die seit der letzten erfolgreichen Durchforstung erstellt oder geändert wurden. Daher werden nicht alle Daten in der Inhaltsquelle erneut indiziert. Inkrementelle Aktualisierungen funktionieren am besten, um Inhalte, Metadaten, Berechtigungen und andere Updates zu erkennen.
+Mit einer **inkrementellen Aktualisierung** kann das Suchmodul nur die Elemente verarbeiten und indizieren, die seit der letzten erfolgreichen Durchforstung erstellt oder geändert wurden. Daher werden nicht alle Daten in der Inhaltsquelle neu indiziert. Inkrementelle Aktualisierungen funktionieren am besten, um Inhalte, Metadaten, Berechtigungen und andere Updates zu erkennen.
 
-Inkrementelle Aktualisierungen sind wesentlich schneller als vollständige Aktualisierungen, da unveränderte Elemente nicht verarbeitet werden. Wenn Sie jedoch inkrementelle Aktualisierungen ausführen möchten, müssen Sie dennoch regelmäßig vollständige Aktualisierungen ausführen, um eine exakte Datensynchronisierung zwischen der Inhaltsquelle und dem Suchindex beizubehalten.
+Inkrementelle Aktualisierungen sind wesentlich schneller als vollständige Aktualisierungen, da unveränderte Elemente nicht verarbeitet werden. Wenn Sie jedoch inkrementelle Aktualisierungen ausführen, müssen Sie dennoch regelmäßig vollständige Aktualisierungen ausführen, um eine genaue Datensynchronisierung zwischen der Inhaltsquelle und dem Suchindex zu erhalten.
 
-![Inkrementelle Crawl-und vollständige Durchforstungs Intervalleinstellungen, die bei einer Dauer von 15 Minuten und einer vollständigen Durchforstung von 1 Woche angezeigt](media/refreshschedule.png)
+![Einstellungen für inkrementelle Durchforstungen und vollständige Durchforstungsintervalle mit inkrementeller Anzeige bei 15 Minuten und vollständige Durchforstung bei 1 Woche.](media/refreshschedule.png)
 
 <!---Change screenshot for one that shows both options in new UI (try ServiceNow)--->
 
 ## <a name="step-8-review-connection"></a>Schritt 8: Überprüfen der Verbindung
 
-Sie können die gesamten Konfigurations-und Bearbeitungseinstellungen nach Bedarf überprüfen, bevor Sie die Verbindung abschließen. **Lesen Sie unbedingt die Connector-spezifischen Informationen für Ihre Datenquelle, falls dies noch nicht geschehen ist.** Wählen Sie **Aktualisierung fertig stellen** aus, wenn Sie zum Abschließen der Verbindung fertig sind.
+Sie können die gesamte Konfiguration überprüfen und die Einstellungen nach Bedarf bearbeiten, bevor Sie die Verbindung herstellen. **Lesen Sie unbedingt die connectorspezifischen Informationen für Ihre Datenquelle, wenn Sie dies noch nicht getan haben.** Wählen **Sie "Aktualisierung fertig** stellen" aus, wenn Sie zum Abschließen der Verbindung bereit sind.
 
-## <a name="how-do-i-know-the-connection-setup-worked"></a>Woher weiß ich, dass das Verbindungssetup funktioniert hat?
+## <a name="how-do-i-know-the-connection-setup-worked"></a>Wo finde ich, dass die Verbindungseinrichtung funktioniert hat?
 
-Wechseln Sie zur Liste der veröffentlichten Verbindungen auf der Registerkarte **Connectors** im [Admin Center](https://admin.microsoft.com). Informationen zum Erstellen von Updates und Löschungen finden Sie unter [Manage Your Connector](manage-connector.md).
+Wechseln Sie zur Liste Ihrer veröffentlichten Verbindungen unter der Registerkarte **"Connectors"** im [Admin Center.](https://admin.microsoft.com) Informationen zum Aktualisieren und Löschen finden Sie unter ["Verwalten des Connectors".](manage-connector.md)

@@ -18,7 +18,7 @@
 ## Microsoft Graph-Connectors
 ### [Setup-Übersicht](configure-connector.md)
 ### [Zuordnen Ihrer nicht-Azure AD-Identitäten (Vorschau)](map-non-aad.md)
-### [Zuordnen Ihrer Azure AD-Identitäten ](map-aad.md)
+### [Zuordnen Ihrer Azure AD-Identitäten (Vorschau)](map-aad.md)
 ### Connector-spezifische Informationen
 #### [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
 #### [Azure DevOps (Vorschau)](azure-devops-connector.md)
@@ -28,6 +28,7 @@
 #### [Salesforce (Vorschau)](salesforce-connector.md)
 #### [ServiceNow](servicenow-connector.md)
 ## [Verwalten Ihrer Verbindungen](manage-connector.md)
+## [Verbindungsdetails und Fehler](connector-details-errors.md)
 ## [Lizenzierung](licensing.md)
 ## [Feedback](connectors-feedback.md)
 ## [Nutzungsbedingungen](terms-of-use.md)
@@ -44,7 +45,7 @@
 ## Microsoft Search in Bing
 ### [Sicherheit und Datenschutz](security-for-search.md)
 ### [Hinzufügen eines Suchfelds zu Ihrer Intranetwebsite](add-a-search-box-to-your-intranet-site.md)
-### [Festlegen von Microsoft Edge als Standardbrowser](set-default-browser.md)
+### [Festlegen von Microsoft Edge als Standardbrowser](/deployedge/edge-default-browser)
 ### [Festlegen von Bing als Standardsuchmaschine](set-default-search-engine.md)
 ### [Festlegen von Bing.com als Standardstartseite](set-default-homepage.md)
 ### [Einführungsleitfaden für Benutzer](user-adoption-guide.md)

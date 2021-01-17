@@ -11,7 +11,7 @@
 ## [Standorte](manage-locations.md)
 ## [Power BI](manage-powerbi.md)
 ## [Fragen und Antworten](manage-qas.md)
-# Connectors (Vorschau)
+# Connectors
 ## [Übersicht](connectors-overview.md)
 ## [Vorschauversion](connectors-preview.md)
 ## [Connector-Katalog](connectors-gallery.md)
@@ -30,7 +30,6 @@
 ## [Verwalten Ihrer Verbindungen](manage-connector.md)
 ## [Verbindungsdetails und Fehler](connector-details-errors.md)
 ## [Lizenzierung](licensing.md)
-## [Feedback](connectors-feedback.md)
 ## [Nutzungsbedingungen](terms-of-use.md)
 # Anpassen und konfigurieren
 ## [Branchen und Ergebnistypen verwalten](customize-search-page.md)

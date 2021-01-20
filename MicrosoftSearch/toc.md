@@ -27,8 +27,9 @@
 #### [MediaWiki](mediawiki-connector.md)
 #### [Salesforce (Vorschau)](salesforce-connector.md)
 #### [ServiceNow](servicenow-connector.md)
-## [Verwalten Ihrer Verbindungen](manage-connector.md)
-## [Verbindungsdetails und Fehler](connector-details-errors.md)
+## Ihre Verbindungen verwalten
+### [Ihre Verbindungen überwachen](manage-connector.md)
+### [Verbindungsdetails und -Fehler anzeigen](connector-details-errors.md)
 ## [Lizenzierung](licensing.md)
 ## [Nutzungsbedingungen](terms-of-use.md)
 # Anpassen und konfigurieren

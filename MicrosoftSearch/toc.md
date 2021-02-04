@@ -25,7 +25,7 @@
 #### [Azure SQL und Microsoft SQL Server](MSSQL-connector.md)
 #### [Unternehmenswebsites](enterprise-web-connector.md)
 #### [MediaWiki](mediawiki-connector.md)
-#### [Oracle SQL] (Vorschau) (OracleSQL-connector.md)
+#### [Oracle SQL (Vorschau)](OracleSQL-connector.md)
 #### [Salesforce (Vorschau)](salesforce-connector.md)
 #### [ServiceNow](servicenow-connector.md)
 ## Ihre Verbindungen verwalten

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten des Azure DevOps Graph-Connectors für Microsoft Search
-ms.openlocfilehash: 3d922a5384de8bf0ef3c6dfd80bd67ad9170eb66
-ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
+ms.openlocfilehash: 8fe783c847c672223e051f4433af3e41678fe367
+ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084938"
+ms.locfileid: "50097403"
 ---
 <!---Previous ms.author: shgrover --->
 
@@ -28,7 +28,7 @@ Mit dem Azure DevOps -Graph-Connector kann Ihre Organisation Arbeitsaufgaben in 
 > [!NOTE]
 > Lesen Sie [**den Artikel "Setup für Ihren Graph-Connector",**](configure-connector.md) um den allgemeinen Einrichtungsprozess für Graph Connectors zu verstehen.
 
-Dieser Artikel ist für jeden benutzer, der einen ServiceNow Graph Connector konfiguriert, ausgeführt und überwacht. Sie ergänzt den allgemeinen Einrichtungsprozess und zeigt Anweisungen, die nur für den ServiceNow Graph-Connector gelten.
+Dieser Artikel ist für jeden Benutzer, der einen Azure DevOps Graph-Connector konfiguriert, ausgeführt und überwacht. Sie ergänzt den allgemeinen Einrichtungsprozess und zeigt Anweisungen, die nur für den Azure DevOps Graph-Connector gelten.
 
 >[!IMPORTANT]
 >Der Azure DevOps-Connector unterstützt nur den Azure DevOps-Clouddienst. Azure DevOps Server 2019, TFS 2018, TFS 2017, TFS 2015 und TFS 2013 werden von diesem Connector nicht unterstützt.
@@ -39,13 +39,13 @@ Dieser Artikel ist für jeden benutzer, der einen ServiceNow Graph Connector kon
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph-Connectors im Microsoft 365 Admin Center
 
-Folgen Sie den allgemeinen [Setupanweisungen.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+Befolgen Sie die allgemeinen [Setupanweisungen.](https://docs.microsoft.com/microsoftsearch/configure-connector)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
 ## <a name="step-2-name-the-connection"></a>Schritt 2: Benennen der Verbindung
 
-Folgen Sie den allgemeinen [Setupanweisungen.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+Befolgen Sie die allgemeinen [Setupanweisungen.](https://docs.microsoft.com/microsoftsearch/configure-connector)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
@@ -65,7 +65,7 @@ Pflichtfelder | Beschreibung | Empfohlener Wert
 | Anwendungsname     | Ein eindeutiger Wert, der die Anwendung identifiziert, die Sie autorisieren.    | Microsoft Search     |
 | Anwendungswebsite  | Die URL der Anwendung, die während der Connectoreinrichtung Zugriff auf Ihre Azure DevOps-Instanz anfordern wird. (Erforderlich).  | https://<span>gcs.office.</span> com/
 | Autorisierungsrückruf-URL        | Eine erforderliche Rückruf-URL, an die der Autorisierungsserver umleite. | https://<span>gcs.office.</span> com/v1.0/admin/oauth/callback|
-| Autorisierte Bereiche | Der Zugriffsbereich für die Anwendung | Wählen Sie die folgenden Bereiche aus: Identität (gelesen), Arbeitsaufgaben (gelesen), Variable Gruppen (gelesen), Projekt und Team (gelesen), Graph (lesen)|
+| Autorisierte Bereiche | Der Zugriffsbereich für die Anwendung | Wählen Sie die folgenden Bereiche aus: Identität (gelesen), Arbeitsaufgaben (gelesen), Variable Gruppen (lesen), Projekt und Team (gelesen), Graph (lesen)|
 
 Bei der Registrierung der App mit den oben genannten Details erhalten Sie die **App-ID** und den **geheimen Clientgeheimnis,** die zum Konfigurieren des Connectors verwendet werden.
 
@@ -98,7 +98,7 @@ Der Azure DevOps-Connector unterstützt Suchberechtigungen, die nur für Persone
 
 ## <a name="step-5-assign-property-labels"></a>Schritt 5: Zuweisen von Eigenschaftsbezeichnungen
 
-Folgen Sie den allgemeinen [Setupanweisungen.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+Befolgen Sie die allgemeinen [Setupanweisungen.](https://docs.microsoft.com/microsoftsearch/configure-connector)
 
 ## <a name="step-6-manage-schema"></a>Schritt 6: Verwalten des Schemas
 

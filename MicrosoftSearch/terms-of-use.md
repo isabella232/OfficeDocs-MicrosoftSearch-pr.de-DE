@@ -1,8 +1,8 @@
 ---
-title: 'Öffentliche Vorschau von Microsoft Search: Nutzungsbedingungen'
-ms.author: anfowler
-author: adefowler
-manager: shohara
+title: 'Microsoft Search Public Preview: Nutzungsbedingungen'
+ms.author: mecampos
+author: mecampos
+manager: umas
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -11,19 +11,20 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Rechtliche Nutzungsbedingungen für Microsoft Graph Connectors Public Preview für Microsoft Search
-ms.openlocfilehash: d9a8e4d55904edac845a46ed6b524ed09433135b
-ms.sourcegitcommit: ac4e261c01262be747341f810d2d1faf220d3961
+description: Rechtliche Geschäftsbedingungen für Microsoft Graph Connectors – öffentliche Vorschau für Microsoft Search
+ms.openlocfilehash: fde39e4a2a59f99158570f1fbf8afa659e362161
+ms.sourcegitcommit: 6a7f36769e92b714588b47efb0c185eddabe6953
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "49382570"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50099317"
 ---
-# <a name="microsoft-graph-connectors-terms-of-use"></a>Microsoft Graph-Connectors: Nutzungsbedingungen
+<!---Previous ms.author: anfowler --->
 
-Ihre Verwendung von Microsoft Graph-Connectors unterliegt möglicherweise den allgemeinen Geschäftsbedingungen von Drittanbietern. Microsoft ist nicht Vertragspartei ihrer Vereinbarung (en) mit Drittanbietern, und etwaige Bedenken oder Fragen bezüglich der Bedingungen oder Dienstleistungen von Drittanbietern sollten an den dritten weitergeleitet werden. Als Daten Controller für Ihre Daten sind Sie für die Indizierung von Daten in Ihren Microsoft 365-Mandanten verantwortlich.
+# <a name="microsoft-graph-connectors-terms-of-use"></a>Microsoft Graph Connectors: Nutzungsbedingungen
 
-Microsoft übernimmt keine Gewährleistung oder Garantie in Bezug auf die Daten von Drittanbietern vor der Indizierung in Ihren Microsoft 365-Mandanten.  Microsoft übernimmt keine Haftung für Fehler, die während der Indizierung von Daten von Drittanbietern auftreten können.  Sie stimmen zu, dass alle von einem Drittanbieter bereitgestellten Daten "wie besehen" und im Hinblick auf den Index zur Verfügung gestellt werden, vorbehaltlich ihrer Konfiguration. Indizierte Daten in Ihrem Microsoft 365-Mandanten werden als "Kundendaten" für die Zwecke der [Online Dienste-Nutzungsbedingungen](http://www.microsoftvolumelicensing.com/Downloader.aspx?documenttype=OST&lang=English), der [Datenschutzerklärung](https://privacy.microsoft.com/privacystatement)und der anderen Daten Verpflichtungen von Microsoft betrachtet.
+Die Verwendung von Microsoft Graph Connectors unterliegt möglicherweise den Geschäftsbedingungen von Drittanbietern. Microsoft ist keine Partei Ihrer Vereinbarung(en) mit Dritten. Alle Bedenken oder Fragen zu Drittanbieterbedingungen oder -diensten sollten an den Dritten gerichtet werden. Sie sind für die Indizierung von Daten in Ihrem Microsoft 365-Mandanten als Datenverantwortlicher für Ihre Daten verantwortlich.
 
-Weitere Informationen zur Verwendung von Kundendaten in M365 finden Sie in den Nutzungsbedingungen und [Datenschutzbestimmungen](https://privacy.microsoft.com/privacystatement)für [Online Dienste](http://www.microsoftvolumelicensing.com/Downloader.aspx?documenttype=OST&lang=English) . Weitere Informationen zu den Verpflichtungen von Microsoft für den Datenschutz und zum Schutz der Privatsphäre finden Sie im [Trust Center](https://www.microsoft.com/trust-center).
+Microsoft übernächst vor der Indizierung in Ihrem Microsoft 365-Mandanten keine Darstellung, Garantie oder Garantie in Bezug auf die Drittanbieterdaten.  Microsoft übernimmt keine Haftung für Fehler, die während der Indizierung von Drittanbieterdaten auftreten können.  Sie erklären sich damit einverstanden, dass alle von einem Drittanbieter stammten Daten "wie bestimm" bereitgestellt werden und in Bezug auf den Index von Ihrer Konfiguration abhängig sind. Indizierte Daten in Ihrem Microsoft 365-Mandanten werden als [](http://www.microsoftvolumelicensing.com/Downloader.aspx?documenttype=OST&lang=English)"Kundendaten" im Sinne der Onlinedienstbedingungen, [](https://privacy.microsoft.com/privacystatement)der Datenschutzbestimmungen und der anderen Datenverpflichtungen von Microsoft betrachtet.
 
+Weitere Informationen zur Verwendung von Kundendaten in Microsoft 365 finden Sie in den [Nutzungsbedingungen](http://www.microsoftvolumelicensing.com/Downloader.aspx?documenttype=OST&lang=English) und den [Datenschutzbestimmungen für Onlinedienste.](https://privacy.microsoft.com/privacystatement) Weitere Informationen zu den Verpflichtungen von Microsoft in Bezug auf Datenschutz und Datenschutz finden Sie im [Trust Center.](https://www.microsoft.com/trust-center)

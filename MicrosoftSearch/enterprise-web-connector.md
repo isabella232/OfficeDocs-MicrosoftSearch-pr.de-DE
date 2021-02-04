@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten des Enterprise-Websites-Graph-Connectors für Microsoft Search
-ms.openlocfilehash: bf706399ec55fafbe96ce53622ce8502c81c2190
-ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
+ms.openlocfilehash: 526b36a798f50bed457832d576ffebd15820184d
+ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084884"
+ms.locfileid: "50097430"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -30,7 +30,7 @@ Der Graph-Connector für Unternehmenswebsites ermöglicht Ihrer Organisation das
 > [!NOTE]
 > Lesen Sie den [**Artikel zum Einrichten ihres Graph-Connectors,**](configure-connector.md) um den allgemeinen Einrichtungsprozess für Graph Connectors zu verstehen.
 
-Dieser Artikel ist für jeden benutzer, der einen ServiceNow Graph Connector konfiguriert, ausgeführt und überwacht. Sie ergänzt den allgemeinen Einrichtungsprozess und zeigt Anweisungen, die nur für den ServiceNow Graph-Connector gelten. Dieser Artikel enthält auch Informationen zur [Problembehandlung und](#troubleshooting) [Einschränkungen.](#limitations)
+Dieser Artikel ist für alle Benutzer, die einen Connector für Unternehmenswebsites konfigurieren, ausgeführt und überwachen. Sie ergänzt den allgemeinen Einrichtungsprozess und zeigt Anweisungen, die nur für den Connector für Unternehmenswebsites gelten. Dieser Artikel enthält auch Informationen zur [Problembehandlung und](#troubleshooting) [Einschränkungen.](#limitations)
 
 <!---## Before you get started-->
 

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten des Salesforce -Graph-Connectors für Microsoft Search
-ms.openlocfilehash: 0b80bf7d3296236887d1cc1bf8e75da976b6a1f1
-ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
+ms.openlocfilehash: 6771bc0b234bc2570a8b1fa7174b9b9244cf3958
+ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/03/2021
-ms.locfileid: "50085011"
+ms.locfileid: "50097448"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -28,7 +28,7 @@ Der Salesforce Graph-Connector ermöglicht Ihrer Organisation das Indizieren von
 > [!NOTE]
 > Lesen Sie [**den Artikel "Setup für Ihren Graph-Connector",**](configure-connector.md) um den allgemeinen Einrichtungsprozess für Graph Connectors zu verstehen.
 
-Dieser Artikel ist für jeden benutzer, der einen ServiceNow Graph Connector konfiguriert, ausgeführt und überwacht. Sie ergänzt den allgemeinen Einrichtungsprozess und zeigt Anweisungen, die nur für den Salesforce -Graph-Connector gelten. Dieser Artikel enthält auch Informationen zu [Einschränkungen.](#limitations)
+Dieser Artikel ist für alle Benutzer, die einen Salesforce -Graph-Connector konfigurieren, ausgeführt und überwachen. Sie ergänzt den allgemeinen Einrichtungsprozess und zeigt Anweisungen, die nur für den Salesforce -Graph-Connector gelten. Dieser Artikel enthält auch Informationen zu [Einschränkungen.](#limitations)
 
 >[!IMPORTANT]
 >Der Salesforce -Graph-Connector unterstützt derzeit Summer '19 oder höher.

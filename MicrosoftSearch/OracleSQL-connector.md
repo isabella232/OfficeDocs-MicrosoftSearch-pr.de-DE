@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: Richten Sie den Oracle SQL Graph Connector für Microsoft Search ein.
-ms.openlocfilehash: a13c9ea71b115e84d313489214d424f77337a062
-ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
+ms.openlocfilehash: 01e4cd6b04d2997ea11ef006e94ea09b03280f41
+ms.sourcegitcommit: 6a7f36769e92b714588b47efb0c185eddabe6953
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084974"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50099335"
 ---
 <!---Previous ms.author:vivg --->
 
@@ -29,7 +29,7 @@ Mit dem Oracle SQL Graph-Connector kann Ihre Organisation Daten aus einer lokale
 > [!NOTE]
 > Lesen Sie [**den Artikel "Setup für Ihren Graph-Connector",**](configure-connector.md) um den allgemeinen Einrichtungsprozess für Graph Connectors zu verstehen.
 
-Dieser Artikel ist für jeden benutzer, der einen ServiceNow Graph Connector konfiguriert, ausgeführt und überwacht. Sie ergänzt den allgemeinen Einrichtungsprozess und zeigt Anweisungen, die nur für den ServiceNow Graph-Connector gelten. Dieser Artikel enthält auch Informationen zur [Problembehandlung und](#troubleshooting) [Einschränkungen.](#limitations)
+Dieser Artikel ist für jeden benutzer, der einen Oracle SQL Graph Connector konfiguriert, ausgeführt und überwacht. Sie ergänzt den allgemeinen Einrichtungsprozess und zeigt Anweisungen, die nur für den Oracle SQL Graph-Connector gelten. Dieser Artikel enthält auch Informationen zur [Problembehandlung und](#troubleshooting) [Einschränkungen.](#limitations)
 
 ## <a name="before-you-get-started"></a>Bevor Sie beginnen
 
@@ -69,7 +69,7 @@ In diesem Schritt konfigurieren Sie die SQL, mit der eine vollständige Durchfor
 
 ### <a name="select-data-columns-required-and-acl-columns-optional"></a>Auswählen von Datenspalten (erforderlich) und ACL-Spalten (optional)
 
-Das Beispiel veranschaulicht die Auswahl von fünf Datenspalten, die die Daten für die Suche enthalten: OrderId, OrderTitle, OrderDesc, CreatedDateTime und IsDeleted. Zum Festlegen von Ansichtsberechtigungen für jede Datenzeile können Sie optional die folgenden Spalten für die Zugriffssteuerungsberechtigung auswählen: AllowedUsers, AllowedGroups, DeniedUsers und DeniedGroups. Für alle diese Datenspalten können Sie die Optionen zum **Abfragen,** **Suchen** oder **Abrufen auswählen.**
+Das Beispiel veranschaulicht die Auswahl von fünf Datenspalten, die die Daten für die Suche enthalten: OrderId, OrderTitle, OrderDesc, CreatedDateTime und IsDeleted. Zum Festlegen von Ansichtsberechtigungen für jede Datenzeile können Sie optional die folgenden Spalten für die Zugriffssteuerungsberechtigung auswählen: AllowedUsers, AllowedGroups, DeniedUsers und DeniedGroups. Für alle diese Datenspalten können Sie die Optionen für **Abfrage,** **Suche** oder **Abrufen auswählen.**
 
 Wählen Sie Datenspalten wie in dieser Beispielabfrage dargestellt aus: `SELECT OrderId, OrderTitle, OrderDesc, AllowedUsers, AllowedGroups, DeniedUsers, DeniedGroups, CreatedDateTime, IsDeleted`
 
@@ -116,7 +116,7 @@ Die erste Abfrage ruft die erste **N** Anzahl von Zeilen mithilfe von: "CreatedD
 
 ### <a name="skipping-soft-deleted-rows-optional"></a>Überspringen von nicht gelöschten Zeilen (optional)
 
-Wenn Sie die Indizierung für nicht gelöschte Zeilen in Der Datenbank ausschließen möchten, geben Sie den Namen und Wert der Spalte zum löschen an, der angibt, dass die Zeile gelöscht wird.
+Wenn Sie die Indizierung für nicht gelöschte Zeilen in der Datenbank ausschließen möchten, geben Sie den Namen und Wert der Spalte zum löschen an, der angibt, dass die Zeile gelöscht wird.
 
 ![Soft delete settings: "Soft delete column" and "Value of soft delete column which indicates a deleted row"](media/MSSQL-softdelete.png)
 

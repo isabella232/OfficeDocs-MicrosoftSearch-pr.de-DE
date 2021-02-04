@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten des MediaWiki -Graph-Connectors für Microsoft Search
-ms.openlocfilehash: 9d9d7a1ef9aeaba079f8cccef1ec4a4836768e8d
-ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
+ms.openlocfilehash: e2b2b7c506d92623dd0f68801312c1820b5b9d4e
+ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084983"
+ms.locfileid: "50097394"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -28,7 +28,7 @@ Mit dem MediaWiki Graph-Connector kann Ihre Organisation Daten aus einem Wiki er
 > [!NOTE]
 > Lesen Sie [**den Artikel "Setup für Ihren Graph-Connector",**](configure-connector.md) um den allgemeinen Einrichtungsprozess für Graph Connectors zu verstehen.
 
-Dieser Artikel ist für jeden benutzer, der einen ServiceNow Graph Connector konfiguriert, ausgeführt und überwacht. Sie ergänzt den allgemeinen Einrichtungsprozess und zeigt Anweisungen, die nur für den MediaWiki Graph-Connector gelten. Dieser Artikel enthält auch Informationen zu [Einschränkungen.](#limitations)
+Dieser Artikel ist für alle Benutzer, die einen MediaWiki -Graph-Connector konfigurieren, ausgeführt und überwachen. Sie ergänzt den allgemeinen Einrichtungsprozess und zeigt Anweisungen, die nur für den MediaWiki Graph-Connector gelten. Dieser Artikel enthält auch Informationen zu [Einschränkungen.](#limitations)
 
 <!---## Before you get started-->
 
@@ -46,7 +46,7 @@ Befolgen Sie die allgemeinen [Setupanweisungen.](https://docs.microsoft.com/micr
 
 ## <a name="step-3-configure-the-connection-settings"></a>Schritt 3: Konfigurieren der Verbindungseinstellungen
 
-Geben Sie Ihre **Wiki-URL** ein, und wählen Sie im Dropdownmenü der Optionen den Authentifizierungstyp aus.  Die Optionen sind **None**, **Basic** und **OAuth 2.0 AAD**.
+Geben Sie **Ihre Wiki-URL** ein, und wählen Sie im Dropdownmenü der Optionen den Authentifizierungstyp aus.  Die Optionen sind **None**, **Basic** und **OAuth 2.0 AAD**.
 
 Wenn Sie **"Standard"** als Authentifizierungstyp  auswählen, müssen Sie den Benutzernamen und das **Kennwort für** das Wiki angeben.
 
@@ -73,7 +73,7 @@ Befolgen Sie die allgemeinen [Setupanweisungen.](https://docs.microsoft.com/micr
 
 ## <a name="step-8-review-connection"></a>Schritt 8: Überprüfen der Verbindung
 
-Folgen Sie den allgemeinen [Setupanweisungen.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+Befolgen Sie die allgemeinen [Setupanweisungen.](https://docs.microsoft.com/microsoftsearch/configure-connector)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 <!---## Troubleshooting-->

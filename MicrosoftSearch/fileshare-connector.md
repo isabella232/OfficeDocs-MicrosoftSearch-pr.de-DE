@@ -1,8 +1,8 @@
 ---
-title: Dateifreigabe-Konnektor
-ms.author: rusamai
-author: rsamai
-manager: jameslau
+title: Dateifreigabe -Graph-Connector für Microsoft Search
+ms.author: mecampos
+author: mecampos
+manager: umas
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,58 +12,84 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NoIndex
-description: Einrichten des Dateifreigabe-Konnektors für Microsoft Search
-ms.openlocfilehash: bf9fb730abd4ca6e42b681893525bbe3dd8a1419
-ms.sourcegitcommit: 249f41723dd6fda1e93ee1a8f3f7571ef066454b
+description: Einrichten des Dateifreigabe-Graph-Connectors für Microsoft Search
+ms.openlocfilehash: e8a68a1c6b9c2c8a8592fb915fe9bf846a758e77
+ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49750897"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50097421"
 ---
-# <a name="file-share-connector"></a>Dateifreigabe-Konnektor
+<!---Previous ms.author: rusamai --->
 
-Mit dem File Share Graph-Konnektor können Benutzer in Ihrer Organisation lokale Windows-Dateifreigaben durchsuchen.
+# <a name="file-share-graph-connector"></a>Dateifreigabe -Graph-Connector
 
-Dieser Artikel richtet sich an Microsoft 365-Administratoren oder Personen, die einen Dateifreigabe-Konnektor konfigurieren, ausführen und überwachen. Es wird erläutert, wie Sie die Connector-und connectorfunktionen, Einschränkungen und Techniken zur Problembehandlung konfigurieren.
+Der Dateifreigabe-Graph-Connector ermöglicht Benutzern in Ihrer Organisation das Durchsuchen von lokalen Windows-Dateifreigaben.
 
-## <a name="install-graph-connector-agent"></a>Installieren des Graph Connector-Agents
+> [!NOTE]
+> Lesen Sie [**den Artikel "Setup für Ihren Graph-Connector",**](configure-connector.md) um den allgemeinen Einrichtungsprozess für Graph Connectors zu verstehen.
 
-Um Ihre Windows-Dateifreigaben zu indizieren, müssen Sie die [Graph Connector Agent](on-prem-agent.md) -Software installieren und registrieren.
+## <a name="before-you-get-started"></a>Bevor Sie beginnen
 
-## <a name="content-requirements"></a>Inhaltsanforderungen
+### <a name="install-the-graph-connector-agent"></a>Installieren des Graph-Connector-Agents
+
+Um Ihre Windows-Dateifreigaben zu indizieren, müssen Sie den Graph-Connector-Agent installieren und registrieren. Weitere [Informationen finden Sie unter "Installieren des Graph-Connector-Agents".](on-prem-agent.md)  
+
+### <a name="content-requirements"></a>Inhaltsanforderungen
 
 ### <a name="file-types"></a>Dateitypen
 
-Der Inhalt der folgenden Formate kann indiziert und durchsucht werden: doc, DOCM, docx, dot, DOTX, eml, GIF, HTML, JPEG, MHT, MHTML, msg, nws, OBD, OBT, Odp, ODS, ODT, One, PDF, Pot, PPS, PPT, PPTM, PPTX, txt, XLB, XLC, xlsb, xls, xlsx, XLT, XLXM, XML, XPS und zip. Nur der Textinhalt dieser Formate wird indiziert. Alle Multimedia-Inhalte werden ignoriert. Für alle Dateien, die nicht zu diesem Format gehören, werden die Metadaten allein indiziert.
+Inhalte der folgenden Formate können indiziert und durchsucht werden: DOC, DOCM, DOCX, DOT, DOTX, EML, GIF, HTML, JPEG, MHT, MHTML, MSG, NWS, OBD, OBT, ODP, ODS, ODT, ONE, PDF, POT, PPS, PPT, PPTM, PPTX, TXT, XLB, XLC, XLSB, XLSX, XLSX, XLT, XLXM, XML, XPS und ZIP. Nur der Textinhalt dieser Formate wird indiziert. Alle Multimediainhalte werden ignoriert. Für jede Datei, die nicht zu diesem Format gehört, werden die Metadaten allein indiziert.
 
 ### <a name="file-size-limits"></a>Dateigrößenbegrenzungen
 
-Die maximal unterstützte Dateigröße beträgt 100 MB. Dateien, die 100 MB überschreiten, werden nicht indiziert. Der maximale Grenzwert für die Post verarbeitete Größe beträgt 4 MB. Die Verarbeitung wird angehalten, wenn die Größe einer Datei 4 MB erreicht. Einige in der Datei vorhandene Ausdrücke funktionieren daher möglicherweise nicht für die Suche.
+Die maximal unterstützte Dateigröße beträgt 100 MB. Dateien, die 100 MB überschreiten, werden nicht indiziert. Die maximale Nachverarbeitungsgröße beträgt 4 MB. Die Verarbeitung wird beendet, wenn die Größe einer Datei 4 MB erreicht. Daher können einige in der Datei enthaltene Ausdrücke möglicherweise nicht für die Suche verwendet werden.
 
-## <a name="connect-to-a-data-source"></a>Herstellen einer Verbindung mit einer Datenquelle
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph-Connectors im Microsoft 365 Admin Center
 
-Wählen Sie auf der Seite mit **Datenquelle verbinden** die Option **Dateifreigabe** aus, und geben Sie den Namen, die Verbindungs-ID und die Beschreibung an. Geben Sie auf der nächsten Seite den Pfad zur Dateifreigabe an, und wählen Sie den zuvor installierten Graph Connector-Agent aus. Geben Sie die Anmeldeinformationen für ein [Microsoft Windows](https://microsoft.com/windows) -Benutzerkonto mit Lesezugriff auf alle Dateien in der Dateifreigabe ein.
+Befolgen Sie die allgemeinen [Setupanweisungen.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="preserve-last-access-time"></a>Beibehalten der letzten Zugriffszeit
+## <a name="step-2-name-the-connection"></a>Schritt 2: Benennen der Verbindung
 
-Wenn der Connector versucht, eine Datei zu durchforsten, wird das Feld "Letzter Zugriffszeit" in den zugehörigen Metadaten aktualisiert. Wenn Sie dieses Feld für Archivierungs-und Sicherungslösungen benötigen und es nicht aktualisieren möchten, wenn der Connector darauf zugreift, können Sie diese Option auf der Seite **Erweiterte Einstellungen** konfigurieren.
+Befolgen Sie die allgemeinen [Setupanweisungen.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="manage-search-permissions"></a>Verwalten von Suchberechtigungen
+## <a name="step-3-configure-the-connection-settings"></a>Schritt 3: Konfigurieren der Verbindungseinstellungen
 
-Sie können die Berechtigung für die Suche nach beliebigen Dateien einschränken, die auf Freigabe-Zugriffssteuerungslisten oder NTFS-Zugriffssteuerungslisten (Access Control Lists) für neue Technologie-Dateisysteme basieren. Wenn Sie Zugriffssteuerungslisten freigeben verwenden möchten, wählen Sie die entsprechende Option auf der Seite **Erweiterte Einstellungen** aus. Wenn Sie NTFS-Zugriffssteuerungslisten verwenden möchten, wählen Sie die entsprechende Option auf der Seite **Suchberechtigungen verwalten** aus.
+Wählen Sie **auf der Seite "Mit** Datenquelle verbinden" die **Dateifreigabe aus,** und geben Sie den Namen, die Verbindungs-ID und die Beschreibung an. Geben Sie auf der nächsten Seite den Pfad zur Dateifreigabe an, und wählen Sie Ihren zuvor installierten Graph-Connector-Agent aus. Geben Sie die Anmeldeinformationen für ein [Microsoft Windows-Benutzerkonto](https://microsoft.com/windows) mit Lesezugriff auf alle Dateien in der Dateifreigabe ein.
 
-## <a name="assign-property-labels"></a>Zuweisen von Eigenschaften Bezeichnungen
+### <a name="preserve-last-access-time"></a>Beibehalten der letzten Zugriffszeit
 
-Sie können jeder Beschriftung eine Source-Eigenschaft zuweisen, indem Sie in einem Menü mit Optionen auswählen. Dieser Schritt ist zwar nicht zwingend erforderlich, aber einige Eigenschaften Bezeichnungen verbessern die Suchrelevanz und stellen genauere Suchergebnisse für Endbenutzer sicher.
+Wenn der Connector versucht, eine Datei zu durchforsten, wird das Feld "Letzte Zugriffszeit" in den Metadaten aktualisiert. Wenn Sie dieses Feld für Archivierungs- und Sicherungslösungen verwenden und es nicht aktualisieren möchten, wenn der Connector darauf zutritt, können Sie diese Option auf der Seite "Erweiterte Einstellungen" **konfigurieren.**
 
-## <a name="manage-schema"></a>Schema verwalten
+## <a name="step-4-manage-search-permissions"></a>Schritt 4: Verwalten von Suchberechtigungen
 
-Auf dem Bildschirm " **Schema verwalten** " haben Sie die Möglichkeit, die den Eigenschaften zugeordneten Schema **Attribute (** abfragbar, **durchsuchbar**, **abrufbar** und **verfeinernd**) zu ändern, optionale Aliase hinzuzufügen und die **Content** -Eigenschaft auszuwählen.
+Sie können die Berechtigung zum Suchen nach einer beliebigen Datei basierend auf Share Access Control Lists oder NTFS (New Technology File System)-Zugriffssteuerungslisten einschränken. Wenn Sie Zugriffssteuerungslisten freigeben möchten, wählen Sie die entsprechende Option auf der Seite **"Erweiterte Einstellungen"** aus. Wenn Sie NTFS-Zugriffssteuerungslisten verwenden möchten, wählen Sie auf der Seite Suchberechtigungen verwalten die **entsprechende Option** aus.
 
-## <a name="set-the-refresh-schedule"></a>Festlegen des Aktualisierungszeitplans
+## <a name="step-5-assign-property-labels"></a>Schritt 5: Zuweisen von Eigenschaftsbezeichnungen
 
-Das empfohlene Standardintervall für die Aktualisierungsplanung beträgt 15 Minuten, Sie können es jedoch basierend auf Ihren Einstellungen ändern.
+Befolgen Sie die allgemeinen [Setupanweisungen.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="result-layout"></a>Ergebnis Layout
+## <a name="step-6-manage-schema"></a>Schritt 6: Verwalten des Schemas
 
-Es wird empfohlen, das Standardergebnis Layout zum Anzeigen der Ergebnisse der FileShare-Konnektoren zu verwenden, da es über entsprechende Symbole und Steuerelemente verfügt, mit denen Sie zum Dateipfad navigieren können. Wenn Sie ein neues Ergebnis Layout erstellen, wird die Standardeinstellung außer Kraft gesetzt.
+Befolgen Sie die allgemeinen [Setupanweisungen.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
+
+## <a name="step-7-choose-refresh-settings"></a>Schritt 7: Auswählen von Aktualisierungseinstellungen
+
+Befolgen Sie die allgemeinen [Setupanweisungen.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
+
+## <a name="step-8-review-connection"></a>Schritt 8: Überprüfen der Verbindung
+
+Befolgen Sie die allgemeinen [Setupanweisungen.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
+instructions.-->
+
+<!---## Troubleshooting-->
+<!---Insert troubleshooting recommendations for this data source-->
+
+<!---## Limitations-->
+<!---Insert limitations for this data source-->

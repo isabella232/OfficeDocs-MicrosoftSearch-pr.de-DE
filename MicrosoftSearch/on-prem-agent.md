@@ -13,26 +13,26 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: Agent vor Ort
-ms.openlocfilehash: 7aef2ea57c92929d4d4f45e1a738c84e6a3f4bba
-ms.sourcegitcommit: ab4f81ded967168689e6e81c90e115b94719335c
+ms.openlocfilehash: bd5212d42fe21583aa6a4e0dc8060d5e191a7292
+ms.sourcegitcommit: 35b4246cb3e38c6fe21540686e28fe54154b33f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50173062"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50259429"
 ---
 # <a name="graph-connector-agent"></a>Graph Connector Agent
 
-Für die Verwendung von graph-vorkonst nen Connectors müssen Sie Graph Connector Agent *Software* installieren. Sie ermöglicht die sichere Datenübertragung zwischen lokalen Daten und den Graph-Connector-APIs. Dieser Artikel führt Sie durch die Installation und Konfiguration des Agents.
+Für die Verwendung von graph-vorkonst nen Konnektoren müssen Sie *Graph Connector* Agent Software installieren. Sie ermöglicht die sichere Datenübertragung zwischen lokalen Daten und den Graph-Connector-APIs. Dieser Artikel führt Sie durch die Installation und Konfiguration des Agents.
 
 ## <a name="installation"></a>Installation
 
-Laden Sie hier die neueste Version des Graph-Connector-Agents [herunter,](https://aka.ms/gcadownload) und installieren Sie die Software mithilfe des Installationsassistenten. Mithilfe der empfohlenen Konfiguration des unten beschriebenen Computers kann die Software bis zu drei Verbindungen verarbeiten. Darüber hinausgehende Verbindungen können die Leistung aller Verbindungen auf dem Agent beeinträchtigen.
+Laden Sie hier die neueste Version des Graph-Connector-Agents [herunter,](https://aka.ms/gcadownload) und installieren Sie die Software mithilfe des Installations-Assistenten. Mithilfe der empfohlenen Konfiguration des unten beschriebenen Computers kann die Software bis zu drei Verbindungen verarbeiten. Darüber hinausgehende Verbindungen können die Leistung aller Verbindungen auf dem Agent beeinträchtigen.
 
 Empfohlene Konfiguration:
 
 * Windows 10, Windows Server 2016 R2 und höher
 * [.NET Core Desktop Runtime 3.1 (x64)](https://dotnet.microsoft.com/download/dotnet-core/3.1)
-* 8 Prozessorkerne, 3 GHz
+* 8 Kerne, 3 GHz
 * 16 GB RAM, 2 GB Speicherplatz
 * Netzwerkzugriff auf Datenquelle und Internet über 443
 
@@ -40,9 +40,9 @@ Wenn die Proxyserver oder Firewalls Ihrer Organisation nach der Installation des
 
 1. *.servicebus.windows.net
 2. *.events.data.microsoft.com
-3. https://login.microsoftonline.com
-4. https://gcs.office.com
-5. https://graph.microsoft.com/
+3. https://<span>login.microsoftonline.</span>com
+4. https://<span>gcs.office.</span> com/
+5. https://<span>graph.microsoft.</span> com/
 
 
 ## <a name="create-and-configure-an-app-for-the-agent"></a>Erstellen und Konfigurieren einer App für den Agent  
@@ -52,15 +52,15 @@ Melden Sie sich zuerst an, und beachten Sie, dass die mindestens erforderliche B
 ### <a name="create-an-app"></a>App erstellen
 
 1. Wechseln Sie zum [Azure-Portal,](https://portal.azure.com) und melden Sie sich mit Administratoranmeldeinformationen für den Mandanten an.
-2. Navigieren Sie **im Navigationsbereich** zu Azure Active  ->  **Directory-App-Registrierungen,** und wählen Sie **"Neue Registrierung" aus.**
+2. Navigieren Sie im **Navigationsbereich** zu Azure Active  ->  **Directory-App-Registrierungen,** und wählen Sie **"Neue Registrierung" aus.**
 3. Geben Sie einen Namen für die App an, und wählen Sie **"Registrieren" aus.**
 4. Notieren Sie sich die Anwendungs-ID (Client-ID).
 5. Öffnen **Sie die API-Berechtigungen** im Navigationsbereich, und wählen **Sie "Berechtigung hinzufügen" aus.**
 6. Wählen **Sie Microsoft Graph** und dann **Anwendungsberechtigungen aus.**
 7. Suchen Sie in den Berechtigungen nach "ExternalItem.ReadWrite.All" und "Directory.Read.All", und wählen Sie **"Berechtigungen hinzufügen" aus.**
 8. Wählen **Sie "Administratorzuwilligung für [Mandantname] erteilen"** aus, und bestätigen Sie dies, indem Sie **"Ja" auswählen.**
-9. Überprüfen Sie, ob die Berechtigungen den Status "Gewährt" haben.
-     ![Berechtigungen werden in der rechten Spalte grün angezeigt.](media/onprem-agent/granted-state.png)
+9. Überprüfen Sie, ob sich die Berechtigungen im Status "Gewährt" befinden.
+     ![Berechtigungen, die in der rechten Spalte grün angezeigt werden.](media/onprem-agent/granted-state.png)
 
 ### <a name="configure-authentication"></a>Konfigurieren einer Authentifizierung
 
@@ -121,3 +121,6 @@ Wenn Sie das Beispielskript zum Generieren eines Zertifikats verwendet haben, be
 1. Klicken Sie mit der rechten Maustaste auf das Zertifikat, und wählen Sie "Alle Aufgaben" > "Private Schlüssel verwalten". Option
 1. Wählen Sie im Dialogfeld "Berechtigungen" die Option "Hinzufügen" aus. Schreiben Sie im Dialogfeld "Benutzerauswahl" den Namen "NT Service\GcaHostService", und klicken Sie auf "OK". Klicken Sie nicht auf die Schaltfläche "Namen überprüfen".
 1. Klicken Sie im Dialogfeld "Berechtigungen" auf "Ok". Der Agentcomputer ist jetzt so konfiguriert, dass der Agent Token mithilfe des Zertifikats generiert.
+
+## <a name="troubleshooting"></a>Problembehandlung
+1. Wenn eine Verbindung mit dem Fehler "1011: Der Graph-Connector-Agent ist nicht erreichbar oder offline" fehlschlägt, melden Sie sich bei dem Computer an, auf dem der Agent installiert ist, und starten Sie die Agentanwendung, wenn er noch nicht ausgeführt wird. Wenn die Verbindung weiterhin fehlschlägt, stellen Sie sicher, dass das zertifikat oder geheime Clientgeheimnis, das dem Agent während der Registrierung bereitgestellt wurde, nicht abgelaufen ist und über die erforderlichen Berechtigungen verfügt.

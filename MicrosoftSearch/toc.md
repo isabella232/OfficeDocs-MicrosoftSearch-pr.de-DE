@@ -13,7 +13,6 @@
 ## [Fragen und Antworten](manage-qas.md)
 # Connectors
 ## [Übersicht](connectors-overview.md)
-## [Vorschauversion](connectors-preview.md)
 ## [Connector-Katalog](connectors-gallery.md)
 ## Microsoft Graph-Connectors
 ### [Setup-Übersicht](configure-connector.md)
@@ -25,6 +24,7 @@
 #### [Azure DevOps (Vorschau)](azure-devops-connector.md)
 #### [Azure SQL und Microsoft SQL Server](MSSQL-connector.md)
 #### [Unternehmenswebsites](enterprise-web-connector.md)
+#### [Dateifreigabe](fileshare-connector.md)
 #### [MediaWiki](mediawiki-connector.md)
 #### [Oracle SQL (Vorschau)](OracleSQL-connector.md)
 #### [Salesforce (Vorschau)](salesforce-connector.md)

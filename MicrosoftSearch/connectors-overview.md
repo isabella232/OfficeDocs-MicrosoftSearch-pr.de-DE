@@ -3,6 +3,7 @@ title: Übersicht über Microsoft Graph Connectors
 ms.author: mecampos
 author: mecampos
 manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -11,23 +12,23 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Übersicht über Microsoft Graph Connectors für Microsoft Search
-ms.openlocfilehash: 13127d092fe4e624ed448037d83f16f83ddc560a
-ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
+description: Übersicht über Microsoft Graph-Connectors für Microsoft Search
+ms.openlocfilehash: 1b3ea74cf571b1b5a048695633f6b9f698a21bf5
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084875"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50508913"
 ---
 <!---Previous ms.author: monaray --->
 
-# <a name="overview-of-microsoft-graph-connectors"></a>Übersicht über Microsoft Graph Connectors
+# <a name="overview-of-microsoft-graph-connectors"></a>Übersicht über Microsoft Graph-Connectors
 
-[Microsoft Search](https://docs.microsoft.com/microsoftsearch/overview-microsoft-search) indiziert alle [Ihre Microsoft 365-Daten,](https://www.microsoft.com/microsoft-365) um sie für Benutzer durchsuchbar zu machen. Mit Microsoft Graph Connectors kann Ihre Organisation Drittanbieterdaten indizieren, sodass sie in den Microsoft Search-Ergebnissen angezeigt werden. Dieses Feature erweitert die Typen von Inhaltsquellen, die in Ihren Microsoft 365-Produktivitäts-Apps und dem umfassenderen Microsoft-Ökosystem durchsuchbar sind. Die Drittanbieterdaten können lokal oder in öffentlichen oder privaten Clouds gehostet werden.
+[Microsoft Search](https://docs.microsoft.com/microsoftsearch/overview-microsoft-search) indiziert alle [Ihre Microsoft 365-Daten,](https://www.microsoft.com/microsoft-365) damit sie für Benutzer durchsucht werden können. Mit Microsoft Graph-Connectors kann Ihre Organisation Drittanbieterdaten indizieren, sodass sie in den Microsoft-Suchergebnissen angezeigt werden. Dieses Feature erweitert die Typen von Inhaltsquellen, die in Ihren Microsoft 365-Produktivitäts-Apps durchsucht werden können, und das umfassendere Microsoft-Ökosystem. Die Drittanbieterdaten können lokal oder in öffentlichen oder privaten Clouds gehostet werden.
 
 <!---link Microsoft Graph reference in line 19 when we have access to relevant documentation--->
 
-Dieser Artikel soll Microsoft 365-Administratoren dabei helfen, die verfügbaren Ressourcen für die Beantwortung der folgenden Fragen zu finden:
+Dieser Artikel soll Microsoft 365-Administratoren dabei helfen, die Ressourcen zu finden, die zur Beantwortung der folgenden Fragen zur Verfügung stehen:
 
 * [Welche Datenquellen können mit Microsoft Search verbunden werden?](#what-data-sources-can-be-connected-to-microsoft-search)
 * [Wie verwalte ich meine Verbindungen?](#how-do-i-manage-my-connections)
@@ -35,10 +36,12 @@ Dieser Artikel soll Microsoft 365-Administratoren dabei helfen, die verfügbaren
 * [Was sind die Vorschaufeatures?](#what-are-the-preview-features)
 * [Wie kann ich Suchergebnisse anpassen und konfigurieren?](#how-do-i-customize-and-configure-search-results)
 * [Wie kann ich meine Connectordaten aus einer benutzerdefinierten Anwendung durchsuchen?](#how-do-i-search-my-connector-data-from-a-custom-application)
+* [Wie kann ich Suchergebnisse anpassen?](#how-do-i-customize-search-results)
+* [Was sind die Connectoreinschränkungen?](#what-are-the-connector-limitations)
 
 <!---Modify to another note that is more accurate after rollout completion--->
 > [!IMPORTANT]
-> Microsoft Graph Connectors und Microsoft Search-APIs sind jetzt allgemein verfügbar. Die ersten Rollouts sind für Kunden, die für die gezielte Veröffentlichung konfiguriert sind. Wenn Sie einen Graph Connector in Ihrem Mandanten verwenden möchten, müssen Sich Benutzer und Administratoren für die [Zielversion entscheiden.](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365?view=o365-worldwide&preserve-view=true)
+> Microsoft Graph-Connectors und Microsoft Search-APIs sind jetzt allgemein verfügbar. Die ersten Rollouts sind für Kunden, die für die gezielte Veröffentlichung konfiguriert sind. Wenn Sie einen Graph-Connector in Ihrem Mandanten verwenden möchten, müssen Sich Benutzer und Administratoren für die gezielte [Version entscheiden.](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365?view=o365-worldwide&preserve-view=true)
 
 <!---Add Value, scenario, example, and/or graphic in December updates--->
 <!---Probably remove architecture section below
@@ -58,11 +61,11 @@ To create a **connection** to a data source, admins need authenticated access to
 
 ## <a name="what-data-sources-can-be-connected-to-microsoft-search"></a>Welche Datenquellen können mit Microsoft Search verbunden werden?
 
-Microsoft bietet 9 Graph-Connectors, und unsere Ökosystempartner haben mehr als 100 weitere Graph Connectors erstellt. Sie können auch einen eigenen Graph-Connector erstellen.
+Microsoft stellt 9 Graph-Connectors zur Verfügung, und unsere Ökosystempartner haben mehr als 100 weitere Graph-Connectors erstellt. Sie können auch einen eigenen Graph-Connector erstellen.
 
 ### <a name="graph-connectors-by-microsoft"></a>Microsoft Graph-Connectors
 
-Sie können mithilfe von von Microsoft erstellten Graph-Connectors eine Verbindung mit den folgenden Datenquellen herstellen:
+Sie können eine Verbindung mit den folgenden Datenquellen herstellen, indem Sie von Microsoft erstellte Graph-Connectors verwenden:
 
 <!---Add links below when new docs are created--->
 * [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
@@ -75,35 +78,35 @@ Sie können mithilfe von von Microsoft erstellten Graph-Connectors eine Verbindu
 * [Salesforce (Vorschau)](salesforce-connector.md)
 * [ServiceNow](servicenow-connector.md)
 
-Der [Graph Connectors Gallery](connectors-gallery.md) enthält eine kurze Beschreibung der einzelnen Graph-Connectors. Wenn Sie bereit sind, eine dieser Datenquellen mit Ihrem Mandanten [](configure-connector.md) zu verbinden, lesen Sie unbedingt die Setupübersicht und alle anderen Artikel im Abschnitt "Setupconnectors von Microsoft", die für Ihre Datenquelle gelten.
+Der [Graph-Connectors-Katalog](connectors-gallery.md) enthält eine kurze Beschreibung der einzelnen Graph-Connectors. Wenn Sie bereit sind, eine dieser Datenquellen mit Ihrem Mandanten [](configure-connector.md) zu verbinden, lesen Sie unbedingt die Setupübersicht und alle anderen Artikel im Abschnitt Setup connectors by Microsoft, die für Ihre Datenquelle gelten.
 
-### <a name="graph-connectors-by-our-partners"></a>Graph connectors von unseren Partnern
+### <a name="graph-connectors-by-our-partners"></a>Graph connectors by our partners
 
-Der [Microsoft Graph Connectors Gallery](connectors-gallery.md) enthält eine kurze Beschreibung der einzelnen von unseren Partnern erstellten Graph-Connectors sowie einen Link zur Website der einzelnen Partner. Um mehr zu erfahren, wenden Sie sich direkt an jeden Partner.
+Der [Microsoft Graph-Connectorskatalog](connectors-gallery.md) enthält eine kurze Beschreibung der von unseren Partnern erstellten Graph-Connectors und einen Link zur Website jedes Partners. Um mehr zu erfahren, wenden Sie sich direkt an jeden Partner.
 
 ### <a name="build-your-own-graph-connector"></a>Erstellen Eines eigenen Graph-Connectors
 
-Sie können einen eigenen Graph-Connector erstellen, wenn Sie es vorziehen. Weitere Informationen zum Erstellen von Graph Connectors finden Sie in der Übersicht über die [Microsoft Search-API in Microsoft Graph.](https://docs.microsoft.com/graph/search-concept-overview)
+Sie können einen eigenen Graph-Connector erstellen, wenn Sie dies bevorzugen. Weitere Informationen zum Erstellen von Graph-Connectors finden Sie unter Übersicht über die [Microsoft Search-API in Microsoft Graph](https://docs.microsoft.com/graph/search-concept-overview).
 
 ## <a name="how-do-i-manage-my-connections"></a>Wie verwalte ich meine Verbindungen?
 
-Sie können Ihre Verbindungen über die Registerkarte ["Connectors"](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) im [Microsoft 365 Admin Center verwalten.](https://admin.microsoft.com/) Weitere Informationen zum Verwalten von Verbindungen finden Sie unter: [Verwalten Ihrer Verbindungen.](manage-connector.md)
+Sie können Ihre Verbindungen über die Registerkarte [Connectors im](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) [Microsoft 365 Admin Center verwalten.](https://admin.microsoft.com/) Weitere Informationen zum Verwalten von Verbindungen finden Sie unter: [Verwalten Ihrer Verbindungen](manage-connector.md).
 
 ## <a name="what-are-the-license-requirements-and-terms-of-use-for-graph-connectors"></a>Welche Lizenzanforderungen und Nutzungsbedingungen gelten für Graph-Connectors?
 
-Sie benötigen eine gültige Microsoft 365- oder Office 365-Lizenz und ein ausreichendes Graph Connectors-Kontingent, damit Benutzer in Ihrer Organisation Daten von Connectors in ihren Suchergebnissen anzeigen können.
+Sie benötigen eine gültige Microsoft 365- oder Office 365-Lizenz und ein ausreichendes Graph Connectors-Kontingent für Benutzer in Ihrer Organisation, um Daten von Connectors in ihren Suchergebnissen anzuzeigen.
 
-Weitere Informationen finden Sie unter [Lizenzanforderungen, Preise](licensing.md) und [Nutzungsbedingungen.](terms-of-use.md)
+Weitere Informationen finden Sie unter [Lizenzanforderungen und Preise](licensing.md) und [Nutzungsbedingungen](terms-of-use.md).
 
 ## <a name="what-are-the-preview-features"></a>Was sind die Vorschaufeatures?
 
-Obwohl Microsoft Graph Connectors und Microsoft Search-APIs jetzt allgemein verfügbar sind, gibt es mehrere Features, die sich in der Vorschau befinden.
+Obwohl Microsoft Graph-Connectors und Microsoft Search-APIs jetzt allgemein verfügbar sind, stehen mehrere Features in der Vorschau zur Verfügung.
 
-Zu den Konnektoren und Features in der Vorschau gehören:
+Zu den Connectors und Features in der Vorschau gehören:
 
 * [Azure DevOps Connector](azure-devops-connector.md)
 * [Salesforce Connector](salesforce-connector.md)
-* [ServiceNow Connector mit](servicenow-connector.md) Suchberechtigungen, die Quell-ACLs verwenden
+* [ServiceNow-Connector](servicenow-connector.md) mit Suchberechtigungen, die Quell-ACLs verwenden
 * [Verwalten von Ergebnisclusters](result-cluster.md)
 
 ## <a name="how-do-i-customize-and-configure-search-results"></a>Wie kann ich Suchergebnisse anpassen und konfigurieren?
@@ -117,15 +120,15 @@ Es gibt viele Möglichkeiten zum Anpassen und Konfigurieren von Suchergebnissen.
 
 ## <a name="how-do-i-search-my-connector-data-from-a-custom-application"></a>Wie kann ich meine Connectordaten aus einer benutzerdefinierten Anwendung durchsuchen?
 
-Nachdem benutzerdefinierte Daten indiziert wurden, können Entwickler [diese Daten abfragen.](https://docs.microsoft.com/graph/search-concept-custom-types) Sie können Ihre Daten in jeder Anwendung anzeigen. Weitere Informationen finden Sie in der [Übersicht über die Microsoft Search-API in Microsoft Graph.](https://docs.microsoft.com/graph/search-concept-overview)
+Nachdem benutzerdefinierte Daten indiziert wurden, können Entwickler [diese Daten abfragen.](https://docs.microsoft.com/graph/search-concept-custom-types) Sie können Ihre Daten in einer beliebigen Anwendung anzeigen. Weitere Informationen finden Sie unter [Übersicht über die Microsoft Search-API in Microsoft Graph](https://docs.microsoft.com/graph/search-concept-overview).
 
-## <a name="next-steps"></a>Nächste Schritte
+## <a name="how-do-i-customize-search-results"></a>Wie kann ich Suchergebnisse anpassen?
 
-Stellen Sie sicher, dass Sie die Suchergebnisse wie in diesem Artikel empfohlen anpassen. Wie kann ich [Suchergebnisse anpassen und konfigurieren?](#how-do-i-customize-and-configure-search-results) Weitere Informationen zum Anpassen von Suchergebnissen finden Sie auf [der Seite "Suchergebnisse anpassen".](https://docs.microsoft.com/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page)
+Der nächste Schritt besteht im Anpassen der Suchergebnisse wie in diesem Artikel empfohlen. Wie kann ich [Suchergebnisse anpassen und konfigurieren?](#how-do-i-customize-and-configure-search-results). Weitere Informationen zum Anpassen von Suchergebnissen finden Sie unter [Customize the search results page](https://docs.microsoft.com/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page).
 
-## <a name="limitations"></a>Einschränkungen
+## <a name="what-are-the-connector-limitations"></a>Was sind die Connectoreinschränkungen?
 
-* Wenn Sie **einen** von Microsoft erstellten Connector veröffentlichen, kann es einige Minuten dauern, bis die Verbindung erstellt wurde. Während dieser Zeit zeigt die Verbindung ihren Status als ausstehend an.
+* Wenn Sie **einen** von Microsoft erstellten Connector veröffentlichen, kann es einige Minuten dauern, bis die Verbindung erstellt wurde. Während dieser Zeit wird der Status der Verbindung als ausstehend angezeigt.
 
 * Das [Microsoft 365 Admin Center](https://admin.microsoft.com) unterstützt  die Bearbeitung des Suchschemas nach der Veröffentlichung einer Verbindung nicht. Um das Suchschema zu bearbeiten, löschen Sie Ihre Verbindung, und erstellen Sie dann eine neue.
 
@@ -133,6 +136,6 @@ Stellen Sie sicher, dass Sie die Suchergebnisse wie in diesem Artikel empfohlen 
 
 * Schemaupdates werden nicht unterstützt. Nachdem Sie eine Verbindungseinrichtung erstellt haben, gibt es keine Möglichkeit, das Schema zu aktualisieren. Sie können die Verbindung nur löschen und neu erstellen.
 
-* Es gibt ein Verbindungslimit. Jeder Mandant kann bis zu 10 Verbindungen erstellen.
+* Es gibt einen Verbindungsgrenzwert. Jeder Mandant kann bis zu 10 Verbindungen erstellen.
 
-* Die Bearbeitungsunterstützung für die Verbindung ist nicht verfügbar. Nachdem die Verbindung erstellt wurde, können Sie sie nicht mehr bearbeiten oder ändern. Wenn Sie Details ändern müssen, müssen Sie die Verbindung löschen und neu erstellen.
+* Die Bearbeitungsunterstützung für die Verbindung ist nicht verfügbar. Nachdem die Verbindung erstellt wurde, können Sie sie nicht bearbeiten oder ändern. Wenn Sie Details ändern müssen, müssen Sie die Verbindung löschen und neu erstellen.

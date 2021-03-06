@@ -3,6 +3,7 @@ title: Unternehmenswebsites Graph Connector für Microsoft Search
 ms.author: mecampos
 author: mecampos
 manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten des Graph-Connectors für Unternehmenswebsites für Microsoft Search
-ms.openlocfilehash: 7d71e6e3d775c97d8916e20ab032c312c269c5f1
-ms.sourcegitcommit: 6a7522d9aeaedeedaac096c485d3f343ce98d3d2
+ms.openlocfilehash: b0ed7cc4148dba6c7555fcf7c9c930184cdbc24c
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421099"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50508796"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -28,7 +29,7 @@ ms.locfileid: "50421099"
 Der Graph-Connector für Unternehmenswebsites ermöglicht Ihrer Organisation das Indizieren von Artikeln und Inhalten von internen **Websites.** Nachdem Sie den Connector konfiguriert und Inhalte von der Website synchronisiert haben, können Endbenutzer über einen beliebigen Microsoft Search-Client nach diesem Inhalt suchen.
 
 > [!NOTE]
-> Lesen Sie [**den Artikel Setup your Graph connector,**](configure-connector.md) um den allgemeinen Setupprozess für Graph Connectors zu verstehen.
+> Lesen Sie [**den Artikel Setup your Graph connector,**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten von Graph Connectors zu verstehen.
 
 Dieser Artikel ist für jeden benutzer, der einen Connector für Unternehmenswebsites konfiguriert, ausgeführt und überwacht. Es ergänzt den allgemeinen Einrichtungsprozess und zeigt Anweisungen, die nur für den Enterprise-Websiteconnector gelten. Dieser Artikel enthält auch Informationen zur [Problembehandlung und](#troubleshooting) [Einschränkungen](#limitations).
 
@@ -50,12 +51,12 @@ Befolgen Sie die [allgemeinen Setupanweisungen](https://docs.microsoft.com/micro
 
 Um eine Verbindung mit Ihrer Datenquelle herzustellen, müssen Sie die Stamm-URL der Website eingeben, eine Durchforstungsquelle und den Authentifizierungstyp auswählen, den Sie verwenden möchten: Keine, Standardauthentifizierung oder OAuth 2.0 mit [Azure Active Directory (Azure AD).](https://docs.microsoft.com/azure/active-directory/) Nachdem Sie diese Informationen abgeschlossen haben, wählen Sie Verbindung testen aus, um Ihre Einstellungen zu überprüfen.
 
-> [!NOTE]
-> Wenn für die Website, die Sie durchforsten möchten, eine Sitemap definiert ist, durchforstet der Connector nur die URLs, die in der Sitemap aufgeführt sind. Wenn keine Sitemap definiert ist, durchforstet der Connector alle Links, die auf der Stamm-URL der Website gefunden wurden, tief.
-
 ### <a name="url"></a>URL
 
 Verwenden Sie das Feld URL, um den Stamm der Website anzugeben, die Sie durchforsten möchten. Der Connector für Unternehmenswebsites verwendet diese URL als Ausgangspunkt und folgt allen Links aus dieser URL für die Durchforstung.
+
+> [!NOTE]
+> Wenn für die Website, die Sie durchforsten möchten, eine Sitemap definiert ist, durchforstet der Connector nur die URLs, die in der Sitemap aufgeführt sind. Wenn keine Sitemap definiert ist, durchforstet der Connector alle Links, die auf der Stamm-URL der Website gefunden wurden, tief.
 
 ### <a name="crawl-mode-cloud-or-on-premises-preview"></a>Durchforstungsmodus: Cloud oder Lokal (Vorschau)
 

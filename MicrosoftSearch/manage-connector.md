@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Verwalten von Microsoft Graph Connectors für Microsoft Search.
-ms.openlocfilehash: aa2e3db8c8dc9155c06f81fc0169dd4bda8f8343
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 1c152f23e9b9d9982b957830d5f4bef0eef41347
+ms.sourcegitcommit: 2f770de12b27546b18b2e86517d2c25522eb9022
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508832"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929585"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -39,7 +39,7 @@ Löschen einer Verbindung | :heavy_check_mark: | :heavy_check_mark:
 Bearbeiten einer veröffentlichten Verbindung | :heavy_check_mark: Name und Beschreibung<br></br> :heavy_check_mark: Verbindungseinstellungen<br></br> :heavy_check_mark: Eigenschaftenbezeichnungen<br></br> :heavy_check_mark: Schema<br></br> :heavy_check_mark: Aktualisierungszeitplan<br></br> | :heavy_check_mark: Name<br></br> :heavy_check_mark: Beschreibung
 Bearbeiten einer Entwurfsverbindung | :heavy_check_mark: | :x:
 
-## <a name="monitor-your-connection-status"></a>Überwachen des Verbindungsstatus
+## <a name="monitor-your-connection-state"></a>Überwachen des Verbindungsstatus
 
 Nachdem Sie eine Verbindung erstellt haben, wird die Anzahl der verarbeiteten Elemente auf der Registerkarte **Connectors** auf der **Seite Microsoft Search** angezeigt. Nachdem die anfängliche vollständige Durchforstung erfolgreich abgeschlossen wurde, wird der Fortschritt für regelmäßige inkrementelle Durchforstungen angezeigt. Diese Seite enthält Informationen zu den täglichen Vorgängen des Connectors sowie eine Übersicht über die Protokolle und den Fehlerverlauf.
 
@@ -47,7 +47,7 @@ Vier Zustände werden in der **Spalte Status** für jede Verbindung angezeigt:
 
 * **Synchronisieren**. Der Connector durchforstet die Daten aus der Quelle, um die vorhandenen Elemente zu indizieren und Aktualisierungen zu erstellen.
 
-* **Aktiviert:** Die Verbindung ist aktiviert, und es wird keine aktive Durchforstung ausgeführt. **Die letzte Synchronisierungszeit** gibt an, wann die letzte erfolgreiche Durchforstung passiert ist. Die Verbindung ist so neu wie die letzte Synchronisierungszeit.
+* **Ready**: Die Verbindung ist bereit, und es wird keine aktive Durchforstung ausgeführt. **Die letzte Synchronisierungszeit** gibt an, wann die letzte erfolgreiche Durchforstung passiert ist. Die Verbindung ist so neu wie die letzte Synchronisierungszeit.
 
 * **Angehalten**. Die Durchforstungen werden von den Administratoren über die Pause-Option angehalten. Die nächste Durchforstung wird nur ausgeführt, wenn sie manuell fortgesetzt wird. Die Daten aus dieser Verbindung sind jedoch weiterhin durchsuchbar.
 
@@ -58,19 +58,23 @@ Vier Zustände werden in der **Spalte Status** für jede Verbindung angezeigt:
 Das verfügbare Indexkontingent und der verfügbare Verbrauch werden auf der Angebotsseite der Connectors angezeigt.
 
 ![Indexkontingentauslastungsleiste](media/quota_utilization.png)
-
+ 
 >[!NOTE]
 >Während des Vorschauzeitraums wurde jeder Organisation, die Graph-Connectors ausprobieren, ein kostenloses festes Kontingent von bis zu 2 Millionen Elementen für alle Verbindungen bereitgestellt. Da Graph-Connectors allgemein verfügbar sind, läuft das kostenlose Kontingent am 1. April 2021 für organisationen ab, die Graph-Connectors in der Vorschau verwendet haben.
 >Von Microsoft erstellten Graph-Connectors, die als ["Vorschau"](connectors-preview.md) gekennzeichnet sind, werden nicht in das insgesamt berechnete Indexkontingent für Ihre Organisation einbezogen. Es wird jedoch auf die maximale Anzahl von 10 Verbindungen angezählt, die Sie für Ihre Organisation konfigurieren können, und die maximale Anzahl von 7 Millionen Elementen, die Ihre Organisation über Verbindungen indizieren kann. Jede Verbindung ist auf 700.000 Elemente beschränkt. 
 
 Die Kontingentauslastungsleiste gibt verschiedene Zustände basierend auf dem Verbrauch von Kontingenten durch Ihre Organisation an:
 
-Status | Kontingentverbrauch
---- | ---
-Normal | 1-69%
-Hoch | 70-89%
+Status | Kontingentauslastungsstufen
+--- | --- 
+Standard | 0-79%
+Hoch | 80-89%
 Kritisch | 90%-99%
-Vollständig | 100 %
+Vollständig | 100 %
+
+<!-- 
+![Quota utilization levels](media/connectors-quota-utilization-levels.png)
+-->
 
 Die Anzahl der indizierten Elemente wird auch bei jeder Verbindung angezeigt. Die Anzahl der von jeder Verbindung indizierten Elemente trägt zum Gesamtkontingent bei, das für Ihre Organisation verfügbar ist.
 

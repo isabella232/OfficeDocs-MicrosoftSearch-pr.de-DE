@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Listet alle Microsoft Graph-Connectors für Microsoft Search auf.
-ms.openlocfilehash: 936fa78ddfecf86f4e299963c70248969a37c5a7
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: f20a52beb3894503e0c5b8911bfc026b8249f9a5
+ms.sourcegitcommit: 2f770de12b27546b18b2e86517d2c25522eb9022
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508927"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929616"
 ---
 # <a name="microsoft-graph-connectors-gallery"></a>Microsoft Graph Connectors Gallery
 
@@ -36,7 +36,7 @@ ms.locfileid: "50508927"
                     <div class="cardText">
                         <h3>Azure Data Lake Storage Gen2</h3>
                         <p>von <a href="https://www.microsoft.com" target="_blank" data-linktype="external">Microsoft</a></p>
-                        <p>Mit diesem Microsoft Graph-Connector können Benutzer in Ihrer Organisation nach Dateien und Inhalten suchen, die in Azure Blob-Containern gespeichert sind. Der Azure Data Lake Storage Gen2-Connector indiziert auch hierarchiefähige Ordner in von Ihnen angegebenen Azure Data Lake Storage Gen2-Konten.</p>
+                        <p>Ermöglicht Es Ihrer Organisation, nach Inhalten zu suchen, die in Azure Blob-Containern gespeichert sind. Indiziert hierarchiefähige Ordner in angegebenen Azure Data Lake Storage Gen2-Konten.</p>
                         <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
                             <div style="font-weight:500;width:150px;display:inline">
                                 <a href="azure-data-lake-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
@@ -57,7 +57,7 @@ ms.locfileid: "50508927"
                     <div class="cardText">
                         <h3>Azure DevOps</h3>
                         <p>von <a href="https://www.microsoft.com" target="_blank" data-linktype="external">Microsoft</a></p>
-                        <p>Mit diesem Microsoft Graph-Connector können Benutzer in Ihrer Organisation nach Arbeitsaufgaben in Ihrer Azure DevOps-Instanz suchen.</p>
+                        <p>Ermöglicht Ihrer Organisation die Suche nach Arbeitsaufgaben in Ihrer Azure DevOps-Instanz.</p>
                         <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
                             <div style="font-weight:500;width:150px;display:inline">
                                 <a href="azure-devops-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
@@ -78,7 +78,7 @@ ms.locfileid: "50508927"
                     <div class="cardText">
                         <h3>Azure SQL</h3>
                         <p>von <a href="https://www.microsoft.com" target="_blank" data-linktype="external">Microsoft</a></p>
-                        <p>Mit diesem Microsoft Graph-Connector können Benutzer in Ihrer Organisation nach Daten aus Ihrer Azure-SQL suchen.</p>
+                        <p>Ermöglicht Ihrer Organisation die Suche nach Daten aus Ihrer Azure-SQL.</p>
                         <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
                             <div style="font-weight:500;width:150px;display:inline">
                                 <a href="MSSQL-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
@@ -101,7 +101,7 @@ ms.locfileid: "50508927"
                     <div class="cardText">
                         <h3>Unternehmenswebsites</h3>
                         <p>von <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>Mit diesem Microsoft Graph-Connector können Benutzer in Ihrer Organisation Seiten in einer beliebigen Nicht-SharePoint-Unternehmenswebsite durchsuchen.</p>
+                        <p>Ermöglicht Ihrer Organisation das Durchsuchen einer beliebigen Nicht-SharePoint-Unternehmenswebsite.</p>
                         <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
                             <div style="font-weight:500;width:150px;display:inline">
                                 <a href="enterprise-web-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
@@ -122,7 +122,7 @@ ms.locfileid: "50508927"
                     <div class="cardText">
                         <h3>MediaWiki</h3>
                         <p>von <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>Mit diesem Microsoft Graph-Connector können Benutzer nach wissensbasierten Artikeln auf Wikiwebsites suchen, die Ihre Organisation mit MediaWiki erstellt.</p>
+                        <p>Ermöglicht Es Ihrer Organisation, wissensbasierte Artikel auf Websites zu durchsuchen, die sie mit MediaWiki erstellt.</p>
                         <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
                             <div style="font-weight:500;width:150px;display:inline">
                                 <a href="mediawiki-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
@@ -143,7 +143,7 @@ ms.locfileid: "50508927"
                     <div class="cardText">
                         <h3>Microsoft SQL</h3>
                         <p>von <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>Mit diesem Microsoft Graph-Connector können Benutzer in Ihrer Organisation nach Daten in lokalen Microsoft-SQL suchen.</p>
+                        <p>Ermöglicht Ihrer Organisation das Durchsuchen von lokalen Microsoft SQL Serverdatenbanken.</p>
                         <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
                             <div style="font-weight:500;width:150px;display:inline">
                                 <a href="MSSQL-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
@@ -166,7 +166,7 @@ ms.locfileid: "50508927"
                     <div class="cardText">
                         <h3>Oracle SQL</h3>
                         <p>von <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>Mit diesem Microsoft Graph-Connector können Benutzer Daten aus einer lokalen Oracle-Datenbank ermitteln und indizieren.</p>
+                        <p>Ermöglicht Ihrer Organisation das Ermitteln und Indizieren von Daten aus einer lokalen Datenbank. Indiziert den angegebenen Inhalt in Microsoft Search und unterstützt regelmäßige Durchforstungen. Sie können auch den Zugriff auf Suchergebnisse für bestimmte Benutzer einschränken.</p>
                         <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
                             <div style="font-weight:500;width:150px;display:inline">
                                 <a href="mediawiki-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
@@ -187,7 +187,7 @@ ms.locfileid: "50508927"
                     <div class="cardText">
                         <h3>Salesforce</h3>
                         <p>von <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>Mit diesem Microsoft Graph-Connector können Benutzer in Ihrer Organisation in Ihrer Salesforce-Instanz nach Kontakten, Verkaufschancen, Leads und Accounts-Objekten suchen.</p>
+                        <p>Ermöglicht Es Ihrer Organisation, Ihre Salesforce-Instanz nach Kontakten, Verkaufschancen, Leads und Accounts-Objekten zu durchsuchen.</p>
                         <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
                             <div style="font-weight:500;width:150px;display:inline">
                                 <a href="salesforce-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
@@ -208,7 +208,7 @@ ms.locfileid: "50508927"
                     <div class="cardText">
                         <h3>ServiceNow</h3>
                         <p>von <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>Mit diesem Microsoft Graph-Connector können Benutzer in Ihrer Organisation in Ihrer ServiceNow-Instanz nach wissensbasierten Artikeln suchen.</p>
+                        <p>Ermöglicht Es Ihrer Organisation, Ihre ServiceNow-Instanz nach wissensbasierten Artikeln zu durchsuchen.</p>
                         <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
                             <div style="font-weight:500;width:150px;display:inline">
                                 <a href="servicenow-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
@@ -1548,7 +1548,7 @@ ms.locfileid: "50508927"
             <div class="cardPadding">
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
-                        <h3>Microsoft OneDrive-App</h3>
+                        <h3>OneDrive</h3>
                         <p>von <a href="https://www.accenture.com">Accenture</a></p>
                         <p>Der #A0 durchforstet Inhalte von Microsoft OneDrive und durchquert Ordner, um Dateien zu finden. Es generiert eine Signatur für jedes Element, um inkrementelle Aktualisierungen nur geänderter Elemente zu ermöglichen. Jede Datei wird mit ihren Metadaten (Größe, Speicherort, zuletzt zugegriffener Zugriff und so weiter) und Zugriffssteuerungslisten übermittelt.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
@@ -2375,4 +2375,157 @@ ms.locfileid: "50508927"
             </div>
         </div>
     </li>
-</ul>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card" style="min-height:240px;">
+                    <div class="cardText">
+                        <h3>Atlassian Confluence (Cloud)</h3>
+                        <p>von <a href="https://www.bainsight.com">BA Insight</a></p>
+                        <p>Unser Confluence (Cloud Version) Connector ist ein Indizierungsconnector der Unternehmensklasse, mit dem in Confluence gespeicherte Inhalte durchforstet und indiziert werden können.</p>
+                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
+                            <a href="https://www.bainsight.com/connectors/connector-for-confluence-cloud-version/"><font color="0065BA">Weitere Details</font></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card" style="min-height:240px;">
+                    <div class="cardText">
+                        <h3>Bentley</h3>
+                        <p>von <a href="https://www.bainsight.com">BA Insight</a></p>
+                        <p>Der BAI-Bentley AssetWise-Connector ermöglicht es, Inhalte aus AssetWise in einem einzigen konsolidierten Suchindex zusammen mit Inhalten aus anderen Repositorys anzuzeigen.</p>
+                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
+                            <a href="https://www.bainsight.com/connectors/bentley-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">Weitere Details</font></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card" style="min-height:240px;">
+                    <div class="cardText">
+                        <h3>Egnyte</h3>
+                        <p>von <a href="https://www.bainsight.com">BA Insight</a></p>
+                        <p>"Der Egnyte Connector unterstützt vollständige und inkrementelle Durchforstungen und Indizes mit sehr hohem Durchsatz."</p>
+                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
+                            <a href="https://www.bainsight.com/connectors/egnyte-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">Weitere Details</font></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card" style="min-height:240px;">
+                    <div class="cardText">
+                        <h3>Google Drive</h3>
+                        <p>von <a href="https://www.bainsight.com">BA Insight</a></p>
+                        <p>Der BAI Google Drive-Connector ermöglicht das Anzeigen von Inhalten aus Google Drive in einem einzigen konsolidierten Suchindex, der auf Google Drive-Inhalte sowie Inhalte aus anderen Repositorys referenziert.</p>
+                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
+                            <a href="https://www.bainsight.com/connectors/google-drive-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">Weitere Details</font></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card" style="min-height:240px;">
+                    <div class="cardText">
+                        <h3>iManage Cloud</h3>
+                        <p>von <a href="https://www.bainsight.com">BA Insight</a></p>
+                        <p>Der iManage Cloud Connector von BA Insight indiziert sowohl den Volltext als auch die Metadaten von Dokumenten in den Arbeitsbereichen sicher in die Suchmaschine.</p>
+                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
+                            <a href="https://www.bainsight.com/connectors/connector-for-imanage-work-cloud/"><font color="0065BA">Weitere Details</font></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card" style="min-height:240px;">
+                    <div class="cardText">
+                        <h3>Jira</h3>
+                        <p>von <a href="https://www.bainsight.com">BA Insight</a></p>
+                        <p>Der Jira Connector ermöglicht Benutzern das Durchführen von Suchdurchsuchungen für alle Jira-Objekte, sodass sie nicht direkt zu Jira wechseln müssen.</p>
+                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
+                            <a href="https://www.bainsight.com/connectors/jira-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">Weitere Details</font></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+<!-- This is the "template" for each box > Copy and edit to add new boxes
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card" style="min-height:240px;">
+                    <div class="cardText">
+                        <h3>Test</h3>
+                        <p>by <a href="https://www.bainsight.com">BA Insight</a></p>
+                        <p>The Yammer Connector establishes a secure connection to the Yammer application and maps the content including metadata and attachments from the Yammer schema to the search engine schema. It then extracts content and feeds it to the search engine in a process called crawling.</p>
+                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
+                            <a href="https://www.bainsight.com/connectors/yammer-connector-sharepoint-azure-elasticsearch"><font color="0065BA">More details</font></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li> >--->
+<!-- --->
+<!-- --->
+<!-- For simplicity, and while I find a better format for this boxes, I am adding the new connectors in one single line, please refer to the template above if you need a better understanding of the lines next--->
+<!-- --->
+<!-- --->
+<!-- --->
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Jira (Cloud)</h3><p>von <a href="https://www.bainsight.com">BA Insight</a></p><p>Der Jira(Cloud Version)-Connector führt Suchdurchsuchungen für alle Jira-Objekte durch, sodass keine direkte Navigation zu Jira mehr nötig ist.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/jira-cloud-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">Weitere Details</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Kaltura</h3><p>von <a href="https://www.bainsight.com">BA Insight</a></p><p>Der Kaltura Connector ermöglicht die Indizierung nicht nur von Videos, sondern auch von verschiedenen anderen Arten von Informationen, einschließlich Kategorien, Daten, Dokumente und mehr.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/kaltura-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">Weitere Details</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Microsoft Dynamics 365</h3><p>von <a href="https://www.bainsight.com">BA Insight</a></p><p>Unser Microsoft Dynamics 365-CRM-Connector unterstützt sowohl lokale CRM-Installationen als auch Dynamics CRM Online. </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/microsoft-dynamics-crm-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">Weitere Details</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Microsoft Dynamics 365 (Cloud)</h3><p>von <a href="https://www.bainsight.com">BA Insight</a></p><p>Unser Microsoft Dynamics 365 (Cloud Version) CRM Connector stellt eine sichere Verbindung zur CRM-Anwendung sicher und ordnet den Inhalt aus dem CRM-Schema dem Suchmodulschema zu.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/connector-for-microsoft-dynamics-cloud/"><font color="0065BA"">Weitere Details</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Microsoft Exchange Online</h3><p>von <a href="https://www.bainsight.com">BA Insight</a></p><p>Mithilfe des BA Insight Microsoft Exchange Online Connector können Benutzer Inhalte von Exchange Online über verschiedene Suchplattformen abrufen.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/microsoft-exchange-online-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">Weitere Details</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Öffentliche Microsoft Exchange-Ordner</h3><p>von <a href="https://www.bainsight.com">BA Insight</a></p><p>Mithilfe des BAI Microsoft Exchange Public Folders Connector können Benutzer Inhalte aus Exchange über verschiedene Suchplattformen abrufen.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/microsoft-exchange-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">Weitere Details</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Microsoft Exchange Server</h3><p>von <a href="https://www.bainsight.com">BA Insight</a></p><p>Mithilfe des BA Insight Microsoft Exchange Connector können Benutzer Inhalte aus Exchange über verschiedene Suchmaschinen abrufen. </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/microsoft-exchange-server-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">Weitere Details</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Microsoft Teams</h3><p>von <a href="https://www.bainsight.com">BA Insight</a></p><p>Der BA Insight Microsoft Teams Connector indiziert Inhalte aus Microsoft Teams zusammen mit Inhalten aus anderen Unternehmenssystemen, um einheitliche Ergebnisse zu erzielen.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/microsoft-teams-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">Weitere Details</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Neudesic The Firm Directory</h3><p>von <a href="https://www.bainsight.com">BA Insight</a></p><p>Der Firmenverzeichnisconnector berücksichtigt die Sicherheit des Quellsystems und stellt vollständige und inkrementelle Durchforstungen bereit, damit die Benutzer immer über die neuesten Informationen verfügen.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/the-firm-directory-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">Weitere Details</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>OneDrive for Business</h3><p>von <a href="https://www.bainsight.com">BA Insight</a></p><p>Der BA Insight OneDrive Connector ermöglicht das Indizieren von Inhalten aus OneDrive in verschiedene Suchplattformen, die Benutzern integrierte Suchergebnisse aus mehreren Quellen bereitstellen.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/onedrive-business-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">Weitere Details</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>OpenText Documentum (Cloud)</h3><p>von <a href="https://www.bainsight.com">BA Insight</a></p><p>Der OpenText Documentum Cloud Connector von BA Insight indiziert sowohl den Volltext als auch die Metadaten von Documentum-Objekten sicher in die Suchmaschine, wodurch ein einzelnes durchsuchbares Ergebnisset für Inhalte aus mehreren Repositorys ermöglicht wird. </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/connector-for-documentum-cloud/"><font color="0065BA">Weitere Details</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Praktisches Recht</h3><p>von <a href="https://www.bainsight.com">BA Insight</a></p><p>Der BA Insight Practical Law Connector ermöglicht Benutzern das Durchführen von Suchdurchsuchungen für die Datenbank "Praktisches Recht", sodass sie nicht direkt zu Praktischem Recht navigieren müssen.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/practical-law-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">Weitere Details</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>ProLaw</h3><p>von <a href="https://www.bainsight.com">BA Insight</a></p><p>Der BA Insight Connector für Pro Law verbindet jedes Portal mit ProLaw, sodass Informationen von ProLaw angezeigt werden können, während die Benutzerrechte in ProLaw beachtet werden.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/prolaw-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">Weitere Details</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SAP ERP (Cloud)</h3><p>von <a href="https://www.bainsight.com">BA Insight</a></p><p>Der SAP ERP (Cloud Version)-Connector von BA Insight wurde entwickelt, um Elemente aus SAP in einen Suchindex zu bringen.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/connector-for-sap-erp-cloud/"><font color="0065BA">Weitere Details</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SAP HANA (Cloud)</h3><p>von <a href="https://www.bainsight.com">BA Insight</a></p><p>Der SAP HANA (Cloud Version)-Connector berücksichtigt die Sicherheit der Quelldatenbank und stellt vollständige und inkrementelle Durchforstungen bereit, sodass Benutzer immer über die neuesten Informationen verfügen. </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/connector-sap-hana-cloud-version/"><font color="0065BA">Weitere Details</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>ServiceNow (Cloud)</h3><p>von <a href="https://www.bainsight.com">BA Insight</a></p><p>Der BA Insight ServiceNow (Cloud Version)-Connector berücksichtigt die Sicherheit des Quellsystems und bietet vollständige und inkrementelle Durchforstungen, sodass Benutzer die neuesten Informationen immer zur Verfügung haben.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/servicenow-cloud-connector/"><font color="0065BA">Weitere Details</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SharePoint 2010</h3><p>von <a href="https://www.bainsight.com">BA Insight</a></p><p>Mit dem SharePoint 2010-Connector von BA Insight können Sie eine Verbindung mit SharePoint 2010 herstellen, Daten von jeder Website, Dokumentbibliothek oder Liste abrufen. und diese Inhalte sicher indizieren. </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/sharepoint-2010-connector/"><font color="0065BA">Weitere Details</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SharePoint 2013</h3><p>von <a href="https://www.bainsight.com">BA Insight</a></p><p>Mit dem SharePoint 2013-Connector von BA Insight können Sie eine Verbindung mit SharePoint 2013 herstellen, Daten von einer beliebigen Website, Dokumentbibliothek oder Liste abrufen. und diese Inhalte sicher indizieren. </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/sharepoint-2013-connector/"><font color="0065BA">Weitere Details</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SharePoint 2016</h3><p>von <a href="https://www.bainsight.com">BA Insight</a></p><p>Mit dem #A0 von BA Insight können Sie eine Verbindung mit SharePoint 2016 herstellen, Daten von jeder Website, Dokumentbibliothek oder Liste abrufen. und diese Inhalte sicher indizieren.  </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/sharepoint-2016-connector/"><font color="0065BA">Weitere Details</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SharePoint 2019</h3><p>von <a href="https://www.bainsight.com">BA Insight</a></p><p>Mit dem #A0 von BA Insight können Sie eine Verbindung mit SharePoint 2019 herstellen, Daten von einer beliebigen Website, Dokumentbibliothek oder Liste abrufen. und diese Inhalte sicher indizieren. </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/connector-for-sharepoint-2019/"><font color="0065BA">Weitere Details</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SharePoint Online</h3><p>von <a href="https://www.bainsight.com">BA Insight</a></p><p>Mit dem SharePoint #A0 von BA Insight können Sie eine Verbindung mit SharePoint Online herstellen, Daten von jeder Website, Dokumentbibliothek oder Liste abrufen. und diese Inhalte sicher indizieren.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/sharepoint-online-connector/"><font color="0065BA">Weitere Details</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Websitecrawl</h3><p>von <a href="https://www.bainsight.com">BA Insight</a></p><p>Der BA Insight Website Crawler Connector ermöglicht es, Inhalte von jeder Website in einem einzigen konsolidierten Suchindex zusammen mit Inhalten aus anderen Repositorys anzuzeigen. </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/website-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">Weitere Details</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>West km</h3><p>von <a href="https://www.bainsight.com">BA Insight</a></p><p>Der BA Insight West km Connector unterstützt die Suche in Transaktions- und Prozessdokumenten, einschließlich der Erstellung benutzerdefinierter Suchergebnisse.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/westkm-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">Weitere Details</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Azure AD </h3><p>von <a href="https://www.raytion.com">Raytion</a></p><p>Sicherer Unternehmenssuchconnector zum zuverlässigen Indizierung von Inhalten aus Microsoft Azure Active Directory (Azure AD) und intelligenter Suche mit Microsoft Graph. Es indiziert Objekte aus Azure AD über die Microsoft Graph-API. Der Connector kann zum Ingestieren von Prinzipale in Microsoft Graph in nahezu Echtzeit verwendet werden, um Verwendungsfälle wie Expertensuche, Gerätesuche und Standortsuche zu implementieren oder eine frühzeitige Sicherheitsabschneidung in Verbindung mit benutzerdefinierten Datenquellen zu ermöglichen. Der Connector unterstützt die Verbundauthentifizierung für Microsoft 365.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-azure-ad-connector/"><font color="0065BA">Weitere Details</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Confluence </h3><p>von <a href="https://www.raytion.com">Raytion</a></p><p>Sicherer Unternehmenssuchconnector zum zuverlässigen Indizieren von Inhalten aus Atlassian Confluence und intelligentes Durchsuchen mit Microsoft Graph. Es indiziert Seiten, Blogbeiträge, Anlagen, Kommentare, Leerzeichen, Profile und Hubwebsites für Tags aus lokalen Confluence-Instanzen in nahezu Echtzeit. Der Connector unterstützt vollständig die integrierte Benutzer- und Gruppenverwaltung von Atlassian Confluence sowie Confluence-Installationen, die auf Active Directory und anderen Verzeichnisdiensten basieren.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-confluence-connector/"><font color="0065BA">Weitere Details</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Confluence Cloud </h3><p>von <a href="https://www.raytion.com">Raytion</a></p><p>Sicherer Unternehmenssuchconnector zum zuverlässigen Indizieren von Inhalten aus der Atlassian Confluence Cloud und intelligentes Suchen mit Microsoft Graph. Es indiziert Seiten, Blogbeiträge, Anlagen, Kommentare, Leerzeichen, Profile und Hubwebsites für Tags aus Confluence Cloud-Instanzen in nahezu Echtzeit. Der Connector unterstützt vollständig die integrierte Benutzer- und Gruppenverwaltung der Atlassian Confluence Cloud.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-confluence-cloud-connector/"><font color="0065BA">Weitere Details</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Documentum </h3><p>von <a href="https://www.raytion.com">Raytion</a></p><p>Sicherer Unternehmenssuchconnector zum zuverlässigen Indizieren von Inhalten aus OpenText Documentum und intelligentes Durchsuchen mit Microsoft Graph. Es indiziert Repositorys, Ordner und Dateien zusammen mit ihren Metadaten und Eigenschaften aus Documentum in nahezu Echtzeit. Der Connector unterstützt die integrierte Benutzer- und Gruppenverwaltung von OpenText Documentum vollständig.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-documentum-connector/"><font color="0065BA">Weitere Details</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Enterprise Vault </h3><p>von <a href="https://www.raytion.com">Raytion</a></p><p>Sicherer Unternehmenssuchconnector zum zuverlässigen Indizierung von Inhalten aus Symantec Enterprise Vault und intelligentes Durchsuchen mit Microsoft Graph. Es indiziert archivierte Daten, z. B. E-Mails, Anlagen, Dateien, Kalenderelemente und Kontakte aus Enterprise Vault in nahezu Echtzeit. Der Connector unterstützt vollständig die Authentifizierungsmodelle Basic, NTLM und Kerberos von Symantec Enterprise Vault.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-enterprise-vault-connector-2/"><font color="0065BA">Weitere Details</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Enterprise Vault </h3><p>von <a href="https://www.raytion.com">Raytion</a></p><p>Sicherer Unternehmenssuchconnector zum zuverlässigen Indizierung von Inhalten aus Dem Unternehmenstresor und intelligentes Durchsuchen mit Microsoft Graph. Es indiziert archivierte Daten, z. B. E-Mails, Anlagen, Dateien, Kalenderelemente und Kontakte aus Enterprise Vault in nahezu Echtzeit. Der Connector unterstützt vollständig die Authentifizierungsmodelle Basic, NTLM und Kerberos von Veritas Enterprise Vault.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-enterprise-vault-connector/"><font color="0065BA">Weitere Details</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>FirstSpirit </h3><p>von <a href="https://www.raytion.com">Raytion</a></p><p>Sicherer Unternehmenssuchconnector zum zuverlässigen Indizieren von Inhalten aus e-Spirit FirstSpirit und intelligentes Suchen mit Microsoft Graph. Es indiziert Seiten, Anlagen und andere generierte Dokumenttypen aus FirstSpirit in nahezu Echtzeit. Der Connector unterstützt die integrierte Benutzer-, Gruppen- und Berechtigungsverwaltung von e-Spirit FirstSpirit sowie FirstSpirit-Installationen, die auf Active Directory und anderen Verzeichnisdiensten basieren.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-firstspirit-connector/"><font color="0065BA">Weitere Details</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Jira </h3><p>von <a href="https://www.raytion.com">Raytion</a></p><p>Sicherer Unternehmenssuchconnector für die zuverlässige Indizierung von Inhalten von Atlassian Jira und intelligentes Durchsuchen mit Microsoft Graph. Es indiziert Projekte, Probleme, Anlagen, Kommentare, Arbeitsprotokolle, Problemverläufe, Links und Profile aus lokalen Jira-Instanzen in nahezu Echtzeit. Der Connector unterstützt die integrierte Benutzer- und Gruppenverwaltung von Atlassian Jira sowie Jira-Installationen, die auf Active Directory und anderen Verzeichnisdiensten basieren.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-jira-connector /"><font color="0065BA">Weitere Details</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Jira Cloud </h3><p>von <a href="https://www.raytion.com">Raytion</a></p><p>Sicherer Unternehmenssuchconnector zum zuverlässigen Indizierung von Inhalten aus der Atlassian Jira Cloud und intelligentes Durchsuchen mit Microsoft Graph. Es indiziert Projekte, Probleme, Anlagen, Kommentare, Arbeitsprotokolle, Problemverläufe, Links und Profile aus der Jira Cloud in nahezu Echtzeit. Der Connector unterstützt vollständig die integrierte Benutzer- und Gruppenverwaltung von Atlassian Jira Cloud.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-jira-cloud-connector /"><font color="0065BA">Weitere Details</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Notizen </h3><p>von <a href="https://www.raytion.com">Raytion</a></p><p>Sicherer Unternehmenssuchconnector zum zuverlässigen Indizierung von Inhalten aus IBM Notes (früher Lotus Note) und intelligentes Suchen mit Microsoft Graph. Es indiziert Datensätze aus einer konfigurierbaren Gruppe von Notes-Datenbanken in nahezu Echtzeit. Der Connector unterstützt vollständig die integrierte Benutzer- und Gruppenverwaltung von IBM Notes.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-notes-connector/"><font color="0065BA">Weitere Details</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Slack </h3><p>von <a href="https://www.raytion.com">Raytion</a></p><p>Sicherer Unternehmenssuchconnector zum zuverlässigen Indizieren von Inhalten aus Slack und intelligentes Durchsuchen mit Microsoft Graph. Es indiziert Nachrichten, Threads und freigegebene Dateien aus allen öffentlichen Kanälen von Slack in nahezu Echtzeit.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-slack-connector/"><font color="0065BA">Weitere Details</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Yammer </h3><p>von <a href="https://www.raytion.com">Raytion</a></p><p>Sicherer Unternehmenssuchconnector zum zuverlässigen Indizierung von Inhalten von Microsoft Yammer und intelligente Suche mit Microsoft Graph. Es indiziert Kanäle, Beiträge, Antworten, Anlagen, Umfragen und Ankündigungen von Yammer nahezu in Echtzeit. Der Connector unterstützt die integrierte Benutzer- und Gruppenverwaltung von Microsoft Yammer insbesondere die Verbundauthentifizierung gegen Microsoft 365.</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-yammer-connector/"><font color="0065BA">Weitere Details</font></a></p></div></div></div></div></li>

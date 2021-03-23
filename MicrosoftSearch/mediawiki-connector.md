@@ -13,78 +13,78 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten des MediaWiki Graph-Connectors für Microsoft Search
-ms.openlocfilehash: 1c2908de859056ccb26b862820e8b3be7a158569
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 5922cf76aa112430f9f6e857066acd054182058c
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508769"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031692"
 ---
 <!---Previous ms.author: monaray --->
 
-# <a name="mediawiki-graph-connector"></a><span data-ttu-id="698ef-103">MediaWiki Graph Connector</span><span class="sxs-lookup"><span data-stu-id="698ef-103">MediaWiki Graph connector</span></span>
+# <a name="mediawiki-graph-connector"></a><span data-ttu-id="cf96a-103">MediaWiki Graph Connector</span><span class="sxs-lookup"><span data-stu-id="cf96a-103">MediaWiki Graph connector</span></span>
 
-<span data-ttu-id="698ef-104">Mit dem MediaWiki Graph-Connector kann Ihre Organisation Daten aus einem Wiki ermitteln und indizieren, das mithilfe der MediaWiki-Software erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="698ef-104">The MediaWiki Graph connector allows your organization to discover and index data from a wiki created by using MediaWiki software.</span></span> <span data-ttu-id="698ef-105">Dieser Connector indiziert angegebene Inhalte in Microsoft Search und unterstützt regelmäßige Durchforstungen, um den Index auf dem neuesten Stand zu halten.</span><span class="sxs-lookup"><span data-stu-id="698ef-105">This connector indexes specified content into Microsoft Search and supports periodic crawls to keep the index up to date.</span></span>
+<span data-ttu-id="cf96a-104">Mit dem MediaWiki Graph-Connector kann Ihre Organisation Daten aus einem Wiki ermitteln und indizieren, das mithilfe der MediaWiki-Software erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="cf96a-104">The MediaWiki Graph connector allows your organization to discover and index data from a wiki created by using MediaWiki software.</span></span> <span data-ttu-id="cf96a-105">Dieser Connector indiziert angegebene Inhalte in Microsoft Search und unterstützt regelmäßige Durchforstungen, um den Index auf dem neuesten Stand zu halten.</span><span class="sxs-lookup"><span data-stu-id="cf96a-105">This connector indexes specified content into Microsoft Search and supports periodic crawls to keep the index up to date.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="698ef-106">Lesen Sie [**den Artikel Setup für Ihren Graph-Connector,**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten von Graph Connectors zu verstehen.</span><span class="sxs-lookup"><span data-stu-id="698ef-106">Read the [**Setup for your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup instructions.</span></span>
+> <span data-ttu-id="cf96a-106">Lesen Sie [**den Artikel Setup für Ihren Graph-Connector,**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten von Graph Connectors zu verstehen.</span><span class="sxs-lookup"><span data-stu-id="cf96a-106">Read the [**Setup for your Graph connector**](configure-connector.md) article to understand the general Graph connectors setup instructions.</span></span>
 
-<span data-ttu-id="698ef-107">Dieser Artikel ist für jeden benutzer, der einen MediaWiki Graph-Connector konfiguriert, ausgeführt und überwacht.</span><span class="sxs-lookup"><span data-stu-id="698ef-107">This article is for anyone who configures, runs, and monitors a MediaWiki Graph connector.</span></span> <span data-ttu-id="698ef-108">Es ergänzt den allgemeinen Einrichtungsprozess und zeigt Anweisungen, die nur für den MediaWiki Graph-Connector gelten.</span><span class="sxs-lookup"><span data-stu-id="698ef-108">It supplements the general setup process, and shows instructions that apply only for the MediaWiki Graph connector.</span></span> <span data-ttu-id="698ef-109">Dieser Artikel enthält auch Informationen zu [Einschränkungen](#limitations).</span><span class="sxs-lookup"><span data-stu-id="698ef-109">This article also includes information about [Limitations](#limitations).</span></span>
+<span data-ttu-id="cf96a-107">Dieser Artikel ist für jeden benutzer, der einen MediaWiki Graph-Connector konfiguriert, ausgeführt und überwacht.</span><span class="sxs-lookup"><span data-stu-id="cf96a-107">This article is for anyone who configures, runs, and monitors a MediaWiki Graph connector.</span></span> <span data-ttu-id="cf96a-108">Es ergänzt den allgemeinen Einrichtungsprozess und zeigt Anweisungen, die nur für den MediaWiki Graph-Connector gelten.</span><span class="sxs-lookup"><span data-stu-id="cf96a-108">It supplements the general setup process, and shows instructions that apply only for the MediaWiki Graph connector.</span></span> <span data-ttu-id="cf96a-109">Dieser Artikel enthält auch Informationen zu [Einschränkungen](#limitations).</span><span class="sxs-lookup"><span data-stu-id="cf96a-109">This article also includes information about [Limitations](#limitations).</span></span>
 
 <!---## Before you get started-->
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a><span data-ttu-id="698ef-110">Schritt 1: Hinzufügen eines Graph-Connectors im Microsoft 365 Admin Center</span><span class="sxs-lookup"><span data-stu-id="698ef-110">Step 1: Add a Graph connector in the Microsoft 365 admin center</span></span>
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a><span data-ttu-id="cf96a-110">Schritt 1: Hinzufügen eines Graph-Connectors im Microsoft 365 Admin Center</span><span class="sxs-lookup"><span data-stu-id="cf96a-110">Step 1: Add a Graph connector in the Microsoft 365 admin center</span></span>
 
-<span data-ttu-id="698ef-111">Befolgen Sie die [allgemeinen Setupanweisungen](https://docs.microsoft.com/microsoftsearch/configure-connector).</span><span class="sxs-lookup"><span data-stu-id="698ef-111">Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).</span></span>
+<span data-ttu-id="cf96a-111">Befolgen Sie die [allgemeinen Setupanweisungen](./configure-connector.md).</span><span class="sxs-lookup"><span data-stu-id="cf96a-111">Follow the general [setup instructions](./configure-connector.md).</span></span>
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="step-2-name-the-connection"></a><span data-ttu-id="698ef-112">Schritt 2: Benennen der Verbindung</span><span class="sxs-lookup"><span data-stu-id="698ef-112">Step 2: Name the connection</span></span>
+## <a name="step-2-name-the-connection"></a><span data-ttu-id="cf96a-112">Schritt 2: Benennen der Verbindung</span><span class="sxs-lookup"><span data-stu-id="cf96a-112">Step 2: Name the connection</span></span>
 
-<span data-ttu-id="698ef-113">Befolgen Sie die [allgemeinen Setupanweisungen](https://docs.microsoft.com/microsoftsearch/configure-connector).</span><span class="sxs-lookup"><span data-stu-id="698ef-113">Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).</span></span>
+<span data-ttu-id="cf96a-113">Befolgen Sie die [allgemeinen Setupanweisungen](./configure-connector.md).</span><span class="sxs-lookup"><span data-stu-id="cf96a-113">Follow the general [setup instructions](./configure-connector.md).</span></span>
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="step-3-configure-the-connection-settings"></a><span data-ttu-id="698ef-114">Schritt 3: Konfigurieren der Verbindungseinstellungen</span><span class="sxs-lookup"><span data-stu-id="698ef-114">Step 3: Configure the connection settings</span></span>
+## <a name="step-3-configure-the-connection-settings"></a><span data-ttu-id="cf96a-114">Schritt 3: Konfigurieren der Verbindungseinstellungen</span><span class="sxs-lookup"><span data-stu-id="cf96a-114">Step 3: Configure the connection settings</span></span>
 
-<span data-ttu-id="698ef-115">Geben Sie Ihre **Wiki-URL** ein, und **wählen** Sie den Authentifizierungstyp im Dropdownmenü der Optionen aus.</span><span class="sxs-lookup"><span data-stu-id="698ef-115">Enter your **Wiki URL** and choose the **Authentication type** from the drop-down menu of options.</span></span> <span data-ttu-id="698ef-116">Die Optionen sind **None**, **Basic** und **OAuth 2.0 AAD**.</span><span class="sxs-lookup"><span data-stu-id="698ef-116">The options are **None**, **Basic**, and **OAuth 2.0 AAD**.</span></span>
+<span data-ttu-id="cf96a-115">Geben Sie Ihre **Wiki-URL** ein, und **wählen** Sie den Authentifizierungstyp im Dropdownmenü der Optionen aus.</span><span class="sxs-lookup"><span data-stu-id="cf96a-115">Enter your **Wiki URL** and choose the **Authentication type** from the drop-down menu of options.</span></span> <span data-ttu-id="cf96a-116">Die Optionen sind **None**, **Basic** und **OAuth 2.0 AAD**.</span><span class="sxs-lookup"><span data-stu-id="cf96a-116">The options are **None**, **Basic**, and **OAuth 2.0 AAD**.</span></span>
 
-<span data-ttu-id="698ef-117">Wenn Sie **Basic** als Authentifizierungstyp auswählen,  müssen Sie den Benutzernamen und das **Kennwort für** das Wiki angeben.</span><span class="sxs-lookup"><span data-stu-id="698ef-117">If you choose **Basic** as the Authentication type, you will need to provide the **Username** and **Password** for the wiki.</span></span>
+<span data-ttu-id="cf96a-117">Wenn Sie **Basic** als Authentifizierungstyp auswählen,  müssen Sie den Benutzernamen und das **Kennwort für** das Wiki angeben.</span><span class="sxs-lookup"><span data-stu-id="cf96a-117">If you choose **Basic** as the Authentication type, you will need to provide the **Username** and **Password** for the wiki.</span></span>
 
-<span data-ttu-id="698ef-118">Wenn Sie **OAuth 2.0 AAD** als Authentifizierungstyp auswählen, müssen Sie die **Ressourcen-ID** der Wikiinstallation bereitstellen.</span><span class="sxs-lookup"><span data-stu-id="698ef-118">If you choose **OAuth 2.0 AAD** as the Authentication type, you will need to provide the **Resource ID** of the wiki installation.</span></span> <span data-ttu-id="698ef-119">Sie müssen auch die **Client-ID** und den **geheimen Clientgeheimnis** bereitstellen, die auf der Registrierungsseite der AAD-Anwendung generiert werden.</span><span class="sxs-lookup"><span data-stu-id="698ef-119">You will also need to provide the **Client ID** and **Client secret** generated on the AAD Application registration page.</span></span>
+<span data-ttu-id="cf96a-118">Wenn Sie **OAuth 2.0 AAD** als Authentifizierungstyp auswählen, müssen Sie die **Ressourcen-ID** der Wikiinstallation bereitstellen.</span><span class="sxs-lookup"><span data-stu-id="cf96a-118">If you choose **OAuth 2.0 AAD** as the Authentication type, you will need to provide the **Resource ID** of the wiki installation.</span></span> <span data-ttu-id="cf96a-119">Sie müssen auch die **Client-ID** und den **geheimen Clientgeheimnis** bereitstellen, die auf der Registrierungsseite der AAD-Anwendung generiert werden.</span><span class="sxs-lookup"><span data-stu-id="cf96a-119">You will also need to provide the **Client ID** and **Client secret** generated on the AAD Application registration page.</span></span>
 
-## <a name="step-4-manage-search-permissions"></a><span data-ttu-id="698ef-120">Schritt 4: Verwalten von Suchberechtigungen</span><span class="sxs-lookup"><span data-stu-id="698ef-120">Step 4: Manage search permissions</span></span>
+## <a name="step-4-manage-search-permissions"></a><span data-ttu-id="cf96a-120">Schritt 4: Verwalten von Suchberechtigungen</span><span class="sxs-lookup"><span data-stu-id="cf96a-120">Step 4: Manage search permissions</span></span>
 
-<span data-ttu-id="698ef-121">Der MediaWiki-Connector unterstützt nur Suchberechtigungen, die für **Jeder sichtbar sind.**</span><span class="sxs-lookup"><span data-stu-id="698ef-121">The MediaWiki connector only supports search permissions visible to **Everyone**.</span></span> <span data-ttu-id="698ef-122">Indizierte Daten werden in den Suchergebnissen angezeigt und sind für alle Benutzer in der Organisation sichtbar.</span><span class="sxs-lookup"><span data-stu-id="698ef-122">Indexed data appears in the search results and is visible to all users in the organization.</span></span>
+<span data-ttu-id="cf96a-121">Der MediaWiki-Connector unterstützt nur Suchberechtigungen, die für **Jeder sichtbar sind.**</span><span class="sxs-lookup"><span data-stu-id="cf96a-121">The MediaWiki connector only supports search permissions visible to **Everyone**.</span></span> <span data-ttu-id="cf96a-122">Indizierte Daten werden in den Suchergebnissen angezeigt und sind für alle Benutzer in der Organisation sichtbar.</span><span class="sxs-lookup"><span data-stu-id="cf96a-122">Indexed data appears in the search results and is visible to all users in the organization.</span></span>
 
-## <a name="step-5-assign-property-labels"></a><span data-ttu-id="698ef-123">Schritt 5: Zuweisen von Eigenschaftsbezeichnungen</span><span class="sxs-lookup"><span data-stu-id="698ef-123">Step 5: Assign property labels</span></span>
+## <a name="step-5-assign-property-labels"></a><span data-ttu-id="cf96a-123">Schritt 5: Zuweisen von Eigenschaftsbezeichnungen</span><span class="sxs-lookup"><span data-stu-id="cf96a-123">Step 5: Assign property labels</span></span>
 
-<span data-ttu-id="698ef-124">Befolgen Sie die [allgemeinen Setupanweisungen](https://docs.microsoft.com/microsoftsearch/configure-connector).</span><span class="sxs-lookup"><span data-stu-id="698ef-124">Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).</span></span>
+<span data-ttu-id="cf96a-124">Befolgen Sie die [allgemeinen Setupanweisungen](./configure-connector.md).</span><span class="sxs-lookup"><span data-stu-id="cf96a-124">Follow the general [setup instructions](./configure-connector.md).</span></span>
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="step-6-manage-schema"></a><span data-ttu-id="698ef-125">Schritt 6: Verwalten des Schemas</span><span class="sxs-lookup"><span data-stu-id="698ef-125">Step 6: Manage schema</span></span>
+## <a name="step-6-manage-schema"></a><span data-ttu-id="cf96a-125">Schritt 6: Verwalten des Schemas</span><span class="sxs-lookup"><span data-stu-id="cf96a-125">Step 6: Manage schema</span></span>
 
-<span data-ttu-id="698ef-126">Befolgen Sie die [allgemeinen Setupanweisungen](https://docs.microsoft.com/microsoftsearch/configure-connector).</span><span class="sxs-lookup"><span data-stu-id="698ef-126">Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).</span></span>
+<span data-ttu-id="cf96a-126">Befolgen Sie die [allgemeinen Setupanweisungen](./configure-connector.md).</span><span class="sxs-lookup"><span data-stu-id="cf96a-126">Follow the general [setup instructions](./configure-connector.md).</span></span>
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="step-7-choose-refresh-settings"></a><span data-ttu-id="698ef-127">Schritt 7: Auswählen von Aktualisierungseinstellungen</span><span class="sxs-lookup"><span data-stu-id="698ef-127">Step 7: Choose refresh settings</span></span>
+## <a name="step-7-choose-refresh-settings"></a><span data-ttu-id="cf96a-127">Schritt 7: Auswählen von Aktualisierungseinstellungen</span><span class="sxs-lookup"><span data-stu-id="cf96a-127">Step 7: Choose refresh settings</span></span>
 
-<span data-ttu-id="698ef-128">Befolgen Sie die [allgemeinen Setupanweisungen](https://docs.microsoft.com/microsoftsearch/configure-connector).</span><span class="sxs-lookup"><span data-stu-id="698ef-128">Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).</span></span>
+<span data-ttu-id="cf96a-128">Befolgen Sie die [allgemeinen Setupanweisungen](./configure-connector.md).</span><span class="sxs-lookup"><span data-stu-id="cf96a-128">Follow the general [setup instructions](./configure-connector.md).</span></span>
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="step-8-review-connection"></a><span data-ttu-id="698ef-129">Schritt 8: Überprüfen der Verbindung</span><span class="sxs-lookup"><span data-stu-id="698ef-129">Step 8: Review connection</span></span>
+## <a name="step-8-review-connection"></a><span data-ttu-id="cf96a-129">Schritt 8: Überprüfen der Verbindung</span><span class="sxs-lookup"><span data-stu-id="cf96a-129">Step 8: Review connection</span></span>
 
-<span data-ttu-id="698ef-130">Befolgen Sie die [allgemeinen Setupanweisungen](https://docs.microsoft.com/microsoftsearch/configure-connector).</span><span class="sxs-lookup"><span data-stu-id="698ef-130">Follow the general [setup instructions](https://docs.microsoft.com/microsoftsearch/configure-connector).</span></span>
+<span data-ttu-id="cf96a-130">Befolgen Sie die [allgemeinen Setupanweisungen](./configure-connector.md).</span><span class="sxs-lookup"><span data-stu-id="cf96a-130">Follow the general [setup instructions](./configure-connector.md).</span></span>
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 <!---## Troubleshooting-->
 <!---To be added-->
 
-## <a name="limitations"></a><span data-ttu-id="698ef-131">Einschränkungen</span><span class="sxs-lookup"><span data-stu-id="698ef-131">Limitations</span></span>
+## <a name="limitations"></a><span data-ttu-id="cf96a-131">Einschränkungen</span><span class="sxs-lookup"><span data-stu-id="cf96a-131">Limitations</span></span>
 
-<span data-ttu-id="698ef-132">Der MediaWiki-Connector hat in der Vorschauversion die folgenden Einschränkungen:</span><span class="sxs-lookup"><span data-stu-id="698ef-132">The MediaWiki connector has these limitations in the preview release:</span></span>
+<span data-ttu-id="cf96a-132">Der MediaWiki-Connector hat in der Vorschauversion die folgenden Einschränkungen:</span><span class="sxs-lookup"><span data-stu-id="cf96a-132">The MediaWiki connector has these limitations in the preview release:</span></span>
 
-* <span data-ttu-id="698ef-133">Unterstützt nur cloudbasierte Wikis.</span><span class="sxs-lookup"><span data-stu-id="698ef-133">Supports only cloud-based wikis.</span></span>
-* <span data-ttu-id="698ef-134">Unterstützt nur Basic oder OAuth 2.0 mit Azure Active Directory- oder Azure-Authentifizierung.</span><span class="sxs-lookup"><span data-stu-id="698ef-134">Supports only Basic or OAuth 2.0 with Azure Active Directory or Azure authentication.</span></span>
-* <span data-ttu-id="698ef-135">Unterstützt keine Namespaceauswahl für die Indizierung.</span><span class="sxs-lookup"><span data-stu-id="698ef-135">Doesn't support namespace selection for indexing.</span></span> <span data-ttu-id="698ef-136">Indiziert nur Main-, Category- und File-Namespaces.</span><span class="sxs-lookup"><span data-stu-id="698ef-136">Indexes only Main, Category, and File namespaces.</span></span>
-* <span data-ttu-id="698ef-137">Unterstützt keine Zugriffssteuerungslisten (Access Control Lists, ACLs).</span><span class="sxs-lookup"><span data-stu-id="698ef-137">Doesn't support Access Control Lists (ACLs).</span></span> <span data-ttu-id="698ef-138">Daher sind indizierte Seiten für alle Benutzer in der Organisation sichtbar.</span><span class="sxs-lookup"><span data-stu-id="698ef-138">Thus, indexed pages are visible to all users in the organization.</span></span>
+* <span data-ttu-id="cf96a-133">Unterstützt nur cloudbasierte Wikis.</span><span class="sxs-lookup"><span data-stu-id="cf96a-133">Supports only cloud-based wikis.</span></span>
+* <span data-ttu-id="cf96a-134">Unterstützt nur Basic oder OAuth 2.0 mit Azure Active Directory- oder Azure-Authentifizierung.</span><span class="sxs-lookup"><span data-stu-id="cf96a-134">Supports only Basic or OAuth 2.0 with Azure Active Directory or Azure authentication.</span></span>
+* <span data-ttu-id="cf96a-135">Unterstützt keine Namespaceauswahl für die Indizierung.</span><span class="sxs-lookup"><span data-stu-id="cf96a-135">Doesn't support namespace selection for indexing.</span></span> <span data-ttu-id="cf96a-136">Indiziert nur Main-, Category- und File-Namespaces.</span><span class="sxs-lookup"><span data-stu-id="cf96a-136">Indexes only Main, Category, and File namespaces.</span></span>
+* <span data-ttu-id="cf96a-137">Unterstützt keine Zugriffssteuerungslisten (Access Control Lists, ACLs).</span><span class="sxs-lookup"><span data-stu-id="cf96a-137">Doesn't support Access Control Lists (ACLs).</span></span> <span data-ttu-id="cf96a-138">Daher sind indizierte Seiten für alle Benutzer in der Organisation sichtbar.</span><span class="sxs-lookup"><span data-stu-id="cf96a-138">Thus, indexed pages are visible to all users in the organization.</span></span>

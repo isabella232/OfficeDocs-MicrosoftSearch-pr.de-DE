@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten des ServiceNow Graph-Connectors für Microsoft Search
-ms.openlocfilehash: eaf8014876b03c0b64c012cf7e83c4e4b84838b9
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 692170ef6f8332418efc7d56a56c6fa1b1cce76c
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508679"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031764"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -33,19 +33,19 @@ Dieser Artikel ist für jeden benutzer, der einen ServiceNow Graph-Connector kon
   
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph-Connectors im Microsoft 365 Admin Center
 
-Befolgen Sie die [allgemeinen Setupanweisungen](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Befolgen Sie die [allgemeinen Setupanweisungen](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-2-name-the-connection"></a>Schritt 2: Benennen der Verbindung
 
-Befolgen Sie die [allgemeinen Setupanweisungen](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Befolgen Sie die [allgemeinen Setupanweisungen](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-3-connection-settings"></a>Schritt 3: Verbindungseinstellungen
 
 Um eine Verbindung mit Ihren ServiceNow-Daten herzustellen, verwenden Sie die **DienstNow-Instanz-URL-Anmeldeinformationen** Ihrer Organisation für dieses Konto, die Client-ID und den Geheimen Clientgeheimnis für die OAuth-Authentifizierung.  
 
-Die **ServiceNow-Instanz-URL** Ihrer Organisation sieht in der Regel **https:// &lt; Ihrer-Organisation-Domäne>.service-now.com aus.** Zusammen mit dieser URL benötigen Sie ein Konto zum Einrichten der Verbindung zu ServiceNow und zum Zulassen, dass Microsoft Search die Artikel von ServiceNow basierend auf dem Aktualisierungszeitplan aktualisiert. Das Konto sollte mindestens über eine <em>Wissensrolle</em> verfügen. [Erfahren Sie, wie Sie Rollen für ServiceNow-Konten zuweisen.](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)
+Die **ServiceNow-Instanz-URL** Ihrer Organisation sieht in der Regel wie **https:// &lt; Ihrer-Organisation-Domäne>.service-now.com** aus. Zusammen mit dieser URL benötigen Sie ein Konto zum Einrichten der Verbindung zu ServiceNow und zum Zulassen, dass Microsoft Search die Artikel von ServiceNow basierend auf dem Aktualisierungszeitplan aktualisiert. Das Konto sollte mindestens über eine <em>Wissensrolle</em> verfügen. [Erfahren Sie, wie Sie Rollen für ServiceNow-Konten zuweisen.](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)
 
 >[!NOTE]
 >Wenn Sie Benutzer- und Gruppenidentitäten durchforsten möchten, um Zugriffsberechtigungen von Wissensartikeln in Microsoft Search-Ergebnissen zu berücksichtigen, sollte das Konto Zugriff auf die folgenden Tabelleneinträge in ServiceNow haben:
@@ -95,11 +95,11 @@ Führen Sie die folgenden Schritte aus, um Azure AD OpenID Connect für die Auth
 
 ## <a name="step-3a-register-a-new-application-in-azure-active-directory"></a>Schritt 3.a: Registrieren einer neuen Anwendung in Azure Active Directory
 
-Informationen zum Registrieren einer neuen Anwendung in Azure Active Directory finden Sie [unter Registrieren einer Anwendung](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#register-an-application). Wählen Sie Ein-Mandanten-Organisationsverzeichnis aus. Umleitungs-URI ist nicht erforderlich. Notieren Sie sich nach der Registrierung die Anwendungs-ID (Client)-ID und die Verzeichnis-ID (Mandant).
+Informationen zum Registrieren einer neuen Anwendung in Azure Active Directory finden Sie [unter Registrieren einer Anwendung](/azure/active-directory/develop/quickstart-register-app#register-an-application). Wählen Sie Ein-Mandanten-Organisationsverzeichnis aus. Umleitungs-URI ist nicht erforderlich. Notieren Sie sich nach der Registrierung die Anwendungs-ID (Client)-ID und die Verzeichnis-ID (Mandant).
 
 ## <a name="step-3b-create-a-client-secret"></a>Schritt 3.b: Erstellen eines geheimen Clientgeheimnis
 
-Weitere Informationen zum Erstellen eines geheimen Clientgeheimnis finden Sie unter [Creating a client secret](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-client-secret). Notieren Sie sich den geheimen Clientgeheimnis.
+Weitere Informationen zum Erstellen eines geheimen Clientgeheimnis finden Sie unter [Creating a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret). Notieren Sie sich den geheimen Clientgeheimnis.
 
 ## <a name="step-3c-retrieve-service-principal-object-identifier"></a>Schritt 3.c: Abrufen der Dienstprinzipalobjekt-ID
 
@@ -204,23 +204,23 @@ Wenn Sie **Nur** Personen mit Zugriff auf diese Datenquelle auswählen, müssen 
 >Der ServiceNow-Connector befindet sich in **der Vorschau,** wenn Sie Nur Personen mit **Zugriff auf diese Datenquelle auswählen.**
 
 >[!NOTE]
->Wenn Sie AAD als Typ der Identitätsquelle auswählen, stellen Sie sicher, dass Sie die UPN-Quelleigenschaft der E-Mail-Zieleigenschaft in ServiceNow zuweisen. Informationen zum Überprüfen oder Ändern Ihrer Zuordnungen finden Sie unter [Customizing user provisioning attribute-mappings for SaaS applications in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/app-provisioning/customize-application-attributes).
+>Wenn Sie AAD als Typ der Identitätsquelle auswählen, stellen Sie sicher, dass Sie die UPN-Quelleigenschaft der E-Mail-Zieleigenschaft in ServiceNow zuweisen. Informationen zum Überprüfen oder Ändern Ihrer Zuordnungen finden Sie unter [Customizing user provisioning attribute-mappings for SaaS applications in Azure Active Directory](/azure/active-directory/app-provisioning/customize-application-attributes).
 
 Wenn Sie eine ACL aus Ihrer ServiceNow-Instanz aufgenommen und "Nicht-AAD" für den Identitätstyp ausgewählt haben, finden Sie unter [Map your non-Azure AD Identities](map-non-aad.md) Anweisungen zum Zuordnen der Identitäten.
 
 ## <a name="step-6-assign-property-labels"></a>Schritt 6: Zuweisen von Eigenschaftsbezeichnungen
 
-Befolgen Sie die [allgemeinen Setupanweisungen](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Befolgen Sie die [allgemeinen Setupanweisungen](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-7-manage-schema"></a>Schritt 7: Verwalten des Schemas
 
-Befolgen Sie die [allgemeinen Setupanweisungen](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Befolgen Sie die [allgemeinen Setupanweisungen](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-8-choose-refresh-settings"></a>Schritt 8: Auswählen von Aktualisierungseinstellungen
 
-Befolgen Sie die [allgemeinen Setupanweisungen](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Befolgen Sie die [allgemeinen Setupanweisungen](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 >[!NOTE]
@@ -228,7 +228,7 @@ Befolgen Sie die [allgemeinen Setupanweisungen](https://docs.microsoft.com/micro
 
 ## <a name="step-9-review-connection"></a>Schritt 9: Überprüfen der Verbindung
 
-Befolgen Sie die [allgemeinen Setupanweisungen](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Befolgen Sie die [allgemeinen Setupanweisungen](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="troubleshooting"></a>Problembehandlung

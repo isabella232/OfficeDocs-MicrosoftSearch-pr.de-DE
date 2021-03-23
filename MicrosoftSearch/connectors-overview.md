@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Übersicht über Microsoft Graph-Connectors für Microsoft Search
-ms.openlocfilehash: 1b3ea74cf571b1b5a048695633f6b9f698a21bf5
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 2d49471c703b765f6e99324f39dbe730f6dea814
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508913"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031656"
 ---
 <!---Previous ms.author: monaray --->
 
 # <a name="overview-of-microsoft-graph-connectors"></a>Übersicht über Microsoft Graph-Connectors
 
-[Microsoft Search](https://docs.microsoft.com/microsoftsearch/overview-microsoft-search) indiziert alle [Ihre Microsoft 365-Daten,](https://www.microsoft.com/microsoft-365) damit sie für Benutzer durchsucht werden können. Mit Microsoft Graph-Connectors kann Ihre Organisation Drittanbieterdaten indizieren, sodass sie in den Microsoft-Suchergebnissen angezeigt werden. Dieses Feature erweitert die Typen von Inhaltsquellen, die in Ihren Microsoft 365-Produktivitäts-Apps durchsucht werden können, und das umfassendere Microsoft-Ökosystem. Die Drittanbieterdaten können lokal oder in öffentlichen oder privaten Clouds gehostet werden.
+[Microsoft Search](./overview-microsoft-search.md) indiziert alle [Ihre Microsoft 365-Daten,](https://www.microsoft.com/microsoft-365) damit sie für Benutzer durchsucht werden können. Mit Microsoft Graph-Connectors kann Ihre Organisation Drittanbieterdaten indizieren, sodass sie in den Microsoft-Suchergebnissen angezeigt werden. Dieses Feature erweitert die Typen von Inhaltsquellen, die in Ihren Microsoft 365-Produktivitäts-Apps durchsucht werden können, und das umfassendere Microsoft-Ökosystem. Die Drittanbieterdaten können lokal oder in öffentlichen oder privaten Clouds gehostet werden.
 
 <!---link Microsoft Graph reference in line 19 when we have access to relevant documentation--->
 
@@ -41,13 +41,13 @@ Dieser Artikel soll Microsoft 365-Administratoren dabei helfen, die Ressourcen z
 
 <!---Modify to another note that is more accurate after rollout completion--->
 > [!IMPORTANT]
-> Microsoft Graph-Connectors und Microsoft Search-APIs sind jetzt allgemein verfügbar. Die ersten Rollouts sind für Kunden, die für die gezielte Veröffentlichung konfiguriert sind. Wenn Sie einen Graph-Connector in Ihrem Mandanten verwenden möchten, müssen Sich Benutzer und Administratoren für die gezielte [Version entscheiden.](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365?view=o365-worldwide&preserve-view=true)
+> Microsoft Graph-Connectors und Microsoft Search-APIs sind jetzt allgemein verfügbar. Die ersten Rollouts sind für Kunden, die für die gezielte Veröffentlichung konfiguriert sind. Wenn Sie einen Graph-Connector in Ihrem Mandanten verwenden möchten, müssen Sich Benutzer und Administratoren für die gezielte [Version entscheiden.](/microsoft-365/admin/manage/release-options-in-office-365?preserve-view=true&view=o365-worldwide)
 
 <!---Add Value, scenario, example, and/or graphic in December updates--->
 <!---Probably remove architecture section below
 ## Architecture
 
-The following architectural diagram of the Microsoft Graph platform shows how Graph connector content flows through content indexing to user results in [Microsoft Search](https://docs.microsoft.com/microsoftsearch/overview-microsoft-search) clients. The rest of this section explains each of the key building blocks in the diagram.
+The following architectural diagram of the Microsoft Graph platform shows how Graph connector content flows through content indexing to user results in [Microsoft Search](./overview-microsoft-search.md) clients. The rest of this section explains each of the key building blocks in the diagram.
 
 ![Diagram: on-premises and cloud-based data is pulled by connectors and indexed by the Microsoft Search API, and then the Microsoft Search service delivers the results to users.](media/connectors-overview/highlevel-connectors.png)
 Graph connectors can pull data from cloud-based (SaaS) data sources and on-premises data stores. The above diagram shows connections to only two data sources, but you can add connections to up ten sources per tenant.
@@ -86,7 +86,7 @@ Der [Microsoft Graph-Connectorskatalog](connectors-gallery.md) enthält eine kur
 
 ### <a name="build-your-own-graph-connector"></a>Erstellen Eines eigenen Graph-Connectors
 
-Sie können einen eigenen Graph-Connector erstellen, wenn Sie dies bevorzugen. Weitere Informationen zum Erstellen von Graph-Connectors finden Sie unter Übersicht über die [Microsoft Search-API in Microsoft Graph](https://docs.microsoft.com/graph/search-concept-overview).
+Sie können einen eigenen Graph-Connector erstellen, wenn Sie dies bevorzugen. Weitere Informationen zum Erstellen von Graph-Connectors finden Sie unter Übersicht über die [Microsoft Search-API in Microsoft Graph](/graph/search-concept-overview).
 
 ## <a name="how-do-i-manage-my-connections"></a>Wie verwalte ich meine Verbindungen?
 
@@ -120,11 +120,11 @@ Es gibt viele Möglichkeiten zum Anpassen und Konfigurieren von Suchergebnissen.
 
 ## <a name="how-do-i-search-my-connector-data-from-a-custom-application"></a>Wie kann ich meine Connectordaten aus einer benutzerdefinierten Anwendung durchsuchen?
 
-Nachdem benutzerdefinierte Daten indiziert wurden, können Entwickler [diese Daten abfragen.](https://docs.microsoft.com/graph/search-concept-custom-types) Sie können Ihre Daten in einer beliebigen Anwendung anzeigen. Weitere Informationen finden Sie unter [Übersicht über die Microsoft Search-API in Microsoft Graph](https://docs.microsoft.com/graph/search-concept-overview).
+Nachdem benutzerdefinierte Daten indiziert wurden, können Entwickler [diese Daten abfragen.](/graph/search-concept-custom-types) Sie können Ihre Daten in einer beliebigen Anwendung anzeigen. Weitere Informationen finden Sie unter [Übersicht über die Microsoft Search-API in Microsoft Graph](/graph/search-concept-overview).
 
 ## <a name="how-do-i-customize-search-results"></a>Wie kann ich Suchergebnisse anpassen?
 
-Der nächste Schritt besteht im Anpassen der Suchergebnisse wie in diesem Artikel empfohlen. Wie kann ich [Suchergebnisse anpassen und konfigurieren?](#how-do-i-customize-and-configure-search-results). Weitere Informationen zum Anpassen von Suchergebnissen finden Sie unter [Customize the search results page](https://docs.microsoft.com/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page).
+Der nächste Schritt besteht im Anpassen der Suchergebnisse wie in diesem Artikel empfohlen. Wie kann ich [Suchergebnisse anpassen und konfigurieren?](#how-do-i-customize-and-configure-search-results). Weitere Informationen zum Anpassen von Suchergebnissen finden Sie unter [Customize the search results page](./configure-connector.md#next-steps-customize-the-search-results-page).
 
 ## <a name="what-are-the-connector-limitations"></a>Was sind die Connectoreinschränkungen?
 

@@ -1,5 +1,5 @@
 ---
-title: Verwalten des Such Felds in SharePoint-Websites
+title: Verwalten des Suchfelds auf SharePoint-Websites
 ms.author: keremy
 author: jeffkizn
 manager: parulm
@@ -11,24 +11,24 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Vorgehensweise Anpassen des Such Feld Erlebnisses auf SharePoint-Websites
-ms.openlocfilehash: 6ebd084aadb38acb5475b7e43d7c4092ffc09eb8
-ms.sourcegitcommit: c5fe4e01403379b3ee7ea4dbded8b31696311d79
+description: Anpassen der Suchfelderfahrung auf SharePoint-Websites
+ms.openlocfilehash: c58e7cf0a47d22fa9c6fd3abd93cc97087625690
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49700964"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031359"
 ---
-# <a name="search-box-settings-on-sharepoint-sites"></a>Such Feld Einstellungen auf SharePoint-Websites
+# <a name="search-box-settings-on-sharepoint-sites"></a>Suchfeldeinstellungen auf SharePoint-Websites
 
-Eine der verschiedenen Möglichkeiten, auf denen die Microsoft-Suche auf SharePoint-Websites angepasst werden kann, besteht darin, die Funktionsweise des Suchfelds in der Suite-Navigationsleiste auf SharePoint-Websites zu optimieren und Ihren Anforderungen optimal anzupassen.
+Eine der verschiedenen Möglichkeiten, mit der Microsoft Search auf SharePoint-Websites angepasst werden kann, besteht in der Anpassung der Funktionsweise des Suchfelds in der Suitennavigationsleiste auf SharePoint-Websites an Ihre Anforderungen.
 
-Weitere Anpassungsoptionen finden Sie unter [Ändern der Microsoft-Suchergebnisseite, um benutzerdefinierte vertikalen, Ergebnistypen und Layouts hinzuzufügen](customize-search-page.md)und [eine benutzerdefinierte Suchergebnisseite zu erstellen](create-search-results-pages.md).
+Weitere Anpassungsoptionen finden Sie unter Ändern der Microsoft Search-Ergebnisseite, um benutzerdefinierte [Vertikalen,](customize-search-page.md)Ergebnistypen und Layouts hinzuzufügen, und Erstellen einer benutzerdefinierten [Suchergebnissetseite](create-search-results-pages.md).
 
 > [!NOTE]
-> Das Suchfeld für die Suite-Navigationsleiste steht derzeit nicht für alle Kunden zur Verfügung, aber diese Optionen können jetzt noch festgelegt werden, und Sie werden wirksam, sobald Sie verfügbar sind.
+> Das Suchfeld suitenavigationsleiste ist derzeit nicht für alle Kunden verfügbar, aber diese Optionen können jetzt noch festgelegt werden und werden wirksam, wenn es verfügbar wird.
 
-Für die unten aufgeführten Aufgaben verwenden Sie PowerShell mit SharePoint PNP PowerShell-Erweiterungen. Sie können die ersten Schritte [hier](https://docs.microsoft.com/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets?view=sharepoint-ps)installieren und weitere Informationen dazu erhalten. Sie melden sich bei Ihrer Website oder Websitesammlung mit folgendem Befehl an:
+Für die unten aufgeführten Aufgaben verwenden Sie PowerShell mit SharePoint PnP PowerShell-Erweiterungen. Sie können hier installieren und mehr über die ersten Schritte [erfahren.](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets?view=sharepoint-ps) Mit diesem Befehl melden Sie sich bei Ihrer Website oder Websitesammlung an:
 
 ```powershell
 Connect-PnPOnline -Url <yoursiteurl> -UseWebLogin
@@ -37,32 +37,32 @@ Connect-PnPOnline -Url <yoursiteurl> -UseWebLogin
 
 ## <a name="changing-the-scope-of-search"></a>Ändern des Suchbereichs
 
-Wenn Sie eine neue Website in SharePoint Online heute erstellen und in das Suchfeld eingeben, gelangen Sie zur Microsoft-Suchergebnisseite. Auf dieser Seite werden die Ergebnisse Ihrer aktuellen Website standardmäßig angezeigt, und Sie können den Suchbereich auf den Hub erweitern, dem die aktuelle Website zugeordnet ist (sofern vorhanden), oder für die gesamte Organisation.
+Wenn Sie heute eine neue Website in SharePoint Online erstellen und in das Suchfeld eingeben, werden Sie zur Microsoft Search-Ergebnisseite weitergeleitet. Diese Seite zeigt standardmäßig Ergebnisse ihrer aktuellen Website und ermöglicht Es Ihnen, den Suchbereich auf den Hub zu erweitern, dem die aktuelle Website zugeordnet ist (sofern vorhanden), oder auf die gesamte Organisation.
 
-Der Bereich, den das Suchfeld verwendet, hängt standardmäßig vom Typ der Website ab.
+Der vom Suchfeld verwendete Bereich hängt standardmäßig vom Typ der Website ab.
 
-* Durchsuchen regulärer Websites über die aktuelle Website.
-* Hub-Standorte suchen über alle Standorte im Hub.
-* Home Websites-Suche über alle Inhalte.
+* Reguläre Websites suchen über die aktuelle Website.
+* Hubwebsites suchen über alle Websites im Hub.
+* Startseiten suchen über alle Inhalte.
 
-In einigen Fällen möchten Sie möglicherweise diese Standardwerte so ändern, dass Sie immer über die gesamte Organisation oder über den Hub hinweg suchen, dem eine Website zugeordnet ist, ohne dass ein zusätzlicher Mausklick erforderlich ist.
+In einigen Fällen können Sie diese Standardeinstellungen so ändern, dass sie immer über die gesamte Organisation oder über den Hub, dem eine Website zugeordnet ist, durchsucht werden, ohne dass sie einen zusätzlichen Klick benötigen.
 
-Als Websitebesitzer können Sie diese Standardeinstellungen mit dem folgenden Befehl ändern:
+Als Websitebesitzer können Sie diese Standardwerte mithilfe des folgenden Befehls ändern:
 
 ```powershell
 Set-PnPSearchSettings -SearchScope Tenant
 # DefaultScope | Hub | Site | Tenant
 ```
 
-Nachdem Sie diesen Befehl ausführen, zeigt die Website, auf der zuvor Ergebnisse der aktuellen Website standardmäßig angezeigt werden, die Ergebnisse der gesamten Organisation an.
+Nachdem Sie diesen Befehl ausgeführt haben, werden auf der Website, auf der zuvor standardmäßig Ergebnisse der aktuellen Website angezeigt wurden, Ergebnisse aus der gesamten Organisation angezeigt.
 
-Wenn Sie zur Standardeinstellung zurückkehren möchten, führen Sie den Befehl erneut mit dem Wert "DefaultScope" aus. Verwenden Sie "Hub" als SearchScope-Wert, um die Suche im Hub durchführen zu können.
+Um zur Standardeinstellung zurück zu wechseln, führen Sie den Befehl erneut mit dem Wert "DefaultScope" aus. Verwenden Sie zum Durchsuchen des Hubs "Hub" als SearchScope-Wert.
 
-Diese Einstellung gilt für die jeweilige Websiteebene. Für Websitesammlungen gibt es keine entsprechende Einstellung.
+Diese Einstellung gilt für die einzelnen Websiteebenen. Es gibt keine entsprechende Einstellung für Websitesammlungen.
 
-## <a name="show-or-hide-the-search-box"></a>Anzeigen oder Ausblenden des Suchfelds
+## <a name="show-or-hide-the-search-box"></a>Ein- oder Ausblenden des Suchfelds
 
-Sie können das Suchfeld der Suite-Navigationsleiste ausblenden, wenn Sie verhindern möchten, dass Ihre Benutzer suchen oder eine benutzerdefinierte Such Feld Implementierung verwenden.
+Sie können das Suchfeld der Suitenavigationsleiste ausblenden, wenn Sie verhindern möchten, dass Benutzer suchen oder eine benutzerdefinierte Suchfeldimplementierung verwenden.
 
 Verwenden Sie diesen Befehl, um diese Einstellung für eine bestimmte Website zu ändern:
 
@@ -71,31 +71,31 @@ Set-PnPSearchSettings -Scope Web -SearchBoxInNavBar Hidden
 # Hidden | Inherit
 ```
 
-Alternativ können Sie diesen Befehl verwenden, wenn Sie ihn für alle Websites in einer Websitesammlung festlegen möchten:
+Wenn Sie es für alle Websites in einer Websitesammlung festlegen möchten, können Sie den folgenden Befehl verwenden:
 
 ```powershell
 Set-PnPSearchSettings -Scope Site -SearchBoxInNavBar Hidden
 # Hidden | Inherit
 ```
 
-Nach dem Ausführen dieser Befehle wird das Suchfeld nicht mehr in der Navigationsleiste oben auf der Seite angezeigt. Wenn Sie zum Anzeigen des Suchfeld zurückkehren möchten, führen Sie die Befehle erneut aus, wobei der Wert für den Parameter "SearchBoxInNavBar" auf "Inherit" festgelegt ist.
+Nach dem Ausführen dieser Befehle wird das Suchfeld nicht mehr in der Navigationsleiste oben auf der Seite angezeigt. Um zum Anzeigen des Suchfelds zurück zu wechseln, führen Sie die Befehle erneut mit dem Wert aus, der für den Parameter "SearchBoxInNavBar" in "Inherit" angegeben ist.
 
-Es gibt mehrere Punkte, die beachtet werden sollten:
+Es gibt mehrere Punkte, die Sie berücksichtigen sollten:
 
-* Diese Einstellung gilt nur für das Suchfeld in der Suite-Navigationsleiste. Sie gilt nicht für Suchfelder auf der Seite oder für Suchfelder auf klassischen Seiten.
+* Diese Einstellung gilt nur für das Suchfeld in der Suitenavigationsleiste. Sie gilt nicht für Suchfelder, die sich auf der Seite befinden, oder für Suchfelder auf klassischen Seiten.
 
-* Wenn Sie das Suchfeld in der Navigationsleiste deaktiviert haben, müssen Sie es selbst mithilfe eines benutzerdefinierten Webparts oder einer SharePoint-Framework-Erweiterung bereitstellen, wenn Sie Suchfunktionen auf Ihrer Website benötigen.
+* Nachdem Sie das Suchfeld in der Navigationsleiste deaktiviert haben, müssen Sie es selbst mithilfe eines benutzerdefinierten Web teils oder einer SharePoint-Framework-Erweiterung bereitstellen, wenn Sie Suchfunktionen in Ihrer Website benötigen.
 
-* Mit dieser Lösung wird das Suchfeld auch aus Listen und Bibliotheken für Ihre Website entfernt. Ihre benutzerdefinierte Suchlösung muss neben der websiteweiten Suche auch kontextbezogene Suchvorgänge für SharePoint-Listen und-Bibliotheken in Frage stellen.
+* Mit dieser Lösung wird das Suchfeld auch aus Listen und Bibliotheken für Ihre Website entfernt. Ihre benutzerdefinierte Suchlösung muss neben der websiteweiten Suche auch kontextbezogene Suchen nach SharePoint-Listen und -Bibliotheken berücksichtigen.
 
-* Wenn Sie die Einstellung auf die Stammwebsite Ihrer Domäne anwenden, wird auch auf der SharePoint-Startseite das Suchfeld angezeigt.
+* Wenn Sie die Einstellung auf die Stammwebsite Ihrer Domäne anwenden, wird auf der SharePoint-Startseite auch das Suchfeld nicht mehr angezeigt.
 
-## <a name="changing-the-hint-displayed-in-the-search-box"></a>Ändern des in das Suchfeld angezeigten antipps
+## <a name="changing-the-hint-displayed-in-the-search-box"></a>Ändern des im Suchfeld angezeigten Hinweises
 
-Sie können den Hinweis ändern, der im Suchfeld für eine bestimmte Website oder Websitesammlung angezeigt wird. Dies ist der Text, der im Suchfeld angezeigt wird, bevor Sie mit der Eingabe beginnen. Dies kann dazu führen, dass Ihre Benutzer über die von der Suche erwarteten Ergebnisse erfahren, wenn Sie eine benutzerdefinierte Ergebnisseite oder ein geändertes Suchverhalten auf andere Weise konfiguriert haben.
+Sie können den Hinweis ändern, der im Suchfeld für eine bestimmte Website oder Websitesammlung angezeigt wird. Dies ist der Text, der im Suchfeld angezeigt wird, bevor sie mit der Eingabe beginnen. Dies kann Ihren Benutzern helfen, zu verstehen, was sie von der Suche erwarten können, wenn Sie eine benutzerdefinierte Ergebnisseite konfiguriert oder das Suchverhalten auf andere Weise geändert haben.
 
 > [!NOTE]
-> Um diese Änderung vornehmen zu können, müssen Sie das Ausführen benutzerdefinierter Skripts auf der fraglichen Website als mandantenadministrator zulassen, was standardmäßig nicht zulässig ist. Weitere Informationen finden Sie unter https://docs.microsoft.com/sharepoint/allow-or-prevent-custom-script . Sie können das Ausführen benutzerdefinierter Skripts zulassen, die Änderung vornehmen und dann bei Bedarf zu nicht zulässigen Skripts für die Website zurückkehren.
+> Um diese Änderung ausführen zu können, müssen Sie die Ausführung von benutzerdefinierten Skripts auf der in Frage 2013 in Frage gestellten Website als Mandantenadministrator zulassen, was standardmäßig nicht zulässig ist. Weitere Informationen https://docs.microsoft.com/sharepoint/allow-or-prevent-custom-script finden Sie unter. Sie können das Ausführen von benutzerdefinierten Skripts zulassen, die Änderung ausführen und dann bei Bedarf auf nicht zulässige Skripts für die Website zurücksetzen.
 
 Führen Sie den folgenden Befehl aus, um diese Einstellung für eine bestimmte Website zu ändern:
 
@@ -103,10 +103,10 @@ Führen Sie den folgenden Befehl aus, um diese Einstellung für eine bestimmte W
 Set-PnPSearchSettings -Scope Web -SearchBoxPlaceholderText "my placeholder" 
 ```
 
-Alternativ können Sie diesen Befehl verwenden, wenn Sie ihn für alle Websites in einer Websitesammlung festlegen möchten:
+Wenn Sie es für alle Websites in einer Websitesammlung festlegen möchten, können Sie den folgenden Befehl verwenden:
 
 ```powershell
 Set-PnPSearchSettings -Scope Site -SearchBoxPlaceholderText "my placeholder" 
 ```
 
-Wenn Sie zum Standardplatz Halter Text zurückkehren möchten, legen Sie den Wert auf leer ("") fest.
+Um zum Standardplatzhaltertext zurück zu wechseln, legen Sie den Wert auf leer ("") festgelegt.

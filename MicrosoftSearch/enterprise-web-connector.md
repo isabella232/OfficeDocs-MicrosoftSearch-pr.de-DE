@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten des Graph-Connectors für Unternehmenswebsites für Microsoft Search
-ms.openlocfilehash: b0ed7cc4148dba6c7555fcf7c9c930184cdbc24c
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 42c3f0a80b21e23bb625db06c4f9e89f2c10de4a
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508796"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031629"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -39,17 +39,17 @@ Dieser Artikel ist für jeden benutzer, der einen Connector für Unternehmensweb
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph-Connectors im Microsoft 365 Admin Center
 
-Befolgen Sie die [allgemeinen Setupanweisungen](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Befolgen Sie die [allgemeinen Setupanweisungen](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-2-name-the-connection"></a>Schritt 2: Benennen der Verbindung
 
-Befolgen Sie die [allgemeinen Setupanweisungen](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Befolgen Sie die [allgemeinen Setupanweisungen](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-3-configure-the-connection-settings"></a>Schritt 3: Konfigurieren der Verbindungseinstellungen
 
-Um eine Verbindung mit Ihrer Datenquelle herzustellen, müssen Sie die Stamm-URL der Website eingeben, eine Durchforstungsquelle und den Authentifizierungstyp auswählen, den Sie verwenden möchten: Keine, Standardauthentifizierung oder OAuth 2.0 mit [Azure Active Directory (Azure AD).](https://docs.microsoft.com/azure/active-directory/) Nachdem Sie diese Informationen abgeschlossen haben, wählen Sie Verbindung testen aus, um Ihre Einstellungen zu überprüfen.
+Um eine Verbindung mit Ihrer Datenquelle herzustellen, müssen Sie die Stamm-URL der Website eingeben, eine Durchforstungsquelle und den Authentifizierungstyp auswählen, den Sie verwenden möchten: Keine, Standardauthentifizierung oder OAuth 2.0 mit [Azure Active Directory (Azure AD).](/azure/active-directory/) Nachdem Sie diese Informationen abgeschlossen haben, wählen Sie Verbindung testen aus, um Ihre Einstellungen zu überprüfen.
 
 ### <a name="url"></a>URL
 
@@ -62,7 +62,7 @@ Verwenden Sie das Feld URL, um den Stamm der Website anzugeben, die Sie durchfor
 
 Der Durchforstungsmodus bestimmt den Typ der Websites, die Sie indizieren möchten, entweder in der Cloud oder lokal. Wählen Sie für Ihre Cloudwebsites **Cloud** als Durchforstungsmodus aus.
 
-Darüber hinaus unterstützt der Connector jetzt das Crawlen von lokalen Websites. Dieser Modus befindet sich in der Vorschau. Um auf Ihre lokalen Daten zu zugreifen, müssen Sie zuerst den Graph-Connector-Agent installieren und konfigurieren. Weitere Informationen finden Sie unter [Graph Connector Agent](https://docs.microsoft.com/microsoftsearch/on-prem-agent).
+Darüber hinaus unterstützt der Connector jetzt das Crawlen von lokalen Websites. Dieser Modus befindet sich in der Vorschau. Um auf Ihre lokalen Daten zu zugreifen, müssen Sie zuerst den Graph-Connector-Agent installieren und konfigurieren. Weitere Informationen finden Sie unter [Graph Connector Agent](./on-prem-agent.md).
 
 Wählen Sie für Ihre lokalen Websites **Agent** als Durchforstungsmodus aus, und wählen Sie im Feld **On-Prem Agent** den Graph-Connector-Agent aus, den Sie zuvor installiert und konfiguriert haben.  
 
@@ -73,16 +73,16 @@ Wählen Sie für Ihre lokalen Websites **Agent** als Durchforstungsmodus aus, un
 
 Die Standardauthentifizierung erfordert einen Benutzernamen und ein Kennwort. Erstellen Sie dieses Botkonto mithilfe des [Microsoft 365 Admin Centers](https://admin.microsoft.com).
 
-OAuth 2.0 mit [Azure AD](https://docs.microsoft.com/azure/active-directory/) erfordert eine Ressourcen-ID, Eine Client-ID und einen geheimen Clientgeheimnis. OAuth 2.0 funktioniert nur im Cloudmodus.
+OAuth 2.0 mit [Azure AD](/azure/active-directory/) erfordert eine Ressourcen-ID, Eine Client-ID und einen geheimen Clientgeheimnis. OAuth 2.0 funktioniert nur im Cloudmodus.
 
-Weitere Informationen finden Sie unter [Authorize access to Azure Active Directory web applications using OAuth 2.0 code grant flow](https://docs.microsoft.com/azure/active-directory/develop/v1-protocols-oauth-code). Registrieren Sie sich mit den folgenden Werten:
+Weitere Informationen finden Sie unter [Authorize access to Azure Active Directory web applications using OAuth 2.0 code grant flow](/azure/active-directory/develop/v1-protocols-oauth-code). Registrieren Sie sich mit den folgenden Werten:
 
 **Name:** Microsoft Search <br/>
 **Redirect_URI:**`https://gcs.office.com/v1.0/admin/oauth/callback`
 
 Um die Werte für die Ressource, client_id und client_secret abzurufen, wechseln Sie zu Verwenden des Autorisierungscodes zum Anfordern eines Zugriffstokens auf der Umleitungs-URL-Webseite. 
 
-Weitere Informationen finden Sie unter [Schnellstart: Registrieren einer](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)Anwendung bei der Microsoft Identity Platform .
+Weitere Informationen finden Sie unter [Schnellstart: Registrieren einer](/azure/active-directory/develop/quickstart-register-app)Anwendung bei der Microsoft Identity Platform .
 
 ## <a name="step-3a-add-urls-to-exclude-optional-crawl-restrictions"></a>Schritt 3a: Hinzufügen von auszuschließender URLs (Optionale Durchforstungseinschränkungen)
 
@@ -114,12 +114,12 @@ Der Connector für Unternehmenswebsites unterstützt nur eine vollständige Aktu
 
 ## <a name="step-8-review-connection"></a>Schritt 8: Überprüfen der Verbindung
 
-Befolgen Sie die [allgemeinen Setupanweisungen](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Befolgen Sie die [allgemeinen Setupanweisungen](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
-Beim Lesen des Inhalts der Website kann bei der Durchforstung einige Quellfehler auftreten, die durch die unten aufgeführten detaillierten Fehlercodes dargestellt werden. Um weitere Informationen zu den Fehlertypen  zu erhalten, wechseln Sie zur Seite Fehlerdetails, nachdem Sie die Verbindung ausgewählt haben. Wählen Sie den **Fehlercode aus,** um ausführlichere Fehler zu sehen. Weitere Informationen [finden Sie unter Manage your connector.](https://docs.microsoft.com/microsoftsearch/manage-connector)
+Beim Lesen des Inhalts der Website kann bei der Durchforstung einige Quellfehler auftreten, die durch die unten aufgeführten detaillierten Fehlercodes dargestellt werden. Um weitere Informationen zu den Fehlertypen  zu erhalten, wechseln Sie zur Seite Fehlerdetails, nachdem Sie die Verbindung ausgewählt haben. Wählen Sie den **Fehlercode aus,** um ausführlichere Fehler zu sehen. Weitere Informationen [finden Sie unter Manage your connector.](./manage-connector.md)
 
  Detaillierter Fehlercode | Fehlermeldung
  --- | ---

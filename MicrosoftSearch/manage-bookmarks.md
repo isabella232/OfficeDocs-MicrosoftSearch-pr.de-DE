@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Erstellen und Aktualisieren von Lesezeichen und Möglichkeiten zum Massenbearbeitung von Lesezeichenergebnissen für Microsoft Search
-ms.openlocfilehash: b801e75f772a585c2ddfedd09aff3b74c1d909b5
-ms.sourcegitcommit: 2f770de12b27546b18b2e86517d2c25522eb9022
+ms.openlocfilehash: e8488146a041e7165596dafff8012adfa1122341
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929607"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031728"
 ---
 # <a name="manage-bookmarks"></a>Verwalten von Lesezeichen
 
@@ -160,4 +160,4 @@ Ein Lesezeichen kann mehrere Schlüsselwörter enthalten und dasselbe Schlüssel
 
 **F: Wo finde ich die App-ID für eine Power App?**
 
-**A:** Wechseln Sie zur Power Apps-Website, und zeigen Sie den Detailbereich für die App an. Erfahren Sie mehr über [das Abrufen einer App-ID](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id).
+**A:** Wechseln Sie zur Power Apps-Website, und zeigen Sie den Detailbereich für die App an. Erfahren Sie mehr über [das Abrufen einer App-ID](/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id).

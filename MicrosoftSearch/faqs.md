@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erhalten Sie Antworten auf häufig gestellte Fragen zur Unternehmenssuche und zu Microsoft Search
-ms.openlocfilehash: abaa1a232b08ba586dd6cd777f7e54c323159dee
-ms.sourcegitcommit: aa7774d2bdff2bd9e1b7f51fcda90fa6b0c3a5ca
+ms.openlocfilehash: 98128297047d50e2d418a8ed062066ab9e86749e
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49867378"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031620"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 # <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
@@ -29,9 +29,9 @@ Nachfolgend finden Sie eine Liste der am häufigsten gestellten Fragen.
 
 ## <a name="is-advanced-query-understanding-supported"></a>Wird das Verstehen von erweiterten Abfragen unterstützt?
 
-Ja, Microsoft Search analysiert die Abfrageabsicht aus größeren Ausdrücken. Dieses Feature verwendet KI, um allgemeine überflüssige Ausdrücke zu erlernen, die Benutzer zu ihren Abfragen hinzufügen, die sich nicht auf ihre Suchabsicht auswirken. Wenn ein Benutzer z. B. nach informationen zum Ändern meines Kennworts *sucht,* extrahieren wir die weniger wichtigen Wörter aus der Abfrage und lösen sie basierend auf den relevanten Wörtern wie Kennwortänderung *aus.*
+Ja, Microsoft Search analysiert Abfrageabsichten aus größeren Ausdrücken. Dieses Feature verwendet KI, um allgemeine überflüssige Ausdrücke zu lernen, die Benutzer zu ihren Abfragen hinzufügen, die sich nicht auf ihre Suchabsicht auswirken. Wenn ein Benutzer z. B. nach weiteren Informationen zum Ändern meines Kennworts *sucht,* extrahieren wir die weniger wichtigen Wörter aus der Abfrage und lösen sie basierend auf den relevanten Wörtern wie Änderungskennwort *aus.*
   
-Mit diesem Feature werden im [Microsoft 365 Admin Center](https://admin.microsoft.com)festgelegte Schlüsselwörter nicht überschrieben.
+Dieses Feature überschreibt die im [Microsoft 365 Admin Center](https://admin.microsoft.com)festgelegten Schlüsselwörter nicht.
   
 ## <a name="can-you-search-for-files-on-premises"></a>Können Sie nach lokalen Dateien suchen?
 
@@ -47,15 +47,15 @@ Hier sind die Anweisungen zum Festlegen der Standardsuchmaschine, der Standardho
 
 ## <a name="how-are-my-search-results-protected"></a>Wie werden meine Suchergebnisse geschützt?
 
-Für den Zugriff auf Ergebnisse aus der vertrauenswürdigen Cloud ist die [Azure Active](https://docs.microsoft.com/azure/active-directory/) Directory-Authentifizierung erforderlich. Authentifizierten Benutzern werden nur Inhalte angezeigt, auf die sie Zugriff haben. Suchabfragen werden nicht identifiziert, und Protokolle werden vom öffentlichen [Bing](https://Bing.com) -Suchdatenverkehr getrennt, wenn Sie Microsoft Search in Bing verwenden.
+Wir benötigen [die Azure Active Directory-Authentifizierung,](/azure/active-directory/) um auf Ergebnisse aus der vertrauenswürdigen Cloud zu zugreifen. Authentifizierten Benutzern werden nur Inhalte angezeigt, auf die sie Zugriff haben. Suchabfragen werden nicht identifiziert, und Protokolle [](https://Bing.com) werden vom öffentlichen Bing-Suchdatenverkehr getrennt, wenn Sie Microsoft Search in Bing verwenden.
 
 ## <a name="can-i-search-across-federated-organizations"></a>Kann ich in Verbundorganisationen suchen?
 
 Nein.
 
-## <a name="where-can-i-get-info-about-office-365-security-compliance-and-privacy"></a>Wo finde ich Informationen zu Sicherheit, Compliance und Datenschutz in Office 365?
+## <a name="where-can-i-get-info-about-office-365-security-compliance-and-privacy"></a>Wo kann ich Informationen zu Sicherheit, Compliance und Datenschutz von Office 365 erhalten?
 
-Details finden Sie auf den Seiten des [Trust Centers für Office 365.](https://www.microsoft.com/TrustCenter/CloudServices/office365/default.aspx)
+Details finden Sie auf den [Seiten des Trust Center für Office 365](https://www.microsoft.com/TrustCenter/CloudServices/office365/default.aspx).
 
 ## <a name="can-users-earn-microsoft-rewards-points-with-their-work-or-school-account"></a>Können Benutzer mit Ihrem Geschäfts-, Schul- oder Unikonto Microsoft Rewards-Punkte erwerben?
 
@@ -63,4 +63,4 @@ Microsoft Search setzt voraus, dass Unternehmensbenutzer sich mit einem Geschäf
 
 ## <a name="can-guest-users-leverage-microsoft-search-in-my-organization"></a>Können Gastbenutzer Microsoft Search in meiner Organisation nutzen?
 
-Microsoft 365 ermöglicht eine umfassende Zusammenarbeit mit Personen außerhalb Ihrer Organisation durch [Gastzugriff.](https://docs.microsoft.com/microsoft-365/solutions/collaborate-with-people-outside-your-organization) Diese Benutzer können Suchvorgänge für Dokumente, Websites, Gruppen, Listen und Bibliotheken ausführen. Gastbenutzer erhalten jedoch nicht die vollständige, personalisierte Microsoft Search-Erfahrung und müssen möglicherweise das auf der Seite angezeigte Suchfeld anstelle des einheitlichen Microsoft Search-Felds in der Kopfzeile nutzen.
+Microsoft 365 ermöglicht eine umfassende Zusammenarbeit mit Personen außerhalb Ihrer Organisation über [den Gastzugriff.](/microsoft-365/solutions/collaborate-with-people-outside-your-organization) Diese Benutzer können Suchvorgänge für Dokumente, Websites, Gruppen, Listen und Bibliotheken ausführen. Gastbenutzer erhalten jedoch nicht die vollständige, personalisierte Microsoft Search-Erfahrung und müssen möglicherweise das Auf-Seite-Suchfeld anstelle des einheitlichen Microsoft Search-Felds in der Kopfzeile nutzen.

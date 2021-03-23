@@ -12,66 +12,66 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
-description: Verwalten der Anzeige von Power BI-Berichten und-Daten in Suchergebnissen
-ms.openlocfilehash: e78b8b5d22f7a91d80832fb4f5b536afc277fb6c
-ms.sourcegitcommit: 7294c953e7939e48f128656cc2f8f22705ae3f3d
+description: Verwalten, wie Power BI-Berichte und -Daten in Suchergebnissen angezeigt werden
+ms.openlocfilehash: 3d67f79cce2392f949541690879ffb9202d79060
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49773045"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031440"
 ---
 # <a name="manage-power-bi-answers"></a>Verwalten von Power BI-Antworten
 
-Damit Ihre Benutzer die Daten und Analysen leichter finden können, die Sie für fundierte Entscheidungen benötigen, bietet Microsoft Search Unterstützung für Power BI-Dashboards und-Berichte. Im folgenden finden Sie einige der Vorteile der Power BI-Suche:
+Damit Ihre Benutzer die Daten und Analysen leichter finden können, die sie benötigen, um fundierte Entscheidungen zu treffen, hat Microsoft Search Unterstützung für Power BI-Dashboards und -Berichte hinzugefügt. Hier sind einige der Vorteile der Power BI-Suche:
 
-* **Einfach zu verwenden:** Diese Out-of-Box-Suchumgebung hilft Benutzern, schnell und einfach Power BI-Dashboards und-Berichte in Ihrer Organisation zu finden.
-* **Umfassendere Inhalte:** Damit Power BI-Suchergebnisse nützlicher sind, umfassen Sie wichtige Informationen wie den Inhaltstyp – Dashboard oder Bericht – sowie das Team oder die Person, die es besitzt.
+* **Einfach zu verwenden:** Diese out-of-box-Sucherfahrung hilft Benutzern, Power BI-Dashboards und Berichte in Ihrer Organisation einfach und schnell zu finden.
+* **Reichhaltigere Inhalte:** Um power BI-Suchergebnisse nützlicher zu machen, enthalten sie wichtige Informationen wie die Art des Inhalts (Dashboard oder Bericht) und das Team oder die Person, die der Benutzer ist.
 * **Integrierter Datenschutz:** Power BI-Ergebnisse werden nur für Benutzer angezeigt, die Zugriff auf das Dashboard oder den Bericht haben.
-* **Einheitliche Suchumgebung:** Um eine kohärente Erfahrung beizubehalten, sind Power BI-Ergebnisse für alle Such Einstiegspunkte konsistent. Überall dort, wo Sie suchen, erhalten Sie dieselben Ergebnisse mit dem gleichen Aussehen und Verhalten.
+* **Einheitliche Sucherfahrung:** Um ein einheitliches Erlebnis zu erhalten, sind die Power BI-Ergebnisse für alle Sucheingabepunkte konsistent. Unabhängig davon, wo Sie suchen, erhalten Sie dieselben Ergebnisse mit dem gleichen Aussehen und Gefühl.
 
-## <a name="what-users-experience"></a>Benutzererfahrung
+## <a name="what-users-experience"></a>Benutzererfahrungen
 
-Microsoft Search-Benutzer können Power BI-Ergebnisse suchen, indem Sie über das Windows-Suchfeld, SharePoint, Office 365 und Bing suchen. Benutzer können nach Berichten und Dashboards mit solchen Abfragen suchen:
+Microsoft Search-Benutzer können Power BI-Ergebnisse finden, indem sie im Windows-Suchfeld, in SharePoint, Office 365 und Bing suchen. Benutzer können mit Abfragen wie den folgenden nach Berichten und Dashboards suchen:
 
-* Power BI-Informationen `<topic>`
+* Power BI über `<topic>`
 * Power BI für `<topic>`
 * `<topic>` Power BI-Dashboard oder Power BI-Dashboard `<topic>`
 * `<topic>` Power BI-Bericht oder Power BI-Bericht `<topic>`
 * `<topic>` Power BI-Metriken oder Power BI-Metriken `<topic>`
 * `<topic>` Power BI-Scorecard oder Power BI-Scorecard `<topic>`
 
-Ersetzen `<topic>` Sie in den obigen Beispielen die Informationen, die Sie benötigen, wie Vertrieb, Nutzung, Kapazität, 2021, Q1 und mehr, um die relevanten Ergebnisse von Power BI anzuzeigen.
+Ersetzen Sie in den obigen Beispielen durch die gesuchten Informationen, z. B. `<topic>` Vertrieb, Nutzung, Kapazität, 2021, Q1 und mehr, um relevante Ergebnisse von Power BI zu sehen.
 
-:::image type="content" source="media/powerbi-answers/powerbi-serp.png" alt-text="Screenshot einer SERP mit Power BI Answers und Vertical" border="true":::
+:::image type="content" source="media/powerbi-answers/powerbi-serp.png" alt-text="Screenshot einer SERP mit Power BI-Antworten und vertikal" border="true":::
 
 ## <a name="turn-power-bi-search-on-or-off"></a>Aktivieren oder Deaktivieren der Power BI-Suche
 
-Power BI-Ergebnisse werden standardmäßig für Ihre Organisation aktiviert. Ihr Power BI-Administrator kann Sie jederzeit deaktivieren. Wechseln Sie im Power BI-Verwaltungsportal zu Mandanten Einstellungen, und deaktivieren Sie die Einstellung **globale Suche für Power BI verwenden** . Weitere Informationen finden Sie unter [Verwalten von Power BI im Administratorportal](https://docs.microsoft.com/power-bi/admin/service-admin-portal#use-global-search-for-power-bi-preview).
+Power BI-Ergebnisse sind standardmäßig für Ihre Organisation aktiviert. Ihr Power BI-Administrator kann sie jederzeit deaktivieren. Wechseln Sie im Power BI Admin-Portal zu Mandanteneinstellungen, und deaktivieren Sie die Einstellung Globale **Suche für Power BI** verwenden. Weitere Informationen finden Sie [unter Administering Power BI im Admin Portal](/power-bi/admin/service-admin-portal#use-global-search-for-power-bi-preview).
 
 :::image type="content" source="media/powerbi-answers/powerbi-admin.png" alt-text="Screenshot der Einstellung zum Aktivieren oder Deaktivieren von Power BI-Antworten" border="true":::
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
-**F.: ist die Power BI-Suche standardmäßig aktiviert?**
+**F: Ist die Power BI-Suche standardmäßig aktiviert?**
 
-**A:** Ja. Die Power BI-Suche ist standardmäßig für Microsoft Search aktiviert. Für dieses Feature ist kein Erstmaliges Setup für den mandantenadministrator erforderlich.
+**A:** Ja. Die Power BI-Suche ist für Microsoft Search standardmäßig aktiviert. Der Mandantenadministrator ist nicht zum ersten Mal für dieses Feature erforderlich.
 
-**F.: kann die Power BI-Suche für bestimmte Gruppen oder Benutzer aktiviert oder deaktiviert werden?**
+**F: Kann die Power BI-Suche für bestimmte Gruppen oder Benutzer aktiviert oder deaktiviert werden?**
 
-**A:** Derzeit kann es nur für die gesamte Organisation aktiviert oder deaktiviert werden.
+**A:** Derzeit kann sie nur für Ihre gesamte Organisation aktiviert oder deaktiviert werden.
 
-**F.: Wenn die Power BI-Suche deaktiviert ist, wird die Power BI-Suchergebnisseite ausgeblendet?**
+**F: Wenn die Power BI-Suche deaktiviert ist, ist die Power BI-Suchergebnisseite ausgeblendet?**
 
-**A:** Nein. Die Power BI-Suchergebnisseite wird mit einer Meldung angezeigt, in der die Benutzer darüber informiert werden, dass Sie derzeit nicht für Ihre Organisation verfügbar sind.
+**A:** Nein. Die Power BI-Suchergebnisseite wird mit einer Meldung angezeigt, in der Benutzer darüber informiert werden, dass sie derzeit nicht für ihre Organisation verfügbar ist.
 
-**F.: wird die Power BI-Suchergebnisseite angezeigt, wenn ich keine Power BI-Lizenz habe?**
+**F: Wird die Power BI-Suchergebnisseite angezeigt, wenn ich keine Power BI-Lizenz habe?**
 
 **A:** Nein. Wenn ein Suchbenutzer keine Power BI-Lizenz besitzt, wird die Power BI-Suchergebnisseite nicht in den Microsoft-Suchergebnissen angezeigt.
 
-**F.: werden die Power BI-Suchergebnisse angezeigt, auf die ich nicht zugreifen kann?**
+**F: Werden Power BI-Suchergebnisse angezeigt, auf die ich nicht zugreifen kann?**
 
 **A:** Nein. Microsoft Search gibt nur Power BI-Ergebnisse zurück, auf die Sie Zugriff haben.
 
-**F.: kann ich die Power BI-Suchergebnisse anpassen (beispielsweise den Berichtstyp oder den Berichts Besitzer)?**
+**F: Kann ich die Power BI-Suchergebnisse anpassen (z. B. den Berichtstyp oder den Berichtsbesitzer)?**
 
-**A:** Derzeit wird das Anpassen der in Power BI-Suchergebnisse enthaltenen Felder nicht unterstützt.
+**A:** Derzeit wird das Anpassen der in den Power BI-Suchergebnissen enthaltenen Felder nicht unterstützt.

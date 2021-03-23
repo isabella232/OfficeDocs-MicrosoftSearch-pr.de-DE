@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten des Salesforce Graph-Connectors für Microsoft Search
-ms.openlocfilehash: 86140a4650593e08188f171be54f1753b73ecf7a
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 59cc321a40655a1c1e5edf615dd43a2a56c8ddbc
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508823"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031683"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -81,17 +81,17 @@ Sie können nun das [M365 Admin Center](https://admin.microsoft.com/) verwenden,
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph-Connectors im Microsoft 365 Admin Center
 
-Befolgen Sie die [allgemeinen Setupanweisungen](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Befolgen Sie die [allgemeinen Setupanweisungen](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-2-name-the-connection"></a>Schritt 2: Benennen der Verbindung
 
-Befolgen Sie die [allgemeinen Setupanweisungen](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Befolgen Sie die [allgemeinen Setupanweisungen](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-3-configure-the-connection-settings"></a>Schritt 3: Konfigurieren der Verbindungseinstellungen
 
-Verwenden Sie für die Instanz-URL https://[domain].my.salesforce.com, wobei Domäne die #A0 für Ihre Organisation wäre.
+Verwenden Sie für die Instanz-URL https://[domäne].my.salesforce.com, wobei Domäne die #A0 für Ihre Organisation wäre.
 
 Geben Sie die Client-ID und den geheimen Clientgeheimnis ein, die Sie von Ihrer Salesforce-Instanz erhalten haben, und wählen Sie Anmelden aus.
 
@@ -125,7 +125,7 @@ Wenn Sie eine ACL aus Ihrer Salesforce-Instanz aufgenommen und "Nicht-AAD" für 
 
 ## <a name="step-4b-map-aad-identities"></a>Schritt 4b: Zuordnung von AAD-Identitäten
 
-Wenn Sie eine ACL aus Ihrer Salesforce-Instanz aufgenommen und "AAD" für den Identitätstyp ausgewählt haben, finden Sie unter [Map your Azure AD Identities](map-aad.md) Anweisungen zum Zuordnen der Identitäten. Informationen zum Einrichten von Azure AD SSO für Salesforce finden Sie in diesem [Lernprogramm](https://docs.microsoft.com/azure/active-directory/saas-apps/salesforce-tutorial).
+Wenn Sie eine ACL aus Ihrer Salesforce-Instanz aufgenommen und "AAD" für den Identitätstyp ausgewählt haben, finden Sie unter [Map your Azure AD Identities](map-aad.md) Anweisungen zum Zuordnen der Identitäten. Informationen zum Einrichten von Azure AD SSO für Salesforce finden Sie in diesem [Lernprogramm](/azure/active-directory/saas-apps/salesforce-tutorial).
 
 ## <a name="step-5-assign-property-labels"></a>Schritt 5: Zuweisen von Eigenschaftsbezeichnungen
 
@@ -150,7 +150,7 @@ Der empfohlene Zeitplan ist eine Woche für eine vollständige Durchforstung.
 
 ## <a name="step-8-review-connection"></a>Schritt 8: Überprüfen der Verbindung
 
-Befolgen Sie die [allgemeinen Setupanweisungen](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Befolgen Sie die [allgemeinen Setupanweisungen](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 <!---## Troubleshooting-->
@@ -166,7 +166,7 @@ Befolgen Sie die [allgemeinen Setupanweisungen](https://docs.microsoft.com/micro
     - Url
     - Beschreibung
     - Fax
-    - Phone
+    - Telefon
     - MobilePhone
     - E-Mail senden
     - Typ

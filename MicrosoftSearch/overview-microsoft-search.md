@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Verschaffen Sie sich einen Überblick darüber, was Microsoft Search ist, welche Vorteile sie bietet und welche Apps Microsoft Search unterstützen.
-ms.openlocfilehash: a7250bccd3f77eb3ad2f3c91bdfd176a2141fd98
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 23bc07766bd5fb00bed21c7e739b22e7d1333630
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508814"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031782"
 ---
 # <a name="overview-of-microsoft-search"></a>Übersicht über Microsoft Search 
 
@@ -68,7 +68,7 @@ Als Administrator können Sie eine großartige Microsoft Search-Erfahrung für I
 
 ## <a name="what-content-is-searched"></a>Welche Inhalte durchsucht werden
 
-Microsoft Search zeigt die Inhalte an, die Ihre Organisation in Microsoft 365 gespeichert oder über Connectors indiziert hat. Microsoft Search sucht nicht mandantenübergreifend oder zeigt keine Ergebnisse aus Inhalten an, die von anderen Organisationen gemeinsam genutzt werden. Wenn Ihre Organisation eine Hybrid-SharePoint-Umgebung mithilfe der Cloudhybridsuche eingerichtet hat, gibt Microsoft Search Suchergebnisse aus online- und lokalen SharePoint-Inhalten zurück, einschließlich externer Inhalte, die Sie mit Ihrer SharePoint Server-Umgebung verbunden haben. [Weitere Informationen zu hybriden Suchumgebungen](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint).
+Microsoft Search zeigt die Inhalte an, die Ihre Organisation in Microsoft 365 gespeichert oder über Connectors indiziert hat. Microsoft Search sucht nicht mandantenübergreifend oder zeigt keine Ergebnisse aus Inhalten an, die von anderen Organisationen gemeinsam genutzt werden. Wenn Ihre Organisation eine Hybrid-SharePoint-Umgebung mithilfe der Cloudhybridsuche eingerichtet hat, gibt Microsoft Search Suchergebnisse aus online- und lokalen SharePoint-Inhalten zurück, einschließlich externer Inhalte, die Sie mit Ihrer SharePoint Server-Umgebung verbunden haben. [Weitere Informationen zu hybriden Suchumgebungen](/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint).
 
 Benutzer erhalten dieselben Suchergebnisse, die sie von anderen Speicherorten erhalten, und sie erhalten auch Ergebnisse aus dem Internet.
 

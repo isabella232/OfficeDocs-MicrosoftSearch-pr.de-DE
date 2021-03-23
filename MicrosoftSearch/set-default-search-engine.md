@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: ee40010e-5d7f-4ba8-a3f8-d240dab3af6d
 description: Erfahren Sie, wie Sie Bing als Standardsuchmaschine Ihres Unternehmens für Microsoft Search festlegen.
-ms.openlocfilehash: 1ac2f23a8263c01901e252e7dd830e7373380669
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 346bf3bf2da10178a8bd19390920db2d9de2629e
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508670"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031755"
 ---
 # <a name="make-bing-the-default-search-engine"></a>Festlegen von Bing als Standardsuchmaschine
   
@@ -30,7 +30,7 @@ Auch wenn Sie Bing als Standardsuchmaschine festgelegt haben, können Benutzer u
   
 Die neuesten ADMX-Dateien für verschiedene Windows-Versionen finden Sie unter [Erstellen und Verwalten des zentralen Speichers für administrative Vorlagen für Gruppenrichtlinien unter Windows](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra).
   
-Wenn die in diesem Abschnitt beschriebene Einstellung nicht in der GPMC gefunden werden kann, laden Sie die entsprechende ADMX herunter, und kopieren Sie sie in den zentralen Speicher. Weitere Informationen finden Sie unter [Editing Domain-Based GPOs Using ADMX Files](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29). Der zentrale Speicher auf dem Controller ist ein Ordner mit der folgenden **Benennungskonvention: %systemroot%\sysvol \\<Domäne \> \policies\PolicyDefinitions**
+Wenn die in diesem Abschnitt beschriebene Einstellung nicht in der GPMC gefunden werden kann, laden Sie die entsprechende ADMX herunter, und kopieren Sie sie in den zentralen Speicher. Weitere Informationen finden Sie unter [Editing Domain-Based GPOs Using ADMX Files](/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29). Der zentrale Speicher auf dem Controller ist ein Ordner mit der folgenden **Benennungskonvention: %systemroot%\sysvol \\<Domäne \> \policies\PolicyDefinitions**
   
 Jede Domäne, die Ihr Controller verarbeitet, sollte einen separaten Ordner erhalten. Mit dem folgenden Befehl kann die ADMX-Datei aus der Befehlszeile kopiert werden:
   
@@ -48,7 +48,7 @@ Benutzer können die Standardsuchmaschine nicht mehr ändern, nachdem diese Rich
   
 Chrome verfügt über einen eigenen Satz von Gruppenrichtlinieneinstellungen, die in Form einer ADMX-Datei aus der [Google Chrome Enterprise-Hilfe heruntergeladen werden können.](https://support.google.com/chrome/a/answer/187202)
   
-Kopieren Sie die Vorlagendatei in einen zentralen Speicher für ADMX-Dateien auf dem Domänencontroller. Weitere Informationen finden Sie unter [Editing Domain-Based GPOs Using ADMX Files](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29). Der zentrale Speicher auf dem Controller ist ein Ordner mit der folgenden **Benennungskonvention: %systemroot%\sysvol \\<Domäne \> \policies\PolicyDefinitions**
+Kopieren Sie die Vorlagendatei in einen zentralen Speicher für ADMX-Dateien auf dem Domänencontroller. Weitere Informationen finden Sie unter [Editing Domain-Based GPOs Using ADMX Files](/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29). Der zentrale Speicher auf dem Controller ist ein Ordner mit der folgenden **Benennungskonvention: %systemroot%\sysvol \\<Domäne \> \policies\PolicyDefinitions**
   
 Jede Domäne, die Ihr Controller verarbeitet, sollte einen separaten Ordner erhalten. Mit dem folgenden Befehl kann die ADMX-Datei aus der Befehlszeile kopiert werden:
   

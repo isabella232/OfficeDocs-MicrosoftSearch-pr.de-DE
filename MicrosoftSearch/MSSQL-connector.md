@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Richten Sie den Azure SQL- und Microsoft SQL Graph-Connector für Microsoft Search ein.
-ms.openlocfilehash: 499c0fad93f97e634086ff9025d947c4f70336fb
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 81951dab058a14d687f81f7611ee624b079f0822
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508904"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031404"
 ---
 <!---Previous ms.author: vivg --->
 
@@ -40,13 +40,13 @@ Um auf Ihre lokalen Drittanbieterdaten zugreifen zu können, müssen Sie den Gra
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph-Connectors im Microsoft 365 Admin Center
 
-Befolgen Sie die [allgemeinen Setupanweisungen](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Befolgen Sie die [allgemeinen Setupanweisungen](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
 ## <a name="step-2-name-the-connection"></a>Schritt 2: Benennen der Verbindung
 
-Befolgen Sie die [allgemeinen Setupanweisungen](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Befolgen Sie die [allgemeinen Setupanweisungen](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
@@ -54,9 +54,9 @@ instructions.-->
 
 ### <a name="register-an-app-for-azure-sql-connector-only"></a>Registrieren einer App (nur für Azure SQL Connector)
 
-Für Azure SQL Connector müssen Sie eine App in Azure Active Directory registrieren, damit die Microsoft Search-App auf Daten für die Indizierung zugreifen kann. Weitere Informationen zum Registrieren einer App finden Sie in der Microsoft Graph-Dokumentation zum Registrieren [einer App.](https://docs.microsoft.com/graph/auth-register-app-v2)
+Für Azure SQL Connector müssen Sie eine App in Azure Active Directory registrieren, damit die Microsoft Search-App auf Daten für die Indizierung zugreifen kann. Weitere Informationen zum Registrieren einer App finden Sie in der Microsoft Graph-Dokumentation zum Registrieren [einer App.](/graph/auth-register-app-v2)
 
-Nachdem Sie die App-Registrierung abgeschlossen und den App-Namen, die Anwendungs-ID (client) und die Mandanten-ID notiert haben, müssen Sie einen neuen geheimen [Clientgeheimnis generieren.](https://docs.microsoft.com/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret) Der geheime Clientgeheimnis wird nur einmal angezeigt. Denken Sie daran, & den Geheimen Clientgeheimnis sicher zu speichern. Verwenden Sie die Client-ID und den geheimen Clientgeheimnis, während Sie eine neue Verbindung in Microsoft Search konfigurieren.
+Nachdem Sie die App-Registrierung abgeschlossen und den App-Namen, die Anwendungs-ID (client) und die Mandanten-ID notiert haben, müssen Sie einen neuen geheimen [Clientgeheimnis generieren.](/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret) Der geheime Clientgeheimnis wird nur einmal angezeigt. Denken Sie daran, & den Geheimen Clientgeheimnis sicher zu speichern. Verwenden Sie die Client-ID und den geheimen Clientgeheimnis, während Sie eine neue Verbindung in Microsoft Search konfigurieren.
 
 Zum Hinzufügen der registrierten App zu Ihrer Azure SQL-Datenbank müssen Sie:
 
@@ -66,7 +66,7 @@ Zum Hinzufügen der registrierten App zu Ihrer Azure SQL-Datenbank müssen Sie:
 - Hinzufügen eines Benutzers zur Rolle durch Ausführen des Befehls "exec sp_addrolemember db_datareader", [App-Name]" oder "ALTER ROLE db_datareader ADD MEMBER [App-Name]"
 
 >[!NOTE]
->Informationen zum Widerrufen des Zugriffs auf alle in Azure Active Directory registrierten Apps finden Sie in der Azure-Dokumentation zum Entfernen [einer registrierten App.](https://docs.microsoft.com/azure/active-directory/develop/quickstart-remove-app)
+>Informationen zum Widerrufen des Zugriffs auf alle in Azure Active Directory registrierten Apps finden Sie in der Azure-Dokumentation zum Entfernen [einer registrierten App.](/azure/active-directory/develop/quickstart-remove-app)
 
 ### <a name="connection-settings"></a>Verbindungseinstellungen
 
@@ -77,7 +77,7 @@ Um Ihren Microsoft SQL-Serverconnector mit einer Datenquelle zu verbinden, müss
 
 Für den Azure SQL müssen Sie nur den Servernamen oder die IP-Adresse angeben, mit dem Sie eine Verbindung herstellen möchten. Azure SQL Connector unterstützt nur die Azure Active Directory Open ID Connect (OIDC)-Authentifizierung, um eine Verbindung mit der Datenbank herzustellen.
 
-Für zusätzliche Sicherheit können Sie IP-Firewallregeln für Ihre Azure-SQL oder Datenbank konfigurieren. Weitere Informationen zum Einrichten von IP-Firewallregeln finden Sie in der Dokumentation zu [IP-Firewallregeln.](https://docs.microsoft.com/azure/azure-sql/database/firewall-configure) Fügen Sie die folgenden Client-IP-Bereiche in den Firewalleinstellungen hinzu.
+Für zusätzliche Sicherheit können Sie IP-Firewallregeln für Ihre Azure-SQL oder Datenbank konfigurieren. Weitere Informationen zum Einrichten von IP-Firewallregeln finden Sie in der Dokumentation zu [IP-Firewallregeln.](/azure/azure-sql/database/firewall-configure) Fügen Sie die folgenden Client-IP-Bereiche in den Firewalleinstellungen hinzu.
 
 | Region | IP-Bereich |
 | ------------ | ------------ |
@@ -115,17 +115,17 @@ Die Verwendung der einzelnen ACL-Spalten in der obigen Abfrage wird unten beschr
 
 ### <a name="supported-data-types"></a>Unterstützte Datentypen
 
-In der folgenden Tabelle sind die SQL aufgeführt, die in ms SQL und Azure SQL werden. In der Tabelle wird auch der Indizierungsdatentyp für den unterstützten SQL zusammengefasst. Weitere Informationen zu von Microsoft Graph Connectors unterstützten Datentypen für die Indizierung finden Sie in der Dokumentation zu [Eigenschaftenressourcentypen](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties&preserve-view=true).
+In der folgenden Tabelle sind die SQL aufgeführt, die in ms SQL und Azure SQL werden. In der Tabelle wird auch der Indizierungsdatentyp für den unterstützten SQL zusammengefasst. Weitere Informationen zu von Microsoft Graph Connectors unterstützten Datentypen für die Indizierung finden Sie in der Dokumentation zu [Eigenschaftenressourcentypen](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties).
 
 | Kategorie | Quelldatentyp | Indizierungsdatentyp |
 | ------------ | ------------ | ------------ |
 | Datum und Uhrzeit | date <br> Datum/Uhrzeit <br> datetime2 <br> smalldatetime | Datum/Uhrzeit |
 | Exakt numerisch | bigint <br> int <br> smallint <br> tinyint | int64 |
-| Exakt numerisch | bit | Boolescher Wert |
+| Exakt numerisch | bit | boolean |
 | Ungefähre numerische Zahlen | Gleitkommazahl <br> real | double |
 | Zeichenfolge | char <br> varchar <br> text | string |
-| Unicode-Zeichenzeichenfolgen | nchar <br> nvarchar <br> ntext | Zeichenfolge |
-| Andere Datentypen | uniqueidentifier | Zeichenfolge |
+| Unicode-Zeichenzeichenfolgen | nchar <br> nvarchar <br> ntext | string |
+| Andere Datentypen | uniqueidentifier | string |
 
 Für alle anderen Datentypen, die derzeit nicht direkt unterstützt werden, muss die Spalte explizit in einen unterstützten Datentyp umg castt werden.
 
@@ -174,14 +174,14 @@ Die Komponenten in der folgenden Abbildung ähneln den vollständigen Durchforst
 
 ## <a name="step-4-assign-property-labels"></a>Schritt 4: Zuweisen von Eigenschaftsbezeichnungen
 
-Befolgen Sie die [allgemeinen Setupanweisungen](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Befolgen Sie die [allgemeinen Setupanweisungen](./configure-connector.md).
 
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
 ## <a name="step-5-manage-schema"></a>Schritt 5: Verwalten des Schemas
 
-Befolgen Sie die [allgemeinen Setupanweisungen](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Befolgen Sie die [allgemeinen Setupanweisungen](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
@@ -191,13 +191,13 @@ Sie können die im vollständigen Durchforstungsbildschirm angegebenen [ACLs](#f
 
 ## <a name="step-7-choose-refresh-settings"></a>Schritt 7: Auswählen von Aktualisierungseinstellungen
 
-Befolgen Sie die [allgemeinen Setupanweisungen](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Befolgen Sie die [allgemeinen Setupanweisungen](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
 ## <a name="step-8-review-connection"></a>Schritt 8: Überprüfen der Verbindung
 
-Befolgen Sie die [allgemeinen Setupanweisungen](https://docs.microsoft.com/microsoftsearch/configure-connector).
+Befolgen Sie die [allgemeinen Setupanweisungen](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 

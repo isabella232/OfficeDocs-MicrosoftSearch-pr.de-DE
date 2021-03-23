@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Setupübersicht für Graph-Connectors von Microsoft
-ms.openlocfilehash: e97b930f627a6336cc93b3a1f33e390cae4ff0aa
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 5c674f6b9253af1145be983e5713f65be1c2b022
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508873"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031377"
 ---
 <!-- Previous ms.author: monaray -->
 
@@ -81,13 +81,13 @@ Die Verbindungs-ID erstellt implizite Eigenschaften für Den Connector. Sie darf
 
 Der Vorgang zum Konfigurieren der Verbindungseinstellungen variiert je nach Datenquellentyp. Informationen zum Typ der Datenquelle, die Sie Ihrem Mandanten hinzufügen möchten, finden Sie in den connectorspezifischen Informationen, um diesen Schritt im Setupvorgang abzuschließen.  
 
-Weitere Informationen zum Herstellen einer Verbindung mit einer lokalen Datenquelle finden Sie unter [Install an on-premises data gateway](https://aka.ms/configuregateway).
+Weitere Informationen zum Herstellen einer Verbindung mit einer lokalen Datenquelle finden Sie unter [Install an on-premises data gateway](/data-integration/gateway/service-gateway-install).
 
 ## <a name="step-4-manage-search-permissions"></a>Schritt 4: Verwalten von Suchberechtigungen
 
 Zugriffssteuerungslisten (Access Control Lists, ACLs) bestimmen, welche Benutzer in Ihrer Organisation auf jedes Datenelement zugreifen können.  
 
-Einige Connectors wie [Microsoft SQL](MSSQL-connector.md) und Azure Data Lake [Storage Gen2](azure-data-lake-connector.md) unterstützen [nativ Azure Active Directory (Azure AD)-ACLs.](https://docs.microsoft.com/azure/active-directory/)
+Einige Connectors wie [Microsoft SQL](MSSQL-connector.md) und Azure Data Lake [Storage Gen2](azure-data-lake-connector.md) unterstützen [nativ Azure Active Directory (Azure AD)-ACLs.](/azure/active-directory/)
 
 Andere Connectors wie [ServiceNow,](servicenow-connector.md) [Azure DevOps](azure-devops-connector.md)und [Salesforce](salesforce-connector.md) unterstützen die Synchronisierung von Nicht-Azure AD-Benutzern und -Gruppen.  
 
@@ -204,4 +204,4 @@ Sehen Sie sich die connectorspezifischen Informationen für Ihre Datenquelle an,
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Nach der Veröffentlichung der Verbindung müssen Sie die Suchergebnissetseite anpassen. Weitere Informationen zum Anpassen von Suchergebnissen finden Sie unter [Customize the search results page](https://docs.microsoft.com/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page).
+Nach der Veröffentlichung der Verbindung müssen Sie die Suchergebnissetseite anpassen. Weitere Informationen zum Anpassen von Suchergebnissen finden Sie unter [Customize the search results page](#next-steps-customize-the-search-results-page).

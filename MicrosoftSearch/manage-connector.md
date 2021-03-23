@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Verwalten von Microsoft Graph Connectors für Microsoft Search.
-ms.openlocfilehash: 1c152f23e9b9d9982b957830d5f4bef0eef41347
-ms.sourcegitcommit: 2f770de12b27546b18b2e86517d2c25522eb9022
+ms.openlocfilehash: cba50d8eb558b4d74ed46554dc155d4f275b1332
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929585"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031719"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -61,7 +61,7 @@ Das verfügbare Indexkontingent und der verfügbare Verbrauch werden auf der Ang
  
 >[!NOTE]
 >Während des Vorschauzeitraums wurde jeder Organisation, die Graph-Connectors ausprobieren, ein kostenloses festes Kontingent von bis zu 2 Millionen Elementen für alle Verbindungen bereitgestellt. Da Graph-Connectors allgemein verfügbar sind, läuft das kostenlose Kontingent am 1. April 2021 für organisationen ab, die Graph-Connectors in der Vorschau verwendet haben.
->Von Microsoft erstellten Graph-Connectors, die als ["Vorschau"](connectors-preview.md) gekennzeichnet sind, werden nicht in das insgesamt berechnete Indexkontingent für Ihre Organisation einbezogen. Es wird jedoch auf die maximale Anzahl von 10 Verbindungen angezählt, die Sie für Ihre Organisation konfigurieren können, und die maximale Anzahl von 7 Millionen Elementen, die Ihre Organisation über Verbindungen indizieren kann. Jede Verbindung ist auf 700.000 Elemente beschränkt. 
+>Von Microsoft erstellten Graph-Connectors, die als ["Vorschau"](./connectors-overview.md) gekennzeichnet sind, werden nicht in das insgesamt berechnete Indexkontingent für Ihre Organisation einbezogen. Es wird jedoch auf die maximale Anzahl von 10 Verbindungen angezählt, die Sie für Ihre Organisation konfigurieren können, und die maximale Anzahl von 7 Millionen Elementen, die Ihre Organisation über Verbindungen indizieren kann. Jede Verbindung ist auf 700.000 Elemente beschränkt. 
 
 Die Kontingentauslastungsleiste gibt verschiedene Zustände basierend auf dem Verbrauch von Kontingenten durch Ihre Organisation an:
 

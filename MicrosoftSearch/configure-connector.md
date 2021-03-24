@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Setupübersicht für Graph-Connectors von Microsoft
-ms.openlocfilehash: 5c674f6b9253af1145be983e5713f65be1c2b022
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 169e78fd4a0148d8bb4e52968b2efd785045806e
+ms.sourcegitcommit: 08a7086185d28df14b06d1f7fdfbb1637288f7a5
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031377"
+ms.locfileid: "51042583"
 ---
 <!-- Previous ms.author: monaray -->
 
@@ -204,4 +204,4 @@ Sehen Sie sich die connectorspezifischen Informationen für Ihre Datenquelle an,
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Nach der Veröffentlichung der Verbindung müssen Sie die Suchergebnissetseite anpassen. Weitere Informationen zum Anpassen von Suchergebnissen finden Sie unter [Customize the search results page](#next-steps-customize-the-search-results-page).
+Nach der Veröffentlichung der Verbindung müssen Sie die Suchergebnissetseite anpassen. Weitere Informationen zum Anpassen von Suchergebnissen finden Sie unter [Customize the search results page](customize-search-page.md).

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Übersicht über Microsoft Graph-Connectors für Microsoft Search
-ms.openlocfilehash: 2d49471c703b765f6e99324f39dbe730f6dea814
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 77f145f58cf06e49f88af25bcb4d28cfa7d2bd56
+ms.sourcegitcommit: 08a7086185d28df14b06d1f7fdfbb1637288f7a5
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031656"
+ms.locfileid: "51042574"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -124,7 +124,7 @@ Nachdem benutzerdefinierte Daten indiziert wurden, können Entwickler [diese Dat
 
 ## <a name="how-do-i-customize-search-results"></a>Wie kann ich Suchergebnisse anpassen?
 
-Der nächste Schritt besteht im Anpassen der Suchergebnisse wie in diesem Artikel empfohlen. Wie kann ich [Suchergebnisse anpassen und konfigurieren?](#how-do-i-customize-and-configure-search-results). Weitere Informationen zum Anpassen von Suchergebnissen finden Sie unter [Customize the search results page](./configure-connector.md#next-steps-customize-the-search-results-page).
+Der nächste Schritt besteht im Anpassen der Suchergebnisse wie in diesem Artikel empfohlen. Wie kann ich [Suchergebnisse anpassen und konfigurieren?](#how-do-i-customize-and-configure-search-results). Weitere Informationen zum Anpassen von Suchergebnissen finden Sie unter [Customize the search results page](customize-search-page.md).
 
 ## <a name="what-are-the-connector-limitations"></a>Was sind die Connectoreinschränkungen?
 

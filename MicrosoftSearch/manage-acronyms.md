@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Erstellen und Aktualisieren von Akronymantworten in Microsoft Search
-ms.openlocfilehash: 5677ff6915c9e43e2559964c40086cb360a05db7
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 013510da28599f41c9dc4bf74da99efa2f6c3e97
+ms.sourcegitcommit: 62cb7b8c6a311760cc728f2c70a9a22ca76e977e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031368"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408714"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Verwalten von Akronymantworten in Microsoft Search
 
 Benutzer werden häufig in nicht vertraute Akronyme und Abkürzungen bzw. Abkürzungen ihrer Organisation oder ihres Teams bzw. Teams ausgeführt. Spezifisch für Organisationen oder Teams sind möglicherweise neue Bedingungen für Personen, die von einem Team in ein anderes wechseln, mit internen Partnerteams arbeiten oder neu in der Organisation sind.
 
-Organisationen verfügen nicht immer über einen einzigen Verweis für ihre Standardterminologie. Das Fehlen eines einzigen Verweises macht es schwierig, Definitionen oder Erweiterungen für diese Akronyme zu finden. Microsoft Search löst dieses Problem mit Akronymen.
+Organisationen verfügen nicht immer über einen einzigen Verweis für ihre Standardterminologie. Das Fehlen eines einzelnen Verweises macht es schwierig, Definitionen für diese Akronyme zu finden. Microsoft Search löst dieses Problem mit Akronymen.
 
 ## <a name="what-users-experience"></a>Benutzererfahrungen
 
@@ -36,6 +36,7 @@ Microsoft Search-Benutzer können Definitionen mit Akronymen in [Bing,](https://
 - DNN-Erweiterung 
 - *Bedeutung von* DNN
 - DNN *bedeutet*
+- DNN *steht für*
 
 Das Ergebnis enthält alle Bedeutungen von DNN, die in der Organisation des Benutzers vorhanden sind.
 
@@ -49,7 +50,7 @@ Wechseln Sie [im Microsoft 365 Admin Center](https://admin.microsoft.com)zu [**A
 Microsoft Search fragt zwei Datenquellen ab, um Akronyme Antworten auf die Suchanfragen von Benutzern zu geben:
 
 1. **Admin-curated**. Bereitgestellt von IT-Administratoren im [Admin Center](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms).
-2. **Vom System kuratiert**. Von Microsoft Search aus E-Mails und Dokumenten von Benutzern und öffentlich verfügbaren Daten innerhalb der Organisation ermittelt.
+2. **Vom System kuratiert**. Von Microsoft Search aus E-Mails und Dokumenten von Benutzern sowie öffentlich verfügbaren Daten innerhalb der Organisation ermittelt.
 
 ### <a name="set-up-admin-curated-acronyms"></a>Einrichten von von Administratoren kuratierten Akronymen
 
@@ -62,19 +63,21 @@ Suchadministratoren können Akronyme auf der Registerkarte [Akronyme](https://ad
 
 **Entwurfszustand**. Wenn Sie ein Akronym überprüfen möchten, bevor Sie es in Microsoft Search verfügbar machen, können Sie das Akronym in einem Entwurfsstatus hinzufügen. Akronyme im Entwurfszustand werden in den Suchergebnissen nicht angezeigt. Sie müssen das Akronym in den Status Veröffentlicht verschieben, damit es in den Suchergebnissen angezeigt wird.
 
+**Ausgeschlossener Status**. Wenn Sie verhindern möchten, dass ein Akronym in Microsoft Search angezeigt wird, verwenden Sie **Ein Akronym** ausschließen, um es hinzuzufügen. Um zu verhindern, dass ein Akronym ausgeschlossen wird, müssen Sie das ausgeschlossene Akronym löschen und es hinzufügen oder überprüfen, ob es in Der veröffentlichten Liste enthalten ist.
+
 Sie können Akronyme einzeln oder massenimportieren in eine CSV-Datei hinzufügen. Laden Sie eine CSV-Datei mit den in der folgenden Tabelle angezeigten Feldern hoch:
 
-| Akronym (verpflichtend) | Erweiterung (verpflichtend) | Url | Beschreibung  | Status (verpflichtend) | Last Modified | Zuletzt geändert von | Id |
+| Akronym (verpflichtend) | Steht für (Verpflichtend) | Url | Beschreibung  | Status (verpflichtend) | Last Modified | Zuletzt geändert von | Id |
 | --------- | --------- | --------- | ---------- | --------- |--------- |--------- |--------- |
-| *XXX* | *Kurzschreibkürzung* | *Quelle* |  | *Veröffentlicht oder Entwurf* |  |  |  |
+| *XXX* | *Kurzschreibkürzung* | *Quelle* |  | *Veröffentlicht, Entwurf oder Ausgeschlossen* |  |  |  |
 
 ### <a name="csv-fields"></a>CSV-Felder
 
 **Akronym**. Enthält das tatsächliche Kurzformular oder Akronym. Ein Beispiel ist *DNN*.
 
-**Erweiterung**. Enthält die Erweiterung des Akronyms. Ein Beispiel ist *Deep Neural Network*.
+**Steht für**. Enthält die Definition des Akronyms. Ein Beispiel ist *Deep Neural Network*.
 
-**Beschreibung**. Eine kurze Beschreibung des Akronyms, das Benutzern mehr Informationen über das Akronym und dessen Erweiterung bietet. Ein tiefes neurales Netzwerk ist beispielsweise ein neurales Netzwerk mit einer bestimmten Komplexität, ein neurales Netzwerk mit mehr *als zwei Ebenen.*
+**Beschreibung**. Eine kurze Beschreibung des Akronyms, das Benutzern mehr Informationen über das Akronym und seine Definition bietet. Ein tiefes neurales Netzwerk ist beispielsweise ein neurales Netzwerk mit einer bestimmten Komplexität, ein neurales Netzwerk mit mehr *als zwei Ebenen.*
 
 **Quelle**. Die URL der Seite oder Website, auf der Benutzer weitere Informationen zum Akronym erhalten möchten.
 
@@ -82,6 +85,7 @@ Sie können Akronyme einzeln oder massenimportieren in eine CSV-Datei hinzufüge
 
 - **Entwurf**. Fügt das Akronym zum Entwurfszustand hinzu.
 - **Veröffentlicht** Fügt das Akronym dem Status Veröffentlicht hinzu und stellt es in Microsoft Search zur Verfügung.
+- **Ausgeschlossen.** Fügt das Akronym dem Status Ausgeschlossen hinzu und verhindert, dass es in Microsoft Search angezeigt wird.
 
 ### <a name="system-curated-acronyms"></a>Vom System kuratierte Akronyme
 
@@ -94,7 +98,7 @@ Es kann eine Herausforderung für Administratoren sein, antworten alle in einer 
 Microsoft Search stellt sicher, dass nur Benutzer mit Zugriff und Berechtigungen für ein Dokument die Akronyme sehen können, die aus dem Dokument erkannt werden. Wenn ein Akronym im Postfach eines Benutzers gefunden wird, kann nur dieser Benutzer dieses Akronym sehen.
 
 > [!NOTE]
-> Für vom Administrator kuratierte Akronyme ist keine Einrichtung erforderlich.
+> Für vom System kuratierte Akronyme ist keine Einrichtung erforderlich.
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
@@ -104,7 +108,7 @@ Microsoft Search stellt sicher, dass nur Benutzer mit Zugriff und Berechtigungen
 
 **F: Wie lange dauert es, bis von Administratoren kuratierte Akronyme in Microsoft Search angezeigt werden, nachdem sie veröffentlicht wurden?**
 
-**A:**  Es dauert bis zu drei Tage, bis Akronyme, die dem Status Veröffentlicht hinzugefügt wurden, in Microsoft Search verfügbar werden.
+**A:**  Es dauert bis zu einem Tag, bis Akronyme, die dem Status Veröffentlicht hinzugefügt wurden, in Microsoft Search verfügbar werden.
 
 **F: Wie lösen Benutzer Akronymantworten aus?**
 
@@ -114,13 +118,21 @@ Microsoft Search stellt sicher, dass nur Benutzer mit Zugriff und Berechtigungen
 
 **A:** Akronyme, die in einer neuen E-Mail oder einem neuen Dokument gefunden werden, dauern bis zu sieben Tage, bis sie in den Microsoft-Suchergebnissen angezeigt werden.
 
-**F: Müssen Dokumente in einem bestimmten Format für das Mining verwendet werden, um sie zu erhalten?**
+**F: Was geschieht, wenn ein Akronym ausgeschlossen und veröffentlicht wird?**
+
+**A:** Das ausgeschlossene Akronym hat Priorität und verhindert, dass das veröffentlichte Akronym in suchergebnissen angezeigt wird. Das veröffentlichte Akronym wird nicht gelöscht oder entfernt.
+
+**F: Wie lange dauert es, bis ein Akronym aus den Microsoft-Suchergebnissen ausgeschlossen wird?**
+
+**A**: Es dauert bis zu einem Tag, bis ein ausgeschlossenes Akronym nicht mehr in den Suchergebnissen angezeigt wird.
+
+**F: Müssen Dokumente für vom System kuratierte Akronyme ein bestimmtes Format haben?**
 
 **A:** Nein. Wir unterstützen alle Dateitypen mit Ausnahme von Bild-, Ordner- und ZIP-Dateien.
 
 **F: Wird Microsoft Akronyme aus Dokumenten in allen Sprachen ermitteln?**
 
-**A:** Microsoft unterstützt nur das Mining von Dokumenten in Englisch. Unterstützung für andere Sprachen wird in Phasen hinzugefügt.
+**A:** Microsoft unterstützt nur vom System kuratierte Akronyme aus Dokumenten in Englisch, Spanisch, Französisch, Italienisch, Deutsch und Portugiesisch. Unterstützung für andere Sprachen wird in Phasen hinzugefügt.
 
 **F: Was passiert, wenn meine Organisation keine vom System kuratierten Akronyme anzeigen möchte? Kann ich diese Art von Akronym nicht mehr in meinen Suchergebnissen anzeigen?**
 

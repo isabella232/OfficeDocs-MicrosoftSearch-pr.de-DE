@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lizenzanforderungen und Preise für Microsoft Graph Connectors Öffentliche Vorschau für Microsoft Search
-ms.openlocfilehash: efee543ff864b72e39df228ac2c577d911ff31e4
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 23eed2c107b8b0ee04d772b3d2a77fb5db9c1902
+ms.sourcegitcommit: 62cb7b8c6a311760cc728f2c70a9a22ca76e977e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508778"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408705"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -38,7 +38,7 @@ Zum Indizieren von Inhalten mithilfe von Graph-Connectors benötigen Sie ein aus
 
 ## <a name="entitlement-built-into-microsoft-365-or-office-365-e5-licenses"></a>Berechtigung in Microsoft 365- oder Office 365 E5-Lizenzen
 
-Der Microsoft 365 E5- oder Office 365 E5-Lizenztyp umfasst die Berechtigung auf 500 Indexkontingente, die zum Kontingent Ihrer Organisation für die Aufnahme von Inhalten von Graph-Connectors zählen.
+Der Microsoft 365 E5- oder Office 365 E5-Lizenztyp umfasst die Berechtigung auf 500 Indexkontingente, die zum Kontingent Ihrer Organisation für die Aufnahme von Inhalten von Graph-Connectors zählen. Beachten Sie, dass dies nicht in Microsoft 365 A5 oder Office 365 A5 enthalten ist.
 
 Wenn Ihre Organisation beispielsweise über 100 Microsoft 365 E5-Lizenzen verfügt, hat Ihre Organisation 100 x 500 = 50.000 Elemente im Wert des Graph Connectors-Indexkontingents.
 

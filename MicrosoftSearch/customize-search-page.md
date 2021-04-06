@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Hinzufügen von Such vertikalen und Anpassen von Suchergebnissen
-ms.openlocfilehash: 75dd6193308f52e7bfbb787d8f8dc27def834751
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: c6104383698203fde48d217506da57941efa680f
+ms.sourcegitcommit: 0aca0a5c9152b1b5e8345c91edadfae0b30f57c8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031647"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587739"
 ---
 # <a name="customize-the-search-results-page"></a>Anpassen der Suchergebnissetseite
 
@@ -116,7 +116,10 @@ Nachdem Sie den Assistenten gestartet haben, werden Sie durch die Schritte zum D
 
 ## <a name="step-3-view-the-vertical-after-its-enabled"></a>SCHRITT 3: Anzeigen der Vertikalen nach der Aktivierung
 
-Nachdem Sie die Vertikale aktiviert haben, kann es eine Weile dauern, bis Sie sie anzeigen können. Wenn Sie nach der Aktivierung nicht warten möchten, können Sie **cacheClear=true** an die URL in [SharePoint](https://sharepoint.com/) und [Office](https://office.com) anfügen, um die Vertikale sofort anzeigen zu können. Fügen [Sie für Bing](https://bing.com)&**features=uncachedVerticals** an die vertikale ARBEITS-URL an, um die Vertikalen sofort anzuzeigen.
+Nachdem Sie die Vertikale aktiviert haben, dauert es einige Stunden, bis Sie sie anzeigen können. Wenn Sie nach der Aktivierung nicht warten möchten, können Sie **cacheClear=true** an die URL in [SharePoint](https://sharepoint.com/) und [Office](https://office.com) anfügen, um die Vertikale sofort anzeigen zu können. Fügen [Sie für Bing](https://bing.com)&**features=uncachedVerticals** an die vertikale ARBEITS-URL an, um die Vertikalen sofort anzuzeigen. 
+
+> [!NOTE]
+> Hinzugefügte Vertikalen werden in [SharePoint](https://sharepoint.com/) und [Office](https://office.com) nicht angezeigt, wenn sie von mobilen Webbrowsern angezeigt werden.
 
 ## <a name="troubleshooting"></a>Problembehandlung
 

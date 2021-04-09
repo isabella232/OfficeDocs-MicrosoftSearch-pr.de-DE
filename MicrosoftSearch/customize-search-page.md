@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Hinzufügen von Such vertikalen und Anpassen von Suchergebnissen
-ms.openlocfilehash: c6104383698203fde48d217506da57941efa680f
-ms.sourcegitcommit: 0aca0a5c9152b1b5e8345c91edadfae0b30f57c8
+ms.openlocfilehash: e5c4ab8d507e0e6096a5b9d52dc0e818faebefb6
+ms.sourcegitcommit: a07c957dfa1d31542f0362379251bc9679dfae41
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587739"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51639853"
 ---
 # <a name="customize-the-search-results-page"></a>Anpassen der Suchergebnissetseite
 
@@ -40,6 +40,9 @@ Eine Such vertikal kann jetzt Ergebnisse aus mehreren Connectorquellen angezeigt
 Wenn Sie so viele semantische Bezeichnungen wie möglich genau ernennen, wird diese Erfahrung verbessert. Sie können semantische Bezeichnungen zur Schemadefinition und -aufnahme hinzufügen.
 
 [Hier](configure-connector.md#step-5-assign-property-labels) finden Sie weitere Informationen zum Erstellen und Verwalten semantischer Bezeichnungen.
+
+> [!NOTE]
+> Mehrere Verbindungen in einer Vertikalen werden derzeit in der Vorschau angezeigt. Weitere Informationen zur Vorschau finden Sie unter [Connectors preview features](connectors-overview.md#what-are-the-preview-features).
 
 ### <a name="things-you-should-know"></a>Dinge, die Sie wissen sollten
 

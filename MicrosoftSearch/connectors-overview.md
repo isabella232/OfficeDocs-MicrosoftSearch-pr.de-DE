@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Übersicht über Microsoft Graph-Connectors für Microsoft Search
-ms.openlocfilehash: 77f145f58cf06e49f88af25bcb4d28cfa7d2bd56
-ms.sourcegitcommit: 08a7086185d28df14b06d1f7fdfbb1637288f7a5
+ms.openlocfilehash: ccf1e746c2a8bf97429bf5b13c8340db015e3eb1
+ms.sourcegitcommit: a07c957dfa1d31542f0362379251bc9679dfae41
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51042574"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51639862"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -108,6 +108,7 @@ Zu den Connectors und Features in der Vorschau gehören:
 * [Salesforce Connector](salesforce-connector.md)
 * [ServiceNow-Connector](servicenow-connector.md) mit Suchberechtigungen, die Quell-ACLs verwenden
 * [Verwalten von Ergebnisclusters](result-cluster.md)
+* [Mehrere Verbindungen in einer Vertikalen](customize-search-page.md#multiple-connections-in-a-vertical)
 
 ## <a name="how-do-i-customize-and-configure-search-results"></a>Wie kann ich Suchergebnisse anpassen und konfigurieren?
 
@@ -130,12 +131,10 @@ Der nächste Schritt besteht im Anpassen der Suchergebnisse wie in diesem Artike
 
 * Wenn Sie **einen** von Microsoft erstellten Connector veröffentlichen, kann es einige Minuten dauern, bis die Verbindung erstellt wurde. Während dieser Zeit wird der Status der Verbindung als ausstehend angezeigt.
 
-* Das [Microsoft 365 Admin Center](https://admin.microsoft.com) unterstützt  die Bearbeitung des Suchschemas nach der Veröffentlichung einer Verbindung nicht. Um das Suchschema zu bearbeiten, löschen Sie Ihre Verbindung, und erstellen Sie dann eine neue.
-
-* Der Erfassungsdurchsatz wird bei etwa vier Elementen pro Sekunde gedrosselt.
+* Der Aufnahmedurchsatz wird bei ca. vier Elementen pro Sekunde gedrosselt.
 
 * Schemaupdates werden nicht unterstützt. Nachdem Sie eine Verbindungseinrichtung erstellt haben, gibt es keine Möglichkeit, das Schema zu aktualisieren. Sie können die Verbindung nur löschen und neu erstellen.
 
 * Es gibt einen Verbindungsgrenzwert. Jeder Mandant kann bis zu 10 Verbindungen erstellen.
 
-* Die Bearbeitungsunterstützung für die Verbindung ist nicht verfügbar. Nachdem die Verbindung erstellt wurde, können Sie sie nicht bearbeiten oder ändern. Wenn Sie Details ändern müssen, müssen Sie die Verbindung löschen und neu erstellen.
+* Sie können eine Verbindung nicht bearbeiten oder ändern, nachdem sie erstellt wurde. Wenn Sie Details ändern müssen, müssen Sie die Verbindung löschen und neu erstellen.

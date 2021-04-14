@@ -14,16 +14,19 @@ search.appverid:
 - MET150
 - MOE150
 description: Überprüfen von Microsoft Search-Verwendungsberichten
-ms.openlocfilehash: 8e46b1bdc2143dd3f7c53643e3ee89446a18cbbf
-ms.sourcegitcommit: 74356701eac9d5deccd01b142e7e6fb083cd3871
+ms.openlocfilehash: 17645d86e315538305a28bad51ea1a41dcc37dcb
+ms.sourcegitcommit: d62849b00f2b65b493ab54be50c3e7c94430f057
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51656780"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51754664"
 ---
 # <a name="microsoft-search-usage-reports"></a>Verwendungsberichte für Microsoft Search
 
 Mit Suchverwendungsberichten können Sie besser verstehen, wie die Suche in Ihrer Organisation funktioniert. Die aus diesen Berichten gewonnenen Erkenntnisse helfen Ihnen dabei, Inhalte leichter zu finden und Aktionen zu ergreifen, die die Suche für Ihre Benutzer nützlicher und angenehmer machen. [](./make-content-easy-to-find.md)
+
+> [!IMPORTANT]
+> Microsoft Search-Verwendungsberichte befinden sich derzeit in der Vorschau
 
 Die [Microsoft Search-Verwendungsberichte](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) enthalten Diagramme und Tabellen, die aus Suchdurchsuchungen generiert werden, die von SharePoint Home und aus Office.com ausgeführt werden. Sie können Daten aus den letzten 31 Tagen, pro Tag oder monatlich für das vorherige Jahr sehen. Diese Berichte werden gerade erst ins Rollen gebracht, sodass es einige Zeit dauern wird, bis die Verlaufsdaten anfallen.
 

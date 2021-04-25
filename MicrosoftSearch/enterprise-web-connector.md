@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten des Graph-Connectors für Unternehmenswebsites für Microsoft Search
-ms.openlocfilehash: 42c3f0a80b21e23bb625db06c4f9e89f2c10de4a
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 4b8a14b216d7df68d0898bb72d926abe671047a4
+ms.sourcegitcommit: 56b7b5aa55413141c805f766bdf7bc63d721ef53
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031629"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51951021"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -58,11 +58,11 @@ Verwenden Sie das Feld URL, um den Stamm der Website anzugeben, die Sie durchfor
 > [!NOTE]
 > Wenn für die Website, die Sie durchforsten möchten, eine Sitemap definiert ist, durchforstet der Connector nur die URLs, die in der Sitemap aufgeführt sind. Wenn keine Sitemap definiert ist, durchforstet der Connector alle Links, die auf der Stamm-URL der Website gefunden wurden, tief.
 
-### <a name="crawl-mode-cloud-or-on-premises-preview"></a>Durchforstungsmodus: Cloud oder Lokal (Vorschau)
+### <a name="crawl-mode-cloud-or-on-premises"></a>Durchforstungsmodus: Cloud oder Lokal
 
 Der Durchforstungsmodus bestimmt den Typ der Websites, die Sie indizieren möchten, entweder in der Cloud oder lokal. Wählen Sie für Ihre Cloudwebsites **Cloud** als Durchforstungsmodus aus.
 
-Darüber hinaus unterstützt der Connector jetzt das Crawlen von lokalen Websites. Dieser Modus befindet sich in der Vorschau. Um auf Ihre lokalen Daten zu zugreifen, müssen Sie zuerst den Graph-Connector-Agent installieren und konfigurieren. Weitere Informationen finden Sie unter [Graph Connector Agent](./on-prem-agent.md).
+Darüber hinaus unterstützt der Connector jetzt das Crawlen von lokalen Websites. Um auf Ihre lokalen Daten zu zugreifen, müssen Sie zuerst den Graph-Connector-Agent installieren und konfigurieren. Weitere Informationen finden Sie unter [Graph Connector Agent](./on-prem-agent.md).
 
 Wählen Sie für Ihre lokalen Websites **Agent** als Durchforstungsmodus aus, und wählen Sie im Feld **On-Prem Agent** den Graph-Connector-Agent aus, den Sie zuvor installiert und konfiguriert haben.  
 

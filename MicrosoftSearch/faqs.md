@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erhalten Sie Antworten auf häufig gestellte Fragen zur Unternehmenssuche und zu Microsoft Search
-ms.openlocfilehash: 98128297047d50e2d418a8ed062066ab9e86749e
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 614fa241f353533b1c1e181904eb961fd55d0dfa
+ms.sourcegitcommit: ea784081bc9c3ae7981a87a493d3a74503859dda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031620"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52306070"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 # <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
@@ -31,35 +31,31 @@ Nachfolgend finden Sie eine Liste der am häufigsten gestellten Fragen.
 
 Ja, Microsoft Search analysiert Abfrageabsichten aus größeren Ausdrücken. Dieses Feature verwendet KI, um allgemeine überflüssige Ausdrücke zu lernen, die Benutzer zu ihren Abfragen hinzufügen, die sich nicht auf ihre Suchabsicht auswirken. Wenn ein Benutzer z. B. nach weiteren Informationen zum Ändern meines Kennworts *sucht,* extrahieren wir die weniger wichtigen Wörter aus der Abfrage und lösen sie basierend auf den relevanten Wörtern wie Änderungskennwort *aus.*
   
-Dieses Feature überschreibt die im [Microsoft 365 Admin Center](https://admin.microsoft.com)festgelegten Schlüsselwörter nicht.
+Dieses Feature überschreibt keine Schlüsselwörter, die im Microsoft 365 [Admin Center festgelegt sind.](https://admin.microsoft.com)
   
 ## <a name="can-you-search-for-files-on-premises"></a>Können Sie nach lokalen Dateien suchen?
 
-Ja. Sie können lokale [SharePoint-Dateien](http://sharepoint.com/) durchsuchen, wenn Sie über eine Hybridbereitstellung von SharePoint verfügen.
+Ja. Sie können lokale Dateien [SharePoint,](http://sharepoint.com/) wenn Sie über eine Hybridbereitstellung von SharePoint.
   
 ## <a name="how-do-i-make-bing-the-default-search-engine-for-people-in-my-org"></a>Wie kann ich Bing als Standardsuchmaschine für Personen in meiner Organisation festlegen?
 
-Hier sind die Anweisungen zum Festlegen der Standardsuchmaschine, der Standardhomepage und des Standardbrowsers, um Ihren Benutzern die beste Erfahrung mit Microsoft Search in [Bing zu bieten:](https://Bing.com)
+Hier finden Sie die Anweisungen zum Festlegen der Standardsuchmaschine, der Standardhomepage und des Standardbrowsers, um Ihren Benutzern die beste Erfahrung mit Microsoft Search [in](https://Bing.com)Bing:
 
-- [Festlegen von Microsoft Edge als Standardbrowser](/deployedge/edge-default-browser)
+- [Festlegen Microsoft Edge als Standardbrowser](/deployedge/edge-default-browser)
 - [Festlegen von Bing als Standardsuchmaschine](set-default-search-engine.md)
 - [Festlegen von Bing.com als Startseite des Unternehmens](set-default-homepage.md)
 
 ## <a name="how-are-my-search-results-protected"></a>Wie werden meine Suchergebnisse geschützt?
 
-Wir benötigen [die Azure Active Directory-Authentifizierung,](/azure/active-directory/) um auf Ergebnisse aus der vertrauenswürdigen Cloud zu zugreifen. Authentifizierten Benutzern werden nur Inhalte angezeigt, auf die sie Zugriff haben. Suchabfragen werden nicht identifiziert, und Protokolle [](https://Bing.com) werden vom öffentlichen Bing-Suchdatenverkehr getrennt, wenn Sie Microsoft Search in Bing verwenden.
+Wir benötigen [Azure Active Directory](/azure/active-directory/) Authentifizierung, um auf Ergebnisse aus der vertrauenswürdigen Cloud zu zugreifen. Authentifizierten Benutzern werden nur Inhalte angezeigt, auf die sie Zugriff haben. Suchabfragen werden nicht identifiziert, und Protokolle [](https://Bing.com) werden vom Bing öffentlichen Datenverkehr getrennt, wenn Sie Microsoft Search in Bing.
 
 ## <a name="can-i-search-across-federated-organizations"></a>Kann ich in Verbundorganisationen suchen?
 
 Nein.
 
-## <a name="where-can-i-get-info-about-office-365-security-compliance-and-privacy"></a>Wo kann ich Informationen zu Sicherheit, Compliance und Datenschutz von Office 365 erhalten?
+## <a name="where-can-i-get-info-about-office-365-security-compliance-and-privacy"></a>Wo kann ich Informationen zu Office 365, Compliance und Datenschutz erhalten?
 
-Details finden Sie auf den [Seiten des Trust Center für Office 365](https://www.microsoft.com/TrustCenter/CloudServices/office365/default.aspx).
-
-## <a name="can-users-earn-microsoft-rewards-points-with-their-work-or-school-account"></a>Können Benutzer mit Ihrem Geschäfts-, Schul- oder Unikonto Microsoft Rewards-Punkte erwerben?
-
-Microsoft Search setzt voraus, dass Unternehmensbenutzer sich mit einem Geschäfts-, Schul- oder Unikonto anmelden. Mit diesen Konten können sich Benutzer aber nicht beim Microsoft Rewards-Programm anmelden oder daran teilnehmen. Allerdings gibt es einen Fall, bei dem Unternehmensbenutzer möglicherweise sehen, dass Prämienpunkte anfallen. Dies kann vorkommen, wenn ein Microsoft Search-Benutzer über ein Rewards-Konto verfügt, das mit einem [Microsoft-Konto](https://www.microsoft.com/welcome?rtc=1) erstellt wurde. (Die mit einem Microsoft-Konto verknüpfte E-Mail-Adresse kann von Outlook.com, Hotmail.com, Gmail, Yahoo oder anderen Anbietern stammen.) Wenn Benutzer sich bei derselben Browsersitzung abwechselnd mit ihrem Geschäfts-, Schul- oder Unikonto und ihrem Microsoft-Konto anmelden, werden möglicherweise Punkte auf dem Rewards-Konto angesammelt. Benutzer können das Ansammeln von Punkten während der Suche mit Microsoft Search beenden, indem sie ihre Cookies löschen.
+Details finden Sie auf den [Trust Center-Seiten für Office 365.](https://www.microsoft.com/TrustCenter/CloudServices/office365/default.aspx)
 
 ## <a name="can-guest-users-leverage-microsoft-search-in-my-organization"></a>Können Gastbenutzer Microsoft Search in meiner Organisation nutzen?
 

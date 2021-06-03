@@ -12,26 +12,26 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Einrichten des ServiceNow Graph-Connectors für Microsoft Search
-ms.openlocfilehash: 692170ef6f8332418efc7d56a56c6fa1b1cce76c
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+description: Einrichten des ServiceNow-Graph Connectors für Microsoft Search
+ms.openlocfilehash: 08947381dff7cd06007c68a7f1614b23c53f7510
+ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031764"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "52720965"
 ---
 <!---Previous ms.author: kam1 --->
 
 # <a name="servicenow-graph-connector"></a>ServiceNow Graph Connector
 
-Der ServiceNow Graph-Connector ermöglicht Es Ihrer Organisation, wissensbasierte Artikel zu indizieren, die für Benutzer gemäß den Benutzerkriterienberechtigungen in Ihrer Organisation sichtbar sind. Nachdem Sie den Connector und den Indexinhalt von ServiceNow konfiguriert haben, können Benutzer in jedem Microsoft Search-Client nach den Artikeln suchen.
+Der ServiceNow-Graph-Connector ermöglicht Es Ihrer Organisation, wissensbasierte Artikel zu indizieren, die für Benutzer gemäß den Benutzerkriterienberechtigungen in Ihrer Organisation sichtbar sind. Nachdem Sie den Connector und den Indexinhalt von ServiceNow konfiguriert haben, können Benutzer in jedem Microsoft Search-Client nach den Artikeln suchen.
 
 > [!NOTE]
-> Lesen Sie [**den Artikel Setup für Ihren Graph-Connector,**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten von Graph Connectors zu verstehen.
+> Lesen Sie [**den Artikel Setup für Graph Connector,**](configure-connector.md) um die Allgemeinen Anweisungen Graph Connectors zu verstehen.
 
-Dieser Artikel ist für jeden benutzer, der einen ServiceNow Graph-Connector konfiguriert, ausgeführt und überwacht. Es ergänzt den allgemeinen Einrichtungsprozess und zeigt Anweisungen, die nur für den ServiceNow Graph-Connector gelten. Dieser Artikel enthält auch Informationen zur [Problembehandlung und](#troubleshooting) [Einschränkungen](#limitations).
-  
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph-Connectors im Microsoft 365 Admin Center
+Dieser Artikel ist für jeden benutzer, der einen ServiceNow-Graph konfiguriert, ausgeführt und überwacht. Es ergänzt den allgemeinen Einrichtungsprozess und zeigt Anweisungen an, die nur für den ServiceNow-Graph gelten. Dieser Artikel enthält auch Informationen zur [Problembehandlung und](#troubleshooting) [Einschränkungen](#limitations).
+
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph im Microsoft 365 Admin Center
 
 Befolgen Sie die [allgemeinen Setupanweisungen](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -41,7 +41,7 @@ Befolgen Sie die [allgemeinen Setupanweisungen](./configure-connector.md).
 Befolgen Sie die [allgemeinen Setupanweisungen](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="step-3-connection-settings"></a>Schritt 3: Verbindungseinstellungen
+## <a name="step-3-connection-settings"></a>Schritt 3: Verbindungs Einstellungen
 
 Um eine Verbindung mit Ihren ServiceNow-Daten herzustellen, verwenden Sie die **DienstNow-Instanz-URL-Anmeldeinformationen** Ihrer Organisation für dieses Konto, die Client-ID und den Geheimen Clientgeheimnis für die OAuth-Authentifizierung.  
 
@@ -64,7 +64,7 @@ Wählen Sie eine der drei unterstützten Methoden aus, um Inhalte von ServiceNow
 
 1. Standardauthentifizierung
 1. ServiceNow OAuth (empfohlen)
-1. Azure AD OpenID Connect
+1. Azure AD OpenID Verbinden
 
 ### <a name="basic-authentication"></a>Standardauthentifizierung
 
@@ -89,13 +89,13 @@ Lebensdauer des Zugriffstokens | Die Anzahl der Sekunden, die ein Zugriffstoken 
 
 Geben Sie die Client-ID und den geheimen Clientgeheimnis ein, um eine Verbindung mit Ihrer Instanz herzustellen. Verwenden Sie nach der Verbindung die Anmeldeinformationen eines ServiceNow-Kontos, um die Berechtigung zum Crawlen zu authentifizieren. Das Konto sollte mindestens über eine **Wissensrolle** verfügen.
 
-### <a name="azure-ad-openid-connect"></a>Azure AD OpenID Connect
+### <a name="azure-ad-openid-connect"></a>Azure AD OpenID Verbinden
 
-Führen Sie die folgenden Schritte aus, um Azure AD OpenID Connect für die Authentifizierung zu verwenden.
+Führen Sie die folgenden Schritte aus, um Azure AD OpenID Verbinden für die Authentifizierung zu verwenden.
 
 ## <a name="step-3a-register-a-new-application-in-azure-active-directory"></a>Schritt 3.a: Registrieren einer neuen Anwendung in Azure Active Directory
 
-Informationen zum Registrieren einer neuen Anwendung in Azure Active Directory finden Sie [unter Registrieren einer Anwendung](/azure/active-directory/develop/quickstart-register-app#register-an-application). Wählen Sie Ein-Mandanten-Organisationsverzeichnis aus. Umleitungs-URI ist nicht erforderlich. Notieren Sie sich nach der Registrierung die Anwendungs-ID (Client)-ID und die Verzeichnis-ID (Mandant).
+Weitere Informationen zum Registrieren einer neuen Anwendung in Azure Active Directory finden Sie [unter Registrieren einer Anwendung](/azure/active-directory/develop/quickstart-register-app#register-an-application). Wählen Sie Ein-Mandanten-Organisationsverzeichnis aus. Umleitungs-URI ist nicht erforderlich. Notieren Sie sich nach der Registrierung die Anwendungs-ID (Client)-ID und die Verzeichnis-ID (Mandant).
 
 ## <a name="step-3b-create-a-client-secret"></a>Schritt 3.b: Erstellen eines geheimen Clientgeheimnis
 
@@ -107,13 +107,13 @@ Führen Sie die Schritte zum Abrufen der Dienstprinzipalobjekt-ID aus.
 
 1. Führen Sie PowerShell aus.
 
-2. Installieren Sie Azure PowerShell mit dem folgenden Befehl.
+2. Installieren Azure PowerShell mithilfe des folgenden Befehls.
 
    ```powershell
    Install-Module -Name Az -AllowClobber -Scope CurrentUser
    ```
 
-3. Stellen Sie eine Verbindung mit Azure bereit.
+3. Verbinden azure.
 
    ```powershell
    Connect-AzAccount
@@ -130,7 +130,7 @@ Jetzt verfügen Sie über alle erforderlichen Informationen aus dem Azure-Portal
 
 Eigenschaft | Beschreibung 
 --- | ---
-Verzeichnis-ID (Mandanten-ID) | Eindeutige ID des Azure Active Directory-Mandanten aus Schritt 3.a.
+Verzeichnis-ID (Mandanten-ID) | Eindeutige ID des Azure Active Directory Mandanten aus Schritt 3.a.
 Anwendungs-ID (Client-ID) | Eindeutige ID der in Schritt 3.a registrierten Anwendung.
 Geheimer Clientschlüssel | Der geheime Schlüssel der Anwendung (aus Schritt 3.b). Behandeln Sie es wie ein Kennwort.
 Dienstprinzipal-ID | Eine Identität für die Anwendung, die als Dienst ausgeführt wird. (ab Schritt 3.c)
@@ -160,7 +160,7 @@ Die ServiceNow-Instanz benötigt die folgende Konfiguration:
    OIDC-Anbieter |  Azure AD
    OIDC-Metadaten-URL | Die URL muss im Format https \: /login.microsoftonline.com/<tenandId">/.well-known/openid-configuration sein. <br/>Ersetzen Sie "tenantID" durch Verzeichnis-ID (Mandant) aus Schritt 3.a.
    Lebensdauer des OIDC-Konfigurationscaches |  120
-   Anwendung | Global
+   Application | Global
    Benutzeranspruch | sub
    Benutzerfeld | Benutzer-ID
    Aktivieren der Überprüfung von JTI-Anspruchsforderungen | Deaktiviert
@@ -184,11 +184,11 @@ Alle anderen Werte können standardmäßig bleiben.
 
 Greifen Sie auf das ServiceNow-Konto zu, das Sie mit der ServiceNow-Prinzipal-ID als Benutzer-ID erstellt haben, und weisen Sie die Wissensrolle zu. Anweisungen zum Zuweisen einer Rolle zu einem ServiceNow-Konto finden Sie hier: Zuweisen einer Rolle [zu einem Benutzer](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html).
 
-Verwenden Sie Anwendungs-ID als Client-ID aus Schritt 3.a und Geheimer Clientgeheimnis aus Schritt 3.b, um sich mit Azure AD OpenID Connect bei Ihrer ServiceNow-Instanz zu authentifizieren.
+Verwenden Sie Anwendungs-ID als Client-ID aus Schritt 3.a und Geheimer Clientgeheimnis aus Schritt 3.b, um sich bei Ihrer ServiceNow-Instanz mithilfe von Azure AD OpenID Verbinden.
 
 ## <a name="step-4-select-properties-and-filter-data"></a>Schritt 4: Auswählen von Eigenschaften und Filtern von Daten
 
-In diesem Schritt können Sie verfügbare Eigenschaften aus Ihrer ServiceNow-Datenquelle hinzufügen oder entfernen. Microsoft 365 hat bereits standardmäßig einige Eigenschaften ausgewählt.
+In diesem Schritt können Sie verfügbare Eigenschaften aus Ihrer ServiceNow-Datenquelle hinzufügen oder entfernen. Microsoft 365 hat standardmäßig bereits einige Eigenschaften ausgewählt.
 
 Mit einer ServiceNow-Abfragezeichenfolge können Sie Bedingungen für die Synchronisierung von Artikeln angeben. Es ist wie eine **Where-Klausel** in einer **SQL Select-Anweisung.** Sie können z. B. nur veröffentlichte und aktive Artikel indizieren. Weitere Informationen zum Erstellen einer eigenen Abfragezeichenfolge finden Sie unter Generieren einer [codierten Abfragezeichenfolge mithilfe eines Filters.](https://docs.servicenow.com/bundle/paris-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html)
 
@@ -198,15 +198,21 @@ Verwenden Sie die Schaltfläche Vorschauergebnisse, um die Beispielwerte der aus
 
 Der ServiceNow-Connector unterstützt Suchberechtigungen, die für **Jeder** oder nur Personen mit **Zugriff auf diese Datenquelle sichtbar sind.** Indizierte Daten werden in den Suchergebnissen angezeigt und sind für Benutzer in der Organisation sichtbar, die auf diese zugreifen können. ServiceNow Connector unterstützt standardmäßige Benutzerkriterienberechtigungen ohne erweiterte Skripts. Wenn der Connector ein Benutzerkriterium mit erweitertem Skript findet, werden alle Daten, die diese Benutzerkriterien verwenden, nicht in den Suchergebnissen angezeigt.
 
-Wenn Sie **Nur** Personen mit Zugriff auf diese Datenquelle auswählen, müssen Sie weiter auswählen, ob Ihre ServiceNow-Instanz über Azure Active Directory (AAD)-bereitgestellte Benutzer oder Nicht-AAD-Benutzer verfügt.
+Wenn Sie **Nur** Personen mit Zugriff auf diese Datenquelle auswählen, müssen Sie weiter auswählen, ob Ihre ServiceNow-Instanz über Azure Active Directory (AAD) bereitgestellte Benutzer oder Nicht-AAD-Benutzer verfügt.
 
 >[!NOTE]
 >Der ServiceNow-Connector befindet sich in **der Vorschau,** wenn Sie Nur Personen mit **Zugriff auf diese Datenquelle auswählen.**
 
 >[!NOTE]
->Wenn Sie AAD als Typ der Identitätsquelle auswählen, stellen Sie sicher, dass Sie die UPN-Quelleigenschaft der E-Mail-Zieleigenschaft in ServiceNow zuweisen. Informationen zum Überprüfen oder Ändern Ihrer Zuordnungen finden Sie unter [Customizing user provisioning attribute-mappings for SaaS applications in Azure Active Directory](/azure/active-directory/app-provisioning/customize-application-attributes).
+>Wenn Sie AAD als Typ der Identitätsquelle auswählen, stellen Sie sicher, dass Sie die UPN-Quelleigenschaft der E-Mail-Zieleigenschaft in ServiceNow zuweisen. Informationen zum Überprüfen oder Ändern der Zuordnungen finden Sie unter [Customizing user provisioning attribute-mappings for SaaS applications in Azure Active Directory](/azure/active-directory/app-provisioning/customize-application-attributes).
 
 Wenn Sie eine ACL aus Ihrer ServiceNow-Instanz aufgenommen und "Nicht-AAD" für den Identitätstyp ausgewählt haben, finden Sie unter [Map your non-Azure AD Identities](map-non-aad.md) Anweisungen zum Zuordnen der Identitäten.
+
+### <a name="managing-search-permissions-in-microsoft-search"></a>Verwalten von Suchberechtigungen in Microsoft Search
+
+Im folgenden Video können Sie sehen, wie Sie den Servicenow-Connector verwenden, um Wissensartikel zu indizieren, Benutzerkriterienberechtigungen zu definieren und die Änderungen zwischen ServiceNow und Microsoft Search Index nahtlos zu synchronisieren.
+
+> [!VIDEO https://www.youtube.com/watch?v=TVSkJpk1RiE]
 
 ## <a name="step-6-assign-property-labels"></a>Schritt 6: Zuweisen von Eigenschaftsbezeichnungen
 
@@ -237,7 +243,7 @@ Nachdem Sie Ihre Verbindung veröffentlicht haben und die Ergebnisseite angepass
 
 ## <a name="limitations"></a>Einschränkungen
 
-Der ServiceNow Graph-Connector hat in seiner neuesten Version die folgenden Einschränkungen:
+ServiceNow Graph Connector hat in seiner neuesten Version die folgenden Einschränkungen:
 
 - Die Indizierung von Wissensartikeln, die für alle Indizierungsartikel in einer Organisation verfügbar sind, ist ein allgemein verfügbares Feature.
 - *Nur Personen mit Zugriff auf dieses Datenquellenfeature* unter Schritt Suchberechtigungen verwalten befindet sich in der Vorschau und verarbeitet nur [Benutzerkriterienberechtigungen.](https://hi.service-now.com/kb_view.do?sysparm_article=KB0550924) Alle anderen Arten von Zugriffsberechtigungen werden in den Suchergebnissen nicht angewendet.

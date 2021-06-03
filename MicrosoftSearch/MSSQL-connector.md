@@ -1,5 +1,5 @@
 ---
-title: Azure SQL und Microsoft SQL Graph Connector für Microsoft Search
+title: Azure SQL und Microsoft SQL server Graph Connector für Microsoft Search
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,33 +12,33 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Richten Sie den Azure SQL- und Microsoft SQL Graph-Connector für Microsoft Search ein.
-ms.openlocfilehash: 81951dab058a14d687f81f7611ee624b079f0822
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+description: Richten Sie den Azure SQL und Microsoft SQL Graph für Microsoft Search ein.
+ms.openlocfilehash: 29474c731c489c9e9b75f2456d25e4ff43aae4eb
+ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031404"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "52720979"
 ---
 <!---Previous ms.author: vivg --->
 
-# <a name="azure-sql-and-microsoft-sql-server-graph-connectors"></a>Azure SQL und Microsoft SQL Server Graph Connectors
+# <a name="azure-sql-and-microsoft-sql-server-graph-connectors"></a>Azure SQL und Microsoft SQL server Graph Connectors
 
 Der Microsoft SQL-Server oder Azure SQL Graph-Connector ermöglicht Ihrer Organisation das Ermitteln und Indizieren von Daten aus einer lokalen SQL Server-Datenbank oder einer Datenbank, die in Ihrer Azure SQL-Instanz in der Cloud gehostet wird.
-Der Graph-Connector indiziert die angegebenen Inhalte in Microsoft Search. Um den Index mit Quelldaten auf dem neuesten Stand zu halten, werden regelmäßige vollständige und inkrementelle Durchforstungen unterstützt. Mit diesen SQL Connectors können Sie auch den Zugriff auf Suchergebnisse für bestimmte Benutzer einschränken.
+Der Graph indiziert den angegebenen Inhalt in Microsoft Search. Um den Index mit Quelldaten auf dem neuesten Stand zu halten, werden regelmäßige vollständige und inkrementelle Durchforstungen unterstützt. Mit diesen SQL Connectors können Sie auch den Zugriff auf Suchergebnisse für bestimmte Benutzer einschränken.
 
 > [!NOTE]
-> Lesen Sie [**den Artikel Setup your Graph connector,**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten von Graph Connectors zu verstehen.
+> Lesen Sie den Artikel Setup [**your Graph connector,**](configure-connector.md) um die Allgemeinen Anweisungen Graph Connectors zu verstehen.
 
-Dieser Artikel gilt für alle Benutzer, die einen Azure SQL und Microsoft SQL Graph-Connector konfigurieren, ausgeführt und überwachen. Es ergänzt den allgemeinen Einrichtungsprozess und zeigt Anweisungen, die nur für den Azure SQL und Microsoft SQL Graph-Connector gelten. Dieser Artikel enthält außerdem Informationen zu [Einschränkungen](#limitations) für den Microsoft SQL server und Azure SQL Connectors.
+Dieser Artikel gilt für alle Benutzer, die azure SQL und Microsoft SQL server Graph konfigurieren, ausgeführt und überwacht. Es ergänzt den allgemeinen Einrichtungsprozess und zeigt Anweisungen, die nur für azure SQL und Microsoft SQL server Graph gelten. Dieser Artikel enthält außerdem Informationen zu [Einschränkungen](#limitations) für den Microsoft SQL server und Azure SQL Connectors.
 
 ## <a name="before-you-get-started"></a>Bevor Sie beginnen
 
-### <a name="install-the-graph-connector-agent-required-for-on-premises-microsoft-sql-server-connector-only"></a>Installieren des Graph-Connector-Agents (nur für lokalen Microsoft SQL Serverconnector erforderlich)
+### <a name="install-the-graph-connector-agent-required-for-on-premises-microsoft-sql-server-connector-only"></a>Installieren des Graph -Connector-Agents (nur für lokalen Microsoft SQL-Serverconnector erforderlich)
 
-Um auf Ihre lokalen Drittanbieterdaten zugreifen zu können, müssen Sie den Graph-Connector-Agent installieren und konfigurieren. Weitere Informationen finden Sie unter [Installieren des Graph-Connector-Agents.](on-prem-agent.md)  
+Um auf Ihre lokalen Drittanbieterdaten zu zugreifen, müssen Sie den Graph installieren und konfigurieren. Weitere [Informationen finden Sie unter Install the Graph connector agent.](on-prem-agent.md)  
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph-Connectors im Microsoft 365 Admin Center
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph im Microsoft 365 Admin Center
 
 Befolgen Sie die [allgemeinen Setupanweisungen](./configure-connector.md).
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
@@ -54,11 +54,11 @@ instructions.-->
 
 ### <a name="register-an-app-for-azure-sql-connector-only"></a>Registrieren einer App (nur für Azure SQL Connector)
 
-Für Azure SQL Connector müssen Sie eine App in Azure Active Directory registrieren, damit die Microsoft Search-App auf Daten für die Indizierung zugreifen kann. Weitere Informationen zum Registrieren einer App finden Sie in der Microsoft Graph-Dokumentation zum Registrieren [einer App.](/graph/auth-register-app-v2)
+Für Azure SQL müssen Sie eine App in Azure Active Directory registrieren, damit die Microsoft Search-App auf Daten für die Indizierung zugreifen kann. Weitere Informationen zum Registrieren einer App finden Sie in der Microsoft Graph zur Registrierung [einer App.](/graph/auth-register-app-v2)
 
 Nachdem Sie die App-Registrierung abgeschlossen und den App-Namen, die Anwendungs-ID (client) und die Mandanten-ID notiert haben, müssen Sie einen neuen geheimen [Clientgeheimnis generieren.](/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret) Der geheime Clientgeheimnis wird nur einmal angezeigt. Denken Sie daran, & den Geheimen Clientgeheimnis sicher zu speichern. Verwenden Sie die Client-ID und den geheimen Clientgeheimnis, während Sie eine neue Verbindung in Microsoft Search konfigurieren.
 
-Zum Hinzufügen der registrierten App zu Ihrer Azure SQL-Datenbank müssen Sie:
+Zum Hinzufügen der registrierten App zu Azure SQL-Datenbank müssen Sie:
 
 - Melden Sie sich bei Ihrer Azure SQL DB an
 - Öffnen eines neuen Abfragefensters
@@ -66,16 +66,16 @@ Zum Hinzufügen der registrierten App zu Ihrer Azure SQL-Datenbank müssen Sie:
 - Hinzufügen eines Benutzers zur Rolle durch Ausführen des Befehls "exec sp_addrolemember db_datareader", [App-Name]" oder "ALTER ROLE db_datareader ADD MEMBER [App-Name]"
 
 >[!NOTE]
->Informationen zum Widerrufen des Zugriffs auf alle in Azure Active Directory registrierten Apps finden Sie in der Azure-Dokumentation zum Entfernen [einer registrierten App.](/azure/active-directory/develop/quickstart-remove-app)
+>Informationen zum Widerrufen des Zugriffs auf alle in Azure Active Directory registrierten Apps finden Sie in der Azure-Dokumentation zum Entfernen [einer registrierten App](/azure/active-directory/develop/quickstart-remove-app).
 
 ### <a name="connection-settings"></a>Verbindungseinstellungen
 
 Um Ihren Microsoft SQL-Serverconnector mit einer Datenquelle zu verbinden, müssen Sie den Datenbankserver, den Sie durchforsten möchten, und den on-prem-Agent konfigurieren. Anschließend können Sie eine Verbindung mit der Datenbank mit der erforderlichen Authentifizierungsmethode herstellen.
 
 > [!NOTE] 
-> Ihre Datenbank muss SQL Version 2008 oder höher ausgeführt werden, damit der Microsoft SQL Serverconnector eine Verbindung herstellen kann.
+> Ihre Datenbank muss SQL Version 2008 oder höher ausgeführt werden, damit der Microsoft SQL-Serverconnector eine Verbindung herstellen kann.
 
-Für den Azure SQL müssen Sie nur den Servernamen oder die IP-Adresse angeben, mit dem Sie eine Verbindung herstellen möchten. Azure SQL Connector unterstützt nur die Azure Active Directory Open ID Connect (OIDC)-Authentifizierung, um eine Verbindung mit der Datenbank herzustellen.
+Für den Azure SQL müssen Sie nur den Servernamen oder die IP-Adresse angeben, mit dem Sie eine Verbindung herstellen möchten. Azure SQL Connector unterstützt nur Azure Active Directory open ID connect (OIDC)-Authentifizierung, um eine Verbindung mit der Datenbank herzustellen.
 
 Für zusätzliche Sicherheit können Sie IP-Firewallregeln für Ihre Azure-SQL oder Datenbank konfigurieren. Weitere Informationen zum Einrichten von IP-Firewallregeln finden Sie in der Dokumentation zu [IP-Firewallregeln.](/azure/azure-sql/database/firewall-configure) Fügen Sie die folgenden Client-IP-Bereiche in den Firewalleinstellungen hinzu.
 
@@ -115,17 +115,17 @@ Die Verwendung der einzelnen ACL-Spalten in der obigen Abfrage wird unten beschr
 
 ### <a name="supported-data-types"></a>Unterstützte Datentypen
 
-In der folgenden Tabelle sind die SQL aufgeführt, die in ms SQL und Azure SQL werden. In der Tabelle wird auch der Indizierungsdatentyp für den unterstützten SQL zusammengefasst. Weitere Informationen zu von Microsoft Graph Connectors unterstützten Datentypen für die Indizierung finden Sie in der Dokumentation zu [Eigenschaftenressourcentypen](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties).
+In der folgenden Tabelle sind die SQL aufgeführt, die in den MS-SQL- und Azure-SQL unterstützt werden. In der Tabelle wird auch der Indizierungsdatentyp für den unterstützten SQL zusammengefasst. Weitere Informationen zu von Microsoft Graph unterstützten Datentypen für die Indizierung finden Sie in der Dokumentation zu [Eigenschaftenressourcentypen](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties).
 
 | Kategorie | Quelldatentyp | Indizierungsdatentyp |
 | ------------ | ------------ | ------------ |
 | Datum und Uhrzeit | date <br> Datum/Uhrzeit <br> datetime2 <br> smalldatetime | Datum/Uhrzeit |
 | Exakt numerisch | bigint <br> int <br> smallint <br> tinyint | int64 |
-| Exakt numerisch | bit | boolean |
+| Exakt numerisch | bit | Boolescher Wert |
 | Ungefähre numerische Zahlen | Gleitkommazahl <br> real | double |
 | Zeichenfolge | char <br> varchar <br> text | string |
-| Unicode-Zeichenzeichenfolgen | nchar <br> nvarchar <br> ntext | string |
-| Andere Datentypen | uniqueidentifier | string |
+| Unicode-Zeichenzeichenfolgen | nchar <br> nvarchar <br> ntext | Zeichenfolge |
+| Andere Datentypen | uniqueidentifier | Zeichenfolge |
 
 Für alle anderen Datentypen, die derzeit nicht direkt unterstützt werden, muss die Spalte explizit in einen unterstützten Datentyp umg castt werden.
 
@@ -159,7 +159,7 @@ Jede der ACL-Spalten wird als mehrwertige Spalte erwartet. Diese werte mit mehre
 Die folgenden ID-Typen werden für die Verwendung als ACLs unterstützt:
 
 - **Benutzerprinzipalname (User Principal Name, UPN):** Ein Benutzerprinzipalname (User Principal Name, UPN) ist der Name eines Systembenutzers in einem E-Mail-Adressformat. Ein UPN (z. B. john.doe@domain.com) besteht aus dem Benutzernamen (Anmeldename), dem Trennzeichen (dem @-Symbol) und dem Domänennamen (UPN-Suffix).
-- **Azure Active Directory (AAD)-ID:** In Azure AD verfügt jeder Benutzer oder jede Gruppe über eine Objekt-ID, die etwa wie "e0d3ad3d-0000-1111-2222-3c5f5c52ab9b" aussieht.
+- **Azure Active Directory (AAD)-ID**: In Azure AD verfügt jeder Benutzer oder jede Gruppe über eine Objekt-ID, die etwa wie "e0d3ad3d-0000-1111-2222-3c5f5c52ab9b" aussieht.
 - **Active Directory (AD)-Sicherheits-ID:** In einem lokalen AD-Setup verfügen alle Benutzer und Gruppen über einen unveränderlichen, eindeutigen Sicherheitsbezeichner, der etwa "S-1-5-21-3878594291-2115959936-132693609-65242" aussieht.
 
 ![Suchberechtigungseinstellungen zum Konfigurieren von Zugriffssteuerungslisten](media/MSSQL-ACL2.png)
@@ -207,15 +207,19 @@ Create your own verticals and result types, so end users can view search results
 
 To learn more about how to create your verticals and MRTs, see [Search results page customization](customize-search-page.md).-->
 
-<!---## Troubleshooting-->
+## <a name="troubleshooting"></a>Problembehandlung
 
-<!---Insert troubleshooting recommendations for this data source-->
+Im Folgenden finden Sie einen häufigen Fehler, der beim Konfigurieren des Connectors festgestellt wurde, und der mögliche Grund.
+
+| Konfigurationsschritt | Fehlermeldung | Mögliche Gründe |
+| ------------ | ------------ | ------------ |
+| Vollständige Durchforstung | `Error from database server: A transport level error has occurred when receiving results from the server.` | Dieser Fehler tritt aufgrund von Netzwerkproblemen auf. Es wird empfohlen, Netzwerkprotokolle mithilfe des [Microsoft-Netzwerkmonitors zu überprüfen](https://www.microsoft.com/download/details.aspx?id=4865) und den Microsoft-Kundensupport zu erreichen. |
 
 ## <a name="limitations"></a>Einschränkungen
 
 Die SQL connectors haben in der Vorschauversion die folgenden Einschränkungen:
 
 - Microsoft SQL Serverconnector: Die lokale Datenbank muss SQL Version 2008 oder höher ausgeführt werden.
-- Das M365-Abonnement und das Azure-Abonnement (das Azure SQL hosten) müssen sich im gleichen Azure Active Directory befinden.
+- Das M365-Abonnement und das Azure-Abonnement (Das Hosten von Azure SQL-Datenbank) müssen sich innerhalb derselben Azure Active Directory.
 - ACLs werden nur mithilfe eines Benutzerprinzipalnamens (User Principal Name, UPN), Azure Active Directory (Azure AD) oder Active Directory Security unterstützt.
 - Die Indizierung von Rich Content in Datenbankspalten wird nicht unterstützt. Beispiele für solche Inhalte sind HTML, JSON, XML, Blobs und Dokument parsings, die als Links in den Datenbankspalten vorhanden sind.

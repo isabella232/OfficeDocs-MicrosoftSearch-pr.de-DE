@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren Des von Microsoft erstellten Graph-Connectors für Microsoft Search
+title: Konfigurieren Des von Microsoft Graph Connector für Microsoft Search
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,24 +12,24 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Setupübersicht für Graph-Connectors von Microsoft
-ms.openlocfilehash: 169e78fd4a0148d8bb4e52968b2efd785045806e
-ms.sourcegitcommit: 08a7086185d28df14b06d1f7fdfbb1637288f7a5
+description: Setupübersicht für Graph Connectors von Microsoft
+ms.openlocfilehash: ef94d530af63d8b8b33dfae3c4b411164ef31feb
+ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51042583"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "52720943"
 ---
 <!-- Previous ms.author: monaray -->
 
 <!-- markdownlint-disable no-trailing-punctuation -->
 
-# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Setupübersicht für Graph-Connectors von Microsoft 
+# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Setupübersicht für Graph Connectors von Microsoft 
 
-Dieser Artikel zeigt den grundlegenden Prozess, der zum Einrichten der Graph-Connectors von **Microsoft** im [Microsoft 365 Admin Center erforderlich ist.](https://admin.microsoft.com) Der grundlegende Prozess umfasst die folgenden Schritte:  
+Dieser Artikel zeigt den grundlegenden Prozess, der zum Einrichten der Graph Connectors von **Microsoft** im [Microsoft 365 Admin Center erforderlich ist.](https://admin.microsoft.com) Der einfache Prozess umfasst die folgenden Schritte:  
 <!---Add links to each section in the doc--->
 
-1. [Hinzufügen eines Graph-Connectors im Microsoft 365 Admin Center](#step-1-add-a-graph-connector-in-the-microsoft-365-admin-center)
+1. [Hinzufügen eines Graph im Microsoft 365 Admin Center](#step-1-add-a-graph-connector-in-the-microsoft-365-admin-center)
 2. [Benennen der Verbindung](#step-2-name-the-connection)
 3. [Konfigurieren der Verbindungseinstellungen](#step-3-configure-the-connection-settings)
 4. [Verwalten von Suchberechtigungen](#step-4-manage-search-permissions)
@@ -45,15 +45,15 @@ Dieser Artikel enthält außerdem Informationen zur Problembehandlung, Einschrä
 * [Nächste Schritte](#next-steps)
 
 > [!NOTE]
-> Der Einrichtungsprozess ist für alle Graph-Connectors von Microsoft ähnlich, ist aber nicht exakt identisch. **Lesen Sie nicht nur diesen Artikel, sondern lesen Sie auch die connectorspezifischen Informationen für Ihre Datenquelle.**  
+> Der Einrichtungsprozess ist für alle Graph von Microsoft ähnlich, ist aber nicht identisch. **Lesen Sie nicht nur diesen Artikel, sondern lesen Sie auch die connectorspezifischen Informationen für Ihre Datenquelle.**  
 
 <!---## Before you get started-->
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph-Connectors im Microsoft 365 Admin Center
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph im Microsoft 365 Admin Center
 
-Führen Sie die folgenden Schritte aus, um einen der von Microsoft erstellten Graph-Connectors zu konfigurieren:
+Führen Sie die folgenden Schritte aus, um einen der von Microsoft erstellten Graph zu konfigurieren:
 
 1. Melden Sie sich bei Ihrem Administratorkonto im [Microsoft 365 Admin Center an.](https://admin.microsoft.com)
 
@@ -65,7 +65,7 @@ Führen Sie die folgenden Schritte aus, um einen der von Microsoft erstellten Gr
    > ![Verfügbare Datenquellen sind: ADLS Gen2, Enterprise-Websites, Microsoft SQL-Server, Azure SQL, Oracle SQL-Datenbank, ServiceNow, Dateifreigabe, Azure DevOps und MediaWiki.](media/add-connector.png)
 
 > [!NOTE]
-> Sie können maximal zehn Graph-Verbindungen zu jedem Mandanten hinzufügen.
+> Sie können maximal zehn Graph Mandanten hinzufügen.
 
 ## <a name="step-2-name-the-connection"></a>Schritt 2: Benennen der Verbindung
 
@@ -87,13 +87,13 @@ Weitere Informationen zum Herstellen einer Verbindung mit einer lokalen Datenque
 
 Zugriffssteuerungslisten (Access Control Lists, ACLs) bestimmen, welche Benutzer in Ihrer Organisation auf jedes Datenelement zugreifen können.  
 
-Einige Connectors wie [Microsoft SQL](MSSQL-connector.md) und Azure Data Lake [Storage Gen2](azure-data-lake-connector.md) unterstützen [nativ Azure Active Directory (Azure AD)-ACLs.](/azure/active-directory/)
+Einige Connectors wie [Microsoft SQL](MSSQL-connector.md) und Azure Data Lake [Storage Gen2](azure-data-lake-connector.md) unterstützen systemeigene [Azure Active Directory (Azure AD)-ACLs.](/azure/active-directory/)
 
 Andere Connectors wie [ServiceNow,](servicenow-connector.md) [Azure DevOps](azure-devops-connector.md)und [Salesforce](salesforce-connector.md) unterstützen die Synchronisierung von Nicht-Azure AD-Benutzern und -Gruppen.  
 
 ## <a name="step-5-assign-property-labels"></a>Schritt 5: Zuweisen von Eigenschaftsbezeichnungen
 
-Sie können Ihren Quelleigenschaften auf der Seite "Eigenschaftsbezeichnungen zuweisen" semantische Bezeichnungen zuweisen. Bezeichnungen sind bekannte Von Microsoft bereitgestellte Tags, die semantische Bedeutung bieten. Sie ermöglichen Es Microsoft, Ihre Connectordaten in Microsoft 365-Erfahrungen wie erweiterte Suche, Personenkarten, intelligente Ermittlungen und vieles mehr zu integrieren.  
+Sie können Ihren Quelleigenschaften auf der Seite "Eigenschaftsbezeichnungen zuweisen" semantische Bezeichnungen zuweisen. Bezeichnungen sind bekannte Von Microsoft bereitgestellte Tags, die semantische Bedeutung bieten. Sie ermöglichen Es Microsoft, Ihre Connectordaten in Microsoft 365 wie erweiterte Suche, Personenkarten, intelligente Erkennung und vieles mehr zu integrieren.  
 
 In der folgenden Tabelle sind die derzeit unterstützten Bezeichnungen und deren Beschreibungen aufgeführt.  
 
@@ -107,7 +107,7 @@ Bezeichnung | Beschreibung
 **createdDateTime** | Wann wurde das Element erstellt?
 **lastModifiedDateTime** | Wann wurde das Element zuletzt bearbeitet?
 **fileName** | Name des Dateielements
-**fileExtension** | Dateielementtyp wie PDF oder .word
+**fileExtension** | Dateielementtyp, z. B. .pdf oder .word
 
 Die Eigenschaften auf dieser Seite sind basierend auf Ihrer Datenquelle vorab ausgewählt. Sie können diese Auswahl jedoch ändern, wenn eine andere Eigenschaft verfügbar ist, die für eine bestimmte Bezeichnung besser geeignet ist.  
 
@@ -131,11 +131,11 @@ Sie können Ihren Eigenschaften unter der Spalte "Alias" auf der Seite "Schema v
 
 Sie können die Suchschemaattribute festlegen, um die Suchfunktionalität jeder Quelleigenschaft zu steuern. Ein Suchschema hilft zu bestimmen, welche Ergebnisse auf der Suchergebnissetseite angezeigt werden und welche Informationen Endbenutzer anzeigen und darauf zugreifen können.
 
-Suchschemaattribute umfassen Optionen für **Query,** **Search,** **Retrieve** und **Refine**. In der folgenden Tabelle sind die einzelnen Attribute aufgeführt, die von Microsoft Graph Connectors unterstützt werden, und ihre Funktionen werden erläutert.
+Suchschemaattribute umfassen Optionen für **Query,** **Search,** **Retrieve** und **Refine**. In der folgenden Tabelle sind die attribute aufgeführt, die von Microsoft Graph unterstützt werden, und ihre Funktionen werden erläutert.
 
 Suchschemaattribut | Funktion | Beispiel
 --- | --- | ---
-SEARCH | Macht den Textinhalt einer Eigenschaft durchsuchbar. Eigenschafteninhalte sind im Volltextindex enthalten. | Wenn die Eigenschaft title **ist,** gibt eine Abfrage für **Enterprise** Antworten zurück, die das Wort **Enterprise** in einem beliebigen Text oder Titel enthalten.
+SEARCH | Macht den Textinhalt einer Eigenschaft durchsuchbar. Eigenschafteninhalte sind im Volltextindex enthalten. | Wenn die Eigenschaft **title** ist, gibt eine Abfrage für **Enterprise** Antworten zurück, die das Wort **Enterprise** Text oder Titel enthalten.
 QUERY | Sucht nach Abfrage nach einer Übereinstimmung für eine bestimmte Eigenschaft. Der Eigenschaftsname kann dann entweder programmgesteuert oder ausführlich in der Abfrage angegeben werden. |  Wenn die **Title-Eigenschaft** abgefragt werden kann, wird die Abfrage **Title: Enterprise** unterstützt.
 ABRUFEN | Nur abgerufene Eigenschaften können im Ergebnistyp verwendet und im Suchergebnis angezeigt werden. |
 EINSCHRÄNKUNG | Die Einschränkungsoption kann wie auf der Microsoft Search-Ergebnisseite verwendet werden. | Benutzer in Ihrer Organisation können [auf](custom-filters.md) der Suchergebnissetseite nach **URL** filtern, wenn die Einschränkungseigenschaft während der Verbindungseinrichtung markiert ist
@@ -164,7 +164,7 @@ Das Aktualisierungsintervall bestimmt, wie oft Ihre Daten zwischen der Datenquel
 
 Es gibt zwei Arten von  Aktualisierungsintervallen, die vollständige Aktualisierung und inkrementelle Aktualisierung **sind,** aber inkrementelle Aktualisierungen sind für einige Datenquellen nicht verfügbar.
 
-Bei einer vollständigen Aktualisierung verarbeitet und indiziert die Suchmaschine jedes Element in der Inhaltsquelle, unabhängig von vorherigen Durchforstungen. Eine vollständige Aktualisierung funktioniert am besten für die folgenden Situationen:
+Bei einer vollständigen Aktualisierung verarbeitet und indiziert die Suchmaschine die Elemente, die sich in der Inhaltsquelle geändert haben, unabhängig von vorherigen Durchforstungen. Eine vollständige Aktualisierung funktioniert am besten für die folgenden Situationen:
 
 * Erkennen von Löschvorgängen von Daten.
 * Bei der inkrementellen Aktualisierung wurden Fehler gefunden, und es ist ein Fehler aufgetreten.
@@ -198,9 +198,9 @@ Lesen Sie die connectorspezifischen Informationen für Ihre Datenquelle.
 
 ## <a name="limitations"></a>Einschränkungen
 <!---Insert limitations for this data source-->
-Informationen zu Einschränkungen, die für alle Datenquellen gelten, finden Sie im [Artikel Übersicht über Microsoft Graph-Connectors.](connectors-overview.md)
+Informationen zu Einschränkungen, die für alle Datenquellen gelten, finden Sie im [Artikel Übersicht über Microsoft Graph Connectors.](connectors-overview.md)
 
-Sehen Sie sich die connectorspezifischen Informationen für Ihre Datenquelle an, um herauszufinden, ob für diesen bestimmten Graph-Connector andere Einschränkungen gelten.
+Sehen Sie sich die connectorspezifischen Informationen für Ihre Datenquelle an, um herauszufinden, ob andere Einschränkungen für diesen bestimmten Graph gelten.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

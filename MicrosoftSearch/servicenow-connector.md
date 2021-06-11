@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten des ServiceNow Graph Connectors für Microsoft Search
-ms.openlocfilehash: 0b7e752ec67a7c14e4afc2e3bad32124694f8f39
-ms.sourcegitcommit: 668930032e77a065c23551b3e8820dcc2c63c0f8
+ms.openlocfilehash: ac5d0b23547ce7ccd0d8bb6399b092f9bc9e5303
+ms.sourcegitcommit: f12e7ff0a94d30a9de1f93266715180e7530de3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52853814"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879308"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -27,7 +27,7 @@ ms.locfileid: "52853814"
 
 Mit dem Microsoft Graph Connector für ServiceNow kann Ihre Organisation Knowledge Base-Artikel indizieren, die für alle Benutzer sichtbar oder mit Benutzerkriterienberechtigungen innerhalb Ihrer Organisation eingeschränkt sind. Nachdem Sie den Connector konfiguriert und Inhalte aus ServiceNow indiziert haben, können Endbenutzer von einem beliebigen Microsoft Search-Client nach diesen Artikeln suchen.  
 
-Dieser Artikel richtet sich an Microsoft 365 Administratoren oder alle Personen, die einen ServiceNow Graph Connector konfigurieren, ausführen und überwachen. Er ergänzt die allgemeinen Anweisungen im Artikel ["Einrichten Ihres Graph Connectors".](configure-connector.md) Wenn Sie dies noch nicht getan haben, lesen Sie den gesamten Artikel zum Einrichten ihres Graph Connectors, um den allgemeinen Einrichtungsprozess zu verstehen.
+Dieser Artikel richtet sich an Microsoft 365 Administratoren oder alle Personen, die einen ServiceNow Graph Connector konfigurieren, ausführen und überwachen. Er ergänzt die allgemeinen Anweisungen im Artikel ["Einrichten Ihres Graph Connectors".](configure-connector.md) Wenn sie dies noch nicht getan haben, lesen Sie den gesamten Artikel zum Einrichten ihres Graph Connectors, um den allgemeinen Einrichtungsprozess zu verstehen.
 
 Jeder Schritt im Setupprozess wird unten zusammen mit einem Hinweis aufgeführt, der angibt, dass Sie die allgemeinen Setupanweisungen oder andere Anweisungen befolgen sollten, die nur für ServiceNow Graph Connector gelten, einschließlich Informationen zur [Problembehandlung](#troubleshooting) und [Einschränkungen.](#limitations)  
 
@@ -39,7 +39,7 @@ Befolgen Sie die allgemeinen Setupanweisungen.
 
 
 ## <a name="step-3-connection-settings"></a>Schritt 3: Verbindungs-Einstellungen
-Um eine Verbindung mit Ihren ServiceNow-Daten herzustellen, benötigen Sie die **ServiceNow-Instanz-URL** Ihrer Organisation. Die ServiceNow-Instanz-URL Ihrer Organisation sieht in der Regel wie **https:// &lt; Ihre-Organization-Domäne>.service-now.com** aus. 
+Um eine Verbindung mit Ihren ServiceNow-Daten herzustellen, benötigen Sie die **ServiceNow-Instanz-URL** Ihrer Organisation. Die ServiceNow-Instanz-URL Ihrer Organisation sieht in der Regel wie **https:// &lt; Ihre-Organisation-Domäne>.service-now.com** aus. 
 
 Zusammen mit dieser URL benötigen Sie ein **Dienstkonto** zum Einrichten der Verbindung zu ServiceNow sowie zum Zulassen, dass Microsoft Search die Wissensartikel regelmäßig basierend auf dem Aktualisierungszeitplan aktualisiert. Das Dienstkonto benötigt Lesezugriff auf die folgenden **ServiceNow-Tabelleneinträge,** um verschiedene Entitäten erfolgreich durchforsten zu können.
 
@@ -64,15 +64,15 @@ Sie können eine Rolle für das Dienstkonto **erstellen und zuweisen,** das Sie 
 
 Wählen Sie **eine von drei** unterstützten Methoden aus, um Inhalte von ServiceNow zu authentifizieren und zu synchronisieren: 
  
-1. Standardauthentifizierung 
-1. ServiceNow OAuth (empfohlen)
-1. Azure AD OpenID Verbinden
+- Standardauthentifizierung 
+- ServiceNow OAuth (empfohlen)
+- Azure AD OpenID Verbinden
 
-### <a name="basic-authentication"></a>Standardauthentifizierung
+## <a name="step-31-basic-authentication"></a>Schritt 3.1: Standardauthentifizierung
 
 Geben Sie den Benutzernamen und das Kennwort des ServiceNow-Kontos mit **der Wissensrolle** ein, um sich bei Ihrer Instanz zu authentifizieren.
 
-### <a name="servicenow-oauth"></a>ServiceNow OAuth
+## <a name="step-32-servicenow-oauth"></a>Schritt 3.2: ServiceNow OAuth
 
 Um ServiceNow OAuth für die Authentifizierung zu verwenden, muss ein ServiceNow-Administrator einen Endpunkt in Ihrer ServiceNow-Instanz bereitstellen, damit die Microsoft Search-App darauf zugreifen kann. Weitere Informationen finden Sie unter ["Erstellen eines Endpunkts für Clients für den Zugriff auf die Instanz"](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) in der ServiceNow-Dokumentation.
 
@@ -91,19 +91,19 @@ Lebensdauer des Zugriffstokens | Die Anzahl der Sekunden, für die ein Zugriffst
 
 Geben Sie die Client-ID und den geheimen Clientschlüssel ein, um eine Verbindung mit Ihrer Instanz herzustellen. Verwenden Sie nach der Verbindung die Anmeldeinformationen eines ServiceNow-Kontos, um die Berechtigung zum Durchforsten zu authentifizieren. Das Konto sollte mindestens über **eine Wissensrolle** verfügen. Lesen Sie die Tabelle am Anfang von [Schritt 3: Verbindungseinstellungen,](#step-3-connection-settings) um Lesezugriff auf weitere ServiceNow-Tabelleneinträge und Berechtigungen für Indexbenutzerkriterien bereitzustellen.
 
-### <a name="azure-ad-openid-connect"></a>Azure AD OpenID Verbinden
+## <a name="step-33-azure-ad-openid-connect"></a>Schritt 3.3: Azure AD OpenID Verbinden
 
 Führen Sie die folgenden Schritte aus, um Azure AD OpenID Verbinden für die Authentifizierung zu verwenden.
 
-## <a name="step-3a-register-a-new-application-in-azure-active-directory"></a>Schritt 3.a: Registrieren einer neuen Anwendung in Azure Active Directory
+### <a name="step-331-register-a-new-application-in-azure-active-directory"></a>Schritt 3.3.1: Registrieren einer neuen Anwendung in Azure Active Directory
 
 Informationen zum Registrieren einer neuen Anwendung in Azure Active Directory finden Sie unter [Registrieren einer Anwendung.](/azure/active-directory/develop/quickstart-register-app#register-an-application) Wählen Sie ein Organisationsverzeichnis mit einem einzelnen Mandanten aus. Umleitungs-URI ist nicht erforderlich. Notieren Sie sich nach der Registrierung die Anwendungs-ID (Client-)ID und die Verzeichnis-ID (Mandanten-ID).
 
-## <a name="step-3b-create-a-client-secret"></a>Schritt 3.b: Erstellen eines geheimen Clientschlüssels
+### <a name="step-332-create-a-client-secret"></a>Schritt 3.3.2: Erstellen eines geheimen Clientschlüssels
 
 Informationen zum Erstellen eines geheimen Clientschlüssels finden Sie unter [Erstellen eines geheimen Clientschlüssels.](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret) Notieren Sie sich den geheimen Clientschlüssel.
 
-## <a name="step-3c-retrieve-service-principal-object-identifier"></a>Schritt 3.c: Abrufen des Dienstprinzipalobjektbezeichners
+### <a name="step-333-retrieve-service-principal-object-identifier"></a>Schritt 3.3.3: Abrufen des Dienstprinzipalobjektbezeichners
 
 Führen Sie die Schritte zum Abrufen des Dienstprinzipalobjektbezeichners aus.
 
@@ -137,7 +137,7 @@ Anwendungs-ID (Client-ID) | Eindeutige ID der in Schritt 3.a registrierten Anwen
 Geheimer Clientschlüssel | Der geheime Schlüssel der Anwendung (aus Schritt 3.b). Behandeln Sie es wie ein Kennwort.
 Dienstprinzipal-ID | Eine Identität für die Anwendung, die als Dienst ausgeführt wird. (aus Schritt 3.c)
 
-## <a name="step-3d-register-servicenow-application"></a>Schritt 3.d: Registrieren der ServiceNow-Anwendung
+### <a name="step-334-register-servicenow-application"></a>Schritt 3.3.4: Registrieren der ServiceNow-Anwendung
 
 Die ServiceNow-Instanz benötigt die folgende Konfiguration:
 
@@ -169,7 +169,7 @@ Die ServiceNow-Instanz benötigt die folgende Konfiguration:
 
 5. Wählen Sie "Absenden und Aktualisieren des OAuth OIDC-Entitätsformulars" aus.
 
-## <a name="step-3e-create-a-servicenow-account"></a>Schritt 3.e: Erstellen eines ServiceNow-Kontos
+### <a name="step-335-create-a-servicenow-account"></a>Schritt 3.3.5: Erstellen eines ServiceNow-Kontos
 
 Lesen Sie die Anweisungen, um ein ServiceNow-Konto zu erstellen und [einen Benutzer in ServiceNow zu erstellen.](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_CreateAUser.html)
 
@@ -182,7 +182,7 @@ Nur Webdienstzugriff | Checked
 
 Alle anderen Werte können auf den Standardwert festgelegt werden.
 
-##### <a name="step-36-enable-knowledge-role-for-the-servicenow-account"></a>Schritt 3.6: Aktivieren der Wissensrolle für das ServiceNow-Konto
+### <a name="step-336-enable-knowledge-role-for-the-servicenow-account"></a>Schritt 3.3.6: Aktivieren der Wissensrolle für das ServiceNow-Konto
 
 Greifen Sie auf das ServiceNow-Konto zu, das Sie mit der ServiceNow-Prinzipal-ID als Benutzer-ID erstellt haben, und weisen Sie die Wissensrolle zu. Anweisungen zum Zuweisen einer Rolle zu einem ServiceNow-Konto finden Sie hier. [Weisen Sie einem Benutzer eine Rolle zu.](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html) Lesen Sie die Tabelle am Anfang von [Schritt 3: Verbindungseinstellungen,](#step-3-connection-settings) um Lesezugriff auf weitere ServiceNow-Tabelleneinträge und Berechtigungen für Indexbenutzerkriterien bereitzustellen.
 
@@ -190,7 +190,7 @@ Verwenden Sie die Anwendungs-ID als Client-ID (aus Schritt 3.a) und den geheimen
 
 ## <a name="step-4-select-properties-and-filter-data"></a>Schritt 4: Auswählen von Eigenschaften und Filtern von Daten
 
-In diesem Schritt können Sie der ServiceNow-Datenquelle verfügbare Eigenschaften hinzufügen oder daraus entfernen. Microsoft 365 hat bereits einige Eigenschaften standardmäßig ausgewählt.
+In diesem Schritt können Sie der ServiceNow-Datenquelle verfügbare Eigenschaften hinzufügen oder daraus entfernen. Microsoft 365 einige Eigenschaften standardmäßig bereits ausgewählt hat.
 
 Mit einer ServiceNow-Abfragezeichenfolge können Sie Bedingungen für die Synchronisierung von Artikeln angeben. Es ist wie eine **Where-Klausel** in einer **SQL Select-Anweisung.** Sie können z. B. festlegen, dass nur Artikel indiziert werden, die veröffentlicht und aktiv sind. Informationen zum Erstellen einer eigenen Abfragezeichenfolge finden Sie unter [Generieren einer codierten Abfragezeichenfolge mithilfe eines Filters.](https://docs.servicenow.com/bundle/paris-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html)
 
@@ -267,4 +267,4 @@ Prod | Europa | 20.54.41.208/30, 51.105.159.88/30
 Prod | Asiatisch-pazifischer Raum | 52.139.188.212/30, 20.43.146.44/30 
 
 
-Wenn Sie andere Probleme haben oder Feedback geben möchten, schreiben Sie uns aka.ms/TalkToGraphConnectors
+Wenn Sie andere Probleme haben oder Feedback geben möchten, schreiben Sie uns [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors)

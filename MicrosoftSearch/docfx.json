@@ -22,6 +22,10 @@
       {
         "files": [
           "**/*.png",
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.svg",
+          "**/*.pdf",
           "**/*.jpg"
         ],
         "exclude": [
@@ -38,7 +42,9 @@
       "ocv-translation-feedback": true,
       "breadcrumb_path": "/MicrosoftSearch/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "feedback_system": "None"
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/OfficeDocs-MicrosoftSearch",
+      "recommendations": true
     },
     "fileMetadata": {},
     "template": [],

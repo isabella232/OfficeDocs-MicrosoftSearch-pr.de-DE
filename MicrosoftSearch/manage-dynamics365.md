@@ -8,18 +8,18 @@ ms.topic: article
 ms.service: mssearch
 localization_priority: Normal
 description: Verwalten der Darstellung von Dynamics 365-Inhalten in Suchergebnissen
-ms.openlocfilehash: 8818d2e6a412feb167c67f465f485b23e868a12a
-ms.sourcegitcommit: be989950a7b63281c2348cfd9e6cc13e79b7c067
+ms.openlocfilehash: 5f642bcb026358e57258e5e736fc263616fc4b05
+ms.sourcegitcommit: f07a2e578b6c9ed5a1a3b22266cca371782870a7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53021840"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53067928"
 ---
 # <a name="dynamics-365-federation-search-preview"></a>Dynamics 365-Verbundsuche (Vorschau)
 
 ## <a name="microsoft-search-federation-and-connectors"></a>Microsoft Search Partnerverbund und Connectors
 
-Um Microsoft Search nützlicher zu machen, führen wir Microsoft Search Partnerverbund ein. Mit der Sammelsuche können Organisationen Daten in diesen Szenarien in Microsoft Search zugänglich machen:
+Um Microsoft Search nützlicher zu machen, führen wir Microsoft Search-Partnerverbund ein. Mit der Sammelsuche können Organisationen Daten in diesen Szenarien in Microsoft Search zugänglich machen:
 
 * Daten in Systemen, die strengen Complianceanforderungen unterliegen
 * Daten, die keine Systemgrenzen überschreiten können
@@ -35,23 +35,25 @@ Microsoft Dynamics 365 ist eine Reihe intelligenter Geschäftsanwendungen, die f
 * **Einfach zu verwenden:** Benutzer können wichtige Informationen, die in Dynamics 365 gespeichert sind, ganz einfach und schnell finden, einschließlich Konten, Kontakten, offenen Möglichkeiten und mehr.
 * **Umfangreichere Inhalte:** Um dynamics 365-Suchergebnisse nützlicher zu machen, enthalten sie wichtige Informationen wie Leads, Kontakte und Kontodetails.
 * **Integrierter Datenschutz:** Dynamics 365-Ergebnisse werden nur für Benutzer angezeigt, die Zugriff auf die verbundene Instanz haben.
-* **Einheitliche Suchumgebung:** Um eine einheitliche Benutzererfahrung zu gewährleisten, sind die Dynamics 365-Ergebnisse über alle Sucheinstiegspunkte hinweg konsistent. Überall dort, wo Sie suchen, erhalten Sie dieselben Ergebnisse mit demselben Aussehen und Verhalten.
+* **Einheitliche Suchumgebung:** Um eine einheitliche Benutzererfahrung zu gewährleisten, sind die Dynamics 365-Ergebnisse über alle Sucheinstiegspunkte hinweg konsistent. Überall dort, wo Sie suchen, erhalten Sie dieselben Ergebnisse mit dem gleichen Aussehen und Verhalten.
 
 ## <a name="what-users-experience"></a>Benutzerfreundlichkeit
 
-Dynamics 365-Antworten werden in suchergebnissen in allen Microsoft Search Canvases angezeigt, einschließlich SharePoint Online, Bing und Office.
+Dynamics 365-Antworten werden in suchergebnissen in allen Microsoft Search Canvass angezeigt, einschließlich SharePoint Online, Bing und Office.
 
 :::image type="content" alt-text="Screenshot der Dynamics 365-Antworten auf SharePoint, Bing und Office" source="media/dynamics365/dynamics365-answer.png" lightbox="media/dynamics365/dynamics365-answer.png":::
 
-Aus der Antwort ist es einfach, weitere Dynamics 365-Suchergebnisse mithilfe des Links **"Weitere Dynamics 365-Ergebnisse"** anzuzeigen. Sie führt Benutzer zu einer dedizierten Dynamics 365-Ergebnisseite mit weiteren Ergebnissen, die für ihre Abfrage relevant sind.
+Aus der Antwort ist es einfach, weitere Dynamics 365-Suchergebnisse mithilfe des Links **"Weitere Dynamics 365-Ergebnisse"** anzuzeigen. Sie führt Benutzer zu einer dedizierten Dynamics 365-Ergebnisseite mit weiteren ergebnissen, die für ihre Abfrage relevant sind.
 
 :::image type="content" alt-text="Screenshot der vertikalen Dynamics 365-Branche und Ergebnisse zu SharePoint, Bing und Office" source="media/dynamics365/dynamics365-vertical.png" lightbox="media/dynamics365/dynamics365-vertical.png":::
 
-Wenn Sie auf ein beliebiges Ergebnis klicken oder tippen, wird Dynamics 365 geöffnet und die detaillierten Informationen angezeigt.
+Durch Klicken oder Tippen auf ein beliebiges Ergebnis wird Dynamics 365 geöffnet und die detaillierten Informationen angezeigt.
 
 :::image type="content" alt-text="Screenshot der Detailseite in Dynamics 365" source="media/dynamics365/dynamics365-detail-page.png" lightbox="media/dynamics365/dynamics365-detail-page.png":::
 
-Unabhängig davon, wo Ihre Benutzer mit der Suche beginnen, ist ihre Oberfläche konsistent und ermöglicht es ihnen, schnell die relevantesten Dynamics 365-Ergebnisse zu finden. Sehen Sie sich unser [Microsoft Build 2021-Video](https://youtu.be/TH9QUkQoEJM) für eine Demonstration an.
+Unabhängig davon, wo Ihre Benutzer mit der Suche beginnen, ist ihre Oberfläche konsistent und ermöglicht es ihnen, schnell die relevantesten Dynamics 365-Ergebnisse zu finden. Sehen Sie sich unser Microsoft Build 2021-Video für eine Demonstration an.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4P83t]
 
 ## <a name="supported-query-patterns"></a>Unterstützte Abfragemuster
 
@@ -97,4 +99,4 @@ Mit dieser einfachen Konfiguration können Sie die Dynamics 365-Verbundsuche fü
 
 :::image type="content" alt-text="Screenshot des Dynamics 365-Einrichtungsbereichs im Microsoft 365 Admin Center" source="media/dynamics365/dynamic365-connection-setup.png" lightbox="media/dynamics365/dynamic365-connection-setup.png":::
 
-Wenn die Einrichtung abgeschlossen ist, werden Dynamics 365-Antworten und -Vertikalen nur für Benutzer mit einer gültigen Dynamics 365-Lizenz und Zugriff auf die verbundene Dynamics 365-Umgebung angezeigt. Sie können jederzeit zu diesen Einstellungen zurückkehren und die Verbindungsendpunktumgebung ändern oder die Verbindung deaktivieren.
+Nach Abschluss der Einrichtung werden Dynamics 365-Antworten und -Vertikalen nur für Benutzer mit einer gültigen Dynamics 365-Lizenz und Zugriff auf die verbundene Dynamics 365-Umgebung angezeigt. Sie können jederzeit zu diesen Einstellungen zurückkehren und die Verbindungsendpunktumgebung ändern oder die Verbindung deaktivieren.

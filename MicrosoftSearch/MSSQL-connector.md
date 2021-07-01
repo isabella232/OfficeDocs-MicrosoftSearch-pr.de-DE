@@ -13,24 +13,24 @@ search.appverid:
 - MET150
 - MOE150
 description: Richten Sie den Azure SQL- und Microsoft SQL Graph-Connector für Microsoft Search ein.
-ms.openlocfilehash: 1cc28561d7572c3a554f1cf93b582b4787414f48
-ms.sourcegitcommit: a8867bbdfa8c5fd3debde8e6b2bba4f79768e3f6
+ms.openlocfilehash: 0f8501e36754235b43846b80d60d4b0156a504b9
+ms.sourcegitcommit: 93fc70f0073ab45b4dbd702441ac2fc07a7668bc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52955618"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "53230916"
 ---
 <!---Previous ms.author: vivg --->
 
 # <a name="azure-sql-and-microsoft-sql-server-graph-connectors"></a>Azure SQL und Microsoft SQL Server Graph Connectors
 
-Der Microsoft SQL Server- oder Azure SQL Graph-Connector ermöglicht Es Ihrer Organisation, Daten aus einer lokalen SQL Server-Datenbank oder einer in Ihrer Azure SQL-Instanz in der Cloud gehosteten Datenbank zu ermitteln und zu indizieren.
+Der Microsoft SQL Server- oder Azure SQL Graph-Connector ermöglicht Es Ihrer Organisation, Daten aus einer lokalen SQL Server-Datenbank oder einer in Ihrer Azure SQL Instanz in der Cloud gehosteten Datenbank zu ermitteln und zu indizieren.
 Der Graph Connector indiziert den angegebenen Inhalt in Microsoft Search. Um den Index mit Quelldaten auf dem neuesten Stand zu halten, unterstützt er regelmäßige vollständige und inkrementelle Durchforstungen. Mit diesen SQL Connectors können Sie auch den Zugriff auf Suchergebnisse für bestimmte Benutzer einschränken.
 
 > [!NOTE]
-> Lesen Sie den Artikel [**zum Einrichten ihres Graph Connectors,**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten von Connectors Graph zu verstehen.
+> Lesen Sie den Artikel [**"Setup your Graph connector",**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten Graph Connectors zu verstehen.
 
-Dieser Artikel richtet sich an alle Personen, die einen Azure SQL und Microsoft SQL Server Graph Connector konfigurieren, ausführen und überwachen. Es ergänzt den allgemeinen Einrichtungsprozess und zeigt Anweisungen, die nur für den Azure SQL und Microsoft SQL Server Graph Connector gelten. Dieser Artikel enthält auch Informationen zu [Einschränkungen](#limitations) für die Microsoft SQL Server und Azure SQL Connectors.
+Dieser Artikel richtet sich an alle Personen, die einen Azure SQL und microsoft SQL Server Graph Connector konfigurieren, ausführen und überwachen. Es ergänzt den allgemeinen Setupprozess und zeigt Anweisungen, die nur für den Azure SQL und den Microsoft SQL Server Graph Connector gelten. Dieser Artikel enthält auch Informationen zu [Einschränkungen](#limitations) für den Microsoft SQL-Server und Azure SQL Connectors.
 
 ## <a name="before-you-get-started"></a>Bevor Sie beginnen
 
@@ -70,7 +70,7 @@ Um die registrierte App zu Ihrem Azure SQL-Datenbank hinzuzufügen, müssen Sie 
 
 ### <a name="connection-settings"></a>Verbindungseinstellungen
 
-Um den Microsoft SQL Server Connector mit einer Datenquelle zu verbinden, müssen Sie den Datenbankserver konfigurieren, der durchforstet werden soll, und den lokalen Agent. Anschließend können Sie mit der erforderlichen Authentifizierungsmethode eine Verbindung mit der Datenbank herstellen.
+Um den Microsoft SQL Server Connector mit einer Datenquelle zu verbinden, müssen Sie den Datenbankserver konfigurieren, den Sie durchforsten möchten, und den lokalen Agent. Anschließend können Sie mit der erforderlichen Authentifizierungsmethode eine Verbindung mit der Datenbank herstellen.
 
 > [!NOTE] 
 > Ihre Datenbank muss SQL Server Version 2008 oder höher ausgeführt werden, damit der Microsoft SQL Server Connector eine Verbindung herstellen kann.
@@ -85,7 +85,7 @@ Für zusätzliche Sicherheit können Sie IP-Firewallregeln für Ihre Azure-SQL S
 | EUR | 20.54.41.208/30, 51.105.159.88/30 |
 | APC | 52.139.188.212/30, 20.43.146.44/30 |
 
-Zum Durchsuchen der Datenbankinhalte müssen Sie SQL Abfragen angeben, wenn Sie den Connector konfigurieren. Diese SQL Abfragen müssen alle Datenbankspalten benennen, die Indiziert werden sollen (d. h. Quelleigenschaften), einschließlich aller SQL Verknüpfungen, die ausgeführt werden müssen, um alle Spalten abzurufen. Um den Zugriff auf Suchergebnisse einzuschränken, müssen Sie zugriffssteuerungslisten (Access Control Lists, ACLs) innerhalb SQL Abfragen angeben, wenn Sie den Connector konfigurieren.
+Um den Datenbankinhalt zu durchsuchen, müssen Sie beim Konfigurieren des Connectors SQL Abfragen angeben. Diese SQL Abfragen müssen alle Datenbankspalten benennen, die Indiziert werden sollen (d. h. Quelleigenschaften), einschließlich aller SQL Verknüpfungen, die ausgeführt werden müssen, um alle Spalten abzurufen. Um den Zugriff auf Suchergebnisse einzuschränken, müssen Sie zugriffssteuerungslisten (Access Control Lists, ACLs) innerhalb SQL Abfragen angeben, wenn Sie den Connector konfigurieren.
 
 ## <a name="step-3a-full-crawl-required"></a>Schritt 3a: Vollständige Durchforstung (erforderlich)
 
@@ -107,20 +107,20 @@ Um den Zugriff auf die Suchergebnisse zu verwalten, können Sie eine oder mehrer
 Die Verwendung der einzelnen ACL-Spalten in der obigen Abfrage wird unten beschrieben. In der folgenden Liste werden die vier **Zugriffssteuerungsmechanismen** erläutert.
 
 - **AllowedUsers:** Diese Spalte gibt die Liste der Benutzer-IDs an, die auf die Suchergebnisse zugreifen können. Im folgenden Beispiel würde die Liste der Benutzer: john@contoso.com, keith@contoso.com und lisa@contoso.com nur Zugriff auf einen Datensatz mit OrderId = 12 haben.
-- **AllowedGroups:** Diese Spalte gibt die Gruppe von Benutzern an, die auf die Suchergebnisse zugreifen können. Im folgenden Beispiel hätten Gruppen-sales-team@contoso.com nur Zugriff auf den Datensatz mit OrderId = 12.
-- **DeniedUsers**: Diese Spalte gibt die Liste der Benutzer an, die **keinen** Zugriff auf die Suchergebnisse haben. Im folgenden Beispiel haben Benutzer john@contoso.com und keith@contoso.com keinen Zugriff auf den Datensatz mit OrderId = 13, während alle anderen Benutzer Zugriff auf diesen Datensatz haben.
+- **AllowedGroups:** Diese Spalte gibt die Gruppe von Benutzern an, die auf die Suchergebnisse zugreifen können. Im folgenden Beispiel würde gruppen sales-team@contoso.com nur Zugriff auf den Datensatz mit OrderId = 12 haben.
+- **DeniedUsers**: Diese Spalte gibt die Liste der Benutzer an, die **keinen** Zugriff auf die Suchergebnisse haben. Im folgenden Beispiel haben Benutzer john@contoso.com und keith@contoso.com keinen Zugriff auf datensätze mit OrderId = 13, während alle anderen Benutzer Zugriff auf diesen Datensatz haben.
 - **DeniedGroups:** Diese Spalte gibt die Gruppe von Benutzern an, die **keinen** Zugriff auf die Suchergebnisse haben. Im folgenden Beispiel haben Gruppen engg-team@contoso.com und pm-team@contoso.com keinen Zugriff auf datensätze mit OrderId = 15, während alle anderen Zugriff auf diesen Datensatz haben.  
 
 ![Beispieldaten, die die OrderTable und AclTable mit Beispieleigenschaften anzeigen](media/MSSQL-ACL1.png)
 
 ### <a name="supported-data-types"></a>Unterstützte Datentypen
 
-In der folgenden Tabelle sind die SQL Datentypen zusammengefasst, die in den MS-SQL- und Azure SQL-Connectors unterstützt werden. In der Tabelle wird auch der Indizierungsdatentyp für den unterstützten SQL Datentyp zusammengefasst. Weitere Informationen zu von Microsoft Graph Connectors unterstützten Datentypen für die Indizierung finden Sie in der Dokumentation zu [Eigenschaftsressourcentypen.](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)
+In der folgenden Tabelle sind die SQL Datentypen zusammengefasst, die in den MS-SQL und Azure SQL Connectors unterstützt werden. In der Tabelle wird auch der Indizierungsdatentyp für den unterstützten SQL Datentyp zusammengefasst. Weitere Informationen zu von Microsoft Graph Connectors unterstützten Datentypen für die Indizierung finden Sie in der Dokumentation zu [Eigenschaftsressourcentypen.](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)
 
 | Kategorie | Quelldatentyp | Datentyp der Indizierung |
 | ------------ | ------------ | ------------ |
 | Datum und Uhrzeit | date <br> Datum/Uhrzeit <br> datetime2 <br> Smalldatetime | Datum/Uhrzeit |
-| Exakt numerisch | Bigint <br> int <br> Smallint <br> Tinyint | int64 |
+| Exakt numerisch | Bigint <br> Ganzzahl <br> Smallint <br> Tinyint | int64 |
 | Exakt numerisch | Bit | Boolescher Wert |
 | Ungefährer numerischer Wert | Gleitkommazahl <br> Real | double |
 | Zeichenfolge | Char <br> Varchar <br> text | string |
@@ -154,7 +154,7 @@ Um zeilenweise gelöschte Zeilen in Ihrer Datenbank von der Indizierung auszusch
 
 Wählen Sie **"Berechtigungen verwalten"** aus, um die verschiedenen Zugriffssteuerungsspalten (Access Control, ACL) auszuwählen, die den Zugriffsteuerungsmechanismus angeben. Wählen Sie den Spaltennamen aus, den Sie in der vollständigen Durchforstung SQL Abfrage angegeben haben.
 
-Es wird erwartet, dass jede ACL-Spalte eine mehrwertige Spalte ist. Diese mehreren ID-Werte können durch Trennzeichen wie Semikolon (;), Komma (,) usw. getrennt werden. Sie müssen dieses Trennzeichen im **Werttrennzeichenfeld** angeben.
+Es wird erwartet, dass jede der ACL-Spalten eine mehrwertige Spalte ist. Diese mehreren ID-Werte können durch Trennzeichen wie Semikolon (;), Komma (,) usw. getrennt werden. Sie müssen dieses Trennzeichen im **Werttrennzeichenfeld** angeben.
 
 Die folgenden ID-Typen werden für die Verwendung als ACLs unterstützt:
 
@@ -220,6 +220,7 @@ Es folgt ein häufiger Fehler beim Konfigurieren des Connectors und sein möglic
 Für die SQL Connectors gelten die folgenden Einschränkungen in der Vorschauversion:
 
 - Microsoft SQL Server Connector: Die lokale Datenbank muss SQL Server Version 2008 oder höher ausgeführt werden.
+
 - Das Microsoft 365-Abonnement und das Azure-Abonnement (Hosten der Azure SQL-Datenbank) müssen sich innerhalb desselben Azure Active Directory befinden.
 - ACLs werden nur mithilfe eines Benutzerprinzipalnamens (User Principal Name, UPN), Azure Active Directory (Azure AD) oder Active Directory Security unterstützt.
 - Das Indizieren von umfangreichen Inhalten in Datenbankspalten wird nicht unterstützt. Beispiele für solche Inhalte sind HTML, JSON, XML, Blobs und Dokumentparsings, die als Links in den Datenbankspalten vorhanden sind.

@@ -12,13 +12,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Einrichten des Graph Connectors für Enterprise Websites für Microsoft Search
-ms.openlocfilehash: f986736218768b4979e6e8aa474081c6aa87cb75
-ms.sourcegitcommit: 56e6c0706067e383d826ec97feb80f0742a726e0
+description: Einrichten des Enterprise Websites Graph Connectors für Microsoft Search
+ms.openlocfilehash: 32e38c9bef036556dae2734e23b1d26ba4fe2c27
+ms.sourcegitcommit: 38a0f09596c2bca0e12bf4cada7b4c64fd4c48e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53419892"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53449046"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -26,12 +26,12 @@ ms.locfileid: "53419892"
 
 # <a name="enterprise-websites-graph-connector"></a>Enterprise Websites Graph Connector
 
-Der connector Enterprise Websites Graph ermöglicht Es Ihrer Organisation, Artikel und **Inhalte von den internen Websites** zu indizieren. Nachdem Sie den Connector konfiguriert und Inhalte von der Website synchronisiert haben, können Endbenutzer von einem beliebigen Microsoft Search Client nach diesen Inhalten suchen.
+Der Connector Enterprise Websites Graph ermöglicht Es Ihrer Organisation, Artikel und **Inhalte von den internen Websites** zu indizieren. Nachdem Sie den Connector konfiguriert und Inhalte von der Website synchronisiert haben, können Endbenutzer von jedem Microsoft Search Client nach diesen Inhalten suchen.
 
 > [!NOTE]
-> Lesen Sie den Artikel [**"Setup your Graph connector",**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten Graph Connectors zu verstehen.
+> Lesen Sie den Artikel [**"Setup your Graph connector",**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten von Connectors Graph zu verstehen.
 
-Dieser Artikel richtet sich an alle Personen, die einen Enterprise Websites-Connector konfigurieren, ausführen und überwachen. Es ergänzt den allgemeinen Einrichtungsprozess und zeigt Anweisungen, die nur für den Connector für Enterprise Websites gelten. Dieser Artikel enthält auch Informationen zur [Problembehandlung](#troubleshooting) und [zu Einschränkungen.](#limitations)
+Dieser Artikel richtet sich an alle Personen, die einen Enterprise Websites-Connector konfigurieren, ausführen und überwachen. Es ergänzt den allgemeinen Einrichtungsprozess und zeigt Anweisungen, die nur für den Connector für Enterprise Websites gelten. Dieser Artikel enthält auch Informationen zur [Problembehandlung.](#troubleshooting)
 
 <!---## Before you get started-->
 
@@ -59,8 +59,21 @@ Verwenden Sie das URL-Feld, um den Stamm der Website anzugeben, die Sie durchfor
 
 Bei Auswahl des Connectors werden nur die in der Sitemap aufgeführten URLs durchforstet. Wenn keine Auswahl erfolgt oder keine Standortzuordnung gefunden wird, führt der Connector eine umfassende Durchforstung aller Links durch, die sich in der Stamm-URL der Website befinden.
 
+### <a name="dynamic-site-configuration"></a>Dynamische Standortkonfiguration
+
+Wenn Ihre Website dynamische Inhalte enthält, z. B. Webseiten, die sich in Inhaltsverwaltungssystemen wie Confluence oder Unily befinden, können Sie einen dynamischen Crawler aktivieren. Wählen Sie zum Aktivieren die Option **"Durchforstung für dynamische Websites aktivieren"** aus. Der Crawler wartet auf das Rendern dynamischer Inhalte, bevor er mit der Durchforstung beginnt.
+
 > [!div class="mx-imgBorder"]
-> ![Screenshot des Bereichs "Verbindung Einstellungen" für Enterprise-Webconnector](media/enterprise-web-connector/connectors-enterpriseweb-connectionsettings-with-sitemap.png)
+> ![Screenshot des Bereichs "Verbindung Einstellungen" für Enterprise Webconnector](media/enterprise-web-connector/connectors-enterpriseweb-connectionsettings-dynamicconfig-small.png)
+
+Zusätzlich zum Kontrollkästchen sind drei optionale Felder verfügbar:
+
+1. **DOM Ready:** Geben Sie das DOM-Element ein, das der Crawler als Signal verwenden soll, dass der Inhalt vollständig gerendert wird und die Durchforstung beginnen soll.
+1. **Hinzuzufügende Header:** Geben Sie an, welche HTTP-Header der Crawler beim Senden dieser bestimmten Web-URL enthalten soll. Sie können mehrere Kopfzeilen für unterschiedliche Websites festlegen. Es wird empfohlen, Authentifizierungstokenwerte hinzuzufügen.
+1. **Zu überspringende Header:** Geben Sie alle unnötigen Header an, die von dynamischen Durchforstungsanforderungen ausgeschlossen werden sollen.
+
+> [!NOTE]
+> Dynamische Durchforstung wird nur für den Agent-Durchforstungsmodus unterstützt.
 
 ### <a name="crawl-mode-cloud-or-on-premises"></a>Durchforstungsmodus: Cloud oder lokal
 
@@ -68,7 +81,7 @@ Der Durchforstungsmodus bestimmt den Typ der Websites, die Sie indiziert möchte
 
 Außerdem unterstützt der Connector jetzt das Durchforsten lokaler Websites. Um auf Ihre lokalen Daten zugreifen zu können, müssen Sie zuerst den Graph Connector-Agent installieren und konfigurieren. Weitere Informationen finden Sie unter [Graph Connector-Agent.](./on-prem-agent.md)
 
-Wählen Sie für Ihre lokalen Websites den **Agent** als Durchforstungsmodus aus, und wählen Sie im Feld **"Lokaler Agent"** den Graph Connector-Agent aus, den Sie zuvor installiert und konfiguriert haben.  
+Wählen Sie für Ihre lokalen Websites **den Agent** als Durchforstungsmodus aus, und wählen Sie im Feld **"Lokaler Agent"** den Graph Connector-Agent aus, den Sie zuvor installiert und konfiguriert haben.  
 
 ### <a name="authentication"></a>Authentifizierung
 
@@ -91,7 +104,7 @@ Es gibt zwei Möglichkeiten, um zu verhindern, dass Seiten durchforstet werden: 
 
 ### <a name="support-for-robotstxt"></a>Unterstützung für robots.txt
 
-Der Connector überprüft, ob eine robots.txt Datei für Ihre Stammwebsite vorhanden ist, und beachtet, falls vorhanden, die Anweisungen in dieser Datei. Wenn sie nicht möchten, dass der Connector bestimmte Seiten oder Verzeichnisse auf Ihrer Website durchforstet, können Sie diese Seiten oder Verzeichnisse in den "Disallow"-Deklarationen in Ihrer robots.txt-Datei aufrufen.
+Der Connector überprüft, ob eine robots.txt Datei für Ihre Stammwebsite vorhanden ist, und beachtet, falls vorhanden, die Anweisungen in dieser Datei. Wenn Sie nicht möchten, dass der Connector bestimmte Seiten oder Verzeichnisse auf Ihrer Website durchforstet, können Sie diese Seiten oder Verzeichnisse in den "Disallow"-Deklarationen in Ihrer robots.txt-Datei aufrufen.
 
 ### <a name="add-urls-to-exclude"></a>Hinzufügen von AUSZUSCHLIEßENden URLs
 
@@ -99,7 +112,7 @@ Sie können optional eine **Ausschlussliste** erstellen, um einige URLs davon au
 
 ## <a name="step-4-assign-property-labels"></a>Schritt 4: Zuweisen von Eigenschaftenbeschriftungen
 
-Sie können jeder Bezeichnung eine Quelleigenschaft zuweisen, indem Sie aus einem Menü mit Optionen auswählen. Obwohl dieser Schritt nicht zwingend erforderlich ist, verbessert die Verwendung einiger Eigenschaftenbezeichnungen die Suchrelevanz und stellt genauere Suchergebnisse für Endbenutzer sicher.
+Sie können jeder Bezeichnung eine Quelleigenschaft zuweisen, indem Sie aus einem Menü mit Optionen auswählen. Obwohl dieser Schritt nicht obligatorisch ist, verbessert die Verwendung einiger Eigenschaftenbezeichnungen die Suchrelevanz und stellt genauere Suchergebnisse für Endbenutzer sicher.
 
 ## <a name="step-5-manage-schema"></a>Schritt 5: Verwalten des Schemas
 
@@ -130,13 +143,9 @@ Beim Lesen des Inhalts der Website können bei der Durchforstung einige Quellfeh
  6009 | Ausführliche Informationen zu allen clientseitigen Fehlern (außer HTTP 404, 408) finden Sie unter HTTP 4xx-Fehlercodes.
  6013 | Die Quellseite, die indiziert werden soll, konnte nicht gefunden werden. (HTTP 404-Fehler)
  6018 | Die Quellseite antwortet nicht, und für die Anforderung ist ein Timeout aufgetreten. (HTTP 408-Fehler)
- 6021 | Die Quellseite, die indiziert werden soll, enthält keinen Textinhalt auf der Seite.
+ 6021 | Die Quellseite, die indiziert werden soll, weist keinen Textinhalt auf der Seite auf.
  6023 | Die Quellseite, die indiziert werden soll, wird nicht unterstützt (keine HTML-Seite)
  6024 | Die Quellseite, die indiziert werden soll, weist nicht unterstützte Inhalte auf.
 
 * Fehler 6001-6013 treten auf, wenn die Datenquelle aufgrund eines Netzwerkproblems nicht erreichbar ist oder wenn die Datenquelle selbst gelöscht, verschoben oder umbenannt wird. Überprüfen Sie, ob die angegebenen Datenquellendetails weiterhin gültig sind.
 * Fehler 6021-6024 treten auf, wenn die Datenquelle nicht textbezogene Inhalte auf der Seite enthält oder wenn die Seite kein HTML-Code ist. Überprüfen Sie die Datenquelle, und fügen Sie diese Seite in der Ausschlussliste hinzu, oder ignorieren Sie den Fehler.
-
-## <a name="limitations"></a>Einschränkungen
-
-Der Connector Enterprise Websites unterstützt das Durchsuchen von Daten auf **dynamischen Webseiten** nicht. Beispiele für diese Webseiten befinden sich in Inhaltsverwaltungssystemen wie [Confluence](https://www.atlassian.com/software/confluence) und [Unily](https://www.unily.com/) oder Datenbanken, die Websiteinhalte speichern.

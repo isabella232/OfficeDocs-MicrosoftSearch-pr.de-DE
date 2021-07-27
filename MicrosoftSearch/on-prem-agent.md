@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: On-prem-Agent
-ms.openlocfilehash: d6dabbbb5ee34acedd92166564f560bbc64c7da7
-ms.sourcegitcommit: 93fc70f0073ab45b4dbd702441ac2fc07a7668bc
+ms.openlocfilehash: cfd02fa4ef05ae35738742d9a5d3194d6181ff05
+ms.sourcegitcommit: 0e26abf728cc8df91a85bb22f21426612cf0d57d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53230925"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53565222"
 ---
 # <a name="microsoft-graph-connector-agent"></a>Microsoft Graph Connector-Agent
 
@@ -91,8 +91,8 @@ Authentifizierungsdetails können mithilfe eines geheimen Clientschlüssels oder
 Es gibt drei einfache Schritte für die Verwendung der zertifikatbasierten Authentifizierung:
 
 1. Erstellen oder Abrufen eines Zertifikats
-1. Hochladen des Zertifikats an das Azure-Portal
-1. Zuweisen des Zertifikats zum Agent
+2. Hochladen des Zertifikats an das Azure-Portal
+3. Zuweisen des Zertifikats zum Agent
 
 ##### <a name="step-1-get-a-certificate"></a>Schritt 1: Abrufen eines Zertifikats
 
@@ -118,9 +118,9 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 
 1. Öffnen Sie die Anwendung, und navigieren Sie im linken Bereich zum Abschnitt "Zertifikate und geheime Schlüssel".
 
-1. Wählen Sie **Hochladen Zertifikat aus,** und laden Sie die CER-Datei hoch.
+2. Wählen Sie **Hochladen Zertifikat aus,** und laden Sie die CER-Datei hoch.
 
-1. Öffnen Sie **die App-Registrierung,** und wählen Sie im Navigationsbereich **Zertifikate und geheime Schlüssel** aus. Kopieren Sie den Zertifikatfingerabdruck.
+3. Öffnen Sie **die App-Registrierung,** und wählen Sie im Navigationsbereich **Zertifikate und geheime Schlüssel** aus. Kopieren Sie den Zertifikatfingerabdruck.
 
 :::image type="content" alt-text="Liste der Miniaturzertifikate, wenn Zertifikate und geheime Schlüssel im linken Bereich ausgewählt sind" source="media/onprem-agent/certificates.png" lightbox="media/onprem-agent/certificates.png":::
 
@@ -130,20 +130,33 @@ Wenn Sie das Beispielskript zum Generieren eines Zertifikats verwendet haben, be
 
 1. Laden Sie die Pfx-Zertifikatdatei auf den Agent-Computer herunter.
 
-1. Doppelklicken Sie auf die PFX-Datei, um das Dialogfeld für die Zertifikatinstallation zu starten.
+2. Doppelklicken Sie auf die PFX-Datei, um das Dialogfeld für die Zertifikatinstallation zu starten.
 
-1. Wählen Sie bei der Installation des Zertifikats den **lokalen Computer** als Speicherort aus.
+3. Wählen Sie bei der Installation des Zertifikats den **lokalen Computer** als Speicherort aus.
 
-1. Öffnen Sie nach der Installation des Zertifikats **Computerzertifikate** über Startmenü verwalten.
+4. Öffnen Sie nach der Installation des Zertifikats **computerzertifikate** über Startmenü verwalten.
 
-1. Wählen Sie das neu installierte Zertifikat unter **"Persönliche**  >  **Zertifikate" aus.**
+5. Wählen Sie das neu installierte Zertifikat unter **"Persönliche**  >  **Zertifikate" aus.**
 
-1. Klicken Sie mit der rechten Maustaste auf das Zertifikat, und wählen Sie die Option **"Alle Aufgaben**  >  **verwalten private Schlüssel" aus.**
+6. Klicken Sie mit der rechten Maustaste auf das Zertifikat, und wählen Sie die Option **"Alle Aufgaben**  >  **verwalten private Schlüssel" aus.**
 
-1. Wählen Sie im Dialogfeld "Berechtigungen" die Option "Hinzufügen" aus. Schreiben Sie im Dialogfeld "Benutzerauswahl": **NT Service\GcaHostService,** und klicken Sie auf **"OK".** Klicken Sie nicht auf die Schaltfläche **"Namen überprüfen".**
+7. Wählen Sie im Dialogfeld "Berechtigungen" die Option "Hinzufügen" aus. Schreiben Sie im Dialogfeld "Benutzerauswahl": **NT Service\GcaHostService,** und klicken Sie auf **"OK".** Klicken Sie nicht auf die Schaltfläche **"Namen überprüfen".**
 
-1. Klicken Sie im Dialogfeld "Berechtigungen" auf "ok". Der Agentcomputer ist jetzt so konfiguriert, dass der Agent Token mithilfe des Zertifikats generiert.
+8. Klicken Sie im Dialogfeld "Berechtigungen" auf "ok". Der Agentcomputer ist jetzt so konfiguriert, dass der Agent Token mithilfe des Zertifikats generiert.
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
-1. Wenn eine Verbindung mit dem Fehler "1011: Der Graph Connector-Agent ist nicht erreichbar oder offline" fehlschlägt, melden Sie sich bei dem Computer an, auf dem der Agent installiert ist, und starten Sie die Agent-Anwendung, wenn er noch nicht ausgeführt wird. Wenn die Verbindung weiterhin fehlschlägt, überprüfen Sie, ob das Zertifikat oder der geheime Clientschlüssel, der dem Agent während der Registrierung bereitgestellt wurde, nicht abgelaufen ist und über erforderliche Berechtigungen verfügt.
+### <a name="installation-failure"></a>Installationsfehler
+Wenn die Installation fehlschlägt, überprüfen Sie die Installationsprotokolle, indem Sie folgendes ausführen: msiexec /i " <path to msi>\GcaInstaller.msi" /L*V " <destination path> \install.log". Wenn die Fehler nicht aufgelöst werden können, erreichen Sie die Unterstützung für MicrosoftGraphConnectorsFeedback@service.microsoft.com mit den Protokollen.
+
+### <a name="registration-failure"></a>Registrierungsfehler
+
+Wenn die Anmeldung bei der Konfigurations-App fehlschlägt mit dem Fehler "Anmeldung fehlgeschlagen. Klicken Sie auf die Anmeldeschaltfläche, um es erneut zu versuchen." Öffnen Sie auch nach erfolgreicher Browserauthentifizierung "services.msc", und überprüfen Sie, ob GcaHostService ausgeführt wird. Wenn dies nicht der Typ ist, starten Sie ihn manuell.
+
+Wenn der Dienst nicht mit dem Fehler "Der Dienst wurde aufgrund eines Anmeldefehlers nicht gestartet" gestartet werden kann, überprüfen Sie, ob das virtuelle Konto NT Service\GcaHostService über die Berechtigung zum Anmelden als Dienst auf dem Computer verfügt. Anweisungen finden Sie [unter diesem Link.](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/log-on-as-a-service) Wenn die Option zum Hinzufügen von Benutzern oder Gruppen in den lokalen Richtlinien\Zuweisung von Benutzerrechten ausgegraut ist, bedeutet dies, dass der Benutzer, der versucht, dieses Konto hinzuzufügen, keine Administratorrechte auf diesem Computer hat oder dass eine Gruppenrichtlinie überschreibt. Die Gruppenrichtlinie muss aktualisiert werden, damit sich der Hostdienst als Dienst anmelden kann.
+
+### <a name="connection-failure"></a>Verbindungsfehler
+
+Wenn die Aktion "Verbindung testen" beim Erstellen einer Verbindung mit dem Fehler "Benutzername/Kennwort und Der Datenquellenpfad überprüfen" fehlschlägt, auch wenn der angegebene Benutzername und das Kennwort korrekt sind, stellen Sie sicher, dass das Benutzerkonto über interaktive Anmelderechte für den Computer verfügt, auf dem Graph Connector-Agent installiert ist. Informationen zur Überprüfung der Anmelderechte finden Sie in der Dokumentation zur Verwaltung von [Anmelderichtlinien.](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) Stellen Sie außerdem sicher, dass sich die Datenquelle und der Agentcomputer im selben Netzwerk befinden.
+
+Wenn eine Verbindung mit dem Fehler "1011: Der Graph Connector-Agent ist nicht erreichbar oder offline" fehlschlägt, melden Sie sich bei dem Computer an, auf dem der Agent installiert ist, und starten Sie die Agent-Anwendung, wenn er noch nicht ausgeführt wird. Wenn die Verbindung weiterhin fehlschlägt, stellen Sie sicher, dass das Zertifikat oder der geheime Clientschlüssel, der dem Agent während der Registrierung bereitgestellt wurde, nicht abgelaufen ist und über erforderliche Berechtigungen verfügt.

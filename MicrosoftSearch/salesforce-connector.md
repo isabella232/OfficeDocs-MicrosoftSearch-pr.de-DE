@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten des Salesforce Graph-Connectors für Microsoft Search
-ms.openlocfilehash: 4bef771538934722deaa5deac3959f21246e4529
-ms.sourcegitcommit: 93fc70f0073ab45b4dbd702441ac2fc07a7668bc
+ms.openlocfilehash: b0b3ba0e41c0e28cac15f4fed491ac8507aa0e59
+ms.sourcegitcommit: 8270e4271b1eeb57b988ea5265e5b6d9d6ef64a6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53230934"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53529376"
 ---
 <!---Previous ms.author: rusamai --->
 
-# <a name="salesforce-graph-connector-preview"></a>Salesforce Graph Connector (Vorschau)
+# <a name="salesforce-graph-connector"></a>Salesforce Graph Connector
 
-Der Salesforce Graph Connector ermöglicht Ihrer Organisation das Indizieren von Kontakten, Verkaufschancen, Leads und Kontenobjekten in Ihrer Salesforce-Instanz. Nachdem Sie den Connector konfiguriert und Inhalte von Salesforce indiziert haben, können Endbenutzer von einem beliebigen Microsoft Search Client nach diesen Elementen suchen.
+Der Salesforce Graph Connector ermöglicht Es Ihrer Organisation, Kontakte, Verkaufschancen, Leads, Fälle und Kontenobjekte in Ihrer Salesforce-Instanz zu indizieren. Nachdem Sie den Connector konfiguriert und Inhalte von Salesforce indiziert haben, können Endbenutzer von einem beliebigen Microsoft Search Client nach diesen Elementen suchen.
 
 > [!NOTE]
 > Lesen Sie den Artikel [**"Setup for your Graph connector",**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten Graph Connectors zu verstehen.
@@ -54,7 +54,7 @@ Um eine Verbindung mit Ihrer Salesforce-Instanz herzustellen, benötigen Sie ihr
 
         - Zugreifen auf und Verwalten Ihrer Daten (API)
 
-        - Jederzeit Anforderungen in Ihrem Auftrag ausführen (refresh_token, offline_access)
+        - Führen Sie Anforderungen jederzeit in Ihrem Auftrag aus (refresh_token, offline_access)
 
     - Aktivieren Sie das Kontrollkästchen für **"Geheimen Schlüssel für Webserverfluss anfordern".**
 
@@ -63,13 +63,13 @@ Um eine Verbindung mit Ihrer Salesforce-Instanz herzustellen, benötigen Sie ihr
       > [!div class="mx-imgBorder"]
       > ![API-Abschnitt in Salesforce-Instanz, nachdem der Administrator alle oben aufgeführten erforderlichen Konfigurationen eingegeben hat.](media/salesforce-connector/sf1.png)
 
-- Kopieren Sie den Verbraucherschlüssel und den geheimen Verbraucherschlüssel. Diese Informationen werden als Client-ID und geheimer Clientschlüssel verwendet, wenn Sie die Verbindungs-Einstellungen für Ihren Graph Connector im Microsoft 365 Verwaltungsportal konfigurieren.
+- Kopieren Sie den Verbraucherschlüssel und den geheimen Verbraucherschlüssel. Diese Informationen werden als Client-ID und geheimer Clientschlüssel verwendet, wenn Sie die Verbindungs-Einstellungen für Ihren Graph Connector im Microsoft 365 Admin-Portal konfigurieren.
 
   > [!div class="mx-imgBorder"]
   > ![Ergebnisse, die vom API-Abschnitt in der Salesforce-Instanz zurückgegeben werden, nachdem der Administrator alle erforderlichen Konfigurationen übermittelt hat. Der Verbraucherschlüssel befindet sich oben in der linken Spalte, und der geheime Verbraucherschlüssel befindet sich oben in der rechten Spalte.](media/salesforce-connector/clientsecret.png)
   
 - Führen Sie vor dem Schließen der Salesforce-Instanz die folgenden Schritte aus, um sicherzustellen, dass Aktualisierungstoken nicht ablaufen:
-    - Wechseln Sie zu "Apps > App Manager"
+    - Wechseln Sie zu Apps – > App-Manager
     - Suchen Sie die von Ihnen erstellte App, und wählen Sie die Dropdownliste auf der rechten Seite aus. Wählen Sie **"Verwalten" aus.**
     - Auswählen von **Bearbeitungsrichtlinien**
     - Wählen Sie für die Aktualisierungstokenrichtlinie die Option **"Aktualisierungstoken ist gültig bis widerrufen"** aus.
@@ -79,7 +79,7 @@ Um eine Verbindung mit Ihrer Salesforce-Instanz herzustellen, benötigen Sie ihr
 
 Sie können jetzt das [Microsoft 365 Admin Center](https://admin.microsoft.com/) verwenden, um den restlichen Setupprozess für Ihren Graph Connector abzuschließen.
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph Connectors im Microsoft 365 Admin Center
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph Connectors in der Microsoft 365 Admin Center
 
 Folgen Sie den allgemeinen [Setupanweisungen.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -105,13 +105,20 @@ Wenn Sie zum ersten Mal versucht haben, sich mit diesen Einstellungen anzumelden
 Überprüfen Sie, ob die Verbindung erfolgreich war, indem Sie nach einem grünen Banner suchen, das "Verbindung erfolgreich" anzeigt, wie im screenshot unten gezeigt.
 
   > [!div class="mx-imgBorder"]
-  > ![Screenshot der erfolgreichen Anmeldung. Das grüne Banner mit der Bezeichnung "Verbindung erfolgreich" befindet sich unter dem Feld für Ihre Salesforce-Instanz-URL.](media/salesforce-connector/sf5.png)
+  > ![Screenshot der erfolgreichen Anmeldung. Das grüne Banner mit der Bezeichnung "Verbindung erfolgreich" befindet sich unter dem Feld für Ihre Salesforce-Instanz-URL.](media/salesforce-connector/salesforce-connector-connection-settings.png)
 
-## <a name="step-4-manage-search-permissions"></a>Schritt 4: Verwalten von Suchberechtigungen
+## <a name="step-4-select-properties"></a>Schritt 4: Auswählen von Eigenschaften
+
+Wählen Sie die Salesforce-Objekte aus, die der Connector durchforsten und in suchergebnisse einschließen soll. Wenn "Kontakt" ausgewählt ist, wird auch das Konto automatisch ausgewählt.
+
+>[!NOTE]
+>Wenn für ein Feld die Sicherheit auf Feldebene (FLS) für ein Profil festgelegt ist, erfasst der Connector dieses Feld nicht für Profile in dieser Salesforce-Organisation. Daher können Benutzer weder nach Werten für diese Felder suchen noch in den Ergebnissen angezeigt werden.
+
+## <a name="step-5-manage-search-permissions"></a>Schritt 5: Verwalten von Suchberechtigungen
 
 Sie müssen auswählen, welche Benutzer Suchergebnisse aus dieser Datenquelle sehen. Wenn Sie nur bestimmten Azure Active Directory (Azure AD) oder Nicht-Azure AD-Benutzern erlauben, die Suchergebnisse anzuzeigen, stellen Sie sicher, dass Sie die Identitäten zuordnen.
 
-### <a name="step-4a-select-permissions"></a>Schritt 4.a: Auswählen von Berechtigungen
+### <a name="step-5a-select-permissions"></a>Schritt 5.a: Auswählen von Berechtigungen
 
 Sie können auswählen, ob Sie Zugriffssteuerungslisten (Access Control Lists, ACLs) aus Ihrer Salesforce-Instanz erfassen möchten, oder allen Benutzern in Ihrer Organisation ermöglichen, Suchergebnisse aus dieser Datenquelle anzuzeigen. ACLs können Azure Active Directory (AAD)-Identitäten (Benutzer, die von Azure AD mit Salesforce verbunden sind), Nicht-Azure AD-Identitäten (systemeigene Salesforce-Benutzer, die über entsprechende Identitäten in Azure AD verfügen) oder beides umfassen.
 
@@ -123,9 +130,9 @@ Sie können auswählen, ob Sie Zugriffssteuerungslisten (Access Control Lists, A
 
 Wenn Sie sich entschieden haben, eine ACL aus Ihrer Salesforce-Instanz zu erfassen, und "nicht-AAD" für den Identitätstyp ausgewählt haben, finden Sie anweisungen zum Zuordnen der Identitäten zu [Ihren Nicht-Azure AD-Identitäten.](map-non-aad.md)
 
-### <a name="step-4b-map-aad-identities"></a>Schritt 4.b: Zuordnen von AAD-Identitäten
+### <a name="step-5b-map-aad-identities"></a>Schritt 5.b: Zuordnen von AAD-Identitäten
 
-Wenn Sie sich entschieden haben, eine ACL aus Ihrer Salesforce-Instanz zu erfassen, und "AAD" für den Identitätstyp ausgewählt haben, finden Sie unter ["Zuordnen Ihrer Azure AD-Identitäten"](map-aad.md) Anweisungen zum Zuordnen der Identitäten. Informationen zum Einrichten von Azure AD SSO für Salesforce finden Sie in diesem [Lernprogramm.](/azure/active-directory/saas-apps/salesforce-tutorial)
+Wenn Sie eine ACL aus Ihrer Salesforce-Instanz aufgenommen und "AAD" für den Identitätstyp ausgewählt haben, finden Sie unter ["Zuordnen Ihrer Azure AD-Identitäten"](map-aad.md) Anweisungen zum Zuordnen der Identitäten. Informationen zum Einrichten von Azure AD SSO für Salesforce finden Sie in diesem [Lernprogramm.](/azure/active-directory/saas-apps/salesforce-tutorial)
 
 ### <a name="apply-user-mapping-to-sync-your-salesforce-identities-to-azure-ad-identities"></a>Anwenden der Benutzerzuordnung zum Synchronisieren Ihrer Salesforce-Identitäten mit Azure AD-Identitäten
 
@@ -133,11 +140,11 @@ In diesem Video sehen Sie, wie Sie sich bei Ihrer Salesforce-Instanz authentifiz
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/SZYiFxZMKcM]
 
-## <a name="step-5-assign-property-labels"></a>Schritt 5: Zuweisen von Eigenschaftenbeschriftungen
+## <a name="step-6-assign-property-labels"></a>Schritt 6: Zuweisen von Eigenschaftenbeschriftungen
 
 Sie können jeder Bezeichnung eine Quelleigenschaft zuweisen, indem Sie aus einem Menü mit Optionen auswählen. Dieser Schritt ist zwar nicht zwingend erforderlich, aber einige Eigenschaftenbezeichnungen verbessern die Suchrelevanz und stellen bessere Suchergebnisse für Endbenutzer sicher. Standardmäßig wurden einigen Bezeichnungen wie "Title", "URL", "CreatedBy" und "LastModifiedBy" bereits Quelleigenschaften zugewiesen.
 
-## <a name="step-6-manage-schema"></a>Schritt 6: Verwalten des Schemas
+## <a name="step-7-manage-schema"></a>Schritt 7: Verwalten des Schemas
 
 Sie können auswählen, welche Quelleigenschaften indiziert werden sollen, damit sie in suchergebnissen angezeigt werden. Der Verbindungs-Assistent wählt standardmäßig ein Suchschema aus, das auf einer Reihe von Quelleigenschaften basiert. Sie können sie ändern, indem Sie die Kontrollkästchen für jede Eigenschaft und jedes Attribut auf der Suchschemaseite aktivieren. Zu den Suchschemaattributen gehören Suche, Abfrage, Abrufen und Verfeinern.
 Mit der Verfeinerung können Sie die Eigenschaften definieren, die später als benutzerdefinierte Einschränkungen oder Filter in der Suchumgebung verwendet werden können.  
@@ -145,18 +152,24 @@ Mit der Verfeinerung können Sie die Eigenschaften definieren, die später als b
 > [!div class="mx-imgBorder"]
 > ![Wählen Sie das Schema für jede Quelleigenschaft aus. Die Optionen sind "Abfrage", "Suchen", "Abrufen" und "Verfeinern".](media/salesforce-connector/sf9.png)
 
-## <a name="step-7-set-the-refresh-schedule"></a>Schritt 7: Festlegen des Aktualisierungszeitplans
+## <a name="step-8-set-the-refresh-schedule"></a>Schritt 8: Festlegen des Aktualisierungszeitplans
 
 Der Salesforce-Connector unterstützt derzeit nur Aktualisierungszeitpläne für vollständige Durchforstungen.
 
 >[!IMPORTANT]
->Bei einer vollständigen Durchforstung werden gelöschte Objekte und Benutzer gefunden, die zuvor mit dem Microsoft Search-Index synchronisiert wurden.
+>Eine vollständige Durchforstung findet gelöschte Objekte und Benutzer, die zuvor mit dem Microsoft Search-Index synchronisiert wurden.
 
 Der empfohlene Zeitplan ist eine Woche für eine vollständige Durchforstung.
 
-## <a name="step-8-review-connection"></a>Schritt 8: Überprüfen der Verbindung
+## <a name="step-9-review-connection"></a>Schritt 9: Überprüfen der Verbindung
 
 Folgen Sie den allgemeinen [Setupanweisungen.](./configure-connector.md)
+
+>[!TIP]
+>**Standardergebnistyp**
+>* Der Salesforce-Connector registriert automatisch einen [Ergebnistyp,](./customize-search-page.md#step-2-create-the-result-types) nachdem der Connector veröffentlicht wurde. Der Ergebnistyp verwendet ein dynamisch generiertes [Ergebnislayout](./customize-results-layout.md) basierend auf den in Schritt 3 ausgewählten Feldern.
+>* Sie können den Ergebnistyp verwalten, indem Sie im [Microsoft 365 Admin Center](https://admin.microsoft.com)zu [**Ergebnistypen**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes) navigieren. Der Standardergebnistyp wird als `ConnectionId` "Standard" bezeichnet. Wenn Ihre Verbindungs-ID beispielsweise `Salesforce` lautet, wird ihr Ergebnislayout wie folgt benannt: "SalesforceDefault".
+>* Sie können bei Bedarf auch einen eigenen Ergebnistyp erstellen.
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 <!---## Troubleshooting-->
@@ -174,7 +187,7 @@ Folgen Sie den allgemeinen [Setupanweisungen.](./configure-connector.md)
     - Fax
     - Telefon
     - MobilePhone
-    - E-Mails
+    - E-Mail
     - Typ
     - Titel
     - Accountid

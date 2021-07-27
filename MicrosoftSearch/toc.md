@@ -18,8 +18,8 @@
 ### Microsoft Graph-Connectors
 #### [Setup-Übersicht](configure-connector.md)
 #### [Einrichten des Graph-Connector-Agents](on-prem-agent.md)
-#### [Zuordnen von Nicht-Azure AD-Identitäten (Vorschau)](map-non-aad.md)
-#### [Zuordnen von Azure AD-Identitäten (Vorschau)](map-aad.md)
+#### [Zuordnen von Nicht-Azure AD-Identitäten](map-non-aad.md)
+#### [Zuordnen von Azure AD-Identitäten](map-aad.md)
 #### Connector-spezifische Informationen
 ##### [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
 ##### [Azure DevOps (Vorschau)](azure-devops-connector.md)
@@ -28,7 +28,7 @@
 ##### [Dateifreigabe](fileshare-connector.md)
 ##### [MediaWiki](mediawiki-connector.md)
 ##### [Oracle SQL](OracleSQL-connector.md)
-##### [Salesforce (Vorschau)](salesforce-connector.md)
+##### [Salesforce](salesforce-connector.md)
 ##### [ServiceNow](servicenow-connector.md)
 ### Verwalten von Verbindungen
 #### [Überwachen von Verbindungen](manage-connector.md)

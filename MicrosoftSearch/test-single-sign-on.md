@@ -13,17 +13,17 @@ search.appverid:
 - MOE150
 ms.assetid: a220c1bf-7cee-448a-90a3-310284d03e81
 description: Reduzieren Sie die Anzahl, die Windows 10-Benutzer zur Anmeldung bei Microsoft Search und Office 365 aufgefordert werden.
-ms.openlocfilehash: 9fa7e067a5d72b7044981491f8526e6de727cfae
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: d3628503c9150c1d71b4d390a9e9c34f5e6faedfac4e33c44cdd038f90d591d0
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626891"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54534113"
 ---
 # <a name="test-single-sign-on"></a>Testen des einmaliges Anmeldens
 
 > [!IMPORTANT]
-> Dieser Artikel bezieht sich auf Microsoft Search im Bing-Verwaltungsportal. Wir verschieben das Portal zum Microsoft 365 Admin Center, und dann wird das Microsoft Search im Bing-Portal entfernt. Es wird empfohlen, dass Sie für die ersten Schritte das Microsoft 365 Admin Center verwenden. [Übersicht über Microsoft Search](overview-microsoft-search.md).
+> Dieser Artikel bezieht sich auf Microsoft Search im Bing-Verwaltungsportal. Wir verschieben das Portal zum Microsoft 365 Admin Center, und dann wird Microsoft Search im Bing-Portal entfernt. Wir empfehlen, für die ersten Schritte das Microsoft 365 Admin Center zu verwenden. [Übersicht über Microsoft Search](overview-microsoft-search.md).
     
 Reduzieren Sie die Anzahl, die Benutzer zur Anmeldung aufgefordert werden. Wenn Sie das einmalige Anmelden an einer kleinen Gruppe von Benutzern testen, können Sie Konfigurationsprobleme identifizieren, die zu Sperrungen führen. 
   

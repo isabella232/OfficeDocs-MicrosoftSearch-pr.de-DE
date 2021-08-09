@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erstellen Sie mithilfe adaptiver Karten ein Layout, um Ihre benutzerdefinierten Suchergebnisse anzuzeigen.
-ms.openlocfilehash: 1badb5bb34d746b22de8ddb91cd26c813fe9f67f
-ms.sourcegitcommit: 8270e4271b1eeb57b988ea5265e5b6d9d6ef64a6
+ms.openlocfilehash: 79c10236bf2eb797afb99b1c7e78925e7cc2361a5fe7d4f695eb739eaed13532
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53529362"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533949"
 ---
 <!-- markdownlint-disable no-hard-tabs -->
 # <a name="create-a-layout-to-customize-search-results"></a>Erstellen eines Layouts zum Anpassen von Suchergebnissen

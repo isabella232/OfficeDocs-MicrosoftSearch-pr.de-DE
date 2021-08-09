@@ -14,21 +14,21 @@ search.appverid:
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
 ROBOTS: NoIndex
 description: Rufen Sie relevante Suchvorschläge ab, und suchen Sie schneller nach Arbeitsergebnissen, indem Sie Ihrer Intranetwebsite oder -seite ein Microsoft Search Suchfeld hinzufügen.
-ms.openlocfilehash: 7d9ca4be8d3be27a7549ffb940d6dc55b3763baf
-ms.sourcegitcommit: 38a0f09596c2bca0e12bf4cada7b4c64fd4c48e4
+ms.openlocfilehash: f11fcbeee23346041e4ebc720e4256d3aba29d57bed9266ed04bb02ee31c2ada
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53449061"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533391"
 ---
 # <a name="add-a-search-box-to-your-intranet-site"></a>Hinzufügen eines Suchfelds zu Ihrer Intranetwebsite
 
-Um Ihren Benutzern einfachen Zugriff auf Ergebnisse aus Ihrer Organisation zu ermöglichen, fügen Sie einer Intranetwebsite oder -seite in Bing Suchfeld eine Microsoft Search hinzu. Dies sind einige der Vorteile:
+Um Ihren Benutzern einfachen Zugriff auf Ergebnisse aus Ihrer Organisation zu ermöglichen, fügen Sie eine Microsoft Search in Bing Suchfeld zu einer beliebigen Intranetwebsite oder -seite hinzu. Dies sind einige der Vorteile:
 
-- Ein Suchfeld in Ihrem SharePoint oder Intranetportal bietet einen vertrauten, vertrauenswürdigen Einstiegspunkt, um mit der Suche zu beginnen.
+- Ein Suchfeld in Ihrem SharePoint- oder Intranetportal bietet einen vertrauten, vertrauenswürdigen Einstiegspunkt, um mit der Suche zu beginnen.
 - Unterstützt alle gängigen Webbrowser, einschließlich Google Chrome und Microsoft Edge
 - Es werden nur Suchvorschläge aus Ihrer Organisation angezeigt, Webvorschläge werden nie eingeschlossen.
-- Führt Benutzer zu einem Microsoft Search auf Bing Seite mit Arbeitsergebnissen, die Anzeigen und Webergebnisse ausschließt
+- Führt Benutzer zu einer Microsoft Search in Bing Seite mit Arbeitsergebnissen, die Anzeigen und Webergebnisse ausschließt
 - Sie steuern die Darstellung und das Verhalten des Suchfelds, einschließlich der Möglichkeit, Benutzer auf einer Standard-Vertikal oder einer benutzerdefinierten Vertikalen zu landen, die Sie erstellt haben.
   
 ## <a name="add-a-search-box-to-an-intranet-page"></a>Hinzufügen eines Suchfelds zu einer Intranetseite
@@ -110,9 +110,9 @@ Verwenden Sie die vertikale Option in bfbSearchBoxConfig, um die gewünschte Ver
 
 :::image type="content" alt-text="Screenshot der Seite &quot;Arbeitsergebnisse&quot; auf Microsoft Search in Bing mit den vertikalen Ergebnissen und der URL der Websites." source="media/sites-vertical-esb.png" lightbox="media/sites-vertical-esb.png":::
 
-Verwenden Sie für benutzerdefinierte Vertikale den Hash am Ende der URL. Sie finden diese Werte, indem Sie auf der Arbeitsseite auf Bing suchen, auf eine vertikale Beschriftung klicken und den Wert nach dem Nummernzeichen (#) kopieren.
+Verwenden Sie für benutzerdefinierte Vertikale den Hash am Ende der URL. Sie können diese Werte finden, indem Sie auf der Arbeitsseite auf Bing suchen, auf eine vertikale Beschriftung klicken und den Wert nach dem Nummernzeichen (#) kopieren.
 
-:::image type="content" alt-text="Screenshot der Seite &quot;Arbeitsergebnisse&quot; auf Microsoft Search in Bing, auf der die vertikalen Ergebnisse und die URL einer benutzerdefinierten Präsentation angezeigt werden." source="media/custom-vertical-esb.png" lightbox="media/custom-vertical-esb.png":::
+:::image type="content" alt-text="Screenshot der Seite &quot;Arbeitsergebnisse&quot; auf Microsoft Search in Bing mit den vertikalen Ergebnissen und der URL einer benutzerdefinierten Präsentation." source="media/custom-vertical-esb.png" lightbox="media/custom-vertical-esb.png":::
 
 ## <a name="use-an-iframe-to-embed-a-search-box"></a>Verwenden eines iFrame zum Einbetten eines Suchfelds
 
@@ -124,4 +124,4 @@ Wenn das Einbetten eines Skripts keine Option für die Website ist, verwenden Si
 
 ## <a name="inprivate-mode-and-conditional-access"></a>InPrivate-Modus und bedingter Zugriff
 
-Ein eingebettetes Suchfeld wird deaktiviert, wenn die Seite oder Website in einem InPrivate-Fenster geöffnet wird. Darüber hinaus unterstützt Bing.com die AAD-Anmeldung bei Verwendung des InPrivate-Modus nicht, wenn azure AD conditional Access in Microsoft Edge unterstützt wird. Weitere Informationen zum bedingten Zugriff in Edge finden Sie unter [Microsoft Edge und bedingter Zugriff.](/deployedge/ms-edge-security-conditional-access#accessing-conditional-access-protected-resources-in-microsoft-edge) 
+Ein eingebettetes Suchfeld wird deaktiviert, wenn die Seite oder Website in einem InPrivate-Fenster geöffnet wird. Darüber hinaus unterstützt Bing.com bei der Azure AD-Unterstützung für bedingten Zugriff in Microsoft Edge keine AAD-Anmeldung bei Verwendung des InPrivate-Modus. Weitere Informationen zum bedingten Zugriff in Edge finden Sie unter [Microsoft Edge und bedingter Zugriff.](/deployedge/ms-edge-security-conditional-access#accessing-conditional-access-protected-resources-in-microsoft-edge) 

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten des Atlassian Jira Graph Connectors für Microsoft Search
-ms.openlocfilehash: 55457adf9c507ba9f551732cdb014b48b5df4d9f
-ms.sourcegitcommit: 9cfe9b7f6d4ddf783ee31a6d2a02a73f0c0aef79
+ms.openlocfilehash: 6023e8ec4539bd37358a3e801ef81947fe9f87ff38736344347d5634d0527753
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53590273"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533689"
 ---
 # <a name="atlassian-jira-graph-connector-preview"></a>Atlassian Jira Graph Connector (Vorschau)
 
@@ -27,7 +27,7 @@ Der Atlassian Jira Graph Connector ermöglicht Es Ihrer Organisation, Jira-Probl
 > [!NOTE]
 > Lesen Sie den Artikel [**"Setup for your Graph connector",**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten Graph Connectors zu verstehen.
 
-Dieser Artikel richtet sich an alle Personen, die einen Atlassian Jira Graph Connector konfigurieren, ausführen und überwachen. Es ergänzt den allgemeinen Einrichtungsprozess und zeigt Anweisungen, die nur für den Atlassian Jira Graph Connector gelten.
+Dieser Artikel richtet sich an alle Personen, die einen Atlassian Jira Graph Connector konfigurieren, ausführen und überwachen. Es ergänzt den allgemeinen Setupprozess und zeigt Anweisungen, die nur für den Atlassian Jira Graph Connector gelten.
 
 >[!IMPORTANT]
 >Der Atlassian Jira Graph Connector unterstützt nur in der Jira-Cloud gehostete Instanzen. Jira Server- und Jira Data Center-Versionen werden von diesem Connector nicht unterstützt.
@@ -35,7 +35,7 @@ Dieser Artikel richtet sich an alle Personen, die einen Atlassian Jira Graph Con
 ## <a name="before-you-get-started"></a>Bevor Sie beginnen
 Sie müssen der Administrator für den M365-Mandanten Ihrer Organisation sowie der Administrator für die Jira-Website Ihrer Organisation sein.
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph Connectors in der Microsoft 365 Admin Center
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph Connectors im Microsoft 365 Admin Center
 Folgen Sie den allgemeinen [Setupanweisungen.](./configure-connector.md)
 
 ## <a name="step-2-name-the-connection"></a>Schritt 2: Benennen der Verbindung
@@ -48,7 +48,7 @@ Um eine Verbindung mit Ihrer Jira-Website herzustellen, verwenden Sie die URL Ih
 Geben Sie den Benutzernamen Ihres Kontos (in der Regel E-Mail-ID) und das API-Token ein, um sich mit der einfachen Authentifizierung zu authentifizieren. Weitere Informationen zum Generieren eines API-Tokens finden Sie in der Dokumentation von Atlassian zum [Verwalten von API-Token für Ihr Atlassian-Konto.](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/)
 
 ### <a name="oauth-20"></a>OAuth 2.0
-Registrieren Sie eine App in Atlassian Jira, damit die Microsoft Search App auf die Instanz zugreifen kann. Weitere Informationen finden Sie in der Dokumentation zum Atlassian-Support zum Aktivieren von [OAuth 2.0.](https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/#enabling-oauth-2-0--3lo-)
+Registrieren Sie eine App in Atlassian Jira, damit die Microsoft Search-App auf die Instanz zugreifen kann. Weitere Informationen finden Sie in der Dokumentation zum Atlassian-Support zum Aktivieren von [OAuth 2.0.](https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/#enabling-oauth-2-0--3lo-)
 
 Die folgenden Schritte enthalten Anleitungen zum Registrieren der App:
 
@@ -86,7 +86,7 @@ Der Atlassian Jira Graph Connector kann sowohl Standardproblemfelder als auch be
 
 ## <a name="step-4-manage-search-permissions"></a>Schritt 4: Verwalten von Suchberechtigungen
 
-Der Atlassian Jira Graph Connector unterstützt Suchberechtigungen, die  **für alle** oder **nur Personen mit Zugriff auf diese Datenquelle** sichtbar sind. Wenn Sie **"Jeder"** auswählen, werden indizierte Daten in den Suchergebnissen für alle Benutzer angezeigt. Wenn Sie **nur Personen mit Zugriff auf diese Datenquelle** auswählen, werden indizierte Daten in den Suchergebnissen für Benutzer angezeigt, die Zugriff darauf haben. In Atlassian Jira werden Sicherheitsberechtigungen mithilfe von Projektberechtigungsschemas definiert, die Gruppen auf Websiteebene und Projektrollen enthalten. Die Sicherheit auf Problemebene kann auch mithilfe von Berechtigungsschemas auf Problemebene definiert werden.
+Der Atlassian Jira Graph Connector unterstützt Suchberechtigungen, die für  **alle** oder **nur Personen mit Zugriff auf diese Datenquelle** sichtbar sind. Wenn Sie **"Jeder"** auswählen, werden indizierte Daten in den Suchergebnissen für alle Benutzer angezeigt. Wenn Sie **nur Personen mit Zugriff auf diese Datenquelle** auswählen, werden indizierte Daten in den Suchergebnissen für Benutzer angezeigt, die Zugriff darauf haben. In Atlassian Jira werden Sicherheitsberechtigungen mithilfe von Projektberechtigungsschemas definiert, die Gruppen auf Websiteebene und Projektrollen enthalten. Die Sicherheit auf Problemebene kann auch mithilfe von Berechtigungsschemas auf Problemebene definiert werden.
 
 Wenn Sie **nur Personen mit Zugriff auf diese Datenquelle** auswählen, müssen Sie weiter auswählen, ob Ihre Jira-Website über Azure Active Directory (AAD) bereitgestellte Benutzer oder Nicht-AAD-Benutzer verfügt.
 

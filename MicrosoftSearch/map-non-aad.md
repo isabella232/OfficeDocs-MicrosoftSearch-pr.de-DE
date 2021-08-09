@@ -1,5 +1,5 @@
 ---
-title: Zuordnen von nicht-Aad Identitäten
+title: Zuordnen von Nicht-AAD-Identitäten
 ms.author: monaray
 author: monaray97
 manager: jameslau
@@ -11,83 +11,83 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Schritte zum Zuordnen von nicht Aad Identitäten
-ms.openlocfilehash: cd7d0eb17678d69ec1966e4472b38c1f18c30809
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+description: Schritte zum Zuordnen von Nicht-AAD-Identitäten
+ms.openlocfilehash: 48f462318b005f426cd2e0ee3ade0ee895b1c38b36ccf53faf5631a5c002c3d6
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367658"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533567"
 ---
-# <a name="map-your-non-azure-ad-identities"></a>Zuordnen Ihrer nicht Azure AD Identitäten  
+# <a name="map-your-non-azure-ad-identities"></a>Zuordnen Ihrer Nicht-Azure AD-Identitäten  
 
-Dieser Artikel führt Sie durch die Schritte zum Zuordnen Ihrer nicht Azure Aden Identitäten zu ihren Azure AD Identitäten, sodass Personen in ihrer Zugriffssteuerungsliste (ACL) mit nicht Azure Aden Identitäten Konnektor-Suchergebnisse auf diese Ebene anzeigen können.
+In diesem Artikel werden Sie durch die Schritte zum Zuordnen Ihrer Nicht-Azure AD-Identitäten zu Ihren Azure AD-Identitäten geführt, sodass Personen in Ihrer Zugriffssteuerungsliste (Access Control List, ACL) mit Nicht-Azure AD-Identitäten die ihnen zugeordneten Connectorsuchergebnisse anzeigen können.
 
-Diese Schritte sind nur für Suchadministratoren relevant, die eine [ServiceNow](servicenow-connector.md) -oder [Salesforce](salesforce-connector.md) -Connectors von Microsoft mit Suchberechtigungen für "nur Personen mit Zugriff auf diese Datenquelle" und "nicht-Aad" für Identitätstypen einrichten.
+Diese Schritte sind nur für Suchadministratoren relevant, die ein [ServiceNow-](servicenow-connector.md) oder [Salesforce-Connectors](salesforce-connector.md) von Microsoft mit Suchberechtigungen für "Nur Personen mit Zugriff auf diese Datenquelle" und Identitätstyp "Nicht-AAD" einrichten.
 
 >[!NOTE]
->Wenn Sie einen Salesforce Connector einrichten und **nur Personen mit Zugriff auf diese Datenquelle** und den Identitätstyp **Aad** auf dem Bildschirm Berechtigungen für die Suche auswählen, lesen Sie den Artikel [zuordnen Ihres Azure AD Identitäten](map-aad.md) , um Schritte zum Zuordnen Azure AD Identitäten zu erhalten.  
+>Wenn Sie einen Salesforce-Connector einrichten und auf dem Bildschirm mit den Suchberechtigungen **nur Personen mit Zugriff** auf diese Datenquelle und den Identitätstyp **AAD** auswählen, finden Sie im Artikel ["Zuordnen Ihrer Azure AD-Identitäten"](map-aad.md) Schritte zum Zuordnen von Azure AD-Identitäten.  
 
-## <a name="steps-for-mapping-your-non-azure-ad-properties"></a>Schritte zum Zuordnen Ihrer nicht-Azure AD Eigenschaften
+## <a name="steps-for-mapping-your-non-azure-ad-properties"></a>Schritte zum Zuordnen Ihrer Nicht-Azure AD-Eigenschaften
 
-### <a name="1-select-an-azure-ad-user-property"></a>1. Wählen Sie eine Azure AD Benutzereigenschaft aus.  
+### <a name="1-select-an-azure-ad-user-property"></a>1. Auswählen einer Azure AD-Benutzereigenschaft  
 
-Sie können die Azure AD Benutzereigenschaft auswählen, für die Sie die Zuordnung erstellen. Dies ist die Zieleigenschaft, der Sie Ihre nicht Azure AD Identitäten zuordnen möchten.  
+Sie können die Azure AD-Benutzereigenschaft auswählen, für die Sie die Zuordnung erstellen. Dies ist die Zieleigenschaft, der Sie Ihre Nicht-Azure AD-Identitäten zuordnen möchten.  
 
-Sie können eine der folgenden Azure AD Eigenschaften auswählen:
+Sie können eine der folgenden Azure AD-Eigenschaften auswählen:
 
 | Azure AD-Eigenschaft    | Definition           | Beispiel         |
 | :------------------- | :------------------- |:--------------- |
-| Benutzerprinzipalname (UPN)  | Ein UPN besteht aus einem UPN-Präfix (dem Benutzerkontonamen) und einem UPN-Suffix (DNS-Domänenname). Das Präfix wird mithilfe des @-Symbols mit dem Suffix verknüpft. | us1@contoso.onmicrosoft.com |
-| Azure Ad-ID                 | Eine Azure Ad-ID für einen bestimmten Benutzer ist die eindeutige GUID des Benutzers.                 | 58006c96-9e6e-45ea-8c88-4a56851eefad            |
-| Active Directory-Sicherheits-ID (SID)                  | SID (Sicherheits-ID) ist ein eindeutiger Bezeichner, den Active Directory verwendet, um Objekte als Sicherheitsprinzipal zu identifizieren.                  | S-1-5-21-453406510-812318184-4183662089             |
+| Benutzerprinzipalname (UPN)  | Ein UPN besteht aus einem UPN-Präfix (dem Benutzerkontonamen) und einem UPN-Suffix (einem DNS-Domänennamen). Das Präfix wird mithilfe des "@"-Symbols mit dem Suffix verknüpft. | us1@contoso.onmicrosoft.com |
+| Azure AD-ID                 | Eine Azure AD-ID für einen bestimmten Benutzer ist die eindeutige GUID des Benutzers.                 | 58006c96-9e6e-45ea-8c88-4a56851eefad            |
+| Active Directory-Sicherheits-ID (SID)                  | DIE SID (Sicherheits-ID) ist ein eindeutiger Bezeichner, den Active Directory verwendet, um Objekte als Sicherheitsprinzipal zu identifizieren.                  | S-1-5-21-453406510-812318184-4183662089             |
 
-### <a name="2-select-non-azure-ad-user-properties-to-map"></a>2. Wählen Sie nicht Azure AD Benutzereigenschaften für die Zuordnung aus.
+### <a name="2-select-non-azure-ad-user-properties-to-map"></a>2. Auswählen von Nicht-Azure AD-Benutzereigenschaften, die zugeordnet werden sollen
 
-Sie können nicht Azure AD Eigenschaften auswählen, die von der Datenquelle abgerufen wurden, um reguläre Ausdrücke auf anzuwenden. Weitere Informationen dazu, wo diese Eigenschaften in der Datenquelle zu finden sind, finden Sie auf den Seiten [ServiceNow](servicenow-connector.md) und [Salesforce](salesforce-connector.md) .  
+Sie können Nicht-Azure AD-Eigenschaften auswählen, die aus Ihrer Datenquelle abgerufen werden, um reguläre Ausdrücke anzuwenden. Weitere Informationen dazu, wo Sie diese Eigenschaften in Ihrer Datenquelle finden, finden Sie auf den Seiten ["ServiceNow"](servicenow-connector.md) und ["Salesforce".](salesforce-connector.md)  
 
-Sie können eine nicht Azure AD Benutzereigenschaft aus der Dropdownliste auswählen und einen regulären Ausdruck bereitstellen, der auf diese Benutzer Eigenschaftswerte angewendet werden soll. Weitere Informationen zu regulären Ausdrücken finden Sie unter [Regular Expression Reference]( https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).  
+Sie können eine Nicht-Azure AD-Benutzereigenschaft aus der Dropdownliste auswählen und einen regulären Ausdruck bereitstellen, der auf diese Benutzereigenschaftswerte angewendet werden soll. Weitere Informationen zu regulären Ausdrücken finden Sie in der [Referenz zu regulären Ausdrücken.]( https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference)  
 
-Im folgenden finden Sie einige Beispiele für reguläre Ausdrücke und deren Ausgaben, die auf eine Beispielzeichenfolge angewendet werden: 
+Nachfolgend finden Sie einige Beispiele für reguläre Ausdrücke und deren Ausgaben, die auf eine Beispielzeichenfolge angewendet werden: 
 
-| Beispielzeichenfolge                  | Regulärer Ausdruck                 | Ausgabe des regulären Ausdrucks für die Beispielzeichenfolge           |
+| Beispielzeichenfolge                  | Regulärer Ausdruck                 | Ausgabe eines regulären Ausdrucks in einer Beispielzeichenfolge           |
 | :------------------- | :------------------- |:---------------|
 | Alexis Vasquez  | .* | Alexis Vasquez |
-| Alexis Vasquez                 | ..$                 | EZ            |
-| Alexis Vasquez                  | (\w +) $                  | Vasquez             |
+| Alexis Vasquez                 | ..$                 | Ez            |
+| Alexis Vasquez                  | (\w+)$                  | Vasquez             |
 
-Sie können so viele nicht Azure ADe Benutzereigenschaften hinzufügen, wie Sie es ausdrücken möchten. Sie können verschiedene reguläre Ausdrücke auf dieselbe Benutzereigenschaft anwenden, wenn Ihre endgültige Formel dies zulässt.  
+Sie können so viele Nicht-Azure AD-Benutzereigenschaften hinzufügen, für die Sie Ausdrücke verwenden möchten. Sie können unterschiedliche reguläre Ausdrücke auf dieselbe Benutzereigenschaft anwenden, wenn die endgültige Formel dies zulässt.  
 
-### <a name="3-create-formula-to-complete-mapping"></a>3. Formel erstellen, um die Zuordnung abzuschließen
+### <a name="3-create-formula-to-complete-mapping"></a>3. Erstellen einer Formel zum Abschließen der Zuordnung
 
-Sie können die Ausgaben der regulären Ausdrücke, die auf die einzelnen nicht Azure AD Benutzereigenschaften angewendet werden, so kombinieren, dass Sie die in Schritt 1 ausgewählte Azure AD-Eigenschaft bilden.
+Sie können die Ausgaben der regulären Ausdrücke kombinieren, die auf jede Ihrer Nicht-Azure AD-Benutzereigenschaften angewendet werden, um die in Schritt 1 ausgewählte Azure AD-Eigenschaft zu bilden.
 
-Im Feld Formel {0} entspricht "" der Ausgabe des regulären Ausdrucks, der auf die *erste* nicht Azure AD Eigenschaft angewendet wurde, die Sie ausgewählt haben. " {1} " entspricht der Ausgabe des regulären Ausdrucks, der auf die *zweite* nicht Azure AD Eigenschaft angewendet wurde, die Sie ausgewählt haben. " {2} " entspricht der Ausgabe des regulären Ausdrucks, der auf die *dritte* nicht Azure AD Eigenschaft angewendet wird usw.  
+In the formula box, {0} " corresponds to the output of the regular expression applied to the *first* non-Azure AD property you selected. " {1} " entspricht der Ausgabe des regulären Ausdrucks, der auf die *zweite* ausgewählte Nicht-Azure AD-Eigenschaft angewendet wurde. " {2} " entspricht der Ausgabe des regulären Ausdrucks, der auf die *dritte* Nicht-Azure AD-Eigenschaft angewendet wird usw.  
 
-Im folgenden finden Sie einige Beispiele von Formeln mit Ausgaben für Sample reguläre Ausdrücke und Formel Ausgaben: 
+Nachfolgend finden Sie einige Beispiele für Formeln mit Beispielausgabe für reguläre Ausdrücke und Formelausgabe: 
 
-| Beispielformel                  | Wert von " {0} auf Beispiel Benutzer"                 | Wert von " {1} auf Beispiel Benutzer"           | Ausgabe von Formel                  |
+| Beispielformel                  | Wert des {0} Beispielbenutzers                 | Wert des {1} Beispielbenutzers           | Ausgabe der Formel                  |
 | :------------------- | :------------------- |:---------------|:---------------|
-| {0}.{1} @contoso. com  | FirstName | LastName |firstname.lastname@contoso.com
-| {0}@Domain. com                 | UserID                 |             |userid@domain.com
+| {0}.{1} @contoso.com  | Firstname | Lastname |firstname.lastname@contoso.com
+| {0}@domain.com                 | Userid                 |             |userid@domain.com
 
-Nachdem Sie Ihre Formel bereitgestellt haben, können Sie optional auf **Vorschau** klicken, um eine Vorschau von fünf zufälligen Benutzern aus der Datenquelle anzuzeigen, deren jeweilige Benutzerzuordnungen angewendet wurden. Die Ausgabe der Vorschau enthält den Wert der in Schritt 2 für diese Benutzer ausgewählten nicht Azure AD Benutzereigenschaften und die Ausgabe der letzten Formel, die in Schritt 3 für diesen Benutzer bereitgestellt wurde. Er gibt auch an, ob die Ausgabe der Formel über ein "Success"-oder "failed"-Symbol in einen Azure AD-Benutzer in Ihrem Mandanten aufgelöst werden kann.  
+Nachdem Sie Ihre Formel bereitgestellt haben, können Sie optional auf **"Vorschau"** klicken, um eine Vorschau von 5 zufälligen Benutzern aus Ihrer Datenquelle mit angewendeten entsprechenden Benutzerzuordnungen anzuzeigen. Die Ausgabe der Vorschau enthält den Wert der Nicht-Azure AD-Benutzereigenschaften, die in Schritt 2 für diese Benutzer ausgewählt wurden, und die Ausgabe der endgültigen Formel, die in Schritt 3 für diesen Benutzer bereitgestellt wurde. Außerdem wird angegeben, ob die Ausgabe der Formel über das Symbol "Erfolgreich" oder "Fehlgeschlagen" an einen Azure AD-Benutzer in Ihrem Mandanten aufgelöst werden kann.  
 
 >[!NOTE]
->Sie können weiterhin mit dem Erstellen Ihrer Verbindung fortfahren, wenn eine oder mehrere Benutzerzuordnungen den Status "Fehler" aufweisen, nachdem Sie auf " **Vorschau**" klicken. In der Vorschau werden 5 zufällige Benutzer und deren Zuordnungen aus der Datenquelle angezeigt. Wenn die von Ihnen bereitgestellten Zuordnungen nicht alle Benutzer zuordnen, kann dieser Fall auftreten.
+>Sie können weiterhin mit dem Erstellen der Verbindung fortfahren, wenn eine oder mehrere Benutzerzuordnungen den Status "Fehlgeschlagen" aufweisen, nachdem Sie auf **"Vorschau"** geklickt haben. In der Vorschau werden 5 zufällige Benutzer und deren Zuordnungen aus Ihrer Datenquelle angezeigt. Wenn die von Ihnen bereitgestellte Zuordnung nicht allen Benutzern zugeordnet ist, kann dieser Fall auftreten.
 
-## <a name="sample-non-azure-ad-mapping"></a>Beispiel für nicht Azure AD Zuordnung
+## <a name="sample-non-azure-ad-mapping"></a>Beispiel für eine Nicht-Azure AD-Zuordnung
 
-Eine beispielhafte nicht Azure AD Zuordnung finden Sie im folgenden Snapshot.
+Eine Beispiel-Nicht-Azure AD-Zuordnung finden Sie in der nachstehenden Momentaufnahme.
 
-![Beispiel-Momentaufnahme des Ausfüllens der Seite "nicht Azure AD Zuordnung"](media/non-aad-mapping.png)
+![Beispielmomentaufnahme zum Ausfüllen der Nicht-Azure AD-Zuordnungsseite](media/non-aad-mapping.png)
 
 ## <a name="limitations"></a>Einschränkungen  
 
-- Für alle Benutzer wird nur eine Zuordnung unterstützt. Bedingte Zuordnungen werden nicht unterstützt.  
+- Es wird nur eine Zuordnung für alle Benutzer unterstützt. Bedingte Zuordnungen werden nicht unterstützt.  
 
-- Sie können die Zuordnung nicht mehr ändern, nachdem die Verbindung veröffentlicht wurde.  
+- Sie können ihre Zuordnung nicht mehr ändern, nachdem die Verbindung veröffentlicht wurde.  
 
-- Für die Transformation werden derzeit nur Regex-basierte Ausdrücke für die nicht-Aad-Benutzereigenschaften unterstützt.
+- Für die Transformation werden derzeit nur regex-basierte Ausdrücke für die Nicht-AAD-Benutzereigenschaften unterstützt.
 
-- Es gibt nur drei Azure AD Identitäten, denen Sie zuordnen können (UPN, Azure Ad-ID und AD-sid).
+- Sie können nur drei Azure AD-Identitäten zuordnen (UPN, Azure AD-ID und AD-SID).

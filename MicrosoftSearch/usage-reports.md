@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Überprüfen Microsoft Search Nutzungsberichte
-ms.openlocfilehash: 83a2d895ac251affdd5e1c9ea3b0d0fffcecc5a4
-ms.sourcegitcommit: 36a699554bfe9debdb9a33e942597cceb575666b
+ms.openlocfilehash: 9798cdaf0f88ca2f247bb8d10fce526f07adbabc1bbe5566eaddfc071346f751
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53285558"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533114"
 ---
 # <a name="microsoft-search-usage-reports"></a>Microsoft Search Verwendungsberichte
 
@@ -30,7 +30,7 @@ Mithilfe von Suchverwendungsberichten können Sie besser verstehen, wie die Such
 
 Die [Microsoft Search Verwendungsberichte](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) enthalten Diagramme und Tabellen, die aus Suchvorgängen generiert werden, die von SharePoint Home, Office.com und Microsoft Search in Bing Suchfeldern ausgeführt werden. Sie können Daten aus den letzten 31 Tagen, pro Tag oder monatlich für das vorherige Jahr anzeigen. Diese Berichte werden gerade eingeführt, sodass es zeitaufwendige Zeit dauert, bis die verlaufshistorischen Daten fällig sind.
 
-Eine frühere Version dieser Seite enthielt Daten aus Suchvorgängen, die nur für Microsoft Search in Bing auf Bing.com ausgeführt wurden. Diese Daten sind nun in diese Berichte integriert. Sie können die alte Seite weiterhin sehen, indem Sie unten auf der Seite auf den Link klicken, um die wichtigsten Abfragen und die **Eindrucksverteilung Bing anzuzeigen.** Dieser Link und die alte Seite werden in Kürze entfernt.
+Eine frühere Version dieser Seite enthielt Daten aus Suchvorgängen, die nur für Microsoft Search in Bing auf Bing.com ausgeführt wurden. Diese Daten sind nun in diese Berichte integriert. Sie können die alte Seite weiterhin sehen, indem Sie unten auf der Seite auf den Link klicken, um die wichtigsten Abfragen und die **Eindrucksverteilung von Bing anzuzeigen.** Dieser Link und die alte Seite werden in Kürze entfernt.
 
 > [!div class="mx-imgBorder"]
 > ![Dashboard für Suchverwendungsberichte](media/usage-reports/usage_reports_v2.png)
@@ -41,8 +41,8 @@ Eine frühere Version dieser Seite enthielt Daten aus Suchvorgängen, die nur f�
 |:-----|:-----|
 |Abfragevolume|Dieser Bericht zeigt die Anzahl der ausgeführten Suchabfragen an. Verwenden Sie diesen Bericht, um Trends im Suchabfragevolumen zu identifizieren und Zeiträume mit hoher und niedriger Suchaktivität zu ermitteln.|
 |Häufigste Suchvorgänge|Dieser Bericht enthält die beliebtesten Suchabfragen. Eine Abfrage wird diesem Bericht hinzugefügt, wenn sie mindestens dreimal mit einem Klick auf ein Ergebnis durchsucht wird. Verwenden Sie diesen Bericht, um zu verstehen, nach welchen Arten von Informationen Ihre Benutzer suchen.|
-|Abgebrochene Abfragen|Dieser Bericht zeigt häufig verwendete Suchabfragen, die nur wenig Klick-und-Los erhalten. Mithilfe dieses Berichts können Sie Suchvorgänge identifizieren, die unzufriedene Benutzer erzeugen, und das Auffinden von Inhalten verbessern. Sie können dann ermitteln, ob das Erstellen einer Antwort, z. B. ein Lesezeichen, oder das Erfassen neuer Inhalte über einen Graph Connector die richtige Aktion ist.|
-|Keine Ergebnisabfragen|Dieser Bericht zeigt beliebte Suchabfragen, die keine Ergebnisse zurückgegeben haben. Mithilfe dieses Berichts können Sie Suchvorgänge identifizieren, die unzufriedene Benutzer erzeugen, und das Auffinden von Inhalten verbessern. Sie können dann ermitteln, ob das Erstellen einer Antwort, z. B. ein Lesezeichen, oder das Erfassen neuer Inhalte über einen Graph Connector die richtige Aktion ist.|
+|Abgebrochene Abfragen|Dieser Bericht zeigt häufig verwendete Suchabfragen, die nur wenig Klick-und-Los erhalten. Mithilfe dieses Berichts können Sie Suchvorgänge identifizieren, die unzufriedene Benutzer erzeugen, und das Auffinden von Inhalten verbessern. Sie können dann ermitteln, ob das Erstellen einer Antwort, z. B. ein Lesezeichen, oder das Aufnehmen neuer Inhalte über einen Graph Connector die richtige Aktion ist.|
+|Keine Ergebnisabfragen|Dieser Bericht zeigt beliebte Suchabfragen, die keine Ergebnisse zurückgegeben haben. Mithilfe dieses Berichts können Sie Suchvorgänge identifizieren, die unzufriedene Benutzer erzeugen, und das Auffinden von Inhalten verbessern. Sie können dann ermitteln, ob das Erstellen einer Antwort, z. B. ein Lesezeichen, oder das Aufnehmen neuer Inhalte über einen Graph Connector die richtige Aktion ist.|
 
 >[!NOTE]
 >Es gibt derzeit ein bekanntes Problem, bei dem Abfragen, die mit einer Antwort wie einem Lesezeichen zufrieden sind, als abgebrochene Abfrage gezählt werden.

@@ -12,13 +12,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Einrichten des Enterprise Websites Graph Connectors für Microsoft Search
-ms.openlocfilehash: 32e38c9bef036556dae2734e23b1d26ba4fe2c27
-ms.sourcegitcommit: 38a0f09596c2bca0e12bf4cada7b4c64fd4c48e4
+description: Einrichten des Graph Connectors für Enterprise Websites für Microsoft Search
+ms.openlocfilehash: 7e308c8239fbc4ea0da5449731d25442490270f9d604a40944d17cd2bf367a0c
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53449046"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533079"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -29,7 +29,7 @@ ms.locfileid: "53449046"
 Der Connector Enterprise Websites Graph ermöglicht Es Ihrer Organisation, Artikel und **Inhalte von den internen Websites** zu indizieren. Nachdem Sie den Connector konfiguriert und Inhalte von der Website synchronisiert haben, können Endbenutzer von jedem Microsoft Search Client nach diesen Inhalten suchen.
 
 > [!NOTE]
-> Lesen Sie den Artikel [**"Setup your Graph connector",**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten von Connectors Graph zu verstehen.
+> Lesen Sie den Artikel [**zum Einrichten ihres Graph Connectors,**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten von Connectors Graph zu verstehen.
 
 Dieser Artikel richtet sich an alle Personen, die einen Enterprise Websites-Connector konfigurieren, ausführen und überwachen. Es ergänzt den allgemeinen Einrichtungsprozess und zeigt Anweisungen, die nur für den Connector für Enterprise Websites gelten. Dieser Artikel enthält auch Informationen zur [Problembehandlung.](#troubleshooting)
 
@@ -79,9 +79,9 @@ Zusätzlich zum Kontrollkästchen sind drei optionale Felder verfügbar:
 
 Der Durchforstungsmodus bestimmt den Typ der Websites, die Sie indiziert möchten, entweder in der Cloud oder lokal. Wählen Sie für Ihre Cloudwebsites **"Cloud"** als Durchforstungsmodus aus.
 
-Außerdem unterstützt der Connector jetzt das Durchforsten lokaler Websites. Um auf Ihre lokalen Daten zugreifen zu können, müssen Sie zuerst den Graph Connector-Agent installieren und konfigurieren. Weitere Informationen finden Sie unter [Graph Connector-Agent.](./on-prem-agent.md)
+Außerdem unterstützt der Connector jetzt das Durchforsten lokaler Websites. Um auf Ihre lokalen Daten zugreifen zu können, müssen Sie zuerst den Graph Connector-Agent installieren und konfigurieren. Weitere Informationen finden Sie unter [Graph Connector-Agent.](./graph-connector-agent.md)
 
-Wählen Sie für Ihre lokalen Websites **den Agent** als Durchforstungsmodus aus, und wählen Sie im Feld **"Lokaler Agent"** den Graph Connector-Agent aus, den Sie zuvor installiert und konfiguriert haben.  
+Wählen Sie für Ihre lokalen Websites den **Agent** als Durchforstungsmodus aus, und wählen Sie im Feld **"Lokaler Agent"** den Graph Connector-Agent aus, den Sie zuvor installiert und konfiguriert haben.  
 
 ### <a name="authentication"></a>Authentifizierung
 
@@ -96,7 +96,7 @@ Weitere Informationen finden Sie unter [Autorisieren des Zugriffs auf Azure Acti
 
 Um die Werte für die Ressource, client_id und client_secret abzurufen, wechseln Sie zu **Verwenden des Autorisierungscodes, um ein Zugriffstoken** auf der Umleitungs-URL-Webseite anzufordern.
 
-Weitere Informationen finden Sie unter [Schnellstart: Registrieren einer Anwendung mit dem Microsoft Identity Platform.](/azure/active-directory/develop/quickstart-register-app)
+Weitere Informationen finden Sie unter [Schnellstart: Registrieren einer Anwendung mit dem Microsoft Identity Platform](/azure/active-directory/develop/quickstart-register-app).
 
 ## <a name="step-3a-add-urls-to-exclude-optional-crawl-restrictions"></a>Schritt 3a: Hinzufügen von auszuschließenden URLs (optionale Durchforstungseinschränkungen)
 
@@ -104,7 +104,7 @@ Es gibt zwei Möglichkeiten, um zu verhindern, dass Seiten durchforstet werden: 
 
 ### <a name="support-for-robotstxt"></a>Unterstützung für robots.txt
 
-Der Connector überprüft, ob eine robots.txt Datei für Ihre Stammwebsite vorhanden ist, und beachtet, falls vorhanden, die Anweisungen in dieser Datei. Wenn Sie nicht möchten, dass der Connector bestimmte Seiten oder Verzeichnisse auf Ihrer Website durchforstet, können Sie diese Seiten oder Verzeichnisse in den "Disallow"-Deklarationen in Ihrer robots.txt-Datei aufrufen.
+Der Connector überprüft, ob eine robots.txt-Datei für Ihre Stammwebsite vorhanden ist. Falls vorhanden, folgt er den Anweisungen in dieser Datei und beachtet diese. Wenn Sie nicht möchten, dass der Connector bestimmte Seiten oder Verzeichnisse auf Ihrer Website durchforstet, können Sie diese Seiten oder Verzeichnisse in den "Disallow"-Deklarationen in Ihrer robots.txt Datei aufrufen.
 
 ### <a name="add-urls-to-exclude"></a>Hinzufügen von AUSZUSCHLIEßENden URLs
 
@@ -112,7 +112,7 @@ Sie können optional eine **Ausschlussliste** erstellen, um einige URLs davon au
 
 ## <a name="step-4-assign-property-labels"></a>Schritt 4: Zuweisen von Eigenschaftenbeschriftungen
 
-Sie können jeder Bezeichnung eine Quelleigenschaft zuweisen, indem Sie aus einem Menü mit Optionen auswählen. Obwohl dieser Schritt nicht obligatorisch ist, verbessert die Verwendung einiger Eigenschaftenbezeichnungen die Suchrelevanz und stellt genauere Suchergebnisse für Endbenutzer sicher.
+Sie können jeder Bezeichnung eine Quelleigenschaft zuweisen, indem Sie aus einem Menü mit Optionen auswählen. Obwohl dieser Schritt nicht zwingend erforderlich ist, verbessert die Verwendung einiger Eigenschaftenbezeichnungen die Suchrelevanz und stellt genauere Suchergebnisse für Endbenutzer sicher.
 
 ## <a name="step-5-manage-schema"></a>Schritt 5: Verwalten des Schemas
 
@@ -143,7 +143,7 @@ Beim Lesen des Inhalts der Website können bei der Durchforstung einige Quellfeh
  6009 | Ausführliche Informationen zu allen clientseitigen Fehlern (außer HTTP 404, 408) finden Sie unter HTTP 4xx-Fehlercodes.
  6013 | Die Quellseite, die indiziert werden soll, konnte nicht gefunden werden. (HTTP 404-Fehler)
  6018 | Die Quellseite antwortet nicht, und für die Anforderung ist ein Timeout aufgetreten. (HTTP 408-Fehler)
- 6021 | Die Quellseite, die indiziert werden soll, weist keinen Textinhalt auf der Seite auf.
+ 6021 | Die Quellseite, die indiziert werden soll, enthält keinen Textinhalt auf der Seite.
  6023 | Die Quellseite, die indiziert werden soll, wird nicht unterstützt (keine HTML-Seite)
  6024 | Die Quellseite, die indiziert werden soll, weist nicht unterstützte Inhalte auf.
 

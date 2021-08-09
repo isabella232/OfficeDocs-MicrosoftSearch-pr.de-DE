@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: mssearch
 localization_priority: Normal
 description: Verwalten der Darstellung von Dynamics 365-Inhalten in Suchergebnissen
-ms.openlocfilehash: 5f642bcb026358e57258e5e736fc263616fc4b05
-ms.sourcegitcommit: f07a2e578b6c9ed5a1a3b22266cca371782870a7
+ms.openlocfilehash: 65d6d27028f46751270cb3a50a154063de4fbab72d917f94aa8925693ac9ea2b
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53067928"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533651"
 ---
 # <a name="dynamics-365-federation-search-preview"></a>Dynamics 365-Verbundsuche (Vorschau)
 
@@ -39,15 +39,15 @@ Microsoft Dynamics 365 ist eine Reihe intelligenter Geschäftsanwendungen, die f
 
 ## <a name="what-users-experience"></a>Benutzerfreundlichkeit
 
-Dynamics 365-Antworten werden in suchergebnissen in allen Microsoft Search Canvass angezeigt, einschließlich SharePoint Online, Bing und Office.
+Dynamics 365-Antworten werden in suchergebnissen in allen Microsoft Search Canvases angezeigt, einschließlich SharePoint Online, Bing und Office.
 
 :::image type="content" alt-text="Screenshot der Dynamics 365-Antworten auf SharePoint, Bing und Office" source="media/dynamics365/dynamics365-answer.png" lightbox="media/dynamics365/dynamics365-answer.png":::
 
-Aus der Antwort ist es einfach, weitere Dynamics 365-Suchergebnisse mithilfe des Links **"Weitere Dynamics 365-Ergebnisse"** anzuzeigen. Sie führt Benutzer zu einer dedizierten Dynamics 365-Ergebnisseite mit weiteren ergebnissen, die für ihre Abfrage relevant sind.
+Aus der Antwort ist es einfach, weitere Dynamics 365-Suchergebnisse mithilfe des Links **"Weitere Dynamics 365-Ergebnisse"** anzuzeigen. Sie führt Benutzer zu einer dedizierten Dynamics 365-Ergebnisseite mit weiteren Ergebnissen, die für ihre Abfrage relevant sind.
 
 :::image type="content" alt-text="Screenshot der vertikalen Dynamics 365-Branche und Ergebnisse zu SharePoint, Bing und Office" source="media/dynamics365/dynamics365-vertical.png" lightbox="media/dynamics365/dynamics365-vertical.png":::
 
-Durch Klicken oder Tippen auf ein beliebiges Ergebnis wird Dynamics 365 geöffnet und die detaillierten Informationen angezeigt.
+Wenn Sie auf ein beliebiges Ergebnis klicken oder tippen, wird Dynamics 365 geöffnet und die detaillierten Informationen angezeigt.
 
 :::image type="content" alt-text="Screenshot der Detailseite in Dynamics 365" source="media/dynamics365/dynamics365-detail-page.png" lightbox="media/dynamics365/dynamics365-detail-page.png":::
 
@@ -59,7 +59,7 @@ Unabhängig davon, wo Ihre Benutzer mit der Suche beginnen, ist ihre Oberfläche
 
 Abfragen natürlicher Sprache und Produktnamen werden unterstützt, wenn sie Microsoft Search verwenden, um Dynamics 365-Ergebnisse zu finden. Außerdem wird bei Dynamics 365-Abfragen die Groß-/Kleinschreibung nicht beachtet. Verwenden Sie natürliche Sprachmuster, um Kontakt-, Konto- und Geschäftsmöglichkeiten nach Kundennamen oder Standort und anderen häufig verwendeten Abfragen zu suchen. Hier ein paar Beispiele:
 
-* Wer ist der Kontakt für Contoso.
+* Wer ist der Kontakt für Contoso
 * Offene Möglichkeiten für Contoso
 * Was sind offene Möglichkeiten in Seattle?
 * Was sind die Konten in Seattle?

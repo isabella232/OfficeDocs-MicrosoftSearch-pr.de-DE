@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: Einrichten des Dateifreigabe-Graph-Connectors für Microsoft Search
-ms.openlocfilehash: af4c3996fdc8ac753404f4b4519175a9054fa18bce3862b0c5841c7bd5369cdd
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 387a04c435045d620f8e35aa9fbdd37e23da32a61489d0102dc7bda09920e980
+ms.sourcegitcommit: 07d04a81d30b04d1f7e3c556bd711dc7efd710d9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533024"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "57823015"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -46,7 +46,7 @@ Inhalte der folgenden Formate können indiziert und durchsucht werden: DOC, DOCM
 
 Die maximal unterstützte Dateigröße beträgt 100 MB. Dateien, die 100 MB überschreiten, werden nicht indiziert. Die maximale Größe nach der Verarbeitung beträgt 4 MB. Die Verarbeitung wird beendet, wenn die Größe einer Datei 4 MB erreicht. Daher funktionieren einige Ausdrücke, die in der Datei vorhanden sind, möglicherweise nicht für die Suche.
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph Connectors im Microsoft 365 Admin Center
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph Connectors in der Microsoft 365 Admin Center
 
 Folgen Sie den allgemeinen [Setupanweisungen.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -64,9 +64,29 @@ Wählen Sie auf der Seite **Verbinden zur Datenquelle** die **Dateifreigabe aus,
 
 Wenn der Connector versucht, eine Datei zu durchforsten, wird das Feld "Zeitpunkt des letzten Zugriffs" in den Metadaten aktualisiert. Wenn Sie für Archivierungs- und Sicherungslösungen von diesem Feld abhängig sind und es nicht aktualisieren möchten, wenn der Connector darauf zugreift, können Sie diese Option auf der Seite **"Erweiterte Einstellungen"** konfigurieren.
 
-## <a name="step-4-manage-search-permissions"></a>Schritt 4: Verwalten von Suchberechtigungen
+## <a name="step-4-limits-for-file-indexing"></a>Schritt 4: Grenzwerte für die Dateiindizierung
 
-Sie können die Berechtigung zum Suchen nach einer beliebigen Datei basierend auf Listen für die Zugriffssteuerung für freigabebasierte Zugriffssteuerungen oder NTFS-Zugriffssteuerungslisten (New Technology File System, NTFS) einschränken, indem Sie auf der Seite **"Suchberechtigungen verwalten"** die gewünschte Option auswählen. Die in diesen Zugriffssteuerungslisten bereitgestellten Benutzerkonten und Gruppen müssen von Active Directory (AD) verwaltet werden. Wenn Sie ein anderes System für die Benutzerkontenverwaltung verwenden, können Sie die Option "Jeder" auswählen, mit der Benutzer ohne Zugriffseinschränkungen nach allen Dateien suchen können. Wenn Benutzer jedoch versuchen, die Datei zu öffnen, gelten die an der Quelle festgelegten Zugriffssteuerelemente.
+Beim Konfigurieren einer Dateifreigabeverbindung könnte der Administrator die Indizierung von Dateien und Ordnern einschränken. Es gibt mehrere Möglichkeiten, dies zu tun:
+
+#### <a name="based-on-file-types"></a>Basierend auf Dateitypen
+
+Nur der Textinhalt dieser Formate wird indiziert: DOC, DOCM, DOCX, DOT, DOTX, EML, HTML, MHT, MHTML, MSG, NWS, OBD, OBT, ODP, ODS, ODT, ONE, PDF, POT, PPS, PPT, PPTM, PPTX, TXT, XLB, XLC, XLSB, XLS, XLSX, XLT, XLXM, XML, XPS. Für Multimediadateien und Dateien, die nicht zu diesem Format gehören, werden die einzigen Metadaten indiziert.
+
+#### <a name="based-on-last-modified-date-or-number-of-days-since-last-modification"></a>Basierend auf dem Datum der letzten Änderung oder der Anzahl der Tage seit der letzten Änderung
+
+#### <a name="full-network-path-of-filefolder-or-regular-expression-to-limit-indexing"></a>Vollständiger Netzwerkpfad der Datei/des Ordners oder des regulären Ausdrucks, um die Indizierung einzuschränken 
+
+Verwenden Sie im Netzwerkpfad Escapezeichen ( \\ ) vor Sonderzeichen wie \\ . Beispiel: Für den Pfad \\ \\ "CONTOSO \\ FILE \\ SHAREDFOLDER" lautet die richtige Eingabemethode \\ \\ \\ \\ "CONTOSO \\ \\ FILE \\ \\ SHAREDFOLDER".
+
+Regeln zum Schreiben regulärer Ausdrücke finden Sie [hier](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference)
+
+Der Administrator könnte auch eine Ausnahme von der Limit-Regel erteilen. Die Priorität der Ausnahmeregel ersetzt limit-Regeln. In ähnlicher Weise könnte die Ausnahme definiert werden, indem ordner-/dateipfade für die Elemente, die in die Indizierung eingeschlossen werden sollen, festgelegt werden.
+
+![Grenzwerte und Ausnahmen](media/file-connector/ExclusionRule.png)
+
+## <a name="step-5-manage-search-permissions"></a>Schritt 5: Verwalten von Suchberechtigungen
+
+Sie können die Berechtigung zum Suchen nach einer beliebigen Datei basierend auf Zugriffssteuerungslisten für Freigaben oder NTFS-Zugriffssteuerungslisten (New Technology File System, NTFS) einschränken, indem Sie auf der Seite **"Suchberechtigungen verwalten"** die gewünschte Option auswählen. Die in diesen Zugriffssteuerungslisten bereitgestellten Benutzerkonten und Gruppen müssen von Active Directory (AD) verwaltet werden. Wenn Sie ein anderes System für die Benutzerkontenverwaltung verwenden, können Sie die Option "Jeder" auswählen, mit der Benutzer ohne Zugriffseinschränkungen nach allen Dateien suchen können. Wenn Benutzer jedoch versuchen, die Datei zu öffnen, gelten die an der Quelle festgelegten Zugriffssteuerelemente.
 
 Beachten Sie, dass Windows standardmäßig die Berechtigung "Lesen" für "Jeder" in AcLs freigeben bereitstellt, wenn ein Ordner im Netzwerk freigegeben wird. Wenn Sie acls freigeben in **"Suchberechtigungen verwalten"** auswählen, können Benutzer durch die Erweiterung nach allen Dateien suchen. Wenn Sie den Zugriff einschränken möchten, entfernen Sie "Lesezugriff" für "Jeder" in Dateifreigaben, und gewähren Sie nur den gewünschten Benutzern und Gruppen Zugriff. Der Connector liest dann diese Zugriffseinschränkungen und wendet sie auf die Suche an.
 
@@ -74,22 +94,22 @@ Sie können Share ACLs nur auswählen, wenn der angegebene Freigabepfad dem UNC-
 
 ![Advanced_sharing](media/file-connector/file-advanced-sharing.png)
 
-## <a name="step-5-assign-property-labels"></a>Schritt 5: Zuweisen von Eigenschaftenbeschriftungen
+## <a name="step-6-assign-property-labels"></a>Schritt 6: Zuweisen von Eigenschaftenbeschriftungen
 
 Folgen Sie den allgemeinen [Setupanweisungen.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="step-6-manage-schema"></a>Schritt 6: Verwalten des Schemas
+## <a name="step-7-manage-schema"></a>Schritt 7: Verwalten des Schemas
 
 Folgen Sie den allgemeinen [Setupanweisungen.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="step-7-choose-refresh-settings"></a>Schritt 7: Auswählen von Aktualisierungseinstellungen
+## <a name="step-8-choose-refresh-settings"></a>Schritt 8: Auswählen von Aktualisierungseinstellungen
 
 Folgen Sie den allgemeinen [Setupanweisungen.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="step-8-review-connection"></a>Schritt 8: Überprüfen der Verbindung
+## <a name="step-9-review-connection"></a>Schritt 9: Überprüfen der Verbindung
 
 Folgen Sie den allgemeinen [Setupanweisungen.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 

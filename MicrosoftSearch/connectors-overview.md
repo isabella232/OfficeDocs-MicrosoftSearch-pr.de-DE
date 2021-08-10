@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Übersicht über Microsoft Graph Connectors für Microsoft Search
-ms.openlocfilehash: a7f2fe8b5278df9368c3036895450a74ad7eae8a644aedc147fb16dd0efdd46e
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 42bcdfbd8d2b00a54a1fa73c41331bb36cc90e3c903ad52cb7b37888a4fb317e
+ms.sourcegitcommit: cd773596e613bf9a8d64990807c1078d8953cda1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533182"
+ms.lasthandoff: 08/08/2021
+ms.locfileid: "57801957"
 ---
 <!---Previous ms.author: monaray --->
 
 # <a name="overview-of-microsoft-graph-connectors"></a>Übersicht über Microsoft Graph-Connectors
 
-[Microsoft Search](./overview-microsoft-search.md) indiziert alle [Microsoft 365](https://www.microsoft.com/microsoft-365) Daten, damit sie für Benutzer durchsuchbar sind. Mit Microsoft Graph Connectors kann Ihre Organisation Drittanbieterdaten so indizieren, dass sie in Microsoft Search Ergebnissen angezeigt werden. Dieses Feature erweitert die Arten von Inhaltsquellen, die in Ihren Microsoft 365-Produktivitäts-Apps und im breiteren Microsoft-Ökosystem durchsuchbar sind. Die Drittanbieterdaten können lokal oder in den öffentlichen oder privaten Clouds gehostet werden.
+[Microsoft Search](./overview-microsoft-search.md) indiziert alle [Microsoft 365](https://www.microsoft.com/microsoft-365) Daten, damit sie für Benutzer durchsucht werden können. Mit Microsoft Graph Connectors kann Ihre Organisation Drittanbieterdaten so indizieren, dass sie in Microsoft Search Ergebnissen angezeigt werden. Dieses Feature erweitert die Arten von Inhaltsquellen, die in Ihren Microsoft 365-Produktivitäts-Apps und im breiteren Microsoft-Ökosystem durchsuchbar sind. Die Drittanbieterdaten können lokal oder in den öffentlichen oder privaten Clouds gehostet werden.
 
 <!---link Microsoft Graph reference in line 19 when we have access to relevant documentation--->
 
@@ -74,13 +74,13 @@ Sie können über von Microsoft erstellte Connectors eine Verbindung mit den fol
 * [Salesforce (Vorschau)](salesforce-connector.md)
 * [ServiceNow](servicenow-connector.md)
 
-Der [Microsoft Graph Connectors-Katalog](https://www.microsoft.com/microsoft-search/connectors) enthält eine kurze Beschreibung dieser Connectors. Wenn Sie bereit sind, eine dieser Datenquellen mit Ihrem Mandanten zu verbinden, lesen Sie unbedingt die [Setupübersicht](configure-connector.md) und alle anderen Artikel im Abschnitt "Setup connectors by Microsoft", die für Ihre Datenquelle gelten.
+Der [Microsoft Graph Connectors-Katalog](https://www.microsoft.com/microsoft-search/connectors) enthält eine kurze Beschreibung dieser Connectors. Wenn Sie bereit sind, eine dieser Datenquellen mit Ihrem Mandanten zu verbinden, lesen Sie unbedingt die [Setupübersicht](configure-connector.md) und alle anderen Artikel in den Setupconnectors von Microsoft, die für Ihre Datenquelle gelten.
 
 ### <a name="microsoft-graph-connectors-by-our-partners"></a>Microsoft Graph Connectors von unseren Partnern
 
 Der [Connectorkatalog](https://www.microsoft.com/microsoft-search/connectors) von Microsoft Graph enthält eine kurze Beschreibung der einzelnen Connectors, die von unseren Partnern erstellt wurden, sowie einen Link zur Website jedes Partners. Um mehr zu erfahren, wenden Sie sich direkt an jeden Partner.
 
-### <a name="build-your-own-microsoft-graph-connector"></a>Erstellen Eines eigenen Microsoft Graph-Connectors
+### <a name="build-your-own-microsoft-graph-connector"></a>Erstellen Eines eigenen Microsoft Graph Connectors
 
 Sie können bei Bedarf einen eigenen Connector erstellen. Weitere Informationen zum Erstellen von Connectors finden Sie unter [Erstellen Ihres ersten benutzerdefinierten Microsoft Graph Connectors.](/graph/connecting-external-content-build-quickstart)
 
@@ -100,10 +100,10 @@ Obwohl Microsoft Graph Connectors und Microsoft Search-APIs jetzt allgemein verf
 
 Zu den Konnektoren und Features in der Vorschau gehören:
 
-* [Azure DevOps-Connector](azure-devops-connector.md)
+* [Azure DevOps Connector](azure-devops-connector.md)
 * [Salesforce-Connector](salesforce-connector.md)
 * [ServiceNow-Connector](servicenow-connector.md) mit Suchberechtigungen, die Quell-ACLs verwenden
-* [Verwalten von Ergebnisclusters](result-cluster.md)
+* [Verwalten benutzerdefinierter Filter](custom-filters.md)
 * [Mehrere Verbindungen in einer vertikalen](customize-search-page.md#multiple-connections-in-a-vertical)
 
 ## <a name="how-do-i-customize-and-configure-search-results"></a>Wie kann ich Suchergebnisse anpassen und konfigurieren?

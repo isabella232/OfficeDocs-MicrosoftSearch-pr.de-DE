@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Erstellen und Aktualisieren von Lesezeichen und Möglichkeiten zum Massenbearbeitung von Lesezeichenergebnissen für Microsoft Search
-ms.openlocfilehash: 1362082bf33bd4a30ff2ae76e2fa05a3ccd8962c4ef5f5cb15f41fc183d0c4b9
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: ed46583d857d97fa28773b64401ae4f85f88650a
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533802"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235963"
 ---
 # <a name="manage-bookmarks"></a>Verwalten von Lesezeichen
 
@@ -30,7 +30,7 @@ Ein hervorragendes Lesezeichen hat vier Schlüsselelemente:
 
 1. Ein starker, informativer **Titel.** Verwenden Sie maximal acht Wörter oder maximal 60 Zeichen. Sie möchten, dass Ihre Benutzer auf den Titel klicken und den Inhalt anzeigen, aber vermeiden Sie offensichtliche Clickbait:
     - Gut: Probieren Sie die Favoriten dieser Woche aus dem Menü "Menu" aus. Der Titel ist klar, präzise und interessant, könnte aber überpromisierend sein.
-    - Besser: Das Menü "The week's menu". Überpromise nicht oder klingt wie eine Anzeige.
+    - Besser: Das Menü "The week's menu". Überschreibt oder klingt nicht wie eine Anzeige.
     - Vermeiden Sie Folgendes: Sie werden nicht glauben, was in dieser Woche im Menü "Menu" angezeigt wird. Verwendet Clickbait-Clichés, die wie eine Anzeige klingen.
 2. Eine prägnante **Beschreibung** von ca. 300 Zeichen, die den Zweck oder die Funktionalität der verknüpften Ressource zusammenfasst.
 3. Eine Sammlung von **Schlüsselwörtern,** mit denen Benutzer das Lesezeichen bei der Suche finden können. Wir empfehlen mindestens fünf Schlüsselwörter. Schließen Sie auch Variationen ein, die Personen in Ihrer Organisation verwenden können, z. B. Menüs für Diess, Menüs und Menüs im Menü "Restaurant".
@@ -38,7 +38,7 @@ Ein hervorragendes Lesezeichen hat vier Schlüsselelemente:
 
 ## <a name="create-bookmark-answers"></a>Erstellen von Antworten auf Lesezeichen
 
-Wechseln [Sie](https://admin.microsoft.com/)im Microsoft 365 Admin Center zu ["Lesezeichen",](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) und wählen Sie aus, wie Sie neue Lesezeichen erstellen möchten:
+Wechseln Sie [im Microsoft 365 Admin Center](https://admin.microsoft.com/)zu ["Lesezeichen",](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) und wählen Sie aus, wie Sie neue Lesezeichen erstellen möchten:
 
 - Hinzufügen von Lesezeichen
 - Importieren SharePoint Ergebnisse
@@ -48,17 +48,13 @@ Wechseln [Sie](https://admin.microsoft.com/)im Microsoft 365 Admin Center zu ["L
 
 ### <a name="add-bookmarks"></a>Hinzufügen von Lesezeichen
 
-Suchadministratoren und -editoren können Lesezeichen im Microsoft 365 Admin Center hinzufügen und sie entweder veröffentlichen oder im Entwurf speichern. Durch die Veröffentlichung eines Lesezeichens wird der Suchindex sofort aktualisiert, sodass er für Benutzer sofort erkennbar ist. Sie können ein Lesezeichen auch planen, indem Sie das Datum und die Uhrzeit für die Veröffentlichung angeben.
+Suchadministratoren und -editoren können Lesezeichen im Microsoft 365 Admin Center hinzufügen und diese entweder veröffentlichen oder im Entwurf speichern. Durch die Veröffentlichung eines Lesezeichens wird der Suchindex sofort aktualisiert, sodass er für Benutzer sofort erkennbar ist. Sie können ein Lesezeichen auch planen, indem Sie das Datum und die Uhrzeit für die Veröffentlichung angeben.
 
 - **Veröffentlicht:** Lesezeichen stehen den Benutzern der Organisation über Microsoft Search zur Verfügung.
 - **Entwurf:** Als Entwürfe gespeicherte Lesezeichen stehen Ihren Benutzern nicht zur Verfügung. Verwenden Sie diesen Status, wenn Sie oder andere Projektbeteiligten Lesezeichen vor der Veröffentlichung überprüfen oder aktualisieren möchten.
 - **Geplant:** Lesezeichen, die am angegebenen Datum und zur angegebenen Uhrzeit veröffentlicht werden.
 
-Sie können die Browsererweiterung Microsoft Search Inhaltsersteller verwenden, um lesezeichen auf einfache Weise hinzuzufügen. Um die Browsererweiterung zu installieren, wechseln Sie zu der Website, die Sie als Lesezeichen hinzufügen möchten, und klicken Sie auf "In der Erweiterung hinzufügen".
-Installieren Sie die Erweiterung für Edge und Chrome:
-
-- For Chromium Edge or Chrome: go to the [Chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) and add the extension.
-- Für Legacy-Edge: Wechseln Sie zum [Microsoft Store,](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) und fügen Sie die Erweiterung hinzu.
+Sie können die Browsererweiterung Microsoft Search Inhaltsersteller verwenden, um auf einfache Weise Lesezeichen hinzuzufügen. Wechseln Sie einfach zu der Website, die Sie als Lesezeichen hinzufügen möchten, und klicken Sie in der Erweiterung auf "Hinzufügen". Um die Erweiterung für Microsoft Edge oder Google Chrome zu installieren, wechseln Sie zum [Chrome-Webspeicher,](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) und fügen Sie sie Ihrem Browser hinzu.
 
 ### <a name="import-sharepoint-results"></a>Importieren SharePoint Ergebnisse
 
@@ -106,7 +102,7 @@ So verhindern Sie Duplizierungsfehler zwischen Lesezeichen:
 
 ### <a name="publish-or-review-recommended-bookmarks"></a>Veröffentlichen oder Überprüfen empfohlener Lesezeichen
 
-Um den manuellen Aufwand zum Hinzufügen von Lesezeichen zu verringern, können Microsoft Search die SharePoint Links Ihrer Organisation auswerten und Lesezeichen empfehlen. Sie können sie vor der Veröffentlichung überprüfen oder festlegen, dass sie automatisch veröffentlicht werden. Es ist kein Setup für empfohlene Lesezeichen erforderlich, sie sind aktiviert und standardmäßig auf die automatische Veröffentlichung festgelegt. Um diese Einstellungen jederzeit zu ändern, wählen Sie **Lesezeichen verwalten aus,** um den Bereich "Lesezeicheneinstellungen" zu öffnen.
+Um den manuellen Aufwand für das Hinzufügen von Lesezeichen zu verringern, können Microsoft Search die SharePoint Links Ihrer Organisation auswerten und Lesezeichen empfehlen. Sie können sie vor der Veröffentlichung überprüfen oder festlegen, dass sie automatisch veröffentlicht werden. Für empfohlene Lesezeichen ist kein Setup erforderlich, sie sind aktiviert und standardmäßig auf die automatische Veröffentlichung festgelegt. Um diese Einstellungen jederzeit zu ändern, wählen Sie **Lesezeichen verwalten aus,** um den Bereich "Lesezeicheneinstellungen" zu öffnen.
 
 ![Screenshot der Empfohlenen Lesezeicheneinstellungen im Microsoft 365-Verwaltungsportal](media/bookmarks-recommendedsettings.png)
 
@@ -138,7 +134,7 @@ Ein Lesezeichen kann mehrere Schlüsselwörter haben und dasselbe Schlüsselwort
 
 **A:** Gelöschte Textmarken werden sofort aus den Arbeitsergebnissen entfernt.
 
-**F: Wird Microsoft Search Lesezeichen von Websites in allen Sprachen empfehlen?**
+**F: Werden Microsoft Search Lesezeichen von Websites in allen Sprachen empfehlen?**
 
 **A:** Ja, Microsoft Search können Lesezeichen von jeder internen SharePoint Website empfehlen, unabhängig von der Sprache.
 
@@ -160,4 +156,4 @@ Ein Lesezeichen kann mehrere Schlüsselwörter haben und dasselbe Schlüsselwort
 
 **F: Wo finde ich die App-ID für eine Power App?**
 
-**A:** Wechseln Sie zur Power Apps Website, und zeigen Sie den Detailbereich für die App an. Weitere Informationen [zum Abrufen einer App-ID.](/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id)
+**A:** Wechseln Sie zur Power Apps-Website, und zeigen Sie den Detailbereich für die App an. Weitere Informationen [zum Abrufen einer App-ID.](/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id)

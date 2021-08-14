@@ -1,5 +1,5 @@
 ---
-title: Dateifreigabe-Graph-Connector für Microsoft Search
+title: Graph Connector für die Dateifreigabe für Microsoft Search
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -14,21 +14,21 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: Einrichten des Dateifreigabe-Graph-Connectors für Microsoft Search
-ms.openlocfilehash: 387a04c435045d620f8e35aa9fbdd37e23da32a61489d0102dc7bda09920e980
-ms.sourcegitcommit: 07d04a81d30b04d1f7e3c556bd711dc7efd710d9
+ms.openlocfilehash: 71bcc86c2a1bf2f3d20693028ce006812aa170b5
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "57823015"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235911"
 ---
 <!---Previous ms.author: rusamai --->
 
-# <a name="file-share-graph-connector"></a>Dateifreigabe Graph Connector
+# <a name="file-share-graph-connector"></a>Graph Connector für die Dateifreigabe
 
 Mit dem Connector für die Dateifreigabe Graph können Benutzer in Ihrer Organisation lokale Windows Dateifreigaben durchsuchen.
 
 > [!NOTE]
-> Lesen Sie den Artikel [**"Setup for your Graph connector",**](configure-connector.md) um den allgemeinen Setupprozess für Graph Connectors zu verstehen.
+> Lesen Sie den Artikel [**"Setup for your Graph connector",**](configure-connector.md) um den allgemeinen Einrichtungsprozess für Graph Connectors zu verstehen.
 
 ## <a name="before-you-get-started"></a>Bevor Sie beginnen
 
@@ -86,11 +86,11 @@ Der Administrator könnte auch eine Ausnahme von der Limit-Regel erteilen. Die P
 
 ## <a name="step-5-manage-search-permissions"></a>Schritt 5: Verwalten von Suchberechtigungen
 
-Sie können die Berechtigung zum Suchen nach einer beliebigen Datei basierend auf Zugriffssteuerungslisten für Freigaben oder NTFS-Zugriffssteuerungslisten (New Technology File System, NTFS) einschränken, indem Sie auf der Seite **"Suchberechtigungen verwalten"** die gewünschte Option auswählen. Die in diesen Zugriffssteuerungslisten bereitgestellten Benutzerkonten und Gruppen müssen von Active Directory (AD) verwaltet werden. Wenn Sie ein anderes System für die Benutzerkontenverwaltung verwenden, können Sie die Option "Jeder" auswählen, mit der Benutzer ohne Zugriffseinschränkungen nach allen Dateien suchen können. Wenn Benutzer jedoch versuchen, die Datei zu öffnen, gelten die an der Quelle festgelegten Zugriffssteuerelemente.
+Sie können die Berechtigung zum Suchen nach einer beliebigen Datei basierend auf Listen für die Zugriffssteuerung für freigabebasierte Zugriffssteuerungen oder NTFS-Zugriffssteuerungslisten (New Technology File System, NTFS) einschränken, indem Sie auf der Seite **"Suchberechtigungen verwalten"** die gewünschte Option auswählen. Die in diesen Zugriffssteuerungslisten bereitgestellten Benutzerkonten und Gruppen müssen von Active Directory (AD) verwaltet werden. Wenn Sie ein anderes System für die Benutzerkontenverwaltung verwenden, können Sie die Option "Jeder" auswählen, mit der Benutzer ohne Zugriffseinschränkungen nach allen Dateien suchen können. Wenn Benutzer jedoch versuchen, die Datei zu öffnen, gelten die an der Quelle festgelegten Zugriffssteuerelemente.
 
 Beachten Sie, dass Windows standardmäßig die Berechtigung "Lesen" für "Jeder" in AcLs freigeben bereitstellt, wenn ein Ordner im Netzwerk freigegeben wird. Wenn Sie acls freigeben in **"Suchberechtigungen verwalten"** auswählen, können Benutzer durch die Erweiterung nach allen Dateien suchen. Wenn Sie den Zugriff einschränken möchten, entfernen Sie "Lesezugriff" für "Jeder" in Dateifreigaben, und gewähren Sie nur den gewünschten Benutzern und Gruppen Zugriff. Der Connector liest dann diese Zugriffseinschränkungen und wendet sie auf die Suche an.
 
-Sie können Share ACLs nur auswählen, wenn der angegebene Freigabepfad dem UNC-Pfadformat entspricht. Sie können einen Pfad im UNC-Format erstellen, indem Sie unter "Freigabe" zu "Erweiterte Freigabe" wechseln.
+Sie können Share ACLs nur auswählen, wenn der angegebene Freigabepfad dem UNC-Pfadformat folgt. Sie können einen Pfad im UNC-Format erstellen, indem Sie unter "Freigabe" zu "Erweiterte Freigabe" wechseln.
 
 ![Advanced_sharing](media/file-connector/file-advanced-sharing.png)
 

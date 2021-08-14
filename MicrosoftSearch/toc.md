@@ -17,7 +17,7 @@
 ### [Connector-Katalog](connectors-gallery.md)
 ### Microsoft Graph-Connectors
 #### [Setup-Übersicht](configure-connector.md)
-#### [Einrichten des Graph-Connector-Agents](on-prem-agent.md)
+#### [Einrichten des Graph-Connector-Agents](graph-connector-agent.md)
 #### [Zuordnen von Nicht-Azure AD-Identitäten](map-non-aad.md)
 #### [Zuordnen von Azure AD-Identitäten](map-aad.md)
 #### Connector-spezifische Informationen

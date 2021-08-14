@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: On-prem-Agent
-ms.openlocfilehash: a17ad4637f7618a6f1109fb5de177c9a673a4fa6b791711e807107676749ccc5
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 1fcd1b6848d950c9f7cefa87d086f6607ac5df4f
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54534224"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235938"
 ---
 # <a name="microsoft-graph-connector-agent"></a>Microsoft Graph Connector-Agent
 
@@ -157,6 +157,6 @@ Wenn der Dienst nicht mit dem Fehler "Der Dienst wurde aufgrund eines Anmeldefeh
 
 ### <a name="connection-failure"></a>Verbindungsfehler
 
-Wenn die Aktion "Verbindung testen" beim Erstellen einer Verbindung mit dem Fehler "Benutzername/Kennwort und Datenquellenpfad überprüfen" fehlschlägt, stellen Sie sicher, dass das Benutzerkonto über interaktive Anmeldeberechtigungen für den Computer verfügt, auf dem Graph Connector-Agent installiert ist. Informationen zur Überprüfung der Anmelderechte finden Sie in der Dokumentation zur Verwaltung von [Anmelderichtlinien.](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) Stellen Sie außerdem sicher, dass sich die Datenquelle und der Agentcomputer im selben Netzwerk befinden.
+Wenn die Aktion "Verbindung testen" beim Erstellen einer Verbindung mit dem Fehler "Benutzername/Kennwort und Der Datenquellenpfad überprüfen" fehlschlägt, auch wenn der angegebene Benutzername und das Kennwort korrekt sind, stellen Sie sicher, dass das Benutzerkonto über interaktive Anmeldeberechtigungen für den Computer verfügt, auf dem Graph Connector-Agent installiert ist. Informationen zur Überprüfung der Anmelderechte finden Sie in der Dokumentation zur Verwaltung von [Anmelderichtlinien.](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) Stellen Sie außerdem sicher, dass sich die Datenquelle und der Agentcomputer im selben Netzwerk befinden.
 
-Wenn eine Verbindung mit dem Fehler "1011: Der Graph Connector-Agent ist nicht erreichbar oder offline" fehlschlägt, melden Sie sich bei dem Computer an, auf dem der Agent installiert ist, und starten Sie die Agent-Anwendung, wenn er noch nicht ausgeführt wird. Wenn die Verbindung weiterhin fehlschlägt, stellen Sie sicher, dass das Zertifikat oder der geheime Clientschlüssel, der dem Agent während der Registrierung bereitgestellt wurde, nicht abgelaufen ist und über erforderliche Berechtigungen verfügt.
+Wenn eine Verbindung mit dem Fehler "1011: Der Graph Connector-Agent ist nicht erreichbar oder offline" fehlschlägt, melden Sie sich bei dem Computer an, auf dem der Agent installiert ist, und starten Sie die Agent-Anwendung, wenn er noch nicht ausgeführt wird. Wenn die Verbindung weiterhin fehlschlägt, überprüfen Sie, ob das Zertifikat oder der geheime Clientschlüssel, der dem Agent während der Registrierung bereitgestellt wurde, nicht abgelaufen ist und über erforderliche Berechtigungen verfügt.

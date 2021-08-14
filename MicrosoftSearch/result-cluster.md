@@ -1,8 +1,8 @@
 ---
 title: Connectors-Ergebniscluster
-ms.author: manusi
-author: manusi
-manager: ruppala
+ms.author: masingh
+author: maheshsinghania
+manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Details zur Connectors-Ergebnisclusteroberfläche
-ms.openlocfilehash: 912e27942e9ae3bfef874ae66227880af676b7a1a28449cc82ae8fc02f4446c0
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: c90cc98415be6a42d32b646894cb04305ecb6542
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533977"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235896"
 ---
 # <a name="graph-connectors-result-cluster"></a>ergebniscluster für Graph Connectors
 
-## <a name="overview-of-the-graph-connectors-result-cluster-preview"></a>Übersicht über den Ergebniscluster Graph Connectors (Vorschau)  
+## <a name="overview-of-the-graph-connectors-result-cluster"></a>Übersicht über den Ergebniscluster Graph Connectors  
 
 Mit Graph Connectors-Ergebnisclustern können Unternehmen in ihrer Standardansicht, der Registerkarte **"Alle",** in SharePoint, Office.com und Microsoft Search in Bing nach Inhalten aus Datenquellen von Drittanbietern suchen.
 
@@ -35,28 +35,27 @@ Um die Erkennung von Inhalten aus den Such-Vertikalen sicherzustellen, empfehlen
 
 Wie oft ein Ergebniscluster angezeigt wird, hängt von Faktoren wie der Anzahl der von Ihnen konfigurierten Such-Vertikalen und dem Inhaltstyp ab. Durch die Interaktion oder Das Ignorieren eines Ergebnisclusters geben Benutzer implizit Hinweise an, die die Auslösung im Laufe der Zeit anpassen.
 
-Die Suchergebnisoberfläche für die in Ihrem Ergebniscluster angezeigten Connectorelemente verwendet von Ihnen definierte [Ergebnistypen.](./customize-search-page.md#create-your-own-result-type) Wenn kein Ergebnistyp konfiguriert ist, wird ein [vom System generiertes Layout](./customize-search-page.md#default-search-result-layout) verwendet. 
+Die Suchergebnisoberfläche für die in Ihrem Ergebniscluster angezeigten Connectorelemente verwendet von Ihnen definierte [Ergebnistypen.](./customize-search-page.md#create-your-own-result-type) Wenn kein Ergebnistyp konfiguriert ist, wird ein [vom System generiertes Layout](./customize-search-page.md#default-search-result-layout) verwendet.
 
-Es wird empfohlen, die Eigenschaft "title" als Suchergebnistitel und die Eigenschaft "content" als Suchbeschreibung zu verwenden. Dies bietet Ihren Benutzern die beste Erfahrung durch genaues Auslösen des Ergebnisclusters und der relevantesten Ergebnisse im Cluster. 
+Es wird empfohlen, die Eigenschaft "title" als Suchergebnistitel und die Eigenschaft "content" als Suchbeschreibung zu verwenden. Dies bietet Ihren Benutzern die beste Erfahrung durch genaues Auslösen des Ergebnisclusters und der relevantesten Ergebnisse im Cluster.
 
-## <a name="enable-result-clusters"></a>Aktivieren von Ergebnisclustern
+Ergebniscluster werden in der Mitte der Seite in der Vertikalen Alle angezeigt. Beispielsweise wird unten ein Ergebniscluster aus einer "MediaWiki"-Vertikalen angezeigt.
+
+![Beispiel für einen MediaWiki-Ergebniscluster](media/result-cluster/result-cluster-example.png)
+
+## <a name="result-clusters-default-settings"></a>Standardeinstellungen für Ergebniscluster
   
-Die Ergebnisclusteroberfläche ist standardmäßig deaktiviert.  
+Die Ergebniscluster-Erfahrung ist standardmäßig aktiviert.  
 
-Führen Sie die folgenden Schritte aus, um die Erfahrung auf Organisationsebene zu aktivieren:
+Wenn Sie es deaktivieren möchten, führen Sie die folgenden Schritte aus, um die Benutzeroberfläche auf Organisationsebene zu deaktivieren:
 
 1. Wechseln [Sie](https://admin.microsoft.com)im Microsoft 365 Admin Center zu [**"Verticals".**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)
-2. Wählen Sie die vertikale **Option "Alle"** aus, und aktivieren Sie dann die Ergebnisse des **Verbinders anzeigen.** 
+1. Wählen Sie die Vertikale **Alle** aus, und aktivieren Sie dann die **Verbinderergebnisse ausblenden.**
 
+Führen Sie die folgenden Schritte aus, um die Benutzeroberfläche auf SharePoint Websiteebene zu deaktivieren:
 
-Führen Sie die folgenden Schritte aus, um die Benutzeroberfläche auf SharePoint Websiteebene zu aktivieren:
-
-1. Wechseln Sie auf dem SharePoint Standort, an dem Sie die Ergebnisclusterumgebung verwenden möchten, zu **Einstellungen.**
+1. Wechseln Sie zu **Einstellungen** auf der SharePoint Website
 2. Wechseln Sie zu **"Websiteinformationen** > **Anzeigen aller Websiteeinstellungen".**
-3. Wechseln Sie zum Abschnitt Microsoft Search, und wählen Sie dann **Microsoft Search für diese Websitesammlung** konfigurieren aus.
+3. Wechseln Sie zum Abschnitt Microsoft Search, und wählen Sie dann **Microsoft Search für diese Websitesammlung konfigurieren** aus.
 4. Wechseln Sie im Navigationsbereich zu **"Benutzerdefinierte Oberfläche",** und wählen Sie dann **"Vertikal" aus.**
-5. Wählen Sie die vertikale **Option "Alle"** aus, und aktivieren Sie dann die Ergebnisse des **Verbinders anzeigen.**
-
-## <a name="view-the-result-cluster-experience-after-it-is-enabled"></a>Anzeigen der Ergebnisclustererfahrung nach der Aktivierung
-
-Nachdem Sie die Ergebnisclusterumgebung aktiviert haben, kann es bis zu 12 Stunden dauern, bis Sie sie anzeigen können. Wenn Sie die Erfahrung sofort wünschen, können Sie *cacheClear=true* an die URL in SharePoint und Office anfügen.
+5. Wählen Sie die Vertikale **Alle** aus, und aktivieren Sie dann die **Verbinderergebnisse ausblenden.**

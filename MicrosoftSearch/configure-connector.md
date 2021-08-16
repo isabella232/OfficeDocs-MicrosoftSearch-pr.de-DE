@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Setupübersicht für Graph-Connectors von Microsoft
-ms.openlocfilehash: 0c67081d3efab421b563e82dba506da85e65cb91d34b31f128f3bcff945c68a1
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: b08363421ed143eb32c112ef53ac47cff44722e0
+ms.sourcegitcommit: 8ac77db22002d47bb461222b81b7cfc1c15a72fb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533308"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58340087"
 ---
 <!-- Previous ms.author: monaray -->
 
@@ -32,11 +32,12 @@ In diesem Artikel wird der grundlegende Prozess beschrieben, der erforderlich is
 1. [Hinzufügen eines Graph-Inhaltsconnectors im Microsoft 365 Admin Center](#step-1-add-a-graph-connector-in-the-microsoft-365-admin-center)
 2. [Benennen Sie die Verbindung.](#step-2-name-the-connection)
 3. [Konfigurieren Sie die Verbindungseinstellungen.](#step-3-configure-the-connection-settings)
-4. [Verwalten Sie die Suchberechtigungen.](#step-4-manage-search-permissions)
-5. [Weisen Sie Eigenschaftenbezeichnungen zu.](#step-5-assign-property-labels)
-6. [Schema verwalten](#step-6-manage-schema)
-7. [Aktualisieren Sie die Einstellungen.](#step-7-refresh-settings)
-8. [Überprüfen Sie die Verbindung.](#step-8-review-connection)
+4. [Auswählen von Eigenschaften](#step-4-select-properties)
+5. [Verwalten Sie die Suchberechtigungen.](#step-5-manage-search-permissions)
+6. [Weisen Sie Eigenschaftenbezeichnungen zu.](#step-6-assign-property-labels)
+7. [Schema verwalten](#step-7-manage-schema)
+8. [Aktualisieren Sie die Einstellungen.](#step-8-refresh-settings)
+9. [Überprüfen Sie die Verbindung.](#step-9-review-connection)
 
 Dieser Artikel enthält auch Informationen zur Problembehandlung, zu Einschränkungen und zu den nächsten Schritten:
 
@@ -57,12 +58,12 @@ Führen Sie die folgenden Schritte aus, um einen der von Microsoft erstellten Gr
 
 1. Melden Sie sich bei Ihrem Administratorkonto im [Microsoft 365 Admin Center](https://admin.microsoft.com)an.
 
-2. Wählen Sie im Navigationsbereich **Einstellungen** aus, und wählen Sie dann **Suche & Intelligence** aus. Wählen Sie die [Registerkarte Connectors](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)aus.
+2. Wählen Sie im Navigationsbereich **Einstellungen** aus, und wählen Sie dann **Suche & Intelligence** aus. Wählen Sie die [Registerkarte "Datenquellen" aus.](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)
 
 3. Wählen Sie **+Hinzufügen** aus, und wählen Sie dann im Menü der verfügbaren Optionen die gewünschte Datenquelle aus.
 
    > [!div class="mx-imgBorder"]
-   > ![Verfügbare Datenquellen sind: ADLS Gen2, Enterprise Websites, Microsoft SQL Server, Azure SQL, Oracle SQL-Datenbank, ServiceNow, Dateifreigabe, Azure DevOps und MediaWiki.](media/add-connector.png)
+   > ![Verfügbare Datenquellen sind: ADLS Gen2, Enterprise Websites, Microsoft SQL-Server, Azure SQL, Oracle SQL-Datenbank, ServiceNow, Dateifreigabe, Azure DevOps und MediaWiki.](media/add-connector.png)
 
 > [!NOTE]
 > Sie können jedem Mandanten maximal zehn Graph Verbindungen hinzufügen.
@@ -74,40 +75,49 @@ Geben Sie diese Attribute an:
 * Name (erforderlich)
 * Verbindungs-ID (erforderlich)
 * Beschreibung (optional)
+* Kontrollkästchen aktivieren (erforderlich)
 
 Die Verbindungs-ID erstellt implizite Eigenschaften für den Connector. Sie darf nur alphanumerische Zeichen und maximal 32 Zeichen enthalten.
 
 ## <a name="step-3-configure-the-connection-settings"></a>Schritt 3: Konfigurieren der Verbindungseinstellungen
 
-Der Prozess zum Konfigurieren der Verbindungseinstellungen variiert je nach Typ der Datenquelle. Informationen zum Typ der Datenquelle, die Sie Ihrem Mandanten hinzufügen möchten, finden Sie in den connectorspezifischen Informationen, um diesen Schritt im Setupprozess abzuschließen.  
+Der Prozess zum Konfigurieren der Verbindungseinstellungen variiert je nach Typ der Datenquelle. Informationen zum Typ der Datenquelle, die Sie Ihrem Mandanten hinzufügen möchten, finden Sie in den [connectorspezifischen Informationen,](/microsoftsearch/servicenow-connector#step-31-basic-authentication) um diesen Schritt im Setupprozess abzuschließen.  
 
 Weitere Informationen zum Herstellen einer Verbindung mit einer lokalen Datenquelle finden Sie unter [Installieren eines lokalen Datengateways.](/data-integration/gateway/service-gateway-install)
 
-## <a name="step-4-manage-search-permissions"></a>Schritt 4: Verwalten von Suchberechtigungen
+## <a name="step-4-select-properties"></a>Schritt 4: Auswählen von Eigenschaften
 
-Zugriffssteuerungslisten (Access Control Lists, ACLs) bestimmen, welche Benutzer in Ihrer Organisation auf die einzelnen Datenelemente zugreifen können.  
+Sie können die Eigenschaften auswählen, die von Microsoft Search indiziert werden. 
+
+Die ServiceNow-Abfrage kann verwendet werden, um Ihre Daten zu filtern, bevor sie von Microsoft Search indiziert werden. Dadurch erhalten Sie mehr Kontrolle über die Daten, die durchsucht werden können. Weitere Informationen zu ServiceNow-Abfragen finden Sie unter [Informationen zu ServiceNow-Abfragen.](https://go.microsoft.com/fwlink/?linkid=2151447) 
+
+## <a name="step-5-manage-search-permissions"></a>Schritt 5: Verwalten von Suchberechtigungen
+
+Zugriffssteuerungslisten (Access Control Lists, ACLs) bestimmen, welche Benutzer in Ihrer Organisation auf jedes Element zugreifen können.  
 
 Einige Connectors wie [Microsoft SQL](MSSQL-connector.md) und Azure Data Lake [Storage Gen2](azure-data-lake-connector.md) unterstützen [nativ Azure Active Directory ACLs (Azure AD).](/azure/active-directory/)
 
 Andere Connectors wie [ServiceNow](servicenow-connector.md), [Azure DevOps](azure-devops-connector.md)und [Salesforce](salesforce-connector.md) unterstützen die Synchronisierung von Nicht-Azure AD-Benutzern und -Gruppen.  
 
-## <a name="step-5-assign-property-labels"></a>Schritt 5: Zuweisen von Eigenschaftenbeschriftungen
+Wenn Sie "Jeder" auswählen, können alle Personen in Ihrer Organisation Suchergebnisse aus dieser Datenquelle anzeigen.
+
+## <a name="step-6-assign-property-labels"></a>Schritt 6: Zuweisen von Eigenschaftenbeschriftungen
 
 Sie können Ihren Quelleigenschaften auf der Seite "Eigenschaftenbezeichnungen zuweisen" semantische Bezeichnungen zuweisen. Bezeichnungen sind bekannte Tags, die von Microsoft bereitgestellt werden und eine semantische Bedeutung bieten. Sie ermöglichen Es Microsoft, Ihre Connectordaten in Microsoft 365 Funktionen wie erweiterte Suche, Personenkarten, intelligente Ermittlung und vieles mehr zu integrieren.  
 
 In der folgenden Tabelle sind die derzeit unterstützten Bezeichnungen und deren Beschreibungen aufgeführt.  
 
-Bezeichnung | Beschreibung
+Beschriftung | Beschreibung
 --- | ---  
 **title** | Der Titel für das Element, das in der Suche und anderen Oberflächen angezeigt werden soll
 **url** | Die Ziel-URL des Elements im Quellsystem
-**createdBy** | Name der Person, die das Element erstellt hat
-**lastModifiedBy** | Name der Person, die das Element zuletzt bearbeitet hat
-**Autoren** | Name der Personen, die am Element teilgenommen/zusammengearbeitet haben
-**createdDateTime** | Wann wurde das Element erstellt?
-**lastModifiedDateTime** | Wann wurde das Element zuletzt bearbeitet?
-**fileName** | Name des Dateielements
-**fileExtension** | Typ des Dateielements, z. B. .pdf oder WORD
+**Erstellt von** | Name der Person, die das Element erstellt hat
+**Zuletzt geändert von** | Name der Person, die das Element zuletzt bearbeitet hat
+**Authors** | Name der Personen, die am Element teilgenommen/zusammengearbeitet haben
+**Erstellungsdatum** | Wann wurde das Element erstellt?
+**Datum und Uhrzeit der letzten Änderung** | Wann wurde das Element zuletzt bearbeitet?
+**Dateiname** | Name des Dateielements
+**Kategorie** | Typ des Dateielements, z. B. .pdf oder WORD
 
 Die Eigenschaften auf dieser Seite sind basierend auf Ihrer Datenquelle vorab ausgewählt. Sie können diese Auswahl jedoch ändern, wenn eine andere Eigenschaft vorhanden ist, die besser für eine bestimmte Bezeichnung geeignet ist.  
 
@@ -115,7 +125,7 @@ Der **Bezeichnungstitel** ist die wichtigste Bezeichnung. Es wird **dringend emp
 
 Die falsche Zuordnung von Bezeichnungen führt zu einer beeinträchtigten Sucherfahrung. Es ist in Ordnung, dass einigen Bezeichnungen keine Eigenschaft zugewiesen ist.  
 
-## <a name="step-6-manage-schema"></a>Schritt 6: Verwalten des Schemas
+## <a name="step-7-manage-schema"></a>Schritt 7: Verwalten des Schemas
 
 ### <a name="content-property"></a>Content-Eigenschaft
 
@@ -131,16 +141,16 @@ Sie können Ihren Eigenschaften unter der Spalte "Alias" auf der Seite "Schema v
 
 Sie können die Suchschemaattribute festlegen, um die Suchfunktionalität jeder Quelleigenschaft zu steuern. Ein Suchschema hilft zu bestimmen, welche Ergebnisse auf der Suchergebnisseite angezeigt werden und welche Informationen Endbenutzer anzeigen und darauf zugreifen können.
 
-Suchschemaattribute umfassen Optionen zum **Abfragen,** **Suchen,** **Abrufen** und **Verfeinern.** In der folgenden Tabelle sind die attribute aufgeführt, die Von Microsoft Graph Connectors unterstützt werden, und ihre Funktionen werden erläutert.
+Zu den Suchschemaattributen gehören Optionen zum **Abfragen,** **Suchen,** **Abrufen** und **Verfeinern.** In der folgenden Tabelle sind die Attribute aufgeführt, die Von Microsoft Graph Connectors unterstützt werden, und ihre Funktionen werden erläutert.
 
 Suchschemaattribut | Funktion | Beispiel
 --- | --- | ---
-Suche | Macht den Textinhalt einer Eigenschaft durchsuchbar. Eigenschafteninhalte sind im Volltextindex enthalten. | Wenn es sich bei der Eigenschaft um **einen Titel** handelt, gibt eine Abfrage nach **Enterprise** Antworten zurück, die das Wort **Enterprise** in einem beliebigen Text oder Titel enthalten.
-Abfrage | Sucht nach einer Abfrage nach einer Übereinstimmung für eine bestimmte Eigenschaft. Der Eigenschaftenname kann dann in der Abfrage entweder programmgesteuert oder ausführlich angegeben werden. |  Wenn die **Title-Eigenschaft** abgefragt werden kann, wird die Abfrage **Title: Enterprise** unterstützt.
-Abrufen | Nur abgerufene Eigenschaften können im Ergebnistyp verwendet und im Suchergebnis angezeigt werden. |
-Verfeinern | Die Verfeinerungsoption kann wie auf der Ergebnisseite Microsoft Search verwendet werden. | Benutzer in Ihrer Organisation können auf der Suchergebnisseite nach **URL** [filtern,](custom-filters.md) ob die Verfeinerungseigenschaft während der Verbindungseinrichtung markiert ist.
+SUCHE | Macht den Textinhalt einer Eigenschaft durchsuchbar. Eigenschafteninhalte sind im Volltextindex enthalten. | Wenn es sich bei der Eigenschaft um **einen Titel** handelt, gibt eine Abfrage nach **Enterprise** Antworten zurück, die das Wort **Enterprise** in einem beliebigen Text oder Titel enthalten.
+ABFRAGE | Sucht nach einer Abfrage nach einer Übereinstimmung für eine bestimmte Eigenschaft. Der Eigenschaftenname kann dann in der Abfrage entweder programmgesteuert oder ausführlich angegeben werden. |  Wenn die **Title-Eigenschaft** abgefragt werden kann, wird die Abfrage **Title: Enterprise** unterstützt.
+ABRUFEN | Nur abgerufene Eigenschaften können im Ergebnistyp verwendet und im Suchergebnis angezeigt werden. |
+VERFEINERN | Die Verfeinerungsoption kann wie auf der Microsoft Search Ergebnisseite verwendet werden. | Benutzer in Ihrer Organisation können auf der Suchergebnisseite nach **URL** [filtern,](custom-filters.md) ob die Verfeinerungseigenschaft während der Verbindungseinrichtung markiert ist.
 
-Für alle Connectors mit Ausnahme des Dateifreigabeconnectors müssen benutzerdefinierte Typen manuell festgelegt werden. Zum Aktivieren der Suchfunktionen für jedes Feld benötigen Sie ein Suchschema, das einer Liste von Eigenschaften zugeordnet ist. Der Verbindungs-Assistent wählt automatisch ein Suchschema basierend auf dem von Ihnen ausgewählten Satz von Quelleigenschaften aus. Sie können dieses Schema ändern, indem Sie die Kontrollkästchen für jede Eigenschaft und jedes Attribut auf der Suchschemaseite aktivieren.
+Für alle Connectors mit Ausnahme des Dateifreigabeconnectors müssen benutzerdefinierte Typen manuell festgelegt werden. Um die Suchfunktionen für jedes Feld zu aktivieren, benötigen Sie ein Suchschema, das einer Liste von Eigenschaften zugeordnet ist. Der Verbindungs-Assistent wählt automatisch ein Suchschema basierend auf dem von Ihnen ausgewählten Satz von Quelleigenschaften aus. Sie können dieses Schema ändern, indem Sie die Kontrollkästchen für jede Eigenschaft und jedes Attribut auf der Suchschemaseite aktivieren.
 
 > [!div class="mx-imgBorder"]
 > ![Das Schema für einen Connector kann durch Hinzufügen oder Entfernen von Abfrage-, Such- und Retrieve-Funktionen angepasst werden.](media/manageschema.png)
@@ -158,7 +168,7 @@ Für alle Connectors mit Ausnahme des Dateifreigabeconnectors müssen benutzerde
 > [!NOTE]
 > Nachdem Sie eine Verbindung erstellt haben, können Sie das Schema **nicht** mehr ändern. Dazu müssen Sie Ihre Verbindung löschen und eine neue erstellen.
 
-## <a name="step-7-refresh-settings"></a>Schritt 7: Aktualisieren von Einstellungen
+## <a name="step-8-refresh-settings"></a>Schritt 8: Aktualisieren von Einstellungen
 
 Das Aktualisierungsintervall bestimmt, wie oft Ihre Daten zwischen der Datenquelle und Microsoft Search synchronisiert werden. Jeder Datenquellentyp verfügt über einen anderen Satz optimaler Aktualisierungszeitpläne, basierend darauf, wie oft Daten geändert werden, und dem Typ der Änderungen.
 
@@ -181,7 +191,7 @@ Inkrementelle Aktualisierungen sind wesentlich schneller als vollständige Aktua
 
 <!---Change screenshot for one that shows both options in new UI (try ServiceNow)--->
 
-## <a name="step-8-review-connection"></a>Schritt 8: Überprüfen der Verbindung
+## <a name="step-9-review-connection"></a>Schritt 9: Überprüfen der Verbindung
 
 Sie können ihre gesamte Konfiguration überprüfen und die Einstellungen nach Bedarf bearbeiten, bevor Sie die Verbindung abschließen. **Lesen Sie unbedingt die connectorspezifischen Informationen für Ihre Datenquelle, wenn Sie dies noch nicht getan haben.** Wählen Sie **"Aktualisierung beenden"** aus, wenn Sie bereit sind, die Verbindung abzuschließen.
 

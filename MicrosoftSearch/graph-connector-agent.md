@@ -12,14 +12,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-ROBOTS: NoIndex
 description: On-prem-Agent
-ms.openlocfilehash: 1fcd1b6848d950c9f7cefa87d086f6607ac5df4f
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+ms.openlocfilehash: b6303b71910dc300ba5297fde155e538452ef99d
+ms.sourcegitcommit: 8ac77db22002d47bb461222b81b7cfc1c15a72fb
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235938"
+ms.locfileid: "58340096"
 ---
 # <a name="microsoft-graph-connector-agent"></a>Microsoft Graph Connector-Agent
 
@@ -45,6 +44,8 @@ Wenn die Proxyserver oder Firewalls Ihrer Organisation nach der Installation des
 4. https://<span>gcs.office.</span> com/
 5. https://<span>graph.microsoft.</span> com/
 
+>[!NOTE]
+>Proxyauthentifizierung wird nicht unterstützt. Wenn Ihre Umgebung über einen Proxy verfügt, der eine Authentifizierung erfordert, empfehlen wir, dem Connector-Agent die Umgehung des Proxys zu erlauben.
 
 ## <a name="create-and-configure-an-app-for-the-agent"></a>Erstellen und Konfigurieren einer App für den Agent  
 
@@ -147,6 +148,7 @@ Wenn Sie das Beispielskript zum Generieren eines Zertifikats verwendet haben, be
 ## <a name="troubleshooting"></a>Problembehandlung
 
 ### <a name="installation-failure"></a>Installationsfehler
+
 Wenn die Installation fehlschlägt, überprüfen Sie die Installationsprotokolle, indem Sie folgendes ausführen: msiexec /i " <path to msi>\GcaInstaller.msi" /L*V " <destination path> \install.log". Wenn die Fehler nicht aufgelöst werden können, erreichen Sie die Unterstützung für MicrosoftGraphConnectorsFeedback@service.microsoft.com mit den Protokollen.
 
 ### <a name="registration-failure"></a>Registrierungsfehler
@@ -157,6 +159,6 @@ Wenn der Dienst nicht mit dem Fehler "Der Dienst wurde aufgrund eines Anmeldefeh
 
 ### <a name="connection-failure"></a>Verbindungsfehler
 
-Wenn die Aktion "Verbindung testen" beim Erstellen einer Verbindung mit dem Fehler "Benutzername/Kennwort und Der Datenquellenpfad überprüfen" fehlschlägt, auch wenn der angegebene Benutzername und das Kennwort korrekt sind, stellen Sie sicher, dass das Benutzerkonto über interaktive Anmeldeberechtigungen für den Computer verfügt, auf dem Graph Connector-Agent installiert ist. Informationen zur Überprüfung der Anmelderechte finden Sie in der Dokumentation zur Verwaltung von [Anmelderichtlinien.](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) Stellen Sie außerdem sicher, dass sich die Datenquelle und der Agentcomputer im selben Netzwerk befinden.
+Wenn die Aktion "Verbindung testen" beim Erstellen einer Verbindung mit dem Fehler "Benutzername/Kennwort und Datenquellenpfad überprüfen" fehlschlägt, auch wenn der angegebene Benutzername und das Kennwort korrekt sind, stellen Sie sicher, dass das Benutzerkonto über interaktive Anmelderechte für den Computer verfügt, auf dem Graph Connector-Agent installiert ist. Informationen zur Überprüfung der Anmelderechte finden Sie in der Dokumentation zur Verwaltung von [Anmelderichtlinien.](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) Stellen Sie außerdem sicher, dass sich die Datenquelle und der Agentcomputer im selben Netzwerk befinden.
 
 Wenn eine Verbindung mit dem Fehler "1011: Der Graph Connector-Agent ist nicht erreichbar oder offline" fehlschlägt, melden Sie sich bei dem Computer an, auf dem der Agent installiert ist, und starten Sie die Agent-Anwendung, wenn er noch nicht ausgeführt wird. Wenn die Verbindung weiterhin fehlschlägt, überprüfen Sie, ob das Zertifikat oder der geheime Clientschlüssel, der dem Agent während der Registrierung bereitgestellt wurde, nicht abgelaufen ist und über erforderliche Berechtigungen verfügt.

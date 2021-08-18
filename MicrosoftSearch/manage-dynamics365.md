@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: mssearch
 localization_priority: Normal
 description: Verwalten der Darstellung von Dynamics 365-Inhalten in Suchergebnissen
-ms.openlocfilehash: 65d6d27028f46751270cb3a50a154063de4fbab72d917f94aa8925693ac9ea2b
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: d2874febe39abf68653fa82d6a50121ebd1a357b
+ms.sourcegitcommit: fbe565b1a8994425b4f7ff0114a69044659e3892
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533651"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58380033"
 ---
 # <a name="dynamics-365-federation-search-preview"></a>Dynamics 365-Verbundsuche (Vorschau)
 
@@ -25,7 +25,7 @@ Um Microsoft Search nützlicher zu machen, führen wir Microsoft Search-Partnerv
 * Daten, die keine Systemgrenzen überschreiten können
 * Vertrauliche Daten, die lokal gespeichert werden und die Von Ihrer Organisation nicht in der Cloud indiziert werden sollen
 
-Daten, auf die über eine Sammelsuche zugegriffen wird, werden nicht in Microsoft Search indiziert. Darüber hinaus ist es mithilfe integrierter Connectors von Microsoft einfach, Sammelsuchverbindungen einzurichten. Unser Dynamics 365-Connector befindet sich derzeit in der Vorschau. Wenn Sie an der Vorschau teilnehmen möchten, teilen Sie uns dies unter [aka.ms/D365FederationSearchPreview](https://aka.ms/D365FederationSearchPreview)mit.
+Daten, auf die über eine Sammelsuche zugegriffen wird, werden nicht in Microsoft Search indiziert. Darüber hinaus ist es mithilfe integrierter Connectors von Microsoft einfach, Sammelsuchverbindungen einzurichten. Unser Dynamics 365-Connector befindet sich derzeit in der Vorschau. Wenn Sie an der Vorschau teilnehmen möchten, teilen Sie uns dies unter [aka.ms/D365FederationSearchPreview](https://aka.ms/D365FederationSearchPreview)mit. Informationen zum Zeitrahmen für die Veröffentlichung finden Sie in der [Microsoft Search Roadmap.](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Search)
 
 ## <a name="dynamics-365-federation-connector"></a>Dynamics 365-Verbundconnector
 
@@ -35,7 +35,7 @@ Microsoft Dynamics 365 ist eine Reihe intelligenter Geschäftsanwendungen, die f
 * **Einfach zu verwenden:** Benutzer können wichtige Informationen, die in Dynamics 365 gespeichert sind, ganz einfach und schnell finden, einschließlich Konten, Kontakten, offenen Möglichkeiten und mehr.
 * **Umfangreichere Inhalte:** Um dynamics 365-Suchergebnisse nützlicher zu machen, enthalten sie wichtige Informationen wie Leads, Kontakte und Kontodetails.
 * **Integrierter Datenschutz:** Dynamics 365-Ergebnisse werden nur für Benutzer angezeigt, die Zugriff auf die verbundene Instanz haben.
-* **Einheitliche Suchumgebung:** Um eine einheitliche Benutzererfahrung zu gewährleisten, sind die Dynamics 365-Ergebnisse über alle Sucheinstiegspunkte hinweg konsistent. Überall dort, wo Sie suchen, erhalten Sie dieselben Ergebnisse mit dem gleichen Aussehen und Verhalten.
+* **Einheitliche Suchumgebung:** Um eine einheitliche Benutzererfahrung zu gewährleisten, sind die Dynamics 365-Ergebnisse über alle Sucheinstiegspunkte hinweg konsistent. Überall dort, wo Sie suchen, erhalten Sie dieselben Ergebnisse mit demselben Aussehen und Verhalten.
 
 ## <a name="what-users-experience"></a>Benutzerfreundlichkeit
 
@@ -43,11 +43,11 @@ Dynamics 365-Antworten werden in suchergebnissen in allen Microsoft Search Canva
 
 :::image type="content" alt-text="Screenshot der Dynamics 365-Antworten auf SharePoint, Bing und Office" source="media/dynamics365/dynamics365-answer.png" lightbox="media/dynamics365/dynamics365-answer.png":::
 
-Aus der Antwort ist es einfach, weitere Dynamics 365-Suchergebnisse mithilfe des Links **"Weitere Dynamics 365-Ergebnisse"** anzuzeigen. Sie führt Benutzer zu einer dedizierten Dynamics 365-Ergebnisseite mit weiteren Ergebnissen, die für ihre Abfrage relevant sind.
+Aus der Antwort ist es einfach, weitere Dynamics 365-Suchergebnisse mithilfe des Links **"Weitere Dynamics 365-Ergebnisse"** anzuzeigen. Sie führt Benutzer zu einer dedizierten Dynamics 365-Ergebnisseite mit weiteren ergebnissen, die für ihre Abfrage relevant sind.
 
 :::image type="content" alt-text="Screenshot der vertikalen Dynamics 365-Branche und Ergebnisse zu SharePoint, Bing und Office" source="media/dynamics365/dynamics365-vertical.png" lightbox="media/dynamics365/dynamics365-vertical.png":::
 
-Wenn Sie auf ein beliebiges Ergebnis klicken oder tippen, wird Dynamics 365 geöffnet und die detaillierten Informationen angezeigt.
+Durch Klicken oder Tippen auf ein beliebiges Ergebnis wird Dynamics 365 geöffnet und die detaillierten Informationen angezeigt.
 
 :::image type="content" alt-text="Screenshot der Detailseite in Dynamics 365" source="media/dynamics365/dynamics365-detail-page.png" lightbox="media/dynamics365/dynamics365-detail-page.png":::
 
@@ -59,7 +59,7 @@ Unabhängig davon, wo Ihre Benutzer mit der Suche beginnen, ist ihre Oberfläche
 
 Abfragen natürlicher Sprache und Produktnamen werden unterstützt, wenn sie Microsoft Search verwenden, um Dynamics 365-Ergebnisse zu finden. Außerdem wird bei Dynamics 365-Abfragen die Groß-/Kleinschreibung nicht beachtet. Verwenden Sie natürliche Sprachmuster, um Kontakt-, Konto- und Geschäftsmöglichkeiten nach Kundennamen oder Standort und anderen häufig verwendeten Abfragen zu suchen. Hier ein paar Beispiele:
 
-* Wer ist der Kontakt für Contoso
+* Wer ist der Kontakt für Contoso.
 * Offene Möglichkeiten für Contoso
 * Was sind offene Möglichkeiten in Seattle?
 * Was sind die Konten in Seattle?
@@ -99,4 +99,4 @@ Mit dieser einfachen Konfiguration können Sie die Dynamics 365-Verbundsuche fü
 
 :::image type="content" alt-text="Screenshot des Dynamics 365-Einrichtungsbereichs im Microsoft 365 Admin Center" source="media/dynamics365/dynamic365-connection-setup.png" lightbox="media/dynamics365/dynamic365-connection-setup.png":::
 
-Nach Abschluss der Einrichtung werden Dynamics 365-Antworten und -Vertikalen nur für Benutzer mit einer gültigen Dynamics 365-Lizenz und Zugriff auf die verbundene Dynamics 365-Umgebung angezeigt. Sie können jederzeit zu diesen Einstellungen zurückkehren und die Verbindungsendpunktumgebung ändern oder die Verbindung deaktivieren.
+Wenn die Einrichtung abgeschlossen ist, werden Dynamics 365-Antworten und -Vertikalen nur für Benutzer mit einer gültigen Dynamics 365-Lizenz und Zugriff auf die verbundene Dynamics 365-Umgebung angezeigt. Sie können jederzeit zu diesen Einstellungen zurückkehren und die Verbindungsendpunktumgebung ändern oder die Verbindung deaktivieren.

@@ -7,41 +7,41 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Richten Sie den Azure SQL- und Microsoft SQL Graph-Connector für Microsoft Search ein.
-ms.openlocfilehash: f80e3e1b86a120981c4dafd95715c00cd766f5e9
-ms.sourcegitcommit: 17cc660ec51bea11ab65f62655584c65c84a1d79
+ms.openlocfilehash: ae953d55de4a4f5e8afc32cc6b55f6e0b32e2811
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58406945"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701435"
 ---
 <!---Previous ms.author: vivg --->
 
-# <a name="azure-sql-and-microsoft-sql-server-graph-connectors"></a>Azure SQL und Microsoft SQL Server Graph Connectors
+# <a name="azure-sql-and-microsoft-sql-server-graph-connectors"></a>Azure SQL- und Microsoft SQL Server Graph-Connectors
 
-Der Microsoft SQL Server- oder Azure SQL Graph-Connector ermöglicht Es Ihrer Organisation, Daten aus einer lokalen SQL Server-Datenbank oder einer in Ihrer Azure SQL-Instanz in der Cloud gehosteten Datenbank zu ermitteln und zu indizieren.
+Der Microsoft SQL Server- oder Azure SQL Graph-Connector ermöglicht Ihrer Organisation das Ermitteln und Indizieren von Daten aus einer lokalen SQL Server-Datenbank oder einer Datenbank, die in Ihrer Azure SQL Instanz in der Cloud gehostet wird.
 Der Graph Connector indiziert den angegebenen Inhalt in Microsoft Search. Um den Index mit Quelldaten auf dem neuesten Stand zu halten, unterstützt er regelmäßige vollständige und inkrementelle Durchforstungen. Mit diesen SQL Connectors können Sie auch den Zugriff auf Suchergebnisse für bestimmte Benutzer einschränken.
 
 > [!NOTE]
-> Lesen Sie den Artikel [**"Setup your Graph connector",**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten Graph Connectors zu verstehen.
+> Lesen Sie den Artikel [**"Setup Your Graph connector",**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten von Connectors Graph zu verstehen.
 
-Dieser Artikel richtet sich an alle Personen, die azure SQL und Microsoft SQL Server Graph Connector konfigurieren, ausführen und überwachen. Es ergänzt den allgemeinen Setupprozess und zeigt Anweisungen, die nur für den Azure SQL und den Microsoft SQL Server Graph Connector gelten. Dieser Artikel enthält auch Informationen zu [Einschränkungen](#limitations) für den Microsoft SQL-Server und Azure SQL Connectors.
+Dieser Artikel richtet sich an alle Personen, die einen Azure SQL und einen Microsoft SQL Server Graph Connector konfigurieren, ausführen und überwachen. Es ergänzt den allgemeinen Setupprozess und zeigt Anweisungen, die nur für den Azure SQL und microsoft SQL Server Graph Connector gelten. Dieser Artikel enthält auch Informationen zu [Einschränkungen](#limitations) für den Microsoft SQL-Server und Azure SQL Connectors.
 
 ## <a name="before-you-get-started"></a>Bevor Sie beginnen
 
-### <a name="install-the-graph-connector-agent-required-for-on-premises-microsoft-sql-server-connector-only"></a>Installieren Sie den Graph Connector-Agent (nur für lokalen Microsoft SQL Server Connector erforderlich)
+### <a name="install-the-graph-connector-agent-required-for-on-premises-microsoft-sql-server-connector-only"></a>Installieren Sie den Graph Connector-Agent (nur für lokale Microsoft SQL Server Connector erforderlich)
 
 Um auf Ihre lokalen Drittanbieterdaten zugreifen zu können, müssen Sie den Graph Connector-Agent installieren und konfigurieren. Weitere Informationen finden Sie unter [Installieren des Graph Connector-Agents.](graph-connector-agent.md)
 
 >[!NOTE]
->Wenn Sie beim Konfigurieren des Microsoft SQL Server Graph Connectors Windows Authentifizierung verwenden, muss der Benutzer, bei dem Sie sich anmelden möchten, über interaktive Anmelderechte auf dem Computer verfügen, auf dem Graph Connector-Agent installiert ist. Informationen zur Überprüfung der Anmelderechte finden Sie in der Dokumentation zur Verwaltung von [Anmelderichtlinien.](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management)
+>Wenn Sie beim Konfigurieren des Microsoft SQL Server Graph Connectors Windows Authentifizierung verwenden, muss der Benutzer, mit dem Sie sich anmelden möchten, über interaktive Anmelderechte für den Computer verfügen, auf dem Graph Connector-Agent installiert ist. Informationen zur Überprüfung der Anmelderechte finden Sie in der Dokumentation zur Verwaltung von [Anmelderichtlinien.](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management)
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph Connectors im Microsoft 365 Admin Center
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph Connectors in der Microsoft 365 Admin Center
 
 Folgen Sie den allgemeinen [Setupanweisungen.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
@@ -79,7 +79,7 @@ Um den Microsoft SQL Server Connector mit einer Datenquelle zu verbinden, müsse
 > - Ihre Datenbank muss SQL Server Version 2008 oder höher ausgeführt werden, damit der Microsoft SQL Server Connector eine Verbindung herstellen kann.
 > - Der Azure SQL Graph-Connector ermöglicht nur die Aufnahme von einer Azure SQL Instanz im selben [Mandanten](/azure/active-directory/develop/quickstart-create-new-tenant) wie Microsoft 365. Der mandantenübergreifende Datenfluss wird nicht unterstützt.
 
-Für den Azure SQL-Connector müssen Sie nur den Servernamen oder die IP-Adresse angeben, mit der bzw. der Sie eine Verbindung herstellen möchten. Azure SQL Connector unterstützt nur Azure Active Directory Open ID Connect (OIDC)-Authentifizierung, um eine Verbindung mit der Datenbank herzustellen.
+Für den Azure SQL-Connector müssen Sie nur den Servernamen oder die IP-Adresse angeben, mit der Bzw. der Sie eine Verbindung herstellen möchten. Azure SQL Connector unterstützt nur Azure Active Directory Open ID Connect (OIDC)-Authentifizierung, um eine Verbindung mit der Datenbank herzustellen.
 
 Für zusätzliche Sicherheit können Sie IP-Firewallregeln für Ihre Azure-SQL Server oder -Datenbank konfigurieren. Weitere Informationen zum Einrichten von IP-Firewallregeln finden Sie in der Dokumentation zu [IP-Firewallregeln.](/azure/azure-sql/database/firewall-configure) Fügen Sie die folgenden Client-IP-Bereiche in den Firewalleinstellungen hinzu.
 
@@ -89,7 +89,7 @@ Für zusätzliche Sicherheit können Sie IP-Firewallregeln für Ihre Azure-SQL S
 | EUR | 20.54.41.208/30, 51.105.159.88/30 |
 | APC | 52.139.188.212/30, 20.43.146.44/30 |
 
-Um den Datenbankinhalt zu durchsuchen, müssen Sie beim Konfigurieren des Connectors SQL Abfragen angeben. Diese SQL Abfragen müssen alle Datenbankspalten benennen, die Indiziert werden sollen (d. h. Quelleigenschaften), einschließlich aller SQL Verknüpfungen, die ausgeführt werden müssen, um alle Spalten abzurufen. Um den Zugriff auf Suchergebnisse einzuschränken, müssen Sie zugriffssteuerungslisten (Access Control Lists, ACLs) innerhalb SQL Abfragen angeben, wenn Sie den Connector konfigurieren.
+Zum Durchsuchen der Datenbankinhalte müssen Sie beim Konfigurieren des Connectors SQL Abfragen angeben. Diese SQL Abfragen müssen alle Datenbankspalten benennen, die Indiziert werden sollen (d. h. Quelleigenschaften), einschließlich aller SQL Verknüpfungen, die ausgeführt werden müssen, um alle Spalten abzurufen. Um den Zugriff auf Suchergebnisse einzuschränken, müssen Sie zugriffssteuerungslisten (Access Control Lists, ACLs) innerhalb SQL Abfragen angeben, wenn Sie den Connector konfigurieren.
 
 ## <a name="step-3a-full-crawl-required"></a>Schritt 3a: Vollständige Durchforstung (erforderlich)
 
@@ -98,7 +98,7 @@ In diesem Schritt konfigurieren Sie die SQL Abfrage, die eine vollständige Durc
 > [!Tip]
 > Um alle benötigten Spalten abzurufen, können Sie mehrere Tabellen verknüpfen.
 
-![Skript mit den Eigenschaften OrderTable und AclTable mit Beispieleigenschaften](media/MSSQL-fullcrawl.png)
+![Skript, in dem orderTable und AclTable mit Beispieleigenschaften angezeigt werden.](media/MSSQL-fullcrawl.png)
 
 ### <a name="select-data-columns-required-and-acl-columns-optional"></a>Auswählen von Datenspalten (erforderlich) und ACL-Spalten (optional)
 
@@ -106,22 +106,22 @@ Das Beispiel zeigt eine Auswahl von fünf Datenspalten, die die Daten für die S
 
 Wählen Sie Datenspalten aus, wie in dieser Beispielabfrage gezeigt: `SELECT OrderId, OrderTitle, OrderDesc, AllowedUsers, AllowedGroups, DeniedUsers, DeniedGroups, CreatedDateTime, IsDeleted`
 
-Beachten Sie, dass die SQL Connectors keine Spaltennamen mit nicht alphanumerischen Zeichen in der SELECT-Klausel zulassen. Entfernen Sie alle nicht alphanumerischen Zeichen aus Spaltennamen mithilfe eines Alias. Beispiel – SELECT *column_name* AS *columnName*
+Beachten Sie, dass die SQL Connectors keine Spaltennamen mit nicht alphanumerischen Zeichen in der SELECT-Klausel zulassen. Entfernen Sie alle nicht alphanumerischen Zeichen aus Spaltennamen mithilfe eines Alias. Beispiel : SELECT *column_name* AS *columnName*
 
 Um den Zugriff auf die Suchergebnisse zu verwalten, können Sie eine oder mehrere ACL-Spalten in der Abfrage angeben. Mit dem SQL Connector können Sie den Zugriff pro Datensatzebene steuern. Sie können die gleiche Zugriffssteuerung für alle Datensätze in einer Tabelle verwenden. Wenn die ACL-Informationen in einer separaten Tabelle gespeichert sind, müssen Sie möglicherweise eine Verknüpfung mit diesen Tabellen in Ihrer Abfrage durchführen.
 
 Die Verwendung der einzelnen ACL-Spalten in der obigen Abfrage wird unten beschrieben. In der folgenden Liste werden die vier **Zugriffssteuerungsmechanismen** erläutert.
 
 - **AllowedUsers:** Diese Spalte gibt die Liste der Benutzer-IDs an, die auf die Suchergebnisse zugreifen können. Im folgenden Beispiel würde die Liste der Benutzer: john@contoso.com, keith@contoso.com und lisa@contoso.com nur Zugriff auf einen Datensatz mit OrderId = 12 haben.
-- **AllowedGroups:** Diese Spalte gibt die Gruppe von Benutzern an, die auf die Suchergebnisse zugreifen können. Im folgenden Beispiel würde gruppen sales-team@contoso.com nur Zugriff auf den Datensatz mit OrderId = 12 haben.
+- **AllowedGroups:** Diese Spalte gibt die Gruppe von Benutzern an, die auf die Suchergebnisse zugreifen können. Im folgenden Beispiel hätten Gruppen-sales-team@contoso.com nur Zugriff auf den Datensatz mit OrderId = 12.
 - **DeniedUsers**: Diese Spalte gibt die Liste der Benutzer an, die **keinen** Zugriff auf die Suchergebnisse haben. Im folgenden Beispiel haben Benutzer john@contoso.com und keith@contoso.com keinen Zugriff auf datensätze mit OrderId = 13, während alle anderen Benutzer Zugriff auf diesen Datensatz haben.
 - **DeniedGroups:** Diese Spalte gibt die Gruppe von Benutzern an, die **keinen** Zugriff auf die Suchergebnisse haben. Im folgenden Beispiel haben Gruppen engg-team@contoso.com und pm-team@contoso.com keinen Zugriff auf datensätze mit OrderId = 15, während alle anderen Zugriff auf diesen Datensatz haben.  
 
-![Beispieldaten, die die OrderTable und AclTable mit Beispieleigenschaften anzeigen](media/MSSQL-ACL1.png)
+![Beispieldaten, die OrderTable und AclTable mit Beispieleigenschaften anzeigen.](media/MSSQL-ACL1.png)
 
 ### <a name="supported-data-types"></a>Unterstützte Datentypen
 
-In der folgenden Tabelle sind die SQL Datentypen zusammengefasst, die in den MS-SQL und Azure SQL Connectors unterstützt werden. In der Tabelle wird auch der Indizierungsdatentyp für den unterstützten SQL Datentyp zusammengefasst. Weitere Informationen zu von Microsoft Graph Connectors unterstützten Datentypen für die Indizierung finden Sie in der Dokumentation zu [Eigenschaftsressourcentypen.](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)
+In der folgenden Tabelle sind die SQL Datentypen zusammengefasst, die in den MS-SQL- und Azure SQL-Connectors unterstützt werden. In der Tabelle wird auch der Indizierungsdatentyp für den unterstützten SQL Datentyp zusammengefasst. Weitere Informationen zu von Microsoft Graph Connectors unterstützten Datentypen für die Indizierung finden Sie in der Dokumentation zu [Eigenschaftsressourcentypen.](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)
 
 | Kategorie | Quelldatentyp | Datentyp der Indizierung |
 | ------------ | ------------ | ------------ |
@@ -137,7 +137,7 @@ Für alle anderen Datentypen, die derzeit nicht direkt unterstützt werden, muss
 
 ### <a name="watermark-required"></a>Wasserzeichen (erforderlich)
 
-Um eine Überladung der Datenbank zu verhindern, stapelt und setzt der Konnektor Vollständige Durchforstungsabfragen mit einer Vollständigdurchforstungs-Wasserzeichenspalte fort. Mithilfe des Werts der Wasserzeichenspalte wird jeder nachfolgende Batch abgerufen und die Abfrage vom letzten Prüfpunkt fortgesetzt. Im Wesentlichen steuert dieser Mechanismus die Datenaktualisierung für vollständige Durchforstungen.
+Um eine Überladung der Datenbank zu verhindern, stapelt der Konnektor Vollständige Durchforstungsabfragen mit einer Vollständigdurchforstungs-Wasserzeichenspalte und setzt sie fort. Mithilfe des Werts der Wasserzeichenspalte wird jeder nachfolgende Batch abgerufen und die Abfrage vom letzten Prüfpunkt fortgesetzt. Im Wesentlichen steuert dieser Mechanismus die Datenaktualisierung für vollständige Durchforstungen.
 
 Erstellen Sie Abfrageausschnitte für Wasserzeichen, wie in diesen Beispielen gezeigt:
 
@@ -146,15 +146,15 @@ Erstellen Sie Abfrageausschnitte für Wasserzeichen, wie in diesen Beispielen ge
 
 In der in der folgenden Abbildung gezeigten Konfiguration `CreatedDateTime` befindet sich die ausgewählte Wasserzeichenspalte. Um den ersten Zeilenbatch abzurufen, geben Sie den Datentyp der Wasserzeichenspalte an. In diesem Fall lautet der Datentyp `DateTime` .
 
-![Konfiguration von Wasserzeichenspalten](media/MSSQL-watermark.png)
+![Konfiguration der Wasserzeichenspalte.](media/MSSQL-watermark.png)
 
 Die erste Abfrage ruft die erste **N-Anzahl** von Zeilen mithilfe der folgenden Methode ab: "CreatedDateTime > 1. Januar 1753 00:00:00" (Min. Wert des DateTime-Datentyps). Nachdem der erste Batch abgerufen wurde, wird der höchste im Batch zurückgegebene Wert `CreatedDateTime` als Prüfpunkt gespeichert, wenn die Zeilen in aufsteigender Reihenfolge sortiert sind. Ein Beispiel ist der 1. März 2019 03:00:00. Anschließend wird der nächste Batch von **N-Zeilen** mithilfe von "CreatedDateTime > 1. März 2019 03:00:00" in der Abfrage abgerufen.
 
 ### <a name="skipping-soft-deleted-rows-optional"></a>Überspringen vorläufig gelöschter Zeilen (optional)
 
-Um zeilenweise gelöschte Zeilen in Ihrer Datenbank von der Indizierung auszuschließen, geben Sie den Namen und den Wert der Vorläufigen Löschspalte an, der angibt, dass die Zeile gelöscht wird.
+Um zeilenweise gelöschte Zeilen in Ihrer Datenbank von der Indizierung auszuschließen, geben Sie den Namen und den Wert für das vorläufige Löschen der Spalte an, der angibt, dass die Zeile gelöscht wird.
 
-![Einstellungen für vorläufiges Löschen: "Spalte vorläufig löschen" und "Wert der Spalte für vorläufiges Löschen, die eine gelöschte Zeile angibt"](media/MSSQL-softdelete.png)
+![Einstellungen für vorläufiges Löschen: "Spalte vorläufig löschen" und "Wert der Spalte für vorläufiges Löschen, die eine gelöschte Zeile angibt".](media/MSSQL-softdelete.png)
 
 ### <a name="full-crawl-manage-search-permissions"></a>Vollständige Durchforstung: Verwalten von Suchberechtigungen
 
@@ -168,7 +168,7 @@ Die folgenden ID-Typen werden für die Verwendung als ACLs unterstützt:
 - **Azure Active Directory (AAD)-ID:** In Azure AD verfügt jeder Benutzer oder jede Gruppe über eine Objekt-ID, die etwa wie "e0d3ad3d-0000-1111-2222-3c5f5c52ab9b" aussieht.
 - **Active Directory (AD)-Sicherheits-ID:** Bei einem lokalen AD-Setup verfügen alle Benutzer und Gruppen über einen unveränderlichen, eindeutigen Sicherheitsbezeichner, der etwa wie "S-1-5-21-3878594291-211595936-132693609-65242" aussieht.
 
-![Suchberechtigungseinstellungen zum Konfigurieren von Zugriffssteuerungslisten](media/MSSQL-ACL2.png)
+![Suchberechtigungseinstellungen zum Konfigurieren von Zugriffssteuerungslisten.](media/MSSQL-ACL2.png)
 
 ## <a name="step-3b-incremental-crawl-optional"></a>Schritt 3b: Inkrementelle Durchforstung (optional)
 
@@ -227,6 +227,6 @@ Es folgt ein häufiger Fehler beim Konfigurieren des Connectors und sein möglic
 Für die SQL Connectors gelten die folgenden Einschränkungen in der Vorschauversion:
 
 - Microsoft SQL Server Connector: Die lokale Datenbank muss SQL Server Version 2008 oder höher ausgeführt werden.
-- Das Microsoft 365-Abonnement und das Azure-Abonnement (das Azure SQL-Datenbank hostet) müssen sich innerhalb desselben Azure Active Directory befinden.
+- Das Microsoft 365-Abonnement und das Azure-Abonnement (Hosten der Azure SQL-Datenbank) müssen sich innerhalb desselben Azure Active Directory befinden.
 - ACLs werden nur mithilfe eines Benutzerprinzipalnamens (User Principal Name, UPN), Azure Active Directory (Azure AD) oder Active Directory Security unterstützt.
 - Das Indizieren von umfangreichen Inhalten in Datenbankspalten wird nicht unterstützt. Beispiele für solche Inhalte sind HTML, JSON, XML, Blobs und Dokumentparsings, die als Links in den Datenbankspalten vorhanden sind.

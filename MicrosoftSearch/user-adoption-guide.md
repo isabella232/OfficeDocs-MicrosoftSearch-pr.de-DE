@@ -6,19 +6,19 @@ manager: kellis
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 description: Erfahren Sie mehr über Methoden und Prozesse, die Ihnen helfen, Microsoft Search erfolgreich für Ihre Organisation bereitzustellen.
-ms.openlocfilehash: b2613ba06353c22704479c8de66dcdbaef567019d5a8eef84d47605fc391e8ef
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 1e33e17da92070eb4a887b4d5130a4c47b7cfe37
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54534203"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701885"
 ---
 # <a name="user-adoption-guide"></a>Einführungsleitfaden für Benutzer
 
@@ -36,11 +36,11 @@ In der Tabelle sind die Teamhierarchie und die Beiträge der einzelnen Personen 
   
 |**Rolle**|**Verantwortung**|**Department**|
 |:-----|:-----|:-----|
-|Leitenden Sponsors  <br/> |Verstehen Sie die allgemeine Vision und den Wert von Microsoft Search für Ihre Organisation.  <br/> Unterstützung von Führungskräften für IT-/Unternehmensteams.  <br/> Ressourcen zuordnen.  <br/> Kommunizieren Sie direkt mit den Mitarbeitern.  <br/> |Führungskräfte  <br/> |
+|Geschäftsführender Sponsor („Executive sponsor“)  <br/> |Verstehen Sie die allgemeine Vision und den Wert von Microsoft Search für Ihre Organisation.  <br/> Unterstützung von Führungskräften für IT-/Unternehmensteams.  <br/> Ressourcen zuordnen.  <br/> Kommunizieren Sie direkt mit den Mitarbeitern.  <br/> |Führungskräfte  <br/> |
 |Unternehmensinhaber  <br/> |Identifizieren von Produkt- und Benutzerszenarien.  <br/> Bestimmen der Erfolgsmetriken für Abteilungen und die Organisation.  <br/> |Beliebig  <br/> |
-|Change Management-Team  <br/> |Stellen Sie sicher, dass der Produktwert leicht verständlich ist.  <br/> Erstellen Sie einen Plan für den Rollout.  <br/> |IT-Abteilung  <br/> |
+|Change Management-Team  <br/> |Stellen Sie sicher, dass der Produktwert leicht verständlich ist.  <br/> Erstellen Sie einen Plan für den Rollout.  <br/> |IT  <br/> |
 |Experten  <br/> |Werben Sie das Produkt an Kollegen und Teams.  <br/> |Beliebige (Mitarbeiter)  <br/> |
-|Suchadministrator  <br/> |Identifizieren der Hauptteammitglieder der Benutzerakzeptanz.  <br/> Verwalten sie Microsoft Search, einschließlich Aussehen und Verhalten der Erfahrung und der laufenden Verwaltung.  <br/> Führen Sie Diskussionen aus, um den Wert von Microsoft Search anzuzeigen.  <br/> |IT-Abteilung  <br/> |
+|Suchadministrator  <br/> |Identifizieren der Hauptteammitglieder der Benutzerakzeptanz.  <br/> Verwalten sie Microsoft Search, einschließlich Aussehen und Verhalten der Erfahrung und der laufenden Verwaltung.  <br/> Führen Sie Diskussionen durch, um den Wert der Microsoft Search anzuzeigen.  <br/> |IT  <br/> |
 |Editors  <br/> |Erstellen Von Inhalten im Microsoft 365 [Admin Center.](https://admin.microsoft.com)  <br/> |IT/Any  <br/> |
    
 ## <a name="stage-2-scenarios"></a>Phase 2: Szenarien
@@ -77,11 +77,11 @@ Damit Sie Ihre Rolloutziele erreichen und positive Auswirkungen auf Ihre Organis
     
 ## <a name="stage-3-readiness"></a>Phase 3: Bereitschaft
 
-Wenn Sie Zeit in die Vorbereitung ihrer Microsoft Search Rollout investieren, hat dies positive Auswirkungen auf Ihre Organisation. Microsoft bietet ein <a href="https://go.microsoft.com/fwlink/?linkid=2114710">Adoption Kit</a> mit einer Ankündigungs-E-Mail-Vorlage, einfachen visuellen Inhalten, die für die Freigabe auf Ihren internen Kommunikationswebsites erstellt wurden, und einer Schulungspräsentation. Es gibt auch ein <a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">Microsoft Search Ressourcencenter,</a> in dem Sie weitere Schulungs- und Einführungsressourcen finden können, die Dazu beitragen, dass Ihre Microsoft Search Rollout erfolgreich ist.
+Wenn Sie Zeit in die Vorbereitung ihrer Microsoft Search Rollout investieren, hat dies positive Auswirkungen auf Ihre Organisation. Microsoft bietet ein <a href="https://go.microsoft.com/fwlink/?linkid=2114710">Adoption Kit</a> mit einer Ankündigungs-E-Mail-Vorlage, einfachen visuellen Inhalten, die für die Freigabe auf Ihren internen Kommunikationswebsites erstellt wurden, und einer Schulungspräsentation. Es gibt auch ein <a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">Microsoft Search Ressourcencenter,</a> in dem Sie weitere Schulungs- und Einführungsressourcen finden können, die Ihnen helfen sollen, Ihren Microsoft Search Rollout erfolgreich zu gestalten.
   
 ### <a name="product-and-content-readiness"></a>Produkt- und Inhaltsbereitschaft
   
-Administratoren beeinflussen direkt die Suchumgebung für Endbenutzer und bestimmen, wie Microsoft Search nach der Organisation sucht. Dazu gehört die Auswahl der Ergebnistypen, die Sie Ihren Benutzern zur Verfügung stellen möchten. Diese Ergebnisse können Links – auch als Lesezeichen bezeichnet – zu Dokumenten, Websites, Personen, Gruppen, Speicherorten, Unterhaltungen und anderen Ressourcen am Arbeitsplatz enthalten.
+Administratoren beeinflussen direkt die Suchumgebung für Endbenutzer und bestimmen, wie Microsoft Search nach der Organisation suchen. Dazu gehört die Auswahl der Ergebnistypen, die Sie Ihren Benutzern zur Verfügung stellen möchten. Diese Ergebnisse können Links – auch als Lesezeichen bezeichnet – zu Dokumenten, Websites, Personen, Gruppen, Speicherorten, Unterhaltungen und anderen Ressourcen am Arbeitsplatz enthalten.
   
 Weitere Informationen finden Sie unter [Einrichten Microsoft Search](setup-microsoft-search.md).
   
@@ -119,9 +119,9 @@ Alle Kommunikationen sollten die Benutzer darüber informieren, wie sie sich bei
   
 ### <a name="engage-partner-teams"></a>Einbeziehen von Partnerteams
   
-Als integraler Bestandteil [Microsoft 365](https://www.microsoft.com/microsoft-365)entspricht Microsoft Search den DSGVO- und Tier-C-Richtlinien. Je nach Organisation kann es erforderlich sein, Informationen über Microsoft Search mit Ihren Datenschutz- und Sicherheitsteams auszutauschen. Weitere Informationen finden Sie unter [Sicherheit und Datenschutz für Microsoft Search in Bing](security-for-search.md).
+Als integraler Bestandteil von [Microsoft 365](https://www.microsoft.com/microsoft-365)entspricht Microsoft Search den DSGVO- und Tier-C-Richtlinien. Je nach Organisation kann es erforderlich sein, Informationen über Microsoft Search mit Ihren Datenschutz- und Sicherheitsteams zu teilen. Weitere Informationen finden Sie unter [Sicherheit und Datenschutz für Microsoft Search in Bing](security-for-search.md).
   
-Stellen Sie sicher, dass Ihr Helpdesk über die Features und Funktionen von Microsoft Search sowie über die Benutzeranforderungen für die Anmeldung informiert ist, damit diese Benutzer effektiver unterstützen können. Weitere Informationen finden Sie unter [Informationen zu Microsoft Search in Microsoft 365](https://support.office.com/article/Learn-about-Microsoft-Search-in-Microsoft-365-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc) und häufig [gestellten Fragen.](faqs.md)
+Stellen Sie sicher, dass Ihr Helpdesk über die Features und Funktionen von Microsoft Search sowie die Benutzeranforderungen für die Anmeldung informiert ist, damit diese Benutzer effektiver unterstützen können. Weitere Informationen finden Sie unter [Informationen zu Microsoft Search in Microsoft 365](https://support.office.com/article/Learn-about-Microsoft-Search-in-Microsoft-365-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc) und häufig [gestellten Fragen.](faqs.md)
   
 ### <a name="evaluate-with-pilot-users"></a>Bewerten mit Pilotbenutzern
   
@@ -137,7 +137,7 @@ So helfen Sie bei der Suche nach Pilotbenutzern:
     
 - Identifizieren von Benutzern an anderen geografischen Standorten, einschließlich international.
     
-Bitten Sie Ihre Pilotbenutzer, Mithilfe der Feedbackoptionen in Microsoft Search oder über einfache Umfragen Eingaben bereitzustellen.
+Bitten Sie Ihre Pilotbenutzer, mithilfe der Feedbackoptionen in Microsoft Search oder über einfache Umfragen Eingaben bereitzustellen.
   
 Fragen zur Umfrage, die Sie stellen müssen: 
   
@@ -175,7 +175,7 @@ Sorgen Sie in Ihrer Organisation für Microsoft Search:
     
 ### <a name="ongoing-communication"></a>Fortlaufende Kommunikation
   
-Behalten Sie in den ersten Wochen und Monaten einen Kommunikationsrhythmus bei, um das Engagement mit Microsoft Search zu fördern. Dies hält die Benutzer auf dem Laufenden und bindet neue Benutzer ein. Jede Kommunikation sollte erklären, warum Microsoft Search für ihre Arbeit hilfreich sein kann.
+Behalten Sie in den ersten Wochen und Monaten einen Kommunikationsrhythmus bei, um die Interaktion mit Microsoft Search zu fördern. Dies hält die Benutzer auf dem Laufenden und bindet neue Benutzer ein. Jede Kommunikation sollte erklären, warum Microsoft Search für ihre Arbeit hilfreich sein kann.
   
 Senden Sie fortlaufende Kommunikationen, die Features und Suchvorgänge hervorheben, die Sie ausprobieren möchten, sowie Erfolgsgeschichten von Benutzern.
   

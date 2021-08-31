@@ -11,14 +11,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-ROBOTS: NoIndex
 description: Überprüfen und Reagieren auf Benutzerfeedback in Microsoft Search
-ms.openlocfilehash: ab6f25a8454c1c1e61488179107b3bbec96ef099d29afcce1f303a7f3e7c39e1
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 8b512f0bbfe5c72ff1a7a2296b0b76c5430e082f
+ms.sourcegitcommit: 2f5868e50caa9743d298188003a24545b5078c5b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532888"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58528983"
 ---
 # <a name="managing-user-feedback"></a>Verwalten von Benutzerfeedback
 
@@ -30,7 +29,7 @@ Wir bieten jetzt Tools an, mit denen Sie das Feedback ihrer Benutzer zur Suchumg
 
 Wenn Personen in Ihrer Organisation Microsoft Search verwenden, haben sie möglicherweise Feedback zu der Erfahrung. Wenn sie auf der Ergebnisseite auf einen Feedbacklink klicken, können sie ihr Feedback kategorisieren und zusätzliche Kommentare hinzufügen.
 
-![Globales Feedbackformular](media/feedback/feedback-global-dialog.png)
+![Globales Feedbackformular.](media/feedback/feedback-global-dialog.png)
 
 Benutzer haben auch die Möglichkeit, ihre Abfrage und andere Diagnoseinformationen zusammen mit der Kategorie und den Kommentaren an Microsoft zu senden. [Erfahren Sie mehr](https://privacy.microsoft.com/en-US/privacystatement) über den Datenschutz und wie wir diese Daten schützen. Die Diagnosedaten enthalten die wichtigsten Informationen, die Microsoft benötigt, um das Feedbackelement für die Produktverbesserung zu verwenden.
 
@@ -45,6 +44,9 @@ Mithilfe eines Filters können Sie Feedback für bestimmte Antworttypen anzeigen
 Sie können das Suchfeld über der Feedbackliste verwenden, um nach Feedback für eine bestimmte Abfrage zu suchen.
 
 In der Feedbackliste gibt die Spalte Verbatim an, welches Feedback des Benutzers auch einen Kommentar oder Vorschlag enthält. Klicken Sie zum Lesen auf die Abfrage, um den **Detailbereich** zu öffnen.
+
+>[!NOTE]
+>Während des anfänglichen Rollouts für die Administrator- und Endbenutzer-Suchumgebung kann es bis zu zwei Wochen dauern, bis Feedbackelemente im Verwaltungsportal angezeigt werden.
 
 ## <a name="update-feedback-state"></a>Aktualisieren des Feedbackstatus
 
@@ -79,9 +81,9 @@ Wenn Sie Feedback automatisch oder manuell freigeben, enthält es niemals Abfrag
 
 Als Suchadministrator sollten Sie die wichtigsten Personas in Ihrer Organisation verstehen und wissen, mit welchen Arten von Inhalten diese Personen in der Regel interagieren und nach denen sie suchen. Mit diesem Verständnis können Sie Feedback verwenden, um die Sucherfahrung Ihrer Benutzer gezielt zu verbessern.
 
-1. "Ich habe nicht gefunden, wonach ich gesucht habe" und ähnliches Feedback kann verwendet werden, um inhalte zu identifizieren, die Benutzer wünschen, aber derzeit nicht im Suchindex enthalten sind. Dies zu bestimmen, erfordert häufig Untersuchungen und Schlussfolgerungen, die auf dem Verständnis Ihrer Benutzer basieren. Nachdem Sie gefunden wurden, entscheiden Sie, welche Methoden zum Einschließen dieses Inhalts am besten geeignet sind:
+1. "Ich habe nicht gefunden, wonach ich gesucht habe" und ähnliches Feedback kann verwendet werden, um inhalte zu identifizieren, die Benutzer wünschen, aber derzeit nicht im Suchindex enthalten sind. Dies zu bestimmen, erfordert häufig Untersuchungen und Schlussfolgerungen basierend auf dem Verständnis Ihrer Benutzer. Entscheiden Sie nach derEntstehung, welche Methoden zum Einschließen dieses Inhalts am besten geeignet sind:
     1. Lesezeichen eignen sich für Inhaltsquellen mit einer qualitativ hochwertigen Zielseite und einer begrenzten Auswahl an Suchbegriffen, sodass die Benutzercommunity ein qualitativ hochwertiges Ergebnis aus dem Lesezeichen erhält und dann effizient finden kann, wonach sie suchen.
     1. F&A sind nützlich für individuelle Antworten, die relativ häufig, aber nicht geändert werden.
-    1. Connectors eignen sich für Inhaltsquellen mit einer Vielzahl von Inhalten und einer vielzahl von Suchbegriffen.
+    1. Connectors eignen sich für Inhaltsquellen mit einer vielzahl von Inhalten und einer vielzahl von Suchbegriffen.
 1. "Das Laden der Ergebnisse hat zu lange gedauert", & "Ich habe ein Problem gefunden" kann ein Anzeichen für ein umfassenderes Problem sein. Die tägliche Suche nach diesem Feedback kann hilfreich sein, und wenn mehrere Fälle auftreten, können Sie die Suchumgebung für sich selbst überprüfen und bei Bedarf einen Supportfall bei Microsoft öffnen. Diese Art von Feedback ist auch für Microsoft wichtig und ein hervorragender Grund, uns das gesamte Feedback zu senden.
-1. "Ich möchte einen internen Link vorschlagen" kann als Lesezeichen oder verbundener Inhalt ausgewertet werden. Ihr erster Wähnt sollte ein Lesezeichen sein. wenn das Lesezeichen stark verwendet wird, können Sie erwägen, Inhalte über einen Connector einzubringen, um eine noch umfangreichere Suchumgebung zu ermöglichen.
+1. "Ich möchte einen internen Link vorschlagen", kann als Lesezeichen oder verbundener Inhalt ausgewertet werden. Ihr erster Wähnt sollte ein Lesezeichen sein. wenn das Lesezeichen stark verwendet wird, können Sie erwägen, Inhalte über einen Connector einzubringen, um eine noch umfangreichere Suchumgebung zu ermöglichen.

@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Einrichten des Azure DevOps Graph-Connectors für Microsoft Search
-ms.openlocfilehash: b7c5ab48288fdc421cda87b8afbadf08b8cf42ef023e8f56decd7b5c177c619a
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+description: Einrichten des Azure DevOps Graph Connectors für Microsoft Search
+ms.openlocfilehash: fcf381a92ef397f900b300ca667fa80067a6672a
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533341"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701390"
 ---
 <!---Previous ms.author: shgrover --->
 
@@ -27,7 +27,7 @@ ms.locfileid: "54533341"
 Der Azure DevOps Graph Connector ermöglicht Es Ihrer Organisation, Arbeitselemente in ihrer Instanz des Azure DevOps Diensts zu indizieren. Nachdem Sie den Connector konfiguriert und Inhalte aus Azure DevOps indiziert haben, können Endbenutzer in Microsoft Search nach diesen Elementen suchen.
 
 > [!NOTE]
-> Lesen Sie den Artikel [**"Setup for your Graph connector",**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten von Connectors Graph zu verstehen.
+> Lesen Sie den Artikel [**"Setup for your Graph connector",**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten Graph Connectors zu verstehen.
 
 Dieser Artikel richtet sich an alle Personen, die einen Azure DevOps Graph Connector konfigurieren, ausführen und überwachen. Es ergänzt den allgemeinen Einrichtungsprozess und zeigt Anweisungen, die nur für den Azure DevOps Graph Connector gelten.
 
@@ -38,7 +38,7 @@ Dieser Artikel richtet sich an alle Personen, die einen Azure DevOps Graph Conne
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph Connectors im Microsoft 365 Admin Center
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph Connectors in der Microsoft 365 Admin Center
 
 Folgen Sie den allgemeinen [Setupanweisungen.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
@@ -56,7 +56,7 @@ Um eine Verbindung mit Ihrer Azure DevOps Instanz herzustellen, benötigen Sie i
 
 ### <a name="register-an-app"></a>Registrieren einer App
 
-Registrieren Sie eine App in Azure DevOps, damit die Microsoft Search App auf die Instanz zugreifen kann. Weitere Informationen finden Sie in Azure DevOps Dokumentation zum [Registrieren einer App.](/azure/devops/integrate/get-started/authentication/oauth?preserve-view=true&view=azure-devops#register-your-app)
+Registrieren Sie eine App in Azure DevOps, damit die Microsoft Search-App auf die Instanz zugreifen kann. Weitere Informationen finden Sie in Azure DevOps Dokumentation zum [Registrieren einer App.](/azure/devops/integrate/get-started/authentication/oauth?preserve-view=true&view=azure-devops#register-your-app)
 
 Die folgende Tabelle enthält Anleitungen zum Ausfüllen des App-Registrierungsformulars:
 
@@ -66,7 +66,7 @@ Pflichtfelder | Beschreibung | Empfohlener Wert
 | Name der Anwendung     | Ein eindeutiger Wert, der die Anwendung identifiziert, die Sie autorisieren.    | Microsoft Search     |
 | Anwendungswebsite  | Die URL der Anwendung, die während der Connectoreinrichtung Zugriff auf Ihre Azure DevOps Instanz anfordert. (Erforderlich).  | https://<span>gcs.office.</span> com/
 | Autorisierungsrückruf-URL        | Eine erforderliche Rückruf-URL, an die der Autorisierungsserver umleitet. | https://<span>gcs.office.</span> com/v1.0/admin/oauth/callback|
-| Autorisierte Bereiche | Der Umfang des Zugriffs für die Anwendung | Wählen Sie die folgenden Bereiche aus: Identität (lesen), Arbeitsaufgaben (lesen), Variablengruppen (lesen), Project und Team (lesen), Graph (lesen)|
+| Autorisierte Bereiche | Der Umfang des Zugriffs für die Anwendung | Wählen Sie die folgenden Bereiche aus: Identität (lesen), Arbeitsaufgaben (lesen), Variablengruppen (lesen), Project und Team (lesen), Graph (lesen), Analyse (lesen)|
 
 >[!IMPORTANT]
 >Die autorisierten Bereiche, die Sie für die App auswählen, sollten genau wie oben aufgeführt mit den Bereichen übereinstimmen. Wenn Sie einen der autorisierten Bereiche in der Liste weglassen oder einen anderen Bereich hinzufügen, schlägt die Autorisierung fehl.
@@ -74,13 +74,13 @@ Pflichtfelder | Beschreibung | Empfohlener Wert
 Beim Registrieren der App mit den oben genannten Details erhalten Sie die **App-ID** und den **geheimen Clientschlüssel,** die zum Konfigurieren des Connectors verwendet werden.
 
 >[!NOTE]
->Um den Zugriff auf alle in Azure DevOps registrierten Apps zu widerrufen, wechseln Sie zu den Benutzereinstellungen rechts oben in Ihrer Azure DevOps Instanz. Wählen Sie "Profil" und dann "Autorisierungen" im Abschnitt "Sicherheit" des Seitenbereichs aus. Zeigen Sie auf eine autorisierte OAuth-App, um die Schaltfläche "Widerrufen" in der Ecke der App-Details anzuzeigen.
+>Um den Zugriff auf alle in Azure DevOps registrierten Apps zu widerrufen, wechseln Sie zu Benutzereinstellungen rechts oben in Ihrer Azure DevOps Instanz. Wählen Sie "Profil" und dann "Autorisierungen" im Abschnitt "Sicherheit" des Seitenbereichs aus. Zeigen Sie auf eine autorisierte OAuth-App, um die Schaltfläche "Widerrufen" in der Ecke der App-Details anzuzeigen.
 
 ### <a name="connection-settings"></a>Verbindungseinstellungen
 
 Nachdem Sie die Microsoft Search-App bei Azure DevOps registriert haben, können Sie den Verbindungseinstellungsschritt ausführen. Geben Sie den Namen Ihrer Organisation, Die App-ID und den geheimen Clientschlüssel ein.
 
-![Verbindungsanwendung Einstellungen](media/ADO_Connection_settings_2.png)
+![Verbindungsanwendung Einstellungen.](media/ADO_Connection_settings_2.png)
 
 ### <a name="configure-data-select-projects-and-fields"></a>Konfigurieren von Daten: Auswählen von Projekten und Feldern
 
@@ -90,11 +90,11 @@ Wenn Sie die gesamte Organisation indiziert, werden Elemente in allen Projekten 
 
 Wenn Sie einzelne Projekte auswählen, werden nur Arbeitsaufgaben in diesen Projekten indiziert.
 
-![Konfigurieren von Daten](media/ADO_Configure_data.png)
+![Konfigurieren sie Daten.](media/ADO_Configure_data.png)
 
 Wählen Sie als Nächstes aus, welche Felder die Verbindung für die Indizierung und Vorschau von Daten in diesen Feldern verwenden soll, bevor Sie fortfahren.
 
-![Auswählen von Eigenschaften](media/ADO_choose_properties.png)
+![Wählen Sie Eigenschaften aus.](media/ADO_choose_properties.png)
 
 ## <a name="step-4-manage-search-permissions"></a>Schritt 4: Verwalten von Suchberechtigungen
 
@@ -119,15 +119,19 @@ Folgen Sie den allgemeinen [Setupanweisungen.](./configure-connector.md)
 
 >[!TIP]
 >**Standardergebnistyp**
->* Der Azure DevOps Connector registriert automatisch einen [Ergebnistyp,](./customize-search-page.md#step-2-create-the-result-types) sobald der Connector veröffentlicht wurde. Der Ergebnistyp verwendet ein dynamisch generiertes [Ergebnislayout](./customize-results-layout.md) basierend auf den in Schritt 3 ausgewählten Feldern. 
+>* Der Azure DevOps Connector registriert automatisch einen [Ergebnistyp,](./customize-search-page.md#step-2-create-result-types) sobald der Connector veröffentlicht wurde. Der Ergebnistyp verwendet ein dynamisch generiertes [Ergebnislayout](./customize-results-layout.md) basierend auf den in Schritt 3 ausgewählten Feldern. 
 >* Sie können den Ergebnistyp verwalten, indem Sie im [Microsoft 365 Admin Center](https://admin.microsoft.com)zu [**Ergebnistypen**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes) navigieren. Der Standardergebnistyp wird als `ConnectionId` "Standard" bezeichnet. Wenn ihre Verbindungs-ID beispielsweise `AzureDevOps` lautet, wird ihr Ergebnislayout wie folgt benannt: "AzureDevOpsDefault"
 >* Sie können bei Bedarf auch einen eigenen Ergebnistyp erstellen.
 
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
-<!---## Troubleshooting-->
-<!---Insert troubleshooting recommendations for this data source-->
+## <a name="troubleshooting"></a>Problembehandlung
+Es folgt ein häufiger Fehler beim Konfigurieren des Connectors und sein möglicher Grund.
+
+| Konfigurationsschritt | Fehlermeldung | Mögliche Gründe |
+| ------------ | ------------ | ------------ |
+|  | `The account associated with the connector doesn't have permission to access the item.` | Die registrierte App verfügt nicht über einen der erforderlichen OAuth-Bereiche. (Hinweis : Am 31.08.2021 wurde eine neue OAuth-Bereichsanforderung "Analytics:read" eingeführt.)  |
 
 <!---## Limitations-->
 <!---Insert limitations for this data source-->

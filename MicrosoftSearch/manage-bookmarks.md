@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Erstellen und Aktualisieren von Lesezeichen und Möglichkeiten zum Massenbearbeitung von Lesezeichenergebnissen für Microsoft Search
-ms.openlocfilehash: ed46583d857d97fa28773b64401ae4f85f88650a
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+ms.openlocfilehash: 67833ba563f8f4081cc6291db968542ba32df79f
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235963"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470239"
 ---
 # <a name="manage-bookmarks"></a>Verwalten von Lesezeichen
 
@@ -38,7 +38,7 @@ Ein hervorragendes Lesezeichen hat vier Schlüsselelemente:
 
 ## <a name="create-bookmark-answers"></a>Erstellen von Antworten auf Lesezeichen
 
-Wechseln Sie [im Microsoft 365 Admin Center](https://admin.microsoft.com/)zu ["Lesezeichen",](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) und wählen Sie aus, wie Sie neue Lesezeichen erstellen möchten:
+Wechseln [Sie](https://admin.microsoft.com/)im Microsoft 365 Admin Center zu ["Lesezeichen",](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) und wählen Sie aus, wie Sie neue Lesezeichen erstellen möchten:
 
 - Hinzufügen von Lesezeichen
 - Importieren SharePoint Ergebnisse
@@ -48,7 +48,7 @@ Wechseln Sie [im Microsoft 365 Admin Center](https://admin.microsoft.com/)zu ["L
 
 ### <a name="add-bookmarks"></a>Hinzufügen von Lesezeichen
 
-Suchadministratoren und -editoren können Lesezeichen im Microsoft 365 Admin Center hinzufügen und diese entweder veröffentlichen oder im Entwurf speichern. Durch die Veröffentlichung eines Lesezeichens wird der Suchindex sofort aktualisiert, sodass er für Benutzer sofort erkennbar ist. Sie können ein Lesezeichen auch planen, indem Sie das Datum und die Uhrzeit für die Veröffentlichung angeben.
+Suchadministratoren und -editoren können Lesezeichen im Microsoft 365 Admin Center hinzufügen und sie entweder veröffentlichen oder im Entwurf speichern. Durch die Veröffentlichung eines Lesezeichens wird der Suchindex sofort aktualisiert, sodass er für Benutzer sofort erkennbar ist. Sie können ein Lesezeichen auch planen, indem Sie das Datum und die Uhrzeit für die Veröffentlichung angeben.
 
 - **Veröffentlicht:** Lesezeichen stehen den Benutzern der Organisation über Microsoft Search zur Verfügung.
 - **Entwurf:** Als Entwürfe gespeicherte Lesezeichen stehen Ihren Benutzern nicht zur Verfügung. Verwenden Sie diesen Status, wenn Sie oder andere Projektbeteiligten Lesezeichen vor der Veröffentlichung überprüfen oder aktualisieren möchten.
@@ -102,9 +102,9 @@ So verhindern Sie Duplizierungsfehler zwischen Lesezeichen:
 
 ### <a name="publish-or-review-recommended-bookmarks"></a>Veröffentlichen oder Überprüfen empfohlener Lesezeichen
 
-Um den manuellen Aufwand für das Hinzufügen von Lesezeichen zu verringern, können Microsoft Search die SharePoint Links Ihrer Organisation auswerten und Lesezeichen empfehlen. Sie können sie vor der Veröffentlichung überprüfen oder festlegen, dass sie automatisch veröffentlicht werden. Für empfohlene Lesezeichen ist kein Setup erforderlich, sie sind aktiviert und standardmäßig auf die automatische Veröffentlichung festgelegt. Um diese Einstellungen jederzeit zu ändern, wählen Sie **Lesezeichen verwalten aus,** um den Bereich "Lesezeicheneinstellungen" zu öffnen.
+Um den manuellen Aufwand zum Hinzufügen von Lesezeichen zu verringern, können Microsoft Search die SharePoint Links Ihrer Organisation auswerten und Lesezeichen empfehlen. Sie können sie vor der Veröffentlichung überprüfen oder festlegen, dass sie automatisch veröffentlicht werden. Es ist kein Setup für empfohlene Lesezeichen erforderlich, sie sind aktiviert und standardmäßig auf die automatische Veröffentlichung festgelegt. Um diese Einstellungen jederzeit zu ändern, wählen Sie **Lesezeichen verwalten aus,** um den Bereich "Lesezeicheneinstellungen" zu öffnen.
 
-![Screenshot der Empfohlenen Lesezeicheneinstellungen im Microsoft 365-Verwaltungsportal](media/bookmarks-recommendedsettings.png)
+![Screenshot der empfohlenen Lesezeicheneinstellungen im Microsoft 365 Verwaltungsportal.](media/bookmarks-recommendedsettings.png)
 
 Wenn empfohlene Lesezeichen aktiviert sind, wertet das Empfehlungsmodul SharePoint Websites in Ihrer Organisation aus, um Links mit hohem Datenverkehr zu identifizieren. Nach einem anfänglichen Evaluierungszeitraum werden die empfohlenen Lesezeichen entweder automatisch veröffentlicht oder der Liste der vorgeschlagenen Lesezeichen hinzugefügt. Der nächste Zyklus – ein Auswertungszeitraum von 30 Tagen gefolgt von der automatischen Veröffentlichung oder dem Hinzufügen vorgeschlagener Lesezeichen – beginnt dann.
 
@@ -134,7 +134,7 @@ Ein Lesezeichen kann mehrere Schlüsselwörter haben und dasselbe Schlüsselwort
 
 **A:** Gelöschte Textmarken werden sofort aus den Arbeitsergebnissen entfernt.
 
-**F: Werden Microsoft Search Lesezeichen von Websites in allen Sprachen empfehlen?**
+**F: Wird Microsoft Search Lesezeichen von Websites in allen Sprachen empfehlen?**
 
 **A:** Ja, Microsoft Search können Lesezeichen von jeder internen SharePoint Website empfehlen, unabhängig von der Sprache.
 
@@ -156,4 +156,4 @@ Ein Lesezeichen kann mehrere Schlüsselwörter haben und dasselbe Schlüsselwort
 
 **F: Wo finde ich die App-ID für eine Power App?**
 
-**A:** Wechseln Sie zur Power Apps-Website, und zeigen Sie den Detailbereich für die App an. Weitere Informationen [zum Abrufen einer App-ID.](/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id)
+**A:** Wechseln Sie zur Power Apps Website, und zeigen Sie den Detailbereich für die App an. Weitere Informationen [zum Abrufen einer App-ID.](/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id)

@@ -12,65 +12,70 @@ search.appverid:
 - MET150
 - MOE150
 description: Hinzufügen von Such-Vertikalen und Anpassen von Suchergebnissen
-ms.openlocfilehash: 440b9afbbeb4c4cd86b2b9f67443e644c36ce042
-ms.sourcegitcommit: 8ac77db22002d47bb461222b81b7cfc1c15a72fb
+ms.openlocfilehash: 701604798115091c7c7a286d3b6e97dea08e9453
+ms.sourcegitcommit: be5dcc7005447d6139e39d86211c7ec4cd5dd907
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58340078"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58639588"
 ---
 # <a name="customize-the-search-results-page"></a>Anpassen der Suchergebnisseite
 
-Sie können Such-Vertikalen und Ergebnistypen erstellen, um die Suchergebnisse anzupassen, die Benutzern angezeigt werden, wenn sie in Microsoft [SharePoint,](https://sharepoint.com/) [Microsoft Office](https://office.com)und Microsoft Search in [Bing](https://bing.com)suchen. Vertikalen erleichtern benutzern das Auffinden der Informationen, für die sie über die Berechtigung zum Anzeigen verfügen. Sie können beispielsweise eine Suchsparte für Marketinganalysedaten aus Drittanbietersoftware für Ihre Benutzer in der Marketingabteilung erstellen. Sie können auch Ergebnistypen definieren und das Layout für diese Daten anpassen.  
+Sie können *Such-Vertikalen* und *Ergebnistypen* erstellen, um die Suchergebnisse anzupassen, die Benutzern angezeigt werden, wenn sie in Microsoft [SharePoint,](https://sharepoint.com/) [Microsoft Office](https://office.com)und Microsoft Search in [Bing](https://bing.com)suchen. Vertikalen erleichtern benutzern das Auffinden der Informationen, für die sie über die Berechtigung zum Anzeigen verfügen.
 
-Sie können Vertikalen und Ergebnistypen auf folgenden Ebenen erstellen:
+Sie können beispielsweise eine Suchsparte für Marketinganalysedaten aus Drittanbietersoftware für Ihre Benutzer in der Marketingabteilung erstellen. Sie können auch Ergebnistypen definieren und das Layout für diese Daten anpassen.
 
-- **Organisationsebene** – Wenn Sie eine Vertikale auf Organisationsebene hinzufügen, wird sie auf der Suchergebnisseite angezeigt, wenn Benutzer über ihre [SharePoint](https://sharepoint.com/) Startseite, auf [Office](https://office.com)oder auf [Bing](https://bing.com)suchen.
+## <a name="about-search-verticals"></a>Informationen zu Such-Vertikalen
+
+Oben auf der Ergebnisseite Microsoft Search befindet sich eine Reihe von Registerkarten. Hierbei handelt es sich um Such-Vertikalen. Eine Such-Vertikale zeigt nur Ergebnisse eines bestimmten Typs oder eines bestimmten Inhaltssatzes an. Beispiele sind **Dateien** oder **News**. Standardmäßig werden Microsoft Search die Vertikalen **"Alle",** **"Personen",** **"Dateien",** **"Websites"** und **"News" angezeigt.**  
+
+Sie können Such-Vertikalen hinzufügen, die für Ihre Organisation relevant sind. Diese werden auf der Ergebnisseite Microsoft Search in SharePoint, Office und Bing angezeigt. Sie können beispielsweise eine Vertikale für marketingbezogene Inhalte und eine weitere für den Vertrieb erstellen, basierend auf der Art der Informationen, die jede Abteilung benötigt. Sie können Vertikale hinzufügen, um nur Ergebnisse aus Inhalten anzuzeigen, die über Connectors indiziert wurden.
+
+Sie können Vertikale und Ergebnistypen auf zwei Ebenen erstellen:
+
+- **Organisationsebene** – Eine Vertikale, die Sie auf Organisationsebene erstellen, wird auf der Suchergebnisseite angezeigt, wenn Benutzer über ihre [SharePoint](https://sharepoint.com/) Startseite, auf [Office](https://office.com)oder auf [Bing](https://bing.com)suchen.
 - **Standortebene** – Beispielsweise möchten Sie Ihren Kundendienstmitarbeitern ermöglichen, direkt von der SharePoint Website ihrer Abteilung aus nach Vorfällen des *Schweregrads 1* zu suchen.
-
-## <a name="search-verticals-explained"></a>Erläuterte Such-Vertikalen
-
-Am oberen Rand der Microsoft Search Ergebnisseite befindet sich eine Zeile mit Registerkarten. Hierbei handelt es sich um die Such-Vertikalen. Eine Such-Vertikal zeigt nur Ergebnisse eines bestimmten Typs oder von bestimmten Inhalten an. Beispiele sind **Dateien** oder **News**. Standardmäßig zeigt Microsoft Search die Vertikalen **"Alle",** **"Personen",** **"Dateien",** **"Websites"** und **"News"** an.  
-
-Sie können Such-Vertikalen hinzufügen, die für Ihre Organisation relevant sind. Diese werden auf der Ergebnisseite Microsoft Search in [SharePoint,](https://sharepoint.com/) [Office](https://Office.com)und [Bing](https://bing.com)angezeigt. Sie können beispielsweise eine Vertikale für marketingbezogene Inhalte und eine weitere für den Vertrieb erstellen, basierend auf dem Typ der Informationen, die jede Gruppe benötigt. Sie können Vertikale hinzufügen, um nur Ergebnisse aus Inhalten anzuzeigen, die über Connectors indiziert wurden.  
 
 ### <a name="multiple-connections-in-a-vertical"></a>Mehrere Verbindungen in einer vertikalen
 
-Eine Such vertical can now surface results from multiple connector sources. Dies bietet eine größere Flexibilität beim Entwerfen der Suchergebnisseite. Mit der vorhandenen Verwaltungsumgebung der vertikalen Einrichtung können Sie mehrere Verbindungen im Schritt "Inhaltsquelle" auswählen.
-Wenn Sie so viele semantische Bezeichnungen wie möglich genau benennen, wird diese Erfahrung verbessert. Sie können semantische Bezeichnungen nach Schemadefinition und Aufnahme hinzufügen.
+Eine Such-Vertikale kann Ergebnisse aus mehreren Verbindungsquellen anzeigen. Diese Option bietet Flexibilität beim Entwerfen der Suchergebnisseite. Mit dem vertikalen Einrichtungsprozess können Administratoren im Schritt "Inhaltsquelle" mehrere Verbindungen auswählen.
 
+Wenn Sie so viele *Semantikbezeichnungen* wie möglich genau benennen, wird diese Erfahrung verbessert. Sie fügen semantische Bezeichnungen am Punkt der Schemadefinition und -aufnahme hinzu. [Weitere Informationen zum Erstellen und Verwalten von Semantikbezeichnungen.](configure-connector.md#step-6-assign-property-labels)
 [Hier](configure-connector.md#step-6-assign-property-labels) finden Sie weitere Informationen zum Erstellen und Verwalten von Semantikbezeichnungen.
 
 > [!NOTE]
-> Mehrere Verbindungen in einer Vertikalen befinden sich derzeit in der Vorschau. Weitere Informationen zur Vorschau finden Sie unter [Connectors Preview Features](connectors-overview.md#what-are-the-preview-features).
+> Die mehreren Verbindungen in einem vertikalen Feature befinden sich derzeit in der Vorschau. Weitere Informationen finden Sie unter [Connectors Preview Features](connectors-overview.md#what-are-the-preview-features).
 
-### <a name="things-you-should-know"></a>Dinge, die Sie wissen sollten
+Eine Verbindung kann als Inhaltsquelle unter einer einzelnen Vertikalen hinzugefügt werden. Verbindungen unter mehreren Vertikalen können nicht verwendet werden.
 
-1. Eine Verbindung kann nur unter einer Vertikalen als Inhaltsquelle hinzugefügt werden. Das Wiederverwenden von Verbindungen unter mehreren Vertikalen ist nicht zulässig.
-2. Wenn Sie eine Abfrage für eine Such vertical einrichten müssen, in der mehrere Verbindungsquellen hinzugefügt wurden, sollten allgemeine Quelleigenschaften verwendet werden, um eine solche Abfrage zu erstellen.
+Verwenden Sie allgemeine Quelleigenschaften, um eine Abfrage für eine Such-Vertikale einzurichten, in der mehrere Verbindungsquellen hinzugefügt wurden, um die Abfrage zu erstellen.
 
-## <a name="things-to-consider"></a>Zu berücksichtigende Aspekte
+### <a name="before-you-create-verticals-and-result-types"></a>Vor dem Erstellen von Vertikalen und Ergebnistypen
 
-Bevor Sie beginnen, stellen Sie sicher, dass der Connector indiziert wurde. Je nach Dateigröße kann dies bis zu 48 Stunden dauern.
+Die folgenden Faktoren sollten Sie in Ihrem Plan berücksichtigen:
 
-Sie können keine Vertikale für Inhalte erstellen, die sich in [SharePoint](https://sharepoint.com/)befinden.
+- Stellen Sie sicher, dass der Connector indiziert wurde. Je nach Dateigröße kann dies bis zu 48 Stunden dauern.
 
-Es gibt drei grundlegende Schritte zum Hinzufügen einer vertikalen Ebene:
+- Sie können keine Vertikale für Inhalte erstellen, die sich in SharePoint befinden.
+
+Dies sind die Schritte zum Implementieren einer vertikalen:
 
 1. Erstellen Sie die Vertikale. In diesem Schritt definieren Sie den vertikalen Namen, die Inhaltsquelle und den Umfang des zu durchsuchenden Inhalts.
 2. Definieren Sie, wie die Ergebnisse für diese Vertikale aussehen.  
 3. Aktivieren Sie die vertikale (anzuzeigende) Vertikal auf der vertikalen Listenseite.
 
-## <a name="step-1-create-the-search-vertical"></a>SCHRITT 1: Erstellen der Such-Vertikalen
+## <a name="step-1-create-the-search-vertical"></a>Schritt 1: Erstellen der Such-Vertikalen
 
-Nachdem Sie den Assistenten gestartet haben, werden Sie durch die Schritte geführt, um den Vertikalnamen, die Inhaltsquelle und den Umfang der zu durchsuchenden Inhalte zu definieren. Die Vertikale wird in einem deaktivierten Zustand erstellt. Sie werden es später aktivieren.
+Nachdem Sie den Assistenten gestartet haben, werden Sie durch die Schritte zum Definieren des Vertikalnamens, der Inhaltsquelle und des Bereichs der zu durchsuchenden Inhalte geführt.
 
-Sie können einen begrenzten Satz von [KQL (Keyword Query Language)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) verwenden, um den Bereich einzugrenzen. Auf dieser Seite sind die verfügbaren Eigenschaften aufgeführt. Es wird empfohlen, Freitext-Schlüsselwörter und Eigenschaftseinschränkungen für boolesche Operatoren zum Erstellen von KQL zu verwenden.
-KQL unterstützt auch die Verwendung von [Profilabfragevariablen](#profile-query-variables) zum Optimieren der Ergebnisse unter der vertikalen.
+>[!Note]
+>Vertikalen werden in einem deaktivierten Zustand erstellt. Sie können diese aktivieren, um sie sichtbar zu machen.
+
+Sie können einen begrenzten Satz von [KQL (Keyword Query Language)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) verwenden, um den Bereich einzugrenzen. (Die Eigenschaften, die Sie verwenden können, werden weiter unten in diesem Artikel beschrieben.) Es wird empfohlen, Freitext-Schlüsselwörter und Eigenschaftseinschränkungen für boolesche Operatoren zu verwenden. KQL unterstützt auch [Profilabfragevariablen,](#profile-query-variables) um die Ergebnisse unter der Vertikalen zu optimieren.
 
 ### <a name="create-a-vertical-at-the-organization-level"></a>Erstellen einer Vertikalen auf Organisationsebene
 
-Führen Sie die folgenden Schritte aus, um die vertikale Microsoft Search in [SharePoint](https://sharepoint.com/) Zuhause, [Office](https://office.com)oder [Bing](https://bing.com)zu erstellen:
+Führen Sie die folgenden Schritte aus, um eine vertikale Microsoft Search in SharePoint Zuhause, Office oder Bing zu erstellen:
 
 1. Wechseln [Sie](https://admin.microsoft.com)im Microsoft 365 Admin Center zu [**"Vertikalen".**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)
 2. Wählen Sie **"Hinzufügen"** aus, um zu beginnen.  
@@ -78,66 +83,66 @@ Führen Sie die folgenden Schritte aus, um die vertikale Microsoft Search in [Sh
 ### <a name="create-a-vertical-at-the-site-level"></a>Erstellen einer Vertikalen auf Websiteebene
 
 1. Wechseln Sie auf der [SharePoint](https://sharepoint.com/) Website, auf der Sie die Vertikale verwenden möchten, zu **Einstellungen**.
-2. Wählen Sie **Websiteinformationen aus,** und zeigen Sie dann **alle Websiteeinstellungen an.**
-3. Suchen Sie nach dem **Abschnitt Microsoft Search,** und wählen Sie dann **Microsoft Search für diese Websitesammlung** konfigurieren aus.
+2. Wählen Sie **"Websiteinformationen"** und dann **"Alle Websiteeinstellungen anzeigen"** aus.
+3. Suchen Sie den **Abschnitt Microsoft Search,** und wählen Sie dann **Microsoft Search für diese Websitesammlung konfigurieren** aus.
 4. Wechseln Sie im Navigationsbereich zu **"Benutzerdefinierte Oberfläche",** und wählen Sie dann die Registerkarte **"Vertikal" aus.**
-5. Wählen Sie zum Hinzufügen einer vertikalen , **hinzufügen**.
-  Oder wählen Sie eine Vertikale in der Liste aus, um sie zu bearbeiten.
+5. Wählen Sie zum Hinzufügen einer vertikalen , **hinzufügen**. Oder um eine Vertikale zu bearbeiten, wählen Sie sie aus der Liste aus.
 
-Denken Sie daran, dass Vertikale in einem deaktivierten Zustand erstellt werden. Sie müssen aktiviert sein, bevor Benutzer sie sehen können.
+## <a name="step-2-create-result-types"></a>Schritt 2: Erstellen von Ergebnistypen
 
-## <a name="step-2-create-the-result-types"></a>SCHRITT 2: Erstellen der Ergebnistypen
-
-Sie können definieren, wie Ergebnisse in der vertikalen Leiste angezeigt werden, indem Sie das Layout mithilfe von Ergebnistypen entwerfen. Mit dem Ergebnislayout können Sie wichtige Informationen direkt in den Suchergebnissen anzeigen, sodass Benutzer nicht jedes Ergebnis auswählen müssen, um festzustellen, ob sie das gesuchte Ergebnis gefunden haben.
+Mithilfe von *Ergebnistypen* können Sie definieren, wie Ergebnisse in der vertikalen Leiste angezeigt werden. Mit dem Ergebnislayout können Sie wichtige Informationen direkt in den Suchergebnissen anzeigen, sodass Benutzer nicht jedes Ergebnis auswählen müssen, um festzustellen, ob sie das gesuchte Ergebnis gefunden haben.
 
 ### <a name="default-search-result-layout"></a>Standardmäßiges Suchergebnislayout
 
-Ein standardmäßiges Suchergebnislayout wird für Connector-Inhalte angezeigt, wenn **Bezeichnungen** und **Inhaltseigenschaften** zum Zeitpunkt der Konfiguration des Connectors den Quelleigenschaften ordnungsgemäß zugeordnet wurden. Der **Bezeichnungstitel** ist die wichtigste Bezeichnung. Es wird **dringend empfohlen,** dass Dieser Bezeichnung eine Eigenschaft zugewiesen ist, um das standardmäßige Suchergebnislayout zu verwenden.
+Ein standardmäßiges Suchergebnislayout für Connectorinhalte wird angezeigt, wenn die *Bezeichnungen* und *Inhaltseigenschaften* bei der Konfiguration des Connectors den Quelleigenschaften ordnungsgemäß zugeordnet wurden. Die *Titelbezeichnung* ist die wichtigste Bezeichnung. Es *wird dringend* empfohlen, dieser Bezeichnung eine Eigenschaft zur Verwendung des standardmäßigen Suchergebnislayouts zuzuweisen.
 
 ### <a name="create-your-own-result-type"></a>Erstellen Eines eigenen Ergebnistyps
 
-Sie können ein eigenes Suchergebnislayout erstellen und das standardmäßige Suchergebnislayout überschreiben, indem Sie einen **Ergebnistyp** erstellen. Ein Ergebnistyp einer Suche ist eine Regel, die bewirkt, dass unterschiedliche Arten von Suchergebnissen auf verschiedene Weisen angezeigt werden. Ein Ergebnistyp hat folgende Bestandteile:
+Um Ein eigenes Suchergebnislayout zu erstellen und das standardmäßige Suchergebnislayout außer Kraft zu setzen, erstellen Sie einen *Ergebnistyp.* Ein Ergebnistyp einer Suche ist eine Regel, die bewirkt, dass unterschiedliche Arten von Suchergebnissen auf verschiedene Weisen angezeigt werden. Es besteht aus:
 
 - **Eine oder mehrere Bedingungen,** mit denen jedes Suchergebnis verglichen werden soll, z. B. die Inhaltsquelle des Suchergebnisses.  
-- Ein **Ergebnislayout, das** für Suchergebnisse verwendet werden soll, die die Bedingungen erfüllen. Das resultierende Layout steuert, wie alle Ergebnisse, die die Bedingungen erfüllen, auf einer Suchergebnisseite angezeigt werden und sich verhalten.
+- Ein **Ergebnislayout, das** für Suchergebnisse verwendet werden soll, die die Bedingungen erfüllen. Das resultierende Layout steuert, wie die Ergebnisse, die die Bedingungen erfüllen, auf einer Suchergebnisseite angezeigt werden und sich verhalten.
 
-**Wenn keine geeignete Zuordnung zum Anzeigen des standardmäßigen Suchergebnislayouts erfolgt, müssen Sie mindestens einen Ergebnistyp erstellen, damit die Ergebnisse auf der vertikalen Seite angezeigt werden können.** Sie können für jede Vertikale mehrere Ergebnistypen erstellen, sodass Sie unterschiedliche Layouts für unterschiedliche Ergebnistypen verwenden können. Sie können z. B. Vorfälle des *Schweregrads 1* so anpassen, dass sie im Vergleich zu Vorfällen mit *Schweregrad 3* auffälligere Farben und eine größere Schriftart aufweisen.
+*Wenn Sie keine geeignete Zuordnung zum Anzeigen des standardmäßigen Suchergebnislayouts durchführen, müssen Sie mindestens einen Ergebnistyp erstellen, damit die Ergebnisse in der vertikalen Ansicht angezeigt werden.* 
+
+Sie können für jede Vertikale mehrere Ergebnistypen erstellen, sodass Sie unterschiedliche Layouts für unterschiedliche Ergebnistypen verwenden können. Beispielsweise können Sie Vorfälle *des Schweregrads 1* so anpassen, dass sie auffälligere Farben und eine größere Schriftart als *Vorfälle mit Schweregrad 3* aufweisen.
 
 Nachdem Sie den Assistenten gestartet haben, werden Sie durch die Schritte geführt, um den Namen, die Inhaltsquelle und die Bedingungen für den Ergebnistyp zu definieren. Sie können die Priorität des Ergebnistyps in der Listenansicht definieren.
   
 ### <a name="create-a-result-type-at-the-organization-level"></a>Erstellen eines Ergebnistyps auf Organisationsebene
 
 1. Wechseln [Sie](https://admin.microsoft.com)im Microsoft 365 Admin Center zu [**Ergebnistypen.**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)
-2. Wenn Sie einen Ergebnistyp hinzufügen **möchten,** wählen Sie **"Hinzufügen"** aus. Um einen Ergebnistyp zu bearbeiten, wählen Sie den Ergebnistyp in der entsprechenden Liste aus.
+2. Um einen Ergebnistyp hinzuzufügen, wählen Sie **Hinzufügen** aus. Um einen Ergebnistyp zu bearbeiten, wählen Sie den Ergebnistyp aus der entsprechenden Liste aus.
 
-### <a name="create-a-results-type-at-the-site-level"></a>Erstellen eines Ergebnistyps auf Websiteebene
+### <a name="create-a-result-type-at-the-site-level"></a>Erstellen eines Ergebnistyps auf Websiteebene
 
-1. Wechseln Sie auf der [SharePoint](https://sharepoint.com/) Website, auf der Sie den Ergebnistyp erstellen möchten, zu **Einstellungen**.
-2. Wählen Sie **Websiteinformationen aus,** und zeigen Sie dann **alle Websiteeinstellungen an.**
-3. Suchen Sie nach dem Abschnitt Microsoft Search, und wählen Sie dann **konfigurieren Microsoft Search für diese Websitesammlung** aus.
+1. Wechseln Sie auf der [SharePoint](https://sharepoint.com/) Website, auf der Sie den Ergebnistyp verwenden möchten, zu **Einstellungen**.
+2. Wählen Sie **"Websiteinformationen"** und dann **"Alle Websiteeinstellungen anzeigen"** aus.
+3. Suchen Sie nach dem **Abschnitt Microsoft Search,** und wählen Sie dann **Microsoft Search für diese Websitesammlung** konfigurieren aus.
 4. Wechseln Sie im Navigationsbereich zu **"Benutzerdefinierte Oberfläche",** und wählen Sie die Registerkarte **"Ergebnistyp" aus.**
 5. Um einen Ergebnistyp hinzuzufügen, wählen Sie **Hinzufügen** aus.  Oder wählen Sie zum Bearbeiten eines Ergebnistyps den Ergebnistyp in der Liste aus.
 
-## <a name="step-3-view-the-vertical-after-its-enabled"></a>SCHRITT 3: Anzeigen der Vertikalen nach der Aktivierung
+## <a name="step-3-view-the-vertical-after-its-enabled"></a>Schritt 3: Anzeigen der Vertikalen nach der Aktivierung
 
-Nachdem Sie die Vertikale aktiviert haben, dauert es einige Stunden, bis Sie sie anzeigen können. Wenn Sie nach der Aktivierung nicht warten möchten, können Sie **cacheClear=true** an die URL in [SharePoint](https://sharepoint.com/) anfügen und [Office,](https://office.com) um die Vertikale sofort anzuzeigen. Fügen [Sie für Bing](https://bing.com)&**features=uncachedVerticals** an die vertikale URL "Arbeit" an, um die Vertikalen sofort anzuzeigen.
+Nachdem Sie die Vertikale aktiviert haben, gibt es eine Verzögerung von einigen Stunden, bevor Sie sie anzeigen können. Sie können die URL jedoch `cacheClear=true` in SharePoint anfügen und Office, um die Vertikale sofort anzuzeigen. Fügen Sie Bing sofort an die Anfügeliste `&features=uncachedVerticals` `Work vertical URL` an, um die Vertikale anzuzeigen.
 
 > [!NOTE]
-> Hinzugefügte Vertikale sind auf [SharePoint](https://sharepoint.com/) und [Office](https://office.com) nicht sichtbar, wenn sie in mobilen Webbrowsern angezeigt werden.
+> Hinzugefügte Vertikale sind auf SharePoint]( https://sharepoint.com/) und [Office](https://office.com) nicht sichtbar, wenn sie von mobilen Webbrowsern angezeigt werden.
 
 ## <a name="profile-query-variables"></a>Profilabfragevariablen
 
-Abfragevariablen werden im KQL-Abfrageabschnitt einer Vertikalen verwendet, um dynamische Daten als Eingabe für die Abfrage einer Vertikalen bereitzustellen. Sie können Profilabfragevariablen verwenden, um die Suchergebnisse für den angemeldeten Benutzer kontextbezogen zu gestalten. Profilabfragevariablen rufen Werte aus dem [Profil](/graph/api/resources/profile?view=graph-rest-beta)des angemeldeten Benutzers ab.
+Verwenden Sie Variablen im KQL-Abfrageabschnitt einer Vertikalen, um dynamische Daten als Eingabe für die Abfrage einer Vertikalen bereitzustellen. Sie können Profilabfragevariablen verwenden, um die Suchergebnisse für den angemeldeten Benutzer kontextbezogen zu gestalten. Profilabfragevariablen rufen Werte aus dem [Profil](/graph/api/resources/profile)des angemeldeten Benutzers ab.
 
-Wenn Sie z. B. eine Vertikale "Tickets" erstellen möchten, in der ein angemeldeter Benutzer nach zugewiesenen Supporttickets suchen kann, können Sie während der vertikalen Erstellung auf der Verwaltungsseite die folgende Abfrage im Abschnitt "Abfrage" angeben.  
+Um beispielsweise eine "Tickets"-Vertikale zu erstellen, damit der Benutzer Supporttickets findet, die ihm zugewiesen sind, können Sie die folgende Abfrage im Abschnitt "Abfrage" während der vertikalen Erstellung auf der Verwaltungsseite angeben:  
 
-**AssignedTo:{Profile.accounts.userPrincipalName}**
+`AssignedTo:{Profile.accounts.userPrincipalName}`
 
-Dadurch werden die Suchergebnisse eingegrenzt, um nur die Elemente anzuzeigen, bei denen der Zugewiesene der Benutzer ist, der die Suche ausführt.
+In dieser Sprache werden die Suchergebnisse eingegrenzt, sodass nur die Elemente angezeigt werden, für die der Zugewiesene der Benutzer ist, der die Suche ausführt.
 
-[Profilressource](/graph/api/resources/profile?view=graph-rest-beta) macht Eigenschaften als Sammlungen verfügbar. Beispielsweise werden Informationen im Zusammenhang mit E-Mail-Adressen über die E-Mail-Sammlung, Arbeitspositionen als Positionssammlung usw. verfügbar gemacht. Alle im Benutzerprofil verfügbaren Eigenschaften, die AAD als Quelltyp aufweisen, werden als Abfragevariablen verfügbar gemacht.
+[Profilressource](/graph/api/resources/profile) macht Eigenschaften als Sammlungen verfügbar. Beispielsweise werden Informationen im Zusammenhang mit E-Mail-Adressen über die E-Mail-Sammlung, Arbeitspositionen als Positionssammlung usw. verfügbar gemacht. Alle im Benutzerprofil verfügbaren Eigenschaften, die AAD als Quelltyp aufweisen, werden als Abfragevariablen verfügbar gemacht.
 
-Betrachten Sie einen Benutzer mit drei E-Mail-Adressen, die in der E-Mail-Sammlung verfügbar sind, wie unten dargestellt.
+
+Betrachten Sie einen Benutzer, der drei E-Mail-Adressen in der E-Mail-Sammlung zur Verfügung hat, wie hier gezeigt:
 
 ```json
 "emails": [{ 
@@ -172,33 +177,33 @@ Betrachten Sie einen Benutzer mit drei E-Mail-Adressen, die in der E-Mail-Sammlu
 ] 
 ```
 
-- Die Abfrage **"MyProperty: {Profile.emails.address}"** wird in "MyProperty" aufgelöst: "Megan.Bowen@contoso.com".  
+- Die Abfrage `MyProperty: {Profile.emails.address}` wird in *"MyProperty" aufgelöst: "Megan.Bowen@contoso.com".*  
 
-- Wenn Sie alle Werte des Adressattributs auflösen möchten, müssen Sie die Mehrwerterweiterungssyntax verwenden. Die Abfrage **{| MyProperty:{Profile.emails.address}}** wird in ((MyProperty:"Megan.Bowen@contoso.com") OR (MyProperty: "meganb@hotmail.com") OR (MyProperty:"meganb@outlook.com")) aufgelöst.  
+- Verwenden Sie die Mehrwerterweiterungssyntax, um alle Werte des Adressattributs aufzulösen. Die Abfrage `{|MyProperty:{Profile.emails.address}}` wird in *((MyProperty:"Megan.Bowen@contoso \. com")* oder *(MyProperty: "meganb@hotmail \. com")* oder  *(MyProperty:"meganb@outlook \. com"))* aufgelöst.
 
-Der Operator "|" sollte zum Auflösen von Mehrwertvariablen verwendet werden. Weitere Beispiele zur Profilerweiterung finden Sie in der folgenden Tabelle.
+Verwenden Sie den Operator "|", um Mehrwertvariablen aufzulösen. Weitere Beispiele für die Profilerweiterung finden Sie in der folgenden Tabelle.
 
 | #         | Syntax |  Zurückgegebener Wert  |
 | --------- | ------ | --- |
-| 1     | MyProperty:{Profile.emails.address}  |   "Megan.Bowen@contoso.com"  |
-| 2  | MyProperty:{Profile.emails}   |    {Profile.emails} Dies wird nicht aufgelöst, da E-Mails ein Objekt sind.|
-| 3     | {? MyProperty:{Profile.emails}}  |  Dies wird nicht aufgelöst, da E-Mails ein Objekt sind. Das "?" -Operator ignoriert Abfragevariablen, die nicht aufgelöst werden. Diese Variable wird entfernt, wenn sie weiter unten im Abfragestapel übergeben wird.   |
-| 4  | {&#124;MyProperty: {Profile.emails.source.Type}}    |  ((MyProperty:"official") OR (MyProperty:"non-official") OR (MyProperty:"personal"))    |
+| 1    | MyProperty:{Profile.emails.address}  |   "Megan \. Bowen@contoso.com"  |
+| 2 | MyProperty:{Profile.emails}   |    {Profile.emails} Dies wird nicht aufgelöst, da *E-Mails* ein Objekt sind.|
+| 3    | {? MyProperty:{Profile.emails}}  |  Dies wird nicht aufgelöst, da *E-Mails* ein Objekt sind. Das "?" -Operator ignoriert Abfragevariablen, die nicht aufgelöst werden. Diese Variable wird entfernt, wenn sie weiter unten im Abfragestapel übergeben wird.   |
+| 4  | {&#124;MyProperty: {Profile.emails.source.Type}}    |  ((MyProperty:"official") oder (MyProperty:"non-official") oder (MyProperty:"personal"))    |
 
 > [!NOTE]
 >
 > - Profilabfragevariablen werden nur für benutzerdefinierte Vertikale unterstützt, die einen [Connector](connectors-overview.md) als Inhaltsquelle verwenden.
 > - Profilabfragevariablen werden im Abschnitt "Abfrage" des [vertikalen Einrichtungsprozesses](customize-search-page.md#step-1-create-the-search-vertical)definiert.
-> - Profilabfragevariablen befinden sich derzeit in der Vorschau. Weitere Informationen zur Vorschau finden Sie unter [Connectors Preview Features](connectors-overview.md#what-are-the-preview-features).
+> - Das Feature "Profilabfragevariablen" befindet sich derzeit in der Vorschau. Weitere Informationen zur Vorschau finden Sie unter [Connectors Preview Features](connectors-overview.md#what-are-the-preview-features).
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
 Hier ist eine Liste der häufig auftretenden Probleme und Aktionen zur Behebung dieser Probleme.
 
-|Fehler  |Maßnahme  |
+|Problem  |Aktion  |
 |---------|---------|
-| Ich sehe die Fehlermeldung "Etwas ist schief gelaufen" in der Vertikalen. | Zum Abschließen des Setups sind sowohl die vertikalen als auch die Ergebnistypen erforderlich. Stellen Sie sicher, dass Sie beide für dieselbe Inhaltsquelle erstellt haben. |
-| Ich sehe mein Ergebnislayout nicht, obwohl ich eins erstellt habe. | Es dauert einige Minuten, da diese Einstellungen im Allgemeinen zwischengespeichert werden. Warten Sie einige Minuten, und versuchen Sie es erneut.        |
+| Ich sehe die Fehlermeldung "Etwas ist schief gelaufen" in der Vertikalen. | Zum Abschließen des Setups sind sowohl der vertikale als auch der Ergebnistyp erforderlich. Stellen Sie sicher, dass Sie beide für dieselbe Inhaltsquelle erstellt haben. |
+| Ich sehe mein Ergebnislayout nicht, obwohl ich eins erstellt habe. | Es kann zu einer Verzögerung von einigen Minuten kommen, da diese Einstellungen zwischengespeichert werden. Warten Sie einige Minuten, und versuchen Sie es erneut.        |
 | Ich sehe keine Inhaltsquellen auf der vertikalen Seite oder auf der Ergebnistypseite. | Stellen Sie sicher, dass Sie Connectors und indizierte Daten konfiguriert haben.   |
 
 ## <a name="next-steps"></a>Nächste Schritte

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Schritte zum Zuordnen von AAD-Identitäten
-ms.openlocfilehash: 676e06d4019dabe0f07846dd8918b8070765a7ffd9deb02b11dd68f2014dc7e5
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 69d4164e6d0acc245eee5c631db39ed7fb178325
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532807"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470296"
 ---
 # <a name="map-your-azure-ad-identities"></a>Zuordnen Ihrer Azure AD-Identitäten   
 
@@ -34,7 +34,7 @@ Diese Schritte sind nur für Suchadministratoren relevant, die einen [Salesforce
 
 Sie können die Azure AD-Eigenschaften auswählen, die Sie benötigen, um sie der Verbund-ID zuzuordnen.
 
-Sie können eine Azure AD-Benutzereigenschaft aus der Dropdownliste auswählen. Sie können auch beliebig viele Azure AD-Benutzereigenschaften hinzufügen, wenn diese Eigenschaften erforderlich sind, um die Zuordnung der Verbund-ID für Ihre Organisation zu erstellen.
+Sie können in der Dropdownliste eine Azure AD-Benutzereigenschaft auswählen. Sie können auch beliebig viele Azure AD-Benutzereigenschaften hinzufügen, wenn diese Eigenschaften erforderlich sind, um die Zuordnung der Verbund-ID für Ihre Organisation zu erstellen.
 
 ### <a name="2-create-formula-to-complete-mapping"></a>2. Erstellen einer Formel zum Abschließen der Zuordnung
 
@@ -58,7 +58,7 @@ Nachdem Sie Ihre Formel bereitgestellt haben, können Sie optional auf **"Vorsch
 
 Eine Beispiel-Azure AD-Zuordnung finden Sie unten in der Momentaufnahme.
 
-![Beispielmomentaufnahme zum Ausfüllen der Azure AD-Zuordnungsseite](media/aad-mapping.png)
+![Beispielmomentaufnahme zum Ausfüllen der Azure AD-Zuordnungsseite.](media/aad-mapping.png)
 
 ## <a name="limitations"></a>Einschränkungen  
 

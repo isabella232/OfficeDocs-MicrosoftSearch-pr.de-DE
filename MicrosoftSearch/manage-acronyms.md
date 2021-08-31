@@ -11,13 +11,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Erstellen und Aktualisieren von Akronymenantworten in Microsoft Search
-ms.openlocfilehash: 14b46e8f689a4df1e41d1852f49157faf67f7fdece2fa09fb740b5652d719a34
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+description: Erstellen und Aktualisieren von Akronymen-Antworten in Microsoft Search
+ms.openlocfilehash: 3b0f87fb252c3e88160f1b3753aad09b1e3f5083
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532920"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470248"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Verwalten von Akronymen-Antworten in Microsoft Search
 
@@ -27,14 +27,14 @@ Organisationen verfügen nicht immer über eine einzige Referenz für ihre Stand
 
 ## <a name="what-users-experience"></a>Benutzerfreundlichkeit
 
-Microsoft Search Benutzer können Definitionen mit Akronymen in [Bing,](https://Bing.com) [SharePoint](https://products.office.com/sharepoint/collaboration)und [Office 365](https://Office.com)abrufen. Im **Suchfeld** geben Benutzer Abfragen wie die folgenden Beispiele ein:
+Microsoft Search Benutzer können Definitionen mit Akronymen in [Bing,](https://Bing.com) [SharePoint,](https://products.office.com/sharepoint/collaboration) [Office 365,](https://Office.com)Outlook im Web, Outlook Mobile (Android) und Teams Mobile (iOS und Android) abrufen. Im **Suchfeld** geben Benutzer Abfragen wie die folgenden Beispiele ein:
 
-- *Was ist* Dnn
-- *Definieren* Dnn
+- *Was ist* DNN
+- *Definieren* DNN
 - DNN-Definition 
-- *Erweitern* Dnn
+- *Erweitern* DNN
 - DNN-Erweiterung 
-- *Bedeutung von* Dnn
+- *Bedeutung von* DNN
 - DNN *bedeutet*
 - DNN *steht für*
 
@@ -47,10 +47,10 @@ Das Ergebnis enthält alle Bedeutungen von DNN, die innerhalb der Organisation d
 
 Wechseln [Sie](https://admin.microsoft.com)im Microsoft 365 Admin Center zu [**Akronyme,**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)und wählen Sie dann **Akronyme hinzufügen** aus.
 
-Microsoft Search fragt zwei Datenquellen ab, um Akronyme für die Suche der Benutzer bereitzustellen:
+Microsoft Search fragt zwei Datenquellen ab, um Akronyme antworten auf die Suchvorgänge der Benutzer bereitzustellen:
 
 1. **Vom Administrator zusammengestellt.** Bereitgestellt von IT-Administratoren im [Admin Center.](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)
-2. **Vom System zusammengestellt.** Ermittelt durch Microsoft Search aus den E-Mails und Dokumenten der Benutzer sowie aus öffentlich verfügbaren Daten innerhalb der Organisation.
+2. **Vom System zusammengestellt.** Entdeckt durch Microsoft Search aus den E-Mails und Dokumenten der Benutzer sowie aus öffentlich verfügbaren Daten innerhalb der Organisation.
 
 ### <a name="set-up-admin-curated-acronyms"></a>Einrichten von vom Administrator zusammengestellten Akronymen
 
@@ -59,17 +59,17 @@ Suchadministratoren können Akronyme auf der [Registerkarte "Akronyme"](https://
 **Veröffentlichter Status**. Akronyme stehen den Benutzern der Organisation über Microsoft Search zur Verfügung.
 
 > [!NOTE]
-> Es kann bis zu drei Tage dauern, bis Akronyme, die dem Status "Veröffentlicht" hinzugefügt wurden, in Microsoft Search verfügbar sind.
+> Es dauert bis zu einem Tag, bis Akronyme, die dem Status "Veröffentlicht" hinzugefügt wurden, in Microsoft Search verfügbar sind.
 
 **Entwurfsstatus**. Wenn Sie ein Akronym überprüfen möchten, bevor Sie es in Microsoft Search verfügbar machen, können Sie das Akronym in einem Entwurfsstatus hinzufügen. Akronyme im Status "Entwurf" werden in den Suchergebnissen nicht angezeigt. Sie müssen das Akronym in den Status "Veröffentlicht" verschieben, damit es in den Suchergebnissen angezeigt wird.
 
-**Ausgeschlossener Zustand**. Wenn Sie verhindern möchten, dass ein Akronym in Microsoft Search angezeigt wird, verwenden Sie ein **Akronym ausschließen,** um es hinzuzufügen. Um zu verhindern, dass ein Akronym ausgeschlossen wird, müssen Sie das ausgeschlossene Akronym löschen und hinzufügen oder überprüfen, ob es in Ihrer veröffentlichten Liste enthalten ist.
+**Ausgeschlossener Zustand**. Wenn Sie verhindern möchten, dass ein Akronym in Microsoft Search angezeigt wird, verwenden Sie **ein Akronym ausschließen,** um es hinzuzufügen. Um zu verhindern, dass ein Akronym ausgeschlossen wird, müssen Sie das ausgeschlossene Akronym löschen und hinzufügen oder überprüfen, ob es in Ihrer veröffentlichten Liste enthalten ist.
 
 Sie können Akronyme einzeln hinzufügen oder in einer CSV-Datei massenimportieren. Hochladen eine CSV-Datei mit den in der folgenden Tabelle angezeigten Feldern:
 
 | Akronym (verpflichtend) | Steht für (Verpflichtend) | Url | Beschreibung  | Status (verpflichtend) | Zuletzt geändert | Zuletzt geändert von | Id |
 | --------- | --------- | --------- | ---------- | --------- |--------- |--------- |--------- |
-| *Xxx* | *Rechtschreibweise Abkürzung* | *Source* |  | *Veröffentlicht, Entwurf oder ausgeschlossen* |  |  |  |
+| *XXX* | *Rechtschreibweise Abkürzung* | *Source* |  | *Veröffentlicht, Entwurf oder ausgeschlossen* |  |  |  |
 
 ### <a name="csv-fields"></a>CSV-Felder
 
@@ -106,13 +106,17 @@ Microsoft Search stellt sicher, dass nur Benutzer mit Zugriff und Berechtigungen
 
 **A:** Die Rangfolge der Ergebnisse kann von Person zu Person variieren, da die Ergebnisse für jeden Benutzer personalisiert werden. Keine dieser Kategorien hat immer Vorrang vor der anderen.
 
-**F: Wie lange dauert es, bis von Administratoren zusammengestellte Akronyme in Microsoft Search nach der Veröffentlichung sichtbar sind?**
-
-**A:**  Es dauert bis zu einem Tag, bis Akronyme, die dem Status "Veröffentlicht" hinzugefügt wurden, in Microsoft Search verfügbar sind.
-
 **F: Wie lösen Benutzer Akronyme aus?**
 
-**A:** Um Akronyme zu erhalten, müssen Benutzer bestimmte Abfragemuster in ein [Bing-,](https://bing.com) [SharePoint-](https://products.office.com/sharepoint/collaboration)oder [Office 365](https://Office.com) **Suchfeld** eingeben.
+**A:** Um Akronyme antworten zu können, müssen Benutzer bestimmte Abfragemuster in ein **Suchfeld** [für Bing,](https://bing.com) [SharePoint,](https://products.office.com/sharepoint/collaboration) [Office 365,](https://Office.com)Outlook im Web, Outlook Mobile (Android) oder Teams Mobile (iOS und Android) eingeben.
+
+**F: Können Benutzer bei der Suche nur das Akronym eingeben?**
+
+**A:** Auf Bing können Benutzer jetzt Akronyme finden, indem sie nach einem Akronym suchen. Ein Schlüsselwort wird nicht mehr benötigt. Dieselbe Erfahrung wird auch für andere Microsoft Search Einstiegspunkte in Phasen aktiviert.
+
+**F: Wie lange dauert es, bis von Administratoren zusammengestellte Akronyme in Microsoft Search sichtbar sind, nachdem sie veröffentlicht wurden?**
+
+**A:** Es dauert bis zu einem Tag, bis Akronyme, die dem Status "Veröffentlicht" hinzugefügt wurden, in Microsoft Search verfügbar sind.
 
 **F: Wie lange dauert es, bis vom System zusammengestellte Akronyme angezeigt werden, nachdem Sie eine neue E-Mail oder ein neues Dokument erhalten oder gesendet haben?**
 
@@ -124,7 +128,7 @@ Microsoft Search stellt sicher, dass nur Benutzer mit Zugriff und Berechtigungen
 
 **F: Wie lange dauert es, bis ein Akronym von Microsoft Search Ergebnissen ausgeschlossen wird?**
 
-**A:** Es dauert bis zu einem Tag, bis ein ausgeschlossenes Akronym nicht mehr in suchergebnissen angezeigt wird.
+**A:** Es dauert bis zu einem Tag, bis ein ausgeschlossenes Akronym nicht mehr in den Suchergebnissen angezeigt wird.
 
 **F: Müssen Dokumente für vom System zusammengestellte Akronyme in einem bestimmten Format vorliegen?**
 

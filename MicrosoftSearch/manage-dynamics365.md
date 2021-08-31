@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: mssearch
 localization_priority: Normal
 description: Verwalten der Darstellung von Dynamics 365-Inhalten in Suchergebnissen
-ms.openlocfilehash: d2874febe39abf68653fa82d6a50121ebd1a357b
-ms.sourcegitcommit: fbe565b1a8994425b4f7ff0114a69044659e3892
+ms.openlocfilehash: ff7b1d86716233910ba6c1ba3141fbe13beb5a98
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58380033"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470230"
 ---
 # <a name="dynamics-365-federation-search-preview"></a>Dynamics 365-Verbundsuche (Vorschau)
 
@@ -43,13 +43,13 @@ Dynamics 365-Antworten werden in suchergebnissen in allen Microsoft Search Canva
 
 :::image type="content" alt-text="Screenshot der Dynamics 365-Antworten auf SharePoint, Bing und Office" source="media/dynamics365/dynamics365-answer.png" lightbox="media/dynamics365/dynamics365-answer.png":::
 
-Aus der Antwort ist es einfach, weitere Dynamics 365-Suchergebnisse mithilfe des Links **"Weitere Dynamics 365-Ergebnisse"** anzuzeigen. Sie führt Benutzer zu einer dedizierten Dynamics 365-Ergebnisseite mit weiteren ergebnissen, die für ihre Abfrage relevant sind.
+Aus der Antwort ist es einfach, weitere Dynamics 365-Suchergebnisse mithilfe des Links **"Weitere Dynamics 365-Ergebnisse"** anzuzeigen. Sie führt Benutzer zu einer dedizierten Dynamics 365-Ergebnisseite mit weiteren Ergebnissen, die für ihre Abfrage relevant sind.
 
 :::image type="content" alt-text="Screenshot der vertikalen Dynamics 365-Branche und Ergebnisse zu SharePoint, Bing und Office" source="media/dynamics365/dynamics365-vertical.png" lightbox="media/dynamics365/dynamics365-vertical.png":::
 
 Durch Klicken oder Tippen auf ein beliebiges Ergebnis wird Dynamics 365 geöffnet und die detaillierten Informationen angezeigt.
 
-:::image type="content" alt-text="Screenshot der Detailseite in Dynamics 365" source="media/dynamics365/dynamics365-detail-page.png" lightbox="media/dynamics365/dynamics365-detail-page.png":::
+:::image type="content" alt-text="Screenshot der Detailseite in Dynamics 365." source="media/dynamics365/dynamics365-detail-page.png" lightbox="media/dynamics365/dynamics365-detail-page.png":::
 
 Unabhängig davon, wo Ihre Benutzer mit der Suche beginnen, ist ihre Oberfläche konsistent und ermöglicht es ihnen, schnell die relevantesten Dynamics 365-Ergebnisse zu finden. Sehen Sie sich unser Microsoft Build 2021-Video für eine Demonstration an.
 
@@ -97,6 +97,6 @@ Mit dieser einfachen Konfiguration können Sie die Dynamics 365-Verbundsuche fü
 
 7. Wählen Sie **"Speichern"** aus, um die Verbindungseinrichtung abzuschließen.
 
-:::image type="content" alt-text="Screenshot des Dynamics 365-Einrichtungsbereichs im Microsoft 365 Admin Center" source="media/dynamics365/dynamic365-connection-setup.png" lightbox="media/dynamics365/dynamic365-connection-setup.png":::
+:::image type="content" alt-text="Screenshot des Dynamics 365-Einrichtungsbereichs im Microsoft 365 Admin Center." source="media/dynamics365/dynamic365-connection-setup.png" lightbox="media/dynamics365/dynamic365-connection-setup.png":::
 
 Wenn die Einrichtung abgeschlossen ist, werden Dynamics 365-Antworten und -Vertikalen nur für Benutzer mit einer gültigen Dynamics 365-Lizenz und Zugriff auf die verbundene Dynamics 365-Umgebung angezeigt. Sie können jederzeit zu diesen Einstellungen zurückkehren und die Verbindungsendpunktumgebung ändern oder die Verbindung deaktivieren.

@@ -6,19 +6,19 @@ manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: ee40010e-5d7f-4ba8-a3f8-d240dab3af6d
 description: Erfahren Sie, wie Sie Bing als Standardsuchmaschine Ihres Unternehmens für Microsoft Search festlegen.
-ms.openlocfilehash: 7ad9ff2a0fde5ad5d84a7a51785767fd2e5d21df6654a76b09e9796917a92a0f
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 5feef972d5c61c9cefba6981084e005271b39f15
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54534194"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701903"
 ---
 # <a name="make-bing-the-default-search-engine"></a>Festlegen von Bing als Standardsuchmaschine
   
@@ -30,7 +30,7 @@ Auch wenn Sie Bing als Standardsuchmaschine festgelegt haben, können Benutzer u
   
 Die neuesten ADMX-Dateien für verschiedene Windows-Versionen finden Sie unter [Erstellen und Verwalten des zentralen Speichers für administrative Vorlagen für Gruppenrichtlinien unter Windows](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra).
   
-Wenn die in diesem Abschnitt beschriebene Einstellung in der Gruppenrichtlinien-Verwaltungskonsole nicht zu finden ist, laden Sie die entsprechende ADMX herunter, und kopieren Sie sie in den zentralen Speicher. Weitere Informationen finden Sie unter [Bearbeiten Domain-Based GPOs mithilfe von ADMX-Dateien.](/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29) Der zentrale Speicher auf dem Controller ist ein Ordner mit der folgenden **Benennungskonvention: %systemroot%\sysvol \\<domäne \> \policies\PolicyDefinitions**
+Wenn die in diesem Abschnitt beschriebene Einstellung in der Gruppenrichtlinien-Verwaltungskonsole nicht zu finden ist, laden Sie die entsprechende ADMX herunter, und kopieren Sie sie in den zentralen Speicher. Weitere Informationen finden Sie unter [Bearbeiten Domain-Based GPOs mithilfe von ADMX-Dateien.](/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29) Der zentrale Speicher auf dem Controller ist ein Ordner mit der folgenden **Benennungskonvention: %systemroot%\sysvol \\<domain \> \policies\PolicyDefinitions**
   
 Jede Domäne, die Ihr Controller verarbeitet, sollte einen separaten Ordner erhalten. Mit dem folgenden Befehl kann die ADMX-Datei aus der Befehlszeile kopiert werden:
   
@@ -48,7 +48,7 @@ Benutzer können die Standardsuchmaschine nicht mehr ändern, nachdem diese Rich
   
 Chrome verfügt über einen eigenen Satz von Gruppenrichtlinieneinstellungen, die in Form einer ADMX-Datei von [Google Chrome Enterprise Hilfe](https://support.google.com/chrome/a/answer/187202)heruntergeladen werden können.
   
-Kopieren Sie die Vorlagendatei in einen zentralen Speicher für ADMX-Dateien auf dem Domänencontroller. Weitere Informationen finden Sie unter [Bearbeiten Domain-Based GPOs mithilfe von ADMX-Dateien.](/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29) Der zentrale Speicher auf dem Controller ist ein Ordner mit der folgenden **Benennungskonvention: %systemroot%\sysvol \\<domäne \> \policies\PolicyDefinitions**
+Kopieren Sie die Vorlagendatei in einen zentralen Speicher für ADMX-Dateien auf dem Domänencontroller. Weitere Informationen finden Sie unter [Bearbeiten Domain-Based GPOs mithilfe von ADMX-Dateien.](/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29) Der zentrale Speicher auf dem Controller ist ein Ordner mit der folgenden **Benennungskonvention: %systemroot%\sysvol \\<domain \> \policies\PolicyDefinitions**
   
 Jede Domäne, die Ihr Controller verarbeitet, sollte einen separaten Ordner erhalten. Mit dem folgenden Befehl kann die ADMX-Datei aus der Befehlszeile kopiert werden:
   
@@ -89,7 +89,7 @@ Windows-Registrierungs-Editor, Version 5.00
   
 Doppelklicken Sie auf die erstellte Datei, und befolgen Sie die Schritte zum Importieren der Datei. Nach einem erfolgreichen Import wird der folgende Dialog angezeigt:
   
-![Nachricht: Registrierungs-Editor erfolgreich importiert](media/ea3686b9-f6d7-481e-9a0d-2c96891bc501.png)
+![Meldung für erfolgreichen Import des Registrierungs-Editors.](media/ea3686b9-f6d7-481e-9a0d-2c96891bc501.png)
   
 ### <a name="step-2-open-the-group-policy-management-console-gpmcmsc-and-switch-to-editing-an-existing-policy-or-creating-a-new-one"></a>SCHRITT 2: Öffnen Sie die Gruppenrichtlinien-Verwaltungskonsole (gpmc.msc), und wechseln Sie zum Bearbeiten einer vorhandenen Richtlinie oder zum Erstellen einer neuen.
 
@@ -98,7 +98,7 @@ Doppelklicken Sie auf die erstellte Datei, und befolgen Sie die Schritte zum Imp
 3. Navigieren Sie zu **HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer\SearchScopes**.
 4. Wählen Sie aus diesem Schlüssel DefaultScope aus.
 
-    ![Im Registrierungsbrowser wurde DefaultScope ausgewählt](media/ec5a450d-0cba-4e9c-acba-1a09e8e90bad.png)
+    ![Registrierungsbrowser mit aktivierter DefaultScope-Option.](media/ec5a450d-0cba-4e9c-acba-1a09e8e90bad.png)
 5. Überprüfen Sie alle untergeordneten Schlüssel, die die GUID für Microsoft Search in Bing enthalten, und jeden Wert unter dem Schlüssel mit Ausnahme von Pfaden zu Benutzerprofilen. Scrollen Sie nach unten, um weitere Elemente auszuwählen.
 6. Klicken Sie auf Fertig stellen, um die Konfiguration abzuschließen.
 

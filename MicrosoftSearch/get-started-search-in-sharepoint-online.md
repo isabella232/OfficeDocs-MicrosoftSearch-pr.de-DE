@@ -6,18 +6,18 @@ manager: mnirkhe
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Erste Schritte für Ihre Organisation mithilfe von Microsoft Search in SharePoint Online
-ms.openlocfilehash: ec1686937b835abaac46e2a67e9a3a16ac672a35bce87f47ea1fa59fe0f59f1f
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: b506c2259b514b604f4285d3ec8351ce9ac860db
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533923"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702129"
 ---
 # <a name="get-started-with-microsoft-search-in-sharepoint"></a>Erste Schritte mit Microsoft Search in SharePoint
 
@@ -28,7 +28,7 @@ Microsoft Search in SharePoint ist die moderne Suchumgebung in [SharePoint Onlin
 
 Um Ihre Organisation mit Microsoft Search in SharePoint zu beginnen, führen Sie die Schritte in den folgenden Abschnitten aus.
 
-## <a name="prepare-for-microsoft-search-in-sharepoint"></a>Vorbereiten auf Microsoft Search in SharePoint
+## <a name="prepare-for-microsoft-search-in-sharepoint"></a>Vorbereiten der Microsoft Search in SharePoint
 
 Benutzer können nur [SharePoint](http://sharepoint.com/) indizierten Inhalt finden. Microsoft Search und die klassische Suche verwenden denselben Index für SharePoint Inhalte, der automatisch durchforstet und indiziert wird. 
 
@@ -43,7 +43,7 @@ Um eine bessere Suchumgebung zu erzielen, beeinflussen Sie Ihre Organisation, mo
 
 ## <a name="promote-searching-from-the-sharepoint-start-page"></a>Bewerben der Suche über die SharePoint Startseite
 
-Vermitteln Sie Ihren Benutzern die Suche über die [SharePoint](http://sharepoint.com/) Startseite anstelle des klassischen [Suchcenters.](/sharepoint/manage-search-center) Erwägen Sie, Ihr klassisches Suchcenter für Benutzer auszublenden.
+Bringen Sie Ihren Benutzern bei, über die [SharePoint](http://sharepoint.com/) Startseite anstelle des klassischen [Suchcenters](/sharepoint/manage-search-center)zu suchen. Erwägen Sie, Ihr klassisches Suchcenter für Benutzer auszublenden.
 
 ## <a name="see-also"></a>Siehe auch
 [Übersicht über Microsoft Search ](overview-microsoft-search.md)

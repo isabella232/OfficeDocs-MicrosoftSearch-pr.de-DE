@@ -1,7 +1,7 @@
 ---
-title: Verwalten benutzerdefinierter Filter
-ms.author: rodhb
-author: rodhb
+title: Verwalten von Filtern
+ms.author: v-revathib
+author: revathi-b
 manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
@@ -11,55 +11,69 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Verwalten benutzerdefinierter Filter
-ms.openlocfilehash: 256cf9748aa3050aacf48c3562f6f84b4ba2e460
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+description: Verwalten von Filtern für die Verwendung im SERP
+ms.openlocfilehash: da8c93f4faef7d52862db7464f61fd8e2cbd9fdf
+ms.sourcegitcommit: b69da84c97ea14fd4706d24522a1e324b6798f91
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235924"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58674776"
 ---
-# <a name="manage-custom-filters"></a>Verwalten benutzerdefinierter Filter
+# <a name="manage-filters"></a>Verwalten von Filtern
 
-Sie können Filter verwenden, um die Microsoft Search Anzupassen. Mithilfe von Filtern können Benutzer die Ergebnisse ihrer Suchabfrage schnell verfeinern.
+Mithilfe von Filtern können Benutzer die Ergebnisse ihrer Abfragen verfeinern und die optimierten Ergebnisse anzeigen. Sie können die Filter anpassen, die Ihren Benutzern in der Microsoft Search-Umgebung zur Verfügung stehen.
 
-Ein benutzerdefinierter Filter kann in einer Vertikalen basierend auf einer Verbindungseigenschaft erstellt werden. Sie können z. B. einen **Filter "Veröffentlicht auf"** für die ServiceNow-Verbindung innerhalb einer Vertikalen erstellen.
+Auf der Suchseite stehen zwei Filtertypen zur Verfügung.
+
+- Out-of-the-Box-Filter
+- Benutzerdefinierte Filter
 
 > [!NOTE]
 > Benutzerdefinierte Filter befinden sich derzeit in der Vorschau für Administratoren und Endbenutzer in targeted Release. Weitere Informationen zur Vorschau finden Sie unter [Connectors Preview Features](connectors-overview.md#what-are-the-preview-features).
 
-## <a name="create-a-filter-in-an-organizational-level-vertical"></a>Erstellen eines Filters auf vertikaler Ebene auf Organisationsebene
+## <a name="out-of-the-box-filters"></a>Out-of-the-Box-Filter
 
-Gehen Sie folgendermaßen vor, um einen Filter für Microsoft Search zu erstellen:
+Sofort einsatzbereite Filter sind standardmäßig in Such-Vertikalen wie "Alle", "Dateien", "Bilder" und "News" verfügbar. In den Vertikalen "Alle" und "Datei" wird der Filter "Dateityp" für die FileType-Eigenschaft und der Filter "Zuletzt geändert" in der LastModifiedTime-Eigenschaft angezeigt. Diese Filter sind in SharePoint Home, Office.com, SharePoint Sites und Work vertical in Bing verfügbar.
 
-1. Wechseln Sie im Microsoft 365 Admin Center zu ["Vertikalen".](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)
-1. Erstellen/Bearbeiten der Vertikalen, in der Sie den Filter erstellen möchten
-1. Navigieren Sie im Assistenten zum Schritt "Filter".
-1. Klicken Sie auf "Filter hinzufügen" und erste Schritte
-1. Nach dem Hinzufügen von Filtern können Sie die Vertikale überprüfen und speichern.
+## <a name="custom-filters"></a>Benutzerdefinierte Filter
 
-## <a name="things-to-consider"></a>Zu berücksichtigende Aspekte
+Filter können benutzerdefinierten Such-Vertikalen auf Organisations- und Websiteebene hinzugefügt werden. Verfeinerbare verwaltete Eigenschaften werden verwendet, um Filter im Assistenten für die vertikale Verwaltung zu konfigurieren.  Anschließend kann ein benutzerdefinierter Filter innerhalb einer Vertikalen basierend auf einer Verbindungseigenschaft erstellt werden. Sie können z. B. einen Filter "Veröffentlicht auf" für eine ServiceNow-Verbindung innerhalb einer Vertikalen erstellen.
 
-1. Für Verbindungsinhalte sind zusätzliche Filterfunktionen vorhanden.
+Filter, die für Vertikale im Organisationsbereich konfiguriert sind, sind auf Organisationsebene verfügbar. Filter können auch im Bereich der Website konfiguriert werden.  
 
-    - Sie können auch einen Filter für einen Alias erstellen, um Die Quelleigenschaften des Connectors zu verwenden.
-    - Wenn eine Vertikale über mehrere Verbindungen verfügt, können Sie einen gemeinsamen Filter für diese Verbindungen erstellen. Dies kann durch Erstellen des Filters für einen gemeinsamen Alias erfolgen, der Quelleigenschaften über die verschiedenen Verbindungen hinweg aliast. Sie können z. **B.** einen Author-Filter für eine ServiceNow- und eine Jira-Verbindung erstellen, indem Sie wie folgt Aliase erstellen:
+## <a name="create-organization-level-filters"></a>Erstellen von Filtern auf Organisationsebene
 
-    | Verbindung | Eigenschaft | Alias |
-    | --- | --- | --- |
-    | Jetzt dienst | Besitzer | Ursprung |
-    | Jira | Publisher | Ursprung |
+1. Wechseln  [Sie in Microsoft 365 Admin Center](https://admin.microsoft.com/)zu  [**"Vertikalen".**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)
+2. Wählen Sie Ihre bevorzugte Vertikale aus, in der Sie einen Filter erstellen möchten, und klicken Sie auf **"Bearbeiten".**  
+3. Navigieren Sie im Assistenten der vertikalen Synchronisierung zum Schritt "Filter".
+4. Klicken Sie auf **"Filter hinzufügen",** um Filter für verfeinerbare verwaltete Eigenschaften zu konfigurieren.
+5. Nach dem Hinzufügen von Filtern können Sie die Vertikale überprüfen und speichern.
 
-1. Filter befinden sich innerhalb des Bereichs einer vertikalen.
+## <a name="create-sharepoint-site-level-filters"></a>Erstellen SharePoint Filter auf Websiteebene
 
-    - Wenn ein Filter in einer Vertikalen erstellt wird, die sich auf Organisationsebene befindet, ist der Filter nur auf Organisationsebene sichtbar.
-    - Wenn ein Filter in einer Vertikalen erstellt wird, die sich auf Standortebene befindet, ist der Filter nur auf Websiteebene sichtbar.
+1. Wechseln [Sie in SharePoint Admin Center](https://sharepoint.com/)zu Einstellungen.
+2. Suchen Sie nach dem Abschnitt Microsoft Search, und wählen Sie dann **konfigurieren Microsoft Search für diese Websitesammlung** aus.
+3. Wechseln Sie im Navigationsbereich zu "Benutzerdefinierte Oberfläche", und wählen Sie dann  **"Vertikal" aus.**
+4. Wählen Sie Ihre bevorzugte Vertikale aus, um den Filter zu erstellen, und klicken Sie auf **"Bearbeiten".**
+5. Navigieren Sie im Assistenten der vertikalen Synchronisierung zum Schritt "Filter".
+6. Klicken Sie auf **"Filter hinzufügen",** um Filter für verfeinerbare verwaltete Eigenschaften zu konfigurieren.
+7. Nach dem Hinzufügen von Filtern können Sie die Vertikale überprüfen und speichern.
 
-## <a name="known-limitations"></a>Bekannte Einschränkungen
+## <a name="filter-across-multiple-properties"></a>Filtern über mehrere Eigenschaften hinweg
 
-1. Derzeit können Sie Filter nur für zeichenfolgenbasierte & verwalteten Eigenschaften des Datumstyps erstellen.
-1. Sie können keine hierarchischen Filter erstellen.
+Vertikale Elemente können mit einer oder mehreren Inhaltsquellen erstellt werden. Wenn eine vertikale Komponente mit mehreren Inhaltsquellen konfiguriert ist, zeigt die Eigenschaftenliste der Einschränkung an, zu welcher Inhaltsquelle jede verfeinerbare Eigenschaft gehört. Die allgemeinen verwalteten Eigenschaften werden basierend auf dem Namen (oder Alias) und Datentyp zusammengeführt. Filter können auch für diese allgemeinen Eigenschaften konfiguriert werden. Dazu wird der Filter für einen allgemeinen Alias erstellt, der Quelleigenschaften über die verschiedenen Verbindungen hinweg aliasiert. Sie können z. **B.** einen Author-Filter für ServiceNow- und Jira-Verbindungen erstellen, indem Sie wie folgt Aliase erstellen:
 
-## <a name="resources"></a>Ressourcen
+ | Verbindung | Eigenschaft | Alias |
+ | --- | --- | --- |
+ | Jetzt dienst | Besitzer | Ursprung |
+ | Jira | Publisher | Ursprung |
 
-[Branchen und Ergebnistypen verwalten](customize-search-page.md)
+## <a name="important-details"></a>Wichtige Details
+
+- Filter können nur benutzerdefinierten Vertikalen hinzugefügt werden. Neue Filter können nicht zu vordefinierten Vertikalen wie "Alle", "Dateien", "Personen", "Websites", "News" hinzugefügt werden.
+- Filter können für Text- und DateTime-Eigenschaften konfiguriert werden.
+- Sie sind auf insgesamt 50 Filter beschränkt.
+- Die Reihenfolge der vordefinierten Filter kann nicht angepasst werden.
+- Filter werden für OneDrive Inhalt nicht unterstützt. Filterwerte, die Suchergebnissen aus OneDrive Inhalt entsprechen, werden nicht in Filtern angezeigt.
+- Benutzerdefinierte Filterwerte zeigen Optionen aus SharePoint Inhalt und nicht aus One Drive-Inhalten an.Wenn Sie beispielsweise einen benutzerdefinierten Filter für "Autor" erstellen und SharePoint Inhalt nur Ergebnisse von einem Autor enthält, "Amy", und OneDrive Inhalt nur Ergebnisse von einem Autor namens "John" enthält, zeigt der benutzerdefinierte Filter "Autor" "Amy" als einzige Option an.
+- Ein Filterwert, der für SharePoint Inhalt angezeigt wird, wird bei Verwendung auf OneDrive Inhalt angewendet.

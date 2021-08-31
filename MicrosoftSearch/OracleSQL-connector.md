@@ -7,19 +7,19 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ROBOTS: NoIndex
-description: Richten Sie den Oracle SQL Graph-Connector für Microsoft Search ein.
-ms.openlocfilehash: 21585d1d60e5dcd73a45a3ccda151fbb144e85eb
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+description: Richten Sie den Oracle SQL Graph Connector für Microsoft Search ein.
+ms.openlocfilehash: 804bee89f8529630df5741f68b9f112c69307b4f
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58236026"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701426"
 ---
 <!---Previous ms.author:vivg --->
 
@@ -38,7 +38,7 @@ Dieser Artikel richtet sich an alle Personen, die einen Oracle SQL Graph Connect
 
 Um auf Ihre lokalen Drittanbieterdaten zugreifen zu können, müssen Sie den Graph Connector-Agent installieren und konfigurieren. Weitere Informationen finden Sie unter [Installieren des Graph Connector-Agents.](graph-connector-agent.md)  
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph Connectors im Microsoft 365 Admin Center
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph Connectors in der Microsoft 365 Admin Center
 
 Folgen Sie den allgemeinen [Setupanweisungen.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -50,9 +50,9 @@ Folgen Sie den allgemeinen [Setupanweisungen.](./configure-connector.md)
 
 ## <a name="step-3-configure-the-connection-settings"></a>Schritt 3: Konfigurieren der Verbindungseinstellungen
 
-Um Den Oracle SQL Connector mit einer Datenquelle zu verbinden, müssen Sie den Datenbankserver konfigurieren, den Sie durchforsten möchten, und den lokalen Graph Connector-Agent. Anschließend können Sie mit der erforderlichen Authentifizierungsmethode eine Verbindung mit der Datenbank herstellen.
+Um Den Oracle SQL Connector mit einer Datenquelle zu verbinden, müssen Sie den Datenbankserver konfigurieren, der durchforstet werden soll, und den lokalen Graph Connector-Agent. Anschließend können Sie mit der erforderlichen Authentifizierungsmethode eine Verbindung mit der Datenbank herstellen.
 
-Für Oracle SQL Connector müssen Sie den Hostnamen, Port und Dienstnamen (Datenbank) zusammen mit der bevorzugten Authentifizierungsmethode, dem Benutzernamen und dem Kennwort angeben.
+Für Oracle SQL Connector müssen Sie den Hostnamen, Port- und Dienstnamen (Datenbank) zusammen mit der bevorzugten Authentifizierungsmethode, dem Benutzernamen und dem Kennwort angeben.
 
 > [!NOTE]
 > Ihre Datenbank muss Oracle-Datenbankversion 11g oder höher ausführen, damit der Connector eine Verbindung herstellen kann. Der Connector unterstützt Oracle-Datenbanken, die auf Windows-, Linux- und Azure-VM-Plattformen gehostet werden.
@@ -66,7 +66,7 @@ In diesem Schritt konfigurieren Sie die SQL Abfrage, die eine vollständige Durc
 > [!Tip]
 > Um alle benötigten Spalten abzurufen, können Sie mehrere Tabellen verknüpfen.
 
-![Skript mit den Eigenschaften OrderTable und AclTable mit Beispieleigenschaften](media/MSSQL-fullcrawl.png)
+![Skript, in dem orderTable und AclTable mit Beispieleigenschaften angezeigt werden.](media/MSSQL-fullcrawl.png)
 
 ### <a name="select-data-columns-required-and-acl-columns-optional"></a>Auswählen von Datenspalten (erforderlich) und ACL-Spalten (optional)
 
@@ -79,11 +79,11 @@ Um den Zugriff auf die Suchergebnisse zu verwalten, können Sie eine oder mehrer
 Die Verwendung der einzelnen ACL-Spalten in der obigen Abfrage wird unten beschrieben. In der folgenden Liste werden die vier **Zugriffssteuerungsmechanismen** erläutert.
 
 * **AllowedUsers:** Diese Option gibt die Liste der Benutzer-IDs an, die auf die Suchergebnisse zugreifen können. Im folgenden Beispiel würde die Liste der Benutzer: john@contoso.com, keith@contoso.com und lisa@contoso.com nur Zugriff auf einen Datensatz mit OrderId = 12 haben.
-* **AllowedGroups:** Diese Option gibt die Gruppe von Benutzern an, die auf die Suchergebnisse zugreifen können. Im folgenden Beispiel würde gruppen sales-team@contoso.com nur Zugriff auf den Datensatz mit OrderId = 12 haben.
-* **DeniedUsers:** Diese Option gibt die Liste der Benutzer an, die **keinen** Zugriff auf die Suchergebnisse haben. Im folgenden Beispiel haben Benutzer john@contoso.com und keith@contoso.com keinen Zugriff auf datensätze mit OrderId = 13, während alle anderen Zugriff auf diesen Datensatz haben.
-* **DeniedGroups:** Diese Option gibt die Gruppe von Benutzern an, die **keinen** Zugriff auf die Suchergebnisse haben. Im folgenden Beispiel haben Gruppen engg-team@contoso.com und pm-team@contoso.com keinen Zugriff auf datensätze mit OrderId = 15, während alle anderen Zugriff auf diesen Datensatz haben.  
+* **AllowedGroups:** Diese Option gibt die Gruppe von Benutzern an, die auf die Suchergebnisse zugreifen können. Im folgenden Beispiel hätten Gruppen-sales-team@contoso.com nur Zugriff auf den Datensatz mit OrderId = 12.
+* **DeniedUsers:** Diese Option gibt die Liste der Benutzer an, die **keinen** Zugriff auf die Suchergebnisse haben. Im folgenden Beispiel haben Benutzer john@contoso.com und keith@contoso.com keinen Zugriff auf datensätze mit OrderId = 13, während alle anderen Benutzer Zugriff auf diesen Datensatz haben.
+* **DeniedGroups:** Diese Option gibt die Gruppe von Benutzern an, die **keinen** Zugriff auf die Suchergebnisse haben. Im folgenden Beispiel haben Gruppen engg-team@contoso.com und pm-team@contoso.com keinen Zugriff auf den Datensatz mit OrderId = 15, während alle anderen Zugriff auf diesen Datensatz haben.  
 
-![Beispieldaten, die die OrderTable und AclTable mit Beispieleigenschaften anzeigen](media/MSSQL-ACL1.png)
+![Beispieldaten, die OrderTable und AclTable mit Beispieleigenschaften anzeigen.](media/MSSQL-ACL1.png)
 
 ### <a name="supported-data-types"></a>Unterstützte Datentypen
 
@@ -91,12 +91,12 @@ In der folgenden Tabelle sind die Datentypen zusammengefasst, die vom Oracle SQL
 
 | Kategorie | Quelldatentyp | Datentyp der Indizierung |
 | ------------ | ------------ | ------------ |
-| Zahlendatentyp | NUMBER(p,0) | int64 (for p <= 18) <br> double (für p > 18) |
+| Zahlendatentyp | NUMBER(p,0) | int64 (für p <= 18) <br> double (für p > 18) |
 | Gleitkommazahlen-Datentyp | NUMBER(p,s) <br> FLOAT(p) | double |
-| Datumsdatentyp | DATE <br> Timestamp <br> TIMESTAMP(n) | Datum/Uhrzeit |
-| Zeichendatentyp | CHAR(n) <br> Varchar <br> VARCHAR2 <br> Lange <br> Clob <br> Nclob | string |
+| Datumsdatentyp | DATE <br> TIMESTAMP <br> TIMESTAMP(n) | Datum/Uhrzeit |
+| Zeichendatentyp | CHAR(n) <br> VARCHAR <br> VARCHAR2 <br> LANGE <br> CLOB <br> NCLOB | string |
 | Unicode-Zeichen-Datentyp | NCHAR <br> NVARCHAR | string |
-| RowID-Datentyp | Rowid <br> UROWID | string |
+| RowID-Datentyp | ROWID <br> UROWID | string |
 
 Für alle anderen Datentypen, die derzeit nicht direkt unterstützt werden, muss die Spalte explizit in einen unterstützten Datentyp umgewandelt werden.
 
@@ -111,21 +111,21 @@ Erstellen Sie Abfrageausschnitte für Wasserzeichen, wie in diesen Beispielen ge
 
 In der in der folgenden Abbildung gezeigten Konfiguration `CreatedDateTime` befindet sich die ausgewählte Wasserzeichenspalte. Um den ersten Zeilenbatch abzurufen, geben Sie den Datentyp der Wasserzeichenspalte an. In diesem Fall lautet der Datentyp `DateTime` .
 
-![Konfiguration von Wasserzeichenspalten](media/MSSQL-watermark.png)
+![Konfiguration der Wasserzeichenspalte.](media/MSSQL-watermark.png)
 
 Die erste Abfrage ruft die erste **N-Anzahl** von Zeilen mithilfe der folgenden Methode ab: "CreatedDateTime > 1. Januar 1753 00:00:00" (Min. Wert des DateTime-Datentyps). Nachdem der erste Batch abgerufen wurde, wird der höchste im Batch zurückgegebene Wert `CreatedDateTime` als Prüfpunkt gespeichert, wenn die Zeilen in aufsteigender Reihenfolge sortiert sind. Ein Beispiel ist der 1. März 2019 03:00:00. Anschließend wird der nächste Batch von **N-Zeilen** mithilfe von "CreatedDateTime > 1. März 2019 03:00:00" in der Abfrage abgerufen.
 
 ### <a name="skipping-soft-deleted-rows-optional"></a>Überspringen vorläufig gelöschter Zeilen (optional)
 
-Um zeilenweise gelöschte Zeilen in Ihrer Datenbank von der Indizierung auszuschließen, geben Sie den Namen und den Wert der Vorläufigen Löschspalte an, der angibt, dass die Zeile gelöscht wird.
+Um zeilenweise gelöschte Zeilen in Ihrer Datenbank von der Indizierung auszuschließen, geben Sie den Namen und den Wert für das vorläufige Löschen der Spalte an, der angibt, dass die Zeile gelöscht wird.
 
-![Einstellungen für vorläufiges Löschen: "Spalte vorläufig löschen" und "Wert der Spalte für vorläufiges Löschen, die eine gelöschte Zeile angibt"](media/MSSQL-softdelete.png)
+![Einstellungen für vorläufiges Löschen: "Spalte vorläufig löschen" und "Wert der Spalte für vorläufiges Löschen, die eine gelöschte Zeile angibt".](media/MSSQL-softdelete.png)
 
 ### <a name="full-crawl-manage-search-permissions"></a>Vollständige Durchforstung: Verwalten von Suchberechtigungen
 
 Wählen Sie **"Berechtigungen verwalten"** aus, um die verschiedenen Zugriffssteuerungsspalten (Access Control, ACL) auszuwählen, die den Zugriffsteuerungsmechanismus angeben. Wählen Sie den Spaltennamen aus, den Sie in der vollständigen Durchforstung SQL Abfrage angegeben haben.
 
-Es wird erwartet, dass jede ACL-Spalte eine mehrwertige Spalte ist. Diese mehreren ID-Werte können durch Trennzeichen wie Semikolon (;), Komma (,) usw. getrennt werden. Sie müssen dieses Trennzeichen im **Werttrennzeichenfeld** angeben.
+Es wird erwartet, dass jede der ACL-Spalten eine mehrwertige Spalte ist. Diese mehreren ID-Werte können durch Trennzeichen wie Semikolon (;), Komma (,) usw. getrennt werden. Sie müssen dieses Trennzeichen im **Werttrennzeichenfeld** angeben.
 
 Die folgenden ID-Typen werden für die Verwendung als ACLs unterstützt:
 
@@ -133,7 +133,7 @@ Die folgenden ID-Typen werden für die Verwendung als ACLs unterstützt:
 * **Azure Active Directory (AAD)-ID:** In Azure AD verfügt jeder Benutzer oder jede Gruppe über eine Objekt-ID, die etwa wie "e0d3ad3d-0000-1111-2222-3c5f5c52ab9b" aussieht.
 * **Active Directory (AD)-Sicherheits-ID:** Bei einem lokalen AD-Setup verfügen alle Benutzer und Gruppen über einen unveränderlichen, eindeutigen Sicherheitsbezeichner, der etwa wie "S-1-5-21-3878594291-211595936-132693609-65242" aussieht.
 
-![Suchberechtigungseinstellungen zum Konfigurieren von Zugriffssteuerungslisten](media/MSSQL-ACL2.png)
+![Suchberechtigungseinstellungen zum Konfigurieren von Zugriffssteuerungslisten.](media/MSSQL-ACL2.png)
 
 ## <a name="step-3b-incremental-crawl-optional"></a>Schritt 3b: Inkrementelle Durchforstung (optional)
 
@@ -161,7 +161,7 @@ Sie können die [im vollständigen Durchforstungsbildschirm angegebenen ACLs](#f
 
 Der Oracle SQL Connector unterstützt Aktualisierungszeitpläne für vollständige und inkrementelle Durchforstungen. Es wird empfohlen, beides festzulegen.
 
-Ein vollständiger Durchforstungszeitplan findet gelöschte Zeilen, die zuvor mit dem Microsoft Search Index synchronisiert wurden, und alle Zeilen, die aus dem Synchronisierungsfilter verschoben wurden. Wenn Sie zum ersten Mal eine Verbindung mit der Datenbank herstellen, wird eine vollständige Durchforstung ausgeführt, um alle Zeilen zu synchronisieren, die aus der vollständigen Durchforstungsabfrage abgerufen wurden. Um neue Zeilen zu synchronisieren und Aktualisierungen vorzunehmen, müssen Sie inkrementelle Durchforstungen planen.
+Ein vollständiger Durchforstungszeitplan findet gelöschte Zeilen, die zuvor mit dem Microsoft Search-Index synchronisiert wurden, und alle Zeilen, die aus dem Synchronisierungsfilter verschoben wurden. Wenn Sie zum ersten Mal eine Verbindung mit der Datenbank herstellen, wird eine vollständige Durchforstung ausgeführt, um alle Zeilen zu synchronisieren, die aus der vollständigen Durchforstungsabfrage abgerufen wurden. Um neue Zeilen zu synchronisieren und Aktualisierungen vorzunehmen, müssen Sie inkrementelle Durchforstungen planen.
 
 ## <a name="step-8-review-connection"></a>Schritt 8: Überprüfen der Verbindung
 

@@ -7,31 +7,31 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Einrichten des ServiceNow Graph-Connectors für Microsoft Search
-ms.openlocfilehash: b07776dfd6e2ae8ae87b43ac61e9f92495311ca8
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+ms.openlocfilehash: fccae6c2a007470eb9ef56130cb952158c01610c
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235883"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701912"
 ---
 <!---Previous ms.author: kam1 --->
 
 
 # <a name="servicenow-graph-connector"></a>ServiceNow Graph Connector
 
-Mit dem Microsoft Graph Connector für ServiceNow kann Ihre Organisation Knowledge Base-Artikel indizieren, die für alle Benutzer sichtbar oder mit Benutzerkriterienberechtigungen innerhalb Ihrer Organisation eingeschränkt sind. Nachdem Sie den Connector konfiguriert und Inhalte von ServiceNow indiziert haben, können Endbenutzer von jedem Microsoft Search Client nach diesen Artikeln suchen.  
+Mit dem Microsoft Graph Connector für ServiceNow kann Ihre Organisation Knowledge Base-Artikel indizieren, die für alle Benutzer sichtbar oder mit Benutzerkriterienberechtigungen innerhalb Ihrer Organisation eingeschränkt sind. Nachdem Sie den Connector konfiguriert und Inhalte von ServiceNow indiziert haben, können Endbenutzer von einem beliebigen Microsoft Search Client nach diesen Artikeln suchen.  
 
-Weitere Informationen zur Funktion von Graph Connector zum Verwalten von Suchberechtigungen finden Sie im [folgenden Video.](https://www.youtube.com/watch?v=TVSkJpk1RiE)
+Sie können auch [das folgende Video](https://www.youtube.com/watch?v=TVSkJpk1RiE) lesen, um mehr über Graph Connector-Funktion zum Verwalten von Suchberechtigungen zu erfahren.
 
-[![Verwalten von Suchberechtigungen in Microsoft Graph Connector für ServiceNow](https://img.youtube.com/vi/TVSkJpk1RiE/hqdefault.jpg)](https://www.youtube.com/watch?v=TVSkJpk1RiE)
+[![Verwalten von Suchberechtigungen in Microsoft Graph Connector für ServiceNow.](https://img.youtube.com/vi/TVSkJpk1RiE/hqdefault.jpg)](https://www.youtube.com/watch?v=TVSkJpk1RiE)
 
-Dieser Artikel richtet sich an Microsoft 365 Administratoren oder alle Personen, die einen ServiceNow-Graph Connector konfigurieren, ausführen und überwachen. Er ergänzt die allgemeinen Anweisungen im Artikel ["Einrichten Ihres Graph Connectors".](configure-connector.md) Wenn sie dies noch nicht getan haben, lesen Sie den gesamten Artikel zum Einrichten ihres Graph Connectors, um den allgemeinen Setupprozess zu verstehen.
+Dieser Artikel richtet sich an Microsoft 365 Administratoren oder alle Personen, die einen ServiceNow Graph Connector konfigurieren, ausführen und überwachen. Er ergänzt die allgemeinen Anweisungen im Artikel ["Einrichten Ihres Graph Connectors".](configure-connector.md) Wenn sie dies noch nicht getan haben, lesen Sie den gesamten Artikel zum Einrichten ihres Graph Connectors, um den allgemeinen Einrichtungsprozess zu verstehen.
 
 Jeder Schritt im Setupprozess wird unten zusammen mit einem Hinweis aufgeführt, der angibt, dass Sie die allgemeinen Setupanweisungen oder andere Anweisungen befolgen sollten, die nur für ServiceNow Graph Connector gelten, einschließlich Informationen zur [Problembehandlung](#troubleshooting) und [Einschränkungen.](#limitations)  
 
@@ -43,11 +43,11 @@ Befolgen Sie die allgemeinen Setupanweisungen.
 
 
 ## <a name="step-3-connection-settings"></a>Schritt 3: Verbindungs-Einstellungen
-Um eine Verbindung mit Ihren ServiceNow-Daten herzustellen, benötigen Sie die **ServiceNow-Instanz-URL** Ihrer Organisation. Die ServiceNow-Instanz-URL Ihrer Organisation sieht in der Regel wie **https:// &lt; Ihre-Organisation-Domäne>.service-now.com** aus. 
+Um eine Verbindung mit Ihren ServiceNow-Daten herzustellen, benötigen Sie die **ServiceNow-Instanz-URL** Ihrer Organisation. Die ServiceNow-Instanz-URL Ihrer Organisation sieht in der Regel wie **https:// &lt; Ihrer Organisation-Domäne>.service-now.com** aus. 
 
 Zusammen mit dieser URL benötigen Sie ein **Dienstkonto** zum Einrichten der Verbindung mit ServiceNow sowie zum Zulassen, dass Microsoft Search die Wissensartikel regelmäßig basierend auf dem Aktualisierungszeitplan aktualisieren können. Das Dienstkonto benötigt Lesezugriff auf die folgenden **ServiceNow-Tabelleneinträge,** um verschiedene Entitäten erfolgreich durchforsten zu können.
 
-**Funktion** | **Erforderliche Tabellen für den Lesezugriff** | **Beschreibung**
+**Feature** | **Erforderliche Tabellen für den Lesezugriff** | **Beschreibung**
 --- | --- | ---
 Index knowledge articles available to <em>Everyone</em> | kb_knowledge | Informationen zum Durchforsten von Wissensartikeln
 Index- und Supportberechtigungen für Benutzerkriterien | kb_uc_can_read_mtom | Wer diese Knowledge Base lesen können
@@ -85,10 +85,10 @@ Die folgende Tabelle enthält Anleitungen zum Ausfüllen des Formulars für die 
 Feld | Beschreibung | Empfohlener Wert 
 --- | --- | ---
 Name | Eindeutiger Wert, der die Anwendung identifiziert, für die Sie OAuth-Zugriff benötigen. | Microsoft Search
-Client-ID | Eine schreibgeschützte, automatisch generierte eindeutige ID für die Anwendung. Die Instanz verwendet die Client-ID, wenn sie ein Zugriffstoken anfordert. | –
+Client-ID | Eine schreibgeschützte, automatisch generierte eindeutige ID für die Anwendung. Die Instanz verwendet die Client-ID, wenn sie ein Zugriffstoken anfordert. | NA
 Geheimer Clientschlüssel | Mit dieser freigegebenen geheimen Zeichenfolge autorisieren die ServiceNow-Instanz und Microsoft Search die Kommunikation miteinander. | Befolgen Sie bewährte Methoden für die Sicherheit, indem Sie den geheimen Schlüssel als Kennwort behandeln.
 Umleitungs-URL | Eine erforderliche Rückruf-URL, an die der Autorisierungsserver umleitet. | https://gcs.office.com/v1.0/admin/oauth/callback
-Logo-URL | Eine URL, die das Bild für das Anwendungslogo enthält. | –
+Logo-URL | Eine URL, die das Bild für das Anwendungslogo enthält. | NA
 Aktiv | Aktivieren Sie das Kontrollkästchen, um die Anwendungsregistrierung zu aktivieren. | Auf "Aktiv" festgelegt
 Aktualisierung der Tokenlebensdauer | Die Anzahl der Sekunden, für die ein Aktualisierungstoken gültig ist. Standardmäßig laufen Aktualisierungstoken in 100 Tagen ab (8.640.000 Sekunden). | 31.536.000 (1 Jahr)
 Lebensdauer des Zugriffstokens | Die Anzahl der Sekunden, für die ein Zugriffstoken gültig ist. | 43.200 (12 Stunden)
@@ -194,9 +194,9 @@ Verwenden Sie die Anwendungs-ID als Client-ID (aus Schritt 3.a) und den geheimen
 
 ## <a name="step-4-select-properties-and-filter-data"></a>Schritt 4: Auswählen von Eigenschaften und Filtern von Daten
 
-In diesem Schritt können Sie der ServiceNow-Datenquelle verfügbare Eigenschaften hinzufügen oder daraus entfernen. Microsoft 365 einige Eigenschaften standardmäßig bereits ausgewählt hat.
+In diesem Schritt können Sie der ServiceNow-Datenquelle verfügbare Eigenschaften hinzufügen oder daraus entfernen. Microsoft 365 hat bereits einige Eigenschaften standardmäßig ausgewählt.
 
-Mit einer ServiceNow-Abfragezeichenfolge können Sie Bedingungen für die Synchronisierung von Artikeln angeben. Dies entspricht einer **Where-Klausel** in einer **SQL Select-Anweisung.** Sie können z. B. festlegen, dass nur Artikel indiziert werden, die veröffentlicht und aktiv sind. Informationen zum Erstellen einer eigenen Abfragezeichenfolge finden Sie unter [Generieren einer codierten Abfragezeichenfolge mithilfe eines Filters.](https://docs.servicenow.com/bundle/paris-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html)
+Mit einer ServiceNow-Abfragezeichenfolge können Sie Bedingungen für die Synchronisierung von Artikeln angeben. Es ist wie eine **Where-Klausel** in einer **SQL Select-Anweisung.** Sie können z. B. festlegen, dass nur Artikel indiziert werden, die veröffentlicht und aktiv sind. Informationen zum Erstellen einer eigenen Abfragezeichenfolge finden Sie unter [Generieren einer codierten Abfragezeichenfolge mithilfe eines Filters.](https://docs.servicenow.com/bundle/paris-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html)
 
 Verwenden Sie die Schaltfläche "Vorschauergebnisse", um die Beispielwerte der ausgewählten Eigenschaften und des Abfragefilters zu überprüfen.
 
@@ -211,7 +211,7 @@ Wenn Sie **nur Personen mit Zugriff auf diese Datenquelle** auswählen, müssen 
 >[!NOTE]
 >Wenn Sie AAD als Typ der Identitätsquelle auswählen, stellen Sie sicher, dass Sie userPrincipalName (UPN)-Quelleigenschaft E-Mail-Zieleigenschaft in ServiceNow zuweisen. Informationen zum Überprüfen oder Ändern Ihrer Zuordnungen finden Sie unter [Customizing user provisioning attribute-mappings for SaaS applications in Azure Active Directory](/azure/active-directory/app-provisioning/customize-application-attributes).
 
-Wenn Sie "nicht-AAD" für den Identitätstyp ausgewählt haben, finden Sie anweisungen zum Zuordnen der Identitäten zu [Ihren Nicht-Azure AD-Identitäten.](map-non-aad.md) 
+Wenn Sie "nicht-AAD" für den Identitätstyp gewählt haben, finden Sie anweisungen zum Zuordnen der Identitäten zu [Ihren Nicht-Azure AD-Identitäten.](map-non-aad.md) 
 
 
 ## <a name="step-6-assign-property-labels"></a>Schritt 6: Zuweisen von Eigenschaftenbeschriftungen
@@ -256,13 +256,13 @@ Wenn Ihre Organisation Single Sign-On (SSO) für ServiceNow aktiviert hat, haben
 Wenn im Verbindungsstatus eine unzulässige oder nicht autorisierte Antwort angezeigt wird, überprüfen Sie, ob das Dienstkonto Zugriff auf die in [Schritt 3: Verbindungseinstellungen](#step-3-connection-settings)erwähnten Tabellen benötigt. Überprüfen Sie, ob alle Spalten in den Tabellen Lesezugriff haben.
 
 #### <a name="22-check-if-servicenow-instance-behind-firewall"></a>2.2. Überprüfen, ob die ServiceNow-Instanz hinter der Firewall liegt
-Graph Der Connector kann Ihre ServiceNow-Instanz möglicherweise nicht erreichen, wenn er sich hinter einer Netzwerkfirewall befindet. Sie müssen den Zugriff auf Graph Connectordienst explizit zulassen. Den öffentlichen IP-Adressbereich Graph Connector Service finden Sie in der folgenden Tabelle. Fügen Sie sie basierend auf Ihrer Mandantenregion der Whitelist des ServiceNow-Instanznetzwerks hinzu.
+Graph Der Connector kann Ihre ServiceNow-Instanz möglicherweise nicht erreichen, wenn er sich hinter einer Netzwerkfirewall befindet. Sie müssen den Zugriff auf Graph Connectordienst explizit zulassen. Sie finden den öffentlichen IP-Adressbereich Graph Connector-Diensts in der folgenden Tabelle. Fügen Sie sie basierend auf Ihrer Mandantenregion der Whitelist des ServiceNow-Instanznetzwerks hinzu.
 
 **Umgebung** | **Region** | **Range**
 --- | --- | ---
-Prod | Nordamerika | 52.250.92.252/30, 52.224.250.216/30
-Prod | Europa | 20.54.41.208/30, 51.105.159.88/30 
-Prod | Asiatisch-pazifischer Raum | 52.139.188.212/30, 20.43.146.44/30 
+PROD | Nordamerika | 52.250.92.252/30, 52.224.250.216/30
+PROD | Europa | 20.54.41.208/30, 51.105.159.88/30 
+PROD | Asiatisch-pazifischer Raum | 52.139.188.212/30, 20.43.146.44/30 
 
 #### <a name="23-access-permissions-not-working-as-expected"></a>2.3. Zugriffsberechtigungen funktionieren nicht wie erwartet
 Wenn Sie Abweichungen bei den Zugriffsberechtigungen beobachten, die auf Suchergebnisse angewendet werden, überprüfen Sie das Zugriffsflussdiagramm auf Benutzerkriterien bei der [Verwaltung des Zugriffs auf Wissensdatenbanken und Artikel.](https://docs.servicenow.com/bundle/rome-servicenow-platform/page/product/knowledge-management/concept/user-access-knowledge.html)

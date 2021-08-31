@@ -6,18 +6,18 @@ manager: jameslau
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Schritte zum Zuordnen von Nicht-AAD-Identitäten
-ms.openlocfilehash: 48f462318b005f426cd2e0ee3ade0ee895b1c38b36ccf53faf5631a5c002c3d6
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: e90db3bb8d20a0389ddbf2d2845bf91843513404
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533567"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701958"
 ---
 # <a name="map-your-non-azure-ad-identities"></a>Zuordnen Ihrer Nicht-Azure AD-Identitäten  
 
@@ -56,7 +56,7 @@ Nachfolgend finden Sie einige Beispiele für reguläre Ausdrücke und deren Ausg
 | Alexis Vasquez                 | ..$                 | Ez            |
 | Alexis Vasquez                  | (\w+)$                  | Vasquez             |
 
-Sie können so viele Nicht-Azure AD-Benutzereigenschaften hinzufügen, für die Sie Ausdrücke verwenden möchten. Sie können unterschiedliche reguläre Ausdrücke auf dieselbe Benutzereigenschaft anwenden, wenn die endgültige Formel dies zulässt.  
+Sie können so viele Nicht-Azure AD-Benutzereigenschaften hinzufügen, wie Sie Ausdrücke verwenden möchten. Sie können unterschiedliche reguläre Ausdrücke auf dieselbe Benutzereigenschaft anwenden, wenn die endgültige Formel dies zulässt.  
 
 ### <a name="3-create-formula-to-complete-mapping"></a>3. Erstellen einer Formel zum Abschließen der Zuordnung
 
@@ -80,7 +80,7 @@ Nachdem Sie Ihre Formel bereitgestellt haben, können Sie optional auf **"Vorsch
 
 Eine Beispiel-Nicht-Azure AD-Zuordnung finden Sie in der nachstehenden Momentaufnahme.
 
-![Beispielmomentaufnahme zum Ausfüllen der Nicht-Azure AD-Zuordnungsseite](media/non-aad-mapping.png)
+![Beispielmomentaufnahme zum Ausfüllen der Nicht-Azure AD-Zuordnungsseite.](media/non-aad-mapping.png)
 
 ## <a name="limitations"></a>Einschränkungen  
 

@@ -6,19 +6,19 @@ manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
-description: Suchen und aktualisieren Sie Antworten einzeln oder verwenden Sie verfügbare Microsoft Search Tools, um Q&As all auf einmal zu bearbeiten.
-ms.openlocfilehash: 2e54169a6196ec78bd96b33aa1ba71fc498b6ff13d8d872ad06ca0db1d9fc2c0
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+description: Suchen und aktualisieren Sie Antworten einzeln, oder verwenden Sie verfügbare Microsoft Search Tools, um Q&As all auf einmal zu bearbeiten.
+ms.openlocfilehash: 2ee42e3feaf5c14b2af820360f753ecc2e116f9b
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532866"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701985"
 ---
 # <a name="manage-qas"></a>F & As verwalten
 
@@ -27,7 +27,7 @@ Die Erstellung von Fragen und Antworten ist vergleichbar mit der Erstellung von 
 ## <a name="add-or-edit-a-single-qa"></a>Hinzufügen oder Bearbeiten einer einzelnen Frage und Antwort
 
 1. Wechseln [Sie](https://admin.microsoft.com)im Microsoft 365 Admin Center zu [**F&A**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/qnas)
-1. Wählen Sie zum Hinzufügen einer F&A die Option **"Hinzufügen"** aus.
+1. Um eine F&A hinzuzufügen, wählen Sie **Hinzufügen** aus.
 Wählen Sie zum Bearbeiten einer Frage und Antwort die Frage und Antwort in der entsprechenden F&A-Liste aus. Während Sie die Informationen hinzufügen oder bearbeiten, wird die Vorschau automatisch aktualisiert.
 1. Speichern Sie Ihre Änderungen.
 
@@ -56,7 +56,7 @@ Die folgenden HTML-Tags werden unterstützt:
 
 ## <a name="add-or-edit-qas-using-browser-extensions"></a>Hinzufügen oder Bearbeiten von Q-&Wie bei Verwendung von Browsererweiterungen
 
-Suchadministratoren können Suchinhalte mühelos mithilfe von Browsererweiterungen erstellen. Installieren Sie die Browsererweiterung, und wechseln Sie dann zu der Website, von der Sie eine Q-&A generieren möchten. Anschließend können Sie die Q-&A erstellen und einen Link zur Quellwebsite einfügen.
+Suchadministratoren können Suchinhalte mühelos mithilfe von Browsererweiterungen erstellen. Installieren Sie die Browsererweiterung, und wechseln Sie dann zu der Website, von der Sie eine Q-&A generieren möchten. Anschließend können Sie die F-&A erstellen und einen Link zur Quellwebsite einfügen.
 
 Derzeit sind Browsererweiterungen für Microsoft Edge und Chrome verfügbar.
 
@@ -65,9 +65,9 @@ Derzeit sind Browsererweiterungen für Microsoft Edge und Chrome verfügbar.
 
 ## <a name="bulk-add-or-edit-qas"></a>Massenhinzufügen oder -bearbeiten von F & As
 
-Administratoren können die Import- und Exportfeatures verwenden, um Q&As massenweise zu erstellen oder zu bearbeiten.
+Administratoren können die Import- und Exportfunktionen verwenden, um Q&As in Massen zu erstellen oder zu bearbeiten.
 
-Verwenden Sie das Import/Export-Feature für Folgendes:
+Verwenden Sie das feature Import/Export für Folgendes:
 
 - Massenhinzufügen von Q&As – Fügen Sie Details in der Vorlagendatei "F&A" hinzu, und importieren Sie sie.
 - Massenbearbeitung von Q&As – Export Q&As to a .csv file, edit the Q&A details in the exported file, and then import the file.
@@ -76,10 +76,10 @@ Verwenden Sie das Import/Export-Feature für Folgendes:
 So importieren oder exportieren Sie Q&As:
 
 1. Wählen Sie in der oberen rechten Ecke der Registerkarte „F&A“ **Importieren** aus.
-Wählen Sie **"Exportieren"** aus, um alle vorhandenen Q-&wie in einer .csv-Datei herunterzuladen.
+Wählen Sie **"Exportieren"** aus, um alle vorhandenen Q-&Wie in einer .csv-Datei herunterzuladen.
 1. Wählen Sie im rechten Bereich die Option zum Importieren mithilfe einer .csv-Datei aus. Laden Sie die Vorlagendatei herunter, um eine Liste der erforderlichen Felder und Details abzurufen.
 1. Fügen Sie F&A-Details in der Vorlagendatei hinzu, oder bearbeiten Sie sie, und speichern Sie sie auf Ihrem Computer.
-1. Wählen Sie im Bereich **"F&A importieren"** die Option **"Durchsuchen"** aus, und wählen Sie dann die .csv Datei aus, die Sie importieren möchten.
+1. Wählen Sie im Bereich **"Import F&A"** die Option **"Durchsuchen"** aus, und wählen Sie dann die .csv Datei aus, die Sie importieren möchten.
 1. Wählen Sie **Importieren** aus.
 
 Wichtige Vorlagendateitipps:
@@ -88,7 +88,7 @@ Wichtige Vorlagendateitipps:
 - Wenn Sie die **ID** eines vorhandenen Lesezeichens angeben, wird sie durch die Informationen in der Importdatei ersetzt.
 - Wenn eine Textmarke mit demselben Titel oder derselben URL vorhanden ist, wird die Textmarke mit Informationen in der Importdatei aktualisiert.
 - Nicht alle Felder in der Vorlagendatei sind erforderlich, und die erforderlichen Felder variieren je nach Lesezeichenstatus.
-- Basierend auf dem **Feld "Status"** werden Lesezeichen als *Entwurf* gespeichert, *vorgeschlagen* oder *geplant,* oder sie werden automatisch veröffentlicht.
+- Basierend auf dem **Feld "Status"** werden Lesezeichen als *Entwurf,* *vorgeschlagen* oder *geplant* gespeichert oder automatisch veröffentlicht.
 - Für Partner, die mehrere Organisationen verwalten: Sie können Ihre Lesezeichen aus einer Organisation exportieren und in eine andere importieren. Sie müssen jedoch die Daten in der Spalte **ID** vor dem Import entfernen.
 
 > [!NOTE]

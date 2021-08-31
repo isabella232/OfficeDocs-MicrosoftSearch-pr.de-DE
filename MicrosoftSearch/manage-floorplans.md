@@ -11,13 +11,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Das Grundriss-Feature in Microsoft Search hilft Benutzern, Personen, Büros und andere Einrichtungen in einem Gebäude zu finden.
-ms.openlocfilehash: 6ca32db0afafe328d872b87c2ba7ebf5bee40148ae8aea089e097a3b6ec4dedf
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+description: Die Grundrissfunktion in Microsoft Search hilft Benutzern, Personen, Büros und andere Einrichtungen in einem Gebäude zu finden.
+ms.openlocfilehash: 6cbba6d764fd3904d251fa53fd96c3a66a6aed6b
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533717"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470023"
 ---
 # <a name="manage-floor-plans"></a>Verwalten von Grundrissenplänen
 
@@ -43,7 +43,7 @@ Grundrissedateien müssen im DWG-Format vorliegen; DWG-Dateien können Textbesch
 
 |**Textbeschriftungen einschließlich Raumbeschriftungen**|**Textbeschriftungen, aber keine Raumbeschriftungen**|**Keine Textbeschriftungen**|
 |:-----:|:-----:|:-----:|
-|![floorplans-textandroomlabels.png](media/floorplans-textandroomlabels.png)|![floorplans-textnoroomlabels.png](media/floorplans-textnoroomlabels.png)|![floorplans-nolabels.png](media/floorplans-nolabels.png)|
+|![floorplans-textandroomlabels.png.](media/floorplans-textandroomlabels.png)|![floorplans-textnoroomlabels.png](media/floorplans-textnoroomlabels.png)|![floorplans-nolabels.png](media/floorplans-nolabels.png)|
 
 Informationen zum Anzeigen und Aktualisieren von DWG-Dateien finden Sie im Abschnitt ["Häufig gestellte Fragen".](#frequently-asked-questions)
 
@@ -51,25 +51,25 @@ Informationen zum Anzeigen und Aktualisieren von DWG-Dateien finden Sie im Absch
 
 Der Bürostandort eines Benutzers ist eine Kombination aus einem Gebäudecode und einer Raumbezeichnung. Wenn die Gebäudecode beispielsweise *2* und die Raumbeschriftung *1173* ist, würde der Bürostandort *2/1173* sein.
 
-Hinzufügen oder Aktualisieren von Bürostandorten für jeden Benutzer in Ihrer Organisation. Sie können den Bürostandort im Benutzerprofil im [Microsoft 365 Admin Center](https://admin.microsoft.com) ändern oder in Ihrem lokalen Active Directory so ändern, dass es mit Azure Active Directory synchronisiert wird. *PhysicalDeliveryOfficeName* ist das Feld, das für den Bürostandort verwendet wird. Wenn Ihre Raumbeschriftungen keine Bodennummern enthalten, finden Sie in den häufig gestellten Fragen Tipps.
+Hinzufügen oder Aktualisieren von Office-Speicherorten für jeden Benutzer in Ihrer Organisation. Sie können den Bürostandort im Benutzerprofil in der [Microsoft 365 Admin Center](https://admin.microsoft.com) oder in Ihrem lokalen Active Directory ändern, um mit Azure Active Directory zu synchronisieren. *PhysicalDeliveryOfficeName* ist das Feld, das für den Bürostandort verwendet wird. Wenn Ihre Raumbeschriftungen keine Bodennummern enthalten, finden Sie in den häufig gestellten Fragen Tipps.
 
 In diesem Beispiel befindet sich das Büro von Allan im Raum 1173 im Stock 1 von Gebäude 2.
-![floorplans-userlestview.png](media/floorplans-userlistview.png)
+![floorplans-userlestview.png.](media/floorplans-userlistview.png)
 
 > [!NOTE]
 > Um aktualisierte Bürostandorte bei der Suche nach Grundrissen anzuzeigen, müssen Sie die Bürostandorte für **mindestens 10 Personen** pro Stockwerk aktualisieren.
 
 ### <a name="step-4-verify-office-location"></a>Schritt 4: Überprüfen des Bürostandorts
 
-Verwenden Sie **Microsoft Search,** um einen Benutzer zu finden und zu überprüfen, ob sein Büroort korrekt angezeigt wird. Wenn Sie gerade Speicherorte aktualisiert haben, müssen Sie möglicherweise bis zu **72 Stunden** warten, bis die Updates in den Suchergebnissen angezeigt werden.
+Verwenden Sie **Microsoft Search,** um einen Benutzer zu finden und zu überprüfen, ob sein Bürostandort korrekt angezeigt wird. Wenn Sie gerade Speicherorte aktualisiert haben, müssen Sie möglicherweise bis zu **72 Stunden** warten, bis die Updates in den Suchergebnissen angezeigt werden.
 
-![floorplans-peoplecard.png](media/floorplans-peoplecard.png)
+![floorplans-peoplecard.png.](media/floorplans-peoplecard.png)
 
 ### <a name="step-5-add-building-locations"></a>Schritt 5: Hinzufügen von Gebäudestandorten
 
-Grundrisse verwenden [Standorte,](manage-locations.md) um Ihre Gebäude zu definieren. Wechseln [Sie](https://admin.microsoft.com)im Microsoft 365 Admin Center zu [**Speicherorten,**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)und wählen Sie dann **Hinzufügen** aus. Geben Sie den Namen, die Adresse und die Schlüsselwörter für das Gebäude ein. Fügen Sie beliebig viele Gebäude hinzu.
+Grundrisse verwenden [Standorte,](manage-locations.md) um Ihre Gebäude zu definieren. Wechseln [Sie im Microsoft 365 Admin Center](https://admin.microsoft.com)zu [**Speicherorten,**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)und wählen Sie dann **Hinzufügen** aus. Geben Sie den Namen, die Adresse und die Schlüsselwörter für das Gebäude ein. Fügen Sie beliebig viele Gebäude hinzu.
 
-![floorplans-locations.png](media/floorplans-locations.png)
+![floorplans-locations.png.](media/floorplans-locations.png)
 
 Weitere Informationen zu Speicherorten finden Sie unter [Verwalten von Standorten](manage-locations.md)
 
@@ -79,7 +79,7 @@ Bevor Sie Grundrisse verwenden können, müssen Bürostandorte indiziert werden.
 
 Wechseln Sie [im Admin Center](https://admin.microsoft.com)zu [**Grundrissenplänen,**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans)und wählen Sie dann **"Erste Schritte" aus.** Wenn dieser Hinweis nicht angezeigt wird, wurde dieser Schritt bereits für Ihre Organisation abgeschlossen.
 
-![floorplans_hydrationstep.png](media/floorplans_hydrationstep.png)
+![floorplans_hydrationstep.png.](media/floorplans_hydrationstep.png)
 
 ### <a name="step-7-upload-floor-plans"></a>Schritt 7: Hochladen Grundrisse
 
@@ -94,18 +94,18 @@ Wechseln Sie [im Admin Center](https://admin.microsoft.com)zu [**Grundrissenplä
 8. Wiederholen Sie auf dem Prüfbildschirm Schritt 6, um sicherzustellen, dass die Zuordnung korrekt ist.
 9. (Optional) Überprüfen und identifizieren Sie die Standortmuster für alle hochgeladenen Grundrisse, und wählen Sie dann **"Weiter"** aus.
 10. Wiederholen Sie auf dem Prüfbildschirm Schritt 6, um sicherzustellen, dass die Zuordnung korrekt ist.
-11. Wenn Sie fertig sind, wählen Sie **Veröffentlichen** aus, um den Grundplan in **Microsoft Search** verfügbar zu machen.
+11. Wenn Sie bereit sind, wählen Sie **Veröffentlichen** aus, um den Grundplan in **Microsoft Search** verfügbar zu machen.
 
 > [!NOTE]
 > **Es dauert 48 Stunden, bis die Grundrisse veröffentlicht wurden.** Danach sehen Ihre Benutzer ein Stockwerksplanergebnis ähnlich dem unten stehenden, wenn sie nach einem Büro eines Kollegen suchen.
 
-![floorplans-officelocation.png](media/floorplans-officelocation.png)
+![floorplans-officelocation.png.](media/floorplans-officelocation.png)
 
 ### <a name="step-8-optional-specify-location-patterns"></a>Schritt 8: (Optional) Angeben von Standortmustern
 
 Nach dem Hochladen eines Grundrisses werden die Textbeschriftungen mit den Bürostandorten in den Profilen Ihrer Benutzer verglichen. Wenn weniger als 10 Übereinstimmungen vorhanden sind, wird der Bildschirm **"Positionsmuster angeben"** angezeigt. Standortmuster werden verwendet, um Boden-, Wing- und Rauminformationen aus Bürostandorten zu extrahieren.
 
-![floorplans-locationpattern.png](media/floorplans-locationpattern.png)
+![floorplans-locationpattern.png.](media/floorplans-locationpattern.png)
 
 Es ist nur Platz erforderlich, Boden und Wing sind optional, und Sie können standorte nach Bedarf überspringen.
 
@@ -115,7 +115,7 @@ Um einen vorhandenen Grundriss zu aktualisieren, wählen Sie den Grundplan aus, 
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
-|**Schritt**|**Fehlermeldung**|**Typ**|**Aktion**|
+|**Schritt**|**Fehlermeldung**|**Type**|**Aktion**|
 |:-----|:-----|:-----|:-----|
 |Hochladen Grundrisse|CC_1.dwg kann nicht gelesen werden. Laden Sie den Grundplan erneut hoch oder löschen Sie ihn.|Fehler|Versuchen Sie erneut, die Datei hochzuladen. Wenn dies nicht funktioniert, löschen Sie die Datei, und versuchen Sie es erneut.|
 |Hochladen Grundrisse|Es gibt zwei Dateien mit dem Namen CC_1.dwg. Löschen Sie einen dieser Elemente, oder laden Sie ihn mit einem anderen Namen erneut hoch.|Fehler|Wenn der Dateiname falsch ist, machen Sie den Dateinamen eindeutig, indem Sie Boden- oder Wing-Informationen hinzufügen und die Datei dann erneut hochladen. Wenn Sie versehentlich die gleiche Datei zweimal hinzugefügt haben, löschen Sie sie einfach.|
@@ -132,7 +132,7 @@ Um einen vorhandenen Grundriss zu aktualisieren, wählen Sie den Grundplan aus, 
 
 - Hochladen die Datei, um sie zu SharePoint und zu öffnen.
 - Öffnen Sie die Datei in [Microsoft Visio](https://support.office.com/article/Open-insert-convert-and-save-DWG-and-DXF-AutoCAD-drawings-60cab691-0f4c-4fc9-b775-583273c8dac5) oder [Einem DWG TrueView.](https://www.autodesk.com/products/dwg)
-- Hochladen Sie die Datei an [Den Online Viewer weiter.](https://viewer.autodesk.com/)
+- Hochladen die Datei an [Den Online Viewer](https://viewer.autodesk.com/)weiter.
 
 **F:** Wie füge ich Textbeschriftungen zu nicht gekennzeichneten Räumen hinzu?
 
@@ -166,6 +166,6 @@ Um einen vorhandenen Grundriss zu aktualisieren, wählen Sie den Grundplan aus, 
 
 Eine DWG-Datei, die Raumnummern, aber keine Bodennummern enthält, sieht z. B. wie folgt aus:
 
-![floorplans-nofloors.png](media/floorplans-nofloors.png)
+![floorplans-nofloors.png.](media/floorplans-nofloors.png)
 
-Der Bürostandort im Profil des Benutzers sollte 2/1175 sein, wobei "2" der Gebäudecode, "1" die Stockwerksnummer und "175" die Raumnummer ist.
+Der Bürostandort im Profil des Benutzers sollte 2/1175 sein, wobei "2" der Gebäudecode, "1" die Stockzahl und "175" die Raumnummer ist.

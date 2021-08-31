@@ -6,18 +6,18 @@ manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Hier erhalten Sie einen Überblick darüber, was Microsoft Search ist, welche Vorteile sie bietet und welche Apps Microsoft Search unterstützen.
-ms.openlocfilehash: 8992f9683bd2ad72d7084ff6fb2dcd08dc7d14ef6307161a69f7b54d6d150bd6
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 29a6db642ac9cc787b8cbec45aec609f55722206
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54534016"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701940"
 ---
 # <a name="overview-of-microsoft-search"></a>Übersicht über Microsoft Search 
 
@@ -32,21 +32,21 @@ Microsoft Search hilft Benutzern, die richtigen Antworten, Personen und Inhalte 
 
 ## <a name="what-users-see"></a>Anzeige für Benutzer
 
-In [Bing](https://bing.com)verwenden Benutzer dasselbe Suchfeld wie bei Websuchen. In den Office-Apps finden Benutzer das Microsoft Search Feld in der Kopfzeile. Das sieht ungefähr so aus:
+In [Bing](https://bing.com)verwenden Benutzer dasselbe Suchfeld wie bei Websuchen. In den Office-Apps finden Benutzer das Microsoft Search Feld in der Kopfzeile. Dies sieht wie folgt aus:
 
-![Screenshots von App-Fenstern mit Microsoft Suchfeld in der Kopfzeile](media/Headings_520.png)
+![Screenshots von App-Fenstern mit Microsoft Search Feld in der Kopfzeile.](media/Headings_520.png)
 
 Wenn Benutzer in das **Suchfeld** klicken, schlägt die Suche Ergebnisse basierend auf ihrer vorherigen Aktivität in Office 365 und basierend auf Inhalten vor, die in Ihrer Organisation im Trend liegen. Dateien, an denen sie kürzlich gearbeitet haben, Befehle, die sie kürzlich verwendet haben, sowie Personen, mit denen sie zusammenarbeiten, sind Beispiele für Aktivitäten, die die Suche berücksichtigt. Wenn Benutzer mit der Eingabe im **Suchfeld** beginnen, werden die vorgeschlagenen Ergebnisse aktualisiert. Benutzer können Suchergebnisse direkt im **Suchfeld** öffnen. Hier ist ein Beispiel für eine Suche in [SharePoint](http://sharepoint.com/).
 
-![Screenshots des Microsoft Suchfelds mit einer Abfrage und vorgeschlagenen Ergebnissen](media/SERP_text_520.png)
+![Screenshots des Microsoft Search-Felds mit einer Abfrage und vorgeschlagenen Ergebnissen.](media/SERP_text_520.png)
 
-Wenn die Vorschläge im Suchfeld nicht das sind, wonach Benutzer suchen, öffnet **die EINGABETASTE** die vollständige Liste der Ergebnisse. Sie können Metadaten verwenden, z. B. wer das Element zuletzt geändert hat und wann, wo sich das Element befindet, sowie eine Vorschau anzeigen, um festzustellen, ob es das gesuchte Element ist.
+Wenn die Vorschläge im Suchfeld nicht das sind, wonach Benutzer suchen, öffnet **die EINGABETASTE** die vollständige Liste der Ergebnisse. Sie können Metadaten verwenden, z. B. wer das Element zuletzt geändert hat und wann, wo sich das Element befindet, sowie eine Vorschau anzeigen, um festzustellen, ob es gesucht wird.
 
-![Screenshots der Microsoft Search-Ergebnisseite](media/search_box.png)
+![Screenshots der Ergebnisseite Microsoft Search.](media/search_box.png)
 
 ## <a name="benefits-of-microsoft-search"></a>Vorteile von Microsoft Search
 
-**Suche in Microsoft 365 über jedes beliebige Microsoft Search-Feld** – Benutzer können über ein beliebiges Microsoft Search-Feld suchen und schnell zu der Aufgabe zurückkehren, die sie gerade durchgeführt haben. Microsoft Search vereint Ergebnisse aus Datenquellen in Office 365, einschließlich [SharePoint,](http://sharepoint.com/)Microsoft OneDrive [for Business](https://onedrive.live.com/about/business/)und [Microsoft Exchange Server.](https://products.office.com/exchange/microsoft-exchange-server)
+**Suche in Microsoft 365 über jedes beliebige Microsoft Search-Feld** – Benutzer können über ein beliebiges Microsoft Search-Feld suchen und schnell zu der Aufgabe zurückkehren, die sie gerade durchgeführt haben. Microsoft Search vereint Ergebnisse aus Datenquellen in Office 365, einschließlich [SharePoint,](http://sharepoint.com/) [Microsoft OneDrive for Business](https://onedrive.live.com/about/business/)und [Microsoft Exchange Server.](https://products.office.com/exchange/microsoft-exchange-server)
 
 **Einfache Suche** – Microsoft Search schlägt Ergebnisse basierend auf der vorherigen Aktivität der Benutzer in Office 365 direkt im **Suchfeld vor.**
 
@@ -62,7 +62,7 @@ Als Administrator können Sie eine beeindruckende Microsoft Search Erfahrung fü
 
 **Nützliche Inhalte anzeigen** – Antworten liefern schnelle, autoritative Ergebnisse für Suchabfragen basierend auf Schlüsselwörtern. [Planen Sie Ihre Inhalte.](plan-your-content.md)
 
-**Hinzufügen externer Inhalte** – Mit Microsoft Graph Connectors können Sie externe Inhalte in den Index einfügen. Verwenden Sie Connectors, um die Suchumgebung mit Daten und Dateien von außerhalb von Microsoft 365 zu erweitern. [Übersicht über Microsoft Graph-Connectors](connectors-overview.md)
+**Hinzufügen externer Inhalte** – Mit Microsoft Graph Connectors können Sie externe Inhalte in den Index einbinden. Verwenden Sie Connectors, um die Suchumgebung mit Daten und Dateien von außerhalb von Microsoft 365 zu erweitern. [Übersicht über Microsoft Graph-Connectors](connectors-overview.md)
 
 **Anpassen der Benutzeroberfläche** – Sie können die Benutzeroberfläche mithilfe von Vertikalen und anderen Konfigurationen anpassen. [Anpassen der Microsoft Search Seite](customize-search-page.md)
 

@@ -6,7 +6,7 @@ manager: kellis
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
 ROBOTS: NoIndex
 description: Rufen Sie relevante Suchvorschläge ab, und suchen Sie schneller nach Arbeitsergebnissen, indem Sie Ihrer Intranetwebsite oder -seite ein Microsoft Search Suchfeld hinzufügen.
-ms.openlocfilehash: f11fcbeee23346041e4ebc720e4256d3aba29d57bed9266ed04bb02ee31c2ada
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: d9f730eee98291d64e1f860c67be3eb7aa52a4a8
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533391"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701408"
 ---
 # <a name="add-a-search-box-to-your-intranet-site"></a>Hinzufügen eines Suchfelds zu Ihrer Intranetwebsite
 
@@ -108,11 +108,11 @@ Um eine einfache Integration zwischen Ihren Branchen-Apps oder Intranetwebsites 
 
 Verwenden Sie die vertikale Option in bfbSearchBoxConfig, um die gewünschte Vertikale zu definieren. Wenn Benutzer beispielsweise immer auf der vertikalen Website(einer der Standard-Vertikalen) landen sollen, verwenden Sie den Wert "Websitewebsites".
 
-:::image type="content" alt-text="Screenshot der Seite &quot;Arbeitsergebnisse&quot; auf Microsoft Search in Bing mit den vertikalen Ergebnissen und der URL der Websites." source="media/sites-vertical-esb.png" lightbox="media/sites-vertical-esb.png":::
+:::image type="content" alt-text="Screenshot der Seite &quot;Arbeitsergebnisse&quot; auf Microsoft Search in Bing mit den vertikalen Ergebnissen und der URL &quot;Websites&quot;." source="media/sites-vertical-esb.png" lightbox="media/sites-vertical-esb.png":::
 
 Verwenden Sie für benutzerdefinierte Vertikale den Hash am Ende der URL. Sie können diese Werte finden, indem Sie auf der Arbeitsseite auf Bing suchen, auf eine vertikale Beschriftung klicken und den Wert nach dem Nummernzeichen (#) kopieren.
 
-:::image type="content" alt-text="Screenshot der Seite &quot;Arbeitsergebnisse&quot; auf Microsoft Search in Bing mit den vertikalen Ergebnissen und der URL einer benutzerdefinierten Präsentation." source="media/custom-vertical-esb.png" lightbox="media/custom-vertical-esb.png":::
+:::image type="content" alt-text="Screenshot der Seite &quot;Arbeitsergebnisse&quot; auf Microsoft Search in Bing, auf der die vertikalen Ergebnisse und die URL einer benutzerdefinierten Präsentation angezeigt werden." source="media/custom-vertical-esb.png" lightbox="media/custom-vertical-esb.png":::
 
 ## <a name="use-an-iframe-to-embed-a-search-box"></a>Verwenden eines iFrame zum Einbetten eines Suchfelds
 
@@ -124,4 +124,4 @@ Wenn das Einbetten eines Skripts keine Option für die Website ist, verwenden Si
 
 ## <a name="inprivate-mode-and-conditional-access"></a>InPrivate-Modus und bedingter Zugriff
 
-Ein eingebettetes Suchfeld wird deaktiviert, wenn die Seite oder Website in einem InPrivate-Fenster geöffnet wird. Darüber hinaus unterstützt Bing.com bei der Azure AD-Unterstützung für bedingten Zugriff in Microsoft Edge keine AAD-Anmeldung bei Verwendung des InPrivate-Modus. Weitere Informationen zum bedingten Zugriff in Edge finden Sie unter [Microsoft Edge und bedingter Zugriff.](/deployedge/ms-edge-security-conditional-access#accessing-conditional-access-protected-resources-in-microsoft-edge) 
+Ein eingebettetes Suchfeld wird deaktiviert, wenn die Seite oder Website in einem InPrivate-Fenster geöffnet wird. Darüber hinaus unterstützt Bing.com die AAD-Anmeldung nicht, wenn sie den InPrivate-Modus verwendet, da azure AD-Bedingter Zugriff in Microsoft Edge unterstützt wird. Weitere Informationen zum bedingten Zugriff in Edge finden Sie unter [Microsoft Edge und bedingter Zugriff.](/deployedge/ms-edge-security-conditional-access#accessing-conditional-access-protected-resources-in-microsoft-edge) 

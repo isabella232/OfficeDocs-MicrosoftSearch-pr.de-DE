@@ -6,18 +6,18 @@ manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Schützen Sie die Daten und Endbenutzer Ihres Unternehmens, während Sie autorisierten Benutzern Informationen mit Microsoft Search in Bing
-ms.openlocfilehash: 181a06ecb9c009d03c71e3e7f8ecfc7d675faa659967bc6a6c1560513a45a5ac
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: bf3629b2508c705d19e3b7b772c6f3672063a6f1
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532677"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701858"
 ---
 # <a name="security-and-privacy-for-microsoft-search-in-bing"></a>Sicherheit und Datenschutz für Microsoft Search in Bing
 
@@ -25,7 +25,7 @@ Mit erweiterten Datenschutz- und Sicherheitsmaßnahmen trägt Microsoft Search i
 
 ## <a name="secure-by-default"></a>Standardmäßige Sicherheit
 
-Microsoft Search in Bing Anforderungen erfolgen über HTTPS. Die Verbindung wird end-to-end verschlüsselt, um die Sicherheit zu erhöhen.
+Microsoft Search in Bing Anforderungen werden über HTTPS ausgeführt. Die Verbindung wird end-to-end verschlüsselt, um die Sicherheit zu erhöhen.
   
 ## <a name="authentication-and-authorization-with-azure-active-directory"></a>Authentifizierung und Autorisierung mit Azure Active Directory
 
@@ -45,14 +45,14 @@ Wenn sich ein Benutzer mit dem Geschäfts-, Schul- oder Unikonto anmeldet, lädt
 
 Arbeitsergebnisse, die über Office 365-Workloads wie SharePoint und OneDrive for Business abgerufen werden, werden in der Quelle einer Sicherheitskürzung unterzogen. Benutzer können Ressourcen wie Word-Dokumente oder PowerPoint-Präsentationen, die sie nicht über Office 365 anzeigen oder auf die sie nicht über Office 365 zugreifen können, nicht anzeigen. Sie können nur ihre eigenen Dateien und Dateien anzeigen, die der Autor explizit oder implizit (z. B. über eine Gruppenmitgliedschaft) in SharePoint für sie freigegeben hat.
 
-## <a name="microsoft-search-in-bing-protects-workplace-searches"></a>Microsoft Search in Bing schützt die Arbeitsplatzsuchen
+## <a name="microsoft-search-in-bing-protects-workplace-searches"></a>Microsoft Search in Bing schützt Arbeitsplatzsuchen
 
 Wenn ein Benutzer eine Suchabfrage in Microsoft Search in Bing eingibt, treten zwei gleichzeitige Suchanforderungen auf:
 
 - Eine Suche der internen Ressourcen Ihrer Organisation.
 - Eine separate Suche nach öffentlichen Ergebnissen von Bing.com.
 
-Da Die Arbeitsplatzsuchen möglicherweise vertraulich sind, hat Microsoft Search eine Reihe von Vertrauensmaßnahmen implementiert, die beschreiben, wie die separate Suche nach öffentlichen Ergebnissen von Bing.com behandelt wird.
+Da Die Arbeitsplatzsuchen möglicherweise vertraulich sind, hat Microsoft Search eine Reihe von Vertrauensmaßnahmen implementiert, die beschreiben, wie die separate Suche von öffentlichen Ergebnissen von Bing.com behandelt wird.
 
 ### <a name="logging"></a>Protokollierung
 

@@ -6,23 +6,23 @@ manager: kellis
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Erfahren Sie mehr über die Verfügbarkeit Microsoft Search Features für Cloudkunden von US Government
+description: Erfahren Sie mehr über die Verfügbarkeit von Microsoft Search Funktionen für Cloudkunden von US Government
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 27444de7994c77ff3f95e9a90e917ea20f3cea68
-ms.sourcegitcommit: 2f5868e50caa9743d298188003a24545b5078c5b
+ms.openlocfilehash: cf8614d156202b3620eb595818a0e26c2200c77d
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58529035"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702238"
 ---
 # <a name="microsoft-search-for-us-government-environments"></a>Microsoft Search für US-Behördenumgebungen
 
-Dieser Artikel bietet eine Übersicht über die Funktionsunterschiede zwischen den Clouds der US-Regierung und der kommerziellen Cloud für Microsoft Search. Microsoft Search Verfügbarkeit für Clouds der US-Regierung wird unten beschrieben.
+Dieser Artikel bietet eine Übersicht über die Funktionsunterschiede zwischen den Clouds der US-Regierung und der kommerziellen Cloud für Microsoft Search. Microsoft Search Verfügbarkeit für US Government Clouds wird unten beschrieben.
 
 Es ist unsere allgemeine Absicht, Microsoft Search kommerzielle Features und Funktionen für die Government-Cloudumgebung bereitzustellen. Einen Zeitrahmen für die Veröffentlichung finden Sie in der [Microsoft Search Roadmap.](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Search)
 
@@ -38,7 +38,7 @@ Es dauert bis zu 24 Stunden, bis diese Änderung wirksam wird.
 
 Suchadministratoren können auch Lesezeichen und Q&A-Antworten im Microsoft 365 Admin Center anpassen. Weitere Informationen finden Sie unter [Planen Ihrer Inhalte.](/microsoftsearch/plan-your-content)
 
-## <a name="microsoft-search-features"></a>features Microsoft Search
+## <a name="microsoft-search-features"></a>Microsoft Search Features
 
 In der folgenden Tabelle wird beschrieben, ob die angegebenen Microsoft Search Features in den Umgebungen GCC, GCC High und DoD verfügbar sind. 
 
@@ -50,7 +50,7 @@ In der folgenden Tabelle wird beschrieben, ob die angegebenen Microsoft Search F
 | Durchsuchen von Administratorsteuerelementen nach Microsoft Search in Bing | Ja | Nein | Nein  |
 | Enterprise Homepage auf Bing | Ja | Nein | Nein  |
 | Bookmark-Antworten (vom Administrator zusammengestellt) | Ja | Nein | Nein  |
-| F&Antworten A (vom Administrator zusammengestellt) | Ja | Nein | Nein  |
+| F&Antworten (vom Administrator zusammengestellt) | Ja | Nein | Nein  |
 | Akronyme antworten | Nein | Nein | Nein  |
 | Antworten auf Grundrisse | Nein | Nein | Nein  |
 | Antworten auf Standorte | Nein | Nein | Nein  |

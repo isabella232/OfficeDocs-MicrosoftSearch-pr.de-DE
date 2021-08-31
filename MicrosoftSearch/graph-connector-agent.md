@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: On-prem-Agent
-ms.openlocfilehash: 4b9dddba7741388f2e6c96510e5f41b196def330
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: 9994b84c8db05b6b269edb6f5b6f463ab8da1529
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58469960"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702138"
 ---
 # <a name="microsoft-graph-connector-agent"></a>Microsoft Graph Connector-Agent
 
@@ -135,7 +135,7 @@ Wenn Sie das Beispielskript zum Generieren eines Zertifikats verwendet haben, be
 
 3. Wählen Sie bei der Installation des Zertifikats den **lokalen Computer** als Speicherort aus.
 
-4. Öffnen Sie nach der Installation des Zertifikats **computerzertifikate** über Startmenü verwalten.
+4. Öffnen Sie nach der Installation des Zertifikats **Computerzertifikate** über Startmenü verwalten.
 
 5. Wählen Sie das neu installierte Zertifikat unter **"Persönliche**  >  **Zertifikate" aus.**
 
@@ -161,6 +161,6 @@ Wenn der Dienst nicht mit dem Fehler "Der Dienst wurde aufgrund eines Anmeldefeh
 
 ### <a name="connection-failure"></a>Verbindungsfehler
 
-Wenn die Aktion "Verbindung testen" beim Erstellen einer Verbindung mit dem Fehler "Benutzername/Kennwort und Datenquellenpfad überprüfen" fehlschlägt, auch wenn der angegebene Benutzername und das Kennwort korrekt sind, stellen Sie sicher, dass das Benutzerkonto über interaktive Anmelderechte für den Computer verfügt, auf dem Graph Connector-Agent installiert ist. Informationen zur Überprüfung der Anmelderechte finden Sie in der Dokumentation zur Verwaltung von [Anmelderichtlinien.](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) Stellen Sie außerdem sicher, dass sich die Datenquelle und der Agentcomputer im selben Netzwerk befinden.
+Wenn die Aktion "Verbindung testen" beim Erstellen einer Verbindung mit dem Fehler "Benutzername/Kennwort und Datenquellenpfad überprüfen" fehlschlägt, stellen Sie sicher, dass das Benutzerkonto über interaktive Anmelderechte für den Computer verfügt, auf dem Graph Connector-Agent installiert ist. Informationen zur Überprüfung der Anmelderechte finden Sie in der Dokumentation zur Verwaltung von [Anmelderichtlinien.](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) Stellen Sie außerdem sicher, dass sich die Datenquelle und der Agentcomputer im selben Netzwerk befinden.
 
-Wenn eine Verbindung mit dem Fehler "1011: Der Graph Connector-Agent ist nicht erreichbar oder offline" fehlschlägt, melden Sie sich bei dem Computer an, auf dem der Agent installiert ist, und starten Sie die Agent-Anwendung, wenn er noch nicht ausgeführt wird. Wenn die Verbindung weiterhin fehlschlägt, stellen Sie sicher, dass das Zertifikat oder der geheime Clientschlüssel, der dem Agent während der Registrierung bereitgestellt wurde, nicht abgelaufen ist und über erforderliche Berechtigungen verfügt.
+Wenn eine Verbindung mit dem Fehler "1011: Der Graph Connector-Agent ist nicht erreichbar oder offline" fehlschlägt, melden Sie sich bei dem Computer an, auf dem der Agent installiert ist, und starten Sie die Agent-Anwendung, wenn er noch nicht ausgeführt wird. Wenn die Verbindung weiterhin fehlschlägt, überprüfen Sie, ob das Zertifikat oder der geheime Clientschlüssel, der dem Agent während der Registrierung bereitgestellt wurde, nicht abgelaufen ist und über erforderliche Berechtigungen verfügt.

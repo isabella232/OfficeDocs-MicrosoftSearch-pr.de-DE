@@ -8,18 +8,18 @@ ms.service: mssearch
 audience: Admin
 ms.audience: Admin
 ms.date: 07/02/2021
-ms.localizationpriority: medium
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Überprüfen Microsoft Search Nutzungsberichte
-ms.openlocfilehash: 9de48331efbc956ee7d980b919d9bd2f025fc8aa
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.openlocfilehash: b20045fc3cec609a1c2ad5e3e51655f1f2f24986
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701453"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470390"
 ---
 # <a name="microsoft-search-usage-reports"></a>Microsoft Search Verwendungsberichte
 
@@ -30,7 +30,7 @@ Mithilfe von Suchverwendungsberichten können Sie besser verstehen, wie die Such
 
 Die [Microsoft Search Verwendungsberichte](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) enthalten Diagramme und Tabellen, die aus Suchvorgängen generiert werden, die von SharePoint Home, Office.com und Microsoft Search in Bing Suchfeldern ausgeführt werden. Sie können Daten aus den letzten 31 Tagen, pro Tag oder monatlich für das vorherige Jahr anzeigen. Diese Berichte werden gerade eingeführt, sodass es zeitaufwendige Zeit dauert, bis die verlaufshistorischen Daten fällig sind.
 
-Eine frühere Version dieser Seite enthielt Daten aus Suchvorgängen, die nur für Microsoft Search in Bing auf Bing.com ausgeführt wurden. Diese Daten sind nun in diese Berichte integriert. Sie können die alte Seite weiterhin sehen, indem Sie unten auf der Seite auf den Link klicken, um die **wichtigsten Abfragen und die Eindrucksverteilung von Bing anzuzeigen.** Dieser Link und die alte Seite werden in Kürze entfernt.
+Eine frühere Version dieser Seite enthielt Daten aus Suchvorgängen, die nur für Microsoft Search in Bing auf Bing.com ausgeführt wurden. Diese Daten sind nun in diese Berichte integriert. Sie können die alte Seite weiterhin sehen, indem Sie unten auf der Seite auf den Link klicken, um die wichtigsten Abfragen und die **Eindrucksverteilung von Bing anzuzeigen.** Dieser Link und die alte Seite werden in Kürze entfernt.
 
 > [!div class="mx-imgBorder"]
 > ![Dashboard für Suchverwendungsberichte.](media/usage-reports/usage_reports_v2.png)
@@ -41,8 +41,8 @@ Eine frühere Version dieser Seite enthielt Daten aus Suchvorgängen, die nur f�
 |:-----|:-----|
 |Abfragevolume|Dieser Bericht zeigt die Anzahl der ausgeführten Suchabfragen an. Verwenden Sie diesen Bericht, um Trends im Suchabfragevolumen zu identifizieren und Zeiträume mit hoher und niedriger Suchaktivität zu ermitteln.|
 |Häufigste Suchvorgänge|Dieser Bericht enthält die beliebtesten Suchabfragen. Eine Abfrage wird diesem Bericht hinzugefügt, wenn sie mindestens dreimal mit einem Klick auf ein Ergebnis durchsucht wird. Verwenden Sie diesen Bericht, um zu verstehen, nach welchen Arten von Informationen Ihre Benutzer suchen.|
-|Abgebrochene Abfragen|Dieser Bericht zeigt häufig verwendete Suchabfragen, die nur wenig Klick-und-Los erhalten. Mithilfe dieses Berichts können Sie Suchvorgänge identifizieren, die unzufriedene Benutzer erzeugen, und das Auffinden von Inhalten verbessern. Sie können dann ermitteln, ob das Erstellen einer Antwort, z. B. ein Lesezeichen, oder das Aufnehmen neuer Inhalte über einen Graph Connector die richtige Aktion ist.|
-|Keine Ergebnisabfragen|Dieser Bericht zeigt beliebte Suchabfragen, die keine Ergebnisse zurückgegeben haben. Mithilfe dieses Berichts können Sie Suchvorgänge identifizieren, die unzufriedene Benutzer erzeugen, und das Auffinden von Inhalten verbessern. Sie können dann ermitteln, ob das Erstellen einer Antwort, z. B. ein Lesezeichen, oder das Aufnehmen neuer Inhalte über einen Graph Connector die richtige Aktion ist.|
+|Abgebrochene Abfragen|Dieser Bericht zeigt häufig verwendete Suchabfragen, die nur wenig Klick-und-Los erhalten. Mithilfe dieses Berichts können Sie Suchvorgänge identifizieren, die unzufriedene Benutzer erzeugen, und das Auffinden von Inhalten verbessern. Sie können dann ermitteln, ob das Erstellen einer Antwort, z. B. ein Lesezeichen, oder das Erfassen neuer Inhalte über einen Graph Connector die richtige Aktion ist.|
+|Keine Ergebnisabfragen|Dieser Bericht zeigt beliebte Suchabfragen, die keine Ergebnisse zurückgegeben haben. Mithilfe dieses Berichts können Sie Suchvorgänge identifizieren, die unzufriedene Benutzer erzeugen, und das Auffinden von Inhalten verbessern. Sie können dann ermitteln, ob das Erstellen einer Antwort, z. B. ein Lesezeichen, oder das Erfassen neuer Inhalte über einen Graph Connector die richtige Aktion ist.|
 
 >[!NOTE]
 >Es gibt derzeit ein bekanntes Problem, bei dem Abfragen, die mit einer Antwort wie einem Lesezeichen zufrieden sind, als abgebrochene Abfrage gezählt werden.
@@ -59,7 +59,7 @@ Klicken Sie auf den Link auf der Seite, um die wichtigsten Abfragen und Impressi
 
 **Wenn ich die letzten 31 Tage oder letzten 12 Monate auswähle, warum muss ich dann einen bestimmten Tag oder einen bestimmten Monat auswählen.**
 
-Die Kalenderansicht ist heute in Microsoft Search-Verwendungsberichten ein Prozess in zwei Schritten. Wählen Sie zunächst den Datumsbereich aus der Dropdownliste (nach 31 Tagen oder nach 12 Monaten) und dann den Starttag oder -monat aus.
+Die Kalenderansicht ist heute in Microsoft Search-Verwendungsberichten ein Prozess in zwei Schritten. Wählen Sie zunächst den Datumsbereich aus der Dropdownliste aus (in den letzten 31 Tagen oder in den letzten 12 Monaten), und wählen Sie dann den Starttag oder -monat aus.
 
 In den Abfragetabellen "Oben", "Abgebrochen" und "Fehlgeschlagen" werden Ergebnisse aus dem ausgewählten Tag oder Monat angezeigt.
 

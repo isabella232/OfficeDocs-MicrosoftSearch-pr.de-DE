@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Einrichten des Salesforce Graph-Connectors für Microsoft Search
-ms.openlocfilehash: ea8de1b33787e9c08e50e99ace0afaa83e75394d
-ms.sourcegitcommit: be5dcc7005447d6139e39d86211c7ec4cd5dd907
+ms.openlocfilehash: c2679002affe494ba31777718d265b5526b744c0
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58639579"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701867"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -54,7 +54,7 @@ Um eine Verbindung mit Ihrer Salesforce-Instanz herzustellen, benötigen Sie ihr
 
         - Zugreifen auf und Verwalten Ihrer Daten (API)
 
-        - Führen Sie Anforderungen jederzeit in Ihrem Auftrag aus (refresh_token, offline_access)
+        - Jederzeit Anforderungen in Ihrem Auftrag ausführen (refresh_token, offline_access)
 
     - Aktivieren Sie das Kontrollkästchen für **"Geheimen Schlüssel für Webserverfluss anfordern".**
 
@@ -91,7 +91,7 @@ Folgen Sie den allgemeinen [Setupanweisungen.](./configure-connector.md)
 
 ## <a name="step-3-configure-the-connection-settings"></a>Schritt 3: Konfigurieren der Verbindungseinstellungen
 
-Verwenden Sie für die Instanz-URL https://[domäne].my.salesforce.com</a0>, wobei domäne die Salesforce-Domäne für Ihre Organisation wäre.
+Verwenden Sie für die Instanz-URL https://[domain]. my.salesforce.com, wobei Domäne die Salesforce-Domäne für Ihre Organisation wäre.
 
 Geben Sie die Client-ID und den geheimen Clientschlüssel ein, die Sie von Ihrer Salesforce-Instanz erhalten haben, und wählen Sie "Anmelden" aus.
 
@@ -132,11 +132,11 @@ Wenn Sie sich entschieden haben, eine ACL aus Ihrer Salesforce-Instanz zu erfass
 
 ### <a name="step-5b-map-aad-identities"></a>Schritt 5.b: Zuordnen von AAD-Identitäten
 
-Wenn Sie sich entschieden haben, eine ACL aus Ihrer Salesforce-Instanz zu erfassen, und "AAD" für den Identitätstyp ausgewählt haben, finden Sie unter ["Zuordnen Ihrer Azure AD-Identitäten"](map-aad.md) Anweisungen zum Zuordnen der Identitäten. Informationen zum Einrichten von Azure AD SSO für Salesforce finden Sie in diesem [Lernprogramm.](/azure/active-directory/saas-apps/salesforce-tutorial)
+Wenn Sie eine ACL aus Ihrer Salesforce-Instanz aufgenommen und "AAD" für den Identitätstyp ausgewählt haben, finden Sie unter ["Zuordnen Ihrer Azure AD-Identitäten"](map-aad.md) Anweisungen zum Zuordnen der Identitäten. Informationen zum Einrichten von Azure AD SSO für Salesforce finden Sie in diesem [Lernprogramm.](/azure/active-directory/saas-apps/salesforce-tutorial)
 
 ### <a name="apply-user-mapping-to-sync-your-salesforce-identities-to-azure-ad-identities"></a>Anwenden der Benutzerzuordnung zum Synchronisieren Ihrer Salesforce-Identitäten mit Azure AD-Identitäten
 
-In diesem Video erfahren Sie, wie Sie sich bei Ihrer Salesforce-Instanz authentifizieren, Ihre nicht Azure Active Directory Identitäten mit Ihren Azure Active Directory Identitäten synchronisieren und die richtigen Sicherheitskürzungen auf Ihre Salesforce-Elemente anwenden.
+In diesem Video sehen Sie, wie Sie sich bei Ihrer Salesforce-Instanz authentifizieren, Ihre nicht Azure Active Directory Identitäten mit Ihren Azure Active Directory Identitäten synchronisieren und die richtigen Sicherheitskürzungen auf Ihre Salesforce-Elemente anwenden.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/SZYiFxZMKcM]
 
@@ -178,9 +178,9 @@ Folgen Sie den allgemeinen [Setupanweisungen.](./configure-connector.md)
 ## <a name="limitations"></a>Einschränkungen
 
 - Der Graph Connector unterstützt derzeit keine Apex-basierte, gebietsbasierte Freigabe und Freigabe mit persönlichen Gruppen von Salesforce.
-- Es gibt einen bekannten Fehler in der Salesforce-API, den der Graph Connector verwendet, bei dem die privaten organisationsweiten Standardwerte für Leads derzeit nicht berücksichtigt werden.  
-- Wenn für ein Feld die Sicherheit auf Feldebene (FLS) für ein Profil festgelegt ist, erfasst der Graph Connector dieses Feld nicht für Profile in dieser Salesforce-Organisation. Daher können Benutzer weder nach Werten für diese Felder suchen noch in den Ergebnissen angezeigt werden.  
-- Im Bildschirm "Schema verwalten" werden diese allgemeinen Standardeigenschaftsnamen einmal aufgelistet. Die Optionen sind **"Abfrage",** **"Suchen",** **"Abrufen"** und **"Verfeinern"** und gelten für alle oder keine.
+- Es gibt einen bekannten Fehler in der Salesforce-API, die der Graph Connector verwendet, bei dem die privaten organisationsweiten Standardwerte für Leads derzeit nicht berücksichtigt werden.  
+- Wenn für ein Feld sicherheit auf Feldebene (FLS) für ein Profil festgelegt ist, erfasst der Graph Connector dieses Feld nicht für Profile in dieser Salesforce-Organisation. Daher können Benutzer weder nach Werten für diese Felder suchen noch in den Ergebnissen angezeigt werden.  
+- Auf dem Bildschirm "Schema verwalten" werden diese allgemeinen Standardeigenschaftennamen einmal aufgelistet. Die Optionen sind **"Abfrage",** **"Suchen",** **"Abrufen"** und **"Verfeinern"** und gelten für alle oder keine.
     - Name
     - Url
     - Beschreibung

@@ -6,18 +6,18 @@ manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Hinzufügen von Such-Vertikalen und Anpassen von Suchergebnissen
-ms.openlocfilehash: 701604798115091c7c7a286d3b6e97dea08e9453
-ms.sourcegitcommit: be5dcc7005447d6139e39d86211c7ec4cd5dd907
+ms.openlocfilehash: 1ca436a2617e32e285715e4fffd622dc7a571ca1
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58639588"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702174"
 ---
 # <a name="customize-the-search-results-page"></a>Anpassen der Suchergebnisseite
 
@@ -27,7 +27,7 @@ Sie können beispielsweise eine Suchsparte für Marketinganalysedaten aus Dritta
 
 ## <a name="about-search-verticals"></a>Informationen zu Such-Vertikalen
 
-Oben auf der Ergebnisseite Microsoft Search befindet sich eine Reihe von Registerkarten. Hierbei handelt es sich um Such-Vertikalen. Eine Such-Vertikale zeigt nur Ergebnisse eines bestimmten Typs oder eines bestimmten Inhaltssatzes an. Beispiele sind **Dateien** oder **News**. Standardmäßig werden Microsoft Search die Vertikalen **"Alle",** **"Personen",** **"Dateien",** **"Websites"** und **"News" angezeigt.**  
+Oben auf der Ergebnisseite Microsoft Search befindet sich eine Reihe von Registerkarten. Hierbei handelt es sich um Such-Vertikalen. Eine Such-Vertikale zeigt nur Ergebnisse eines bestimmten Typs oder eines bestimmten Inhaltssatzes an. Beispiele sind **Dateien** oder **News**. Standardmäßig zeigt Microsoft Search die Vertikalen **"Alle",** **"Personen",** **"Dateien",** **"Websites"** und **"News"** an.  
 
 Sie können Such-Vertikalen hinzufügen, die für Ihre Organisation relevant sind. Diese werden auf der Ergebnisseite Microsoft Search in SharePoint, Office und Bing angezeigt. Sie können beispielsweise eine Vertikale für marketingbezogene Inhalte und eine weitere für den Vertrieb erstellen, basierend auf der Art der Informationen, die jede Abteilung benötigt. Sie können Vertikale hinzufügen, um nur Ergebnisse aus Inhalten anzuzeigen, die über Connectors indiziert wurden.
 
@@ -48,7 +48,7 @@ Wenn Sie so viele *Semantikbezeichnungen* wie möglich genau benennen, wird dies
 
 Eine Verbindung kann als Inhaltsquelle unter einer einzelnen Vertikalen hinzugefügt werden. Verbindungen unter mehreren Vertikalen können nicht verwendet werden.
 
-Verwenden Sie allgemeine Quelleigenschaften, um eine Abfrage für eine Such-Vertikale einzurichten, in der mehrere Verbindungsquellen hinzugefügt wurden, um die Abfrage zu erstellen.
+Verwenden Sie allgemeine Quelleigenschaften, um eine Abfrage für eine Such-Vertikal einzurichten, in der mehrere Verbindungsquellen hinzugefügt wurden, um die Abfrage zu erstellen.
 
 ### <a name="before-you-create-verticals-and-result-types"></a>Vor dem Erstellen von Vertikalen und Ergebnistypen
 
@@ -77,7 +77,7 @@ Sie können einen begrenzten Satz von [KQL (Keyword Query Language)](/sharepoint
 
 Führen Sie die folgenden Schritte aus, um eine vertikale Microsoft Search in SharePoint Zuhause, Office oder Bing zu erstellen:
 
-1. Wechseln [Sie](https://admin.microsoft.com)im Microsoft 365 Admin Center zu [**"Vertikalen".**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)
+1. Wechseln [Sie im Microsoft 365 Admin Center](https://admin.microsoft.com)zu [**"Vertikalen".**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)
 2. Wählen Sie **"Hinzufügen"** aus, um zu beginnen.  
 
 ### <a name="create-a-vertical-at-the-site-level"></a>Erstellen einer Vertikalen auf Websiteebene
@@ -116,7 +116,7 @@ Nachdem Sie den Assistenten gestartet haben, werden Sie durch die Schritte gefü
 
 ### <a name="create-a-result-type-at-the-site-level"></a>Erstellen eines Ergebnistyps auf Websiteebene
 
-1. Wechseln Sie auf der [SharePoint](https://sharepoint.com/) Website, auf der Sie den Ergebnistyp verwenden möchten, zu **Einstellungen**.
+1. Wechseln Sie auf der [SharePoint](https://sharepoint.com/) Website, auf der Der Ergebnistyp angezeigt werden soll, zu **Einstellungen**.
 2. Wählen Sie **"Websiteinformationen"** und dann **"Alle Websiteeinstellungen anzeigen"** aus.
 3. Suchen Sie nach dem **Abschnitt Microsoft Search,** und wählen Sie dann **Microsoft Search für diese Websitesammlung** konfigurieren aus.
 4. Wechseln Sie im Navigationsbereich zu **"Benutzerdefinierte Oberfläche",** und wählen Sie die Registerkarte **"Ergebnistyp" aus.**
@@ -127,7 +127,7 @@ Nachdem Sie den Assistenten gestartet haben, werden Sie durch die Schritte gefü
 Nachdem Sie die Vertikale aktiviert haben, gibt es eine Verzögerung von einigen Stunden, bevor Sie sie anzeigen können. Sie können die URL jedoch `cacheClear=true` in SharePoint anfügen und Office, um die Vertikale sofort anzuzeigen. Fügen Sie Bing sofort an die Anfügeliste `&features=uncachedVerticals` `Work vertical URL` an, um die Vertikale anzuzeigen.
 
 > [!NOTE]
-> Hinzugefügte Vertikale sind auf SharePoint]( https://sharepoint.com/) und [Office](https://office.com) nicht sichtbar, wenn sie von mobilen Webbrowsern angezeigt werden.
+> Hinzugefügte Vertikale sind auf SharePoint]( https://sharepoint.com/) und [Office](https://office.com) nicht sichtbar, wenn sie in mobilen Webbrowsern angezeigt werden.
 
 ## <a name="profile-query-variables"></a>Profilabfragevariablen
 
@@ -139,7 +139,7 @@ Um beispielsweise eine "Tickets"-Vertikale zu erstellen, damit der Benutzer Supp
 
 In dieser Sprache werden die Suchergebnisse eingegrenzt, sodass nur die Elemente angezeigt werden, für die der Zugewiesene der Benutzer ist, der die Suche ausführt.
 
-[Profilressource](/graph/api/resources/profile) macht Eigenschaften als Sammlungen verfügbar. Beispielsweise werden Informationen im Zusammenhang mit E-Mail-Adressen über die E-Mail-Sammlung, Arbeitspositionen als Positionssammlung usw. verfügbar gemacht. Alle im Benutzerprofil verfügbaren Eigenschaften, die AAD als Quelltyp aufweisen, werden als Abfragevariablen verfügbar gemacht.
+[Profilressource](/graph/api/resources/profile) macht Eigenschaften als Sammlungen verfügbar. Beispielsweise werden Informationen im Zusammenhang mit E-Mail-Adressen durch E-Mail-Sammlung, Arbeitspositionen als Positionssammlung usw. verfügbar gemacht. Alle im Benutzerprofil verfügbaren Eigenschaften, die AAD als Quelltyp aufweisen, werden als Abfragevariablen verfügbar gemacht.
 
 
 Betrachten Sie einen Benutzer, der drei E-Mail-Adressen in der E-Mail-Sammlung zur Verfügung hat, wie hier gezeigt:
@@ -177,7 +177,7 @@ Betrachten Sie einen Benutzer, der drei E-Mail-Adressen in der E-Mail-Sammlung z
 ] 
 ```
 
-- Die Abfrage `MyProperty: {Profile.emails.address}` wird in *"MyProperty" aufgelöst: "Megan.Bowen@contoso.com".*  
+- Die Abfrage `MyProperty: {Profile.emails.address}` wird in *MyProperty aufgelöst: "Megan.Bowen@contoso.com"*.  
 
 - Verwenden Sie die Mehrwerterweiterungssyntax, um alle Werte des Adressattributs aufzulösen. Die Abfrage `{|MyProperty:{Profile.emails.address}}` wird in *((MyProperty:"Megan.Bowen@contoso \. com")* oder *(MyProperty: "meganb@hotmail \. com")* oder  *(MyProperty:"meganb@outlook \. com"))* aufgelöst.
 

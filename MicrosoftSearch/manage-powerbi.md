@@ -6,19 +6,19 @@ manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Verwalten, wie Power BI Berichte und Daten in Suchergebnissen angezeigt werden
-ms.openlocfilehash: 951b1849cd3c9f60e93c98bde189eef85680b372
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: 14b294fcec7d9c7cb3e1951414ab8795fd2cace7
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470257"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702003"
 ---
 # <a name="manage-power-bi-answers"></a>Verwalten Power BI Antworten
 
@@ -31,13 +31,13 @@ Damit Ihre Benutzer leichter die Daten und Analysen finden können, die sie ben�
 
 ## <a name="what-users-experience"></a>Benutzerfreundlichkeit
 
-Microsoft Search Benutzer können Power BI Ergebnisse finden, indem sie über das Windows Suchfeld, SharePoint, Office 365 und Bing suchen. Benutzer können mit Abfragen wie den folgenden nach Berichten und Dashboards suchen:
+Microsoft Search Benutzer können Power BI Ergebnisse finden, indem sie im Windows Suchfeld, SharePoint, Office 365 und Bing suchen. Benutzer können mit Abfragen wie den folgenden nach Berichten und Dashboards suchen:
 
-* Power BI info`<topic>`
+* Power BI`<topic>`
 * Power BI für`<topic>`
 * `<topic>`Power BI-Dashboard oder Power BI-Dashboard`<topic>`
-* `<topic>`Power BI bericht oder Power BI Bericht`<topic>`
-* `<topic>`Power BI oder Power BI Metriken`<topic>`
+* `<topic>`Power BI Bericht oder Power BI Bericht`<topic>`
+* `<topic>`Power BI-Metriken oder Power BI-Metriken`<topic>`
 * `<topic>`Power BI Scorecard oder Power BI Scorecard`<topic>`
 
 Ersetzen `<topic>` Sie in den obigen Beispielen die Informationen, die Sie suchen, z. B. Vertrieb, Nutzung, Kapazität, 2021, Q1 und mehr, um relevante Ergebnisse aus Power BI anzuzeigen.

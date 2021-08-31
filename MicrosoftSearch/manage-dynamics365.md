@@ -6,20 +6,20 @@ manager: kellis
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Verwalten der Darstellung von Dynamics 365-Inhalten in Suchergebnissen
-ms.openlocfilehash: ff7b1d86716233910ba6c1ba3141fbe13beb5a98
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: 8a87e4026937ba01132c10815dc2f91d27da79c9
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470230"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702030"
 ---
 # <a name="dynamics-365-federation-search-preview"></a>Dynamics 365-Verbundsuche (Vorschau)
 
 ## <a name="microsoft-search-federation-and-connectors"></a>Microsoft Search Partnerverbund und Connectors
 
-Um Microsoft Search nützlicher zu machen, führen wir Microsoft Search-Partnerverbund ein. Mit der Sammelsuche können Organisationen Daten in diesen Szenarien in Microsoft Search zugänglich machen:
+Um Microsoft Search nützlicher zu machen, führen wir Microsoft Search Partnerverbund ein. Mit der Sammelsuche können Organisationen Daten in diesen Szenarien in Microsoft Search zugänglich machen:
 
 * Daten in Systemen, die strengen Complianceanforderungen unterliegen
 * Daten, die keine Systemgrenzen überschreiten können
@@ -43,11 +43,11 @@ Dynamics 365-Antworten werden in suchergebnissen in allen Microsoft Search Canva
 
 :::image type="content" alt-text="Screenshot der Dynamics 365-Antworten auf SharePoint, Bing und Office" source="media/dynamics365/dynamics365-answer.png" lightbox="media/dynamics365/dynamics365-answer.png":::
 
-Aus der Antwort ist es einfach, weitere Dynamics 365-Suchergebnisse mithilfe des Links **"Weitere Dynamics 365-Ergebnisse"** anzuzeigen. Sie führt Benutzer zu einer dedizierten Dynamics 365-Ergebnisseite mit weiteren Ergebnissen, die für ihre Abfrage relevant sind.
+Aus der Antwort ist es einfach, weitere Dynamics 365-Suchergebnisse mithilfe des Links **"Weitere Dynamics 365-Ergebnisse"** anzuzeigen. Sie führt Benutzer zu einer dedizierten Dynamics 365-Ergebnisseite mit weiteren ergebnissen, die für ihre Abfrage relevant sind.
 
 :::image type="content" alt-text="Screenshot der vertikalen Dynamics 365-Branche und Ergebnisse zu SharePoint, Bing und Office" source="media/dynamics365/dynamics365-vertical.png" lightbox="media/dynamics365/dynamics365-vertical.png":::
 
-Durch Klicken oder Tippen auf ein beliebiges Ergebnis wird Dynamics 365 geöffnet und die detaillierten Informationen angezeigt.
+Wenn Sie auf ein beliebiges Ergebnis klicken oder tippen, wird Dynamics 365 geöffnet und die detaillierten Informationen angezeigt.
 
 :::image type="content" alt-text="Screenshot der Detailseite in Dynamics 365." source="media/dynamics365/dynamics365-detail-page.png" lightbox="media/dynamics365/dynamics365-detail-page.png":::
 

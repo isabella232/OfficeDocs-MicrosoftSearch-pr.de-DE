@@ -6,18 +6,18 @@ manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Verwalten von Filtern für die Verwendung im SERP
-ms.openlocfilehash: da8c93f4faef7d52862db7464f61fd8e2cbd9fdf
-ms.sourcegitcommit: b69da84c97ea14fd4706d24522a1e324b6798f91
+ms.openlocfilehash: c614d4b60c746f2e18fdb3352281891ea5134373
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58674776"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702193"
 ---
 # <a name="manage-filters"></a>Verwalten von Filtern
 
@@ -43,7 +43,7 @@ Filter, die für Vertikale im Organisationsbereich konfiguriert sind, sind auf O
 
 ## <a name="create-organization-level-filters"></a>Erstellen von Filtern auf Organisationsebene
 
-1. Wechseln  [Sie in Microsoft 365 Admin Center](https://admin.microsoft.com/)zu  [**"Vertikalen".**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)
+1. Wechseln  [Sie in Microsoft 365 Admin Center](https://admin.microsoft.com/)zu  [**"Verticals"**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)
 2. Wählen Sie Ihre bevorzugte Vertikale aus, in der Sie einen Filter erstellen möchten, und klicken Sie auf **"Bearbeiten".**  
 3. Navigieren Sie im Assistenten der vertikalen Synchronisierung zum Schritt "Filter".
 4. Klicken Sie auf **"Filter hinzufügen",** um Filter für verfeinerbare verwaltete Eigenschaften zu konfigurieren.

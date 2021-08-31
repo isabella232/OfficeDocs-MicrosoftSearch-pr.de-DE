@@ -7,19 +7,19 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-ms.localizationpriority: medium
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ROBOTS: NoIndex
 description: Richten Sie den Oracle SQL Graph Connector für Microsoft Search ein.
-ms.openlocfilehash: 804bee89f8529630df5741f68b9f112c69307b4f
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.openlocfilehash: 1fe45fa6f92b16290148ef72282418c41942a3c7
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701426"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470014"
 ---
 <!---Previous ms.author:vivg --->
 
@@ -50,7 +50,7 @@ Folgen Sie den allgemeinen [Setupanweisungen.](./configure-connector.md)
 
 ## <a name="step-3-configure-the-connection-settings"></a>Schritt 3: Konfigurieren der Verbindungseinstellungen
 
-Um Den Oracle SQL Connector mit einer Datenquelle zu verbinden, müssen Sie den Datenbankserver konfigurieren, der durchforstet werden soll, und den lokalen Graph Connector-Agent. Anschließend können Sie mit der erforderlichen Authentifizierungsmethode eine Verbindung mit der Datenbank herstellen.
+Um Ihren Oracle SQL Connector mit einer Datenquelle zu verbinden, müssen Sie den Datenbankserver konfigurieren, den Sie durchforsten möchten, und den lokalen Graph Connector-Agent. Anschließend können Sie mit der erforderlichen Authentifizierungsmethode eine Verbindung mit der Datenbank herstellen.
 
 Für Oracle SQL Connector müssen Sie den Hostnamen, Port- und Dienstnamen (Datenbank) zusammen mit der bevorzugten Authentifizierungsmethode, dem Benutzernamen und dem Kennwort angeben.
 

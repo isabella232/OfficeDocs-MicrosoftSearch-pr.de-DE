@@ -6,39 +6,39 @@ manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-ms.localizationpriority: medium
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Hier erhalten Sie einen Überblick darüber, was Microsoft Search ist, welche Vorteile sie bietet und welche Apps Microsoft Search unterstützen.
-ms.openlocfilehash: 29a6db642ac9cc787b8cbec45aec609f55722206
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+description: Erhalten Sie einen Überblick darüber, was Microsoft Search ist, welche Vorteile es bietet und welche Apps Microsoft Search unterstützen.
+ms.openlocfilehash: 271742f7f440004db039b4352b9486445508d3f0
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701940"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470332"
 ---
 # <a name="overview-of-microsoft-search"></a>Übersicht über Microsoft Search 
 
-Microsoft Search hilft Ihnen zu finden, was Sie benötigen, um ihre Arbeit abzuschließen. Unabhängig davon, ob Sie nach Personen, Dateien, Organigrammen, Websites oder Antworten auf häufig gestellte Fragen suchen, können Sie Microsoft Search während Ihres Arbeitstags verwenden, um Antworten zu erhalten.
+Microsoft Search hilft Ihnen zu finden, was Sie benötigen, um ihre Arbeit abzuschließen. Unabhängig davon, ob Sie nach Personen, Dateien, Organigrammen, Websites oder Antworten auf häufig gestellte Fragen suchen, können Sie während Ihres Arbeitstags Microsoft Search verwenden, um Antworten zu erhalten.
 
 Microsoft Search hilft Benutzern, die richtigen Antworten, Personen und Inhalte zu finden, um ihre Aufgaben in der App auszuführen, in der sie bereits arbeiten.
 
 - Benutzer erhalten Ergebnisse, die im **Kontext** der App relevant sind, aus der heraus sie suchen. Wenn sie beispielsweise in [Microsoft Outlook](https://www.microsoft.com/outlook)suchen, finden sie E-Mails und nicht [SharePoint](http://sharepoint.com/) Websites. Bei der Suche in SharePoint erhalten sie Websites, Seiten und Dateien.
-- Ungeachtet der App, in der Benutzer arbeiten, ist Microsoft Search **privat**. Microsoft Search verwendet Erkenntnisse aus der [Microsoft-Graph,](https://developer.microsoft.com/graph/) um Ergebnisse anzuzeigen, die für jeden Benutzer relevant sind. Benutzer sehen möglicherweise andere Ergebnisse, auch wenn sie nach denselben Wörtern suchen. Sie sehen nur Ergebnisse, auf die sie bereits Zugriff haben, Microsoft Search die Berechtigungen nicht ändert.
+- Ungeachtet der App, in der Benutzer arbeiten, ist Microsoft Search **privat**. Microsoft Search verwendet Erkenntnisse aus dem [Microsoft Graph,](https://developer.microsoft.com/graph/) um Ergebnisse anzuzeigen, die für jeden Benutzer relevant sind. Benutzer sehen möglicherweise andere Ergebnisse, auch wenn sie nach denselben Wörtern suchen. Sie sehen nur Ergebnisse, auf die sie bereits Zugriff haben, Microsoft Search die Berechtigungen nicht ändert.
 - Benutzer müssen sich nicht merken, wo sich die Informationen befinden. Beispielsweise arbeitet ein Benutzer in [Microsoft Word](https://products.office.com/word) und möchte Informationen aus einer Präsentation wiederverwenden, die ein Kollege aus seinem [OneDrive](https://onedrive.live.com/about/)freigegeben hat. Es ist nicht erforderlich, zu OneDrive zu wechseln und nach dieser Präsentation zu suchen, sie können einfach in Word suchen.
 - In [Bing](https://bing.com) erhalten Benutzer zusätzlich zu den Ergebnissen aus dem Internet auch Ergebnisse aus ihrer Organisation.
 
 ## <a name="what-users-see"></a>Anzeige für Benutzer
 
-In [Bing](https://bing.com)verwenden Benutzer dasselbe Suchfeld wie bei Websuchen. In den Office-Apps finden Benutzer das Microsoft Search Feld in der Kopfzeile. Dies sieht wie folgt aus:
+In [Bing](https://bing.com)verwenden Benutzer dasselbe Suchfeld wie bei Websuchen. In den Office-Apps finden Benutzer das feld Microsoft Search in der Kopfzeile. Dies sieht wie folgt aus:
 
 ![Screenshots von App-Fenstern mit Microsoft Search Feld in der Kopfzeile.](media/Headings_520.png)
 
 Wenn Benutzer in das **Suchfeld** klicken, schlägt die Suche Ergebnisse basierend auf ihrer vorherigen Aktivität in Office 365 und basierend auf Inhalten vor, die in Ihrer Organisation im Trend liegen. Dateien, an denen sie kürzlich gearbeitet haben, Befehle, die sie kürzlich verwendet haben, sowie Personen, mit denen sie zusammenarbeiten, sind Beispiele für Aktivitäten, die die Suche berücksichtigt. Wenn Benutzer mit der Eingabe im **Suchfeld** beginnen, werden die vorgeschlagenen Ergebnisse aktualisiert. Benutzer können Suchergebnisse direkt im **Suchfeld** öffnen. Hier ist ein Beispiel für eine Suche in [SharePoint](http://sharepoint.com/).
 
-![Screenshots des Microsoft Search-Felds mit einer Abfrage und vorgeschlagenen Ergebnissen.](media/SERP_text_520.png)
+![Screenshots des felds Microsoft Search mit einer Abfrage und vorgeschlagenen Ergebnissen.](media/SERP_text_520.png)
 
 Wenn die Vorschläge im Suchfeld nicht das sind, wonach Benutzer suchen, öffnet **die EINGABETASTE** die vollständige Liste der Ergebnisse. Sie können Metadaten verwenden, z. B. wer das Element zuletzt geändert hat und wann, wo sich das Element befindet, sowie eine Vorschau anzeigen, um festzustellen, ob es gesucht wird.
 

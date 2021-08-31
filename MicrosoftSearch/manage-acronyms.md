@@ -6,18 +6,18 @@ manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Erstellen und Aktualisieren von Akronymen-Antworten in Microsoft Search
-ms.openlocfilehash: 3b0f87fb252c3e88160f1b3753aad09b1e3f5083
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: b7b3272ba98bbce7d43562811389df0a35e9f7a2
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470248"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702066"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Verwalten von Akronymen-Antworten in Microsoft Search
 
@@ -47,7 +47,7 @@ Das Ergebnis enthält alle Bedeutungen von DNN, die innerhalb der Organisation d
 
 Wechseln [Sie](https://admin.microsoft.com)im Microsoft 365 Admin Center zu [**Akronyme,**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)und wählen Sie dann **Akronyme hinzufügen** aus.
 
-Microsoft Search fragt zwei Datenquellen ab, um Akronyme antworten auf die Suchvorgänge der Benutzer bereitzustellen:
+Microsoft Search fragt zwei Datenquellen ab, um Akronyme auf die Suche der Benutzer zu beantworten:
 
 1. **Vom Administrator zusammengestellt.** Bereitgestellt von IT-Administratoren im [Admin Center.](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)
 2. **Vom System zusammengestellt.** Entdeckt durch Microsoft Search aus den E-Mails und Dokumenten der Benutzer sowie aus öffentlich verfügbaren Daten innerhalb der Organisation.
@@ -63,7 +63,7 @@ Suchadministratoren können Akronyme auf der [Registerkarte "Akronyme"](https://
 
 **Entwurfsstatus**. Wenn Sie ein Akronym überprüfen möchten, bevor Sie es in Microsoft Search verfügbar machen, können Sie das Akronym in einem Entwurfsstatus hinzufügen. Akronyme im Status "Entwurf" werden in den Suchergebnissen nicht angezeigt. Sie müssen das Akronym in den Status "Veröffentlicht" verschieben, damit es in den Suchergebnissen angezeigt wird.
 
-**Ausgeschlossener Zustand**. Wenn Sie verhindern möchten, dass ein Akronym in Microsoft Search angezeigt wird, verwenden Sie **ein Akronym ausschließen,** um es hinzuzufügen. Um zu verhindern, dass ein Akronym ausgeschlossen wird, müssen Sie das ausgeschlossene Akronym löschen und hinzufügen oder überprüfen, ob es in Ihrer veröffentlichten Liste enthalten ist.
+**Ausgeschlossener Zustand**. Wenn Sie verhindern möchten, dass ein Akronym in Microsoft Search angezeigt wird, verwenden Sie ein **Akronym ausschließen,** um es hinzuzufügen. Um zu verhindern, dass ein Akronym ausgeschlossen wird, müssen Sie das ausgeschlossene Akronym löschen und hinzufügen oder überprüfen, ob es in Ihrer veröffentlichten Liste enthalten ist.
 
 Sie können Akronyme einzeln hinzufügen oder in einer CSV-Datei massenimportieren. Hochladen eine CSV-Datei mit den in der folgenden Tabelle angezeigten Feldern:
 
@@ -108,7 +108,7 @@ Microsoft Search stellt sicher, dass nur Benutzer mit Zugriff und Berechtigungen
 
 **F: Wie lösen Benutzer Akronyme aus?**
 
-**A:** Um Akronyme antworten zu können, müssen Benutzer bestimmte Abfragemuster in ein **Suchfeld** [für Bing,](https://bing.com) [SharePoint,](https://products.office.com/sharepoint/collaboration) [Office 365,](https://Office.com)Outlook im Web, Outlook Mobile (Android) oder Teams Mobile (iOS und Android) eingeben.
+**A:** Um Akronyme antworten zu können, müssen Benutzer bestimmte Abfragemuster in ein **Suchfeld** [für Bing](https://bing.com), [SharePoint](https://products.office.com/sharepoint/collaboration), [Office 365](https://Office.com), Outlook im Web, Outlook Mobile (Android) oder Teams Mobile (iOS und Android) eingeben.
 
 **F: Können Benutzer bei der Suche nur das Akronym eingeben?**
 

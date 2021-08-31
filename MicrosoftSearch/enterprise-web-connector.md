@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Einrichten des Graph Connectors für Enterprise Websites für Microsoft Search
-ms.openlocfilehash: 2be52bc83718c2450ad91444a6176f5f63c03890
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: 2461a447b07dec827c8cf699865c027b01e42608
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58469978"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702165"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -26,12 +26,12 @@ ms.locfileid: "58469978"
 
 # <a name="enterprise-websites-graph-connector"></a>Enterprise Websites Graph Connector
 
-Der connector Enterprise Websites Graph ermöglicht Es Ihrer Organisation, Artikel und **Inhalte von den internen Websites** zu indizieren. Nachdem Sie den Connector konfiguriert und Inhalte von der Website synchronisiert haben, können Endbenutzer von jedem Microsoft Search Client nach diesen Inhalten suchen.
+Die Enterprise Websites Graph Connector ermöglicht Es Ihrer Organisation, Artikel und **Inhalte von den internen Websites** zu indizieren. Nachdem Sie den Connector konfiguriert und Inhalte von der Website synchronisiert haben, können Endbenutzer von jedem Microsoft Search Client nach diesen Inhalten suchen.
 
 > [!NOTE]
-> Lesen Sie den Artikel [**"Setup Your Graph connector",**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten von Connectors Graph zu verstehen.
+> Lesen Sie den Artikel [**"Setup Your Graph connector",**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten Graph Connectors zu verstehen.
 
-Dieser Artikel richtet sich an alle Personen, die einen connector für Enterprise Websites konfigurieren, ausführen und überwachen. Es ergänzt den allgemeinen Einrichtungsprozess und zeigt Anweisungen, die nur für den Connector Enterprise Websites gelten. Dieser Artikel enthält auch Informationen zur [Problembehandlung.](#troubleshooting)
+Dieser Artikel richtet sich an alle Personen, die einen connector für Enterprise Websites konfigurieren, ausführen und überwachen. Es ergänzt den allgemeinen Einrichtungsprozess und zeigt Anweisungen, die nur für den Connector für Enterprise Websites gelten. Dieser Artikel enthält auch Informationen zur [Problembehandlung.](#troubleshooting)
 
 <!---## Before you get started-->
 
@@ -81,11 +81,11 @@ Der Durchforstungsmodus bestimmt den Typ der Websites, die Sie indiziert möchte
 
 Außerdem unterstützt der Connector jetzt das Durchforsten lokaler Websites. Um auf Ihre lokalen Daten zugreifen zu können, müssen Sie zuerst den Graph Connector-Agent installieren und konfigurieren. Weitere Informationen finden Sie unter [Graph Connector-Agent.](./graph-connector-agent.md)
 
-Wählen Sie für Ihre lokalen Websites **den Agent** als Durchforstungsmodus aus, und wählen Sie im Feld **"Lokaler Agent"** den Graph Connector-Agent aus, den Sie zuvor installiert und konfiguriert haben.  
+Wählen Sie für Ihre lokalen Websites den **Agent** als Durchforstungsmodus aus, und wählen Sie im Feld **"Lokaler Agent"** den Graph Connector-Agent aus, den Sie zuvor installiert und konfiguriert haben.  
 
 ### <a name="authentication"></a>Authentifizierung
 
-Die Standardauthentifizierung erfordert einen Benutzernamen und ein Kennwort. Erstellen Sie dieses Bot-Konto mithilfe der [Microsoft 365 Admin Center](https://admin.microsoft.com).
+Die Standardauthentifizierung erfordert einen Benutzernamen und ein Kennwort. Erstellen Sie dieses Bot-Konto mithilfe der [Microsoft 365 Admin Center.](https://admin.microsoft.com)
 
 OAuth 2.0 mit [Azure AD](/azure/active-directory/) erfordert eine Ressourcen-ID, eine Client-ID und einen geheimen Clientschlüssel. OAuth 2.0 funktioniert nur im Cloudmodus.
 
@@ -96,7 +96,7 @@ Weitere Informationen finden Sie unter [Autorisieren des Zugriffs auf Azure Acti
 
 Um die Werte für die Ressource, client_id und client_secret abzurufen, wechseln Sie zu **Verwenden des Autorisierungscodes, um ein Zugriffstoken** auf der Umleitungs-URL-Webseite anzufordern.
 
-Weitere Informationen finden Sie unter [Schnellstart: Registrieren einer Anwendung mit dem Microsoft Identity Platform](/azure/active-directory/develop/quickstart-register-app).
+Weitere Informationen finden Sie unter [Schnellstart: Registrieren einer Anwendung mit dem Microsoft Identity Platform.](/azure/active-directory/develop/quickstart-register-app)
 
 ## <a name="step-3a-add-urls-to-exclude-optional-crawl-restrictions"></a>Schritt 3a: Hinzufügen von auszuschließenden URLs (optionale Durchforstungseinschränkungen)
 
@@ -112,7 +112,7 @@ Sie können optional eine **Ausschlussliste** erstellen, um einige URLs davon au
 
 ## <a name="step-4-assign-property-labels"></a>Schritt 4: Zuweisen von Eigenschaftenbeschriftungen
 
-Sie können jeder Bezeichnung eine Quelleigenschaft zuweisen, indem Sie aus einem Menü mit Optionen auswählen. Obwohl dieser Schritt nicht obligatorisch ist, verbessert die Verwendung einiger Eigenschaftenbezeichnungen die Suchrelevanz und stellt genauere Suchergebnisse für Endbenutzer sicher.
+Sie können jeder Bezeichnung eine Quelleigenschaft zuweisen, indem Sie aus einem Menü mit Optionen auswählen. Obwohl dieser Schritt nicht zwingend erforderlich ist, verbessert die Verwendung einiger Eigenschaftenbezeichnungen die Suchrelevanz und stellt genauere Suchergebnisse für Endbenutzer sicher.
 
 ## <a name="step-5-manage-schema"></a>Schritt 5: Verwalten des Schemas
 
@@ -143,7 +143,7 @@ Beim Lesen des Inhalts der Website können bei der Durchforstung einige Quellfeh
  6009 | Ausführliche Informationen zu allen clientseitigen Fehlern (außer HTTP 404, 408) finden Sie unter HTTP 4xx-Fehlercodes.
  6013 | Die Quellseite, die indiziert werden soll, konnte nicht gefunden werden. (HTTP 404-Fehler)
  6018 | Die Quellseite antwortet nicht, und für die Anforderung ist ein Timeout aufgetreten. (HTTP 408-Fehler)
- 6021 | Die Quellseite, die indiziert werden soll, weist keinen Textinhalt auf der Seite auf.
+ 6021 | Die Quellseite, die indiziert werden soll, enthält keinen Textinhalt auf der Seite.
  6023 | Die Quellseite, die indiziert werden soll, wird nicht unterstützt (keine HTML-Seite)
  6024 | Die Quellseite, die indiziert werden soll, weist nicht unterstützte Inhalte auf.
 

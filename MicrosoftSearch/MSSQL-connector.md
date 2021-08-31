@@ -7,30 +7,30 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-ms.localizationpriority: medium
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Richten Sie den Azure SQL- und Microsoft SQL Graph-Connector für Microsoft Search ein.
-ms.openlocfilehash: ae953d55de4a4f5e8afc32cc6b55f6e0b32e2811
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.openlocfilehash: a60c8a038790bb4a08189c48675d315b06a6e0f7
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701435"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470005"
 ---
 <!---Previous ms.author: vivg --->
 
-# <a name="azure-sql-and-microsoft-sql-server-graph-connectors"></a>Azure SQL- und Microsoft SQL Server Graph-Connectors
+# <a name="azure-sql-and-microsoft-sql-server-graph-connectors"></a>Azure SQL und Microsoft SQL Server Graph Connectors
 
-Der Microsoft SQL Server- oder Azure SQL Graph-Connector ermöglicht Ihrer Organisation das Ermitteln und Indizieren von Daten aus einer lokalen SQL Server-Datenbank oder einer Datenbank, die in Ihrer Azure SQL Instanz in der Cloud gehostet wird.
+Der Microsoft SQL Server- oder Azure SQL Graph-Connector ermöglicht Es Ihrer Organisation, Daten aus einer lokalen SQL Server-Datenbank oder einer in Ihrer Azure SQL Instanz in der Cloud gehosteten Datenbank zu ermitteln und zu indizieren.
 Der Graph Connector indiziert den angegebenen Inhalt in Microsoft Search. Um den Index mit Quelldaten auf dem neuesten Stand zu halten, unterstützt er regelmäßige vollständige und inkrementelle Durchforstungen. Mit diesen SQL Connectors können Sie auch den Zugriff auf Suchergebnisse für bestimmte Benutzer einschränken.
 
 > [!NOTE]
-> Lesen Sie den Artikel [**"Setup Your Graph connector",**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten von Connectors Graph zu verstehen.
+> Lesen Sie den Artikel [**zum Einrichten ihres Graph Connectors,**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten von Connectors Graph zu verstehen.
 
-Dieser Artikel richtet sich an alle Personen, die einen Azure SQL und einen Microsoft SQL Server Graph Connector konfigurieren, ausführen und überwachen. Es ergänzt den allgemeinen Setupprozess und zeigt Anweisungen, die nur für den Azure SQL und microsoft SQL Server Graph Connector gelten. Dieser Artikel enthält auch Informationen zu [Einschränkungen](#limitations) für den Microsoft SQL-Server und Azure SQL Connectors.
+Dieser Artikel richtet sich an alle Personen, die einen Azure SQL und einen Microsoft SQL Server Graph Connector konfigurieren, ausführen und überwachen. Es ergänzt den allgemeinen Setupprozess und zeigt Anweisungen, die nur für den Azure SQL und den Microsoft SQL Server Graph Connector gelten. Dieser Artikel enthält auch Informationen zu [Einschränkungen](#limitations) für den Microsoft SQL-Server und Azure SQL Connectors.
 
 ## <a name="before-you-get-started"></a>Bevor Sie beginnen
 
@@ -39,7 +39,7 @@ Dieser Artikel richtet sich an alle Personen, die einen Azure SQL und einen Micr
 Um auf Ihre lokalen Drittanbieterdaten zugreifen zu können, müssen Sie den Graph Connector-Agent installieren und konfigurieren. Weitere Informationen finden Sie unter [Installieren des Graph Connector-Agents.](graph-connector-agent.md)
 
 >[!NOTE]
->Wenn Sie beim Konfigurieren des Microsoft SQL Server Graph Connectors Windows Authentifizierung verwenden, muss der Benutzer, mit dem Sie sich anmelden möchten, über interaktive Anmelderechte für den Computer verfügen, auf dem Graph Connector-Agent installiert ist. Informationen zur Überprüfung der Anmelderechte finden Sie in der Dokumentation zur Verwaltung von [Anmelderichtlinien.](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management)
+>Wenn Sie beim Konfigurieren des Microsoft SQL Server Graph Connectors Windows Authentifizierung verwenden, muss der Benutzer, bei dem Sie sich anmelden möchten, über interaktive Anmelderechte für den Computer verfügen, auf dem Graph Connector-Agent installiert ist. Informationen zur Überprüfung der Anmelderechte finden Sie in der Dokumentation zur Verwaltung von [Anmelderichtlinien.](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management)
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph Connectors in der Microsoft 365 Admin Center
 
@@ -57,7 +57,7 @@ instructions.-->
 
 ### <a name="register-an-app-for-azure-sql-connector-only"></a>Registrieren einer App (nur für Azure SQL Connector)
 
-Für Azure SQL Connector müssen Sie eine App in Azure Active Directory registrieren, damit Microsoft Search App auf Daten für die Indizierung zugreifen kann. Weitere Informationen zum Registrieren einer App finden Sie in der Microsoft Graph Dokumentation zum [Registrieren einer App.](/graph/auth-register-app-v2)
+Für Azure SQL Connector müssen Sie eine App in Azure Active Directory registrieren, damit Microsoft Search App auf Daten zur Indizierung zugreifen kann. Weitere Informationen zum Registrieren einer App finden Sie in der Microsoft Graph Dokumentation zum [Registrieren einer App.](/graph/auth-register-app-v2)
 
 Nachdem Sie die App-Registrierung abgeschlossen und den App-Namen, die Anwendungs-ID (Client-ID) und die Mandanten-ID notieren, müssen Sie [einen neuen geheimen Clientschlüssel generieren.](/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret) Der geheime Clientschlüssel wird nur einmal angezeigt. Beachten Sie, & den geheimen Clientschlüssel sicher speichern. Verwenden Sie die Client-ID und den geheimen Clientschlüssel, während Sie eine neue Verbindung in Microsoft Search konfigurieren.
 
@@ -115,13 +115,13 @@ Die Verwendung der einzelnen ACL-Spalten in der obigen Abfrage wird unten beschr
 - **AllowedUsers:** Diese Spalte gibt die Liste der Benutzer-IDs an, die auf die Suchergebnisse zugreifen können. Im folgenden Beispiel würde die Liste der Benutzer: john@contoso.com, keith@contoso.com und lisa@contoso.com nur Zugriff auf einen Datensatz mit OrderId = 12 haben.
 - **AllowedGroups:** Diese Spalte gibt die Gruppe von Benutzern an, die auf die Suchergebnisse zugreifen können. Im folgenden Beispiel hätten Gruppen-sales-team@contoso.com nur Zugriff auf den Datensatz mit OrderId = 12.
 - **DeniedUsers**: Diese Spalte gibt die Liste der Benutzer an, die **keinen** Zugriff auf die Suchergebnisse haben. Im folgenden Beispiel haben Benutzer john@contoso.com und keith@contoso.com keinen Zugriff auf datensätze mit OrderId = 13, während alle anderen Benutzer Zugriff auf diesen Datensatz haben.
-- **DeniedGroups:** Diese Spalte gibt die Gruppe von Benutzern an, die **keinen** Zugriff auf die Suchergebnisse haben. Im folgenden Beispiel haben Gruppen engg-team@contoso.com und pm-team@contoso.com keinen Zugriff auf datensätze mit OrderId = 15, während alle anderen Zugriff auf diesen Datensatz haben.  
+- **DeniedGroups:** Diese Spalte gibt die Gruppe von Benutzern an, die **keinen** Zugriff auf die Suchergebnisse haben. Im folgenden Beispiel haben Gruppen engg-team@contoso.com und pm-team@contoso.com keinen Zugriff auf den Datensatz mit OrderId = 15, während alle anderen Zugriff auf diesen Datensatz haben.  
 
 ![Beispieldaten, die OrderTable und AclTable mit Beispieleigenschaften anzeigen.](media/MSSQL-ACL1.png)
 
 ### <a name="supported-data-types"></a>Unterstützte Datentypen
 
-In der folgenden Tabelle sind die SQL Datentypen zusammengefasst, die in den MS-SQL- und Azure SQL-Connectors unterstützt werden. In der Tabelle wird auch der Indizierungsdatentyp für den unterstützten SQL Datentyp zusammengefasst. Weitere Informationen zu von Microsoft Graph Connectors unterstützten Datentypen für die Indizierung finden Sie in der Dokumentation zu [Eigenschaftsressourcentypen.](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)
+In der folgenden Tabelle sind die SQL Datentypen zusammengefasst, die in den MS-SQL und Azure SQL Connectors unterstützt werden. In der Tabelle wird auch der Indizierungsdatentyp für den unterstützten SQL Datentyp zusammengefasst. Weitere Informationen zu von Microsoft Graph Connectors unterstützten Datentypen für die Indizierung finden Sie in der Dokumentation zu [Eigenschaftsressourcentypen.](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)
 
 | Kategorie | Quelldatentyp | Datentyp der Indizierung |
 | ------------ | ------------ | ------------ |
@@ -152,7 +152,7 @@ Die erste Abfrage ruft die erste **N-Anzahl** von Zeilen mithilfe der folgenden 
 
 ### <a name="skipping-soft-deleted-rows-optional"></a>Überspringen vorläufig gelöschter Zeilen (optional)
 
-Um zeilenweise gelöschte Zeilen in Ihrer Datenbank von der Indizierung auszuschließen, geben Sie den Namen und den Wert für das vorläufige Löschen der Spalte an, der angibt, dass die Zeile gelöscht wird.
+Um zeilenweise gelöschte Zeilen in Ihrer Datenbank von der Indizierung auszuschließen, geben Sie den Namen und den Wert der Vorläufigen Löschspalte an, der angibt, dass die Zeile gelöscht wird.
 
 ![Einstellungen für vorläufiges Löschen: "Spalte vorläufig löschen" und "Wert der Spalte für vorläufiges Löschen, die eine gelöschte Zeile angibt".](media/MSSQL-softdelete.png)
 
@@ -160,7 +160,7 @@ Um zeilenweise gelöschte Zeilen in Ihrer Datenbank von der Indizierung auszusch
 
 Wählen Sie **"Berechtigungen verwalten"** aus, um die verschiedenen Zugriffssteuerungsspalten (Access Control, ACL) auszuwählen, die den Zugriffsteuerungsmechanismus angeben. Wählen Sie den Spaltennamen aus, den Sie in der vollständigen Durchforstung SQL Abfrage angegeben haben.
 
-Es wird erwartet, dass jede der ACL-Spalten eine mehrwertige Spalte ist. Diese mehreren ID-Werte können durch Trennzeichen wie Semikolon (;), Komma (,) usw. getrennt werden. Sie müssen dieses Trennzeichen im **Werttrennzeichenfeld** angeben.
+Es wird erwartet, dass jede ACL-Spalte eine mehrwertige Spalte ist. Diese mehreren ID-Werte können durch Trennzeichen wie Semikolon (;), Komma (,) usw. getrennt werden. Sie müssen dieses Trennzeichen im **Werttrennzeichenfeld** angeben.
 
 Die folgenden ID-Typen werden für die Verwendung als ACLs unterstützt:
 

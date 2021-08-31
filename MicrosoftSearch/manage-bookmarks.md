@@ -6,19 +6,19 @@ manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Erstellen und Aktualisieren von Lesezeichen und Möglichkeiten zum Massenbearbeitung von Lesezeichenergebnissen für Microsoft Search
-ms.openlocfilehash: 67833ba563f8f4081cc6291db968542ba32df79f
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: a08bef9ccc56d395fe6570bacc856653ff3a1563
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470239"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702057"
 ---
 # <a name="manage-bookmarks"></a>Verwalten von Lesezeichen
 
@@ -30,7 +30,7 @@ Ein hervorragendes Lesezeichen hat vier Schlüsselelemente:
 
 1. Ein starker, informativer **Titel.** Verwenden Sie maximal acht Wörter oder maximal 60 Zeichen. Sie möchten, dass Ihre Benutzer auf den Titel klicken und den Inhalt anzeigen, aber vermeiden Sie offensichtliche Clickbait:
     - Gut: Probieren Sie die Favoriten dieser Woche aus dem Menü "Menu" aus. Der Titel ist klar, präzise und interessant, könnte aber überpromisierend sein.
-    - Besser: Das Menü "The week's menu". Überschreibt oder klingt nicht wie eine Anzeige.
+    - Besser: Das Menü "The week's menu". Überpromise nicht oder klingt wie eine Anzeige.
     - Vermeiden Sie Folgendes: Sie werden nicht glauben, was in dieser Woche im Menü "Menu" angezeigt wird. Verwendet Clickbait-Clichés, die wie eine Anzeige klingen.
 2. Eine prägnante **Beschreibung** von ca. 300 Zeichen, die den Zweck oder die Funktionalität der verknüpften Ressource zusammenfasst.
 3. Eine Sammlung von **Schlüsselwörtern,** mit denen Benutzer das Lesezeichen bei der Suche finden können. Wir empfehlen mindestens fünf Schlüsselwörter. Schließen Sie auch Variationen ein, die Personen in Ihrer Organisation verwenden können, z. B. Menüs für Diess, Menüs und Menüs im Menü "Restaurant".
@@ -38,7 +38,7 @@ Ein hervorragendes Lesezeichen hat vier Schlüsselelemente:
 
 ## <a name="create-bookmark-answers"></a>Erstellen von Antworten auf Lesezeichen
 
-Wechseln [Sie](https://admin.microsoft.com/)im Microsoft 365 Admin Center zu ["Lesezeichen",](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) und wählen Sie aus, wie Sie neue Lesezeichen erstellen möchten:
+Wechseln Sie im [Microsoft 365 Admin Center](https://admin.microsoft.com/)zu ["Lesezeichen",](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) und wählen Sie aus, wie Sie neue Lesezeichen erstellen möchten:
 
 - Hinzufügen von Lesezeichen
 - Importieren SharePoint Ergebnisse
@@ -48,7 +48,7 @@ Wechseln [Sie](https://admin.microsoft.com/)im Microsoft 365 Admin Center zu ["L
 
 ### <a name="add-bookmarks"></a>Hinzufügen von Lesezeichen
 
-Suchadministratoren und -editoren können Lesezeichen im Microsoft 365 Admin Center hinzufügen und sie entweder veröffentlichen oder im Entwurf speichern. Durch die Veröffentlichung eines Lesezeichens wird der Suchindex sofort aktualisiert, sodass er für Benutzer sofort erkennbar ist. Sie können ein Lesezeichen auch planen, indem Sie das Datum und die Uhrzeit für die Veröffentlichung angeben.
+Suchadministratoren und -editoren können Lesezeichen im Microsoft 365 Admin Center hinzufügen und diese entweder veröffentlichen oder im Entwurf speichern. Durch die Veröffentlichung eines Lesezeichens wird der Suchindex sofort aktualisiert, sodass er für Benutzer sofort erkennbar ist. Sie können ein Lesezeichen auch planen, indem Sie das Datum und die Uhrzeit für die Veröffentlichung angeben.
 
 - **Veröffentlicht:** Lesezeichen stehen den Benutzern der Organisation über Microsoft Search zur Verfügung.
 - **Entwurf:** Als Entwürfe gespeicherte Lesezeichen stehen Ihren Benutzern nicht zur Verfügung. Verwenden Sie diesen Status, wenn Sie oder andere Projektbeteiligten Lesezeichen vor der Veröffentlichung überprüfen oder aktualisieren möchten.

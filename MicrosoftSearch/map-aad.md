@@ -6,18 +6,18 @@ manager: jameslau
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Schritte zum Zuordnen von AAD-Identitäten
-ms.openlocfilehash: 69d4164e6d0acc245eee5c631db39ed7fb178325
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: d0292d77b3a0936ed60682b8388de1bb82ac43bb
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470296"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701967"
 ---
 # <a name="map-your-azure-ad-identities"></a>Zuordnen Ihrer Azure AD-Identitäten   
 
@@ -34,7 +34,7 @@ Diese Schritte sind nur für Suchadministratoren relevant, die einen [Salesforce
 
 Sie können die Azure AD-Eigenschaften auswählen, die Sie benötigen, um sie der Verbund-ID zuzuordnen.
 
-Sie können in der Dropdownliste eine Azure AD-Benutzereigenschaft auswählen. Sie können auch beliebig viele Azure AD-Benutzereigenschaften hinzufügen, wenn diese Eigenschaften erforderlich sind, um die Zuordnung der Verbund-ID für Ihre Organisation zu erstellen.
+Sie können eine Azure AD-Benutzereigenschaft aus der Dropdownliste auswählen. Sie können auch beliebig viele Azure AD-Benutzereigenschaften hinzufügen, wenn diese Eigenschaften erforderlich sind, um die Zuordnung der Verbund-ID für Ihre Organisation zu erstellen.
 
 ### <a name="2-create-formula-to-complete-mapping"></a>2. Erstellen einer Formel zum Abschließen der Zuordnung
 

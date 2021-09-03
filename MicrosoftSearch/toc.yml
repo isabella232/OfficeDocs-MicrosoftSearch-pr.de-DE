@@ -1,0 +1,116 @@
+- name: Plan für Microsoft Search
+  items:
+    - name: Übersicht
+      href: overview-microsoft-search.md
+    - name: Einrichten
+      href: setup-microsoft-search.md
+    - name: Häufig gestellte Fragen
+      href: faqs.md
+- name: Einblicke
+  items:
+    - name: Anzeigen von Verwendungsberichten
+      href: usage-reports.md
+    - name: Verwalten von Feedback
+      href: manage-feedback.md
+- name: Antworten bereitstellen
+  items:
+    - name: Planen der Inhalte
+      href: plan-your-content.md
+    - name: Akronyme
+      href: manage-acronyms.md
+    - name: Lesezeichen
+      href: manage-bookmarks.md
+    - name: Grundrisse
+      href: manage-floorplans.md
+    - name: Speicherorte
+      href: manage-locations.md
+    - name: Power BI
+      href: manage-powerbi.md
+    - name: Fragen und Antworten (F&As)
+      href: manage-qas.md
+- name: Datenquellen
+  items:
+    - name: Graph-Connectors
+      items:
+        - name: Übersicht
+          href: connectors-overview.md
+        - name: Connector-Katalog
+          href: connectors-gallery.md
+        - name: Microsoft Graph-Connectors
+          items:
+            - name: Setup-Übersicht
+              href: configure-connector.md
+            - name: Einrichten des Graph-Connector-Agents
+              href: graph-connector-agent.md
+            - name: Zuordnen von Nicht-Azure AD-Identitäten
+              href: map-non-aad.md
+            - name: Zuordnen von Azure AD-Identitäten
+              href: map-aad.md
+            - name: Connector-spezifische Informationen
+              items:
+                - name: Azure Data Lake Storage Gen2
+                  href: azure-data-lake-connector.md
+                - name: Azure DevOps (Vorschau)
+                  href: azure-devops-connector.md
+                - name: Azure SQL und Microsoft SQL Server
+                  href: MSSQL-connector.md
+                - name: Unternehmenswebsites
+                  href: enterprise-web-connector.md
+                - name: Dateifreigabe
+                  href: fileshare-connector.md
+                - name: MediaWiki
+                  href: mediawiki-connector.md
+                - name: Oracle SQL
+                  href: OracleSQL-connector.md
+                - name: Salesforce
+                  href: salesforce-connector.md
+                - name: ServiceNow
+                  href: servicenow-connector.md
+        - name: Verwalten von Verbindungen
+          items:
+            - name: Überwachen von Verbindungen
+              href: manage-connector.md
+            - name: Verbindungsdetails und -Fehler anzeigen
+              href: connector-details-errors.md
+        - name: Lizenzierung
+          href: licensing.md
+        - name: Nutzungsbedingungen
+          href: terms-of-use.md
+    - name: Partnerverbund-Connectors
+      items:
+        - name: "Dynamics\_365"
+          href: manage-dynamics365.md
+- name: Anpassen und konfigurieren
+  items:
+    - name: Branchen und Ergebnistypen verwalten
+      href: customize-search-page.md
+    - name: Verwalten von Layouts für Suchergebnisse
+      href: customize-results-layout.md
+    - name: Verwalten von Ergebnisclustern
+      href: result-cluster.md
+    - name: Verwalten von Filtern
+      href: custom-filters.md
+    - name: Microsoft Search in SharePoint
+      items:
+        - name: Übersicht
+          href: get-started-search-in-sharepoint-online.md
+        - name: Erstellen einer benutzerdefinierten Suchergebnisseite
+          href: create-search-results-pages.md
+        - name: Einstellungen für das Suchfeld verwalten
+          href: manage-spo-search-box.md
+        - name: Microsoft Search auf klassischen Seiten verwenden
+          href: manage-classic-spo-pages.md
+    - name: Microsoft Search in Bing
+      items:
+        - name: Sicherheit und Datenschutz
+          href: security-for-search.md
+        - name: Hinzufügen eines Suchfelds zu Ihrer Intranetwebsite
+          href: add-a-search-box-to-your-intranet-site.md
+        - name: Festlegen von Microsoft Edge als Standardbrowser
+          href: /deployedge/edge-default-browser
+        - name: Festlegen von Bing als Standardsuchmaschine
+          href: set-default-search-engine.md
+        - name: Festlegen von Bing.com als Standardstartseite
+          href: set-default-homepage.md
+        - name: Einführungsleitfaden für Benutzer
+          href: user-adoption-guide.md

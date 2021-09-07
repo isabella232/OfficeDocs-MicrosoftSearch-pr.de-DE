@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Übersicht über Microsoft Graph Connectors für Microsoft Search
-ms.openlocfilehash: e1aea93c927d933a63c3eb0456bb18d3f99e9291
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.openlocfilehash: 0d0a1a89edfbcba0fed167c8b3f7bb2166da9439
+ms.sourcegitcommit: 134749c0f3a10f63d667f86dca55656b020b920f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702211"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "58923143"
 ---
 <!---Previous ms.author: monaray --->
 
 # <a name="overview-of-microsoft-graph-connectors"></a>Übersicht über Microsoft Graph-Connectors
 
-[Microsoft Search](./overview-microsoft-search.md) indiziert alle [Microsoft 365](https://www.microsoft.com/microsoft-365) Daten, damit sie für Benutzer durchsuchbar sind. Mit Microsoft Graph Connectors kann Ihre Organisation Drittanbieterdaten so indizieren, dass sie in Microsoft Search Ergebnissen angezeigt werden. Dieses Feature erweitert die Arten von Inhaltsquellen, die in Ihren Microsoft 365-Produktivitäts-Apps und im breiteren Microsoft-Ökosystem durchsuchbar sind. Die Drittanbieterdaten können lokal oder in den öffentlichen oder privaten Clouds gehostet werden.
+[Microsoft Search](./overview-microsoft-search.md) indiziert alle [Microsoft 365](https://www.microsoft.com/microsoft-365) Daten, damit sie für Benutzer durchsucht werden können. Mit Microsoft Graph Connectors kann Ihre Organisation Drittanbieterdaten so indizieren, dass sie in Microsoft Search Ergebnissen angezeigt werden. Dieses Feature erweitert die Arten von Inhaltsquellen, die in Ihren Microsoft 365-Produktivitäts-Apps und im breiteren Microsoft-Ökosystem durchsuchbar sind. Die Drittanbieterdaten können lokal oder in den öffentlichen oder privaten Clouds gehostet werden.
 
 <!---link Microsoft Graph reference in line 19 when we have access to relevant documentation--->
 
@@ -57,7 +57,7 @@ To create a **connection** to a data source, admins need authenticated access to
 
 ## <a name="what-data-sources-can-be-connected-to-microsoft-search"></a>Welche Datenquellen können mit Microsoft Search verbunden werden?
 
-Microsoft bietet 9 Connectors, und unsere Ökosystempartner haben über 100 weitere Connectors erstellt. Sie können auch einen eigenen Connector erstellen.
+Microsoft bietet 9 Connectors an, und unsere Ökosystempartner haben über 100 weitere Connectors erstellt. Sie können auch einen eigenen Connector erstellen.
 
 ### <a name="microsoft-graph-connectors-by-microsoft"></a>Microsoft Graph Connectors von Microsoft
 
@@ -71,7 +71,7 @@ Sie können über von Microsoft erstellte Connectors eine Verbindung mit den fol
 * [MediaWiki](mediawiki-connector.md)
 * [Dateifreigabe](fileshare-connector.md)
 * [Oracle SQL](OracleSQL-connector.md)
-* [Salesforce (Vorschau)](salesforce-connector.md)
+* [Salesforce ](salesforce-connector.md)
 * [ServiceNow](servicenow-connector.md)
 
 Der [Microsoft Graph Connectors-Katalog](https://www.microsoft.com/microsoft-search/connectors) enthält eine kurze Beschreibung dieser Connectors. Wenn Sie bereit sind, eine dieser Datenquellen mit Ihrem Mandanten zu verbinden, lesen Sie unbedingt die [Setupübersicht](configure-connector.md) und alle anderen Artikel im Abschnitt "Setup connectors by Microsoft", die für Ihre Datenquelle gelten.
@@ -82,7 +82,7 @@ Der [Connectorkatalog](https://www.microsoft.com/microsoft-search/connectors) vo
 
 ### <a name="build-your-own-microsoft-graph-connector"></a>Erstellen Eines eigenen Microsoft Graph Connectors
 
-Sie können bei Bedarf einen eigenen Connector erstellen. Weitere Informationen zum Erstellen von Connectors finden Sie unter [Erstellen Ihres ersten benutzerdefinierten Microsoft Graph Connectors.](/graph/connecting-external-content-build-quickstart)
+Sie können ihren eigenen Connector erstellen, wenn Sie möchten. Weitere Informationen zum Erstellen von Connectors finden Sie unter [Erstellen Ihres ersten benutzerdefinierten Microsoft Graph Connectors.](/graph/connecting-external-content-build-quickstart)
 
 ## <a name="how-do-i-manage-my-connections"></a>Wie verwalte ich meine Verbindungen?
 
@@ -100,9 +100,7 @@ Obwohl Microsoft Graph Connectors und Microsoft Search-APIs jetzt allgemein verf
 
 Zu den Konnektoren und Features in der Vorschau gehören:
 
-* [Azure DevOps-Connector](azure-devops-connector.md)
-* [Salesforce-Connector](salesforce-connector.md)
-* [ServiceNow-Connector](servicenow-connector.md) mit Suchberechtigungen, die Quell-ACLs verwenden
+* [Azure DevOps Connector](azure-devops-connector.md)
 * [Verwalten benutzerdefinierter Filter](custom-filters.md)
 * [Mehrere Verbindungen in einer vertikalen](customize-search-page.md#multiple-connections-in-a-vertical)
 
@@ -127,7 +125,7 @@ Der nächste Schritt besteht darin, die Suchergebnisse wie in diesem Artikel emp
 
 * Wenn Sie einen von Microsoft erstellten Connector **veröffentlichen,** kann es einige Minuten dauern, bis die Verbindung erstellt wurde. Während dieser Zeit zeigt die Verbindung ihren Status als ausstehend an.
 
-* Der Aufnahmedurchsatz wird bei etwa vier Elementen pro Sekunde gedrosselt.
+* Der Aufnahmedurchsatz wird bei ungefähr vier Elementen pro Sekunde gedrosselt.
 
 * Schemaupdates werden nicht unterstützt. Nachdem Sie eine Verbindungseinrichtung erstellt haben, gibt es keine Möglichkeit, das Schema zu aktualisieren. Sie können die Verbindung nur löschen und erneut erstellen.
 

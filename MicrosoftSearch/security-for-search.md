@@ -13,19 +13,19 @@ search.appverid:
 - MOE150
 description: Schützen Sie die Daten und Endbenutzer Ihres Unternehmens, während Sie autorisierten Benutzern Informationen mit Microsoft Search in Bing
 ms.openlocfilehash: bf3629b2508c705d19e3b7b772c6f3672063a6f1
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701858"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973504"
 ---
 # <a name="security-and-privacy-for-microsoft-search-in-bing"></a>Sicherheit und Datenschutz für Microsoft Search in Bing
 
-Mit erweiterten Datenschutz- und Sicherheitsmaßnahmen trägt Microsoft Search in Bing zum Schutz Ihrer Benutzer- und Arbeitsplatzdaten bei.
+Mit verbesserten Datenschutz- und Sicherheitsmaßnahmen trägt Microsoft Search in Bing zum Schutz Ihrer Benutzer- und Arbeitsplatzdaten bei.
 
 ## <a name="secure-by-default"></a>Standardmäßige Sicherheit
 
-Microsoft Search in Bing Anforderungen werden über HTTPS ausgeführt. Die Verbindung wird end-to-end verschlüsselt, um die Sicherheit zu erhöhen.
+Microsoft Search in Bing Anforderungen erfolgen über HTTPS. Die Verbindung wird end-to-end verschlüsselt, um die Sicherheit zu erhöhen.
   
 ## <a name="authentication-and-authorization-with-azure-active-directory"></a>Authentifizierung und Autorisierung mit Azure Active Directory
 
@@ -39,7 +39,7 @@ Wenn ein Benutzer bereits mit dem Geschäfts-, Schul- oder Unikonto in einem and
   
 ## <a name="communicates-with-the-microsoft-cloud-from-the-browser"></a>Kommuniziert über den Browser mit der Microsoft-Cloud
 
-Wenn sich ein Benutzer mit dem Geschäfts-, Schul- oder Unikonto anmeldet, lädt Bing die erforderlichen Clientbibliotheken in den Browser herunter, um Microsoft Search Ergebnisse zu ermöglichen. Bei der Suche ruft der browserinterne Code dann die Office 365 Cloud auf, um Arbeitsergebnisse zu erhalten. Hierzu verwendet Microsoft Search eine dedizierte API, die gemäß den Kontrollzielen von SSAE 18 SOC2 Typ 1 betrieben wird. Dies bedeutet, dass Arbeitsergebnisse und Arbeitsdaten nicht durch Bing Systeme fließen, die weniger strengen Kontrollzielen für die Datenverarbeitung unterliegen als die Arbeitsergebnisse selbst unterliegen, wenn sie in Office 365 Core Online Services verarbeitet werden.
+Wenn sich ein Benutzer mit dem Geschäfts-, Schul- oder Unikonto anmeldet, lädt Bing die erforderlichen Clientbibliotheken in den Browser herunter, um Microsoft Search Ergebnisse zu aktivieren. Bei der Suche ruft der browserinterne Code dann die Office 365 Cloud auf, um Arbeitsergebnisse zu erhalten. Dazu verwendet Microsoft Search eine dedizierte API, die gemäß den Kontrollzielen von SSAE 18 SOC2 Typ 1 betrieben wird. Dies bedeutet, dass Arbeitsergebnisse und Arbeitsdaten nicht durch Bing Systeme fließen, die weniger strengen Kontrollzielen für die Datenverarbeitung unterliegen als die Arbeitsergebnisse selbst unterliegen, wenn sie in Office 365 Core Online Services verarbeitet werden.
   
 ## <a name="permissions"></a>Berechtigungen
 
@@ -47,12 +47,12 @@ Arbeitsergebnisse, die über Office 365-Workloads wie SharePoint und OneDrive fo
 
 ## <a name="microsoft-search-in-bing-protects-workplace-searches"></a>Microsoft Search in Bing schützt Arbeitsplatzsuchen
 
-Wenn ein Benutzer eine Suchabfrage in Microsoft Search in Bing eingibt, treten zwei gleichzeitige Suchanforderungen auf:
+Wenn ein Benutzer eine Suchabfrage in Microsoft Search in Bing eingibt, werden zwei gleichzeitige Suchanforderungen ausgeführt:
 
 - Eine Suche der internen Ressourcen Ihrer Organisation.
 - Eine separate Suche nach öffentlichen Ergebnissen von Bing.com.
 
-Da Die Arbeitsplatzsuchen möglicherweise vertraulich sind, hat Microsoft Search eine Reihe von Vertrauensmaßnahmen implementiert, die beschreiben, wie die separate Suche von öffentlichen Ergebnissen von Bing.com behandelt wird.
+Da die Arbeitsplatzsuchen möglicherweise vertraulich sind, hat Microsoft Search eine Reihe von Vertrauensmaßnahmen implementiert, die beschreiben, wie die separate Suche nach öffentlichen Ergebnissen von Bing.com behandelt wird.
 
 ### <a name="logging"></a>Protokollierung
 

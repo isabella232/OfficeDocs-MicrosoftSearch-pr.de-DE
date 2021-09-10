@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: Einrichten des MediaWiki-Graph-Connectors für Microsoft Search
 ms.openlocfilehash: 7e1c308eb1785dd7fec23fac7e9002957a0d50ca
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701949"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973495"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -27,15 +27,15 @@ ms.locfileid: "58701949"
 Der MediaWiki Graph Connector ermöglicht Es Ihrer Organisation, Daten aus einem Wiki zu ermitteln und zu indizieren, das mithilfe der MediaWiki-Software erstellt wurde. Dieser Connector indiziert angegebene Inhalte in Microsoft Search und unterstützt regelmäßige Durchforstungen, um den Index auf dem neuesten Stand zu halten.
 
 > [!NOTE]
-> Lesen Sie den Artikel [**"Setup for your Graph connector",**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten Graph Connectors zu verstehen.
+> Lesen Sie den Artikel [**"Setup for your Graph connector",**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten von Connectors Graph zu verstehen.
 
-Dieser Artikel richtet sich an alle Benutzer, die einen MediaWiki Graph Connector konfigurieren, ausführen und überwachen. Es ergänzt den allgemeinen Setupprozess und zeigt Anweisungen, die nur für den MediaWiki Graph Connector gelten. Dieser Artikel enthält auch Informationen zu [Einschränkungen.](#limitations)
+Dieser Artikel richtet sich an alle Personen, die einen MediaWiki-Graph Connector konfigurieren, ausführen und überwachen. Es ergänzt den allgemeinen Einrichtungsprozess und zeigt Anweisungen, die nur für den MediaWiki Graph Connector gelten. Dieser Artikel enthält auch Informationen zu [Einschränkungen.](#limitations)
 
 <!---## Before you get started-->
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph Connectors in der Microsoft 365 Admin Center
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph Connectors im Microsoft 365 Admin Center
 
 Folgen Sie den allgemeinen [Setupanweisungen.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->

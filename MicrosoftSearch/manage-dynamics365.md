@@ -9,11 +9,11 @@ ms.service: mssearch
 ms.localizationpriority: medium
 description: Verwalten der Darstellung von Dynamics 365-Inhalten in Suchergebnissen
 ms.openlocfilehash: 8a87e4026937ba01132c10815dc2f91d27da79c9
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702030"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973643"
 ---
 # <a name="dynamics-365-federation-search-preview"></a>Dynamics 365-Verbundsuche (Vorschau)
 
@@ -35,7 +35,7 @@ Microsoft Dynamics 365 ist eine Reihe intelligenter Geschäftsanwendungen, die f
 * **Einfach zu verwenden:** Benutzer können wichtige Informationen, die in Dynamics 365 gespeichert sind, ganz einfach und schnell finden, einschließlich Konten, Kontakten, offenen Möglichkeiten und mehr.
 * **Umfangreichere Inhalte:** Um dynamics 365-Suchergebnisse nützlicher zu machen, enthalten sie wichtige Informationen wie Leads, Kontakte und Kontodetails.
 * **Integrierter Datenschutz:** Dynamics 365-Ergebnisse werden nur für Benutzer angezeigt, die Zugriff auf die verbundene Instanz haben.
-* **Einheitliche Suchumgebung:** Um eine einheitliche Benutzererfahrung zu gewährleisten, sind die Dynamics 365-Ergebnisse über alle Sucheinstiegspunkte hinweg konsistent. Überall dort, wo Sie suchen, erhalten Sie dieselben Ergebnisse mit demselben Aussehen und Verhalten.
+* **Einheitliche Suchumgebung:** Um eine einheitliche Benutzererfahrung zu gewährleisten, sind die Dynamics 365-Ergebnisse über alle Sucheinstiegspunkte hinweg konsistent. Überall dort, wo Sie suchen, erhalten Sie dieselben Ergebnisse mit dem gleichen Aussehen und Verhalten.
 
 ## <a name="what-users-experience"></a>Benutzerfreundlichkeit
 
@@ -71,7 +71,7 @@ Abfragen natürlicher Sprache und Produktnamen werden unterstützt, wenn sie Mic
 Produktnamenmuster unterstützen eine Reihe von Dynamics 365-Anwendungen und lösen Dynamics 365-Ergebnisse unabhängig davon aus, wo sie in einer Abfrage angezeigt werden:
 
 * D365
-* Dynamics 365
+* Dynamics 365
 * Dynamics365
 * Dynamics CRM
 * Dynamics Sales

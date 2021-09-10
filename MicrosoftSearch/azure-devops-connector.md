@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Einrichten der Azure DevOps Graph-Verbindung für Microsoft Search
-ms.openlocfilehash: 9c3c5d994f8470cdd70dc07445ede2c74f688383
-ms.sourcegitcommit: be5dcc7005447d6139e39d86211c7ec4cd5dd907
+description: Einrichten des Azure DevOps Graph-Connectors für Microsoft Search
+ms.openlocfilehash: fcf381a92ef397f900b300ca667fa80067a6672a
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58639570"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973474"
 ---
 <!---Previous ms.author: shgrover --->
 
@@ -27,7 +27,7 @@ ms.locfileid: "58639570"
 Der Azure DevOps Graph Connector ermöglicht Es Ihrer Organisation, Arbeitselemente in ihrer Instanz des Azure DevOps Diensts zu indizieren. Nachdem Sie den Connector konfiguriert und Inhalte aus Azure DevOps indiziert haben, können Endbenutzer in Microsoft Search nach diesen Elementen suchen.
 
 > [!NOTE]
-> Lesen Sie den Artikel [**"Setup for your Graph connector",**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten Graph Connectors zu verstehen.
+> Lesen Sie den Artikel [**"Setup for your Graph connector",**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten von Connectors Graph zu verstehen.
 
 Dieser Artikel richtet sich an alle Personen, die einen Azure DevOps Graph Connector konfigurieren, ausführen und überwachen. Es ergänzt den allgemeinen Einrichtungsprozess und zeigt Anweisungen, die nur für den Azure DevOps Graph Connector gelten.
 
@@ -38,7 +38,7 @@ Dieser Artikel richtet sich an alle Personen, die einen Azure DevOps Graph Conne
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph Connectors in der Microsoft 365 Admin Center
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph Connectors im Microsoft 365 Admin Center
 
 Folgen Sie den allgemeinen [Setupanweisungen.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
@@ -56,7 +56,7 @@ Um eine Verbindung mit Ihrer Azure DevOps Instanz herzustellen, benötigen Sie i
 
 ### <a name="register-an-app"></a>Registrieren einer App
 
-Registrieren Sie eine App in Azure DevOps, damit die Microsoft Search-App auf die Instanz zugreifen kann. Weitere Informationen finden Sie in Azure DevOps Dokumentation zum [Registrieren einer App.](/azure/devops/integrate/get-started/authentication/oauth?preserve-view=true&view=azure-devops#register-your-app)
+Registrieren Sie eine App in Azure DevOps, damit die Microsoft Search App auf die Instanz zugreifen kann. Weitere Informationen finden Sie in Azure DevOps Dokumentation zum [Registrieren einer App.](/azure/devops/integrate/get-started/authentication/oauth?preserve-view=true&view=azure-devops#register-your-app)
 
 Die folgende Tabelle enthält Anleitungen zum Ausfüllen des App-Registrierungsformulars:
 
@@ -66,7 +66,7 @@ Pflichtfelder | Beschreibung | Empfohlener Wert
 | Name der Anwendung     | Ein eindeutiger Wert, der die Anwendung identifiziert, die Sie autorisieren.    | Microsoft Search     |
 | Anwendungswebsite  | Die URL der Anwendung, die während der Connectoreinrichtung Zugriff auf Ihre Azure DevOps Instanz anfordert. (Erforderlich).  | https://<span>gcs.office.</span> com/
 | Autorisierungsrückruf-URL        | Eine erforderliche Rückruf-URL, an die der Autorisierungsserver umleitet. | https://<span>gcs.office.</span> com/v1.0/admin/oauth/callback|
-| Autorisierte Bereiche | Der Umfang des Zugriffs für die Anwendung | Wählen Sie die folgenden Bereiche aus: Identität (lesen), Arbeitsaufgaben (lesen), Variablengruppen (lesen), Project und Team (lesen), Graph (lesen), Analyse (lesen)|
+| Autorisierte Bereiche | Der Umfang des Zugriffs für die Anwendung | Wählen Sie die folgenden Bereiche aus: Identität (gelesen), Arbeitsaufgaben (gelesen), Variablengruppen (lesen), Project und Team (lesen), Graph (lesen), Analyse (lesen)|
 
 >[!IMPORTANT]
 >Die autorisierten Bereiche, die Sie für die App auswählen, sollten genau wie oben aufgeführt mit den Bereichen übereinstimmen. Wenn Sie einen der autorisierten Bereiche in der Liste weglassen oder einen anderen Bereich hinzufügen, schlägt die Autorisierung fehl.
@@ -74,11 +74,11 @@ Pflichtfelder | Beschreibung | Empfohlener Wert
 Beim Registrieren der App mit den oben genannten Details erhalten Sie die **App-ID** und den **geheimen Clientschlüssel,** die zum Konfigurieren des Connectors verwendet werden.
 
 >[!NOTE]
->Um den Zugriff auf alle in Azure DevOps registrierten Apps zu widerrufen, wechseln Sie zu Benutzereinstellungen rechts oben in Ihrer Azure DevOps Instanz. Wählen Sie "Profil" und dann "Autorisierungen" im Abschnitt "Sicherheit" des Seitenbereichs aus. Zeigen Sie auf eine autorisierte OAuth-App, um die Schaltfläche "Widerrufen" in der Ecke der App-Details anzuzeigen.
+>Um den Zugriff auf alle in Azure DevOps registrierten Apps zu widerrufen, wechseln Sie zu den Benutzereinstellungen rechts oben in Ihrer Azure DevOps Instanz. Wählen Sie "Profil" und dann "Autorisierungen" im Abschnitt "Sicherheit" des Seitenbereichs aus. Zeigen Sie auf eine autorisierte OAuth-App, um die Schaltfläche "Widerrufen" in der Ecke der App-Details anzuzeigen.
 
 ### <a name="connection-settings"></a>Verbindungseinstellungen
 
-Nachdem Sie die Microsoft Search-App bei Azure DevOps registriert haben, können Sie den Verbindungseinstellungsschritt ausführen. Geben Sie den Namen Ihrer Organisation, Die App-ID und den geheimen Clientschlüssel ein.
+Nachdem Sie die Microsoft Search-App bei Azure DevOps registriert haben, können Sie den Verbindungseinstellungsschritt abschließen. Geben Sie den Namen Ihrer Organisation, Die App-ID und den geheimen Clientschlüssel ein.
 
 ![Verbindungsanwendung Einstellungen.](media/ADO_Connection_settings_2.png)
 
@@ -86,7 +86,7 @@ Nachdem Sie die Microsoft Search-App bei Azure DevOps registriert haben, können
 
 Sie können auswählen, ob die Verbindung entweder die gesamte Organisation oder bestimmte Projekte indiziert.
 
-Wenn Sie die gesamte Organisation indiziert haben, werden Elemente in allen Projekten in der Organisation indiziert. Neue Projekte und Elemente werden bei der nächsten Durchforstung indiziert, nachdem sie erstellt wurden.
+Wenn Sie die gesamte Organisation indiziert, werden Elemente in allen Projekten in der Organisation indiziert. Neue Projekte und Elemente werden bei der nächsten Durchforstung indiziert, nachdem sie erstellt wurden.
 
 Wenn Sie einzelne Projekte auswählen, werden nur Arbeitsaufgaben in diesen Projekten indiziert.
 
@@ -98,7 +98,7 @@ Wählen Sie als Nächstes aus, welche Felder die Verbindung für die Indizierung
 
 ## <a name="step-4-manage-search-permissions"></a>Schritt 4: Verwalten von Suchberechtigungen
 
-Der Azure DevOps Connector unterstützt Suchberechtigungen, die  **nur personen mit Zugriff auf diese Datenquelle** oder **"Jeder"** angezeigt werden. Wenn Sie **nur Personen mit Zugriff auf diese Datenquelle** auswählen, werden indizierte Daten in den Suchergebnissen für Benutzer angezeigt, die basierend auf Berechtigungen für Benutzer oder Gruppen in der Organisation, Project oder Bereichspfadebene in Azure DevOps Zugriff auf sie haben. Wenn Sie **"Jeder"** auswählen, werden indizierte Daten in den Suchergebnissen für alle Benutzer angezeigt.
+Der Azure DevOps Connector unterstützt Suchberechtigungen, die  **nur Personen mit Zugriff auf diese Datenquelle** oder **"Jeder"** angezeigt werden. Wenn Sie **nur Personen mit Zugriff auf diese Datenquelle** auswählen, werden indizierte Daten in den Suchergebnissen für Benutzer angezeigt, die basierend auf Berechtigungen für Benutzer oder Gruppen in der Organisation, Project oder Bereichspfadebene in Azure DevOps Zugriff auf sie haben. Wenn Sie **"Jeder"** auswählen, werden indizierte Daten in den Suchergebnissen für alle Benutzer angezeigt.
 
 ## <a name="step-5-assign-property-labels"></a>Schritt 5: Zuweisen von Eigenschaftenbeschriftungen
 

@@ -6,18 +6,18 @@ manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Erhalten Sie einen Überblick darüber, was Microsoft Search ist, welche Vorteile es bietet und welche Apps Microsoft Search unterstützen.
-ms.openlocfilehash: 271742f7f440004db039b4352b9486445508d3f0
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: 29a6db642ac9cc787b8cbec45aec609f55722206
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470332"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973483"
 ---
 # <a name="overview-of-microsoft-search"></a>Übersicht über Microsoft Search 
 
@@ -32,13 +32,13 @@ Microsoft Search hilft Benutzern, die richtigen Antworten, Personen und Inhalte 
 
 ## <a name="what-users-see"></a>Anzeige für Benutzer
 
-In [Bing](https://bing.com)verwenden Benutzer dasselbe Suchfeld wie bei Websuchen. In den Office-Apps finden Benutzer das feld Microsoft Search in der Kopfzeile. Dies sieht wie folgt aus:
+In [Bing](https://bing.com)verwenden Benutzer dasselbe Suchfeld wie bei Websuchen. In den Office-Apps finden Benutzer das Microsoft Search Feld in der Kopfzeile. Dies sieht wie folgt aus:
 
 ![Screenshots von App-Fenstern mit Microsoft Search Feld in der Kopfzeile.](media/Headings_520.png)
 
 Wenn Benutzer in das **Suchfeld** klicken, schlägt die Suche Ergebnisse basierend auf ihrer vorherigen Aktivität in Office 365 und basierend auf Inhalten vor, die in Ihrer Organisation im Trend liegen. Dateien, an denen sie kürzlich gearbeitet haben, Befehle, die sie kürzlich verwendet haben, sowie Personen, mit denen sie zusammenarbeiten, sind Beispiele für Aktivitäten, die die Suche berücksichtigt. Wenn Benutzer mit der Eingabe im **Suchfeld** beginnen, werden die vorgeschlagenen Ergebnisse aktualisiert. Benutzer können Suchergebnisse direkt im **Suchfeld** öffnen. Hier ist ein Beispiel für eine Suche in [SharePoint](http://sharepoint.com/).
 
-![Screenshots des felds Microsoft Search mit einer Abfrage und vorgeschlagenen Ergebnissen.](media/SERP_text_520.png)
+![Screenshots des Felds Microsoft Search mit einer Abfrage und vorgeschlagenen Ergebnissen.](media/SERP_text_520.png)
 
 Wenn die Vorschläge im Suchfeld nicht das sind, wonach Benutzer suchen, öffnet **die EINGABETASTE** die vollständige Liste der Ergebnisse. Sie können Metadaten verwenden, z. B. wer das Element zuletzt geändert hat und wann, wo sich das Element befindet, sowie eine Vorschau anzeigen, um festzustellen, ob es gesucht wird.
 
@@ -62,7 +62,7 @@ Als Administrator können Sie eine beeindruckende Microsoft Search Erfahrung fü
 
 **Nützliche Inhalte anzeigen** – Antworten liefern schnelle, autoritative Ergebnisse für Suchabfragen basierend auf Schlüsselwörtern. [Planen Sie Ihre Inhalte.](plan-your-content.md)
 
-**Hinzufügen externer Inhalte** – Mit Microsoft Graph Connectors können Sie externe Inhalte in den Index einbinden. Verwenden Sie Connectors, um die Suchumgebung mit Daten und Dateien von außerhalb von Microsoft 365 zu erweitern. [Übersicht über Microsoft Graph-Connectors](connectors-overview.md)
+**Hinzufügen externer Inhalte** – Mit Microsoft Graph Connectors können Sie externe Inhalte in den Index einfügen. Verwenden Sie Connectors, um die Suchumgebung mit Daten und Dateien von außerhalb von Microsoft 365 zu erweitern. [Übersicht über Microsoft Graph-Connectors](connectors-overview.md)
 
 **Anpassen der Benutzeroberfläche** – Sie können die Benutzeroberfläche mithilfe von Vertikalen und anderen Konfigurationen anpassen. [Anpassen der Microsoft Search Seite](customize-search-page.md)
 

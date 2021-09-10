@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Erstellen Sie Lesezeichen, Standorte und F&A-Artikel, um die Inhalte Ihrer Organisation leicht auffindbar zu machen.
 ms.openlocfilehash: 77b6507c7643e6cf2176f37a9a2cf0def1c640ba
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702075"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973673"
 ---
 # <a name="make-content-easy-to-find"></a>Inhalte leicht auffindbar machen
 
@@ -29,7 +29,7 @@ In Microsoft Search erstellen Administratoren [Lesezeichen,](manage-bookmarks.md
 ## <a name="bookmarks"></a>Lesezeichen
 Sie können [Lesezeichen](manage-bookmarks.md) in nur wenigen Schritten erstellen. Jedes Lesezeichen enthält einen Titel, eine URL und eine Gruppe von Schlüsselwörtern, die es auslösen. Ein Lesezeichen kann mehrere Schlüsselwörter haben, und mehrere Lesezeichen können dasselbe Schlüsselwort verwenden. Reservierte Schlüsselwörter können jedoch nicht freigegeben werden. Wenn Sie ein Lesezeichen erstellen oder ändern, wird der Suchindex aktualisiert, und das Lesezeichen steht benutzern sofort zur Verfügung.
 
-Wenn Ihre Organisation **höhergestufte Ergebnisse** in [SharePoint](http://sharepoint.com/)eingerichtet hat, können Sie diese Ergebnisse in Microsoft Search importieren. Mit höhergestuften Ergebnissen können Sie Suchergebnisse schnell auffüllen, die Inhalte für Benutzer verfügbar machen und Microsoft Search effektiver machen, sobald Sie sie einrichten. Wir empfehlen Ihnen, höhergestufte Ergebnisse aus SharePoint als Referenz zu verwenden, um zu verstehen, wie man relevante Suchergebnisse benennt und erstellt. 
+Wenn Ihre Organisation in [SharePoint](http://sharepoint.com/) **höhergestufte Ergebnisse** eingerichtet hat, können Sie diese Ergebnisse in Microsoft Search importieren. Mit höhergestuften Ergebnissen können Sie Suchergebnisse schnell auffüllen, die Inhalte für Benutzer verfügbar machen und Microsoft Search effektiver machen, sobald Sie sie einrichten. Wir empfehlen Ihnen, höhergestufte Ergebnisse aus SharePoint als Referenz zu verwenden, um zu verstehen, wie man relevante Suchergebnisse benennt und erstellt. 
 
 ### <a name="add-or-edit-bookmarks-by-using-browser-extensions"></a>Hinzufügen oder Bearbeiten von Lesezeichen mithilfe von Browsererweiterungen
 Suchadministratoren können Suchinhalte mühelos mithilfe von Browsererweiterungen erstellen. Um die Website als Lesezeichen hinzuzufügen, installieren Sie die Browsererweiterung. Wechseln Sie dann zur Website, und fügen Sie sie als Lesezeichen hinzu. Weitere Informationen finden Sie unter [Verwalten von Lesezeichen.](manage-bookmarks.md)
@@ -58,7 +58,7 @@ Mit [PowerApps](integrate-powerapps.md)können Sie Geschäfts-Apps erstellen, di
 
 ## <a name="qa"></a>F&A
 
-Das Erstellen einer [F-&A](manage-qas.md) entspricht dem Erstellen von [Lesezeichen.](manage-bookmarks.md) Mit F&A können Sie Antworten auf Benutzerfragen anstelle eines Links zur Webseite bereitstellen. Sie können Antworten mithilfe der verfügbaren Tools in Rich-Text formatieren. Wenn ein Lesezeichen und ein Q-&A dasselbe Schlüsselwort verwenden, wird zuerst das Lesezeichenergebnis angezeigt. Wie Lesezeichen wird der Q&A-Index unmittelbar nach dem Hinzufügen oder Ändern eines Q-&A aktualisiert. 
+Das Erstellen einer [F-&A](manage-qas.md) entspricht dem Erstellen von [Lesezeichen.](manage-bookmarks.md) Mit F&A können Sie Antworten auf Benutzerfragen anstelle eines Links zur Webseite bereitstellen. Sie können Antworten in Rich-Text mithilfe der verfügbaren Tools formatieren. Wenn ein Lesezeichen und ein Q-&A dasselbe Schlüsselwort verwenden, wird zuerst das Lesezeichenergebnis angezeigt. Wie Lesezeichen wird der Q&A-Index unmittelbar nach dem Hinzufügen oder Ändern eines Q-&A aktualisiert. 
 
 ### <a name="supported-html-tags"></a>Unterstützte HTML-Tags
 
@@ -116,9 +116,9 @@ Nutzen Sie die Fachexperten (Subject Matter Experts, SMEs) in Ihrer Organisation
 Bitten Sie Benutzer, Ressourcen als Lesezeichen vorzuschlagen. Bitten Sie Benutzer außerdem, Fehler wie fehlerhafte oder ungültige Links zu melden.
 
 ## <a name="set-up-components"></a>Einrichten von Komponenten
-Führen Sie die Schritte in den folgenden Abschnitten aus, um einzelne Oder [Massenlesezeichen](manage-bookmarks.md), [Q&A](manage-qas.md)und [Speicherorte](manage-locations.md)hinzuzufügen oder zu bearbeiten. 
+Führen Sie die Schritte in den folgenden Abschnitten aus, um einzelne oder [Massenlesezeichen](manage-bookmarks.md), [Q&A](manage-qas.md)und [Speicherorte](manage-locations.md)hinzuzufügen oder zu bearbeiten. 
 
-### <a name="add-or-edit-a-single-bookmark-qa-or-location-component"></a>Hinzufügen oder Bearbeiten einer einzelnen Textmarke, Q&A oder Standortkomponente
+### <a name="add-or-edit-a-single-bookmark-qa-or-location-component"></a>Hinzufügen oder Bearbeiten eines einzelnen Lesezeichens, einer Q-&A oder einer Standortkomponente
 1. Wechseln Sie im Microsoft 365 [Admin Center](https://admin.microsoft.com)zu **Einstellungen**  >  **Microsoft Search**. Wählen Sie die benannte Registerkarte der Komponente aus. Die Registerkarte **"Lesezeichen"** ist standardmäßig ausgewählt.
 1. Wählen Sie zum Hinzufügen einer Komponente die Option **"Neu hinzufügen"** aus. 
 1. Um eine Komponente zu bearbeiten, wählen Sie die Textmarke in der entsprechenden Komponentenliste aus. 
@@ -172,7 +172,7 @@ Mit Schlüsselwörtern können Benutzer in Ihrer Organisation relevante Inhalte 
 1. **Welche Suchbegriffe können die von Ihnen identifizierten Informationen finden?** Verweisen Sie auf alle vorhandenen Terminologie in Ihrer Organisation sowie auf verwandte Variationen, Akronyme, Themen und Themen.
 1. **Welche Variationen oder Wörter werden verwendet, um über diese Informationen zu sprechen?** Bitten Sie Ihr Supportteam, diese Schlüsselwörter bereitzustellen.
 
-Wenn Sie z. B. ein Ergebnis erstellen, das auf ein Tool zum Übermitteln von Urlaubsanfragen verweist, sind die Schlüsselwörter **"Urlaub"** und **"Urlaubsanfrage übermitteln"** gute Optionen. Benutzer in Ihrer Organisation suchen möglicherweise auch nach urlaubsbezogenen Informationen mit **Feiertagen** oder **arbeitsfreien Zeiten.** Um benutzern das Auffinden relevanter Inhalte zu erleichtern, fügen Sie diese Schlüsselwörter und andere Wie z. B. die Übermittlung von **Feiertagsanfragen** und **die Anforderung einer Arbeitsfreie Zeit** hinzu.
+Wenn Sie z. B. ein Ergebnis erstellen, das auf ein Tool zum Übermitteln von Urlaubsanfragen verweist, sind die Schlüsselwörter **"Urlaub"** und **"Urlaubsanfrage übermitteln"** gute Optionen. Benutzer in Ihrer Organisation suchen möglicherweise auch nach urlaubsbezogenen Informationen mit **Feiertagen** oder **arbeitsfreien Zeiten.** Um benutzern das Auffinden relevanter Inhalte zu erleichtern, fügen Sie diese Schlüsselwörter und andere Wie z. B. das Senden von **Feiertagsanfragen** und **das Anfordern einer Arbeitsfreie Zeit** hinzu.
 
 ### <a name="reserved-keywords"></a>Reservierte Schlüsselwörter
  Ein reserviertes Schlüsselwort ist ein eindeutiger Begriff oder Ausdruck, der ein Ergebnis auslöst. Im Gegensatz zu anderen Schlüsselwörtern sind reservierte Schlüsselwörter nur einem Ergebnis zugeordnet. Verwenden Sie reservierte Schlüsselwörter nur sparsam, damit Microsoft Search auf der Grundlage ihrer Nutzung lernen kann.
@@ -183,7 +183,7 @@ Ein Beispiel ist ein Lesezeichen für eine Website zum Übermitteln Ihrer Stunde
 Wenn Benutzer nach Sätzen verwandter Inhalte suchen sollen, wenn sie nach einem bestimmten Begriff suchen, weisen Sie allen verwandten Inhalten dasselbe Schlüsselwort zu. Ein Beispiel ist die Suche nach Prozessen und Tools im Umgang mit Änderungen des Lebenszyklus. Um Antworten zum Aktualisieren von Vorteilen, Steuerinformationen sowie Namens- und Aliasänderungen zu gruppieren, schließen Sie ein Schlüsselwort wie **"Stichwörter"** ein.
 
 ### <a name="search-settings"></a>Sucheinstellungen
-Mithilfe von Sucheinstellungen können Sie Ihre Inhalte anpassen und bestimmte Benutzergruppen ansprechen. Diese Microsoft Search Einstellungen steuern, wann ein Suchergebnis angezeigt wird und wer es sehen kann:
+Mit sucheinstellungen können Sie Ihre Inhalte anpassen und bestimmte Benutzergruppen ansprechen. Diese Microsoft Search Einstellungen steuern, wann ein Suchergebnis angezeigt wird und wer es sehen kann:
 
 - **Datum**. Um zu steuern, wann Inhalte verfügbar oder nicht verfügbar sind, legen Sie ein Startdatum und ein Enddatum fest. Beispielsweise wird zeitsensibles Material in Suchergebnissen angezeigt, wenn es relevant ist.
 - **Land oder Region**. Sie können Länder oder Regionen auswählen, sodass nur Benutzern an diesen Speicherorten bestimmte Inhalte angezeigt werden. Länderspezifische Informationen werden beispielsweise nur in diesen Ländern in den Suchergebnissen angezeigt.
@@ -203,13 +203,13 @@ Benutzer und SMEs, die an der Inhaltserstellung mitwirken, können beim Testen u
 ## <a name="review-and-update-periodically"></a>Überprüfen und Aktualisieren in regelmäßigen Abständen
 Autorisierende Informationen wie [Lesezeichen](manage-bookmarks.md) und [F&A](manage-qas.md) müssen aktuell bleiben. Führen Sie diese Schritte regelmäßig aus:
 - Korrigieren oder entfernen Sie fehlerhafte und ungültige URLs.
-- Entfernen Sie Lesezeichen oder Q&A, die nicht mehr relevant sind.
+- Entfernen Sie Lesezeichen oder F&A, die nicht mehr relevant sind.
 - Überprüfen Sie auf Änderungen des Tools, Websitenamens oder Teamnamens.
 - Überlegen Sie, ob das Lesezeichen oder die Q-&A autoritativ genug ist oder eine klarere Beschreibung benötigt.
 
-## <a name="get-insights-about-bookmarks-qa-and-locations"></a>Erhalten Von Einblicken zu Lesezeichen, Q-&A und Speicherorten
+## <a name="get-insights-about-bookmarks-qa-and-locations"></a>Erhalten Von Einblicken zu Lesezeichen, Q&A und Speicherorten
 
-Microsoft Search zeigt, wie viele [Lesezeichen](manage-bookmarks.md), [F&A](manage-qas.md)und [Speicherorte](manage-locations.md) veröffentlicht, geplant oder vorgeschlagen werden. Das [dashboard Insights](./usage-reports.md) zeigt Lesezeichen, F&A und Standortsummen nach Status an:
+Microsoft Search zeigt, wie viele [Lesezeichen](manage-bookmarks.md), [F&A](manage-qas.md)und [Speicherorte](manage-locations.md) veröffentlicht, geplant oder vorgeschlagen werden. Im [Insights-Dashboard](./usage-reports.md) werden Lesezeichen, F&A und Standortsummen nach Status angezeigt:
 
 - **Veröffentlicht**: die Anzahl der veröffentlichten Ergebnissen, die für Benutzer zur Verfügung stehen
 - **Geplant:** die Anzahl der geplanten Ergebnissen in der Veröffentlichungspipeline
@@ -219,7 +219,7 @@ Vorgeschlagene [Lesezeichen,](manage-bookmarks.md) [F&A](manage-qas.md)und [Spei
 
 ### <a name="review-top-search-queries"></a>Überprüfen der wichtigsten Suchabfragen
 
-Um herauszufinden, welche Suchvorgänge die meisten Aufrufe in den letzten 90 Tagen generiert haben, überprüfen Sie Ihre wichtigsten Suchabfragen. *"Eindruck"* bedeutet, wie oft eine Seite in Suchergebnissen angezeigt wurde. Die Karte mit den **häufigsten Abfragen** im [Insights-Dashboard](./usage-reports.md) zeigt die 25 häufigsten Benutzersuchen für jeden Ergebnistyp, die Gesamtanzahl der Suchvorgänge und die Klickrate (Click-Through Rate, CTR) an. Mit diesem Bericht können Sie das Suchabfragevolumen identifizieren und Abfragen mit hoher und niedriger Suchaktivität ermitteln.
+Um herauszufinden, welche Suchvorgänge die meisten Aufrufe in den letzten 90 Tagen generiert haben, überprüfen Sie Ihre wichtigsten Suchabfragen. *"Eindruck"* bedeutet, wie oft eine Seite in Suchergebnissen angezeigt wurde. Auf der Karte **"Häufigste Abfragen"** im [Insights-Dashboard](./usage-reports.md) werden die 25 häufigsten Benutzersuchen für jeden Ergebnistyp, die Gesamtanzahl der Suchvorgänge und die Klickrate (Click-Through Rate, CTR) angezeigt. Mit diesem Bericht können Sie das Suchabfragevolumen identifizieren und Abfragen mit hoher und niedriger Suchaktivität ermitteln.
 
 Niedrige Suchanzahl kann auf Unzufriedenheit des Benutzers hindeuten. Entweder suchen Benutzer nicht nach diesen Inhalten, oder sie verwenden unterschiedliche Schlüsselwörter, um sie zu finden. Die CTR zeigt an, wie oft Benutzer die höhergestuften Ergebnisse auswählen und wie nützlich Ihre Abfrageregeln und -ergebnisse für Benutzer sind. Ein niedriger CTR-Wert gibt an, dass Benutzer den Inhalt finden, aber nicht ihren Anforderungen entsprechen. Überprüfen Sie in solchen Fällen den Inhalt. Um Inhalte an Suchabfragen auszurichten, stellen Sie sicher, dass sie den Such- und Aktualisierungstiteln, Beschreibungen und Schlüsselwörtern der Benutzer entsprechen. 
 

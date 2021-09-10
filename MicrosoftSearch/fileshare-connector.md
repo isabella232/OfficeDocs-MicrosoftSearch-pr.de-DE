@@ -15,11 +15,11 @@ search.appverid:
 ROBOTS: NoIndex
 description: Einrichten des Dateifreigabe-Graph-Connectors für Microsoft Search
 ms.openlocfilehash: 874b522cb54288b531cbbc63e12f232a8a68939e
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702147"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973498"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -28,7 +28,7 @@ ms.locfileid: "58702147"
 Mit dem Connector für die Dateifreigabe Graph können Benutzer in Ihrer Organisation lokale Windows Dateifreigaben durchsuchen.
 
 > [!NOTE]
-> Lesen Sie den Artikel [**"Setup for your Graph connector",**](configure-connector.md) um den allgemeinen Setupprozess für Graph Connectors zu verstehen.
+> Lesen Sie den Artikel [**"Setup for your Graph connector",**](configure-connector.md) um den allgemeinen Einrichtungsprozess für Graph Connectors zu verstehen.
 
 ## <a name="before-you-get-started"></a>Bevor Sie beginnen
 
@@ -46,7 +46,7 @@ Inhalte der folgenden Formate können indiziert und durchsucht werden: DOC, DOCM
 
 Die maximal unterstützte Dateigröße beträgt 100 MB. Dateien, die 100 MB überschreiten, werden nicht indiziert. Die maximale Größe nach der Verarbeitung beträgt 4 MB. Die Verarbeitung wird beendet, wenn die Größe einer Datei 4 MB erreicht. Daher funktionieren einige Ausdrücke, die in der Datei vorhanden sind, möglicherweise nicht für die Suche.
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph Connectors in der Microsoft 365 Admin Center
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph Connectors im Microsoft 365 Admin Center
 
 Folgen Sie den allgemeinen [Setupanweisungen.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -58,7 +58,7 @@ Folgen Sie den allgemeinen [Setupanweisungen.](./configure-connector.md)
 
 ## <a name="step-3-configure-the-connection-settings"></a>Schritt 3: Konfigurieren der Verbindungseinstellungen
 
-Wählen Sie auf der **Seite Verbinden zur Datenquelle** die **Dateifreigabe aus,** und geben Sie den Namen, die Verbindungs-ID und die Beschreibung an. Geben Sie auf der nächsten Seite den Pfad zur Dateifreigabe an, und wählen Sie Ihren zuvor installierten Graph Connector-Agent aus. Geben Sie die Anmeldeinformationen für ein [Microsoft Windows](https://microsoft.com/windows) Benutzerkonto mit Lesezugriff auf alle Dateien in der Dateifreigabe ein.
+Wählen Sie auf der Seite **Verbinden zur Datenquelle** **dateifreigabe aus,** und geben Sie den Namen, die Verbindungs-ID und die Beschreibung an. Geben Sie auf der nächsten Seite den Pfad zur Dateifreigabe an, und wählen Sie Ihren zuvor installierten Graph Connector-Agent aus. Geben Sie die Anmeldeinformationen für ein [Microsoft Windows](https://microsoft.com/windows) Benutzerkonto mit Lesezugriff auf alle Dateien in der Dateifreigabe ein.
 
 ### <a name="preserve-last-access-time"></a>Beibehalten der letzten Zugriffszeit
 
@@ -86,7 +86,7 @@ Der Administrator könnte auch eine Ausnahme von der Limit-Regel erteilen. Die P
 
 ## <a name="step-5-manage-search-permissions"></a>Schritt 5: Verwalten von Suchberechtigungen
 
-Sie können die Berechtigung zum Suchen nach einer beliebigen Datei basierend auf Zugriffssteuerungslisten für Freigaben oder NTFS-Zugriffssteuerungslisten (New Technology File System, NTFS) einschränken, indem Sie auf der Seite **"Suchberechtigungen verwalten"** die gewünschte Option auswählen. Die in diesen Zugriffssteuerungslisten bereitgestellten Benutzerkonten und Gruppen müssen von Active Directory (AD) verwaltet werden. Wenn Sie ein anderes System für die Benutzerkontenverwaltung verwenden, können Sie die Option "Jeder" auswählen, mit der Benutzer ohne Zugriffseinschränkungen nach allen Dateien suchen können. Wenn Benutzer jedoch versuchen, die Datei zu öffnen, gelten die an der Quelle festgelegten Zugriffssteuerelemente.
+Sie können die Berechtigung zum Suchen nach einer beliebigen Datei basierend auf Listen für die Zugriffssteuerung für freigabebasierte Zugriffssteuerungen oder NTFS-Zugriffssteuerungslisten (New Technology File System, NTFS) einschränken, indem Sie auf der Seite **"Suchberechtigungen verwalten"** die gewünschte Option auswählen. Die in diesen Zugriffssteuerungslisten bereitgestellten Benutzerkonten und Gruppen müssen von Active Directory (AD) verwaltet werden. Wenn Sie ein anderes System für die Benutzerkontenverwaltung verwenden, können Sie die Option "Jeder" auswählen, mit der Benutzer ohne Zugriffseinschränkungen nach allen Dateien suchen können. Wenn Benutzer jedoch versuchen, die Datei zu öffnen, gelten die an der Quelle festgelegten Zugriffssteuerelemente.
 
 Beachten Sie, dass Windows standardmäßig die Berechtigung "Lesen" für "Jeder" in AcLs freigeben bereitstellt, wenn ein Ordner im Netzwerk freigegeben wird. Wenn Sie in **"Suchberechtigungen verwalten"** ACLs freigeben auswählen, können Benutzer durch erweiterungsweise nach allen Dateien suchen. Wenn Sie den Zugriff einschränken möchten, entfernen Sie "Lesezugriff" für "Jeder" in Dateifreigaben, und gewähren Sie nur den gewünschten Benutzern und Gruppen Zugriff. Der Connector liest dann diese Zugriffseinschränkungen und wendet sie auf die Suche an.
 

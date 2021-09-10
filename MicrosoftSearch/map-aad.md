@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Schritte zum Zuordnen von AAD-Identitäten
 ms.openlocfilehash: d0292d77b3a0936ed60682b8388de1bb82ac43bb
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701967"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973456"
 ---
 # <a name="map-your-azure-ad-identities"></a>Zuordnen Ihrer Azure AD-Identitäten   
 

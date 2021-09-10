@@ -6,18 +6,18 @@ manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Details zur Connectors-Ergebnisclusteroberfläche
-ms.openlocfilehash: cfb7df9046074fd5126ca0ccc59e24ac4eef8a92
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: f815c52681a7fc2027b587be980b5e9125e04917
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470323"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973486"
 ---
 # <a name="graph-connectors-result-cluster"></a>ergebniscluster für Graph Connectors
 
@@ -33,7 +33,7 @@ Die im Ergebniscluster bereitgestellten Connectorergebnisse werden von einzelnen
 
 Um die Erkennung von Inhalten aus den Such-Vertikalen sicherzustellen, empfehlen wir die Bereitstellung aussagekräftiger Titel für Ihre Elemente. Dies wirkt sich positiv auf die Vermittlung von Ergebnisclusterkandidaten und die Wahrscheinlichkeit aus, dass Ihre Inhalte in einem Ergebniscluster angezeigt werden. Vermeiden Sie beispielsweise die Verwendung von IDs als Werte für den Eigenschaftstitel, es sei denn, Ihre Benutzer verwenden IDs, um nach Inhalten zu suchen.
 
-Wie oft ein Ergebniscluster angezeigt wird, hängt von Faktoren wie der Anzahl der von Ihnen konfigurierten Such-Vertikalen und dem Inhaltstyp ab. Durch die Interaktion oder Das Ignorieren eines Ergebnisclusters geben Benutzer implizit Hinweise an, die die Auslösung im Laufe der Zeit anpassen.
+Wie oft ein Ergebniscluster angezeigt wird, hängt von Faktoren wie der Anzahl der von Ihnen konfigurierten Such-Vertikalen und dem Inhaltstyp ab. Durch die Interaktion oder das Ignorieren eines Ergebnisclusters geben Benutzer implizit Hinweise an, die die Auslösung im Laufe der Zeit anpassen.
 
 Die Suchergebnisoberfläche für die in Ihrem Ergebniscluster angezeigten Connectorelemente verwendet von Ihnen definierte [Ergebnistypen.](./customize-search-page.md#create-your-own-result-type) Wenn kein Ergebnistyp konfiguriert ist, wird ein [vom System generiertes Layout](./customize-search-page.md#default-search-result-layout) verwendet.
 
@@ -49,7 +49,7 @@ Die Ergebniscluster-Erfahrung ist standardmäßig aktiviert.
 
 Wenn Sie es deaktivieren möchten, führen Sie die folgenden Schritte aus, um die Benutzeroberfläche auf Organisationsebene zu deaktivieren:
 
-1. Wechseln [Sie](https://admin.microsoft.com)im Microsoft 365 Admin Center zu [**"Vertikalen".**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)
+1. Wechseln [Sie](https://admin.microsoft.com)im Microsoft 365 Admin Center zu [**"Verticals".**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)
 1. Wählen Sie die Vertikale **Alle** aus, und aktivieren Sie dann die **Verbinderergebnisse ausblenden.**
 
 Führen Sie die folgenden Schritte aus, um die Benutzeroberfläche auf SharePoint Websiteebene zu deaktivieren:

@@ -15,20 +15,20 @@ ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
 ROBOTS: NoIndex
 description: Rufen Sie relevante Suchvorschläge ab, und suchen Sie schneller nach Arbeitsergebnissen, indem Sie Ihrer Intranetwebsite oder -seite ein Microsoft Search Suchfeld hinzufügen.
 ms.openlocfilehash: d9f730eee98291d64e1f860c67be3eb7aa52a4a8
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701408"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973799"
 ---
 # <a name="add-a-search-box-to-your-intranet-site"></a>Hinzufügen eines Suchfelds zu Ihrer Intranetwebsite
 
-Um Ihren Benutzern einfachen Zugriff auf Ergebnisse aus Ihrer Organisation zu ermöglichen, fügen Sie eine Microsoft Search in Bing Suchfeld zu einer beliebigen Intranetwebsite oder -seite hinzu. Dies sind einige der Vorteile:
+Um Ihren Benutzern einfachen Zugriff auf Ergebnisse aus Ihrer Organisation zu ermöglichen, fügen Sie einer Intranetwebsite oder -seite in Bing Suchfeld eine Microsoft Search hinzu. Dies sind einige der Vorteile:
 
 - Ein Suchfeld in Ihrem SharePoint- oder Intranetportal bietet einen vertrauten, vertrauenswürdigen Einstiegspunkt, um mit der Suche zu beginnen.
 - Unterstützt alle gängigen Webbrowser, einschließlich Google Chrome und Microsoft Edge
 - Es werden nur Suchvorschläge aus Ihrer Organisation angezeigt, Webvorschläge werden nie eingeschlossen.
-- Führt Benutzer zu einer Microsoft Search in Bing Seite mit Arbeitsergebnissen, die Anzeigen und Webergebnisse ausschließt
+- Führt Benutzer zu einer Microsoft Search auf Bing Seite mit Arbeitsergebnissen, die Anzeigen und Webergebnisse ausschließt
 - Sie steuern die Darstellung und das Verhalten des Suchfelds, einschließlich der Möglichkeit, Benutzer auf einer Standard-Vertikal oder einer benutzerdefinierten Vertikalen zu landen, die Sie erstellt haben.
   
 ## <a name="add-a-search-box-to-an-intranet-page"></a>Hinzufügen eines Suchfelds zu einer Intranetseite
@@ -108,7 +108,7 @@ Um eine einfache Integration zwischen Ihren Branchen-Apps oder Intranetwebsites 
 
 Verwenden Sie die vertikale Option in bfbSearchBoxConfig, um die gewünschte Vertikale zu definieren. Wenn Benutzer beispielsweise immer auf der vertikalen Website(einer der Standard-Vertikalen) landen sollen, verwenden Sie den Wert "Websitewebsites".
 
-:::image type="content" alt-text="Screenshot der Seite &quot;Arbeitsergebnisse&quot; auf Microsoft Search in Bing mit den vertikalen Ergebnissen und der URL &quot;Websites&quot;." source="media/sites-vertical-esb.png" lightbox="media/sites-vertical-esb.png":::
+:::image type="content" alt-text="Screenshot der Seite &quot;Arbeitsergebnisse&quot; auf Microsoft Search in Bing mit den vertikalen Ergebnissen und der URL der Websites." source="media/sites-vertical-esb.png" lightbox="media/sites-vertical-esb.png":::
 
 Verwenden Sie für benutzerdefinierte Vertikale den Hash am Ende der URL. Sie können diese Werte finden, indem Sie auf der Arbeitsseite auf Bing suchen, auf eine vertikale Beschriftung klicken und den Wert nach dem Nummernzeichen (#) kopieren.
 
@@ -124,4 +124,4 @@ Wenn das Einbetten eines Skripts keine Option für die Website ist, verwenden Si
 
 ## <a name="inprivate-mode-and-conditional-access"></a>InPrivate-Modus und bedingter Zugriff
 
-Ein eingebettetes Suchfeld wird deaktiviert, wenn die Seite oder Website in einem InPrivate-Fenster geöffnet wird. Darüber hinaus unterstützt Bing.com die AAD-Anmeldung nicht, wenn sie den InPrivate-Modus verwendet, da azure AD-Bedingter Zugriff in Microsoft Edge unterstützt wird. Weitere Informationen zum bedingten Zugriff in Edge finden Sie unter [Microsoft Edge und bedingter Zugriff.](/deployedge/ms-edge-security-conditional-access#accessing-conditional-access-protected-resources-in-microsoft-edge) 
+Ein eingebettetes Suchfeld wird deaktiviert, wenn die Seite oder Website in einem InPrivate-Fenster geöffnet wird. Darüber hinaus unterstützt Bing.com die AAD-Anmeldung bei Verwendung des InPrivate-Modus nicht, wenn azure AD conditional Access in Microsoft Edge unterstützt wird. Weitere Informationen zum bedingten Zugriff in Edge finden Sie unter [Microsoft Edge und bedingter Zugriff.](/deployedge/ms-edge-security-conditional-access#accessing-conditional-access-protected-resources-in-microsoft-edge) 

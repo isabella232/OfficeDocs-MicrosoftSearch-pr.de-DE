@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: Verwalten von Microsoft Graph Connectors für Microsoft Search.
 ms.openlocfilehash: dd82114ff6aa651b57ce1941685840906ecf7318
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702048"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973492"
 ---
 # <a name="monitor-your-connections"></a>Ihre Verbindungen überwachen
 
@@ -28,13 +28,13 @@ Um auf Ihre Connectors zugreifen und diese verwalten zu können, müssen Sie als
 
 Navigieren Sie im [Microsoft 365 Admin Center](https://admin.microsoft.com)zur [Registerkarte Connectors.](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)
 
-Für jeden Verbindertyp unterstützt die [Microsoft 365 Admin Center](https://admin.microsoft.com) die in der folgenden Tabelle dargestellten Vorgänge:
+Für jeden Connectortyp unterstützt der [Microsoft 365 Admin Center](https://admin.microsoft.com) die in der folgenden Tabelle gezeigten Vorgänge:
 
 Vorgang | Microsoft Graph-Connectors | Partner- oder Graph Connectors
 --- | --- | ---
-Hinzufügen einer Verbindung | :heavy_check_mark: (Siehe [Setupübersicht](configure-connector.md)) | :x: (Wenden Sie sich an Ihren Partner oder die benutzerdefinierte Connector-Administrator-UX)
+Hinzufügen einer Verbindung | :heavy_check_mark: (Siehe [Setupübersicht)](configure-connector.md) | :x: (Wenden Sie sich an Ihren Partner oder die benutzerdefinierte Connector-Administrator-UX)
 Löschen einer Verbindung | :heavy_check_mark: | :heavy_check_mark:
-Bearbeiten einer veröffentlichten Verbindung | :heavy_check_mark: Name und Beschreibung<br></br> :heavy_check_mark: Verbindungseinstellungen<br></br> :heavy_check_mark: Eigenschaftenbezeichnungen<br></br> :heavy_check_mark: Schema<br></br> :heavy_check_mark: Aktualisierungszeitplan<br></br> | :heavy_check_mark: Name<br></br> :heavy_check_mark: Beschreibung
+Bearbeiten einer veröffentlichten Verbindung | :heavy_check_mark: Name und Beschreibung<br></br> :heavy_check_mark: Verbindungseinstellungen<br></br> :heavy_check_mark: Eigenschaftenbeschriftungen<br></br> :heavy_check_mark: Schema<br></br> :heavy_check_mark: Aktualisierungszeitplan<br></br> | :heavy_check_mark: Name<br></br> :heavy_check_mark: Beschreibung
 Bearbeiten eines Verbindungsentwurfs | :heavy_check_mark: | :x:
 
 ## <a name="monitor-your-connection-state"></a>Überwachen des Verbindungsstatus

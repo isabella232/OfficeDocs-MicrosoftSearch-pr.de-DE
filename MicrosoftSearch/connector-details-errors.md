@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Connectors – Details und Fehler
 ms.openlocfilehash: 915723a2a22771e89fdb433b4ddadba76fa91090
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701381"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973794"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -38,7 +38,7 @@ Für jede Verbindung sind die folgenden letzten Durchforstungswerte verfügbar:
 Wert | Beschreibung
 --- | ---
 **Abgeschlossen am** | Datum und Uhrzeit des Abschlusses der letzten Durchforstung
-**Type** | Inkrementelle oder vollständige Durchforstung
+**Typ** | Inkrementelle oder vollständige Durchforstung
 **Duration** | Wie viel Zeit hat die letzte Durchforstung gedauert?
 **Erfolge** | Anzahl der Elemente, die bei der letzten Durchforstung erfolgreich aufgenommen wurden
 **Fehler** | Anzahl der Elemente, bei denen bei der letzten Durchforstung ein Fehler aufgetreten ist
@@ -61,10 +61,10 @@ Fehlercode | Fehlermeldung | Lösung
 1001 | Die Daten können nicht aktualisiert werden, da die Datenquelle den Connector drosselt. | Um die Datenquelle aufzuheben, überprüfen Sie, ob die Skalierungsgrenzwerte erhöht werden können, oder warten Sie bis zu einer weniger datenverkehrslastigen Zeit des Tages.
 1002 | Die Authentifizierung mit der Datenquelle ist nicht möglich. Stellen Sie sicher, dass die dieser Datenquelle zugeordneten Anmeldeinformationen korrekt sind. | Klicken Sie auf **Bearbeiten,** um die Authentifizierungsanmeldeinformationen zu aktualisieren.
 1003 | Das dem Connector zugeordnete Konto verfügt nicht über die Berechtigung, auf das Element zuzugreifen. |  Stellen Sie sicher, dass das richtige Konto Zugriff auf das Element hat, das indiziert werden soll.
-1004 | Das lokale Datengateway kann nicht erreicht werden. Stellen Sie sicher, dass der Gatewaydienst ausgeführt wird und die Gatewaydetails in der Verbindungskonfiguration aktualisiert werden. | Überprüfen Sie den Computer mit dem Gateway, öffnen Sie die Power BI Gatewayanwendung, und stellen Sie sicher, dass das Gateway ausgeführt wird. Stellen Sie sicher, dass das Gateway das gleiche Administratorkonto wie Microsoft Search verwendet, und stellen Sie dann sicher, dass alle Gatewaydetails in der Verbindungskonfiguration aktualisiert werden.
+1004 | Das lokale Datengateway kann nicht erreicht werden. Stellen Sie sicher, dass der Gatewaydienst ausgeführt wird und die Gatewaydetails in der Verbindungskonfiguration aktualisiert werden. | Überprüfen Sie den Computer mit dem Gateway, öffnen Sie die Power BI Gateway-Anwendung, und stellen Sie sicher, dass das Gateway ausgeführt wird. Stellen Sie sicher, dass das Gateway das gleiche Administratorkonto wie Microsoft Search verwendet, und stellen Sie dann sicher, dass alle Gatewaydetails in der Verbindungskonfiguration aktualisiert werden.
 1005 | Anmeldeinformationen, die dieser Datenquelle zugeordnet sind, sind abgelaufen. Erneuern Sie die Anmeldeinformationen, und aktualisieren Sie die Verbindung. | Klicken Sie auf **Bearbeiten,** um die Authentifizierungsanmeldeinformationen zu aktualisieren.
 1006 | Ihre Gatewayversion ist veraltet und unterstützt diesen Connector nicht mehr. Sie müssen das Gateway aktualisieren. | Besuchen Sie ["Installieren eines lokalen Datengateways",](/data-integration/gateway/service-gateway-install) um die neueste Version des Power BI-Gateways auf dem Computer herunterzuladen und zu installieren, der das Gateway enthält.
-1007 | Es wurde keine gültige Power BI-Lizenz erkannt. Sie benötigen eine gültige Power BI-Lizenz, um diese Durchforstung durchzuführen. | Sie benötigen eine gültige Power BI-Lizenz, um diese Durchforstung durchzuführen. Überprüfen Sie, ob Ihre Organisation über eine gültige Lizenz verfügt. Wenn dies der Fall ist, versuchen Sie es erneut. Wenn dies nicht der Fall ist, rufen Sie eine Lizenz ab, und versuchen Sie es dann erneut.
+1007 | Es wurde keine gültige Power BI-Lizenz erkannt. Sie benötigen eine gültige Power BI Lizenz, um diese Durchforstung durchzuführen. | Sie benötigen eine gültige Power BI Lizenz, um diese Durchforstung durchzuführen. Überprüfen Sie, ob Ihre Organisation über eine gültige Lizenz verfügt. Wenn dies der Fall ist, versuchen Sie es erneut. Wenn dies nicht der Fall ist, rufen Sie eine Lizenz ab, und versuchen Sie es dann erneut.
 1008 | Die Gesamtkontingentauslastung Ihres Mandanten hat seinen Grenzwert erreicht. | Versuchen Sie, eine Verbindung zu löschen, um einen Teil Ihres Kontingents freizugeben, oder passen Sie Ihre Aufnahmefilter an, um weniger Daten einzugeben. Wenn diese das Problem nicht lösen, wenden Sie sich an den Microsoft-Support.
 1009 | Die Gesamtkontingentauslastung für Ihre Verbindung hat ihren Grenzwert erreicht. | Versuchen Sie, Ihre Aufnahmefilter anzupassen, um weniger Daten einzuholen. Wenn das Problem dadurch nicht behoben wird, wenden Sie sich an den Microsoft-Support.
 1010 | Die Gesamtkontingentauslastung für die Indizierung von Nicht-Azure AD-Gruppen hat den Grenzwert von 100 KB erreicht. | Versuchen Sie, eine Verbindung zu löschen, um einen Teil Ihres Kontingents freizugeben, oder passen Sie Ihre Aufnahmefilter an, um weniger Daten einzugeben. Wenn diese das Problem nicht lösen, wenden Sie sich an den Microsoft-Support.

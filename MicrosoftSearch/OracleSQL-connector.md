@@ -7,19 +7,19 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ROBOTS: NoIndex
-description: Richten Sie den Oracle SQL Graph Connector für Microsoft Search ein.
-ms.openlocfilehash: 1fe45fa6f92b16290148ef72282418c41942a3c7
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+description: Richten Sie den Oracle SQL Graph-Connector für Microsoft Search ein.
+ms.openlocfilehash: 804bee89f8529630df5741f68b9f112c69307b4f
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470014"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973501"
 ---
 <!---Previous ms.author:vivg --->
 
@@ -38,7 +38,7 @@ Dieser Artikel richtet sich an alle Personen, die einen Oracle SQL Graph Connect
 
 Um auf Ihre lokalen Drittanbieterdaten zugreifen zu können, müssen Sie den Graph Connector-Agent installieren und konfigurieren. Weitere Informationen finden Sie unter [Installieren des Graph Connector-Agents.](graph-connector-agent.md)  
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph Connectors in der Microsoft 365 Admin Center
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph Connectors im Microsoft 365 Admin Center
 
 Folgen Sie den allgemeinen [Setupanweisungen.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -50,9 +50,9 @@ Folgen Sie den allgemeinen [Setupanweisungen.](./configure-connector.md)
 
 ## <a name="step-3-configure-the-connection-settings"></a>Schritt 3: Konfigurieren der Verbindungseinstellungen
 
-Um Ihren Oracle SQL Connector mit einer Datenquelle zu verbinden, müssen Sie den Datenbankserver konfigurieren, den Sie durchforsten möchten, und den lokalen Graph Connector-Agent. Anschließend können Sie mit der erforderlichen Authentifizierungsmethode eine Verbindung mit der Datenbank herstellen.
+Um Den Oracle SQL Connector mit einer Datenquelle zu verbinden, müssen Sie den Datenbankserver konfigurieren, den Sie durchforsten möchten, und den lokalen Graph Connector-Agent. Anschließend können Sie mit der erforderlichen Authentifizierungsmethode eine Verbindung mit der Datenbank herstellen.
 
-Für Oracle SQL Connector müssen Sie den Hostnamen, Port- und Dienstnamen (Datenbank) zusammen mit der bevorzugten Authentifizierungsmethode, dem Benutzernamen und dem Kennwort angeben.
+Für Oracle SQL Connector müssen Sie den Hostnamen, den Port und den Dienstnamen (Datenbank) zusammen mit der bevorzugten Authentifizierungsmethode, dem Benutzernamen und dem Kennwort angeben.
 
 > [!NOTE]
 > Ihre Datenbank muss Oracle-Datenbankversion 11g oder höher ausführen, damit der Connector eine Verbindung herstellen kann. Der Connector unterstützt Oracle-Datenbanken, die auf Windows-, Linux- und Azure-VM-Plattformen gehostet werden.
@@ -94,9 +94,9 @@ In der folgenden Tabelle sind die Datentypen zusammengefasst, die vom Oracle SQL
 | Zahlendatentyp | NUMBER(p,0) | int64 (für p <= 18) <br> double (für p > 18) |
 | Gleitkommazahlen-Datentyp | NUMBER(p,s) <br> FLOAT(p) | double |
 | Datumsdatentyp | DATE <br> TIMESTAMP <br> TIMESTAMP(n) | Datum/Uhrzeit |
-| Zeichendatentyp | CHAR(n) <br> VARCHAR <br> VARCHAR2 <br> LANGE <br> CLOB <br> NCLOB | string |
-| Unicode-Zeichen-Datentyp | NCHAR <br> NVARCHAR | string |
-| RowID-Datentyp | ROWID <br> UROWID | string |
+| Zeichendatentyp | CHAR(n) <br> VARCHAR <br> VARCHAR2 <br> LANGE <br> CLOB <br> NCLOB | Zeichenfolge |
+| Unicode-Zeichen-Datentyp | NCHAR <br> NVARCHAR | Zeichenfolge |
+| RowID-Datentyp | ROWID <br> UROWID | Zeichenfolge |
 
 Für alle anderen Datentypen, die derzeit nicht direkt unterstützt werden, muss die Spalte explizit in einen unterstützten Datentyp umgewandelt werden.
 
@@ -125,7 +125,7 @@ Um zeilenweise gelöschte Zeilen in Ihrer Datenbank von der Indizierung auszusch
 
 Wählen Sie **"Berechtigungen verwalten"** aus, um die verschiedenen Zugriffssteuerungsspalten (Access Control, ACL) auszuwählen, die den Zugriffsteuerungsmechanismus angeben. Wählen Sie den Spaltennamen aus, den Sie in der vollständigen Durchforstung SQL Abfrage angegeben haben.
 
-Es wird erwartet, dass jede der ACL-Spalten eine mehrwertige Spalte ist. Diese mehreren ID-Werte können durch Trennzeichen wie Semikolon (;), Komma (,) usw. getrennt werden. Sie müssen dieses Trennzeichen im **Werttrennzeichenfeld** angeben.
+Es wird erwartet, dass jede ACL-Spalte eine mehrwertige Spalte ist. Diese mehreren ID-Werte können durch Trennzeichen wie Semikolon (;), Komma (,) usw. getrennt werden. Sie müssen dieses Trennzeichen im **Werttrennzeichenfeld** angeben.
 
 Die folgenden ID-Typen werden für die Verwendung als ACLs unterstützt:
 
@@ -137,7 +137,7 @@ Die folgenden ID-Typen werden für die Verwendung als ACLs unterstützt:
 
 ## <a name="step-3b-incremental-crawl-optional"></a>Schritt 3b: Inkrementelle Durchforstung (optional)
 
-Stellen Sie in diesem optionalen Schritt eine SQL Abfrage bereit, um eine inkrementelle Durchforstung der Datenbank auszuführen. Bei dieser Abfrage ermittelt der SQL Connector alle Änderungen an den Daten seit der letzten inkrementellen Durchforstung. Wählen Sie wie bei der vollständigen Durchforstung zwischen den Optionen **Abfrage ,** Suchen oder Abrufen aus.   Geben Sie den gleichen Satz von ACL-Spalten an, den Sie in der vollständigen Durchforstungsabfrage angegeben haben.
+Stellen Sie in diesem optionalen Schritt eine SQL Abfrage bereit, um eine inkrementelle Durchforstung der Datenbank auszuführen. Bei dieser Abfrage ermittelt der SQL Connector alle Änderungen an den Daten seit der letzten inkrementellen Durchforstung. Wählen Sie wie bei der vollständigen Durchforstung zwischen den Optionen **Abfrage,** Suchen oder Abrufen aus.   Geben Sie den gleichen Satz von ACL-Spalten an, den Sie in der vollständigen Durchforstungsabfrage angegeben haben.
 
 Die Komponenten in der folgenden Abbildung ähneln den vollständigen Durchforstungskomponenten mit einer Ausnahme. In diesem Fall ist "ModifiedDateTime" die ausgewählte Wasserzeichenspalte. Überprüfen Sie die [vollständigen Durchforstungsschritte,](#step-3a-full-crawl-required) um zu erfahren, wie Sie die inkrementelle Durchforstungsabfrage schreiben und das folgende Bild als Beispiel anzeigen.
 

@@ -6,24 +6,24 @@ manager: jameslau
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Schritte zum Zuordnen von Nicht-AAD-Identitäten
-ms.openlocfilehash: bece23677f07f10d40471fb6ec27c2d96e7018fb
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: f433da10347ef59acf7675ec65da8acbd7f0f347
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470305"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973452"
 ---
 # <a name="map-your-non-azure-ad-identities"></a>Zuordnen Ihrer Nicht-Azure AD-Identitäten  
 
-In diesem Artikel werden Sie durch die Schritte zum Zuordnen Ihrer Nicht-Azure AD-Identitäten zu Ihren Azure AD-Identitäten geführt, sodass Personen in Ihrer Zugriffssteuerungsliste (Access Control List, ACL) mit Nicht-Azure AD-Identitäten die ihnen zugeordneten Connectorsuchergebnisse anzeigen können.
+In diesem Artikel werden Sie durch die Schritte zum Zuordnen Ihrer Nicht-Azure AD-Identitäten zu Ihren Azure AD-Identitäten geführt, sodass Personen in Ihrer Zugriffssteuerungsliste (Access Control List, ACL) mit Nicht-Azure AD-Identitäten die entsprechenden Connectorsuchergebnisse anzeigen können.
 
-Diese Schritte sind nur für Suchadministratoren relevant, die ein [ServiceNow-](servicenow-connector.md) oder [Salesforce-Connectors](salesforce-connector.md) von Microsoft mit Suchberechtigungen für "Nur Personen mit Zugriff auf diese Datenquelle" und Identitätstyp "Nicht-AAD" einrichten.
+Diese Schritte sind nur für Suchadministratoren relevant, die eine [Confluence Cloud,](confluence-cloud-connector.md) [ServiceNow Knowledge,](servicenow-knowledge-connector.md) [ServiceNow Catalog](servicenow-catalog-connector.md) oder [Salesforce](salesforce-connector.md) Connectors von Microsoft mit Suchberechtigungen für "Nur Personen mit Zugriff auf diese Datenquelle" und Identitätstyp "Non-AAD" einrichten.
 
 >[!NOTE]
 >Wenn Sie einen Salesforce-Connector einrichten und auf dem Bildschirm mit den Suchberechtigungen **nur Personen mit Zugriff** auf diese Datenquelle und den Identitätstyp **AAD** auswählen, finden Sie im Artikel ["Zuordnen Ihrer Azure AD-Identitäten"](map-aad.md) Schritte zum Zuordnen von Azure AD-Identitäten.  
@@ -44,9 +44,9 @@ Sie können eine der folgenden Azure AD-Eigenschaften auswählen:
 
 ### <a name="2-select-non-azure-ad-user-properties-to-map"></a>2. Auswählen von Nicht-Azure AD-Benutzereigenschaften, die zugeordnet werden sollen
 
-Sie können Nicht-Azure AD-Eigenschaften auswählen, die aus Ihrer Datenquelle abgerufen werden, um reguläre Ausdrücke anzuwenden. Weitere Informationen dazu, wo Sie diese Eigenschaften in Ihrer Datenquelle finden, finden Sie auf den Seiten ["ServiceNow"](servicenow-connector.md) und ["Salesforce".](salesforce-connector.md)  
+Sie können Nicht-Azure AD-Eigenschaften auswählen, die aus Ihrer Datenquelle abgerufen werden, um reguläre Ausdrücke anzuwenden. Weitere Informationen dazu, wo Sie diese Eigenschaften in Ihrer Datenquelle finden, finden Sie auf den Seiten [Confluence Cloud,](confluence-cloud-connector.md) [ServiceNow Knowledge,](servicenow-knowledge-connector.md) [ServiceNow Catalog](servicenow-catalog-connector.md) und [Salesforce.](salesforce-connector.md)  
 
-Sie können eine Nicht-Azure AD-Benutzereigenschaft aus der Dropdownliste auswählen und einen regulären Ausdruck bereitstellen, der auf diese Benutzereigenschaftswerte angewendet werden soll. Weitere Informationen zu regulären Ausdrücken finden Sie in der [Referenz zu regulären Ausdrücken.]( https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference)  
+Sie können eine Nicht-Azure AD-Benutzereigenschaft aus der Dropdownliste auswählen und einen regulären Ausdruck bereitstellen, der auf diese Benutzereigenschaftswerte angewendet werden soll.
 
 Nachfolgend finden Sie einige Beispiele für reguläre Ausdrücke und deren Ausgaben, die auf eine Beispielzeichenfolge angewendet werden: 
 

@@ -13,17 +13,17 @@ search.appverid:
 - MOE150
 description: Verwenden von Microsoft Search auf klassischen SharePoint Seiten
 ms.openlocfilehash: 5b9c40da63ccf3b28cf2d61282763d3d4f62f867
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702039"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973791"
 ---
 # <a name="classic-pages-and-microsoft-search"></a>Klassische Seiten und Microsoft Search
 
 SharePoint Websites, die vor modernen Websites erstellt wurden, verwenden ein klassisches Suchfeld und klassische Suchergebnisse. Wir werden ein Feature bereitstellen, das standardmäßig klassische Seiten verwendet, um die moderne Suchumgebung zu verwenden, die Microsoft Search verwendet, die personalisierte Ergebnisse mit höherer Relevanz bereitstellt.
 
-Die Verwendung von Microsoft Search wird für alle Websites empfohlen, einschließlich klassischer Websites. Wenn Ihre klassischen Websites jedoch benutzerdefinierte Gestaltungsvorlagen verwenden und/oder Sie Ihre klassische Suchergebnisse angepasst haben, erkennen wir diese Anpassungen automatisch und wechseln nicht zu Microsoft Search.
+Die Verwendung von Microsoft Search wird für alle Websites empfohlen, einschließlich klassischer Websites. Wenn Ihre klassischen Websites jedoch benutzerdefinierte Gestaltungsvorlagen verwenden und/oder Sie Ihre klassische Suchergebnisse angepasst haben, werden diese Anpassungen automatisch erkannt und nicht zu Microsoft Search gewechselt.
 
 ## <a name="classic-sites-that-will-automatically-switch-to-microsoft-search"></a>Klassische Websites, die automatisch zu Microsoft Search wechseln
 

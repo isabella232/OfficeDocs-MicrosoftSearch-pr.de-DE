@@ -13,25 +13,25 @@ search.appverid:
 - MOE150
 description: Erstmaliges Einrichten von Microsoft Search.
 ms.openlocfilehash: b1ddc3c32036b1fe3b86d38926bec86f626736f4
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701462"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973520"
 ---
 # <a name="set-up-microsoft-search"></a>Einrichten von Microsoft Search
 
-Microsoft Search bietet eine benutzerfreundliche Benutzeroberfläche, mit der Benutzer Informationen wie Dateien und Dokumente, interne Websites und Geschäftstools, Personen und Gruppen, Orte und Wegbeschreibungen, Unterhaltungen und Antworten finden können. Dies geschieht durch den sicheren Zugriff auf alle Datenquellen, einschließlich E-Mails, Dateien, SharePoint Dateien, OneDrive Inhalten und anderer freigegebener Ressourcen. Mit Microsoft Search in Bing können Sie auch Suchergebnisse aus dem Internet abrufen.
+Microsoft Search bietet eine benutzerfreundliche Benutzeroberfläche, mit der Benutzer Informationen wie Dateien und Dokumente, interne Websites und Geschäftstools, Personen und Gruppen, Orte und Wegbeschreibungen, Unterhaltungen und Antworten finden können. Dies erfolgt durch den sicheren Zugriff auf alle Datenquellen, einschließlich E-Mails, Dateien, SharePoint Dateien, OneDrive Inhalte und andere freigegebene Ressourcen. Mit Microsoft Search in Bing können Sie auch Suchergebnisse aus dem Internet abrufen.
 
 Weitere Informationen zu den Microsoft Search-Features finden Sie unter [Übersicht über Microsoft Search](overview-microsoft-search.md).
 
 ## <a name="get-started"></a>Erste Schritte
 
-Microsoft Search ist im Rahmen von Microsoft 365 standardmäßig für alle Microsoft-Apps aktiviert, die das Feature unterstützen. Es ist kein Setup erforderlich, Aber Sie können die gesamt Microsoft Search Erfahrung durch einige grundlegende administrative Aufgaben verbessern.
+Microsoft Search ist im Rahmen von Microsoft 365 standardmäßig für alle Microsoft-Apps aktiviert, die das Feature unterstützen. Es ist kein Setup erforderlich, aber Sie können die gesamt Microsoft Search Erfahrung mit einigen einfachen administrativen Aufgaben verbessern.
 
 Sie können Microsoft Search vom Microsoft 365 Admin Center aus verwalten.
 
-1. Wechseln Sie in Microsoft 365 Admin Center zu **Einstellungen**  >  [**Suche & Intelligence.**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)
+1. Wechseln Sie in Microsoft 365 Admin Center zu **Einstellungen**  >  [**Suche & Intelligence**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch).
 
 Als Administrator sollten Sie einige Dinge berücksichtigen, durch die Sie die Microsoft Search-Nutzererfahrung in Ihrer Organisation effizient und benutzerfreundlich gestalten können.
 

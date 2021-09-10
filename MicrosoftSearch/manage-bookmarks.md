@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Erstellen und Aktualisieren von Lesezeichen und Möglichkeiten zum Massenbearbeitung von Lesezeichenergebnissen für Microsoft Search
 ms.openlocfilehash: a08bef9ccc56d395fe6570bacc856653ff3a1563
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702057"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973674"
 ---
 # <a name="manage-bookmarks"></a>Verwalten von Lesezeichen
 
@@ -102,9 +102,9 @@ So verhindern Sie Duplizierungsfehler zwischen Lesezeichen:
 
 ### <a name="publish-or-review-recommended-bookmarks"></a>Veröffentlichen oder Überprüfen empfohlener Lesezeichen
 
-Um den manuellen Aufwand zum Hinzufügen von Lesezeichen zu verringern, können Microsoft Search die SharePoint Links Ihrer Organisation auswerten und Lesezeichen empfehlen. Sie können sie vor der Veröffentlichung überprüfen oder festlegen, dass sie automatisch veröffentlicht werden. Es ist kein Setup für empfohlene Lesezeichen erforderlich, sie sind aktiviert und standardmäßig auf die automatische Veröffentlichung festgelegt. Um diese Einstellungen jederzeit zu ändern, wählen Sie **Lesezeichen verwalten aus,** um den Bereich "Lesezeicheneinstellungen" zu öffnen.
+Um den manuellen Aufwand für das Hinzufügen von Lesezeichen zu reduzieren, können Microsoft Search die SharePoint Links Ihrer Organisation auswerten und Lesezeichen empfehlen. Sie können sie vor der Veröffentlichung überprüfen oder festlegen, dass sie automatisch veröffentlicht werden. Es ist kein Setup für empfohlene Lesezeichen erforderlich, sie sind aktiviert und standardmäßig auf die automatische Veröffentlichung festgelegt. Um diese Einstellungen jederzeit zu ändern, wählen Sie **Lesezeichen verwalten aus,** um den Bereich "Lesezeicheneinstellungen" zu öffnen.
 
-![Screenshot der empfohlenen Lesezeicheneinstellungen im Microsoft 365 Verwaltungsportal.](media/bookmarks-recommendedsettings.png)
+![Screenshot der Empfohlenen Lesezeicheneinstellungen im Microsoft 365-Verwaltungsportal.](media/bookmarks-recommendedsettings.png)
 
 Wenn empfohlene Lesezeichen aktiviert sind, wertet das Empfehlungsmodul SharePoint Websites in Ihrer Organisation aus, um Links mit hohem Datenverkehr zu identifizieren. Nach einem anfänglichen Evaluierungszeitraum werden die empfohlenen Lesezeichen entweder automatisch veröffentlicht oder der Liste der vorgeschlagenen Lesezeichen hinzugefügt. Der nächste Zyklus – ein Auswertungszeitraum von 30 Tagen gefolgt von der automatischen Veröffentlichung oder dem Hinzufügen vorgeschlagener Lesezeichen – beginnt dann.
 

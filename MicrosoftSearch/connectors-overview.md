@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Übersicht über Microsoft Graph Connectors für Microsoft Search
-ms.openlocfilehash: 0d0a1a89edfbcba0fed167c8b3f7bb2166da9439
-ms.sourcegitcommit: 134749c0f3a10f63d667f86dca55656b020b920f
+ms.openlocfilehash: 006ab3f56eb4976b44904e5191ae8fd256c8d5de
+ms.sourcegitcommit: 3e069fd920b5fcdfe97a0261930447e9e87d9013
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "58923143"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "58973525"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -28,7 +28,7 @@ ms.locfileid: "58923143"
 
 <!---link Microsoft Graph reference in line 19 when we have access to relevant documentation--->
 
-Dieser Artikel soll Microsoft 365 Administratoren dabei helfen, die Ressourcen zu finden, die für die Beantwortung der folgenden Fragen verfügbar sind:
+Dieser Artikel soll Microsoft 365 Administratoren helfen, die Ressourcen zu finden, die für die Beantwortung der folgenden Fragen verfügbar sind:
 
 * [Welche Datenquellen können mit Microsoft Search verbunden werden?](#what-data-sources-can-be-connected-to-microsoft-search)
 * [Wie verwalte ich meine Verbindungen?](#how-do-i-manage-my-connections)
@@ -57,7 +57,7 @@ To create a **connection** to a data source, admins need authenticated access to
 
 ## <a name="what-data-sources-can-be-connected-to-microsoft-search"></a>Welche Datenquellen können mit Microsoft Search verbunden werden?
 
-Microsoft bietet 9 Connectors an, und unsere Ökosystempartner haben über 100 weitere Connectors erstellt. Sie können auch einen eigenen Connector erstellen.
+Microsoft bietet 9 Connectors, und unsere Ökosystempartner haben über 100 weitere Connectors erstellt. Sie können auch einen eigenen Connector erstellen.
 
 ### <a name="microsoft-graph-connectors-by-microsoft"></a>Microsoft Graph Connectors von Microsoft
 
@@ -67,12 +67,15 @@ Sie können über von Microsoft erstellte Connectors eine Verbindung mit den fol
 * [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
 * [Azure DevOps](azure-devops-connector.md)
 * [Azure SQL und Microsoft SQL Server](MSSQL-connector.md)
+* [Confluence Cloud (Vorschau)](confluence-cloud-connector.md)
 * [Unternehmenswebsites](enterprise-web-connector.md)
 * [MediaWiki](mediawiki-connector.md)
 * [Dateifreigabe](fileshare-connector.md)
 * [Oracle SQL](OracleSQL-connector.md)
-* [Salesforce ](salesforce-connector.md)
-* [ServiceNow](servicenow-connector.md)
+* [Salesforce](salesforce-connector.md)
+* [ServiceNow-Wissen](servicenow-knowledge-connector.md)
+* [ServiceNow-Katalog (Vorschau)](servicenow-catalog-connector.md)
+
 
 Der [Microsoft Graph Connectors-Katalog](https://www.microsoft.com/microsoft-search/connectors) enthält eine kurze Beschreibung dieser Connectors. Wenn Sie bereit sind, eine dieser Datenquellen mit Ihrem Mandanten zu verbinden, lesen Sie unbedingt die [Setupübersicht](configure-connector.md) und alle anderen Artikel im Abschnitt "Setup connectors by Microsoft", die für Ihre Datenquelle gelten.
 
@@ -80,7 +83,7 @@ Der [Microsoft Graph Connectors-Katalog](https://www.microsoft.com/microsoft-sea
 
 Der [Connectorkatalog](https://www.microsoft.com/microsoft-search/connectors) von Microsoft Graph enthält eine kurze Beschreibung der einzelnen Connectors, die von unseren Partnern erstellt wurden, sowie einen Link zur Website jedes Partners. Um mehr zu erfahren, wenden Sie sich direkt an jeden Partner.
 
-### <a name="build-your-own-microsoft-graph-connector"></a>Erstellen Eines eigenen Microsoft Graph Connectors
+### <a name="build-your-own-microsoft-graph-connector"></a>Erstellen Eines eigenen Microsoft Graph-Connectors
 
 Sie können ihren eigenen Connector erstellen, wenn Sie möchten. Weitere Informationen zum Erstellen von Connectors finden Sie unter [Erstellen Ihres ersten benutzerdefinierten Microsoft Graph Connectors.](/graph/connecting-external-content-build-quickstart)
 
@@ -101,6 +104,8 @@ Obwohl Microsoft Graph Connectors und Microsoft Search-APIs jetzt allgemein verf
 Zu den Konnektoren und Features in der Vorschau gehören:
 
 * [Azure DevOps Connector](azure-devops-connector.md)
+* [Confluence Cloud Connector](confluence-cloud-connector.md)
+* [ServiceNow-Katalogconnector](servicenow-catalog-connector.md)
 * [Verwalten benutzerdefinierter Filter](custom-filters.md)
 * [Mehrere Verbindungen in einer vertikalen](customize-search-page.md#multiple-connections-in-a-vertical)
 

@@ -14,25 +14,25 @@ search.appverid:
 - MOE150
 description: Lizenzanforderungen und Preise für die öffentliche Vorschau von Microsoft Graph Connectors für Microsoft Search
 ms.openlocfilehash: b62187f0618405bdd691f923437b7b1e0edea1f9
-ms.sourcegitcommit: 134749c0f3a10f63d667f86dca55656b020b920f
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "58923152"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973465"
 ---
 <!---Previous ms.author: rusamai --->
 
 # <a name="license-requirements-and-pricing"></a>Lizenzanforderungen und Preise
 
-Dieser Artikel richtet sich an globale administratoren oder Abrechnungsadministratoren, die mehr Graph Connectors-Kontingent für ihre Organisation erwerben möchten.
+Dieser Artikel richtet sich an globale administratoren oder Abrechnungsadministratoren, die erfahren möchten, wie Sie mehr Graph Connectors-Kontingent für ihre Organisation erwerben.
 
-Mit jeder gültigen **Microsoft 365 oder Office 365-Lizenz** können Sie Daten aus Connectors in Ihren Suchergebnissen anzeigen.
+Mit jeder gültigen **Microsoft 365- oder Office 365 lizenz** können Sie Daten aus Connectors in Ihren Suchergebnissen anzeigen.
 
 > [!TIP]
 > **Microsoft Graph Connectors & Testversion von Viva Topics jetzt verfügbar:** Wenn Sie kein Indexkontingent verfügbar haben und Jetzt Microsoft Graph Connectors testen möchten, können Sie einen **Angebotscode** mit [Microsoft Viva Themen](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot:overviewtab)anfordern, wie [hier](#microsoft-graph-connectors-now-available-with-microsoft-viva-topics-trial)beschrieben.
 
 >[!IMPORTANT]
->Alle Graph Connectors von Microsoft sind kostenlos. Sie müssen jedoch über ein ausreichendes Indexkontingent verfügen, um Inhalte von diesen Connectors zu erfassen.
+>Alle Graph Connectors von Microsoft sind kostenlos. Sie müssen jedoch über ein ausreichendes Indexkontingent verfügen, um Inhalte von diesen Connectors aufzunehmen.
 
 Um Inhalte mit Graph Connectors zu indizieren, benötigen Sie ein ausreichendes Indexkontingent. Graph Connectors-Indexkontingent ist verfügbar über:
 
@@ -49,9 +49,9 @@ Wenn Ihre Organisation beispielsweise über 100 Microsoft 365 E5 Lizenzen verfü
 Beachten Sie, dass Microsoft 365 A5 oder Office 365 A5 diese Berechtigung nicht enthalten.
 
 ## <a name="purchase-of-add-on-index-quota"></a>Kauf eines Add-On-Indexkontingents
-Wenn Sie mehr Graph Connectors erwerben möchten, wenden Sie sich an Ihren Microsoft Account Manager, oder führen Sie die folgenden Schritte aus:
+Wenn Sie mehr Graph Connectors erwerben möchten, wenden Sie sich an Ihren Microsoft-Konto-Manager, oder führen Sie die folgenden Schritte aus:
 
-1. In the **Microsoft 365 Admin Center**: https://<span>admin.microsoft.</span> navigieren Sie im Navigationsmenü zu **Abrechnung > Dienste kaufen.**
+1. Im **Microsoft 365 Admin Center:** https://<span>admin.microsoft.</span> navigieren Sie im Navigationsmenü zu **Abrechnung > Dienste kaufen.**
 2. Wählen Sie unten auf der Seite "Dienste kaufen" die Option **"Add-Ons" aus.**
 3. Wählen Sie **zusätzliche Graph Connector-Kapazität** aus.
 4. Wählen Sie **"Kaufen"** aus, und schließen Sie ihre Bestelleinstellungen ab.
@@ -69,5 +69,5 @@ Es gibt zwei Möglichkeiten, Graph Connectors mit Microsoft Viva Topics zu erkun
 2. Wenden Sie sich an Ihren Microsoft-Kontomanager, um einen **Angebotscode** für die Testindexkapazität mit Microsoft Viva Topics-Testversion anzufordern. Mit einem **Angebotscode** können Sie während sechs Monaten für 50 Benutzer Zugriff erhalten.
 
 > [!NOTE]
-> Derzeit unterstützt Microsoft Graph Connectors nur bis zu 7 Millionen Elemente des gesamten Indexkontingents, einschließlich aller integrierten Kontingente, die in Microsoft 365 oder Office 365 E5 Lizenzen gebündelt sind. Die Plattform unterstützt in Zukunft höhere Grenzwerte. Wenden Sie sich bei Fragen an den Microsoft-Support oder Ihren Microsoft-Kontomanager.
+> Derzeit unterstützt Microsoft Graph Connectors nur bis zu 7 Millionen Elemente des Gesamtindexkontingents, einschließlich integrierter Kontingente, die in Microsoft 365 oder Office 365 E5 Lizenzen gebündelt sind. Die Plattform unterstützt in Zukunft höhere Grenzwerte. Wenden Sie sich bei Fragen an den Microsoft-Support oder Ihren Microsoft-Kontomanager.
 > Vorschauconnectors zählen nicht für Kontingente, nachdem ein Connector allgemein verfügbar ist, beginnt er mit dem Gesamtindexkontingent zu zählen.

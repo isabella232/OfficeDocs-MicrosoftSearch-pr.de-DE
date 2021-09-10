@@ -14,22 +14,22 @@ search.appverid:
 - MOE150
 description: Einrichten des Salesforce Graph-Connectors für Microsoft Search
 ms.openlocfilehash: c2679002affe494ba31777718d265b5526b744c0
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701867"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973477"
 ---
 <!---Previous ms.author: rusamai --->
 
 # <a name="salesforce-graph-connector"></a>Salesforce Graph Connector
 
-Der Salesforce Graph Connector ermöglicht Es Ihrer Organisation, Kontakte, Verkaufschancen, Leads, Fälle und Kontenobjekte in Ihrer Salesforce-Instanz zu indizieren. Nachdem Sie den Connector konfiguriert und Inhalte von Salesforce indiziert haben, können Endbenutzer von jedem Microsoft Search Client nach diesen Elementen suchen.
+Der Salesforce Graph Connector ermöglicht Ihrer Organisation das Indizieren von Kontakten, Verkaufschancen, Leads, Fällen und Kontenobjekten in Ihrer Salesforce-Instanz. Nachdem Sie den Connector konfiguriert und Inhalte von Salesforce indiziert haben, können Endbenutzer von einem beliebigen Microsoft Search Client nach diesen Elementen suchen.
 
 > [!NOTE]
-> Lesen Sie den Artikel [**"Setup for your Graph connector",**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten Graph Connectors zu verstehen.
+> Lesen Sie den Artikel [**"Setup for your Graph connector",**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten von Connectors Graph zu verstehen.
 
-Dieser Artikel richtet sich an alle Personen, die einen Salesforce-Graph Connector konfigurieren, ausführen und überwachen. Es ergänzt den allgemeinen Einrichtungsprozess und zeigt Anweisungen, die nur für den Salesforce Graph Connector gelten. Dieser Artikel enthält auch Informationen zu [Einschränkungen.](#limitations)
+Dieser Artikel richtet sich an alle Personen, die einen Salesforce Graph Connector konfigurieren, ausführen und überwachen. Es ergänzt den allgemeinen Einrichtungsprozess und zeigt Anweisungen, die nur für den Salesforce Graph Connector gelten. Dieser Artikel enthält auch Informationen zu [Einschränkungen.](#limitations)
 
 >[!IMPORTANT]
 >Der Salesforce Graph Connector unterstützt derzeit Summer '19 oder höher.
@@ -40,7 +40,7 @@ Um eine Verbindung mit Ihrer Salesforce-Instanz herzustellen, benötigen Sie ihr
 
 - Melden Sie sich bei Ihrer Salesforce-Instanz an, und wechseln Sie zum Setup
 
-- Navigieren Sie zum App-> App-Manager.
+- Navigieren Sie zu Apps > App Manager.
 
 - Wählen Sie **"Neue verbundene App" aus.**
 
@@ -63,7 +63,7 @@ Um eine Verbindung mit Ihrer Salesforce-Instanz herzustellen, benötigen Sie ihr
       > [!div class="mx-imgBorder"]
       > ![API-Abschnitt in Salesforce-Instanz, nachdem der Administrator alle oben aufgeführten erforderlichen Konfigurationen eingegeben hat.](media/salesforce-connector/sf1.png)
 
-- Kopieren Sie den Verbraucherschlüssel und den geheimen Verbraucherschlüssel. Diese Informationen werden als Client-ID und geheimer Clientschlüssel verwendet, wenn Sie die Verbindungs-Einstellungen für Ihren Graph Connector im Microsoft 365 Admin-Portal konfigurieren.
+- Kopieren Sie den Verbraucherschlüssel und den geheimen Verbraucherschlüssel. Diese Informationen werden als Client-ID und geheimer Clientschlüssel verwendet, wenn Sie die Verbindungs-Einstellungen für Ihren Graph Connector im Microsoft 365-Verwaltungsportal konfigurieren.
 
   > [!div class="mx-imgBorder"]
   > ![Ergebnisse, die vom API-Abschnitt in der Salesforce-Instanz zurückgegeben werden, nachdem der Administrator alle erforderlichen Konfigurationen übermittelt hat. Der Verbraucherschlüssel befindet sich oben in der linken Spalte, und der geheime Verbraucherschlüssel befindet sich oben in der rechten Spalte.](media/salesforce-connector/clientsecret.png)
@@ -79,7 +79,7 @@ Um eine Verbindung mit Ihrer Salesforce-Instanz herzustellen, benötigen Sie ihr
 
 Sie können jetzt das [Microsoft 365 Admin Center](https://admin.microsoft.com/) verwenden, um den restlichen Setupprozess für Ihren Graph Connector abzuschließen.
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph Connectors in der Microsoft 365 Admin Center
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph Connectors im Microsoft 365 Admin Center
 
 Folgen Sie den allgemeinen [Setupanweisungen.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -91,7 +91,7 @@ Folgen Sie den allgemeinen [Setupanweisungen.](./configure-connector.md)
 
 ## <a name="step-3-configure-the-connection-settings"></a>Schritt 3: Konfigurieren der Verbindungseinstellungen
 
-Verwenden Sie für die Instanz-URL https://[domain]. my.salesforce.com, wobei Domäne die Salesforce-Domäne für Ihre Organisation wäre.
+Verwenden Sie für die Instanz-URL https://[domäne].my.salesforce.com), wobei Domäne die Salesforce-Domäne für Ihre Organisation wäre.
 
 Geben Sie die Client-ID und den geheimen Clientschlüssel ein, die Sie von Ihrer Salesforce-Instanz erhalten haben, und wählen Sie "Anmelden" aus.
 
@@ -100,7 +100,7 @@ Wenn Sie zum ersten Mal versucht haben, sich mit diesen Einstellungen anzumelden
   ![Melden Sie sich an und fragen Sie nach Benutzername und Kennwort.](media/salesforce-connector/sf4.png)
 
   >[!NOTE]
-  >Wenn das Popup nicht angezeigt wird, wird es möglicherweise in Ihrem Browser blockiert. Daher müssen Sie Popups und Umleitungen zulassen.
+  >Wenn das Popup nicht angezeigt wird, wird es möglicherweise in Ihrem Browser blockiert, daher müssen Sie Popups und Umleitungen zulassen.
 
 Überprüfen Sie, ob die Verbindung erfolgreich war, indem Sie nach einem grünen Banner suchen, das "Verbindung erfolgreich" anzeigt, wie im screenshot unten gezeigt.
 
@@ -178,8 +178,8 @@ Folgen Sie den allgemeinen [Setupanweisungen.](./configure-connector.md)
 ## <a name="limitations"></a>Einschränkungen
 
 - Der Graph Connector unterstützt derzeit keine Apex-basierte, gebietsbasierte Freigabe und Freigabe mit persönlichen Gruppen von Salesforce.
-- Es gibt einen bekannten Fehler in der Salesforce-API, die der Graph Connector verwendet, bei dem die privaten organisationsweiten Standardwerte für Leads derzeit nicht berücksichtigt werden.  
-- Wenn für ein Feld sicherheit auf Feldebene (FLS) für ein Profil festgelegt ist, erfasst der Graph Connector dieses Feld nicht für Profile in dieser Salesforce-Organisation. Daher können Benutzer weder nach Werten für diese Felder suchen noch in den Ergebnissen angezeigt werden.  
+- Es gibt einen bekannten Fehler in der Salesforce-API, die der Graph Connector verwendet, wobei die privaten organisationsweiten Standardwerte für Leads derzeit nicht berücksichtigt werden.  
+- Wenn für ein Feld die Sicherheit auf Feldebene (FLS) für ein Profil festgelegt ist, erfasst der Graph Connector dieses Feld nicht für Profile in dieser Salesforce-Organisation. Daher können Benutzer weder nach Werten für diese Felder suchen noch in den Ergebnissen angezeigt werden.  
 - Auf dem Bildschirm "Schema verwalten" werden diese allgemeinen Standardeigenschaftennamen einmal aufgelistet. Die Optionen sind **"Abfrage",** **"Suchen",** **"Abrufen"** und **"Verfeinern"** und gelten für alle oder keine.
     - Name
     - Url
@@ -187,7 +187,7 @@ Folgen Sie den allgemeinen [Setupanweisungen.](./configure-connector.md)
     - Fax
     - Telefon
     - MobilePhone
-    - E-Mails
+    - E-Mail senden
     - Typ
     - Title
     - Accountid

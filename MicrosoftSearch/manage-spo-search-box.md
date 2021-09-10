@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: So passen Sie die Suchfeldoberfläche auf SharePoint Websites an
 ms.openlocfilehash: b5d58dd5a241ccf2ada556c44ec0ea5479ea2e2b
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701976"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973786"
 ---
 # <a name="search-box-settings-on-sharepoint-sites"></a>Suchfeldeinstellungen auf SharePoint Websites
 
@@ -37,7 +37,7 @@ Connect-PnPOnline -Url <yoursiteurl> -UseWebLogin
 
 ## <a name="changing-the-scope-of-search"></a>Ändern des Suchbereichs
 
-Wenn Sie heute in SharePoint Online eine neue Website erstellen und in das Suchfeld eingeben, gelangen Sie zur Microsoft Search Ergebnisseite. Diese Seite zeigt standardmäßig Ergebnisse von Ihrer aktuellen Website und ermöglicht es Ihnen, den Umfang Ihrer Suche auf den Hub zu erweitern, dem die aktuelle Website zugeordnet ist (sofern vorhanden) oder auf die gesamte Organisation.
+Wenn Sie heute eine neue Website in SharePoint Online erstellen und in das Suchfeld eingeben, gelangen Sie zur Microsoft Search Ergebnisseite. Diese Seite zeigt standardmäßig Ergebnisse von Ihrer aktuellen Website und ermöglicht es Ihnen, den Umfang Ihrer Suche auf den Hub zu erweitern, dem die aktuelle Website zugeordnet ist (sofern vorhanden) oder auf die gesamte Organisation.
 
 Der Bereich, den das Suchfeld standardmäßig verwendet, hängt vom Typ der Website ab.
 

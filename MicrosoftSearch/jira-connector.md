@@ -14,15 +14,15 @@ search.appverid:
 - MOE150
 description: Einrichten des Atlassian Jira Graph Connectors für Microsoft Search
 ms.openlocfilehash: 0b4b1dc0ed1f9e9d3ca57f98dc3878f63e68d510
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702093"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973778"
 ---
 # <a name="atlassian-jira-graph-connector-preview"></a>Atlassian Jira Graph Connector (Vorschau)
 
-Der Atlassian Jira Graph Connector ermöglicht Es Ihrer Organisation, Jira-Probleme zu indizieren. Nachdem Sie den Connector konfiguriert und Inhalte von der Jira-Website indiziert haben, können Endbenutzer in Microsoft Search nach diesen Elementen suchen.
+Der Atlassian Jira Graph Connector ermöglicht Es Ihrer Organisation, Jira-Probleme zu indizieren. Nachdem Sie den Connector und den Indexinhalt von der Jira-Website konfiguriert haben, können Endbenutzer in Microsoft Search nach diesen Elementen suchen.
 
 > [!NOTE]
 > Lesen Sie den Artikel [**"Setup for your Graph connector",**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten Graph Connectors zu verstehen.
@@ -35,7 +35,7 @@ Dieser Artikel richtet sich an alle Personen, die einen Atlassian Jira Graph Con
 ## <a name="before-you-get-started"></a>Bevor Sie beginnen
 Sie müssen der Administrator für den M365-Mandanten Ihrer Organisation sowie der Administrator für die Jira-Website Ihrer Organisation sein.
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph Connectors in der Microsoft 365 Admin Center
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph Connectors im Microsoft 365 Admin Center
 Folgen Sie den allgemeinen [Setupanweisungen.](./configure-connector.md)
 
 ## <a name="step-2-name-the-connection"></a>Schritt 2: Benennen der Verbindung

@@ -14,15 +14,15 @@ search.appverid:
 ms.assetid: 1fadcba3-4a7f-4a55-8476-d4e64d49a15f
 description: Einschließen browserbasierter Apps in Lesezeichenergebnisse für Microsoft Search
 ms.openlocfilehash: 55df0d6d6d39742548db497ed77f530b6a591895
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973685"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375923"
 ---
 # <a name="integrate-power-apps-in-microsoft-search-bookmarks"></a>Integrieren von Power Apps in Microsoft Search Lesezeichen
    
-Helfen Sie Ihren Benutzern, Aufgaben wie das Eingeben von Urlaubszeiten oder das Melden von Ausgaben auszuführen, indem Sie vorhandene [Microsoft-Power Apps](https://products.office.com/business/microsoft-powerapps) in Ihre Microsoft Search Lesezeichen integrieren. Integrierte Power Apps in einem Lesezeichenergebnis angezeigt werden, sodass sie nicht zu einer anderen Website wechseln oder ein separates Tool öffnen müssen, was Zeit und Aufwand spart.
+Helfen Sie Ihren Benutzern bei der Durchführung von Aufgaben, z. B. beim Eingeben von Urlaubszeit oder beim Melden von Ausgaben, indem Sie vorhandene [Microsoft-Power Apps](https://products.office.com/business/microsoft-powerapps) in Ihre Microsoft Search Lesezeichen integrieren. Integrierte Power Apps in einem Lesezeichenergebnis angezeigt werden, sodass sie nicht zu einer anderen Website wechseln oder ein separates Tool öffnen müssen, was Zeit und Aufwand spart.
   
 ## <a name="what-are-power-apps"></a>Was sind Power Apps?
 
@@ -34,7 +34,7 @@ Helfen Sie Ihren Benutzern, Aufgaben wie das Eingeben von Urlaubszeiten oder das
     
 ## <a name="add-a-power-app-to-a-bookmark"></a>Hinzufügen einer Power App zu einem Lesezeichen
 
-[Power Apps( arbeiten https://products.office.com/business/microsoft-powerapps) in einem beliebigen Browser und auf jedem Gerät und brauchen weniger als eine Minute, um hinzuzufügen.
+[Power Apps( https://products.office.com/business/microsoft-powerapps) arbeiten in einem beliebigen Browser und auf jedem Gerät und brauchen weniger als eine Minute, um hinzuzufügen.
   
 1. [Suchen Sie die App-ID für die Power App,](/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) die Sie integrieren möchten.
     

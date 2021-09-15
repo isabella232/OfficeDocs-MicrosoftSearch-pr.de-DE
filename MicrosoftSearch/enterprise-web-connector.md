@@ -12,13 +12,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Einrichten des Graph Connectors für Enterprise Websites für Microsoft Search
+description: Einrichten des connectors für Enterprise Websites Graph für Microsoft Search
 ms.openlocfilehash: 2461a447b07dec827c8cf699865c027b01e42608
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973513"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375952"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -26,12 +26,12 @@ ms.locfileid: "58973513"
 
 # <a name="enterprise-websites-graph-connector"></a>Enterprise Websites Graph Connector
 
-Der connector Enterprise Websites Graph ermöglicht Es Ihrer Organisation, Artikel und **Inhalte von den internen Websites** indizieren. Nachdem Sie den Connector konfiguriert und Inhalte von der Website synchronisiert haben, können Endbenutzer von jedem Microsoft Search Client nach diesen Inhalten suchen.
+Der Enterprise Websites Graph Connector ermöglicht Es Ihrer Organisation, Artikel und **Inhalte von den internen Websites** zu indizieren. Nachdem Sie den Connector konfiguriert und Inhalte von der Website synchronisiert haben, können Endbenutzer von jedem Microsoft Search Client nach diesen Inhalten suchen.
 
 > [!NOTE]
-> Lesen Sie den Artikel [**zum Einrichten ihres Graph Connectors,**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten von Connectors Graph zu verstehen.
+> Lesen Sie den Artikel [**"Setup Your Graph connector",**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten von Connectors Graph zu verstehen.
 
-Dieser Artikel richtet sich an alle Personen, die einen connector für Enterprise Websites konfigurieren, ausführen und überwachen. Es ergänzt den allgemeinen Einrichtungsprozess und zeigt Anweisungen, die nur für den Connector Enterprise Websites gelten. Dieser Artikel enthält auch Informationen zur [Problembehandlung.](#troubleshooting)
+Dieser Artikel richtet sich an alle Personen, die einen Enterprise Websites-Connector konfigurieren, ausführen und überwachen. Es ergänzt den allgemeinen Einrichtungsprozess und zeigt Anweisungen, die nur für den Connector Enterprise Websites gelten. Dieser Artikel enthält auch Informationen zur [Problembehandlung.](#troubleshooting)
 
 <!---## Before you get started-->
 
@@ -49,7 +49,7 @@ Folgen Sie den allgemeinen [Setupanweisungen.](./configure-connector.md)
 
 ## <a name="step-3-configure-the-connection-settings"></a>Schritt 3: Konfigurieren der Verbindungseinstellungen
 
-Um eine Verbindung mit Ihrer Datenquelle herzustellen, geben Sie die Stamm-URL der Website ein, wählen Sie eine Durchforstungsquelle und den Authentifizierungstyp aus, den Sie verwenden möchten: Keine, Standardauthentifizierung oder OAuth 2.0 mit [Azure Active Directory (Azure AD).](/azure/active-directory/) Nachdem Sie diese Informationen abgeschlossen haben, wählen Sie "Verbindung testen" aus, um Ihre Einstellungen zu überprüfen.
+Um eine Verbindung mit Ihrer Datenquelle herzustellen, geben Sie die Stamm-URL der Website ein, wählen Sie eine Durchforstungsquelle und den Authentifizierungstyp aus, den Sie verwenden möchten: None, Basic Authentication oder OAuth 2.0 mit [Azure Active Directory (Azure AD).](/azure/active-directory/) Nachdem Sie diese Informationen abgeschlossen haben, wählen Sie "Verbindung testen" aus, um Ihre Einstellungen zu überprüfen.
 
 ### <a name="url"></a>URL
 
@@ -81,11 +81,11 @@ Der Durchforstungsmodus bestimmt den Typ der Websites, die Sie indiziert möchte
 
 Außerdem unterstützt der Connector jetzt das Durchforsten lokaler Websites. Um auf Ihre lokalen Daten zugreifen zu können, müssen Sie zuerst den Graph Connector-Agent installieren und konfigurieren. Weitere Informationen finden Sie unter [Graph Connector-Agent.](./graph-connector-agent.md)
 
-Wählen Sie für Ihre lokalen Websites **den Agent** als Durchforstungsmodus aus, und wählen Sie im Feld **"Lokaler Agent"** den Graph Connector-Agent aus, den Sie zuvor installiert und konfiguriert haben.  
+Wählen Sie für Ihre lokalen Websites den **Agent** als Durchforstungsmodus aus, und wählen Sie im Feld **"Lokaler Agent"** den Graph Connector-Agent aus, den Sie zuvor installiert und konfiguriert haben.  
 
 ### <a name="authentication"></a>Authentifizierung
 
-Die Standardauthentifizierung erfordert einen Benutzernamen und ein Kennwort. Erstellen Sie dieses Bot-Konto mithilfe der [Microsoft 365 Admin Center](https://admin.microsoft.com).
+Die Standardauthentifizierung erfordert einen Benutzernamen und ein Kennwort. Erstellen Sie dieses Bot-Konto mithilfe der [Microsoft 365 Admin Center.](https://admin.microsoft.com)
 
 OAuth 2.0 mit [Azure AD](/azure/active-directory/) erfordert eine Ressourcen-ID, eine Client-ID und einen geheimen Clientschlüssel. OAuth 2.0 funktioniert nur im Cloudmodus.
 
@@ -96,11 +96,11 @@ Weitere Informationen finden Sie unter [Autorisieren des Zugriffs auf Azure Acti
 
 Um die Werte für die Ressource, client_id und client_secret abzurufen, wechseln Sie zu **Verwenden des Autorisierungscodes, um ein Zugriffstoken** auf der Umleitungs-URL-Webseite anzufordern.
 
-Weitere Informationen finden Sie unter [Schnellstart: Registrieren einer Anwendung mit dem Microsoft Identity Platform.](/azure/active-directory/develop/quickstart-register-app)
+Weitere Informationen finden Sie unter [Schnellstart: Registrieren einer Anwendung mit dem Microsoft Identity Platform](/azure/active-directory/develop/quickstart-register-app).
 
 ## <a name="step-3a-add-urls-to-exclude-optional-crawl-restrictions"></a>Schritt 3a: Hinzufügen von auszuschließenden URLs (optionale Durchforstungseinschränkungen)
 
-Es gibt zwei Möglichkeiten, um zu verhindern, dass Seiten durchforstet werden: Verbieten Sie sie in Ihrer robots.txt-Datei, oder fügen Sie sie der Ausschlussliste hinzu.
+Es gibt zwei Möglichkeiten, um zu verhindern, dass Seiten durchforstet werden: Sie können sie nicht in Ihrer robots.txt-Datei enthalten oder der Ausschlussliste hinzufügen.
 
 ### <a name="support-for-robotstxt"></a>Unterstützung für robots.txt
 
@@ -120,7 +120,7 @@ Auf dem Bildschirm **"Schema verwalten"** können Sie die Schemaattribute änder
 
 ## <a name="step-6-manage-search-permissions"></a>Schritt 6: Verwalten von Suchberechtigungen
 
-Der connector Enterprise Websites unterstützt nur Suchberechtigungen, die **für "Jeder"** sichtbar sind. Indizierte Daten werden in den Suchergebnissen angezeigt und sind für alle Benutzer in der Organisation sichtbar.
+Der Connector Enterprise Websites unterstützt nur Suchberechtigungen, die **für "Jeder"** sichtbar sind. Indizierte Daten werden in den Suchergebnissen angezeigt und sind für alle Benutzer in der Organisation sichtbar.
 
 ## <a name="step-7-set-the-refresh-schedule"></a>Schritt 7: Festlegen des Aktualisierungszeitplans
 

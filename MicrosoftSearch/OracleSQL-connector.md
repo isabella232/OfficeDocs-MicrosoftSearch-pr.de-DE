@@ -15,11 +15,11 @@ search.appverid:
 ROBOTS: NoIndex
 description: Richten Sie den Oracle SQL Graph-Connector für Microsoft Search ein.
 ms.openlocfilehash: 804bee89f8529630df5741f68b9f112c69307b4f
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973501"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375880"
 ---
 <!---Previous ms.author:vivg --->
 
@@ -50,14 +50,14 @@ Folgen Sie den allgemeinen [Setupanweisungen.](./configure-connector.md)
 
 ## <a name="step-3-configure-the-connection-settings"></a>Schritt 3: Konfigurieren der Verbindungseinstellungen
 
-Um Den Oracle SQL Connector mit einer Datenquelle zu verbinden, müssen Sie den Datenbankserver konfigurieren, den Sie durchforsten möchten, und den lokalen Graph Connector-Agent. Anschließend können Sie mit der erforderlichen Authentifizierungsmethode eine Verbindung mit der Datenbank herstellen.
+Um Den Oracle SQL-Connector mit einer Datenquelle zu verbinden, müssen Sie den Datenbankserver konfigurieren, der durchforstet werden soll, und den lokalen Graph Connector-Agent. Anschließend können Sie mit der erforderlichen Authentifizierungsmethode eine Verbindung mit der Datenbank herstellen.
 
-Für Oracle SQL Connector müssen Sie den Hostnamen, den Port und den Dienstnamen (Datenbank) zusammen mit der bevorzugten Authentifizierungsmethode, dem Benutzernamen und dem Kennwort angeben.
+Für Oracle SQL Connector müssen Sie den Hostnamen, Port und Dienstnamen (Datenbank) zusammen mit der bevorzugten Authentifizierungsmethode, dem Benutzernamen und dem Kennwort angeben.
 
 > [!NOTE]
 > Ihre Datenbank muss Oracle-Datenbankversion 11g oder höher ausführen, damit der Connector eine Verbindung herstellen kann. Der Connector unterstützt Oracle-Datenbanken, die auf Windows-, Linux- und Azure-VM-Plattformen gehostet werden.
 
-Zum Durchsuchen der Datenbankinhalte müssen Sie beim Konfigurieren des Connectors SQL Abfragen angeben. Diese SQL Abfragen müssen alle Datenbankspalten benennen, die Indiziert werden sollen (d. h. Quelleigenschaften), einschließlich aller SQL Verknüpfungen, die ausgeführt werden müssen, um alle Spalten abzurufen. Um den Zugriff auf Suchergebnisse einzuschränken, müssen Sie zugriffssteuerungslisten (Access Control Lists, ACLs) innerhalb SQL Abfragen angeben, wenn Sie den Connector konfigurieren.
+Zum Durchsuchen der Datenbankinhalte müssen Sie beim Konfigurieren des Connectors SQL Abfragen angeben. Diese SQL Abfragen müssen alle Datenbankspalten benennen, die Indiziert werden sollen (d. h. Quelleigenschaften), einschließlich aller SQL Verknüpfungen, die ausgeführt werden müssen, um alle Spalten abzurufen. Um den Zugriff auf Suchergebnisse einzuschränken, müssen Sie zugriffssteuerungslisten (Access Control Lists, ACLs) in SQL Abfragen angeben, wenn Sie den Connector konfigurieren.
 
 ## <a name="step-3a-full-crawl-required"></a>Schritt 3a: Vollständige Durchforstung (erforderlich)
 
@@ -80,7 +80,7 @@ Die Verwendung der einzelnen ACL-Spalten in der obigen Abfrage wird unten beschr
 
 * **AllowedUsers:** Diese Option gibt die Liste der Benutzer-IDs an, die auf die Suchergebnisse zugreifen können. Im folgenden Beispiel würde die Liste der Benutzer: john@contoso.com, keith@contoso.com und lisa@contoso.com nur Zugriff auf einen Datensatz mit OrderId = 12 haben.
 * **AllowedGroups:** Diese Option gibt die Gruppe von Benutzern an, die auf die Suchergebnisse zugreifen können. Im folgenden Beispiel hätten Gruppen-sales-team@contoso.com nur Zugriff auf den Datensatz mit OrderId = 12.
-* **DeniedUsers:** Diese Option gibt die Liste der Benutzer an, die **keinen** Zugriff auf die Suchergebnisse haben. Im folgenden Beispiel haben Benutzer john@contoso.com und keith@contoso.com keinen Zugriff auf datensätze mit OrderId = 13, während alle anderen Benutzer Zugriff auf diesen Datensatz haben.
+* **DeniedUsers:** Diese Option gibt die Liste der Benutzer an, die **keinen** Zugriff auf die Suchergebnisse haben. Im folgenden Beispiel haben Benutzer john@contoso.com und keith@contoso.com keinen Zugriff auf den Datensatz mit OrderId = 13, während alle anderen Benutzer Zugriff auf diesen Datensatz haben.
 * **DeniedGroups:** Diese Option gibt die Gruppe von Benutzern an, die **keinen** Zugriff auf die Suchergebnisse haben. Im folgenden Beispiel haben Gruppen engg-team@contoso.com und pm-team@contoso.com keinen Zugriff auf den Datensatz mit OrderId = 15, während alle anderen Zugriff auf diesen Datensatz haben.  
 
 ![Beispieldaten, die OrderTable und AclTable mit Beispieleigenschaften anzeigen.](media/MSSQL-ACL1.png)
@@ -91,18 +91,18 @@ In der folgenden Tabelle sind die Datentypen zusammengefasst, die vom Oracle SQL
 
 | Kategorie | Quelldatentyp | Datentyp der Indizierung |
 | ------------ | ------------ | ------------ |
-| Zahlendatentyp | NUMBER(p,0) | int64 (für p <= 18) <br> double (für p > 18) |
+| Zahlendatentyp | NUMBER(p,0) | int64 (for p <= 18) <br> double (für p > 18) |
 | Gleitkommazahlen-Datentyp | NUMBER(p,s) <br> FLOAT(p) | double |
 | Datumsdatentyp | DATE <br> TIMESTAMP <br> TIMESTAMP(n) | Datum/Uhrzeit |
-| Zeichendatentyp | CHAR(n) <br> VARCHAR <br> VARCHAR2 <br> LANGE <br> CLOB <br> NCLOB | Zeichenfolge |
-| Unicode-Zeichen-Datentyp | NCHAR <br> NVARCHAR | Zeichenfolge |
-| RowID-Datentyp | ROWID <br> UROWID | Zeichenfolge |
+| Zeichendatentyp | CHAR(n) <br> VARCHAR <br> VARCHAR2 <br> LANGE <br> CLOB <br> NCLOB | string |
+| Unicode-Zeichen-Datentyp | NCHAR <br> NVARCHAR | string |
+| RowID-Datentyp | ROWID <br> UROWID | string |
 
 Für alle anderen Datentypen, die derzeit nicht direkt unterstützt werden, muss die Spalte explizit in einen unterstützten Datentyp umgewandelt werden.
 
 ### <a name="watermark-required"></a>Wasserzeichen (erforderlich)
 
-Um eine Überladung der Datenbank zu verhindern, stapelt und setzt der Konnektor Vollständige Durchforstungsabfragen mit einer Vollständigdurchforstungs-Wasserzeichenspalte fort. Mithilfe des Werts der Wasserzeichenspalte wird jeder nachfolgende Batch abgerufen und die Abfrage vom letzten Prüfpunkt fortgesetzt. Im Wesentlichen ist dies ein Mechanismus zum Steuern der Datenaktualisierung für vollständige Durchforstungen.
+Um eine Überladung der Datenbank zu verhindern, stapelt der Konnektor Vollständige Durchforstungsabfragen mit einer Vollständigdurchforstungs-Wasserzeichenspalte und setzt sie fort. Mithilfe des Werts der Wasserzeichenspalte wird jeder nachfolgende Batch abgerufen und die Abfrage vom letzten Prüfpunkt fortgesetzt. Im Wesentlichen ist dies ein Mechanismus zum Steuern der Datenaktualisierung für vollständige Durchforstungen.
 
 Erstellen Sie Abfrageausschnitte für Wasserzeichen, wie in diesen Beispielen gezeigt:
 
@@ -117,7 +117,7 @@ Die erste Abfrage ruft die erste **N-Anzahl** von Zeilen mithilfe der folgenden 
 
 ### <a name="skipping-soft-deleted-rows-optional"></a>Überspringen vorläufig gelöschter Zeilen (optional)
 
-Um zeilenweise gelöschte Zeilen in Ihrer Datenbank von der Indizierung auszuschließen, geben Sie den Namen und den Wert für das vorläufige Löschen der Spalte an, der angibt, dass die Zeile gelöscht wird.
+Um zeilenweise gelöschte Zeilen in Ihrer Datenbank von der Indizierung auszuschließen, geben Sie den Namen und den Wert der Vorläufigen Löschspalte an, der angibt, dass die Zeile gelöscht wird.
 
 ![Einstellungen für vorläufiges Löschen: "Spalte vorläufig löschen" und "Wert der Spalte für vorläufiges Löschen, die eine gelöschte Zeile angibt".](media/MSSQL-softdelete.png)
 

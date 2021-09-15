@@ -13,15 +13,15 @@ search.appverid:
 - MOE150
 description: Schritte zum Zuordnen von Nicht-AAD-Identitäten
 ms.openlocfilehash: f433da10347ef59acf7675ec65da8acbd7f0f347
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973452"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59334509"
 ---
 # <a name="map-your-non-azure-ad-identities"></a>Zuordnen Ihrer Nicht-Azure AD-Identitäten  
 
-In diesem Artikel werden Sie durch die Schritte zum Zuordnen Ihrer Nicht-Azure AD-Identitäten zu Ihren Azure AD-Identitäten geführt, sodass Personen in Ihrer Zugriffssteuerungsliste (Access Control List, ACL) mit Nicht-Azure AD-Identitäten die entsprechenden Connectorsuchergebnisse anzeigen können.
+In diesem Artikel werden Sie durch die Schritte zum Zuordnen Ihrer Nicht-Azure AD-Identitäten zu Ihren Azure AD-Identitäten geführt, sodass Personen in Ihrer Zugriffssteuerungsliste (Access Control List, ACL) mit Nicht-Azure AD-Identitäten die ihnen zugeordneten Connectorsuchergebnisse anzeigen können.
 
 Diese Schritte sind nur für Suchadministratoren relevant, die eine [Confluence Cloud,](confluence-cloud-connector.md) [ServiceNow Knowledge,](servicenow-knowledge-connector.md) [ServiceNow Catalog](servicenow-catalog-connector.md) oder [Salesforce](salesforce-connector.md) Connectors von Microsoft mit Suchberechtigungen für "Nur Personen mit Zugriff auf diese Datenquelle" und Identitätstyp "Non-AAD" einrichten.
 
@@ -56,7 +56,7 @@ Nachfolgend finden Sie einige Beispiele für reguläre Ausdrücke und deren Ausg
 | Alexis Vasquez                 | ..$                 | Ez            |
 | Alexis Vasquez                  | (\w+)$                  | Vasquez             |
 
-Sie können so viele Nicht-Azure AD-Benutzereigenschaften hinzufügen, wie Sie Ausdrücke verwenden möchten. Sie können unterschiedliche reguläre Ausdrücke auf dieselbe Benutzereigenschaft anwenden, wenn die endgültige Formel dies zulässt.  
+Sie können so viele Nicht-Azure AD-Benutzereigenschaften hinzufügen, für die Sie Ausdrücke verwenden möchten. Sie können unterschiedliche reguläre Ausdrücke auf dieselbe Benutzereigenschaft anwenden, wenn die endgültige Formel dies zulässt.  
 
 ### <a name="3-create-formula-to-complete-mapping"></a>3. Erstellen einer Formel zum Abschließen der Zuordnung
 

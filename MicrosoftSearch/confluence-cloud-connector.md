@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: Einrichten des Confluence Cloud Graph-Connectors für Microsoft Search
 ms.openlocfilehash: baf6139257c8bf8e40bc997e2a408efb4fc2549f
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973444"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375989"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -50,7 +50,7 @@ Verwenden Sie ihre Website-URL, um eine Verbindung mit Ihrer Confluence-Website 
 Geben Sie den Benutzernamen Ihres Kontos (in der Regel E-Mail-ID) und das API-Token ein, um sich mit der einfachen Authentifizierung zu authentifizieren. Weitere Informationen zum Generieren eines API-Tokens finden Sie in der Dokumentation von Atlassian zum [Verwalten von API-Token für Ihr Atlassian-Konto.](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/)
 
 ### <a name="oauth-20"></a>OAuth 2.0
-Registrieren Sie eine App in der Confluence Cloud, damit die Microsoft Search-App auf die Instanz zugreifen kann. Weitere Informationen finden Sie in der Dokumentation zum Atlassian-Support zum Aktivieren von [OAuth 2.0.](https://developer.atlassian.com/cloud/confluence/oauth-2-3lo-apps/#enabling-oauth-2-0--3lo-)
+Registrieren Sie eine App in confluence Cloud, damit die Microsoft Search-App auf die Instanz zugreifen kann. Weitere Informationen finden Sie in der Dokumentation zum Atlassian-Support zum Aktivieren von [OAuth 2.0.](https://developer.atlassian.com/cloud/confluence/oauth-2-3lo-apps/#enabling-oauth-2-0--3lo-)
 
 Die folgenden Schritte enthalten Anleitungen zum Registrieren der App:
 
@@ -120,7 +120,7 @@ Darunter finden Sie eine Liste der häufigsten Fehler, die beim Konfigurieren de
 | Auswählen von Eigenschaften | Keine Fehlermeldung und keine Vorschauergebnisse | Überprüfen Ihrer CQL-Abfrage, ob sie gültig ist |
 
 ## <a name="limitations"></a>Einschränkungen
-Confluence Cloud Graph Connector weist die folgenden bekannten Einschränkungen in seiner neuesten Version auf:
+Confluence Cloud Graph Connector weist in seiner neuesten Version die folgenden bekannten Einschränkungen auf:
 
 - Confluence Cloud Connector indiziert keine Anlagendateien und Kommentare.
 - Bereitstellungen von Indizierungsservern und Rechenzentren werden als separater Connector freigegeben.

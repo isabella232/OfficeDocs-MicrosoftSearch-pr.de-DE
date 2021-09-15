@@ -14,22 +14,22 @@ search.appverid:
 - MOE150
 description: Einrichten des MediaWiki-Graph-Connectors für Microsoft Search
 ms.openlocfilehash: 7e1c308eb1785dd7fec23fac7e9002957a0d50ca
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973495"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59376073"
 ---
 <!---Previous ms.author: monaray --->
 
 # <a name="mediawiki-graph-connector"></a>MediaWiki Graph Connector
 
-Der MediaWiki Graph Connector ermöglicht Es Ihrer Organisation, Daten aus einem Wiki zu ermitteln und zu indizieren, das mithilfe der MediaWiki-Software erstellt wurde. Dieser Connector indiziert angegebene Inhalte in Microsoft Search und unterstützt regelmäßige Durchforstungen, um den Index auf dem neuesten Stand zu halten.
+Der MediaWiki Graph Connector ermöglicht Es Ihrer Organisation, Daten aus einem Wiki zu ermitteln und zu indizieren, das mithilfe der MediaWiki-Software erstellt wurde. Dieser Connector indiziert bestimmte Inhalte in Microsoft Search und unterstützt regelmäßige Durchforstungen, um den Index auf dem neuesten Stand zu halten.
 
 > [!NOTE]
-> Lesen Sie den Artikel [**"Setup for your Graph connector",**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten von Connectors Graph zu verstehen.
+> Lesen Sie den Artikel [**"Setup for your Graph connector",**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten Graph Connectors zu verstehen.
 
-Dieser Artikel richtet sich an alle Personen, die einen MediaWiki-Graph Connector konfigurieren, ausführen und überwachen. Es ergänzt den allgemeinen Einrichtungsprozess und zeigt Anweisungen, die nur für den MediaWiki Graph Connector gelten. Dieser Artikel enthält auch Informationen zu [Einschränkungen.](#limitations)
+Dieser Artikel richtet sich an alle Personen, die einen MediaWiki Graph Connector konfigurieren, ausführen und überwachen. Es ergänzt den allgemeinen Einrichtungsprozess und zeigt Anweisungen, die nur für den MediaWiki Graph Connector gelten. Dieser Artikel enthält auch Informationen zu [Einschränkungen.](#limitations)
 
 <!---## Before you get started-->
 

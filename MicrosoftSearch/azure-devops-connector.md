@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: Einrichten des Azure DevOps Graph-Connectors für Microsoft Search
 ms.openlocfilehash: fcf381a92ef397f900b300ca667fa80067a6672a
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973474"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375875"
 ---
 <!---Previous ms.author: shgrover --->
 
@@ -27,7 +27,7 @@ ms.locfileid: "58973474"
 Der Azure DevOps Graph Connector ermöglicht Es Ihrer Organisation, Arbeitselemente in ihrer Instanz des Azure DevOps Diensts zu indizieren. Nachdem Sie den Connector konfiguriert und Inhalte aus Azure DevOps indiziert haben, können Endbenutzer in Microsoft Search nach diesen Elementen suchen.
 
 > [!NOTE]
-> Lesen Sie den Artikel [**"Setup for your Graph connector",**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten von Connectors Graph zu verstehen.
+> Lesen Sie den Artikel [**"Setup for your Graph connector",**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten Graph Connectors zu verstehen.
 
 Dieser Artikel richtet sich an alle Personen, die einen Azure DevOps Graph Connector konfigurieren, ausführen und überwachen. Es ergänzt den allgemeinen Einrichtungsprozess und zeigt Anweisungen, die nur für den Azure DevOps Graph Connector gelten.
 
@@ -78,7 +78,7 @@ Beim Registrieren der App mit den oben genannten Details erhalten Sie die **App-
 
 ### <a name="connection-settings"></a>Verbindungseinstellungen
 
-Nachdem Sie die Microsoft Search-App bei Azure DevOps registriert haben, können Sie den Verbindungseinstellungsschritt abschließen. Geben Sie den Namen Ihrer Organisation, Die App-ID und den geheimen Clientschlüssel ein.
+Nachdem Sie die Microsoft Search-App bei Azure DevOps registriert haben, können Sie den Verbindungseinstellungsschritt ausführen. Geben Sie den Namen Ihrer Organisation, Die App-ID und den geheimen Clientschlüssel ein.
 
 ![Verbindungsanwendung Einstellungen.](media/ADO_Connection_settings_2.png)
 
@@ -86,7 +86,7 @@ Nachdem Sie die Microsoft Search-App bei Azure DevOps registriert haben, können
 
 Sie können auswählen, ob die Verbindung entweder die gesamte Organisation oder bestimmte Projekte indiziert.
 
-Wenn Sie die gesamte Organisation indiziert, werden Elemente in allen Projekten in der Organisation indiziert. Neue Projekte und Elemente werden bei der nächsten Durchforstung indiziert, nachdem sie erstellt wurden.
+Wenn Sie die gesamte Organisation indiziert haben, werden Elemente in allen Projekten in der Organisation indiziert. Neue Projekte und Elemente werden bei der nächsten Durchforstung indiziert, nachdem sie erstellt wurden.
 
 Wenn Sie einzelne Projekte auswählen, werden nur Arbeitsaufgaben in diesen Projekten indiziert.
 

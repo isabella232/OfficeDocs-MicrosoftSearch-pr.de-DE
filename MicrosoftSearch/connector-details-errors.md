@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Connectors – Details und Fehler
 ms.openlocfilehash: 915723a2a22771e89fdb433b4ddadba76fa91090
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973794"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375995"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -25,7 +25,7 @@ ms.locfileid: "58973794"
 
 Um auf Ihre Connectors zugreifen und diese verwalten zu können, müssen Sie als Suchadministrator für Ihren Mandanten festgelegt werden. Wenden Sie sich an Ihren Mandantenadministrator, um Sie für die Rolle des Suchadministrators bereitzustellen.
 
-Navigieren Sie im [Microsoft 365 Admin Center](https://admin.microsoft.com)zur [Registerkarte Connectors.](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)
+Navigieren Sie im [Microsoft 365 Admin Center](https://admin.microsoft.com)zur [Registerkarte "Connectors".](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)
 
 Sie können Verbindungsdetails und -fehler anzeigen, wenn Sie auf der [Registerkarte Connectors](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)auf die Verbindung klicken.  
 
@@ -61,7 +61,7 @@ Fehlercode | Fehlermeldung | Lösung
 1001 | Die Daten können nicht aktualisiert werden, da die Datenquelle den Connector drosselt. | Um die Datenquelle aufzuheben, überprüfen Sie, ob die Skalierungsgrenzwerte erhöht werden können, oder warten Sie bis zu einer weniger datenverkehrslastigen Zeit des Tages.
 1002 | Die Authentifizierung mit der Datenquelle ist nicht möglich. Stellen Sie sicher, dass die dieser Datenquelle zugeordneten Anmeldeinformationen korrekt sind. | Klicken Sie auf **Bearbeiten,** um die Authentifizierungsanmeldeinformationen zu aktualisieren.
 1003 | Das dem Connector zugeordnete Konto verfügt nicht über die Berechtigung, auf das Element zuzugreifen. |  Stellen Sie sicher, dass das richtige Konto Zugriff auf das Element hat, das indiziert werden soll.
-1004 | Das lokale Datengateway kann nicht erreicht werden. Stellen Sie sicher, dass der Gatewaydienst ausgeführt wird und die Gatewaydetails in der Verbindungskonfiguration aktualisiert werden. | Überprüfen Sie den Computer mit dem Gateway, öffnen Sie die Power BI Gateway-Anwendung, und stellen Sie sicher, dass das Gateway ausgeführt wird. Stellen Sie sicher, dass das Gateway das gleiche Administratorkonto wie Microsoft Search verwendet, und stellen Sie dann sicher, dass alle Gatewaydetails in der Verbindungskonfiguration aktualisiert werden.
+1004 | Das lokale Datengateway kann nicht erreicht werden. Stellen Sie sicher, dass der Gatewaydienst ausgeführt wird und die Gatewaydetails in der Verbindungskonfiguration aktualisiert werden. | Überprüfen Sie den Computer mit dem Gateway, öffnen Sie die Power BI Gateway-Anwendung, und stellen Sie sicher, dass das Gateway ausgeführt wird. Stellen Sie sicher, dass das Gateway das gleiche Administratorkonto wie Microsoft Search verwendet, und stellen Sie dann sicher, dass alle Gatewaydetails in der Verbindungskonfiguration aktualisiert wurden.
 1005 | Anmeldeinformationen, die dieser Datenquelle zugeordnet sind, sind abgelaufen. Erneuern Sie die Anmeldeinformationen, und aktualisieren Sie die Verbindung. | Klicken Sie auf **Bearbeiten,** um die Authentifizierungsanmeldeinformationen zu aktualisieren.
 1006 | Ihre Gatewayversion ist veraltet und unterstützt diesen Connector nicht mehr. Sie müssen das Gateway aktualisieren. | Besuchen Sie ["Installieren eines lokalen Datengateways",](/data-integration/gateway/service-gateway-install) um die neueste Version des Power BI-Gateways auf dem Computer herunterzuladen und zu installieren, der das Gateway enthält.
 1007 | Es wurde keine gültige Power BI-Lizenz erkannt. Sie benötigen eine gültige Power BI Lizenz, um diese Durchforstung durchzuführen. | Sie benötigen eine gültige Power BI Lizenz, um diese Durchforstung durchzuführen. Überprüfen Sie, ob Ihre Organisation über eine gültige Lizenz verfügt. Wenn dies der Fall ist, versuchen Sie es erneut. Wenn dies nicht der Fall ist, rufen Sie eine Lizenz ab, und versuchen Sie es dann erneut.

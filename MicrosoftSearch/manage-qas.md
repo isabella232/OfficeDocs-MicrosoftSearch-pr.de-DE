@@ -14,20 +14,20 @@ search.appverid:
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
 description: Suchen und aktualisieren Sie Antworten einzeln oder verwenden Sie verfügbare Microsoft Search Tools, um Q&As all auf einmal zu bearbeiten.
 ms.openlocfilehash: 2ee42e3feaf5c14b2af820360f753ecc2e116f9b
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973680"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59334526"
 ---
 # <a name="manage-qas"></a>F & As verwalten
 
-Die Erstellung von Fragen und Antworten ist vergleichbar mit der Erstellung von Lesezeichen. F&Sie können die Fragen des Benutzers beantworten, anstatt nur einen Link zu einer Webseite bereitzustellen. Sie können die Antwort auch in Rich-Text formatieren. Wenn ein Lesezeichen und ein Q-&A dasselbe Schlüsselwort verwenden, wird zuerst das Lesezeichenergebnis angezeigt. Wie Lesezeichen wird der Q-&A-Index unmittelbar nach dem Hinzufügen oder Ändern eines Q-&A aktualisiert.
+Die Erstellung von Fragen und Antworten ist vergleichbar mit der Erstellung von Lesezeichen. F&So können Sie die Fragen des Benutzers beantworten, anstatt nur einen Link zu einer Webseite bereitzustellen. Sie können die Antwort auch in Rich-Text formatieren. Wenn ein Lesezeichen und ein Q-&A dasselbe Schlüsselwort verwenden, wird zuerst das Lesezeichenergebnis angezeigt. Wie Lesezeichen wird der Q&A-Index unmittelbar nach dem Hinzufügen oder Ändern eines Q-&A aktualisiert.
 
 ## <a name="add-or-edit-a-single-qa"></a>Hinzufügen oder Bearbeiten einer einzelnen Frage und Antwort
 
 1. Wechseln [Sie](https://admin.microsoft.com)im Microsoft 365 Admin Center zu [**F&A**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/qnas)
-1. Wählen Sie zum Hinzufügen einer F&A die Option **"Hinzufügen"** aus.
+1. Um eine F&A hinzuzufügen, wählen Sie **Hinzufügen** aus.
 Wählen Sie zum Bearbeiten einer Frage und Antwort die Frage und Antwort in der entsprechenden F&A-Liste aus. Während Sie die Informationen hinzufügen oder bearbeiten, wird die Vorschau automatisch aktualisiert.
 1. Speichern Sie Ihre Änderungen.
 
@@ -56,7 +56,7 @@ Die folgenden HTML-Tags werden unterstützt:
 
 ## <a name="add-or-edit-qas-using-browser-extensions"></a>Hinzufügen oder Bearbeiten von Q-&Wie bei Verwendung von Browsererweiterungen
 
-Suchadministratoren können Suchinhalte mühelos mithilfe von Browsererweiterungen erstellen. Installieren Sie die Browsererweiterung, und wechseln Sie dann zu der Website, von der Sie eine Q-&A generieren möchten. Anschließend können Sie die F&A erstellen und einen Link zur Quellwebsite einfügen.
+Suchadministratoren können Suchinhalte mühelos mithilfe von Browsererweiterungen erstellen. Installieren Sie die Browsererweiterung, und wechseln Sie dann zu der Website, von der Sie eine Q-&A generieren möchten. Anschließend können Sie die Q-&A erstellen und einen Link zur Quellwebsite einfügen.
 
 Derzeit sind Browsererweiterungen für Microsoft Edge und Chrome verfügbar.
 
@@ -65,13 +65,13 @@ Derzeit sind Browsererweiterungen für Microsoft Edge und Chrome verfügbar.
 
 ## <a name="bulk-add-or-edit-qas"></a>Massenhinzufügen oder -bearbeiten von F & As
 
-Administratoren können die Import- und Exportfunktionen verwenden, um Q&As in Massen zu erstellen oder zu bearbeiten.
+Administratoren können die Import- und Exportfeatures verwenden, um Q-&As massenweise zu erstellen oder zu bearbeiten.
 
 Verwenden Sie das Import/Export-Feature für Folgendes:
 
 - Massenhinzufügen von Q&As – Fügen Sie Details in der Vorlagendatei "F&A" hinzu, und importieren Sie sie.
 - Massenbearbeitung von Q&As – Export Q&As to a .csv file, edit the Q&A details in the exported file, and then import the file.
-- Sichern von Q&As – Exportieren von Q&As in eine .csv-Datei.
+- Sichern von Q&As – Exportieren von Q&As in eine .csv Datei.
 
 So importieren oder exportieren Sie Q&As:
 

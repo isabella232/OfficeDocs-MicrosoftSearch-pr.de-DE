@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: Verwalten von Microsoft Graph Connectors für Microsoft Search.
 ms.openlocfilehash: dd82114ff6aa651b57ce1941685840906ecf7318
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973492"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59334533"
 ---
 # <a name="monitor-your-connections"></a>Ihre Verbindungen überwachen
 
@@ -26,20 +26,20 @@ Um auf Ihre Connectors zugreifen und diese verwalten zu können, müssen Sie als
 
 ## <a name="connection-operations"></a>Verbindungsvorgänge
 
-Navigieren Sie im [Microsoft 365 Admin Center](https://admin.microsoft.com)zur [Registerkarte Connectors.](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)
+Navigieren Sie im [Microsoft 365 Admin Center](https://admin.microsoft.com)zur [Registerkarte "Connectors".](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)
 
-Für jeden Connectortyp unterstützt der [Microsoft 365 Admin Center](https://admin.microsoft.com) die in der folgenden Tabelle gezeigten Vorgänge:
+Für jeden Verbindertyp unterstützt das [Microsoft 365 Admin Center](https://admin.microsoft.com) die in der folgenden Tabelle gezeigten Vorgänge:
 
 Vorgang | Microsoft Graph-Connectors | Partner- oder Graph Connectors
 --- | --- | ---
-Hinzufügen einer Verbindung | :heavy_check_mark: (Siehe [Setupübersicht)](configure-connector.md) | :x: (Wenden Sie sich an Ihren Partner oder die benutzerdefinierte Connector-Administrator-UX)
+Hinzufügen einer Verbindung | :heavy_check_mark: (Siehe [Setupübersicht](configure-connector.md)) | :x: (Wenden Sie sich an Ihren Partner oder die benutzerdefinierte Connector-Administrator-UX)
 Löschen einer Verbindung | :heavy_check_mark: | :heavy_check_mark:
 Bearbeiten einer veröffentlichten Verbindung | :heavy_check_mark: Name und Beschreibung<br></br> :heavy_check_mark: Verbindungseinstellungen<br></br> :heavy_check_mark: Eigenschaftenbeschriftungen<br></br> :heavy_check_mark: Schema<br></br> :heavy_check_mark: Aktualisierungszeitplan<br></br> | :heavy_check_mark: Name<br></br> :heavy_check_mark: Beschreibung
 Bearbeiten eines Verbindungsentwurfs | :heavy_check_mark: | :x:
 
 ## <a name="monitor-your-connection-state"></a>Überwachen des Verbindungsstatus
 
-Nachdem Sie eine Verbindung erstellt haben, wird die Anzahl der verarbeiteten Elemente auf der Registerkarte **Connectors** auf der **Microsoft Search** Seite angezeigt. Nachdem die anfängliche vollständige Durchforstung erfolgreich abgeschlossen wurde, wird der Fortschritt für regelmäßige inkrementelle Durchforstungen angezeigt. Diese Seite enthält Informationen zu den täglichen Vorgängen des Connectors und eine Übersicht über die Protokolle und den Fehlerverlauf.
+Nachdem Sie eine Verbindung hergestellt haben, wird die Anzahl der verarbeiteten Elemente auf der Registerkarte **Connectors** auf der **Microsoft Search** Seite angezeigt. Nachdem die anfängliche vollständige Durchforstung erfolgreich abgeschlossen wurde, wird der Fortschritt für regelmäßige inkrementelle Durchforstungen angezeigt. Diese Seite enthält Informationen zu den täglichen Vorgängen des Connectors und eine Übersicht über die Protokolle und den Fehlerverlauf.
 
 Fünf Zustände werden in der Spalte **"Status"** für jede Verbindung angezeigt:
 
@@ -64,7 +64,7 @@ Die Kontingentauslastungsleiste gibt verschiedene Zustände basierend auf der Ko
 Status | Kontingentauslastungsstufen
 --- | --- 
 Standard | 0-79%
-Hoch | 80-89%
+High | 80-89%
 Kritisch | 90%-99%
 Vollständig | 100 %
 

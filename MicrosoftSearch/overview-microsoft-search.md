@@ -11,17 +11,17 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Erhalten Sie einen Überblick darüber, was Microsoft Search ist, welche Vorteile es bietet und welche Apps Microsoft Search unterstützen.
+description: Hier erhalten Sie einen Überblick darüber, was Microsoft Search ist, welche Vorteile sie bietet und welche Apps Microsoft Search unterstützen.
 ms.openlocfilehash: 29a6db642ac9cc787b8cbec45aec609f55722206
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973483"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59376072"
 ---
 # <a name="overview-of-microsoft-search"></a>Übersicht über Microsoft Search 
 
-Microsoft Search hilft Ihnen zu finden, was Sie benötigen, um ihre Arbeit abzuschließen. Unabhängig davon, ob Sie nach Personen, Dateien, Organigrammen, Websites oder Antworten auf häufig gestellte Fragen suchen, können Sie während Ihres Arbeitstags Microsoft Search verwenden, um Antworten zu erhalten.
+Microsoft Search hilft Ihnen zu finden, was Sie benötigen, um ihre Arbeit abzuschließen. Unabhängig davon, ob Sie nach Personen, Dateien, Organigrammen, Websites oder Antworten auf häufig gestellte Fragen suchen, können Sie Microsoft Search während Ihres Arbeitstags verwenden, um Antworten zu erhalten.
 
 Microsoft Search hilft Benutzern, die richtigen Antworten, Personen und Inhalte zu finden, um ihre Aufgaben in der App auszuführen, in der sie bereits arbeiten.
 
@@ -38,9 +38,9 @@ In [Bing](https://bing.com)verwenden Benutzer dasselbe Suchfeld wie bei Websuche
 
 Wenn Benutzer in das **Suchfeld** klicken, schlägt die Suche Ergebnisse basierend auf ihrer vorherigen Aktivität in Office 365 und basierend auf Inhalten vor, die in Ihrer Organisation im Trend liegen. Dateien, an denen sie kürzlich gearbeitet haben, Befehle, die sie kürzlich verwendet haben, sowie Personen, mit denen sie zusammenarbeiten, sind Beispiele für Aktivitäten, die die Suche berücksichtigt. Wenn Benutzer mit der Eingabe im **Suchfeld** beginnen, werden die vorgeschlagenen Ergebnisse aktualisiert. Benutzer können Suchergebnisse direkt im **Suchfeld** öffnen. Hier ist ein Beispiel für eine Suche in [SharePoint](http://sharepoint.com/).
 
-![Screenshots des Felds Microsoft Search mit einer Abfrage und vorgeschlagenen Ergebnissen.](media/SERP_text_520.png)
+![Screenshots des felds Microsoft Search mit einer Abfrage und vorgeschlagenen Ergebnissen.](media/SERP_text_520.png)
 
-Wenn die Vorschläge im Suchfeld nicht das sind, wonach Benutzer suchen, öffnet **die EINGABETASTE** die vollständige Liste der Ergebnisse. Sie können Metadaten verwenden, z. B. wer das Element zuletzt geändert hat und wann, wo sich das Element befindet, sowie eine Vorschau anzeigen, um festzustellen, ob es gesucht wird.
+Wenn die Vorschläge im Suchfeld nicht das sind, wonach Benutzer suchen, öffnet **die EINGABETASTE** die vollständige Liste der Ergebnisse. Sie können Metadaten verwenden, z. B. wer das Element zuletzt geändert hat und wann, wo sich das Element befindet, sowie eine Vorschau anzeigen, um festzustellen, ob es das gesuchte Element ist.
 
 ![Screenshots der Ergebnisseite Microsoft Search.](media/search_box.png)
 

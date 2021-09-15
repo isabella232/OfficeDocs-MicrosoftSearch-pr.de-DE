@@ -14,15 +14,15 @@ search.appverid:
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Verwalten, wie Power BI Berichte und Daten in Suchergebnissen angezeigt werden
 ms.openlocfilehash: 14b294fcec7d9c7cb3e1951414ab8795fd2cace7
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973662"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59334532"
 ---
 # <a name="manage-power-bi-answers"></a>Verwalten Power BI Antworten
 
-Damit Ihre Benutzer leichter die Daten und Analysen finden können, die sie benötigen, um fundierte Entscheidungen zu treffen, hat Microsoft Search Unterstützung für Power BI Dashboards und Berichte hinzugefügt. Hier sind einige der Vorteile von Power BI Suche:
+Damit Ihre Benutzer leichter die Daten und Analysen finden können, die sie benötigen, um fundierte Entscheidungen zu treffen, hat Microsoft Search Unterstützung für Power BI Dashboards und Berichte hinzugefügt. Hier sind einige der Vorteile der suche Power BI:
 
 * **Einfach zu verwenden:** Diese sofort einsatzbereite Suchumgebung hilft Benutzern, Power BI Dashboards und Berichte in Ihrer Organisation leicht und schnell zu finden.
 * **Umfangreichere Inhalte:** Um Power BI Suchergebnisse nützlicher zu machen, enthalten sie wichtige Informationen wie den Inhaltstyp (Dashboard oder Bericht) und das Team oder die Person, die sie besitzt.
@@ -40,7 +40,7 @@ Microsoft Search Benutzer können Power BI Ergebnisse finden, indem sie über da
 * `<topic>`Power BI Metriken oder Power BI Metriken`<topic>`
 * `<topic>`Power BI Scorecard oder Power BI Scorecard`<topic>`
 
-Ersetzen Sie in den obigen Beispielen die Informationen, nach denen Sie suchen, z. B. `<topic>` Vertrieb, Nutzung, Kapazität, 2021, Q1 und mehr, um relevante Ergebnisse aus Power BI anzuzeigen.
+Ersetzen `<topic>` Sie in den obigen Beispielen die Informationen, die Sie suchen, z. B. Vertrieb, Nutzung, Kapazität, 2021, Q1 und mehr, um relevante Ergebnisse aus Power BI anzuzeigen.
 
 :::image type="content" source="media/powerbi-answers/powerbi-serp.png" alt-text="Screenshot eines SERP mit Power BI Antworten und vertikal." border="true":::
 
@@ -69,7 +69,7 @@ Power BI Ergebnisse sind für Ihre Organisation standardmäßig aktiviert. Ihr P
 
 **F: Wird die Power BI Suchergebnisseite angezeigt, wenn ich keine Power BI Lizenz habe?**
 
-**A:** Nein. Wenn ein Suchbenutzer über keine Power BI Lizenz verfügt, wird die Power BI Suchergebnisseite nicht in Microsoft Search Ergebnissen angezeigt.
+**A:** Nein. Wenn ein Suchbenutzer nicht über eine Power BI Lizenz verfügt, wird die Power BI Suchergebnisseite nicht in Microsoft Search Ergebnissen angezeigt.
 
 **F: Wird Power BI Suchergebnissen angezeigt, auf die ich nicht zugreifen kann?**
 

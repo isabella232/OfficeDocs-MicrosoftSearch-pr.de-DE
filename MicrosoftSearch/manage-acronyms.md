@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Erstellen und Aktualisieren von Akronymenantworten in Microsoft Search
 ms.openlocfilehash: b7b3272ba98bbce7d43562811389df0a35e9f7a2
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973661"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375854"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Verwalten von Akronymen-Antworten in Microsoft Search
 
@@ -50,7 +50,7 @@ Wechseln [Sie](https://admin.microsoft.com)im Microsoft 365 Admin Center zu [**A
 Microsoft Search fragt zwei Datenquellen ab, um Akronyme antworten auf die Suchvorgänge der Benutzer bereitzustellen:
 
 1. **Vom Administrator zusammengestellt.** Bereitgestellt von IT-Administratoren im [Admin Center.](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)
-2. **Vom System zusammengestellt.** Entdeckt durch Microsoft Search aus den E-Mails und Dokumenten der Benutzer sowie aus öffentlich verfügbaren Daten innerhalb der Organisation.
+2. **Vom System zusammengestellt.** Ermittelt durch Microsoft Search aus den E-Mails und Dokumenten der Benutzer sowie aus öffentlich verfügbaren Daten innerhalb der Organisation.
 
 ### <a name="set-up-admin-curated-acronyms"></a>Einrichten von vom Administrator zusammengestellten Akronymen
 
@@ -108,13 +108,13 @@ Microsoft Search stellt sicher, dass nur Benutzer mit Zugriff und Berechtigungen
 
 **F: Wie lösen Benutzer Akronyme aus?**
 
-**A:** Um Akronyme antworten zu können, müssen Benutzer bestimmte Abfragemuster in ein **Suchfeld** [für Bing,](https://bing.com) [SharePoint,](https://products.office.com/sharepoint/collaboration) [Office 365,](https://Office.com)Outlook im Web, Outlook Mobile (Android) oder Teams Mobile (iOS und Android) eingeben.
+**A:** Um Akronyme antworten zu können, müssen Benutzer bestimmte Abfragemuster in ein **Suchfeld** [für Bing](https://bing.com), [SharePoint](https://products.office.com/sharepoint/collaboration), [Office 365](https://Office.com), Outlook im Web, Outlook Mobile (Android) oder Teams Mobile (iOS und Android) eingeben.
 
 **F: Können Benutzer bei der Suche nur das Akronym eingeben?**
 
 **A:** Auf Bing können Benutzer jetzt Akronyme finden, indem sie nach einem Akronym suchen. Ein Schlüsselwort wird nicht mehr benötigt. Diese Erfahrung wird auch für andere Microsoft Search Einstiegspunkte in Phasen aktiviert.
 
-**F: Wie lange dauert es, bis von Administratoren zusammengestellte Akronyme in Microsoft Search nach ihrer Veröffentlichung sichtbar sind?**
+**F: Wie lange dauert es, bis von Administratoren zusammengestellte Akronyme in Microsoft Search nach der Veröffentlichung sichtbar sind?**
 
 **A:** Es dauert bis zu einem Tag, bis Akronyme, die dem Status "Veröffentlicht" hinzugefügt wurden, in Microsoft Search verfügbar sind.
 

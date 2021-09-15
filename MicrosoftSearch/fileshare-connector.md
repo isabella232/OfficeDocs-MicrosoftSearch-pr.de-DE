@@ -1,5 +1,5 @@
 ---
-title: Graph Connector für die Dateifreigabe für Microsoft Search
+title: Dateifreigabe Graph Connector für Microsoft Search
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -15,15 +15,15 @@ search.appverid:
 ROBOTS: NoIndex
 description: Einrichten des Dateifreigabe-Graph-Connectors für Microsoft Search
 ms.openlocfilehash: 874b522cb54288b531cbbc63e12f232a8a68939e
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973498"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375940"
 ---
 <!---Previous ms.author: rusamai --->
 
-# <a name="file-share-graph-connector"></a>Dateifreigabe Graph Connector
+# <a name="file-share-graph-connector"></a>Graph Connector für die Dateifreigabe
 
 Mit dem Connector für die Dateifreigabe Graph können Benutzer in Ihrer Organisation lokale Windows Dateifreigaben durchsuchen.
 
@@ -86,11 +86,11 @@ Der Administrator könnte auch eine Ausnahme von der Limit-Regel erteilen. Die P
 
 ## <a name="step-5-manage-search-permissions"></a>Schritt 5: Verwalten von Suchberechtigungen
 
-Sie können die Berechtigung zum Suchen nach einer beliebigen Datei basierend auf Listen für die Zugriffssteuerung für freigabebasierte Zugriffssteuerungen oder NTFS-Zugriffssteuerungslisten (New Technology File System, NTFS) einschränken, indem Sie auf der Seite **"Suchberechtigungen verwalten"** die gewünschte Option auswählen. Die in diesen Zugriffssteuerungslisten bereitgestellten Benutzerkonten und Gruppen müssen von Active Directory (AD) verwaltet werden. Wenn Sie ein anderes System für die Benutzerkontenverwaltung verwenden, können Sie die Option "Jeder" auswählen, mit der Benutzer ohne Zugriffseinschränkungen nach allen Dateien suchen können. Wenn Benutzer jedoch versuchen, die Datei zu öffnen, gelten die an der Quelle festgelegten Zugriffssteuerelemente.
+Sie können die Berechtigung zum Suchen nach einer beliebigen Datei basierend auf Zugriffssteuerungslisten für Freigaben oder NTFS-Zugriffssteuerungslisten (New Technology File System, NTFS) einschränken, indem Sie auf der Seite **"Suchberechtigungen verwalten"** die gewünschte Option auswählen. Die in diesen Zugriffssteuerungslisten bereitgestellten Benutzerkonten und Gruppen müssen von Active Directory (AD) verwaltet werden. Wenn Sie ein anderes System für die Benutzerkontenverwaltung verwenden, können Sie die Option "Jeder" auswählen, mit der Benutzer ohne Zugriffseinschränkungen nach allen Dateien suchen können. Wenn Benutzer jedoch versuchen, die Datei zu öffnen, gelten die an der Quelle festgelegten Zugriffssteuerelemente.
 
 Beachten Sie, dass Windows standardmäßig die Berechtigung "Lesen" für "Jeder" in AcLs freigeben bereitstellt, wenn ein Ordner im Netzwerk freigegeben wird. Wenn Sie in **"Suchberechtigungen verwalten"** ACLs freigeben auswählen, können Benutzer durch erweiterungsweise nach allen Dateien suchen. Wenn Sie den Zugriff einschränken möchten, entfernen Sie "Lesezugriff" für "Jeder" in Dateifreigaben, und gewähren Sie nur den gewünschten Benutzern und Gruppen Zugriff. Der Connector liest dann diese Zugriffseinschränkungen und wendet sie auf die Suche an.
 
-Sie können Share ACLs nur auswählen, wenn der angegebene Freigabepfad dem UNC-Pfadformat folgt. Sie können einen Pfad im UNC-Format erstellen, indem Sie unter "Freigabe" zu "Erweiterte Freigabe" wechseln.
+Sie können Share ACLs nur auswählen, wenn der angegebene Freigabepfad dem UNC-Pfadformat entspricht. Sie können einen Pfad im UNC-Format erstellen, indem Sie unter "Freigabe" zu "Erweiterte Freigabe" wechseln.
 
 ![Advanced_sharing.](media/file-connector/file-advanced-sharing.png)
 

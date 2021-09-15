@@ -13,25 +13,25 @@ search.appverid:
 - MOE150
 description: Erstmaliges Einrichten von Microsoft Search.
 ms.openlocfilehash: b1ddc3c32036b1fe3b86d38926bec86f626736f4
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973520"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59376013"
 ---
 # <a name="set-up-microsoft-search"></a>Einrichten von Microsoft Search
 
-Microsoft Search bietet eine benutzerfreundliche Benutzeroberfläche, mit der Benutzer Informationen wie Dateien und Dokumente, interne Websites und Geschäftstools, Personen und Gruppen, Orte und Wegbeschreibungen, Unterhaltungen und Antworten finden können. Dies erfolgt durch den sicheren Zugriff auf alle Datenquellen, einschließlich E-Mails, Dateien, SharePoint Dateien, OneDrive Inhalte und andere freigegebene Ressourcen. Mit Microsoft Search in Bing können Sie auch Suchergebnisse aus dem Internet abrufen.
+Microsoft Search bietet eine benutzerfreundliche Benutzeroberfläche, mit der Benutzer Informationen wie Dateien und Dokumente, interne Websites und Unternehmenstools, Personen und Gruppen, Orte und Wegbeschreibungen, Unterhaltungen und Antworten finden können. Dies geschieht durch den sicheren Zugriff auf alle Datenquellen, einschließlich E-Mails, Dateien, SharePoint Dateien, OneDrive Inhalten und anderer freigegebener Ressourcen. Mit Microsoft Search in Bing können Sie auch Suchergebnisse aus dem Internet abrufen.
 
 Weitere Informationen zu den Microsoft Search-Features finden Sie unter [Übersicht über Microsoft Search](overview-microsoft-search.md).
 
 ## <a name="get-started"></a>Erste Schritte
 
-Microsoft Search ist im Rahmen von Microsoft 365 standardmäßig für alle Microsoft-Apps aktiviert, die das Feature unterstützen. Es ist kein Setup erforderlich, aber Sie können die gesamt Microsoft Search Erfahrung mit einigen einfachen administrativen Aufgaben verbessern.
+Microsoft Search ist im Rahmen von Microsoft 365 standardmäßig für alle Microsoft-Apps aktiviert, die das Feature unterstützen. Es ist kein Setup erforderlich, Aber Sie können die gesamt Microsoft Search Erfahrung mit einigen einfachen administrativen Aufgaben verbessern.
 
 Sie können Microsoft Search vom Microsoft 365 Admin Center aus verwalten.
 
-1. Wechseln Sie in Microsoft 365 Admin Center zu **Einstellungen**  >  [**Suche & Intelligence**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch).
+1. Wechseln Sie in Microsoft 365 Admin Center zu **Einstellungen**  >  [**Suche & Intelligence.**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)
 
 Als Administrator sollten Sie einige Dinge berücksichtigen, durch die Sie die Microsoft Search-Nutzererfahrung in Ihrer Organisation effizient und benutzerfreundlich gestalten können.
 
@@ -48,7 +48,7 @@ Microsoft Search-Administratoren können die Suchoberfläche für Endbenutzer di
 
 ## <a name="step-2-create-answers"></a>Schritt 2: Erstellen von Antworten
 
-Microsoft Search stellt Administratoren Tools zur Verfügung, mit denen sie eine robuste Suchoberfläche für ihre Benutzer erstellen können. In Microsoft Search verfügen Administratoren über drei verschiedene Suchinhalte, die sie erstellen können, um eine bessere Sucherfahrung zu erzielen und die "Auffindbarkeit" von Inhalten zu verbessern:
+Microsoft Search stellt Administratoren Tools zur Verfügung, mit denen sie eine robuste Suchoberfläche für ihre Benutzer erstellen können. In Microsoft Search verfügen Administratoren über drei verschiedene Suchinhalte, die sie erstellen können, um eine bessere Suchumgebung zu erzielen und die "Auffindbarkeit" von Inhalten zu verbessern:
 
 Lesezeichen sind die am häufigsten verwendeten Antworttypen. Sie stellen die bestmöglichen Ergebnisse für die Abfragen Ihrer Benutzer ganz oben in den Suchergebnissen bereit und erleichtern Es Ihren Benutzern, das zu finden, wonach sie suchen.
 Informationsinhalte, die für alle verfügbar sind; Beispielsweise Informationen zum Unternehmen, Hilfe für Windows und Office Apps usw. Inhalte, nach denen Personen in der Organisation im Allgemeinen in ihrer täglichen Arbeit suchen. Allgemeine arbeitsbezogene Suchen sind z. B. Mitarbeitervergütungen, Arbeitszeit- und Spesenabrechnung, Übermittlung von Bestellungen und Hilfe von IT-Diensten.

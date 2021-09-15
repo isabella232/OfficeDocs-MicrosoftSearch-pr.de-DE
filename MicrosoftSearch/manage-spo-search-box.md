@@ -13,17 +13,17 @@ search.appverid:
 - MOE150
 description: So passen Sie die Suchfeldoberfläche auf SharePoint Websites an
 ms.openlocfilehash: b5d58dd5a241ccf2ada556c44ec0ea5479ea2e2b
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973786"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59334514"
 ---
 # <a name="search-box-settings-on-sharepoint-sites"></a>Suchfeldeinstellungen auf SharePoint Websites
 
 Eine der verschiedenen Möglichkeiten, Microsoft Search auf SharePoint Websites angepasst werden können, besteht darin, die Funktionsweise des Suchfelds in der Suitenavigationsleiste in SharePoint Websites so anzupassen, dass es Ihren Anforderungen am besten entspricht.
 
-Weitere Anpassungsoptionen finden Sie unter [Ändern der Microsoft Search Ergebnisseite, um benutzerdefinierte Vertikale, Ergebnistypen und Layouts hinzuzufügen,](customize-search-page.md)und [Erstellen einer benutzerdefinierten Suchergebnisseite.](create-search-results-pages.md)
+Weitere Anpassungsoptionen finden Sie unter [Changing the Microsoft Search results page to add custom verticals, result types and layouts,](customize-search-page.md)and Creating a custom search results [page.](create-search-results-pages.md)
 
 > [!NOTE]
 > Das Suchfeld der Suiten-Navigationsleiste ist derzeit nicht für alle Kunden verfügbar, aber diese Optionen können jetzt noch festgelegt werden, und sie werden wirksam, wenn es verfügbar wird.
@@ -37,7 +37,7 @@ Connect-PnPOnline -Url <yoursiteurl> -UseWebLogin
 
 ## <a name="changing-the-scope-of-search"></a>Ändern des Suchbereichs
 
-Wenn Sie heute eine neue Website in SharePoint Online erstellen und in das Suchfeld eingeben, gelangen Sie zur Microsoft Search Ergebnisseite. Diese Seite zeigt standardmäßig Ergebnisse von Ihrer aktuellen Website und ermöglicht es Ihnen, den Umfang Ihrer Suche auf den Hub zu erweitern, dem die aktuelle Website zugeordnet ist (sofern vorhanden) oder auf die gesamte Organisation.
+Wenn Sie heute in SharePoint Online eine neue Website erstellen und in das Suchfeld eingeben, gelangen Sie zur Ergebnisseite Microsoft Search. Diese Seite zeigt standardmäßig Ergebnisse von Ihrer aktuellen Website und ermöglicht es Ihnen, den Umfang Ihrer Suche auf den Hub zu erweitern, dem die aktuelle Website zugeordnet ist (sofern vorhanden) oder auf die gesamte Organisation.
 
 Der Bereich, den das Suchfeld standardmäßig verwendet, hängt vom Typ der Website ab.
 

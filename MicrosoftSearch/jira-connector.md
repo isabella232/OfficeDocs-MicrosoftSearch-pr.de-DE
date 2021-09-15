@@ -14,15 +14,15 @@ search.appverid:
 - MOE150
 description: Einrichten des Atlassian Jira Graph Connectors für Microsoft Search
 ms.openlocfilehash: 0b4b1dc0ed1f9e9d3ca57f98dc3878f63e68d510
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973778"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375892"
 ---
 # <a name="atlassian-jira-graph-connector-preview"></a>Atlassian Jira Graph Connector (Vorschau)
 
-Der Atlassian Jira Graph Connector ermöglicht Es Ihrer Organisation, Jira-Probleme zu indizieren. Nachdem Sie den Connector und den Indexinhalt von der Jira-Website konfiguriert haben, können Endbenutzer in Microsoft Search nach diesen Elementen suchen.
+Der Atlassian Jira Graph Connector ermöglicht Es Ihrer Organisation, Jira-Probleme zu indizieren. Nachdem Sie den Connector konfiguriert und Inhalte von der Jira-Website indiziert haben, können Endbenutzer in Microsoft Search nach diesen Elementen suchen.
 
 > [!NOTE]
 > Lesen Sie den Artikel [**"Setup for your Graph connector",**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten Graph Connectors zu verstehen.

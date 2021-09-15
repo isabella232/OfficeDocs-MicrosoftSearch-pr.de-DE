@@ -14,20 +14,20 @@ search.appverid:
 - MOE150
 description: Einrichten des Salesforce Graph-Connectors für Microsoft Search
 ms.openlocfilehash: c2679002affe494ba31777718d265b5526b744c0
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973477"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59376061"
 ---
 <!---Previous ms.author: rusamai --->
 
 # <a name="salesforce-graph-connector"></a>Salesforce Graph Connector
 
-Der Salesforce Graph Connector ermöglicht Ihrer Organisation das Indizieren von Kontakten, Verkaufschancen, Leads, Fällen und Kontenobjekten in Ihrer Salesforce-Instanz. Nachdem Sie den Connector konfiguriert und Inhalte von Salesforce indiziert haben, können Endbenutzer von einem beliebigen Microsoft Search Client nach diesen Elementen suchen.
+Der Salesforce Graph Connector ermöglicht Es Ihrer Organisation, Kontakte, Verkaufschancen, Leads, Fälle und Kontenobjekte in Ihrer Salesforce-Instanz zu indizieren. Nachdem Sie den Connector konfiguriert und Inhalte von Salesforce indiziert haben, können Endbenutzer von einem beliebigen Microsoft Search Client nach diesen Elementen suchen.
 
 > [!NOTE]
-> Lesen Sie den Artikel [**"Setup for your Graph connector",**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten von Connectors Graph zu verstehen.
+> Lesen Sie den Artikel [**"Setup for your Graph connector",**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten Graph Connectors zu verstehen.
 
 Dieser Artikel richtet sich an alle Personen, die einen Salesforce Graph Connector konfigurieren, ausführen und überwachen. Es ergänzt den allgemeinen Einrichtungsprozess und zeigt Anweisungen, die nur für den Salesforce Graph Connector gelten. Dieser Artikel enthält auch Informationen zu [Einschränkungen.](#limitations)
 
@@ -63,13 +63,13 @@ Um eine Verbindung mit Ihrer Salesforce-Instanz herzustellen, benötigen Sie ihr
       > [!div class="mx-imgBorder"]
       > ![API-Abschnitt in Salesforce-Instanz, nachdem der Administrator alle oben aufgeführten erforderlichen Konfigurationen eingegeben hat.](media/salesforce-connector/sf1.png)
 
-- Kopieren Sie den Verbraucherschlüssel und den geheimen Verbraucherschlüssel. Diese Informationen werden als Client-ID und geheimer Clientschlüssel verwendet, wenn Sie die Verbindungs-Einstellungen für Ihren Graph Connector im Microsoft 365-Verwaltungsportal konfigurieren.
+- Kopieren Sie den Verbraucherschlüssel und den geheimen Verbraucherschlüssel. Diese Informationen werden als Client-ID und geheimer Clientschlüssel verwendet, wenn Sie die Verbindungs-Einstellungen für Ihren Graph Connector im Microsoft 365 Verwaltungsportal konfigurieren.
 
   > [!div class="mx-imgBorder"]
   > ![Ergebnisse, die vom API-Abschnitt in der Salesforce-Instanz zurückgegeben werden, nachdem der Administrator alle erforderlichen Konfigurationen übermittelt hat. Der Verbraucherschlüssel befindet sich oben in der linken Spalte, und der geheime Verbraucherschlüssel befindet sich oben in der rechten Spalte.](media/salesforce-connector/clientsecret.png)
   
 - Führen Sie vor dem Schließen der Salesforce-Instanz die folgenden Schritte aus, um sicherzustellen, dass Aktualisierungstoken nicht ablaufen:
-    - Wechseln Sie zu Apps – > App-Manager
+    - Wechseln Sie zu "Apps > App Manager"
     - Suchen Sie die von Ihnen erstellte App, und wählen Sie die Dropdownliste auf der rechten Seite aus. Wählen Sie **"Verwalten" aus.**
     - Auswählen von **Bearbeitungsrichtlinien**
     - Wählen Sie für die Aktualisierungstokenrichtlinie die Option **"Aktualisierungstoken ist gültig bis widerrufen"** aus.
@@ -91,7 +91,7 @@ Folgen Sie den allgemeinen [Setupanweisungen.](./configure-connector.md)
 
 ## <a name="step-3-configure-the-connection-settings"></a>Schritt 3: Konfigurieren der Verbindungseinstellungen
 
-Verwenden Sie für die Instanz-URL https://[domäne].my.salesforce.com), wobei Domäne die Salesforce-Domäne für Ihre Organisation wäre.
+Verwenden Sie für die Instanz-URL https://[domain].my.salesforce.com),wobei domäne die Salesforce-Domäne für Ihre Organisation wäre.
 
 Geben Sie die Client-ID und den geheimen Clientschlüssel ein, die Sie von Ihrer Salesforce-Instanz erhalten haben, und wählen Sie "Anmelden" aus.
 
@@ -100,7 +100,7 @@ Wenn Sie zum ersten Mal versucht haben, sich mit diesen Einstellungen anzumelden
   ![Melden Sie sich an und fragen Sie nach Benutzername und Kennwort.](media/salesforce-connector/sf4.png)
 
   >[!NOTE]
-  >Wenn das Popup nicht angezeigt wird, wird es möglicherweise in Ihrem Browser blockiert, daher müssen Sie Popups und Umleitungen zulassen.
+  >Wenn das Popup nicht angezeigt wird, wird es möglicherweise in Ihrem Browser blockiert. Daher müssen Sie Popups und Umleitungen zulassen.
 
 Überprüfen Sie, ob die Verbindung erfolgreich war, indem Sie nach einem grünen Banner suchen, das "Verbindung erfolgreich" anzeigt, wie im screenshot unten gezeigt.
 
@@ -168,7 +168,7 @@ Folgen Sie den allgemeinen [Setupanweisungen.](./configure-connector.md)
 >[!TIP]
 >**Standardergebnistyp**
 >* Der Salesforce-Connector registriert automatisch einen [Ergebnistyp,](./customize-search-page.md#step-2-create-result-types) nachdem der Connector veröffentlicht wurde. Der Ergebnistyp verwendet ein dynamisch generiertes [Ergebnislayout](./customize-results-layout.md) basierend auf den in Schritt 3 ausgewählten Feldern.
->* Sie können den Ergebnistyp verwalten, indem Sie im [Microsoft 365 Admin Center](https://admin.microsoft.com)zu [**Ergebnistypen**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes) navigieren. Der Standardergebnistyp wird als `ConnectionId` "Standard" bezeichnet. Wenn Ihre Verbindungs-ID beispielsweise `Salesforce` lautet, wird ihr Ergebnislayout wie folgt benannt: "SalesforceDefault".
+>* Sie können den Ergebnistyp verwalten, indem Sie im [Microsoft 365 Admin Center](https://admin.microsoft.com)zu [**Ergebnistypen**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes) navigieren. Der Standardergebnistyp wird als `ConnectionId` "Standard" bezeichnet. Wenn ihre Verbindungs-ID beispielsweise `Salesforce` lautet, wird ihr Ergebnislayout wie folgt benannt: "SalesforceDefault".
 >* Sie können bei Bedarf auch einen eigenen Ergebnistyp erstellen.
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
@@ -180,16 +180,16 @@ Folgen Sie den allgemeinen [Setupanweisungen.](./configure-connector.md)
 - Der Graph Connector unterstützt derzeit keine Apex-basierte, gebietsbasierte Freigabe und Freigabe mit persönlichen Gruppen von Salesforce.
 - Es gibt einen bekannten Fehler in der Salesforce-API, die der Graph Connector verwendet, wobei die privaten organisationsweiten Standardwerte für Leads derzeit nicht berücksichtigt werden.  
 - Wenn für ein Feld die Sicherheit auf Feldebene (FLS) für ein Profil festgelegt ist, erfasst der Graph Connector dieses Feld nicht für Profile in dieser Salesforce-Organisation. Daher können Benutzer weder nach Werten für diese Felder suchen noch in den Ergebnissen angezeigt werden.  
-- Auf dem Bildschirm "Schema verwalten" werden diese allgemeinen Standardeigenschaftennamen einmal aufgelistet. Die Optionen sind **"Abfrage",** **"Suchen",** **"Abrufen"** und **"Verfeinern"** und gelten für alle oder keine.
+- Im Bildschirm "Schema verwalten" werden diese allgemeinen Standardeigenschaftsnamen einmal aufgelistet. Die Optionen sind **"Abfrage",** **"Suchen",** **"Abrufen"** und **"Verfeinern"** und gelten für alle oder keine.
     - Name
     - Url
     - Beschreibung
     - Fax
     - Telefon
     - MobilePhone
-    - E-Mail senden
+    - E-Mails
     - Typ
-    - Title
+    - Titel
     - Accountid
     - AccountName
     - AccountUrl

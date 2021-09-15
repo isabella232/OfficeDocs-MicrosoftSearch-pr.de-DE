@@ -14,20 +14,20 @@ search.appverid:
 - MOE150
 description: Einrichten des Azure Data Lake Storage Gen2-Graph-Connectors für Microsoft Search
 ms.openlocfilehash: f60de4252e514f84bc92daf4ea65c535cf40a13d
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973471"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375874"
 ---
 <!---Previous ms.author: monaray --->
 
 # <a name="azure-data-lake-storage-gen2-graph-connector"></a>Azure Data Lake Storage Gen2 Graph Connector
 
-Der Azure Data Lake Storage Gen2 Graph Connector ermöglicht Es Benutzern in Ihrer Organisation, nach Dateien zu suchen, die in [Azure Blob Storage-](/azure/storage/blobs/storage-blobs-introduction) und [Azure Data Lake Gen 2 Storage-Konten](/azure/storage/blobs/data-lake-storage-introduction) gespeichert sind.
+Der Azure Data Lake Storage Gen2 Graph Connector ermöglicht Es Benutzern in Ihrer Organisation, nach Dateien zu [suchen,](/azure/storage/blobs/storage-blobs-introduction) die in Azure Blob Storage und [Azure Data Lake Gen 2 Storage-Konten](/azure/storage/blobs/data-lake-storage-introduction) gespeichert sind.
 
 > [!NOTE]
-> Lesen Sie den Artikel [**"Setup your Graph connector",**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten Graph Connectors zu verstehen.
+> Lesen Sie den Artikel [**"Setup Your Graph connector",**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten von Connectors Graph zu verstehen.
 
 Dieser Artikel richtet sich an alle Personen, die einen Azure Data Lake Storage Gen2-Connector konfigurieren, ausführen und überwachen. Es ergänzt den allgemeinen Einrichtungsprozess und zeigt Anweisungen, die nur für den Azure Data Lake Storage Gen2-Connector gelten. Dieser Artikel enthält auch Informationen zu [Einschränkungen.](#limitations)
 
@@ -60,7 +60,7 @@ Navigieren Sie zur Registerkarte **"Zugriffssteuerung"** Ihres Azure Storage Kon
 
 ### <a name="storage-account-and-queue-notifications-optional"></a>Storage Konto- und Warteschlangenbenachrichtigungen (optional)
 
-Unterstützung für die Verarbeitung von Änderungen in Echtzeit im Graph Connectors-Dienst kann in Zukunft hinzugefügt werden. In diesem Fall überwachen wir Azure Storage in einer Warteschlange gespeicherten Änderungsbenachrichtigungen. Sie müssen eine Warteschlange in demselben Konto wie Ihr Azure Storage Konto erstellen.
+Unterstützung für die Verarbeitung von Änderungen in Echtzeit im Graph Connectors-Dienst kann in Zukunft hinzugefügt werden. In diesem Fall überwachen wir Azure Storage Änderungsbenachrichtigungen, die in einer Warteschlange gespeichert sind. Sie müssen eine Warteschlange in demselben Konto wie Ihr Azure Storage konto erstellen.
 
 Nachdem Sie eine Warteschlange erstellt haben, wechseln Sie zur Registerkarte **"Ereignisse"** auf der Warteschlangenseite, um das **Ereignisabonnement** zu konfigurieren. Wählen Sie alle Blob-Ereignisse aus, die die Warteschlange empfängt, und verbinden Sie die Warteschlange mit dem Azure Storage Konto.
 
@@ -78,11 +78,11 @@ Auf dem Bildschirm **"Schema verwalten"** können Sie die den Eigenschaften zuge
 
 Sie können die Zugriffssteuerungslisten (Access Control Lists, ACLs) aus Ihrem [Azure Data Lake Gen 2 Storage-Konto](/azure/storage/blobs/data-lake-storage-introduction) aufnehmen. Wenn diese Suchberechtigungen festgelegt sind, wird der Suchinhalt basierend auf den Berechtigungen des benutzers gekürzt, der [Azure Active Directory](/azure/active-directory/)angemeldet ist. Alternativ können Sie festlegen, dass alle in Ihrem Speicherkonto indizierten Inhalte für alle Benutzer in Ihrer Organisation sichtbar sind. In diesem Fall hat jeder in Ihrer Organisation Zugriff auf alle Daten in Ihrem Speicherkonto.
 
-Der Azure Data Lake Storage Gen2 Graph Connector unterstützt Suchberechtigungen, die **für "Jeder"** oder **nur für Personen mit Zugriff auf diese Datenquelle** sichtbar sind. Indizierte Daten, die in den Suchergebnissen angezeigt werden, können für Benutzer in der Organisation sichtbar sein, die Zugriff auf jedes Element haben.
+Der Azure Data Lake Storage Gen2 Graph-Connector unterstützt Suchberechtigungen, die **für "Jeder"** oder **nur für Personen mit Zugriff auf diese Datenquelle** sichtbar sind. Indizierte Daten, die in den Suchergebnissen angezeigt werden, können für Benutzer in der Organisation sichtbar sein, die Zugriff auf jedes Element haben.
 
 ### <a name="azure-blob-storage"></a>Azure Blob Storage
 
-Für eine Verbindung mit [Azure Blob Storage](/azure/storage/blobs/storage-blobs-introduction)ist der gesamte Inhalt, der aus der konfigurierten Quelle indiziert ist, für jeden in Ihrer Organisation sichtbar. Zugriffssteuerungslisten werden auf Blobebene in Azure Blob Storage nicht unterstützt.
+Für eine Verbindung mit [Azure Blob Storage](/azure/storage/blobs/storage-blobs-introduction)ist der gesamte inhalt, der aus der konfigurierten Quelle indiziert ist, für jeden in Ihrer Organisation sichtbar. Zugriffssteuerungslisten werden auf Blobebene in Azure Blob Storage nicht unterstützt.
 
 ## <a name="step-7-set-the-refresh-schedule"></a>Schritt 7: Festlegen des Aktualisierungszeitplans
 
@@ -105,9 +105,9 @@ Außerdem muss die Größe der Dateien 4 MB oder weniger betragen, damit sie dur
 * Word (docx, .docm, .dotx, .dotm)
 * PowerPoint (.pptm, .pptx, POTM, POTX, PPAM, PPSM, PPSX)
 * Excel (.xlsx, XLSM)
-* Legacy-Office formate (.doc, PUNKT usw.)
+* Legacy-Office-Formate (.doc, PUNKT usw.)
 * Text (.txt)
 * HTML
 * PDF
 
-Binärdateien wie Bilder (.jpg, .bmp usw.) werden nicht unterstützt. Wenn eine .docx Datei beispielsweise nur Bilder enthält, wird sie möglicherweise übersprungen, da keine Inhalte zurückgegeben wurden.
+Binärdateien wie Bilder (.jpg, .bmp usw.) werden nicht unterstützt. Wenn eine .docx-Datei beispielsweise nur Bilder enthält, wird sie möglicherweise übersprungen, da keine Inhalte zurückgegeben wurden.

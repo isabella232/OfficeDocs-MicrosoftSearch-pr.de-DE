@@ -13,18 +13,18 @@ search.appverid:
 - MOE150
 description: Erstellen Sie mithilfe adaptiver Karten ein Layout, um Ihre benutzerdefinierten Suchergebnisse anzuzeigen.
 ms.openlocfilehash: 44808d1dba8d765ba67fcd0c3dcf6f186a0b774c
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973468"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375946"
 ---
 <!-- markdownlint-disable no-hard-tabs -->
 # <a name="create-a-layout-to-customize-search-results"></a>Erstellen eines Layouts zum Anpassen von Suchergebnissen
 
 Sie können das Ergebnislayout für eine benutzerdefinierte Vertikale mithilfe des Suchlayout-Designers entwerfen. Sie können mit dem Entwerfen des Layouts beginnen, indem Sie im Layout-Designer angebotene Vorlagen auswählen und diese verwenden, wenn sie Ihren Anforderungen entsprechen. Sie können diese Vorlagen auch auf verschiedene Weise bearbeiten, um Ihre Anforderungen zu erfüllen. Beispiel: Hinzufügen/Entfernen von Bildern, Hinzufügen/Entfernen von Text und Ändern von Text. Wenn keine der Vorlagen Ihren Anforderungen entspricht, können Sie mit dem Entwerfen ihres Layouts mithilfe einer leeren Vorlage beginnen.  
 
-Nachdem das Layout fertig ist, verwenden Sie die Sprache der Vorlage für [adaptive Karten,](/adaptive-cards/templating/language) um eine ERGEBNISLAYOUT-JSON zu erstellen, die zum Definieren eines Ergebnistyps verwendet wird. Sie ordnen die Ergebniseigenschaften dem Layout mithilfe des Zuordnungsschritts im Layout-Designer zu.  
+Nachdem das Layout fertig ist, verwenden Sie die Sprache der Vorlage für [adaptive Karten,](/adaptive-cards/templating/language) um eine Ergebnislayout-JSON zu erstellen, die zum Definieren eines Ergebnistyps verwendet wird. Sie ordnen die Ergebniseigenschaften dem Layout mithilfe des Zuordnungsschritts im Layout-Designer zu.  
 
 ## <a name="create-a-layout-on-your-own"></a>Erstellen eines eigenen Layouts
 
@@ -163,7 +163,7 @@ Wählen Sie ein Feld im Layout aus, um die Variablen hervorzuheben, die zugeordn
 
 ### <a name="show-snippet-on-search-result"></a>Codeausschnitt im Suchergebnis anzeigen  
 
-Dynamische Codeausschnitte, die für die **Inhaltseigenschaft** des Connectorergebnisses generiert werden, können im Suchergebnis angezeigt werden. **ResultSnippet** ist die Systemeigenschaft, die als Platzhaltereigenschaft für die Codeausschnitte fungiert, die für jedes Connector-Ergebnis generiert werden. Um die Codeausschnitte im Ergebnislayout anzuzeigen, muss die **ResultSnippet-Systemeigenschaft** einem entsprechenden Feld zugeordnet werden, z. B. "Description" im Suchergebnislayout. Codeausschnitte, die für jedes Ergebnis generiert werden, markieren auch die Übereinstimmungen im Codeausschnitt mit dem vom Benutzer eingegebenen Abfragebegriff.
+Dynamische Codeausschnitte, die für die **Inhaltseigenschaft** des Connectorergebnisses generiert werden, können im Suchergebnis angezeigt werden. **ResultSnippet** ist die Systemeigenschaft, die als Platzhaltereigenschaft für die Codeausschnitte fungiert, die für jedes Connector-Ergebnis generiert werden. Um die Codeausschnitte im Ergebnislayout anzuzeigen, muss die **ResultSnippet-Systemeigenschaft** einem entsprechenden Feld zugeordnet werden, z. B. Beschreibung im Suchergebnislayout. Codeausschnitte, die für jedes Ergebnis generiert werden, markieren auch die Übereinstimmungen im Codeausschnitt mit dem vom Benutzer eingegebenen Abfragebegriff.
 
 ## <a name="things-to-consider"></a>Zu berücksichtigende Aspekte
 

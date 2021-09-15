@@ -12,17 +12,17 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Einrichten des ServiceNow-Katalogs Graph Connectors für Microsoft Search
+description: Einrichten des ServiceNow-Katalog-Graph-Connectors für Microsoft Search
 ms.openlocfilehash: c46388a086f563eec36dbd7e5492d8065b1ae296
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973449"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59376049"
 ---
 <!---Previous ms.author: kam1 --->
 
-# <a name="servicenow-catalog-graph-connector-preview"></a>ServiceNow-Katalog Graph Connector (Vorschau)
+# <a name="servicenow-catalog-graph-connector-preview"></a>ServiceNow Catalog Graph Connector (Vorschau)
 
 Mit dem Microsoft Graph Connector für ServiceNow kann Ihre Organisation [Katalogelemente warten,](https://www.servicenow.com/products/it-service-automation-applications/service-catalog.html) die für alle Benutzer sichtbar oder mit Benutzerkriterienberechtigungen innerhalb Ihrer Organisation eingeschränkt sind. Nachdem Sie den Connector und den Indexinhalt von ServiceNow konfiguriert haben, können Endbenutzer von jedem Microsoft Search Client nach diesen Katalogelementen suchen.
 
@@ -31,7 +31,7 @@ Mit dem Microsoft Graph Connector für ServiceNow kann Ihre Organisation [Katalo
 
 Dieser Artikel richtet sich an Microsoft 365 Administratoren oder alle Personen, die einen ServiceNow-Katalog Graph Connector konfigurieren, ausführen und überwachen. Er ergänzt die allgemeinen Anweisungen im Artikel ["Einrichten Ihres Graph Connectors".](configure-connector.md) Wenn Sie dies noch nicht getan haben, lesen Sie den gesamten Artikel zum Einrichten ihres Graph Connectors, um den allgemeinen Einrichtungsprozess zu verstehen.
 
-Jeder Schritt im Setupprozess wird unten zusammen mit einem Hinweis aufgeführt, der angibt, dass Sie die allgemeinen Setupanweisungen oder andere Anweisungen befolgen sollten, die nur für ServiceNow Graph Connector gelten, einschließlich Informationen zur [Problembehandlung](#troubleshooting) und [Einschränkungen.](#limitations)
+Jeder Schritt im Setupprozess wird unten zusammen mit einem Hinweis aufgeführt, der angibt, dass Sie die allgemeinen Setupanweisungen oder andere Anweisungen befolgen sollten, die nur für ServiceNow Graph Connector gelten, einschließlich Informationen zur [Problembehandlung](#troubleshooting) und [zu Einschränkungen.](#limitations)
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Fügen Sie einen Graph Connector im Microsoft 365 Admin Center hinzu.
 Folgen Sie den allgemeinen [Setupanweisungen.](./configure-connector.md)
@@ -45,7 +45,7 @@ Um eine Verbindung mit Ihren ServiceNow-Daten herzustellen, benötigen Sie die *
 
 Zusammen mit dieser URL benötigen Sie ein **Dienstkonto** zum Einrichten der Verbindung mit ServiceNow sowie zum Zulassen, dass Microsoft Search die Katalogelemente regelmäßig basierend auf dem Aktualisierungszeitplan aktualisieren können. Das Dienstkonto benötigt Lesezugriff auf die folgenden **ServiceNow-Tabelleneinträge,** um verschiedene Entitäten erfolgreich durchforsten zu können.
 
-Feature | Erforderliche Tabellen für den Lesezugriff | Beschreibung
+Funktion | Erforderliche Tabellen für den Lesezugriff | Beschreibung
 --- | --- | ---
 Indexkatalogelemente, die <em>für "Jeder"</em> verfügbar sind | sc_cat_item | Zum Durchforsten von Katalogelementen
 Index- und Supportberechtigungen für Benutzerkriterien | sc_cat_item_user_criteria_mtom | Wer auf dieses Katalogelement zugreifen können
@@ -164,7 +164,7 @@ Die ServiceNow-Instanz benötigt die folgende Konfiguration:
    Anwendung | Global
    Benutzeranspruch | Sub
    Benutzerfeld | Benutzer-ID
-   Aktivieren der JTI-Anspruchsüberprüfung | Disabled
+   Aktivieren der JTI-Anspruchsüberprüfung | Deaktiviert
 
 5. Wählen Sie "Absenden und Aktualisieren des OAuth OIDC-Entitätsformulars" aus.
 
@@ -189,7 +189,7 @@ Verwenden Sie die Anwendungs-ID als Client-ID (aus Schritt 3.a) und den geheimen
 
 ## <a name="step-4-select-properties-and-filter-data"></a>Schritt 4: Auswählen von Eigenschaften und Filtern von Daten
 
-In diesem Schritt können Sie der ServiceNow-Datenquelle verfügbare Eigenschaften hinzufügen oder daraus entfernen. Microsoft 365 einige Eigenschaften standardmäßig bereits ausgewählt hat.
+In diesem Schritt können Sie der ServiceNow-Datenquelle verfügbare Eigenschaften hinzufügen oder daraus entfernen. Microsoft 365 hat bereits einige Eigenschaften standardmäßig ausgewählt.
 
 Mit einer ServiceNow-Abfragezeichenfolge können Sie Bedingungen für die Synchronisierung von Artikeln angeben. Es ist wie eine **Where-Klausel** in einer **SQL Select-Anweisung.** Sie können z. B. festlegen, dass nur aktive Elemente indiziert werden sollen. Informationen zum Erstellen einer eigenen Abfragezeichenfolge finden Sie unter [Generieren einer codierten Abfragezeichenfolge mithilfe eines Filters.](https://docs.servicenow.com/bundle/rome-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html)
 
@@ -197,7 +197,7 @@ Verwenden Sie die Schaltfläche "Vorschauergebnisse", um die Beispielwerte der a
 
 ## <a name="step-5-manage-search-permissions"></a>Schritt 5: Verwalten von Suchberechtigungen
 
-Der ServiceNow-Connector unterstützt Suchberechtigungen, die **für alle** oder nur Personen mit Zugriff auf **diese Datenquelle** sichtbar sind. Indizierte Daten werden in den Suchergebnissen angezeigt und sind für alle Benutzer in der Organisation bzw. für Benutzer sichtbar, die über die Berechtigung für Benutzerkriterien darauf zugreifen können. Wenn ein Katalogelement nicht mit einem Benutzerkriterium aktiviert ist, wird es in den Suchergebnissen aller Benutzer in der Organisation angezeigt.
+Der ServiceNow-Connector unterstützt Suchberechtigungen, die **für alle** oder nur Personen mit Zugriff auf **diese Datenquelle** sichtbar sind. Indizierte Daten werden in den Suchergebnissen angezeigt und sind für alle Benutzer in der Organisation bzw. für Alle Benutzer sichtbar, die über die Berechtigung "Benutzerkriterien" auf sie zugreifen können. Wenn ein Katalogelement nicht mit einem Benutzerkriterium aktiviert ist, wird es in den Suchergebnissen aller Benutzer in der Organisation angezeigt.
 
 ServiceNow Catalog Graph Connector unterstützt standardmäßige Berechtigungen für Benutzerkriterien ohne erweiterte Skripts. Wenn der Connector auf ein Benutzerkriterium mit erweitertem Skript trifft, werden nicht alle Daten, die diese Benutzerkriterien verwenden, in den Suchergebnissen angezeigt.
 
@@ -253,7 +253,7 @@ Wenn Ihre Organisation Single Sign-On (SSO) für ServiceNow aktiviert hat, haben
 Wenn im Verbindungsstatus eine unzulässige oder nicht autorisierte Antwort angezeigt wird, überprüfen Sie, ob das Dienstkonto Zugriff auf die in [Schritt 3: Verbindungseinstellungen](#step-3-connection-settings)erwähnten Tabellen benötigt. Überprüfen Sie, ob alle Spalten in den Tabellen Lesezugriff haben.
 
 #### <a name="22-check-if-servicenow-instance-behind-firewall"></a>2.2. Überprüfen, ob die ServiceNow-Instanz hinter der Firewall liegt
-Graph Der Connector kann Ihre ServiceNow-Instanz möglicherweise nicht erreichen, wenn er sich hinter einer Netzwerkfirewall befindet. Sie müssen explizit den Zugriff auf Graph Connector-Dienst zulassen. Den öffentlichen IP-Adressbereich Graph Connector Service finden Sie in der folgenden Tabelle. Fügen Sie sie basierend auf Ihrer Mandantenregion ihrer Zulassungsliste für ServiceNow-Instanzennetzwerk hinzu.
+Graph Der Connector kann Ihre ServiceNow-Instanz möglicherweise nicht erreichen, wenn er sich hinter einer Netzwerkfirewall befindet. Sie müssen den Zugriff auf Graph Connectordienst explizit zulassen. Den öffentlichen IP-Adressbereich Graph Connector Service finden Sie in der folgenden Tabelle. Fügen Sie sie basierend auf Ihrer Mandantenregion ihrer Zulassungsliste für ServiceNow-Instanzennetzwerk hinzu.
 
  Umgebung | Region | Bereich
 --- | --- | ---

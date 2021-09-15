@@ -14,21 +14,21 @@ search.appverid:
 - MOE150
 description: Übersicht über Microsoft Graph Connectors für Microsoft Search
 ms.openlocfilehash: 006ab3f56eb4976b44904e5191ae8fd256c8d5de
-ms.sourcegitcommit: 3e069fd920b5fcdfe97a0261930447e9e87d9013
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "58973525"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375983"
 ---
 <!---Previous ms.author: monaray --->
 
 # <a name="overview-of-microsoft-graph-connectors"></a>Übersicht über Microsoft Graph-Connectors
 
-[Microsoft Search](./overview-microsoft-search.md) indiziert alle [Microsoft 365](https://www.microsoft.com/microsoft-365) Daten, damit sie für Benutzer durchsucht werden können. Mit Microsoft Graph Connectors kann Ihre Organisation Drittanbieterdaten so indizieren, dass sie in Microsoft Search Ergebnissen angezeigt werden. Dieses Feature erweitert die Arten von Inhaltsquellen, die in Ihren Microsoft 365-Produktivitäts-Apps und im breiteren Microsoft-Ökosystem durchsuchbar sind. Die Drittanbieterdaten können lokal oder in den öffentlichen oder privaten Clouds gehostet werden.
+[Microsoft Search](./overview-microsoft-search.md) indiziert alle [Microsoft 365](https://www.microsoft.com/microsoft-365) Daten, damit sie für Benutzer durchsuchbar sind. Mit Microsoft Graph Connectors kann Ihre Organisation Drittanbieterdaten so indizieren, dass sie in Microsoft Search Ergebnissen angezeigt werden. Dieses Feature erweitert die Arten von Inhaltsquellen, die in Ihren Microsoft 365-Produktivitäts-Apps und im breiteren Microsoft-Ökosystem durchsuchbar sind. Die Drittanbieterdaten können lokal oder in den öffentlichen oder privaten Clouds gehostet werden.
 
 <!---link Microsoft Graph reference in line 19 when we have access to relevant documentation--->
 
-Dieser Artikel soll Microsoft 365 Administratoren helfen, die Ressourcen zu finden, die für die Beantwortung der folgenden Fragen verfügbar sind:
+Dieser Artikel soll Microsoft 365 Administratoren dabei helfen, die Ressourcen zu finden, die für die Beantwortung der folgenden Fragen verfügbar sind:
 
 * [Welche Datenquellen können mit Microsoft Search verbunden werden?](#what-data-sources-can-be-connected-to-microsoft-search)
 * [Wie verwalte ich meine Verbindungen?](#how-do-i-manage-my-connections)
@@ -77,7 +77,7 @@ Sie können über von Microsoft erstellte Connectors eine Verbindung mit den fol
 * [ServiceNow-Katalog (Vorschau)](servicenow-catalog-connector.md)
 
 
-Der [Microsoft Graph Connectors-Katalog](https://www.microsoft.com/microsoft-search/connectors) enthält eine kurze Beschreibung dieser Connectors. Wenn Sie bereit sind, eine dieser Datenquellen mit Ihrem Mandanten zu verbinden, lesen Sie unbedingt die [Setupübersicht](configure-connector.md) und alle anderen Artikel im Abschnitt "Setup connectors by Microsoft", die für Ihre Datenquelle gelten.
+Der [Microsoft Graph Connectors-Katalog](https://www.microsoft.com/microsoft-search/connectors) enthält eine kurze Beschreibung dieser Connectors. Wenn Sie bereit sind, eine dieser Datenquellen mit Ihrem Mandanten zu verbinden, lesen Sie unbedingt die [Setupübersicht](configure-connector.md) und alle anderen Artikel in den Setupconnectors von Microsoft, die für Ihre Datenquelle gelten.
 
 ### <a name="microsoft-graph-connectors-by-our-partners"></a>Microsoft Graph Connectors von unseren Partnern
 
@@ -103,7 +103,7 @@ Obwohl Microsoft Graph Connectors und Microsoft Search-APIs jetzt allgemein verf
 
 Zu den Konnektoren und Features in der Vorschau gehören:
 
-* [Azure DevOps Connector](azure-devops-connector.md)
+* [Azure DevOps-Connector](azure-devops-connector.md)
 * [Confluence Cloud Connector](confluence-cloud-connector.md)
 * [ServiceNow-Katalogconnector](servicenow-catalog-connector.md)
 * [Verwalten benutzerdefinierter Filter](custom-filters.md)
@@ -130,7 +130,7 @@ Der nächste Schritt besteht darin, die Suchergebnisse wie in diesem Artikel emp
 
 * Wenn Sie einen von Microsoft erstellten Connector **veröffentlichen,** kann es einige Minuten dauern, bis die Verbindung erstellt wurde. Während dieser Zeit zeigt die Verbindung ihren Status als ausstehend an.
 
-* Der Aufnahmedurchsatz wird bei ungefähr vier Elementen pro Sekunde gedrosselt.
+* Der Aufnahmedurchsatz wird bei etwa vier Elementen pro Sekunde gedrosselt.
 
 * Schemaupdates werden nicht unterstützt. Nachdem Sie eine Verbindungseinrichtung erstellt haben, gibt es keine Möglichkeit, das Schema zu aktualisieren. Sie können die Verbindung nur löschen und erneut erstellen.
 

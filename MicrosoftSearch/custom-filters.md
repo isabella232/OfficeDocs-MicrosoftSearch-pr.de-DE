@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Verwalten von Filtern für die Verwendung im SERP
 ms.openlocfilehash: c614d4b60c746f2e18fdb3352281891ea5134373
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973459"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375953"
 ---
 # <a name="manage-filters"></a>Verwalten von Filtern
 
@@ -43,7 +43,7 @@ Filter, die für Vertikale im Organisationsbereich konfiguriert sind, sind auf O
 
 ## <a name="create-organization-level-filters"></a>Erstellen von Filtern auf Organisationsebene
 
-1. Wechseln  [Sie in Microsoft 365 Admin Center](https://admin.microsoft.com/)zu  [**"Vertikalen".**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)
+1. Wechseln  [Sie in Microsoft 365 Admin Center](https://admin.microsoft.com/)zu  [**"Verticals"**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)
 2. Wählen Sie Ihre bevorzugte Vertikale aus, in der Sie einen Filter erstellen möchten, und klicken Sie auf **"Bearbeiten".**  
 3. Navigieren Sie im Assistenten der vertikalen Synchronisierung zum Schritt "Filter".
 4. Klicken Sie auf **"Filter hinzufügen",** um Filter für verfeinerbare verwaltete Eigenschaften zu konfigurieren.
@@ -52,7 +52,7 @@ Filter, die für Vertikale im Organisationsbereich konfiguriert sind, sind auf O
 ## <a name="create-sharepoint-site-level-filters"></a>Erstellen SharePoint Filter auf Websiteebene
 
 1. Wechseln [Sie in SharePoint Admin Center](https://sharepoint.com/)zu Einstellungen.
-2. Suchen Sie nach dem Abschnitt Microsoft Search, und wählen Sie dann **konfigurieren Microsoft Search für diese Websitesammlung** aus.
+2. Suchen Sie nach dem Abschnitt Microsoft Search, und wählen Sie dann **Microsoft Search für diese Websitesammlung** konfigurieren aus.
 3. Wechseln Sie im Navigationsbereich zu "Benutzerdefinierte Oberfläche", und wählen Sie dann  **"Vertikal" aus.**
 4. Wählen Sie Ihre bevorzugte Vertikale aus, um den Filter zu erstellen, und klicken Sie auf **"Bearbeiten".**
 5. Navigieren Sie im Assistenten der vertikalen Synchronisierung zum Schritt "Filter".
@@ -75,5 +75,5 @@ Vertikale Elemente können mit einer oder mehreren Inhaltsquellen erstellt werde
 - Sie sind auf insgesamt 50 Filter beschränkt.
 - Die Reihenfolge der vordefinierten Filter kann nicht angepasst werden.
 - Filter werden für OneDrive Inhalt nicht unterstützt. Filterwerte, die Suchergebnissen aus OneDrive Inhalt entsprechen, werden nicht in Filtern angezeigt.
-- Benutzerdefinierte Filterwerte zeigen Optionen aus SharePoint Und nicht aus One Drive-Inhalten an.Wenn Sie beispielsweise einen benutzerdefinierten Filter für "Autor" erstellen und SharePoint Inhalt nur Ergebnisse von einem Autor enthält, "Amy", und OneDrive Inhalt nur Ergebnisse von einem Autor namens "John" enthält, zeigt der benutzerdefinierte Filter "Autor" "Amy" als einzige Option an.
+- Benutzerdefinierte Filterwerte zeigen Optionen aus SharePoint Inhalt und nicht aus One Drive-Inhalten an.Wenn Sie beispielsweise einen benutzerdefinierten Filter für "Autor" erstellen und SharePoint Inhalt nur Ergebnisse von einem Autor enthält, "Amy", und OneDrive Inhalt nur Ergebnisse von einem Autor namens "John" enthält, zeigt der benutzerdefinierte Filter "Autor" "Amy" als einzige Option an.
 - Ein Filterwert, der für SharePoint Inhalt angezeigt wird, wird bei Verwendung auf OneDrive Inhalt angewendet.

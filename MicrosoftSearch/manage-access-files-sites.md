@@ -13,15 +13,15 @@ search.appverid:
 - MOE150
 description: Eine Übersicht darüber, wie Administratoren sicherstellen können, dass der Zugriff auf Websites und Dateien innerhalb ihrer Organisation ordnungsgemäß eingeschränkt ist.
 ms.openlocfilehash: c19442e1d89ddfe65a772213a8b0225ca680d699
-ms.sourcegitcommit: 3e069fd920b5fcdfe97a0261930447e9e87d9013
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "58973818"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375846"
 ---
 # <a name="manage-access-to-files-and-sites"></a>Verwalten des Zugriffs auf Dateien und Websites
 
-Nicht jede Datei oder Website sollte für jeden in Ihrer Organisation verfügbar sein. Administratoren und Benutzer können den Zugriff auf vertrauliche oder vertrauliche Informationen mithilfe von Lösungen verwalten, die ihre spezifischen Probleme am besten beheben. Wenn angemessene Zugriffssteuerungen nicht konsistent angewendet werden, kann dies zu einer Als "Überfreigabe" bezeichneten Aktion führen. Durch die Einfacherung der Suche nach Informationen, die in Ihrer Organisation freigegeben sind, kann versehentlich über Microsoft Search auf Dateien und Websites mit unzulässigen Einschränkungen zugegriffen werden.
+Nicht jede Datei oder Website sollte für jeden in Ihrer Organisation verfügbar sein. Administratoren und Benutzer können den Zugriff auf vertrauliche oder vertrauliche Informationen mithilfe von Lösungen verwalten, die ihre spezifischen Probleme am besten lösen. Wenn angemessene Zugriffssteuerungen nicht konsistent angewendet werden, kann dies zu einer Als "Oversharing" bezeichneten Aktion führen. Indem Sie es einfacher machen, informationen zu finden, die in Ihrer Organisation freigegeben sind, kann versehentlich mithilfe von Microsoft Search auf Dateien und Websites mit unzulässigen Einschränkungen zugegriffen werden.
 
 Suchadministratoren können diese Probleme bei der Überfreigabe nicht beheben. Dateien und Websites ohne eingeschränkten Zugriff werden in internen Suchergebnissen und über andere Suchmöglichkeiten angezeigt. Wenn jedoch Steuerelemente zum Verhindern von Überfreigaben vorhanden sind, werden alle Alleen einschließlich der Suche geschlossen.
 
@@ -58,4 +58,4 @@ Um die Datei- und Websitefreigabe zwischen Gruppen einzuschränken, z. B. einem 
 
 ## <a name="get-access-insights"></a>Abrufen von Zugriffserkenntnissen
 
-Die Zugriffsgovernance bietet Einblicke in Websites mit den sensibelsten Dokumenten und überlasteten Websites in Ihrer Organisation. Eine Übersicht finden Sie unter [Neuerungen bei Sicherheit und Compliance in SharePoint und OneDrive.](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/what-s-new-in-security-and-compliance-in-sharepoint-and-onedrive/ba-p/1696705) Sie müssen Ihre Organisation für diese Vorschau [nominieren.](https://forms.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR3-O9WDTKhhDtgWfphwS9YhUM0hJNklNRkZKMlhLNDRZNzlEQlVDSjdZVi4u)
+Die Zugriffsgovernance bietet Einblicke in Websites mit den sensibelsten Dokumenten und überlasteten Websites in Ihrer Organisation. Eine Übersicht finden Sie unter ["Neuigkeiten in Sicherheit und Compliance in SharePoint und OneDrive".](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/what-s-new-in-security-and-compliance-in-sharepoint-and-onedrive/ba-p/1696705) Sie müssen Ihre Organisation für diese Vorschau [nominieren.](https://forms.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR3-O9WDTKhhDtgWfphwS9YhUM0hJNklNRkZKMlhLNDRZNzlEQlVDSjdZVi4u)

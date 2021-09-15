@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Erste Schritte für Ihre Organisation mithilfe von Microsoft Search in SharePoint Online
 ms.openlocfilehash: b506c2259b514b604f4285d3ec8351ce9ac860db
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973646"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375934"
 ---
 # <a name="get-started-with-microsoft-search-in-sharepoint"></a>Erste Schritte mit Microsoft Search in SharePoint
 
@@ -28,11 +28,11 @@ Microsoft Search in SharePoint ist die moderne Suchumgebung in [SharePoint Onlin
 
 Um Ihre Organisation mit Microsoft Search in SharePoint zu beginnen, führen Sie die Schritte in den folgenden Abschnitten aus.
 
-## <a name="prepare-for-microsoft-search-in-sharepoint"></a>Vorbereiten auf Microsoft Search in SharePoint
+## <a name="prepare-for-microsoft-search-in-sharepoint"></a>Vorbereiten der Microsoft Search in SharePoint
 
 Benutzer können nur [SharePoint](http://sharepoint.com/) indizierten Inhalt finden. Microsoft Search und die klassische Suche verwenden denselben Index für SharePoint Inhalte, der automatisch durchforstet und indiziert wird. 
 
-Einige Organisationen verwenden sowohl die klassische Suche als auch Microsoft Search in SharePoint. Informationen zum Vermeiden von Auswirkungen klassischer Sucheinstellungen auf Microsoft Search in SharePoint finden Sie unter [Unterschiede zwischen der klassischen und modernen Suchumgebung in SharePoint Online.](/sharepoint/differences-classic-modern-search)
+Einige Organisationen verwenden sowohl die klassische Suche als auch Microsoft Search in SharePoint. Informationen zum Vermeiden von Auswirkungen klassischer Sucheinstellungen auf Microsoft Search in SharePoint finden Sie unter [Unterschiede zwischen der klassischen und der modernen Suchumgebung in SharePoint Online.](/sharepoint/differences-classic-modern-search)
 
 Befolgen Sie die Richtlinien zum [Einrichten Microsoft Search](./setup-microsoft-search.md).
 

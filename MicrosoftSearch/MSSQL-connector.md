@@ -14,21 +14,21 @@ search.appverid:
 - MOE150
 description: Richten Sie den Azure SQL- und Microsoft SQL Graph-Connector für Microsoft Search ein.
 ms.openlocfilehash: ae953d55de4a4f5e8afc32cc6b55f6e0b32e2811
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973517"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375881"
 ---
 <!---Previous ms.author: vivg --->
 
 # <a name="azure-sql-and-microsoft-sql-server-graph-connectors"></a>Azure SQL und Microsoft SQL Server Graph Connectors
 
-Der Microsoft SQL Server- oder Azure SQL Graph-Connector ermöglicht Es Ihrer Organisation, Daten aus einer lokalen SQL Server-Datenbank oder einer datenbank, die in Ihrer Azure SQL Instanz in der Cloud gehostet wird, zu ermitteln und zu indizieren.
-Der Graph-Connector indiziert den angegebenen Inhalt in Microsoft Search. Um den Index mit Quelldaten auf dem neuesten Stand zu halten, unterstützt er regelmäßige vollständige und inkrementelle Durchforstungen. Mit diesen SQL Connectors können Sie auch den Zugriff auf Suchergebnisse für bestimmte Benutzer einschränken.
+Der Microsoft SQL Server- oder Azure SQL Graph-Connector ermöglicht Es Ihrer Organisation, Daten aus einer lokalen SQL Server-Datenbank oder einer in Ihrer Azure SQL Instanz in der Cloud gehosteten Datenbank zu ermitteln und zu indizieren.
+Der Graph Connector indiziert den angegebenen Inhalt in Microsoft Search. Um den Index mit Quelldaten auf dem neuesten Stand zu halten, unterstützt er regelmäßige vollständige und inkrementelle Durchforstungen. Mit diesen SQL Connectors können Sie auch den Zugriff auf Suchergebnisse für bestimmte Benutzer einschränken.
 
 > [!NOTE]
-> Lesen Sie den Artikel [**zum Einrichten ihres Graph Connectors,**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten von Connectors Graph zu verstehen.
+> Lesen Sie den Artikel [**"Setup Your Graph connector",**](configure-connector.md) um die allgemeinen Anweisungen zum Einrichten von Connectors Graph zu verstehen.
 
 Dieser Artikel richtet sich an alle Personen, die einen Azure SQL und einen Microsoft SQL Server Graph Connector konfigurieren, ausführen und überwachen. Es ergänzt den allgemeinen Setupprozess und zeigt Anweisungen, die nur für den Azure SQL und den Microsoft SQL Server Graph Connector gelten. Dieser Artikel enthält auch Informationen zu [Einschränkungen](#limitations) für den Microsoft SQL-Server und Azure SQL Connectors.
 
@@ -39,7 +39,7 @@ Dieser Artikel richtet sich an alle Personen, die einen Azure SQL und einen Micr
 Um auf Ihre lokalen Drittanbieterdaten zugreifen zu können, müssen Sie den Graph Connector-Agent installieren und konfigurieren. Weitere Informationen finden Sie unter [Installieren des Graph Connector-Agents.](graph-connector-agent.md)
 
 >[!NOTE]
->Wenn Sie beim Konfigurieren des Microsoft SQL Server Graph Connectors Windows Authentifizierung verwenden, muss der Benutzer, mit dem Sie sich anmelden möchten, über interaktive Anmelderechte für den Computer verfügen, auf dem Graph Connector-Agent installiert ist. Informationen zur Überprüfung der Anmelderechte finden Sie in der Dokumentation zur Verwaltung von [Anmelderichtlinien.](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management)
+>Wenn Sie beim Konfigurieren des Microsoft SQL Server Graph Connectors Windows Authentifizierung verwenden, muss der Benutzer, bei dem Sie sich anmelden möchten, über interaktive Anmelderechte für den Computer verfügen, auf dem Graph Connector-Agent installiert ist. Informationen zur Überprüfung der Anmelderechte finden Sie in der Dokumentation zur Verwaltung von [Anmelderichtlinien.](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management)
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Schritt 1: Hinzufügen eines Graph Connectors im Microsoft 365 Admin Center
 
@@ -61,7 +61,7 @@ Für Azure SQL Connector müssen Sie eine App in Azure Active Directory registri
 
 Nachdem Sie die App-Registrierung abgeschlossen und den App-Namen, die Anwendungs-ID (Client-ID) und die Mandanten-ID notieren, müssen Sie [einen neuen geheimen Clientschlüssel generieren.](/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret) Der geheime Clientschlüssel wird nur einmal angezeigt. Beachten Sie, & den geheimen Clientschlüssel sicher speichern. Verwenden Sie die Client-ID und den geheimen Clientschlüssel, während Sie eine neue Verbindung in Microsoft Search konfigurieren.
 
-Zum Hinzufügen der registrierten App zu Ihrem Azure SQL-Datenbank müssen Sie Folgendes ausführen:
+Um die registrierte App zu Ihrem Azure SQL-Datenbank hinzuzufügen, müssen Sie Folgendes ausführen:
 
 - Melden Sie sich bei Ihrer Azure SQL DB an.
 - Öffnen eines neuen Abfragefensters
@@ -77,9 +77,9 @@ Um den Microsoft SQL Server Connector mit einer Datenquelle zu verbinden, müsse
 
 > [!NOTE]
 > - Ihre Datenbank muss SQL Server Version 2008 oder höher ausgeführt werden, damit der Microsoft SQL Server Connector eine Verbindung herstellen kann.
-> - Der Azure SQL Graph-Connector lässt nur die Aufnahme von einer Azure SQL Instanz im selben [Mandanten](/azure/active-directory/develop/quickstart-create-new-tenant) ab Microsoft 365 zu. Der mandantenübergreifende Datenfluss wird nicht unterstützt.
+> - Der Azure SQL Graph-Connector ermöglicht nur die Aufnahme von einer Azure SQL Instanz im selben [Mandanten](/azure/active-directory/develop/quickstart-create-new-tenant) wie Microsoft 365. Der mandantenübergreifende Datenfluss wird nicht unterstützt.
 
-Für den Azure SQL-Connector müssen Sie nur den Servernamen oder die IP-Adresse angeben, mit der Sie eine Verbindung herstellen möchten. Azure SQL Connector unterstützt nur Azure Active Directory Open ID Connect (OIDC)-Authentifizierung, um eine Verbindung mit der Datenbank herzustellen.
+Für den Azure SQL Connector müssen Sie nur den Servernamen oder die IP-Adresse angeben, mit der Sie eine Verbindung herstellen möchten. Azure SQL Connector unterstützt nur Azure Active Directory Open ID Connect (OIDC)-Authentifizierung, um eine Verbindung mit der Datenbank herzustellen.
 
 Für zusätzliche Sicherheit können Sie IP-Firewallregeln für Ihre Azure-SQL Server oder -Datenbank konfigurieren. Weitere Informationen zum Einrichten von IP-Firewallregeln finden Sie in der Dokumentation zu [IP-Firewallregeln.](/azure/azure-sql/database/firewall-configure) Fügen Sie die folgenden Client-IP-Bereiche in den Firewalleinstellungen hinzu.
 
@@ -89,7 +89,7 @@ Für zusätzliche Sicherheit können Sie IP-Firewallregeln für Ihre Azure-SQL S
 | EUR | 20.54.41.208/30, 51.105.159.88/30 |
 | APC | 52.139.188.212/30, 20.43.146.44/30 |
 
-Zum Durchsuchen der Datenbankinhalte müssen Sie beim Konfigurieren des Connectors SQL Abfragen angeben. Diese SQL Abfragen müssen alle Datenbankspalten benennen, die Indiziert werden sollen (d. h. Quelleigenschaften), einschließlich aller SQL Verknüpfungen, die ausgeführt werden müssen, um alle Spalten abzurufen. Um den Zugriff auf Suchergebnisse einzuschränken, müssen Sie zugriffssteuerungslisten (Access Control Lists, ACLs) innerhalb SQL Abfragen angeben, wenn Sie den Connector konfigurieren.
+Zum Durchsuchen der Datenbankinhalte müssen Sie beim Konfigurieren des Connectors SQL Abfragen angeben. Diese SQL Abfragen müssen alle Datenbankspalten benennen, die Indiziert werden sollen (d. h. Quelleigenschaften), einschließlich aller SQL Verknüpfungen, die ausgeführt werden müssen, um alle Spalten abzurufen. Um den Zugriff auf Suchergebnisse einzuschränken, müssen Sie zugriffssteuerungslisten (Access Control Lists, ACLs) in SQL Abfragen angeben, wenn Sie den Connector konfigurieren.
 
 ## <a name="step-3a-full-crawl-required"></a>Schritt 3a: Vollständige Durchforstung (erforderlich)
 
@@ -114,7 +114,7 @@ Die Verwendung der einzelnen ACL-Spalten in der obigen Abfrage wird unten beschr
 
 - **AllowedUsers:** Diese Spalte gibt die Liste der Benutzer-IDs an, die auf die Suchergebnisse zugreifen können. Im folgenden Beispiel würde die Liste der Benutzer: john@contoso.com, keith@contoso.com und lisa@contoso.com nur Zugriff auf einen Datensatz mit OrderId = 12 haben.
 - **AllowedGroups:** Diese Spalte gibt die Gruppe von Benutzern an, die auf die Suchergebnisse zugreifen können. Im folgenden Beispiel hätten Gruppen-sales-team@contoso.com nur Zugriff auf den Datensatz mit OrderId = 12.
-- **DeniedUsers**: Diese Spalte gibt die Liste der Benutzer an, die **keinen** Zugriff auf die Suchergebnisse haben. Im folgenden Beispiel haben Benutzer john@contoso.com und keith@contoso.com keinen Zugriff auf datensätze mit OrderId = 13, während alle anderen Benutzer Zugriff auf diesen Datensatz haben.
+- **DeniedUsers**: Diese Spalte gibt die Liste der Benutzer an, die **keinen** Zugriff auf die Suchergebnisse haben. Im folgenden Beispiel haben Benutzer john@contoso.com und keith@contoso.com keinen Zugriff auf den Datensatz mit OrderId = 13, während alle anderen Benutzer Zugriff auf diesen Datensatz haben.
 - **DeniedGroups:** Diese Spalte gibt die Gruppe von Benutzern an, die **keinen** Zugriff auf die Suchergebnisse haben. Im folgenden Beispiel haben Gruppen engg-team@contoso.com und pm-team@contoso.com keinen Zugriff auf den Datensatz mit OrderId = 15, während alle anderen Zugriff auf diesen Datensatz haben.  
 
 ![Beispieldaten, die OrderTable und AclTable mit Beispieleigenschaften anzeigen.](media/MSSQL-ACL1.png)
@@ -130,14 +130,14 @@ In der folgenden Tabelle sind die SQL Datentypen zusammengefasst, die in den MS-
 | Exakt numerisch | Bit | boolean |
 | Ungefährer numerischer Wert | Gleitkommazahl <br> Real | double |
 | Zeichenfolge | Char <br> Varchar <br> text | string |
-| Unicode-Zeichenzeichenfolgen | Nchar <br> Nvarchar <br> Ntext | Zeichenfolge |
-| Andere Datentypen | Uniqueidentifier | Zeichenfolge |
+| Unicode-Zeichenzeichenfolgen | Nchar <br> Nvarchar <br> Ntext | string |
+| Andere Datentypen | Uniqueidentifier | string |
 
 Für alle anderen Datentypen, die derzeit nicht direkt unterstützt werden, muss die Spalte explizit in einen unterstützten Datentyp umgewandelt werden.
 
 ### <a name="watermark-required"></a>Wasserzeichen (erforderlich)
 
-Um eine Überladung der Datenbank zu verhindern, stapelt und setzt der Konnektor Vollständige Durchforstungsabfragen mit einer Vollständigdurchforstungs-Wasserzeichenspalte fort. Mithilfe des Werts der Wasserzeichenspalte wird jeder nachfolgende Batch abgerufen und die Abfrage vom letzten Prüfpunkt fortgesetzt. Im Wesentlichen steuert dieser Mechanismus die Datenaktualisierung für vollständige Durchforstungen.
+Um eine Überladung der Datenbank zu verhindern, stapelt der Konnektor Vollständige Durchforstungsabfragen mit einer Vollständigdurchforstungs-Wasserzeichenspalte und setzt sie fort. Mithilfe des Werts der Wasserzeichenspalte wird jeder nachfolgende Batch abgerufen und die Abfrage vom letzten Prüfpunkt fortgesetzt. Im Wesentlichen steuert dieser Mechanismus die Datenaktualisierung für vollständige Durchforstungen.
 
 Erstellen Sie Abfrageausschnitte für Wasserzeichen, wie in diesen Beispielen gezeigt:
 
@@ -164,7 +164,7 @@ Es wird erwartet, dass jede ACL-Spalte eine mehrwertige Spalte ist. Diese mehrer
 
 Die folgenden ID-Typen werden für die Verwendung als ACLs unterstützt:
 
-- **Benutzerprinzipalname (USER Principal Name, UPN):** Ein Benutzerprinzipalname (User Principal Name, UPN) ist der Name eines Systembenutzers im E-Mail-Adressformat. Ein UPN (z. B. john.doe@domain.com) besteht aus dem Benutzernamen (Anmeldename), dem Trennzeichen (dem @-Symbol) und dem Domänennamen (UPN-Suffix).
+- **Benutzerprinzipalname (USER Principal Name, UPN):** Ein Benutzerprinzipalname (User Principal Name, UPN) ist der Name eines Systembenutzers im E-Mail-Adressformat. Ein UPN (z. B. john.doe@domain.com) besteht aus benutzername (Anmeldename), Trennzeichen (@Symbol) und Domänenname (UPN-Suffix).
 - **Azure Active Directory (AAD)-ID:** In Azure AD verfügt jeder Benutzer oder jede Gruppe über eine Objekt-ID, die etwa wie "e0d3ad3d-0000-1111-2222-3c5f5c52ab9b" aussieht.
 - **Active Directory (AD)-Sicherheits-ID:** Bei einem lokalen AD-Setup verfügen alle Benutzer und Gruppen über einen unveränderlichen, eindeutigen Sicherheitsbezeichner, der etwa wie "S-1-5-21-3878594291-211595936-132693609-65242" aussieht.
 

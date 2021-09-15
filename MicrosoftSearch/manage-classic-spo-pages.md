@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Verwenden von Microsoft Search auf klassischen SharePoint Seiten
 ms.openlocfilehash: 5b9c40da63ccf3b28cf2d61282763d3d4f62f867
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973791"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375841"
 ---
 # <a name="classic-pages-and-microsoft-search"></a>Klassische Seiten und Microsoft Search
 
@@ -40,7 +40,7 @@ Nach dem Wechsel zu Microsoft Search werden auf klassischen Seiten der Website d
 
 ## <a name="staying-with-the-classic-search-experience"></a>Mit der klassischen Suchumgebung bleiben
 
-Wenn Ihre Website die oben aufgeführten Kriterien erfüllt, Sie jedoch nicht möchten, dass sie zur Microsoft Search wechselt, können Sie die Verwendung der folgenden Befehle als Website- oder Websitesammlungsbesitzer deaktivieren.
+Wenn Ihre Website die oben aufgeführten Kriterien erfüllt, Sie jedoch nicht möchten, dass sie zur Microsoft Search Wechselt, können Sie die Verwendung der folgenden Befehle als Website- oder Websitesammlungsbesitzer deaktivieren.
 
 Sie können diesen Befehl jederzeit vor oder nach dem Wechsel verwenden, sodass Sie ganz einfach zur suchumgebung zurückkehren können, die Sie zuvor hatten.
 
@@ -67,7 +67,7 @@ Set-PnPSearchSettings -Scope Site -SearchBoxInNavBar ModernOnly
 
 ## <a name="opting-into-microsoft-search"></a>Anmelden bei Microsoft Search
 
-Für Websites, die die oben aufgeführten Kriterien nicht erfüllen, oder für bestimmte Websites in einer Websitesammlung, die sich dafür entschieden haben, klassisch zu bleiben, können Sie die Microsoft Search-Oberfläche manuell aktivieren.
+Für Websites, die die oben aufgeführten Kriterien nicht erfüllen, oder für bestimmte Websites in einer Websitesammlung, die sich dafür entschieden haben, klassisch zu bleiben, können Sie die Microsoft Search-Umgebung manuell aktivieren.
 
 Um diese Einstellung für eine bestimmte Website zu ändern, können Sie den folgenden Befehl verwenden:
 

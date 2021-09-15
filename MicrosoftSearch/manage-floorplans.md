@@ -11,13 +11,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Das Grundriss-Feature in Microsoft Search hilft Benutzern, Personen, Büros und andere Einrichtungen in einem Gebäude zu finden.
+description: Die Grundrissefunktion in Microsoft Search hilft Benutzern, Personen, Büros und andere Einrichtungen in einem Gebäude zu finden.
 ms.openlocfilehash: beeef26cc7413da654cc3ab01d92aa6cdc74e5cb
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973667"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59334527"
 ---
 # <a name="manage-floor-plans"></a>Verwalten von Grundrissenplänen
 
@@ -51,7 +51,7 @@ Informationen zum Anzeigen und Aktualisieren von DWG-Dateien finden Sie im Absch
 
 Der Bürostandort eines Benutzers ist eine Kombination aus einem Gebäudecode und einer Raumbezeichnung. Wenn die Gebäudecode beispielsweise *2* und die Raumbeschriftung *1173* ist, würde der Bürostandort *2/1173* sein.
 
-Hinzufügen oder Aktualisieren von Office-Speicherorten für jeden Benutzer in Ihrer Organisation. Sie können den Bürostandort im Benutzerprofil im [Microsoft 365 Admin Center](https://admin.microsoft.com) ändern oder in Ihrem lokalen Active Directory so ändern, dass es mit Azure Active Directory synchronisiert wird. *PhysicalDeliveryOfficeName* ist das Feld, das für den Bürostandort verwendet wird. Wenn Ihre Raumbeschriftungen keine Bodennummern enthalten, finden Sie in den häufig gestellten Fragen Tipps.
+Hinzufügen oder Aktualisieren von Office-Speicherorten für jeden Benutzer in Ihrer Organisation. Sie können den Bürostandort im Benutzerprofil im [Microsoft 365 Admin Center](https://admin.microsoft.com) oder in Ihrem lokalen Active Directory so ändern, dass es mit Azure Active Directory synchronisiert wird. *PhysicalDeliveryOfficeName* ist das Feld, das für den Bürostandort verwendet wird. Wenn Ihre Raumbeschriftungen keine Bodennummern enthalten, finden Sie in den häufig gestellten Fragen Tipps.
 
 In diesem Beispiel befindet sich das Büro von Allan im Raum 1173 im Stock 1 von Gebäude 2.
 ![floorplans-userlestview.png.](media/floorplans-userlistview.png)
@@ -61,7 +61,7 @@ In diesem Beispiel befindet sich das Büro von Allan im Raum 1173 im Stock 1 von
 
 ### <a name="step-4-verify-office-location"></a>Schritt 4: Überprüfen des Bürostandorts
 
-Verwenden Sie **Microsoft Search,** um einen Benutzer zu finden und zu überprüfen, ob sein Büroort korrekt angezeigt wird. Wenn Sie gerade Speicherorte aktualisiert haben, müssen Sie möglicherweise bis zu **72 Stunden** warten, bis die Updates in den Suchergebnissen angezeigt werden.
+Verwenden Sie **Microsoft Search,** um einen Benutzer zu finden und zu überprüfen, ob sein Bürostandort korrekt angezeigt wird. Wenn Sie gerade Speicherorte aktualisiert haben, müssen Sie möglicherweise bis zu **72 Stunden** warten, bis die Updates in den Suchergebnissen angezeigt werden.
 
 ![floorplans-peoplecard.png.](media/floorplans-peoplecard.png)
 
@@ -86,7 +86,7 @@ Wechseln Sie [im Admin Center](https://admin.microsoft.com)zu [**Grundrissenplä
 1. Wechseln [Sie](https://admin.microsoft.com)im Admin Center zu [**"Grundrisse".**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans)
 2. Wählen Sie in der Dropdownliste ein Gebäude aus, und wählen Sie **"Weiter"** aus. Wenn das Gebäude nicht aufgeführt ist, wechseln Sie zurück, und [fügen Sie Gebäudestandorte hinzu.](#step-5-add-building-locations)
 3. Wählen Sie **Hochladen Dateien** aus, und wählen Sie dann den Grundplan aus, den Sie hochladen.
-4. Wenn der Upload abgeschlossen ist, müssen Sie die Floor-Nummer eingeben, die in der Grundrissdatei dargestellt ist. Wählen Sie dann **Weiter** aus.
+4. Wenn der Upload abgeschlossen ist, müssen Sie die Bodenfläche eingeben, die in der Grundrissdatei dargestellt ist. Wählen Sie dann **Weiter** aus.
 5. (Optional) Wenn Ihr Stockwerk Über- oder Zonen verfügt, geben Sie dieses Detail ein.
 6. Es wird ein Prüfbildschirm mit der Anzahl der Bürostandorte angezeigt, die den Grundrissen zugeordnet wurden. Wählen Sie **Details** aus, um sicherzustellen, dass die Zuordnung korrekt ist.
     - Wenn keine Benutzer zugeordnet sind oder Sie mit der Zuordnung nicht zufrieden sind, wählen Sie **"Zuordnung fortsetzen"** aus. Wählen Sie zum Veröffentlichen **"Überspringen" und "Veröffentlichen"** aus.
@@ -131,7 +131,7 @@ Um einen vorhandenen Grundriss zu aktualisieren, wählen Sie den Grundplan aus, 
 **A:** Verwenden Sie eine der folgenden Optionen, um DWG-Dateien anzuzeigen:
 
 - Hochladen die Datei, um sie zu SharePoint und zu öffnen.
-- Öffnen Sie die Datei in [Microsoft Visio](https://support.office.com/article/Open-insert-convert-and-save-DWG-and-DXF-AutoCAD-drawings-60cab691-0f4c-4fc9-b775-583273c8dac5) oder [Einem DWG TrueView](https://www.autodesk.com/products/dwg).
+- Öffnen Sie die Datei in [Microsoft Visio](https://support.office.com/article/Open-insert-convert-and-save-DWG-and-DXF-AutoCAD-drawings-60cab691-0f4c-4fc9-b775-583273c8dac5) oder [Einem DWG TrueView.](https://www.autodesk.com/products/dwg)
 - Hochladen Sie die Datei an [den Online Viewer weiter.](https://viewer.autodesk.com/)
 
 **F:** Wie füge ich Textbeschriftungen zu nicht gekennzeichneten Räumen hinzu?
@@ -157,7 +157,7 @@ Um einen vorhandenen Grundriss zu aktualisieren, wählen Sie den Grundplan aus, 
 ||2|105.01|2105.01|2/2105.01|
 |Verfügt über Gebäudecode, Stockwerk und Raumnummer|0|X-11-M-12|2-0-X-11-M-12|2/2-0-X-11-M-12<br/>2-0-X-11-M-12|
 ||2|128A|22128A|2/22128A<br/>22128A|
-||1|B2-11|21-B2-11|21.02.2012-B2-11<br/>21-B2-11|
+||1|B2-11|21-B2-11|21.02.2012- B2-11<br/>21-B2-11|
 ||2|45|SC2045|SC/SC2045<br/>SC2045|
 
 **F:** Kann ich eine DWG-Datei verwenden, die keine Bodennummern enthält?
@@ -168,4 +168,4 @@ Eine DWG-Datei, die Raumnummern, aber keine Bodennummern enthält, sieht z. B. w
 
 ![floorplans-nofloors.png.](media/floorplans-nofloors.png)
 
-Der Bürostandort im Profil des Benutzers sollte 2/1175 sein, wobei "2" der Gebäudecode, "1" die Stockwerksnummer und "175" die Raumnummer ist.
+Der Bürostandort im Profil des Benutzers sollte 2/1175 sein, wobei "2" der Gebäudecode, "1" die Stockzahl und "175" die Raumnummer ist.

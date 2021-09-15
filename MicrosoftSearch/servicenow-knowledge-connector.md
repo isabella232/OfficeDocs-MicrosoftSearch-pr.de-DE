@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: Einrichten des ServiceNow Knowledge Graph-Connectors für Microsoft Search
 ms.openlocfilehash: 8052571124a74dfa92e5cd81deceee044081ecc1
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973462"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59376048"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -168,7 +168,7 @@ Die ServiceNow-Instanz benötigt die folgende Konfiguration:
    Anwendung | Global
    Benutzeranspruch | Sub
    Benutzerfeld | Benutzer-ID
-   Aktivieren der JTI-Anspruchsüberprüfung | Disabled
+   Aktivieren der JTI-Anspruchsüberprüfung | Deaktiviert
 
 5. Wählen Sie "Absenden und Aktualisieren des OAuth OIDC-Entitätsformulars" aus.
 
@@ -193,7 +193,7 @@ Verwenden Sie die Anwendungs-ID als Client-ID (aus Schritt 3.a) und den geheimen
 
 ## <a name="step-4-select-properties-and-filter-data"></a>Schritt 4: Auswählen von Eigenschaften und Filtern von Daten
 
-In diesem Schritt können Sie der ServiceNow-Datenquelle verfügbare Eigenschaften hinzufügen oder daraus entfernen. Microsoft 365 einige Eigenschaften standardmäßig bereits ausgewählt hat.
+In diesem Schritt können Sie der ServiceNow-Datenquelle verfügbare Eigenschaften hinzufügen oder daraus entfernen. Microsoft 365 hat bereits einige Eigenschaften standardmäßig ausgewählt.
 
 Mit einer ServiceNow-Abfragezeichenfolge können Sie Bedingungen für die Synchronisierung von Artikeln angeben. Es ist wie eine **Where-Klausel** in einer **SQL Select-Anweisung.** Sie können z. B. festlegen, dass nur Artikel indiziert werden, die veröffentlicht und aktiv sind. Informationen zum Erstellen einer eigenen Abfragezeichenfolge finden Sie unter [Generieren einer codierten Abfragezeichenfolge mithilfe eines Filters.](https://docs.servicenow.com/bundle/paris-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html)
 
@@ -257,7 +257,7 @@ Wenn Ihre Organisation Single Sign-On (SSO) für ServiceNow aktiviert hat, haben
 Wenn im Verbindungsstatus eine unzulässige oder nicht autorisierte Antwort angezeigt wird, überprüfen Sie, ob das Dienstkonto Zugriff auf die in [Schritt 3: Verbindungseinstellungen](#step-3-connection-settings)erwähnten Tabellen benötigt. Überprüfen Sie, ob alle Spalten in den Tabellen Lesezugriff haben.
 
 #### <a name="22-check-if-servicenow-instance-behind-firewall"></a>2.2. Überprüfen, ob die ServiceNow-Instanz hinter der Firewall liegt
-Graph Der Connector kann Ihre ServiceNow-Instanz möglicherweise nicht erreichen, wenn er sich hinter einer Netzwerkfirewall befindet. Sie müssen explizit den Zugriff auf Graph Connector-Dienst zulassen. Den öffentlichen IP-Adressbereich Graph Connector Service finden Sie in der folgenden Tabelle. Fügen Sie sie basierend auf Ihrer Mandantenregion ihrer Zulassungsliste für ServiceNow-Instanzennetzwerk hinzu.
+Graph Der Connector kann Ihre ServiceNow-Instanz möglicherweise nicht erreichen, wenn er sich hinter einer Netzwerkfirewall befindet. Sie müssen explizit den Zugriff auf Graph Connector-Dienst zulassen. Sie finden den öffentlichen IP-Adressbereich Graph Connector-Diensts in der folgenden Tabelle. Fügen Sie sie basierend auf Ihrer Mandantenregion ihrer Zulassungsliste für ServiceNow-Instanzennetzwerk hinzu.
 
 **Umgebung** | **Region** | **Range**
 --- | --- | ---

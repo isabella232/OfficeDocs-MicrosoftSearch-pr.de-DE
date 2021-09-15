@@ -15,11 +15,11 @@ search.appverid:
 - MOE150
 description: Überprüfen Microsoft Search Nutzungsberichte
 ms.openlocfilehash: 9de48331efbc956ee7d980b919d9bd2f025fc8aa
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973679"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59376012"
 ---
 # <a name="microsoft-search-usage-reports"></a>Microsoft Search Verwendungsberichte
 
@@ -30,7 +30,7 @@ Mithilfe von Suchverwendungsberichten können Sie besser verstehen, wie die Such
 
 Die [Microsoft Search Verwendungsberichte](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) enthalten Diagramme und Tabellen, die aus Suchvorgängen generiert werden, die von SharePoint Home, Office.com und Microsoft Search in Bing Suchfeldern ausgeführt werden. Sie können Daten aus den letzten 31 Tagen, pro Tag oder monatlich für das vorherige Jahr anzeigen. Diese Berichte werden gerade eingeführt, sodass es zeitaufwendige Zeit dauert, bis die verlaufshistorischen Daten fällig sind.
 
-Eine frühere Version dieser Seite enthielt Daten aus Suchvorgängen, die nur für Microsoft Search in Bing auf Bing.com ausgeführt wurden. Diese Daten sind nun in diese Berichte integriert. Sie können die alte Seite weiterhin sehen, indem Sie unten auf der Seite auf den Link klicken, um die wichtigsten Abfragen und die **Eindrucksverteilung von Bing anzuzeigen.** Dieser Link und die alte Seite werden in Kürze entfernt.
+Eine frühere Version dieser Seite enthielt Daten aus Suchvorgängen, die nur für Microsoft Search in Bing auf Bing.com ausgeführt wurden. Diese Daten sind nun in diese Berichte integriert. Sie können die alte Seite weiterhin sehen, indem Sie unten auf der Seite auf den Link klicken, um die **wichtigsten Abfragen und die Eindrucksverteilung Bing anzuzeigen.** Dieser Link und die alte Seite werden in Kürze entfernt.
 
 > [!div class="mx-imgBorder"]
 > ![Dashboard für Suchverwendungsberichte.](media/usage-reports/usage_reports_v2.png)
@@ -59,7 +59,7 @@ Klicken Sie auf den Link auf der Seite, um die wichtigsten Abfragen und Impressi
 
 **Wenn ich die letzten 31 Tage oder letzten 12 Monate auswähle, warum muss ich dann einen bestimmten Tag oder einen bestimmten Monat auswählen.**
 
-Die Kalenderansicht ist heute in Microsoft Search-Verwendungsberichten ein Prozess in zwei Schritten. Wählen Sie zunächst den Datumsbereich aus der Dropdownliste (nach 31 Tagen oder nach 12 Monaten) und dann den Starttag oder -monat aus.
+Die Kalenderansicht ist heute in Microsoft Search-Verwendungsberichten ein Prozess in zwei Schritten. Wählen Sie zunächst den Datumsbereich aus der Dropdownliste aus (in den letzten 31 Tagen oder in den letzten 12 Monaten), und wählen Sie dann den Starttag oder -monat aus.
 
 In den Abfragetabellen "Oben", "Abgebrochen" und "Fehlgeschlagen" werden Ergebnisse aus dem ausgewählten Tag oder Monat angezeigt.
 

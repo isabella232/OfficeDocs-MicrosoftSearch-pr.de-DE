@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Erhalten Sie Antworten auf häufig gestellte Fragen zur Unternehmenssuche und zu Microsoft Search
 ms.openlocfilehash: 8b4de717ab63af8842dc86135748e551ff386a2a
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973655"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375941"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 # <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
@@ -55,11 +55,11 @@ Nein.
 
 ## <a name="where-can-i-get-info-about-office-365-security-compliance-and-privacy"></a>Wo erhalte ich Informationen zu Office 365 Sicherheit, Compliance und Datenschutz?
 
-Details finden Sie auf den [Trust Center-Seiten für Office 365](https://www.microsoft.com/TrustCenter/CloudServices/office365/default.aspx).
+Details finden Sie auf den [Trust Center-Seiten für Office 365.](https://www.microsoft.com/TrustCenter/CloudServices/office365/default.aspx)
 
 ## <a name="can-guest-users-access-microsoft-search-in-my-organization"></a>Können Gastbenutzer in meiner Organisation auf Microsoft Search zugreifen?
 
-Microsoft 365 ermöglicht eine umfassende Zusammenarbeit mit Personen außerhalb Ihrer Organisation durch [Gastzugriff.](/microsoft-365/solutions/collaborate-with-people-outside-your-organization) Diese Benutzer können nach Dokumenten, Websites, Gruppen, Listen und Bibliotheken suchen. Gastbenutzer erhalten jedoch nicht die vollständige, personalisierte Microsoft Search Oberfläche und müssen möglicherweise das Suchfeld auf der Seite anstelle des einheitlichen Microsoft Search felds in der Kopfzeile verwenden.
+Microsoft 365 ermöglicht eine umfassende Zusammenarbeit mit Personen außerhalb Ihrer Organisation durch [Gastzugriff.](/microsoft-365/solutions/collaborate-with-people-outside-your-organization) Diese Benutzer können nach Dokumenten, Websites, Gruppen, Listen und Bibliotheken suchen. Gastbenutzer erhalten jedoch nicht die vollständige, personalisierte Microsoft Search Erfahrung und müssen möglicherweise das Auf-Seite-Suchfeld anstelle des einheitlichen Microsoft Search felds in der Kopfzeile verwenden.
 
 ## <a name="how-do-i-turn-microsoft-search-in-bing-on-or-off"></a>Wie kann ich Microsoft Search in Bing aktivieren oder deaktivieren?
 

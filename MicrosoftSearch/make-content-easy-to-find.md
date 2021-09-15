@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Erstellen Sie Lesezeichen, Standorte und F&A-Artikel, um die Inhalte Ihrer Organisation leicht auffindbar zu machen.
 ms.openlocfilehash: 77b6507c7643e6cf2176f37a9a2cf0def1c640ba
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973673"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375855"
 ---
 # <a name="make-content-easy-to-find"></a>Inhalte leicht auffindbar machen
 
@@ -58,7 +58,7 @@ Mit [PowerApps](integrate-powerapps.md)können Sie Geschäfts-Apps erstellen, di
 
 ## <a name="qa"></a>F&A
 
-Das Erstellen einer [F-&A](manage-qas.md) entspricht dem Erstellen von [Lesezeichen.](manage-bookmarks.md) Mit F&A können Sie Antworten auf Benutzerfragen anstelle eines Links zur Webseite bereitstellen. Sie können Antworten in Rich-Text mithilfe der verfügbaren Tools formatieren. Wenn ein Lesezeichen und ein Q-&A dasselbe Schlüsselwort verwenden, wird zuerst das Lesezeichenergebnis angezeigt. Wie Lesezeichen wird der Q&A-Index unmittelbar nach dem Hinzufügen oder Ändern eines Q-&A aktualisiert. 
+Das Erstellen einer [F-&A](manage-qas.md) entspricht dem Erstellen von [Lesezeichen.](manage-bookmarks.md) Mit F&A können Sie Antworten auf Fragen von Benutzern anstelle eines Links zur Webseite bereitstellen. Sie können Antworten mithilfe der verfügbaren Tools in Rich-Text formatieren. Wenn ein Lesezeichen und ein Q-&A dasselbe Schlüsselwort verwenden, wird zuerst das Lesezeichenergebnis angezeigt. Wie Lesezeichen wird der Q&A-Index unmittelbar nach dem Hinzufügen oder Ändern eines Q-&A aktualisiert. 
 
 ### <a name="supported-html-tags"></a>Unterstützte HTML-Tags
 
@@ -116,9 +116,9 @@ Nutzen Sie die Fachexperten (Subject Matter Experts, SMEs) in Ihrer Organisation
 Bitten Sie Benutzer, Ressourcen als Lesezeichen vorzuschlagen. Bitten Sie Benutzer außerdem, Fehler wie fehlerhafte oder ungültige Links zu melden.
 
 ## <a name="set-up-components"></a>Einrichten von Komponenten
-Führen Sie die Schritte in den folgenden Abschnitten aus, um einzelne oder [Massenlesezeichen](manage-bookmarks.md), [Q&A](manage-qas.md)und [Speicherorte](manage-locations.md)hinzuzufügen oder zu bearbeiten. 
+Führen Sie die Schritte in den folgenden Abschnitten aus, um einzelne Oder [Massenlesezeichen](manage-bookmarks.md), [Q&A](manage-qas.md)und [Speicherorte](manage-locations.md)hinzuzufügen oder zu bearbeiten. 
 
-### <a name="add-or-edit-a-single-bookmark-qa-or-location-component"></a>Hinzufügen oder Bearbeiten eines einzelnen Lesezeichens, einer Q-&A oder einer Standortkomponente
+### <a name="add-or-edit-a-single-bookmark-qa-or-location-component"></a>Hinzufügen oder Bearbeiten einer einzelnen Lesezeichen-, Q-&A- oder Standortkomponente
 1. Wechseln Sie im Microsoft 365 [Admin Center](https://admin.microsoft.com)zu **Einstellungen**  >  **Microsoft Search**. Wählen Sie die benannte Registerkarte der Komponente aus. Die Registerkarte **"Lesezeichen"** ist standardmäßig ausgewählt.
 1. Wählen Sie zum Hinzufügen einer Komponente die Option **"Neu hinzufügen"** aus. 
 1. Um eine Komponente zu bearbeiten, wählen Sie die Textmarke in der entsprechenden Komponentenliste aus. 
@@ -205,11 +205,11 @@ Autorisierende Informationen wie [Lesezeichen](manage-bookmarks.md) und [F&A](ma
 - Korrigieren oder entfernen Sie fehlerhafte und ungültige URLs.
 - Entfernen Sie Lesezeichen oder F&A, die nicht mehr relevant sind.
 - Überprüfen Sie auf Änderungen des Tools, Websitenamens oder Teamnamens.
-- Überlegen Sie, ob das Lesezeichen oder die Q-&A autoritativ genug ist oder eine klarere Beschreibung benötigt.
+- Überlegen Sie, ob das Lesezeichen oder die F-&A autoritativ genug ist oder eine klarere Beschreibung benötigt.
 
-## <a name="get-insights-about-bookmarks-qa-and-locations"></a>Erhalten Von Einblicken zu Lesezeichen, Q&A und Speicherorten
+## <a name="get-insights-about-bookmarks-qa-and-locations"></a>Erhalten Sie Einblicke zu Lesezeichen, Q&A und Speicherorten
 
-Microsoft Search zeigt, wie viele [Lesezeichen](manage-bookmarks.md), [F&A](manage-qas.md)und [Speicherorte](manage-locations.md) veröffentlicht, geplant oder vorgeschlagen werden. Im [Insights-Dashboard](./usage-reports.md) werden Lesezeichen, F&A und Standortsummen nach Status angezeigt:
+Microsoft Search zeigt, wie viele [Lesezeichen](manage-bookmarks.md), [F&A](manage-qas.md)und [Speicherorte](manage-locations.md) veröffentlicht, geplant oder vorgeschlagen werden. Das [Insights-Dashboard](./usage-reports.md) zeigt Lesezeichen, F&A und Standortsummen nach Status an:
 
 - **Veröffentlicht**: die Anzahl der veröffentlichten Ergebnissen, die für Benutzer zur Verfügung stehen
 - **Geplant:** die Anzahl der geplanten Ergebnissen in der Veröffentlichungspipeline

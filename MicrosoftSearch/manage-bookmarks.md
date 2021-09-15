@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Erstellen und Aktualisieren von Lesezeichen und Möglichkeiten zum Massenbearbeitung von Lesezeichenergebnissen für Microsoft Search
 ms.openlocfilehash: a08bef9ccc56d395fe6570bacc856653ff3a1563
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973674"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375847"
 ---
 # <a name="manage-bookmarks"></a>Verwalten von Lesezeichen
 
@@ -54,7 +54,7 @@ Suchadministratoren und -editoren können Lesezeichen im Microsoft 365 Admin Cen
 - **Entwurf:** Als Entwürfe gespeicherte Lesezeichen stehen Ihren Benutzern nicht zur Verfügung. Verwenden Sie diesen Status, wenn Sie oder andere Projektbeteiligten Lesezeichen vor der Veröffentlichung überprüfen oder aktualisieren möchten.
 - **Geplant:** Lesezeichen, die am angegebenen Datum und zur angegebenen Uhrzeit veröffentlicht werden.
 
-Sie können die Browsererweiterung Microsoft Search Inhaltsersteller verwenden, um auf einfache Weise Lesezeichen hinzuzufügen. Wechseln Sie einfach zu der Website, die Sie als Lesezeichen hinzufügen möchten, und klicken Sie in der Erweiterung auf "Hinzufügen". Um die Erweiterung für Microsoft Edge oder Google Chrome zu installieren, wechseln Sie zum [Chrome-Webspeicher,](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) und fügen Sie sie Ihrem Browser hinzu.
+Mit der Browsererweiterung Microsoft Search Inhaltsersteller können Sie ganz einfach Lesezeichen hinzufügen. Wechseln Sie einfach zu der Website, die Sie als Lesezeichen hinzufügen möchten, und klicken Sie in der Erweiterung auf "Hinzufügen". Um die Erweiterung für Microsoft Edge oder Google Chrome zu installieren, wechseln Sie zum [Chrome-Webspeicher,](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) und fügen Sie sie Ihrem Browser hinzu.
 
 ### <a name="import-sharepoint-results"></a>Importieren SharePoint Ergebnisse
 
@@ -102,7 +102,7 @@ So verhindern Sie Duplizierungsfehler zwischen Lesezeichen:
 
 ### <a name="publish-or-review-recommended-bookmarks"></a>Veröffentlichen oder Überprüfen empfohlener Lesezeichen
 
-Um den manuellen Aufwand für das Hinzufügen von Lesezeichen zu reduzieren, können Microsoft Search die SharePoint Links Ihrer Organisation auswerten und Lesezeichen empfehlen. Sie können sie vor der Veröffentlichung überprüfen oder festlegen, dass sie automatisch veröffentlicht werden. Es ist kein Setup für empfohlene Lesezeichen erforderlich, sie sind aktiviert und standardmäßig auf die automatische Veröffentlichung festgelegt. Um diese Einstellungen jederzeit zu ändern, wählen Sie **Lesezeichen verwalten aus,** um den Bereich "Lesezeicheneinstellungen" zu öffnen.
+Um den manuellen Aufwand zum Hinzufügen von Lesezeichen zu reduzieren, können Microsoft Search die SharePoint Links Ihrer Organisation auswerten und Lesezeichen empfehlen. Sie können sie vor der Veröffentlichung überprüfen oder festlegen, dass sie automatisch veröffentlicht werden. Für empfohlene Lesezeichen ist kein Setup erforderlich, sie sind aktiviert und standardmäßig auf die automatische Veröffentlichung festgelegt. Um diese Einstellungen jederzeit zu ändern, wählen Sie **Lesezeichen verwalten aus,** um den Bereich "Lesezeicheneinstellungen" zu öffnen.
 
 ![Screenshot der Empfohlenen Lesezeicheneinstellungen im Microsoft 365-Verwaltungsportal.](media/bookmarks-recommendedsettings.png)
 

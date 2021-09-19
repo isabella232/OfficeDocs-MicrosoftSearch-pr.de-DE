@@ -86,7 +86,7 @@
           href: terms-of-use.md
     - name: Partnerverbund-Connectors
       items:
-        - name: "Dynamics\_365"
+        - name: Dynamics 365
           href: manage-dynamics365.md
 - name: Anpassen und konfigurieren
   items:
@@ -114,6 +114,8 @@
           href: security-for-search.md
         - name: Hinzufügen eines Suchfelds zu Ihrer Intranetwebsite
           href: add-a-search-box-to-your-intranet-site.md
+        - name: Auswählen einer Schul- oder Arbeitssuche (Vorschau)
+          href: select-work-school-search-experience.md
         - name: Festlegen von Microsoft Edge als Standardbrowser
           href: /deployedge/edge-default-browser
         - name: Festlegen von Bing als Standardsuchmaschine

@@ -110,6 +110,8 @@
           href: manage-classic-spo-pages.md
     - name: Microsoft Search in Bing
       items:
+        - name: Übersicht
+          href: overview-microsoft-search-bing.md
         - name: Sicherheit und Datenschutz
           href: security-for-search.md
         - name: Hinzufügen eines Suchfelds zu Ihrer Intranetwebsite

@@ -14,21 +14,21 @@ search.appverid:
 - MET150
 - MOE150
 description: Überprüfen Microsoft Search Nutzungsberichte
-ms.openlocfilehash: 3f6b35ddbd08d4c709ce8b8b9125caa1a6517bae
-ms.sourcegitcommit: df898c1616c7c89e819cf2900a08a319af12f8cc
+ms.openlocfilehash: 1f2afa6e2c7691aa3284ae017913827761981529
+ms.sourcegitcommit: ca6f0488b842e7fc0d98c7b84b2b8bc5817d3e7b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59940648"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60224867"
 ---
 # <a name="microsoft-search-usage-reports"></a>Microsoft Search Verwendungsberichte
 
-Mithilfe von Suchverwendungsberichten können Sie besser verstehen, wie die Suche in Ihrer Organisation funktioniert. Die aus diesen Berichten generierten Erkenntnisse helfen Ihnen, Maßnahmen zu ergreifen, die die Suche für Ihre Benutzer nützlicher und ansprechender gestalten.
+Mithilfe von Suchverwendungsberichten können Sie besser verstehen, wie die Suche in Ihrer Organisation funktioniert. Die aus diesen Berichten generierten Erkenntnisse helfen Ihnen, Aktionen zu ergreifen, die die Suche für Ihre Benutzer nützlicher und ansprechender gestalten.
 
 > [!IMPORTANT]
 > Microsoft Search Nutzungsberichte befinden sich derzeit in der Vorschau
 
-Die [Microsoft Search Verwendungsberichte](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) enthalten Diagramme und Tabellen, die aus Suchvorgängen generiert werden, die von SharePoint Home, Office.com und Microsoft Search in Bing Suchfeldern ausgeführt werden. Sie können Daten aus den letzten 31 Tagen, pro Tag oder monatlich für das vorherige Jahr anzeigen. Diese Berichte werden gerade eingeführt, sodass es zeitaufwendige Zeit dauert, bis die verlaufshistorischen Daten fällig sind.
+Die [Microsoft Search Verwendungsberichte](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) enthalten Diagramme und Tabellen, die aus Suchvorgängen generiert werden, die von SharePoint Home (der Website mit der URL mit der Endung "/SharePoint.aspx"), Office.com und Microsoft Search in Bing Suchfeldern ausgeführt werden. Sie können Daten aus den letzten 31 Tagen, pro Tag oder monatlich für das vorherige Jahr anzeigen. Diese Berichte werden gerade eingeführt, sodass es zeitaufwendige Zeit dauert, bis die verlaufshistorischen Daten fällig sind.
 
 > [!div class="mx-imgBorder"]
 > ![Dashboard für Suchverwendungsberichte.](media/usage-reports/usage_reports_v2.png)
@@ -39,8 +39,8 @@ Die [Microsoft Search Verwendungsberichte](https://admin.microsoft.com/Adminport
 |:-----|:-----|
 |Abfragevolume|Dieser Bericht zeigt die Anzahl der ausgeführten Suchabfragen an. Verwenden Sie diesen Bericht, um Trends im Suchabfragevolumen zu identifizieren und Zeiträume mit hoher und niedriger Suchaktivität zu ermitteln.|
 |Häufigste Suchvorgänge|Dieser Bericht enthält die beliebtesten Suchabfragen. Eine Abfrage wird diesem Bericht hinzugefügt, wenn sie mindestens dreimal mit einem Klick auf ein Ergebnis durchsucht wird. Verwenden Sie diesen Bericht, um zu verstehen, nach welchen Arten von Informationen Ihre Benutzer suchen.|
-|Abgebrochene Abfragen|Dieser Bericht zeigt häufig verwendete Suchabfragen, die nur wenig Klick-und-Los erhalten. Mithilfe dieses Berichts können Sie Suchvorgänge identifizieren, die unzufriedene Benutzer erzeugen, und das Auffinden von Inhalten verbessern. Sie können dann ermitteln, ob das Erstellen einer Antwort, z. B. ein Lesezeichen, oder das Aufnehmen neuer Inhalte über einen Graph Connector die richtige Aktion ist.|
-|Keine Ergebnisabfragen|Dieser Bericht zeigt beliebte Suchabfragen, die keine Ergebnisse zurückgegeben haben. Mithilfe dieses Berichts können Sie Suchvorgänge identifizieren, die unzufriedene Benutzer erzeugen, und das Auffinden von Inhalten verbessern. Sie können dann ermitteln, ob das Erstellen einer Antwort, z. B. ein Lesezeichen, oder das Aufnehmen neuer Inhalte über einen Graph Connector die richtige Aktion ist.|
+|Abgebrochene Abfragen|Dieser Bericht zeigt häufig verwendete Suchabfragen, die nur wenig Klick-und-Los erhalten. Mithilfe dieses Berichts können Sie Suchvorgänge identifizieren, die unzufriedene Benutzer erzeugen, und das Auffinden von Inhalten verbessern. Sie können dann ermitteln, ob das Erstellen einer Antwort, z. B. ein Lesezeichen, oder das Erfassen neuer Inhalte über einen Graph Connector die richtige Aktion ist.|
+|Keine Ergebnisabfragen|Dieser Bericht zeigt beliebte Suchabfragen, die keine Ergebnisse zurückgegeben haben. Mithilfe dieses Berichts können Sie Suchvorgänge identifizieren, die unzufriedene Benutzer erzeugen, und das Auffinden von Inhalten verbessern. Sie können dann ermitteln, ob das Erstellen einer Antwort, z. B. ein Lesezeichen, oder das Erfassen neuer Inhalte über einen Graph Connector die richtige Aktion ist.|
 
 >[!NOTE]
 >Es gibt derzeit ein bekanntes Problem, bei dem Abfragen, die mit einer Antwort wie einem Lesezeichen zufrieden sind, als abgebrochene Abfrage gezählt werden.
@@ -55,7 +55,7 @@ Wenn Sie einen Bericht herunterladen, können Sie Berichte aus einem größeren 
 
 **Wenn ich die letzten 31 Tage oder letzten 12 Monate auswähle, warum muss ich dann einen bestimmten Tag oder einen bestimmten Monat auswählen.**
 
-Die Kalenderansicht ist heute in Microsoft Search-Verwendungsberichten ein Prozess in zwei Schritten. Wählen Sie zunächst den Datumsbereich aus der Dropdownliste (nach 31 Tagen oder nach 12 Monaten) und dann den Starttag oder -monat aus.
+Die Kalenderansicht ist heute in Microsoft Search-Verwendungsberichten ein Prozess in zwei Schritten. Wählen Sie zunächst den Datumsbereich aus der Dropdownliste aus (in den letzten 31 Tagen oder in den letzten 12 Monaten), und wählen Sie dann den Starttag oder -monat aus.
 
 In den Abfragetabellen "Oben", "Abgebrochen" und "Fehlgeschlagen" werden Ergebnisse aus dem ausgewählten Tag oder Monat angezeigt.
 
@@ -65,7 +65,7 @@ Wir erwägen diese Art der Aggregation und vereinfachen die Datenbereichsfilteru
 
 **Warum kann ich keine Aufschlüsselung der Nutzungsberichte nach verschiedenen Apps (Quellen) sehen?**
 
-Derzeit ist die Filterung nach Quelle nicht verfügbar. Die Berichte kombinieren Suchvorgänge von SharePoint Home und Office.com. Unsere nächste Version enthält die Quellfilterung, damit Sie für jede Anwendung spezifische Metriken sehen können.
+Derzeit ist die Filterung nach Quelle nicht verfügbar. Die Berichte kombinieren Suchvorgänge aus SharePoint Home und Office.com. Unsere nächste Version enthält die Quellfilterung, damit Sie für jede Anwendung spezifische Metriken sehen können.
 
 **Welche weitere Filterung für Nutzungsberichte ist verfügbar?**
 

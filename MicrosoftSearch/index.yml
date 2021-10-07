@@ -51,7 +51,7 @@ additionalContent:
               url: manage-floorplans.md
             - text: Orte verwalten
               url: manage-locations.md
-            - text: Verwalten von Power BI
+            - text: Verwalten Power BI
               url: manage-powerbi.md
             - text: Verwalten von Q&A
               url: manage-qas.md
@@ -78,4 +78,4 @@ additionalContent:
             - text: Grundlegendes zu Microsoft Search in SharePoint
               url: get-started-search-in-sharepoint-online.md
             - text: Grundlegendes zu Microsoft Search in Bing
-              url: security-for-search.md
+              url: overview-microsoft-search-bing.md

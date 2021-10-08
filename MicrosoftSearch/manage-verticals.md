@@ -11,14 +11,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-ROBOTS: NOINDEX
 description: Verwalten der Such-Vertikalen auf der Ergebnisseite
-ms.openlocfilehash: 89887b6ce5391d2473692504efa3c0eb35407b48
-ms.sourcegitcommit: 967a02ee932f8a6cee70cfd78bb0c8b1b78d07c4
+ms.openlocfilehash: 0396c1f67b22a77a39f78aa1f058ee4b2019a39c
+ms.sourcegitcommit: 02d4f91210d992da080fd39d5b60f8cf30d8f0b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60127788"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60238403"
 ---
 # <a name="manage-search-verticals"></a>Verwalten von Such-Vertikalen
 
@@ -31,21 +30,21 @@ Sie können Vertikale auf zwei Ebenen verwalten:
 
 ## <a name="understanding-search-verticals"></a>Grundlegendes zu Such-Vertikalen
 
-Microsoft Search verfügt über zwei Arten von Vertikalen, vordefinierte und benutzerdefinierte Vertikale. Sofort einsatzbereite Vertikale wie "Alle", "Dateien" und "Personen" erstellen einfachen Zugriff auf die am häufigsten verwendeten Suchergebnisse.
+Microsoft Search verfügt über zwei Arten von Vertikalen, sofort einsatzbereite und benutzerdefinierte Vertikale. Sofort einsatzbereite Vertikale wie "Alle", "Dateien" und "Personen" erstellen einfachen Zugriff auf die am häufigsten verwendeten Suchergebnisse.
 
 Zusätzliche Konfigurationsoptionen werden in benutzerdefinierten Vertikalen angeboten und können verwendet werden, um die beste Benutzererfahrung zu erzielen.
 
-Sie können Such-Vertikalen hinzufügen, die für Ihre Organisation relevant sind. Sie können beispielsweise eine Vertikale für marketingbezogene Inhalte und eine weitere für den Vertrieb erstellen, basierend auf der Art der Informationen, die jede Abteilung benötigt. Vertikale Elemente können hinzugefügt werden, um Ergebnisse aus Inhalten anzuzeigen, die von [Graph Connectors](connectors-overview.md)indiziert wurden, Sie können jedoch keine vertikale Für Inhalte erstellen, die sich in SharePoint befinden.
+Sie können Such-Vertikalen hinzufügen, die für Ihre Organisation relevant sind. Sie können beispielsweise eine Vertikale für marketingbezogene Inhalte und eine weitere für den Vertrieb erstellen, basierend auf der Art der Informationen, die jede Abteilung benötigt. Vertikalen können hinzugefügt werden, um Ergebnisse aus Inhalten anzuzeigen, die von [Graph Connectors](connectors-overview.md)indiziert wurden. Sie können jedoch keine vertikale Für Inhalte erstellen, die sich in SharePoint befinden.
 
 ## <a name="create-search-verticals"></a>Erstellen von Such-Vertikalen
 
 Die vertikale Verwaltungsumgebung wird vom Assistenten gesteuert. Sie werden durch die Schritte zum Definieren des Vertikalnamens, der Inhaltsquelle und des Bereichs der zu durchsuchenden Inhalte geführt. Sie können einen begrenzten Satz von [KQL (Keyword Query Language)](#keyword-query-language-kql) verwenden, um den Umfang der vertikalen Suche nach einer bestimmten Inhaltsquelle zu definieren.
 
-Im Folgenden werden die Schritte zum Erstellen der benutzerdefinierten Vertikalen auf Microsoft Search in [SharePoint Home,](https://sharepoint.com/) [Office](https://office.com/)oder [Bing](https://bing.com/)beschrieben.  
+Im Folgenden werden die Schritte zum Erstellen der benutzerdefinierten Vertikalen auf Microsoft Search in [SharePoint Zuhause,](https://sharepoint.com/) [Office](https://office.com/)oder [Bing beschrieben.](https://bing.com/)  
 
 ### <a name="manage-organization-level-verticals"></a>Verwalten von Vertikalen auf Organisationsebene
 
-1. Wechseln [Sie](https://admin.microsoft.com)im Microsoft 365 Admin Center zur Seite [**Vertikal**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals) im Abschnitt **Anpassung.**
+1. Wechseln [Sie](https://admin.microsoft.com)im Microsoft 365 Admin Center zur Seite [**"Vertikalen"**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals) im Abschnitt **"Anpassung".**
 1. Klicken Sie auf **"Hinzufügen",** um eine neue Vertikale zu erstellen.
 1. Nachdem Sie die Konfigurationsschritte durchlaufen haben, können Sie die Vertikale überprüfen und speichern.  
 

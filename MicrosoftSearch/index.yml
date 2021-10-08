@@ -51,7 +51,7 @@ additionalContent:
               url: manage-floorplans.md
             - text: Orte verwalten
               url: manage-locations.md
-            - text: Verwalten Power BI
+            - text: Verwalten von Power BI
               url: manage-powerbi.md
             - text: Verwalten von Q&A
               url: manage-qas.md
@@ -65,8 +65,10 @@ additionalContent:
               url: manage-dynamics365.md
         - title: Anpassen der Endbenutzer-UX
           links:
-            - text: Branchen und Ergebnistypen verwalten
-              url: customize-search-page.md
+            - text: Verwalten von Vertikalen
+              url: manage-verticals.md
+            - text: Verwalten von Ergebnistypen
+              url: manage-result-types.md
             - text: Anpassen des SERP-Layouts
               url: customize-results-layout.md
             - text: Verwalten von Filtern

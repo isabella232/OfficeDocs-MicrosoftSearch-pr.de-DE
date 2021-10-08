@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Setupübersicht für Graph-Connectors von Microsoft
-ms.openlocfilehash: 95a2640652bd1289962c888be4ba771629806a6b
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: f3e622abbc54103a47a06c587a1d20190639504c
+ms.sourcegitcommit: 02d4f91210d992da080fd39d5b60f8cf30d8f0b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59375886"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60238439"
 ---
 <!-- Previous ms.author: monaray -->
 
 <!-- markdownlint-disable no-trailing-punctuation -->
 
-# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Setupübersicht für Graph-Connectors von Microsoft 
+# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Setupübersicht für Graph-Connectors von Microsoft
 
 In diesem Artikel wird der grundlegende Prozess beschrieben, der erforderlich ist, um die Graph Connectors **von Microsoft** im [Microsoft 365 Admin Center](https://admin.microsoft.com)einzurichten. Der einfache Prozess umfasst die folgenden Schritte:  
 <!---Add links to each section in the doc--->
@@ -87,15 +87,15 @@ Weitere Informationen zum Herstellen einer Verbindung mit einer lokalen Datenque
 
 ## <a name="step-4-select-properties"></a>Schritt 4: Auswählen von Eigenschaften
 
-Sie können die Eigenschaften auswählen, die von Microsoft Search indiziert werden. 
+Sie können die Eigenschaften auswählen, die von Microsoft Search indiziert werden.
 
-Die ServiceNow-Abfrage kann verwendet werden, um Ihre Daten zu filtern, bevor sie von Microsoft Search indiziert werden. Dadurch erhalten Sie mehr Kontrolle über die Daten, die durchsucht werden können. Weitere Informationen zu ServiceNow-Abfragen finden Sie unter [Informationen zu ServiceNow-Abfragen.](https://go.microsoft.com/fwlink/?linkid=2151447) 
+Die ServiceNow-Abfrage kann verwendet werden, um Ihre Daten zu filtern, bevor sie von Microsoft Search indiziert werden. Dadurch erhalten Sie mehr Kontrolle über die Daten, die durchsucht werden können. Weitere Informationen zu ServiceNow-Abfragen finden Sie unter [Informationen zu ServiceNow-Abfragen.](https://go.microsoft.com/fwlink/?linkid=2151447)
 
 ## <a name="step-5-manage-search-permissions"></a>Schritt 5: Verwalten von Suchberechtigungen
 
 Zugriffssteuerungslisten (Access Control Lists, ACLs) bestimmen, welche Benutzer in Ihrer Organisation auf jedes Element zugreifen können.  
 
-Einige Connectors wie [Microsoft SQL](MSSQL-connector.md) und Azure Data Lake [Storage Gen2](azure-data-lake-connector.md) unterstützen [nativ Azure Active Directory ACLs (Azure AD).](/azure/active-directory/)
+Einige Connectors wie [Microsoft SQL](MSSQL-connector.md) und Azure Data Lake [Storage Gen2](azure-data-lake-connector.md) unterstützen [Azure Active Directory ACLs (Azure AD).](/azure/active-directory/)
 
 Andere Connectors wie [ServiceNow Knowledge,](servicenow-knowledge-connector.md) [ServiceNow-Katalog,](servicenow-catalog-connector.md) [Azure DevOps](azure-devops-connector.md)und [Salesforce](salesforce-connector.md) unterstützen die Synchronisierung von Nicht-Azure AD-Benutzern und -Gruppen.  
 
@@ -141,19 +141,18 @@ Sie können Ihren Eigenschaften unter der Spalte "Alias" auf der Seite "Schema v
 
 Sie können die Suchschemaattribute festlegen, um die Suchfunktionalität jeder Quelleigenschaft zu steuern. Ein Suchschema hilft zu bestimmen, welche Ergebnisse auf der Suchergebnisseite angezeigt werden und welche Informationen Endbenutzer anzeigen und darauf zugreifen können.
 
-Suchschemaattribute umfassen Optionen zum **Abfragen,** **Suchen,** **Abrufen** und **Verfeinern.** In der folgenden Tabelle sind die attribute aufgeführt, die Von Microsoft Graph Connectors unterstützt werden, und ihre Funktionen werden erläutert.
+Zu den Suchschemaattributen gehören Optionen zum **Abfragen,** **Suchen,** **Abrufen** und **Verfeinern.** In der folgenden Tabelle sind die attribute aufgeführt, die Von Microsoft Graph Connectors unterstützt werden, und ihre Funktionen werden erläutert.
 
 Suchschemaattribut | Funktion | Beispiel
 --- | --- | ---
-SUCHE | Macht den Textinhalt einer Eigenschaft durchsuchbar. Eigenschafteninhalte sind im Volltextindex enthalten. | Wenn es sich bei der Eigenschaft um **einen Titel** handelt, gibt eine Abfrage nach **Enterprise** Antworten zurück, die das Wort **Enterprise** in einem Beliebigen Text oder Titel enthalten.
+SUCHE | Macht den Textinhalt einer Eigenschaft durchsuchbar. Eigenschafteninhalte sind im Volltextindex enthalten. | Wenn es sich bei der Eigenschaft um **einen Titel** handelt, gibt eine Abfrage nach **Enterprise** Antworten zurück, die das Wort **Enterprise** in einem beliebigen Text oder Titel enthalten.
 ABFRAGE | Sucht nach einer Abfrage nach einer Übereinstimmung für eine bestimmte Eigenschaft. Der Eigenschaftenname kann dann in der Abfrage entweder programmgesteuert oder ausführlich angegeben werden. |  Wenn die **Title-Eigenschaft** abgefragt werden kann, wird die Abfrage **Title: Enterprise** unterstützt.
 ABRUFEN | Nur abgerufene Eigenschaften können im Ergebnistyp verwendet und im Suchergebnis angezeigt werden. |
 VERFEINERN | Die Verfeinerungsoption kann wie auf der Microsoft Search Ergebnisseite verwendet werden. | Benutzer in Ihrer Organisation können auf der Suchergebnisseite nach **URL** [filtern,](custom-filters.md) ob die Verfeinerungseigenschaft während der Verbindungseinrichtung markiert ist.
 
-Für alle Connectors mit Ausnahme des Dateifreigabeconnectors müssen benutzerdefinierte Typen manuell festgelegt werden. Zum Aktivieren der Suchfunktionen für jedes Feld benötigen Sie ein Suchschema, das einer Liste von Eigenschaften zugeordnet ist. Der Verbindungs-Assistent wählt automatisch ein Suchschema basierend auf dem von Ihnen ausgewählten Satz von Quelleigenschaften aus. Sie können dieses Schema ändern, indem Sie die Kontrollkästchen für jede Eigenschaft und jedes Attribut auf der Suchschemaseite aktivieren.
+Für alle Connectors mit Ausnahme des Dateifreigabeconnectors müssen benutzerdefinierte Typen manuell festgelegt werden. Um die Suchfunktionen für jedes Feld zu aktivieren, benötigen Sie ein Suchschema, das einer Liste von Eigenschaften zugeordnet ist. Der Verbindungs-Assistent wählt automatisch ein Suchschema basierend auf dem von Ihnen ausgewählten Satz von Quelleigenschaften aus. Sie können dieses Schema ändern, indem Sie die Kontrollkästchen für jede Eigenschaft und jedes Attribut auf der Suchschemaseite aktivieren.
 
-> [!div class="mx-imgBorder"]
-> ![Das Schema für einen Connector kann durch Hinzufügen oder Entfernen von Abfrage-, Such- und Retrieve-Funktionen angepasst werden.](media/manageschema.png)
+:::image type="content" alt-text="Das Schema für einen Connector kann durch Hinzufügen oder Entfernen von Abfrage-, Such- und Retrieve-Funktionen angepasst werden." source="media/manageschema.png" lightbox="media/manageschema.png":::
 
 ### <a name="restrictions-and-recommendations-for-search-schema-settings"></a>Einschränkungen und Empfehlungen für Suchschemaeinstellungen
 
@@ -201,7 +200,7 @@ Wechseln Sie zur Liste der veröffentlichten Verbindungen auf der Registerkarte 
 
 ## <a name="troubleshooting"></a>Problembehandlung
 <!---Insert troubleshooting recommendations for this data source-->
-Lesen Sie die connectorspezifischen Informationen für Ihre Datenquelle. 
+Lesen Sie die connectorspezifischen Informationen für Ihre Datenquelle.
 
 > [!NOTE]
 > Nicht alle connectorspezifischen Artikel enthalten derzeit Empfehlungen zur Problembehandlung.
@@ -214,4 +213,4 @@ Lesen Sie die connectorspezifischen Informationen für Ihre Datenquelle, um hera
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Nach der Veröffentlichung der Verbindung müssen Sie die Suchergebnisseite anpassen. Informationen zum Anpassen von Suchergebnissen finden Sie unter [Anpassen der Suchergebnisseite.](customize-search-page.md)
+Nach der Veröffentlichung der Verbindung müssen Sie die Suchergebnisseite mit Vertikalen und Ergebnistypen anpassen. Informationen zum Anpassen von Suchergebnissen finden Sie unter ["Verwalten von Vertikalen](manage-verticals.md) und [Ergebnistypen".](manage-result-types.md)

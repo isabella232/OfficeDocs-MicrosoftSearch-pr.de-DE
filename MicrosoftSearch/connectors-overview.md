@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Übersicht über Microsoft Graph Connectors für Microsoft Search
-ms.openlocfilehash: 006ab3f56eb4976b44904e5191ae8fd256c8d5de
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: 2dec2d17479368bc6d85c0a5bd275461a4114800
+ms.sourcegitcommit: 02d4f91210d992da080fd39d5b60f8cf30d8f0b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59375983"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60238394"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -57,7 +57,7 @@ To create a **connection** to a data source, admins need authenticated access to
 
 ## <a name="what-data-sources-can-be-connected-to-microsoft-search"></a>Welche Datenquellen können mit Microsoft Search verbunden werden?
 
-Microsoft bietet 9 Connectors, und unsere Ökosystempartner haben über 100 weitere Connectors erstellt. Sie können auch einen eigenen Connector erstellen.
+Microsoft bietet 9 Connectors an, und unsere Ökosystempartner haben über 100 weitere Connectors erstellt. Sie können auch einen eigenen Connector erstellen.
 
 ### <a name="microsoft-graph-connectors-by-microsoft"></a>Microsoft Graph Connectors von Microsoft
 
@@ -76,12 +76,11 @@ Sie können über von Microsoft erstellte Connectors eine Verbindung mit den fol
 * [ServiceNow-Wissen](servicenow-knowledge-connector.md)
 * [ServiceNow-Katalog (Vorschau)](servicenow-catalog-connector.md)
 
-
-Der [Microsoft Graph Connectors-Katalog](https://www.microsoft.com/microsoft-search/connectors) enthält eine kurze Beschreibung dieser Connectors. Wenn Sie bereit sind, eine dieser Datenquellen mit Ihrem Mandanten zu verbinden, lesen Sie unbedingt die [Setupübersicht](configure-connector.md) und alle anderen Artikel in den Setupconnectors von Microsoft, die für Ihre Datenquelle gelten.
+Der [Microsoft Graph Connectors-Katalog](https://www.microsoft.com/microsoft-search/connectors) enthält eine kurze Beschreibung dieser Connectors. Wenn Sie bereit sind, eine dieser Datenquellen mit Ihrem Mandanten zu verbinden, lesen Sie unbedingt die [Setupübersicht](configure-connector.md) und alle anderen Artikel im Abschnitt "Setup connectors by Microsoft", die für Ihre Datenquelle gelten.
 
 ### <a name="microsoft-graph-connectors-by-our-partners"></a>Microsoft Graph Connectors von unseren Partnern
 
-Der [Connectorkatalog](https://www.microsoft.com/microsoft-search/connectors) von Microsoft Graph enthält eine kurze Beschreibung der einzelnen Connectors, die von unseren Partnern erstellt wurden, sowie einen Link zur Website jedes Partners. Um mehr zu erfahren, wenden Sie sich direkt an jeden Partner.
+Der [Microsoft Graph Connectors-Katalog](https://www.microsoft.com/microsoft-search/connectors) enthält eine kurze Beschreibung der einzelnen Connectors, die von unseren Partnern erstellt wurden, sowie einen Link zur Website jedes Partners. Um mehr zu erfahren, wenden Sie sich direkt an jeden Partner.
 
 ### <a name="build-your-own-microsoft-graph-connector"></a>Erstellen Eines eigenen Microsoft Graph-Connectors
 
@@ -113,7 +112,7 @@ Zu den Konnektoren und Features in der Vorschau gehören:
 
 Es gibt viele Möglichkeiten zum Anpassen und Konfigurieren von Suchergebnissen. Weitere Informationen finden Sie in den folgenden Artikeln:
 
-* [Branchen und Ergebnistypen verwalten](customize-search-page.md)
+* [Verwalten von Vertikalen](manage-verticals.md) und [Ergebnistypen](manage-result-types.md)
 * [Verwalten von Layouts für Suchergebnisse](customize-results-layout.md)
 * [Verwalten von Ergebnisclusters](result-cluster.md)
 * [Verwalten benutzerdefinierter Filter](custom-filters.md)
@@ -130,7 +129,7 @@ Der nächste Schritt besteht darin, die Suchergebnisse wie in diesem Artikel emp
 
 * Wenn Sie einen von Microsoft erstellten Connector **veröffentlichen,** kann es einige Minuten dauern, bis die Verbindung erstellt wurde. Während dieser Zeit zeigt die Verbindung ihren Status als ausstehend an.
 
-* Der Aufnahmedurchsatz wird bei etwa vier Elementen pro Sekunde gedrosselt.
+* Der Aufnahmedurchsatz wird bei ungefähr vier Elementen pro Sekunde gedrosselt.
 
 * Schemaupdates werden nicht unterstützt. Nachdem Sie eine Verbindungseinrichtung erstellt haben, gibt es keine Möglichkeit, das Schema zu aktualisieren. Sie können die Verbindung nur löschen und erneut erstellen.
 
